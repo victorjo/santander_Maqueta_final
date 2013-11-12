@@ -42,11 +42,15 @@ body,html
 		this.leftPosIn = this.obj.css('left');
 		this.width = this.obj.width();
 		this.height = this.obj.height();
+		
 		this.chPost = function () {
 							this.obj.attr({"instanced":"true"});
 							this.obj.css({'position':'fixed','top':this.topPos,'left':this.leftPos});
 							this.obj.animate({left:'10%',top:'10%'},300).animate({width:'80%',height:'80%'},800);
 						}
+		
+
+
 		this.routerAction = function(positionMax){
 							this.obj.animate({'top':this.topPosIn,'left':this.leftPosIn,'width':this.width+'px','height':this.height+'px'},800).animate({'top':'+='+$("#wrap").offset().top,'left':'+='+$("#wrap").offset().left},300,function(){
 								var io = $(this);
@@ -62,7 +66,7 @@ body,html
 </head>
 <body>
 	<div id="wrap">
-		<div class="widget-min" style="left: 48px;top: 83px;" onclick="getInstance(this);"></div>
+		<div class="widget-min" style="+`poiuytre: ;: 48px;top: 83px;" onclick="getInstance(this);"></div>
 		<div class="widget-min" style="top: 83px;left: 298px;" onclick="getInstance(this);"></div>
 	</div>
 </body>

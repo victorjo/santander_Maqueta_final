@@ -10,8 +10,97 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link rel="stylesheet" type="text/css" href="css/master.css">
+        <script src="js/jquery10.2.min.js"></script>
+        <script src="js/widgets.js"></script>
+		<script>
+			$(function(){
+				$(".btnNavWidget").click(activaBtn);
+
+			function activaBtn(){
+				$(".ActiveNav").each(function(){
+						$(this).removeClass('ActiveNav').addClass('noActiveNav');
+					});
+
+					//$(".ActiveNav").removeClass('ActiveNav').addClass('noActiveNav');
+					$(this).addClass('ActiveNav').removeClass('noActiveNav');
+					console.log("click");
+				
+			}
+
+		});
+
+		</script>
+
     </head>
     <body>
-        
+        <div id="wr_PrinHeader" >
+        	<div id="logo" class="Fleft">
+        		<img src="img/interfaz/logoSantander.png" alt="logotipo banco Santander">
+        	</div>
+        	<div id="tipoServ" class="Fleft">
+        		
+        	</div>
+        	<div id="dataClient" class="Fleft">
+        		<p id="nombre"><b>Santiago Alfonso Pimentel de la Piedra</b></p>
+        		<p id="fecha">Fecha de &uacute;ltimo acceso: 23 de Julio del 2013</p>
+        		
+        	</div>
+        	<div id="wr_btnNavHeader" class="Fleft" >
+        		<img src="img/interfaz/icono_buscar.png" alt="">
+        		<img src="img/interfaz/icono_acces.png" alt="">
+        		<img src="img/interfaz/icono_ayuda.png" alt="">
+        		<img src="img/interfaz/icono_tool.png" alt="">
+        		<img src="img/interfaz/icono_logout.png" alt="">
+        	</div>
+        </div>
+        <div id="wr_PrinNivel1">
+        	<div id="wr_SuperBanner" class="columnSB Fleft">
+        		<img src="img/superBanner.png" alt="Super banner">
+        	</div>
+        	<div class="wr_NavPrin Fleft">
+        		<div id="avatarNavPrin">
+        			<img src="img/menuLateral/avatar.png" alt="avatar supernet">
+        		</div>
+        		<div id="wr_btnNav" >
+        			<ul>
+        				<li class="btnNav activate">MI SUPERHOME</li>
+        				<li class="btnNav">Lorem ipsum</li>
+        				<li class="btnNav">Lorem ipsum</li>
+        				<li class="btnNav">Lorem ipsum</li>
+        				<li class="btnNav">Lorem ipsum</li>
+        				<li class="btnNav">Lorem ipsum</li>
+        				<li class="btnNav">Lorem ipsum</li>
+        				<li class="btnNav">Lorem ipsum</li>
+        			</ul>
+        		</div>
+        		<div id="footer">
+        			<p>Derechos Reservador 2011</p>
+        			<p><b><a href="#">Banco Santander (México) S.A.</a></b></p>
+        			<p>Institución de Banca Múltiple</p>
+        			<p>Grupo Financiero</p>
+        			<p>Santander México</p>
+        			<br>
+        			<p><b><a href="#">AVISO LEGAL</a></b></p>
+        		</div>
+        	</div>
+        	<div id="wrappWidgets">
+        		
+	        	<div class="Fleft col1 altoTotal widget" onclick="getInstance(this)" >asdasd</div>
+	        	<div class="Fleft col1 alto2 medianilIzq widget " onclick="getInstance(this)" >dasdas</div>
+	        	<div class="Fleft col1 alto2 medianilIzq widget "  onclick="getInstance(this)"></div>
+	        	<div class="Fleft col2 alto2 medianilIzq widget medianilTop" onclick="getInstance(this)" ></div>
+				
+				<div class="Fright" id="navContent">
+					<div class="Fright noActiveNav btnNavWidget"></div>
+					<div class="Fright ActiveNav btnNavWidget" ></div>
+					<div class="Fright noActiveNav btnNavWidget" ></div>
+				</div>
+
+			
+			</div>
+
+
+        </div>
     </body>
 </html>

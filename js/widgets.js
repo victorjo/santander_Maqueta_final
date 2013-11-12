@@ -1,20 +1,32 @@
+var htmlTemp = "";
+
 function getInstance(obj){
+
 		var thisW = $(obj);
 		if(typeof thisW.data("instanced") == 'undefined' || thisW.data("instanced") == 'undefined') thisW.data("instanced",new newWidgetInstance(thisW));
 		else thisW.data('instanced').routerAction();
 	}
+
+function creaWidgetAmpliado(){
+	var div =  $("<div>");
+	div.attr("id","newWidget");
+	div.css({"position":"absolute","width":"300px","border":"1px solid red","height":"300px"});
+	return div;
+}
 	
 	function newWidgetInstance(obj)
 	{
 		this.obj = obj;
-		this.topPos = this.obj.offset().top;
+		htmlTemp = this.obj.html();
+		this.obj.html("");
+		/*this.topPos = this.obj.offset().top;
 		this.leftPos = this.obj.offset().left;
 		this.topPosIn = this.obj.css('top');
-		this.leftPosIn = this.obj.css('left');
+		this.leftPosIn = this.obj.css('left');*/
 		this.width = this.obj.width();
 		this.height = this.obj.height();
 		
-		this.chPost = function () {
+		/*this.chPost = function () {
 							this.obj.attr({"instanced":"true"});
 							this.obj.css({'position':'fixed','top':this.topPos,'left':this.leftPos});
 							this.obj.animate({left:'10%',top:'10%'},300).animate({width:'80%',height:'80%'},800);
@@ -30,5 +42,5 @@ function getInstance(obj){
 								io.data('instanced','undefined')
 							});
 						}
-		this.chPost();
+		//this.chPost();*/
 	}
