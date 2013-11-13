@@ -25,6 +25,26 @@ var widgets = [
 				},
 				{
 					type:3,
+					contentMin:'<h3>Content Minified 3</h3>',
+					contentMax:'<h2>Content Maxified 3</h2>'
+				},
+				{
+					type:1,
+					contentMin:'<h3>Content Minified 3</h3>',
+					contentMax:'<h2>Content Maxified 3</h2>'
+				},
+				{
+					type:2,
+					contentMin:'<h3>Content Minified 3</h3>',
+					contentMax:'<h2>Content Maxified 3</h2>'
+				},
+				{
+					type:2,
+					contentMin:'<h3>Content Minified 3</h3>',
+					contentMax:'<h2>Content Maxified 3</h2>'
+				},
+				{
+					type:3,
 					contentMin:'<h3>Content Minified 4</h3>',
 					contentMax:'<h2>Content Maxified 4</h2>'
 				}
@@ -89,7 +109,7 @@ function newWidgetInstance(obj)
 					};
 	this.routerAction = function(positionMax){
 						destruyeOverlay();
-						this.obj.animate({'top':this.topPosIn,'left':this.leftPosIn,'width':this.width+'px','height':this.height+'px'},800).animate({'top':'+='+$("#wrappWidgets").offset().top,'left':'+='+$("#wrappWidgets").offset().left},300,function(){
+						this.obj.animate({'top':this.topPosIn,'left':this.leftPosIn,'width':this.width+'px','height':this.height+'px'},800,function(){ $("#wrappWidgets").animate({scrollTop:'0px'}); }).animate({'top':'+='+$("#wrappWidgets").offset().top,'left':'+='+$("#wrappWidgets").offset().left},300,function(){
 							var io = $(this);
 							io.css({'top':'-='+$("#wrappWidgets").offset().top,'left':'-='+$("#wrappWidgets").offset().left,'position':'static','z-index':0});
 							//io.css({'top':'auto','left':'auto','position':'relative','z-index':0});
