@@ -155,5 +155,13 @@
 			}
 
 			#wrappWidgets{
-				overflow:hidden;width:810px;height:590px;padding-top:10px;
+				overflow:hidden;width:810px;height:590px;padding-top:10px;position:relative;
+			}
+
+			.widget-min
+			{
+		
+				position: absolute;
+				background-color:#fff;
+				
 			}
