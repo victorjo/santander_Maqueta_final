@@ -106,11 +106,11 @@
 			}
 
 			.col1{
-				width:250px;width: 245px;height: 578px;margin-left: 10px;
+				width:250px;width: 245px;height: 578px;
 			}
 
 			.col2{
-				width:500px;height: 578px;
+				width:502px;height: 578px;
 			}
 
 
@@ -133,11 +133,6 @@
 			.divTop{
 				margin-top: 20px;
 			}
-			
-
-			.widget{
-				border:1px solid #b9b9b9;
-			}
 
 			#navContent{
 				width:30px;margin-top:-40px;margin-right:2px;
@@ -155,13 +150,16 @@
 			}
 
 			#wrappWidgets{
-				overflow:hidden;width:810px;height:590px;padding-top:10px;position:relative;
+				overflow-y:scroll;width:790px;height:600px;position:static;
 			}
 
 			.widget-min
 			{
 		
-				position: absolute;
-				background-color:#fff;
 				
+				background-color:#fff;
+				border:1px solid #b9b9b9;
+				margin-right:10px;
+				margin-top:10px;
+				display:inline-table;
 			}
