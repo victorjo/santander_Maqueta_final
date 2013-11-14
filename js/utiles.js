@@ -14,7 +14,7 @@ function creaOverlay(color){
 	
 }
 
-function creaModal(){
+function creaModal(){ 
 	var c = $(document.body);
 	divContent = $("<div>");
 	divContent.attr({"id":"contentOverlay","class":"modal"});

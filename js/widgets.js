@@ -6,11 +6,11 @@ $(document).ready(function(){
 	});
 });
 
-
+ 
 var widgets = [
 				{
 					type:1,
-					contentMin:'<h3>Content Minified 1asdasdasdasdasd</h3>',
+					contentMin:'<h3>Content Minified 1</h3>',
 					contentMax:'<h2>Content Maxified 1</h2>'
 				},
 				{
