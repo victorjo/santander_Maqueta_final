@@ -6,7 +6,7 @@ $(document).ready(function(){
 	});
 });
 
- 
+
 var widgets = [
 				{
 					type:1,
@@ -70,7 +70,7 @@ function posWidgets(){
 		});
 		return attrClass;
 	}
-
+	var parser = 0;
 	$.each(widgets,function(i,v){
 		var newWidget = $('<div>');
 		var c = fillStyles(v.type);
@@ -78,6 +78,7 @@ function posWidgets(){
 		newWidget.attr("class",c);
 		newWidget.html(v.contentMin);
 		wrapper.append(newWidget);
+		if((parser%3)==0) newWidget.css('float','right');
 		var posWid = newWidget.offset();
 		var posWra = wrapper.offset()
 		console.log(posWid);
@@ -85,6 +86,7 @@ function posWidgets(){
 		var a = posWid.top-posWra.top;
 		var b = posWid.left-posWra.left;
 		newWidget.css({'top': a+"px",'left':b+"px"});
+		parser++;
 	});
 }
 
