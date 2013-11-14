@@ -82,7 +82,7 @@
 				height: 20px;
 				padding: 10px 5px 0;
 				border-bottom: 1px solid #b9b9b9;
-				cursor: pointer;
+				cursor: pointer; 
 			}
 
 			#wr_btnNav ul li:hover{
