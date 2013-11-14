@@ -10,7 +10,7 @@ $(document).ready(function(){
 var widgets = [
 				{
 					type:1,
-					contentMin:'<h3>Content Minified 1</h3>',
+					contentMin:'<h3>Content Minified 1asdasdasdasdasd</h3>',
 					contentMax:'<h2>Content Maxified 1</h2>'
 				},
 				{
@@ -76,6 +76,7 @@ function posWidgets(){
 		var c = fillStyles(v.type);
 		var wrapper = $("#wrappWidgets");
 		newWidget.attr("class",c);
+		newWidget.html(v.contentMin);
 		wrapper.append(newWidget);
 		var posWid = newWidget.offset();
 		var posWra = wrapper.offset()

@@ -106,11 +106,11 @@
 			}
 
 			.col1{
-				width:250px;width: 245px;height: 578px;
+				max-width:245px;width: 245px;height: 578px;
 			}
 
 			.col2{
-				width:502px;height: 578px;
+				max-width:502;width:502px;height: 578px;
 			}
 
 
