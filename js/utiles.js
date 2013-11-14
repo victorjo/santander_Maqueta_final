@@ -10,6 +10,7 @@ function creaOverlay(color){
 	divOverlay.css({"position":"fixed","position": "fixed","top":"0","left":"0","width":anchoTotal+"px","background":"white","opacity":".8","height":"100%"});
 	divOverlay.css({"position":"fixed","top":"0","left":"0","width":anchoTotal+"px","background":color,"opacity":".8","height":"100%",'display':'none'});
 	c.append(divOverlay);
+	divOverlay.fadeIn("slow");
 	divOverlay.click(destruyeOverlay);
 	banPop = true;
 	
