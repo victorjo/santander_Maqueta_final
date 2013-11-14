@@ -1,6 +1,5 @@
 var banPop = false;
 
-function creaOverlay(){
 function creaOverlay(color){
 	var divOverlay =  $("<div>");
 	var c = $(document.body);
@@ -15,7 +14,6 @@ function creaOverlay(color){
 	
 }
 
-function creaModal(){
 function creaModal(){ 
 	var c = $(document.body);
 	divContent = $("<div>");
