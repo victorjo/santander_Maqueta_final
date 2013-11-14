@@ -51,6 +51,8 @@ var widgets = [
 			];
 
 function posWidgets(){
+	var wrapper = $("#wrappWidgets");
+	wrapper.css('height',$(window).height()-wrapper.offset().top);
 	var widgetTypes = {
 					1:{
 						styles: ['widget-min','col1','altoTotal']
@@ -74,7 +76,6 @@ function posWidgets(){
 	$.each(widgets,function(i,v){
 		var newWidget = $('<div>');
 		var c = fillStyles(v.type);
-		var wrapper = $("#wrappWidgets");
 		newWidget.attr("class",c);
 		newWidget.html(v.contentMin);
 		wrapper.append(newWidget);

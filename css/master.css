@@ -46,6 +46,7 @@
 				border-right: 1px solid #9a051d;
 				padding: 5px 10px;
 				cursor: pointer;
+				float:right;
 			}
 
 			#wr_btnNavHeader img:first-child{
