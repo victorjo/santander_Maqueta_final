@@ -128,6 +128,19 @@ p{}
 		padding:5px;
 		font-size: 11px;
 	}
+	
+	.tbl_info{
+		border:1px solid black;
+	}
+
+	
+	.tbl_info td{
+		text-align: left;
+		padding:5px;
+		font-size: 11px;
+		border-bottom: 1px
+	}
+
 
 .btn{
 	width:150px;
@@ -156,4 +169,25 @@ p{}
 	float:right;
 	position:relative;
 	top:210px;
+}
+
+.radio{
+	width:12px; 
+	height:12px; 
+	border-radius:7px 7px 7px 7px;
+	border:thin black solid; 
+	margin-left:auto; 
+	margin-right:auto;
+}
+
+.radiochkd{
+	background-color:black;
+	border-color:black;
+	width:12px; 
+	height:12px; 
+	border-radius:7px 7px 7px 7px;
+	border:thin black solid; 
+	margin-left:auto; 
+	margin-right:auto;
+
 }
