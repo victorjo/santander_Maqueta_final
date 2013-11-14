@@ -1,4 +1,5 @@
 function getInstance(obj){
+ function getInstance(obj){
 		var thisW = $(obj);
 		if(typeof thisW.data("instanced") == 'undefined' || thisW.data("instanced") == 'undefined') thisW.data("instanced",new newWidgetInstance(thisW));
 		else thisW.data('instanced').routerAction();
