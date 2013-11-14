@@ -1,0 +1,127 @@
+*{
+		font-family: Arial, Helvetica, sans-serif;
+		margin: 0;
+
+}
+
+h1,h2,h3,h4,h5{
+	margin-bottom: 10px;
+}
+
+p{}
+
+
+#titulo {
+	background-color: #E8E8E8;
+	border-right:1px solid black;
+	width: 154px;
+	height: 45px;
+	padding: 10px;
+	float: left;
+}
+
+.f_titleWid{
+	font-size: 13px;
+	font-weight: bolder;
+}
+
+
+#header {
+	background-color: #E8E8E8;
+	width: 760px;
+	height: 35px;
+	float: right;
+	border-bottom:1px solid black;
+}
+#navegador {
+	background-color: #E8E8E8;
+	border-right:1px solid black;
+	border-top:1px solid black;
+	width: 174px;
+	height: 475px;
+	float: left;
+}
+
+#navegador ul{
+	list-style: none;
+	padding:0;
+}
+
+#navegador ul li{
+	float: left;
+	display: block;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+	width: 165px;
+	padding: 10px 0 10px 10px;
+	cursor: pointer;
+}
+
+#navegador ul li:hover{
+	font-weight: normal;
+}
+
+.active{
+	background: #FFFFFF;
+	cursor: pointer;
+	font-weight: normal;
+	border-top:2px solid black;
+}
+
+
+
+#contenido {
+	height: 465px;
+	padding: 20px ;
+    width: 720px;
+	float: right;
+}
+
+#contenido p {
+	line-height: 20px;
+}
+
+
+#widget {
+	border:1px solid black;
+	width: 935px;
+	font-size: 13px !important;
+	margin:auto;
+	overflow: hidden;
+}
+
+
+/**  BALANCE TRANSFER **/
+
+
+.wra_Select{
+		margin-top: 20px;
+		float:left;
+		width:240px;
+	}
+
+	.tbl_consulta{
+		border:1px solid black;
+	}
+
+	.tbl_consulta th{
+		background: #efefef;
+		text-align: left;
+		padding: 10px;
+		padding-left: 20px;
+		font-size: 12px;
+
+	}
+
+	.tbl_consulta tr:nth-child(2) td{
+		font-weight: bold;
+	}
+
+
+	.tbl_consulta td{
+		text-align: center;
+		border-bottom: 1px dotted black;
+		padding:5px;
+		font-size: 11px;
+	}
+
