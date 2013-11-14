@@ -28,10 +28,12 @@ p{}
 
 #header {
 	background-color: #E8E8E8;
-	width: 760px;
-	height: 35px;
+	width: 750px;
+	height: 25px;
 	float: right;
+	padding-right: 10px;
 	border-bottom:1px solid black;
+	overflow: hidden;
 }
 #navegador {
 	background-color: #E8E8E8;
@@ -50,7 +52,7 @@ p{}
 #navegador ul li{
 	float: left;
 	display: block;
-	font-weight: bold;
+	font-weight: normal;
 	border-bottom: 1px solid black;
 	width: 165px;
 	padding: 10px 0 10px 10px;
@@ -58,7 +60,7 @@ p{}
 }
 
 #navegador ul li:hover{
-	font-weight: normal;
+	font-weight: bolder;
 }
 
 .active{
