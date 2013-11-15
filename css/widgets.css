@@ -100,6 +100,15 @@ p{}
 		width:240px;
 	}
 
+.wra_Select input{
+	width:195px;
+	height: 25px;
+	border:1px solid black;
+	text-align: center;
+	background: #efefef;
+
+}
+
 	.tbl_consulta{
 		border:1px solid black;
 	}
@@ -123,10 +132,21 @@ p{}
 
 
 	.tbl_consulta td{
-		text-align: center;
 		border-bottom: 1px dotted black;
 		padding:5px;
 		font-size: 11px;
+	}
+
+	.txtCenter{
+		text-align: center;
+	}
+
+	.txtLeft{
+		text-align: left;
+	}
+
+	.smallTxt{
+		font-size: 10px;
 	}
 
 .btn{

@@ -81,42 +81,40 @@
 	
 			<div class="wra_Select">
 			<p><b>N&uacute;mero de tarjeta</b></p>
-			<input type="text" />
+			<input type="text"  placeholder="Seleccionar" value="1234***789"/>
 			</div>
 
 			
 			<div class="wra_Select">
 			<p><b>Instituci&oacute;n bancaria o comercial</b></p>
-			<input type="text" />
+			<input type="text"  placeholder="Seleccionar" />
 			
 			</div>
 
 			<div class="wra_Select">
 			<p><b>Ingrese el monto que desea transferir</b></p>
-			<input type="text" />
+			<input type="text" placeholder="$0.00" value="$9,999,999"/>
 			
 			</div>
 			
-
-			<div class="titTabla">
-				Mis transferencias de saldo
-			<div class="btnHeader btnHeaderTable">
-				<p>Exportar</p>
-				<img src="../img/botones/exportar.png" />
-			</div>
+			
+			<div style="float: left; margin-top: 25px;">
 				
+			
+			<h4>2. Realice su transferencia de saldo</h4>
+			<p>A continuaci&oacute;n, seleccione la(s) tarjeta(s) a la(s) que quiere tranferir el saldo:</p>
+		
 			</div>
 
 			<table class="tbl_consulta" style="width:100%;float:left;">
 
 				<tr>
-					<td>Fecha</td>
-					<td>Tarjeta Destino</td>
-					<td>Tarjeta de Origen</td>
-					<td>Saldo transferido</td>
-					<td>Pago mensual</td>
+					<td>Tarjetas de cr&eacute;dito</td>
+					<td>Saldo</td>
+					<td>Saldo a transferir</td>
+					<td>Pago</td>
 					<td>Tasa</td>
-					<td>Estatus</td>
+					
 				</tr>
 				<tr>
 					<td>Fecha</td>
@@ -124,8 +122,7 @@
 					<td>Tarjeta de Origen</td>
 					<td>Saldo transferido</td>
 					<td>Pago mensual</td>
-					<td>Tasa</td>
-					<td>Estatus</td>
+					
 				</tr>
 				<tr>
 					<td>Fecha</td>
@@ -133,11 +130,26 @@
 					<td>Tarjeta de Origen</td>
 					<td>Saldo transferido</td>
 					<td>Pago mensual</td>
-					<td>Tasa</td>
-					<td>Estatus</td>
+					
+				</tr>
+				<tr>
+					<td>Fecha</td>
+					<td>Tarjeta Destino</td>
+					<td>Tarjeta de Origen</td>
+					<td>Saldo transferido</td>
+					<td>Pago mensual</td>
+					
 				</tr>
 			</table>
 
+			
+			<div style="float: left;margin-top:20px;">
+			<p class="smallTxt">
+				*El beneficio de la Tasa Preferencial/Promocional tendrá una vigencia de 12 meses; contados a partir del mes en que se realice la transferencia de saldo a la Tarjeta Santander, una vez transcurrido este periodo, si el tarjetahabiente no terminó de liquidar la deuda objeto de la transferencia, el saldo remanente de la deuda será sujeto a las condiciones del saldo revolviste de la tarjeta de Crédito.
+			</p>
+			</div>
+				<div class='btn Fright marginOne' onclick="destruyeOverlay()">Aceptar</div>
+				<div class='btn Fright marginOne' onclick="destruyeOverlay()">Cancelar</div>
 
 		</div>
 		<div id="navegador">
