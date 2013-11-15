@@ -136,7 +136,7 @@ function newWidgetInstance(obj)
 	this.chPost = function () {
 						this.obj.attr({"instanced":"true"});
 						this.obj.css({'position':'fixed','top':this.topPos,'left':this.leftPos,'z-index':50});
-						this.obj.animate({left:'10%',top:'10%'},300,function(){ creaOverlay('#000'); }).animate({width:'80%',height:'80%'},800);
+						this.obj.animate({left:'10%',top:'10%'},300,function(){ creaOverlay('#000'); }).animate({width:'935px',height:'541px'},800);
 					};
 	this.routerAction = function(positionMax){
 						destruyeOverlay();
