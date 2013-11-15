@@ -62,6 +62,7 @@ p{}
 	width: 174px;
 	height: 475px;
 	float: left;
+	position:relative;
 }
 
 #navegador ul{
@@ -90,13 +91,12 @@ p{}
 	border-top:2px solid black;
 }
 
-
-
 #contenido {
-	height: 465px;
-	padding: 20px ;
+    float: right;
+    height: 465px;
+    padding: 20px;
+    position: relative;
     width: 720px;
-	float: right;
 }
 
 #contenido p {
@@ -110,17 +110,13 @@ p{}
 	font-size: 13px !important;
 	margin:auto;
 	overflow: hidden;
+	
 }
 
 #widgetred{
 	border:1px solid black;
-<<<<<<< HEAD
 	width: 247px;
 	height:289px;
-=======
-	width: 242px;
-	height:285px;
->>>>>>> 3fedac65bf337f20a84af6b47b5ae25d1cfa0c48
 	font-size: 13px !important;
 	margin:auto;
 	overflow: hidden;
@@ -157,10 +153,6 @@ p{}
 		float:left;
 		width:240px;
 	}
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 3fedac65bf337f20a84af6b47b5ae25d1cfa0c48
 	
 .wra_Select2{
 		margin-top: 5px;
@@ -168,21 +160,6 @@ p{}
 		width:100%;
 		
 	}
-<<<<<<< HEAD
-=======
-=======
-
-.wra_Select input{
-	width:195px;
-	height: 25px;
-	border:1px solid black;
-	text-align: center;
-	background: #efefef;
-
-}
-
->>>>>>> c9f1b17382ce8be41c3d8b4e84ddf1249061083b
->>>>>>> 3fedac65bf337f20a84af6b47b5ae25d1cfa0c48
 	.tbl_consulta{
 		border:1px solid black;
 	}
@@ -214,22 +191,6 @@ p{}
 	
 	.tbl_info{
 		border:1px solid black;
-<<<<<<< HEAD
-=======
-	}
-
-	
-	.tbl_info td{
-		text-align: left;
-		padding:5px;
-		font-size: 11px;
-		border-bottom: 1px
-	}
-
-
-	.txtCenter{
-		text-align: center;
->>>>>>> 3fedac65bf337f20a84af6b47b5ae25d1cfa0c48
 	}
 
 	
@@ -289,14 +250,13 @@ p{}
 
 .botonera{
 	float:right;
-	position:relative;
-	top:70%;
+	position:absolute;
+	bottom:0;
+	right:0;
+	margin-right:30px;
+	margin-bottom:20px;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 3fedac65bf337f20a84af6b47b5ae25d1cfa0c48
 .radio{
 	width:12px; 
 	height:12px; 
@@ -320,12 +280,12 @@ p{}
 
 .aviso{
 	float:right;
-	position:relative;
-	top:35%;
+	position:absolute;
+	bottom:0;
 	margin-bottom:10px;
 	margin-right:10px;
+	margin-left:10px
 	
-<<<<<<< HEAD
 }
 
 .cont{
@@ -333,16 +293,7 @@ p{}
 	border: thin black solid;
 	width:100%;
 	float:left;
-	height:60%;
-=======
-}
-
-.cont{
-	
-	border: thin black solid;
-	width:100%;
-	float:left;
-	height:60%;
+	height:255px;
 }
 
 .input{
@@ -358,35 +309,13 @@ p{}
 	
 }
 
-=======
-.modalTxt{
-	text-align: justify;
->>>>>>> 3fedac65bf337f20a84af6b47b5ae25d1cfa0c48
-}
-
-.input{
-	float:left;
-	margin:10px 0 0 30px;
-	width:35%;
-	
-}
-<<<<<<< HEAD
-.txtbox{
-	color:#CCCCCC;
-	width:100%;
-	border-color:#999999;
-	
-}
-
-#slider{
-	width:100%;
-	background-color:#E6E8E8;
-	height:85px;
-	float:left;
-	margin:10px 0 10px 0;
-	overflow:hidden;
-	
-	
+#slider {
+    background-color: #E6E8E8;
+    float: left;
+    height: 85px;
+    margin: 10px 0;
+    overflow: hidden;
+    width: 100%;
 }
 
 .serv_in{
@@ -405,11 +334,11 @@ p{}
 }
 
 #rightarrow{
-	margin-left:10px;
+	margin-left:20px;
 	float:right;
 	height:55px;
-	width:30px;
+	width:15px;
+	margin-top:-50px;
 }
-=======
->>>>>>> c9f1b17382ce8be41c3d8b4e84ddf1249061083b
->>>>>>> 3fedac65bf337f20a84af6b47b5ae25d1cfa0c48
+
+/*iojuoijioji*/
