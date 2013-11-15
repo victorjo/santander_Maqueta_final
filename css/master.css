@@ -6,7 +6,7 @@
 			#absoluteWrapper
 			{
 				margin:0px auto;
-				width:1260px;
+				width:100%;
 			}
 
 			.columnSB{
@@ -173,4 +173,49 @@
 
 			#wrappWidgets::-webkit-scrollbar   {
 				display:none;
+			}
+
+			/*
+
+			*/
+
+
+
+			.btnHeader{
+				float: right;
+				width: 32px;
+				height: 32px;
+				cursor: pointer;
+				
+				
+			}	
+
+			.btnHeaderTable{
+				height: 24px;
+			    margin: -10px;
+			    padding-top: 10px;
+			    width: 110px;
+			}
+
+			.titTabla{
+				margin-bottom:0px;
+				padding:10px 10px 5px 30px;
+				border:1px solid black;
+				border-bottom:0;
+				float:left;
+				width:678px;
+				background:#F4F4F4;
+				margin-top:20px;
+				height:20px;
+				font-weight:bold
+			}
+
+			.titTabla p{
+				float:left;
+			}
+
+			.titTabla img{
+				float:right;
+				margin-top:-7px;
+				cursor: pointer;
 			}

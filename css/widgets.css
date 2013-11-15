@@ -114,8 +114,13 @@ p{}
 
 #widgetred{
 	border:1px solid black;
+<<<<<<< HEAD
 	width: 247px;
 	height:289px;
+=======
+	width: 242px;
+	height:285px;
+>>>>>>> 3fedac65bf337f20a84af6b47b5ae25d1cfa0c48
 	font-size: 13px !important;
 	margin:auto;
 	overflow: hidden;
@@ -152,6 +157,10 @@ p{}
 		float:left;
 		width:240px;
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 3fedac65bf337f20a84af6b47b5ae25d1cfa0c48
 	
 .wra_Select2{
 		margin-top: 5px;
@@ -159,6 +168,21 @@ p{}
 		width:100%;
 		
 	}
+<<<<<<< HEAD
+=======
+=======
+
+.wra_Select input{
+	width:195px;
+	height: 25px;
+	border:1px solid black;
+	text-align: center;
+	background: #efefef;
+
+}
+
+>>>>>>> c9f1b17382ce8be41c3d8b4e84ddf1249061083b
+>>>>>>> 3fedac65bf337f20a84af6b47b5ae25d1cfa0c48
 	.tbl_consulta{
 		border:1px solid black;
 	}
@@ -190,6 +214,22 @@ p{}
 	
 	.tbl_info{
 		border:1px solid black;
+<<<<<<< HEAD
+=======
+	}
+
+	
+	.tbl_info td{
+		text-align: left;
+		padding:5px;
+		font-size: 11px;
+		border-bottom: 1px
+	}
+
+
+	.txtCenter{
+		text-align: center;
+>>>>>>> 3fedac65bf337f20a84af6b47b5ae25d1cfa0c48
 	}
 
 	
@@ -253,6 +293,10 @@ p{}
 	top:70%;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 3fedac65bf337f20a84af6b47b5ae25d1cfa0c48
 .radio{
 	width:12px; 
 	height:12px; 
@@ -281,6 +325,16 @@ p{}
 	margin-bottom:10px;
 	margin-right:10px;
 	
+<<<<<<< HEAD
+}
+
+.cont{
+	
+	border: thin black solid;
+	width:100%;
+	float:left;
+	height:60%;
+=======
 }
 
 .cont{
@@ -297,6 +351,26 @@ p{}
 	width:35%;
 	
 }
+.txtbox{
+	color:#CCCCCC;
+	width:100%;
+	border-color:#999999;
+	
+}
+
+=======
+.modalTxt{
+	text-align: justify;
+>>>>>>> 3fedac65bf337f20a84af6b47b5ae25d1cfa0c48
+}
+
+.input{
+	float:left;
+	margin:10px 0 0 30px;
+	width:35%;
+	
+}
+<<<<<<< HEAD
 .txtbox{
 	color:#CCCCCC;
 	width:100%;
@@ -336,3 +410,6 @@ p{}
 	height:55px;
 	width:30px;
 }
+=======
+>>>>>>> c9f1b17382ce8be41c3d8b4e84ddf1249061083b
+>>>>>>> 3fedac65bf337f20a84af6b47b5ae25d1cfa0c48
