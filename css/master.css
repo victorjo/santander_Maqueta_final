@@ -6,7 +6,7 @@
 			#absoluteWrapper
 			{
 				margin:0px auto;
-				width:1250px;
+				width:1260px;
 			}
 
 			.columnSB{
@@ -142,7 +142,7 @@
 			}
 
 			#navContent{
-				width:30px;margin-top:-40px;margin-right:2px;
+				position:absolute;width:30px;margin-top:-40px;margin-right:2px;
 			}
 			.btnNavWidget{
 				width:30px;height:30px;cursor: pointer;
@@ -157,7 +157,7 @@
 			}
 
 			#wrappWidgets{
-				overflow-y:scroll;width:790px;height:600px;position:static;
+				overflow-y:scroll;width:771px;height:600px;position:static;
 			}
 
 			.widget-min
@@ -169,4 +169,8 @@
 				margin-right:10px;
 				margin-top:10px;
 				display:inline-table;
+			}
+
+			#wrappWidgets::-webkit-scrollbar   {
+				display:none;
 			}

@@ -25,21 +25,14 @@
                     width:"200"
 
                 });
+            });
 
-                $(".btnNavWidget").click(activaBtn);
-
-            function activaBtn(){
+            function activaBtn(obj){
                 $(".ActiveNav").each(function(){
                         $(this).removeClass('ActiveNav').addClass('noActiveNav');
                     });
-
-                    //$(".ActiveNav").removeClass('ActiveNav').addClass('noActiveNav');
-                    $(this).addClass('ActiveNav').removeClass('noActiveNav');
-                    console.log("click");                
+                    $(obj).addClass('ActiveNav').removeClass('noActiveNav');
             }
-
-        });
-
         </script>
 
 
@@ -117,9 +110,9 @@
                     </div>
                 </div>
               
-                <div class="Fright" style="display:none" id="navContent">
-                    <div class="Fright noActiveNav btnNavWidget"></div>
-                    <div class="Fright ActiveNav btnNavWidget" ></div>
+                <div class="Fright"  id="navContent">
+                    <div class="Fright ActiveNav btnNavWidget"></div>
+                    <div class="Fright noActiveNav btnNavWidget" ></div>
                     <div class="Fright noActiveNav btnNavWidget" ></div>
                 </div>
             </div>
