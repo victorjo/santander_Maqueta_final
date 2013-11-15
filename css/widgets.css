@@ -139,7 +139,6 @@ p{}
 	color:black;
 	text-align: center;
 	box-shadow:2px 2px 5px gray;
-	float:left;
 	margin-left:20px;
 	font-size:12px;
 	font-weight:bold;
@@ -156,4 +155,12 @@ p{}
 	float:right;
 	position:relative;
 	top:210px;
+}
+
+.modalTxt{
+	text-align: justify;
+}
+
+.marginOne{
+	margin:20px;
 }
