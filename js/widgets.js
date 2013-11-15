@@ -5,8 +5,7 @@ $(document).ready(function(){
 		getInstance(this);
 	});
 });
-
-
+var globalVarOfVal = 0;
 var widgets = [
 				{
 					type:1,
@@ -65,13 +64,6 @@ function posWidgets(){
 					}
 				};
 
-	function fillStyles(type){
-		var attrClass = "";
-		$.each(widgetTypes[type].styles,function(i,v){
-			attrClass += v+" ";	
-		});
-		return attrClass;
-	}
 	var parser = 0;
 	$.each(widgets,function(i,v){
 		var newWidget = $('<div>');
@@ -82,13 +74,48 @@ function posWidgets(){
 		if((parser%3)==0) newWidget.css('float','right');
 		var posWid = newWidget.offset();
 		var posWra = wrapper.offset()
-		console.log(posWid);
-		console.log(posWra);
 		var a = posWid.top-posWra.top;
 		var b = posWid.left-posWra.left;
 		newWidget.css({'top': a+"px",'left':b+"px"});
 		parser++;
 	});
+
+	function fillStyles(type){
+		var attrClass = "";
+		$.each(widgetTypes[type].styles,function(i,v){
+			attrClass += v+" ";	
+		});
+		return attrClass;
+	}
+
+	(function (wrapper){
+		var obj = $("#navContent");
+		var posLeft = wrapper.offset().left + 790;
+		var posTop =  wrapper.height()/2;
+		obj.css({'left':posLeft,'top':(posTop-obj.height())});
+		var c = 1;
+		$('.btnNavWidget').each(function(i,v){
+			$(v).attr('onclick','moveScroll(this,'+Math.round(((wrapper[0].scrollHeight/3) ))*c+')');
+			c++;
+		});
+		wrapper.scroll(function(){
+			if(globalVarOfVal>0) return false;
+			var thisS = $(this);
+			var separator = Math.round(thisS.height());
+			//Le falta dinamismo a esta parte pero despues se lo agrego AI
+			if(thisS.scrollTop()>=((separator/4)+180)) activaBtn($('#navContent > div:nth-child(3)'));
+			else if(thisS.scrollTop()>=(separator/4) && thisS.scrollTop() < ((separator/4)+90)) activaBtn($('#navContent > div:nth-child(2)'));
+			else if(thisS.scrollTop()<20) activaBtn($('#navContent > div:nth-child(1)'));
+		});
+	})(wrapper);
+}
+
+function moveScroll(obj,math){
+	globalVarOfVal++;
+	if($(obj).next().hasClass('ActiveNav')) ope = '-';
+	else ope = '+';
+	$("#wrappWidgets").animate({'scrollTop': ope+'='+math+'px'},'slow',function(){ globalVarOfVal=0; });
+	activaBtn(obj);
 }
 
 function getInstance(obj){
@@ -116,7 +143,6 @@ function newWidgetInstance(obj)
 						this.obj.animate({'top':this.topPosIn,'left':this.leftPosIn,'width':this.width+'px','height':this.height+'px'},800,function(){ $("#wrappWidgets").animate({scrollTop:'0px'}); }).animate({'top':'+='+$("#wrappWidgets").offset().top,'left':'+='+$("#wrappWidgets").offset().left},300,function(){
 							var io = $(this);
 							io.css({'top':'-='+$("#wrappWidgets").offset().top,'left':'-='+$("#wrappWidgets").offset().left,'position':'static','z-index':0});
-							//io.css({'top':'auto','left':'auto','position':'relative','z-index':0});
 							io.attr({"instanced":"false"});
 							io.data('instanced','undefined')
 						});
