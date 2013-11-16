@@ -160,6 +160,19 @@ p{}
 		width:100%;
 		
 	}
+	
+.wra_Select3{
+		margin-top: 10px;
+		float:left;
+		width:580px;
+	}
+	
+.wra_Select3 input{
+		margin-top: 20px;
+		float:left;
+		width:100%;
+	}
+
 	.tbl_consulta{
 		border:1px solid black;
 	}
