@@ -1,6 +1,8 @@
 
 var globalVarOfVal = 0;
 var globalFlah = 0;
+var normal = 1610;
+
 $(document).ready(function(){
 	posWidgets();
 	$(".widget-min").click(function(){
@@ -108,8 +110,11 @@ function posWidgets(){
 		var posTop =  wrapper.height()/2;
 		obj.css({'left':posLeft,'top':(posTop-obj.height())});
 		var c = 1;
+		normal = normal / 3;
 		$('.btnNavWidget').each(function(i,v){
-			$(v).attr('onclick','moveScroll(this,'+Math.round(((wrapper[0].scrollHeight/3) ))*c+')');
+			//$(v).attr('onclick','moveScroll(this,'+Math.round(((wrapper[0].scrollHeight/3) ))*c+')');
+			$(v).attr({'onclick':'moveScroll(this,'+Math.round(((normal*i)))+')','data':i});
+
 			c++;
 		});
 		wrapper.scroll(function(){
@@ -124,7 +129,11 @@ function posWidgets(){
 	})(wrapper);
 }
 
+
+
+
 function moveScroll(obj,math){
+	if($(obj).hasClass('ActiveNav')) return false;
 	globalVarOfVal++;
 	if($(obj).next().hasClass('ActiveNav')) ope = '-';
 	else ope = '+';
@@ -148,10 +157,10 @@ function newWidgetInstance(obj)
 	this.width = this.obj.width();
 	this.height = this.obj.height();
 	this.chPost = function () {
-						this.obj.attr({"instanced":"true"});
-						this.obj.css({'position':'fixed','top':this.topPos,'left':this.leftPos,'z-index':50});
-						this.obj.animate({left: ($(window).width()/2)-467+'px',top:'10%'},300,function(){creaOverlay('#000',document.body,0); var scope = $(this); $(scope).children('.on').fadeOut(800,function(){ $(scope).children('.off').fadeIn(300) }) }).animate({width:'935px',height:'541px'},800);
-					};
+			this.obj.attr({"instanced":"true"});
+			this.obj.css({'position':'fixed','top':this.topPos,'left':this.leftPos,'z-index':50});
+			this.obj.animate({left: ($(window).width()/2)-467+'px',top:'10%'},300,function(){creaOverlay('#000',document.body,0); var scope = $(this); $(scope).children('.on').fadeOut(800,function(){ $(scope).children('.off').fadeIn(300) }) }).animate({width:'935px',height:'541px'},800);
+			};
 	this.routerAction = function(positionMax){
 						if(globalFlah>0) return false;
 						destruyeOverlay();
