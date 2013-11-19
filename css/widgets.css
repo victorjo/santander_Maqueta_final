@@ -13,8 +13,12 @@ p{}
 
 
 #titulo {
-	background-color: #E8E8E8;
-	border-right:1px solid black;
+	background-image: url('../lineagrafica/widamphdr.png');
+	background-size: 100% 100%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-style:black;
+	font-size:11px;
+	border-right:1px solid #a6a6a6;
 	width: 154px;
 	height: 45px;
 	padding: 10px;
@@ -35,11 +39,14 @@ p{}
 
 
 #header {
-	background-color: #E8E8E8;
-	width: 760px;
-	height: 35px;
+	background-image:url('../lineagrafica/widamphdr.png');
+	background-size: 100% 100%;
+	width: 758px;
+	height: 30px;
 	float: right;
-	border-bottom:1px solid black;
+	border:1px #a6a6a6 solid;
+	box-shadow:1px 0px 5px #a6a6a6;
+	
 }
 
 #headerwidred{
@@ -105,7 +112,7 @@ p{}
 
 
 #widget {
-	border:1px solid black;
+	border:1px solid #a6a6a6;
 	width: 935px;
 	font-size: 13px !important;
 	margin:auto;
@@ -223,18 +230,18 @@ p{}
 
 
 .btn{
-	width:150px;
+	width:225px;
 	height:23px;
 	padding-top:7px;
 	border-radius:15px 15px 15px 15px;
-	border:thin #D2D2D3 solid;
-	background-color:#D2D2D3;
+	border:thin #F3F3F3 solid;
+	background-color:#FFFFFF;
 	color:black;
 	text-align: center;
-	box-shadow:2px 2px 5px gray;
+	box-shadow:2px 2px 2px gray;
 	float:left;
 	margin-left:20px;
-	font-size:12px;
+	font-size:11px;
 	font-weight:bold;
 	
 }
@@ -270,10 +277,10 @@ p{}
 
 .botonera{
 	float:right;
-	position:relative;
+	position:absolute;
 	bottom:0;
 	right:0;
-	margin-right:30px;
+	margin-right:20px;
 	margin-bottom:20px;
 }
 
@@ -320,6 +327,7 @@ p{}
 	float:left;
 	margin:10px 0 0 30px;
 	width:35%;
+	font-weight:bold;
 	
 }
 .txtbox{
