@@ -13,6 +13,11 @@ $(document).ready(function(){
 		console.log(globalFlah);
 	});
 });
+
+window.onresize = function(){
+	posWidgets();
+}
+
 var widgets = [
 				{
 					type:1,
@@ -105,8 +110,16 @@ function posWidgets(){
 	}
 
 	(function (wrapper){
+		if($(window).width()>1356) 
+		{
+			$("#wrappWidgets").css("width","1028px");
+			var alen = 1030;
+		}else{
+			$("#wrappWidgets").css("width","771px");
+		}
 		var obj = $("#navContent");
-		var posLeft = wrapper.offset().left + 790;
+		var posLeft = wrapper.offset().left;
+		posLeft += alen || 790;
 		var posTop =  wrapper.height()/2;
 		obj.css({'left':posLeft,'top':(posTop-obj.height())});
 		var c = 1;

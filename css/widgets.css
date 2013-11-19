@@ -115,7 +115,7 @@ p{}
 
 #widgetred{
 	border:1px solid black;
-	width: 247px;
+	width: 243px;
 	height:289px;
 	font-size: 13px !important;
 	margin:auto;
@@ -263,7 +263,7 @@ p{}
 
 .botonera{
 	float:right;
-	position:absolute;
+	position:relative;
 	bottom:0;
 	right:0;
 	margin-right:30px;
