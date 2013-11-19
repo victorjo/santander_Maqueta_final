@@ -13,8 +13,12 @@ p{}
 
 
 #titulo {
-	background-color: #E8E8E8;
-	border-right:1px solid black;
+	background-image: url('../lineagrafica/widamphdr.png');
+	background-size: 100% 100%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-style:black;
+	font-size:11px;
+	border-right:1px solid #a6a6a6;
 	width: 154px;
 	height: 45px;
 	padding: 10px;
@@ -36,11 +40,14 @@ p{}
 
 
 #header {
-	background-color: #E8E8E8;
-	width: 760px;
-	height: 35px;
+	background-image:url('../lineagrafica/widamphdr.png');
+	background-size: 100% 100%;
+	width: 758px;
+	height: 30px;
 	float: right;
-	border-bottom:1px solid black;
+	border:1px #a6a6a6 solid;
+	box-shadow:1px 0px 5px #a6a6a6;
+	
 }
 
 #headerwidred{
@@ -106,7 +113,7 @@ p{}
 
 
 #widget {
-	border:1px solid black;
+	border:1px solid #a6a6a6;
 	width: 935px;
 	font-size: 13px !important;
 	margin:auto;
@@ -116,7 +123,7 @@ p{}
 
 #widgetred{
 	border:1px solid black;
-	width: 247px;
+	width: 243px;
 	height:289px;
 	font-size: 13px !important;
 	margin:auto;
@@ -185,6 +192,26 @@ p{}
 		width:100%;
 		
 	}
+	
+.wra_Select3{
+		margin-top: 10px;
+		float:left;
+		width:580px;
+	}
+	
+.wra_Select4{
+		margin-top: 5px;
+		float:left;
+		width:650px;
+		}
+
+	
+.wra_Select3 input{
+		margin-top: 20px;
+		float:left;
+		width:100%;
+	}
+
 	.tbl_consulta{
 		border:1px solid black;
 	}
@@ -228,18 +255,18 @@ p{}
 
 
 .btn{
-	width:150px;
+	width:225px;
 	height:23px;
 	padding-top:7px;
 	border-radius:15px 15px 15px 15px;
-	border:thin #D2D2D3 solid;
-	background-color:#D2D2D3;
+	border:thin #F3F3F3 solid;
+	background-color:#FFFFFF;
 	color:black;
 	text-align: center;
-	box-shadow:2px 2px 5px gray;
+	box-shadow:2px 2px 2px gray;
 	float:left;
 	margin-left:20px;
-	font-size:12px;
+	font-size:11px;
 	font-weight:bold;
 	
 }
@@ -278,7 +305,7 @@ p{}
 	position:absolute;
 	bottom:0;
 	right:0;
-	margin-right:30px;
+	margin-right:20px;
 	margin-bottom:20px;
 }
 
@@ -325,6 +352,7 @@ p{}
 	float:left;
 	margin:10px 0 0 30px;
 	width:35%;
+	font-weight:bold;
 	
 }
 .txtbox{
@@ -503,5 +531,98 @@ p{}
             .alto12{
                 height:126px;
             }
+/*Switch*/
+
+.onoffswitch {
+position: relative; width: 90px;
+-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+display: none;
+}
+.onoffswitch-label {
+display: block; overflow: hidden; cursor: pointer;
+border: 2px solid #66666; border-radius: 5px;
+border: 2px solid #505050;
+}
+.onoffswitch-inner {
+width: 200%; margin-left: -100%;
+-moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in  0s;
+-o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+font-size: 16px; color: white; font-family: Helvetica,Arial, sans-serif; font-weight: bold;
+-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+content: "SI";
+padding-left: 10px;
+background-color: #185241; color:#FFFFFF;
+}
+.onoffswitch-inner:after {
+content: "NO";
+padding-right: 10px;
+background-color: #F8F8F8; color: #666666;
+text-align: right;
+}
+.onoffswitch-switch {
+width: 40px; margin: 0px;
+background: #FFFFFF;
+border: 2px solid #666666; border-radius: 5px;
+position: absolute; top: 0; bottom: 0; right: 46px;
+-moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+-o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0,0,0,0.1)), to(rgba(0,0,0,0)));
+background-image: -webkit-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+background-image: -moz-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+background-image: -o-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+background-image: linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+right: 0px;
+}
+/*------*/
+
+#info {
+    display: none;
+    float: right;
+    margin-left: 356px;
+    margin-top: 46px;
+    position: absolute;
+}
+#info2 {
+    display: none;
+    float: right;
+    margin-left: 356px;
+    margin-top: 110px;
+    position: absolute;
+}
+
+
+ #infobtn{
+	float:left;
+	margin:20px 0 0 50px
+}
+ #infobtn2{
+	float:left;
+	margin:20px 0 0 50px
+}
+
+
+#infobtn:hover{
+	cursor:pointer;
+}
+
+#infobtn2:hover{
+	cursor:pointer;
+}
+
+
+	
+	
 
 /*iojuoijioji*/
