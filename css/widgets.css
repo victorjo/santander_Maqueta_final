@@ -29,7 +29,8 @@ p{}
 .f_titleWidred{
 	font-size: 12px;
 	font-weight: bolder;
-	float:left;
+	float:right;
+	margin-right: 0px;
 }
 
 
@@ -121,6 +122,30 @@ p{}
 	margin:auto;
 	overflow: hidden;
 }
+
+.radioreducido {
+    border: thin solid #000000;
+    border-radius: 7px;
+    height: 12px;
+    margin-left: -60px;
+    margin-right: 80px;
+    width: 12px;
+    float:right;
+    cursor: pointer;
+   margin-top: 10px;
+}
+
+.btnHeadereduci {
+    cursor: pointer;
+     height: 90px;
+    width: 20px;
+    padding:5px 3px;
+    display:inline-table;
+    margin-right: 0px;
+    float:right;
+}
+
+
 #titlewidred{
 	border-bottom:1px solid black;
 	height:23px;
@@ -319,11 +344,11 @@ p{}
 }
 
 .serv_in{
-	height:55px;
-	width:55px;
-	margin:15px 0 0 10px;
+	height:56px;
+	width:54px;
+	margin:4px ;
 	background-color:#C2C2C1;
-	float:left;
+	float:inherit;
 	border-radius: 5px;
 }
 
@@ -332,6 +357,19 @@ p{}
 	cursor:pointer;
 	
 }
+
+.cuadserv {
+	height: 62px;
+	width: 59px;
+	background-color: #58595A;
+	margin-left: 5px;
+	margin-right: 0px;
+	display:inline-table;
+	float:none;
+	padding: 0;
+	margin-top: 5px;
+}
+
 
 #rightarrow{
 	margin-left:20px;

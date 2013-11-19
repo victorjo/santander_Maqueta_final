@@ -16,7 +16,7 @@
 	border:1px solid black;
 	width: 250px;
 	height: 500px;
-	font-size: 13px !important;
+	font-size: 11px !important;
 	font-color: #ffffff;
 	margin:auto;
 	overflow: hidden;
@@ -24,13 +24,14 @@
 }
 
 
-#header {
+.header {
 	background-color: #000000;
 	font-color: #ffffff;
 	font-weight: bold;
-	width: 500px;
+	width: 250px;
 	height: 35px;
-	float: left;
+	float: right;
+	margin-right: 0px;
 }
 
 
@@ -61,8 +62,10 @@ float:left;
 
 .cajatexto {
 	margin: 0px auto;
-	width: 203px;
-	height: 90px;
+	width: 220px;
+	height: 158px;
+	margin-right: 0px;
+	float:left;
 	
 }
 
@@ -76,16 +79,16 @@ float:left;
 
 
 <div id="Widredu">
-<div id="header">  
+<div class="header">  
 <p class="h1">Pago de Servicios</p>
-
 	<div class="btnHeadereduci"> <img src="../img/botones/info.png"> </div>
 	<div class="btnHeadereduci"> <img src="../img/botones/info.png"> </div>
-	
  
 	</div>
+	<p style="font-size:11px; padding-top:0px;margin: 0px auto;width: 214px;height: 63px;font-family:Helvetica, Arial, sans-serif;">Seleccione de la lista el servicio al cual desea realizar el pago</p>
+
 	
-	
+				
 		<div id="serv">
 		<img src="../img/servicio.png" style="margin-left:25px;margin-top:10px;float:left;">
 		<img src="../img/servicio.png" style="margin-left:10px;margin-top:10px;float:left;">
@@ -95,7 +98,7 @@ float:left;
 		
 		</div>
 
-		<div style="width:210px;margin:182px auto;height:167px;border: solid #000 0px;margin-top:110px">
+		<div style="width:210px;margin:182px auto;height:167px;border: solid #000 0px;margin-top:75px">
 			<div class="cuadserv">
 				<div class="serv_in " style="margin:10 10 10 10;"></div>
 			</div>
@@ -116,14 +119,29 @@ float:left;
 				<div class="serv_in " style="margin:10 10 10 10;"></div>
 			</div>
 
-			<div class="radioreducido"> 2 </div>  
-			<div class="radioreducido"  style="background-color:#adaeaf;"> 1 </div> 
+			<div id="radioreducido"> </div>
 
 			<div class="cajatexto"> 
-				<div class="radiowidredu"></div>
-			<p style="font-size:12px; padding-top:30px;"> Si el servicio que desea pagar no se <br>
+			<p style="font-size:11px; padding-top:10px;"> Si el servicio que desea pagar no se <br>
 		encuentra en la lista de click en </p>
+		
+		<div class="wra_Select">
+<p>
+Nombre Comercial o Razón Social del servicio
+</p>
+<input type="text" placeholder="Seleccionar"  style="margin:0 auto;">
+</div>
+
+	<div class="wra_Select">
+<p>
+Número de Convenio
+</p>
+<input type="text" placeholder="Seleccionar"  style="margin:0 auto;">
+</div>
+
 			</div>
+			<div class="btn Fright marginOne" onclick="destruyeOverlay()" style="margin-bottom:20px;">Pagar Servicio</div>
+
 			<div class="btn Fright marginOne" onclick="destruyeOverlay()">Búsqueda avanzada</div>			
 		</div>
 		
