@@ -73,6 +73,7 @@ var widgets = [
 
 function posWidgets(){
 	var wrapper = $("#wrappWidgets");
+	wrapper.children(".widget-min").remove();
 	wrapper.css('height',$(window).height()-wrapper.offset().top);
 	$("#dataClient").css("width", $(window).width()-830);
 	var widgetTypes = {
@@ -106,7 +107,7 @@ function posWidgets(){
 		newWidget.html(v.contentMin);
 		wrapper.append(newWidget);
 		newWidget.attr("data-pos",parser+1);
-		//if((parser%3)==0) newWidget.css('float','right');
+		if(((parser%3)==0 && parser!=0)) newWidget.css('float','right');
 		var posWid = newWidget.offset();
 		var posWra = wrapper.offset()
 		var a = posWid.top-posWra.top;
