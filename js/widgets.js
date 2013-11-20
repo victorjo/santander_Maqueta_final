@@ -14,6 +14,8 @@ $(document).ready(function(){
 	});
 });
 
+
+//para commit
 window.onresize = function(){
 	posWidgets();
 }
