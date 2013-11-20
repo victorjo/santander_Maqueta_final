@@ -13,44 +13,57 @@ $(document).ready(function(){
 		console.log(globalFlah);
 	});
 });
+
+window.onresize = function(){
+	posWidgets();
+}
+
 var widgets = [
 				{
 					type:1,
+					order:1,
 					contentMin:'<div class="cabecera" style="height: 10px; background: none repeat scroll 0% 0% black; color: white; font-size: 12px; padding: 9px;"><div><p>Administración de tarjeta</p></div><div class="btnCabecera"></div><div class="btnCabecera"></div></div>',
 					contentMax:'<h2>Content Maxified 1</h2>'
 				},
 				{
 					type:2,
+					order:2,
 					contentMin:'<div class="on"><div id="widgetred"><div id="headerwidred"><div class="btnHeader"><img src="../img/botones/maximize.png" /></div><div class="btnHeader"><img src="../img/botones/info.png" /></div><p style="width:80%;">TRANSFERENCIA DE SALDOS</p></div><div id="titlewidred"><p>Conoce la transferencia de saldos:</p></div><div class="txtwidred"><p>El beneficio de la Tasa Preferencial<br />Promocional, tendrá una vigencia de 12<br />meses, contados a partir del mes en que se<br />realice la transferencia de saldo a la Tarjeta<br />Santander, una vez transcurrido este periodo,<br />si el tarjetahabiente no terminó de liquidar la<br />deuda objeto de la transferencia, el saldo<br />remanente de la deuda será sujeto a las<br />condiciones del saldo revolvente de la tarjeta<br />de Crédito</p></div><div class="botonera" style="top:10%"><div class="btnwidred" style="margin-right:10px">Sí, me interesa</div></div></div></div><div class="off" style="display:none"></div>',
 					contentMax:'<h2>Content Maxified 2</h2>'
 				},
 				{
 					type:2,
+					order:3,
 					contentMin:'<div class="cabecera" style="height: 10px; background: none repeat scroll 0% 0% black; color: white; font-size: 12px; padding: 9px;"><div><p>Administración de tarjeta</p></div><div class="btnCabecera"></div><div class="btnCabecera"></div></div>',
 					contentMax:'<h2>Content Maxified 3</h2>'
 				},
 				{
 					type:3,
+					order:4,
 					contentMin:'<div class="cabecera" style="height: 10px; background: none repeat scroll 0% 0% black; color: white; font-size: 12px; padding: 9px;"><div><p>Administración de tarjeta</p></div><div class="btnCabecera"></div><div class="btnCabecera"></div></div>',
 					contentMax:'<h2>Content Maxified 3</h2>'
 				},
 				{
 					type:1,
+					order:5,
 					contentMin:'<div class="cabecera" style="height: 10px; background: none repeat scroll 0% 0% black; color: white; font-size: 12px; padding: 9px;"><div><p>Administración de tarjeta</p></div><div class="btnCabecera"></div><div class="btnCabecera"></div></div>',
 					contentMax:'<h2>Content Maxified 3</h2>'
 				},
 				{
 					type:2,
+					order:6,
 					contentMin:'<div class="cabecera" style="height: 10px; background: none repeat scroll 0% 0% black; color: white; font-size: 12px; padding: 9px;"><div><p>Administración de tarjeta</p></div><div class="btnCabecera"></div><div class="btnCabecera"></div></div>',
 					contentMax:'<h2>Content Maxified 3</h2>'
 				},
 				{
 					type:2,
+					order:7,
 					contentMin:'<div class="cabecera" style="height: 10px; background: none repeat scroll 0% 0% black; color: white; font-size: 12px; padding: 9px;"><div><p>Administración de tarjeta</p></div><div class="btnCabecera"></div><div class="btnCabecera"></div></div>',
 					contentMax:'<h2>Content Maxified 3</h2>'
 				},
 				{
 					type:3,
+					order:8,
 					contentMin:'<div class="cabecera" style="height: 10px; background: none repeat scroll 0% 0% black; color: white; font-size: 12px; padding: 9px;"><div><p>Administración de tarjeta</p></div><div class="btnCabecera"></div><div class="btnCabecera"></div></div>',
 					contentMax:'<h2>Content Maxified 4</h2>'
 				}
@@ -73,21 +86,24 @@ function posWidgets(){
 				};
 
 	var parser = 0;
+	//fatal hardcode
 	$.ajax({
-                    url:'balance_maquetas/informativo.html',
-                    type:'GET',
-                    dataType:'html',
-                    success: function(res){
-                        $('.off').html(res);
-                    }
-                });
-	$.each(widgets,function(i,v){
+		url:'balance_maquetas/informativo.html',
+        type:'GET',
+        dataType:'html',
+        success: function(res){
+        	$('.off').html(res);
+        }
+    });
+    //end of fatal hardcode
+    wids = sortByKey(widgets, 'order');
+	$.each(wids,function(i,v){
 		var newWidget = $('<div>');
 		var c = fillStyles(v.type);
 		newWidget.attr("class",c);
 		newWidget.html(v.contentMin);
 		wrapper.append(newWidget);
-		if((parser%3)==0) newWidget.css('float','right');
+		//if((parser%3)==0) newWidget.css('float','right');
 		var posWid = newWidget.offset();
 		var posWra = wrapper.offset()
 		var a = posWid.top-posWra.top;
@@ -95,6 +111,13 @@ function posWidgets(){
 		newWidget.css({'top': a+"px",'left':b+"px"});
 		parser++;
 	});
+
+	function sortByKey(array, key) {
+	    return array.sort(function(a, b) {
+	        var x = a[key]; var y = b[key];
+	        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+	    });
+	}
 
 	function fillStyles(type){
 		var attrClass = "";
@@ -105,8 +128,16 @@ function posWidgets(){
 	}
 
 	(function (wrapper){
+		if($(window).width()>1490) 
+		{
+			$("#wrappWidgets").css("width","1028px");
+			var alen = 1030;
+		}else{
+			$("#wrappWidgets").css("width","771px");
+		}
 		var obj = $("#navContent");
-		var posLeft = wrapper.offset().left + 790;
+		var posLeft = wrapper.offset().left;
+		posLeft += alen || 790;
 		var posTop =  wrapper.height()/2;
 		obj.css({'left':posLeft,'top':(posTop-obj.height())});
 		var c;
