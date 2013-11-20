@@ -109,22 +109,45 @@ function posWidgets(){
 		var posLeft = wrapper.offset().left + 790;
 		var posTop =  wrapper.height()/2;
 		obj.css({'left':posLeft,'top':(posTop-obj.height())});
-		var c = 1;
-		normal = normal / 3;
-		$('.btnNavWidget').each(function(i,v){
-			//$(v).attr('onclick','moveScroll(this,'+Math.round(((wrapper[0].scrollHeight/3) ))*c+')');
-			$(v).attr({'onclick':'moveScroll(this,'+Math.round(((normal*i)))+')','data':i});
+		var c;
+		var altoScrolling = wrapper[0].scrollHeight;
+		var altosScroll = [];
 
-			c++;
+		c = $('.btnNavWidget').size(); 
+		altoScrolling = altoScrolling/(c);
+		for (c;c>=0;c--){altosScroll.push(altoScrolling*c);}
+		altosScroll.reverse();
+		$('.btnNavWidget').each(function(i,v){
+			$(this).attr('onclick','moveScroll(this,'+altosScroll[i]+')');
 		});
+
+		banPosSelect = 0;
+		posScroll = 0;
+		banderita=false;
 		wrapper.scroll(function(){
 			if(globalVarOfVal>0) return false;
 			var thisS = $(this);
-			var separator = Math.round(thisS.height());
-			//Le falta dinamismo a esta parte pero despues se lo agrego AI
-			if(thisS.scrollTop()>=((separator/4)+180)) activaBtn($('#navContent > div:nth-child(3)'));
-			else if(thisS.scrollTop()>=(separator/4) && thisS.scrollTop() < ((separator/4)+90)) activaBtn($('#navContent > div:nth-child(2)'));
-			else if(thisS.scrollTop()<20) activaBtn($('#navContent > div:nth-child(1)'));
+			
+			if(posScroll > thisS.scrollTop()){
+					banderita =false;
+			}else{
+					banderita = true;
+			}
+			
+			posScroll = thisS.scrollTop();
+
+			if((posScroll+100) > altosScroll[banPosSelect] && banderita){
+				banPosSelect++;
+			}else if((posScroll-100) <= altosScroll[(banPosSelect-1)] && !banderita)
+			{
+				if(banPosSelect<=1){
+					banPosSelect = 1 ;
+				}else{
+					banPosSelect--;
+				}
+			}
+				activaBtn($('#navContent > div:nth-child('+banPosSelect+')'));
+
 		});
 	})(wrapper);
 }
@@ -133,12 +156,16 @@ function posWidgets(){
 
 
 function moveScroll(obj,math){
+
 	if($(obj).hasClass('ActiveNav')) return false;
 	globalVarOfVal++;
 	if($(obj).next().hasClass('ActiveNav')) ope = '-';
 	else ope = '+';
-	$("#wrappWidgets").animate({'scrollTop': ope+'='+math+'px'},'slow',function(){ globalVarOfVal=0; });
+	//alert($("#wrappWidgets").scrollTop()+"math"+math);
+	//$("#wrappWidgets").animate({'scrollTop': ope+math+'px'},'slow',function(){ globalVarOfVal=0; });
+	$("#wrappWidgets").animate({'scrollTop': math+'px'},'slow',function(){ globalVarOfVal=0; });
 	activaBtn(obj);
+
 }
 
 function getInstance(obj){
