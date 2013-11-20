@@ -103,6 +103,7 @@ function posWidgets(){
 		newWidget.attr("class",c);
 		newWidget.html(v.contentMin);
 		wrapper.append(newWidget);
+		newWidget.attr("data-pos",parser+1);
 		//if((parser%3)==0) newWidget.css('float','right');
 		var posWid = newWidget.offset();
 		var posWra = wrapper.offset()
