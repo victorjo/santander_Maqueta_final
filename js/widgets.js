@@ -78,14 +78,16 @@ function posWidgets(){
 				};
 
 	var parser = 0;
+	//fatal hardcode
 	$.ajax({
-                    url:'balance_maquetas/informativo.html',
-                    type:'GET',
-                    dataType:'html',
-                    success: function(res){
-                        $('.off').html(res);
-                    }
-                });
+		url:'balance_maquetas/informativo.html',
+        type:'GET',
+        dataType:'html',
+        success: function(res){
+        	$('.off').html(res);
+        }
+    });
+    //end of fatal hardcode
 	$.each(widgets,function(i,v){
 		var newWidget = $('<div>');
 		var c = fillStyles(v.type);
@@ -110,7 +112,7 @@ function posWidgets(){
 	}
 
 	(function (wrapper){
-		if($(window).width()>1356) 
+		if($(window).width()>1490) 
 		{
 			$("#wrappWidgets").css("width","1028px");
 			var alen = 1030;
