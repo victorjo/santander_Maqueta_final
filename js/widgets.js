@@ -161,7 +161,27 @@ function posWidgets(){
 		banPosSelect = 1;
 		posScroll = 0;
 		dirScroll=false;
-		wrapper.scroll(function(){
+
+
+		function disableWhell(e){
+    		e.preventDefault();
+    	}
+ 
+	var mousewheelevt=(/Firefox/i.test(navigator.userAgent))? "DOMMouseScroll" : "mousewheel" 
+ 
+		if (document.attachEvent) 
+    document.attachEvent("on"+mousewheelevt, disableWhell)
+	else if (document.addEventListener) 
+    document.addEventListener(mousewheelevt, disableWhell, false)
+ 
+
+
+
+
+		
+		wrapper.scroll(function(e){
+			preventDefault(e);
+
 			if(globalVarOfVal>0) return false;
 			var thisS = $(this);
 			altoScrollTop = $("#wrappWidgets").height()+ thisS.scrollTop();
