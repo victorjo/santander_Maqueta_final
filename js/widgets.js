@@ -70,7 +70,7 @@ var widgets = [
 					contentMax:'<h2>Content Maxified 4</h2>'
 				}
 			];
-
+// prueba
 function posWidgets(){
 	var wrapper = $("#wrappWidgets");
 	wrapper.css('height',$(window).height()-wrapper.offset().top);
