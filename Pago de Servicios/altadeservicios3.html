@@ -4,7 +4,7 @@
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>Alta de Servicios 3</title>
-<link rel="stylesheet" href="../css/widgets.css">
+<link rel="stylesheet" href="../css/widgets.css"/>
 
 <script src="../js/jquery10.2.min.js"></script>
 <script src="../js/ddSlick.js"></script>
@@ -14,14 +14,6 @@
 
 
 <style>
-.btnHeader{
-	float: right;
-	width: 32px;
-	height: 32px;
-	cursor: pointer;
-	
-	
-}	
 
 .btnHeaderTable{
 	height: 24px;
@@ -65,16 +57,36 @@
 		</div>
 		<div id="header">
 			<div class="btnHeader">
-				<img src="../img/botones/info.png" />
+				<img src="../img/botones/btn_cerrar.png"/>
 			</div>
 			<div class="btnHeader">
-				<img src="../img/botones/maximize.png" />
+				<img src="../img/botones/info_.png"/>
 			</div>
+
 		</div>
+		
 		<div id="contenido">
-			<h4>Comprobante de alta de servicio.</h4>
+		
+		<div id="vtacruzada">
 			
-			<table class="tbl_info" style="width:70%;float:left;">
+			<div class="vtaimg">
+			</div>
+			
+			<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
+			
+			<div class="vtapanel">
+				<div class="vtabtn"><img src="../img/iconos/tarjeta.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+				<div class="vtabtn"><img src="../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+				<div class="vtabtn"><img src="../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+			</div>
+			
+		</div>
+		
+			<h4 style="width:30%">Comprobante de alta de servicio.</h4>
+			
+			
+			
+			<table class="tbl_info" style="width:60%;float:left;">
 
 				<tr>
 					<td colspan="3">Nombre comercial o razón social del servicio</td>
@@ -101,17 +113,18 @@
 					<td style="color:#CCCCCC">1234567892345</td>
 				</tr>
 				<tr>
-					<td colspan="5" ><div class="btn" style="margin:0; padding:0;height:30px">Quiero dar de alta<br />otro servicio</div></td>
+					<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Quiero dar de alta<br />otro servicio</div></td>
 					
 				</tr>
 				
 
 				
 			</table>
-			<div class="botonera" style="top:55%">
-				<div class="btn" style="text-align: left"><img src="../img/iconos/img_impresora.png" style="margin-left:15px; float:left"/><p style="float:left;margin-left:15px;margin-top:-2px">Imprimir</p></div>
-				<div class="btnaceptar">Finalizar</div>
-			</div>
+			
+		<div class="botonera" style="margin-right:20px;width:auto;" >
+			<div class="btn"><img src="../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
+			<div class="btnaceptar">Finalizar</div>
+		</div>
 
 		</div>
 		
@@ -123,6 +136,8 @@
 			</ul>
 			<div class="aviso"><img src="../img/iconos/img_msj.png" />	</div>
 		</div>
+		
+		
 	</div>
 
 

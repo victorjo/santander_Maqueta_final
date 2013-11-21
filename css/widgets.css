@@ -50,6 +50,14 @@ p{}
 	
 }
 
+.btnHeader {
+    float:right;
+    margin-top:5px;
+    margin-right:10px;
+    cursor:pointer;
+    }
+
+
 
 #navegador {
 	background-color: #f4f4f4;
@@ -85,7 +93,7 @@ p{}
 	background: #FFFFFF;
 	cursor: pointer;
 	font-weight: normal;
-	border-top:2px solid black;
+	border-top:2px solid red;
 }
 
 #contenido {
@@ -93,7 +101,7 @@ p{}
     height: 465px;
     padding: 20px;
     position: relative;
-    width: 720px;
+    width: 719px;
 }
 
 #contenido p {
@@ -762,19 +770,69 @@ right: 0px;
 	cursor:pointer;
 }
 
+/*venta cruzada*/
 #vtacruzada{
-	float:left;
-	width:245px;
-	height:420px;
+	float:right;
+	width:205px;
+	height:380px;
+	margin:-20px 0 0 0;
 }
 
 .vtaimg{
-	width:100%;
-	height:285px;
-	background-color:#5F5959;
+	width:205px;
+	height:245px;
+	background-color:#676767;
 	float:left;
-	
 }
+
+.vtabtn{
+	width:205px;
+	height:27px;
+	background-image:url('../lineagrafica/vtabtn.png');
+	background-size:100% 100%;
+	border:1px #B2B2B2 solid; 
+	font-family: Arial, Helvetica, sans-serif ;
+	font-size:12px;
+	color: #676767;
+	float:left;
+	padding-top:8px;
+	font-weight:bold;
+	text-align: center;
+}
+
+.vtabtn:hover{
+	background-image:url('../lineagrafica/widamphdr.png');
+	cursor:pointer;
+}
+
+.vtabtn:active{
+	border-color:red;
+}
+
+.vtapanel{
+	margin-top:10px;
+	float:left;
+	box-shadow:1px 0px 5px #a6a6a6;
+}
+
+.vtaico{
+	float:left;
+	margin-left:15px;
+}
+
+.btnico{
+	float:left;
+	margin-left:45px;
+}
+
+.btntxt{
+	float:left;
+	margin-left:25px;
+	margin-top:-2px;
+}
+
+
+
 
 	
 	
