@@ -147,39 +147,55 @@ function posWidgets(){
 		var altoScrolling = wrapper[0].scrollHeight;
 		var altosScroll = [];
 
-		c = $('.btnNavWidget').size(); 
+
+		c = $('.btnNavWidget').size();
+		punteroC = c;
+		
 		altoScrolling = altoScrolling/(c);
-		for (c;c>=0;c--){altosScroll.push(altoScrolling*c);}
+		for (c;c>=0;c--){altosScroll.push(Math.round(altoScrolling*c));}
 		altosScroll.reverse();
 		$('.btnNavWidget').each(function(i,v){
 			$(this).attr('onclick','moveScroll(this,'+altosScroll[i]+')');
 		});
 
-		banPosSelect = 0;
+		banPosSelect = 1;
 		posScroll = 0;
-		banderita=false;
+		dirScroll=false;
 		wrapper.scroll(function(){
 			if(globalVarOfVal>0) return false;
 			var thisS = $(this);
-			
+			altoScrollTop = $("#wrappWidgets").height()+ thisS.scrollTop();
 			if(posScroll > thisS.scrollTop()){
-					banderita =false;
-			}else{
-					banderita = true;
+					dirScroll =false;
+			}else if(posScroll < thisS.scrollTop()){
+					dirScroll = true;
 			}
-			
 			posScroll = thisS.scrollTop();
 
-			if((posScroll+100) > altosScroll[banPosSelect] && banderita){
-				banPosSelect++;
-			}else if((posScroll-100) <= altosScroll[(banPosSelect-1)] && !banderita)
+
+			if(altoScrollTop >= altosScroll[(banPosSelect+1)] && dirScroll){
+				if(banPosSelect>3){
+					banPosSelect=2;
+					
+				}else{
+					banPosSelect++;
+				}
+
+			}else if((altoScrollTop-($("#wrappWidgets").height()/2))  <= altosScroll[(banPosSelect-1)] && !dirScroll)
 			{
+
 				if(banPosSelect<=1){
 					banPosSelect = 1 ;
 				}else{
+					console.log("resto posicion");
 					banPosSelect--;
 				}
 			}
+
+				if(banPosSelect==0){
+					banPosSelect=1;
+				}
+
 				activaBtn($('#navContent > div:nth-child('+banPosSelect+')'));
 
 		});
@@ -195,11 +211,8 @@ function moveScroll(obj,math){
 	globalVarOfVal++;
 	if($(obj).next().hasClass('ActiveNav')) ope = '-';
 	else ope = '+';
-	//alert($("#wrappWidgets").scrollTop()+"math"+math);
-	//$("#wrappWidgets").animate({'scrollTop': ope+math+'px'},'slow',function(){ globalVarOfVal=0; });
 	$("#wrappWidgets").animate({'scrollTop': math+'px'},'slow',function(){ globalVarOfVal=0; });
 	activaBtn(obj);
-
 }
 
 function getInstance(obj){
