@@ -236,10 +236,6 @@ function posWidgets(){
 	else if (document.addEventListener) 
     document.addEventListener(mousewheelevt, disableWhell, false)
  */
-
-
-
-
 		
 		wrapper.scroll(function(e){
 			//preventDefault(e);
@@ -282,8 +278,6 @@ function posWidgets(){
 		});
 	})(wrapper);
 }
-
-
 
 
 function moveScroll(obj,math){
