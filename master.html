@@ -11,16 +11,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" type="text/css" href="css/master.css">
+    <link rel="stylesheet" type="text/css" href="css/mouseWheel/mouseWheel.css">
     <script src="js/jquery10.2.min.js"></script>
     <script src="js/ddSlick.js"></script>
     <script src="js/balanceTransfer.js"></script>
     <script src="js/widgets.js"></script>
     <script src="js/utiles.js"></script>
+    <script src="js/mouseWheel/jquery.mousewheel.min.js"></script>
+    <script src="js/mouseWheel/jquery.mCustomScrollbar.min.js"></script>
+
     <style>
                     
 
                         
-                      
+
 
 
 
@@ -38,6 +42,15 @@
     $("select").ddslick({
     width:"200"
     });
+
+
+    $("#wrappWidgets").mCustomScrollbar({
+                    scrollButtons:{
+                        enable:true
+                    }
+                });
+
+
     });
     function activaBtn(obj){
     $(".ActiveNav").each(function(){
