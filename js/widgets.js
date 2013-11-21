@@ -2,6 +2,9 @@
 var globalVarOfVal = 0;
 var globalFlah = 0;
 var normal = 1610;
+var altoVentana = $(window).height();
+
+var tamanoWidget = 587;
 
 $(document).ready(function(){
 	posWidgets();
@@ -12,6 +15,10 @@ $(document).ready(function(){
 		globalFlah++;
 		console.log(globalFlah);
 	});
+
+		genFooterHeight();
+		ajustaBannerHeight();
+
 });
 
 
@@ -19,6 +26,57 @@ $(document).ready(function(){
 window.onresize = function(){
 	posWidgets();
 }
+
+
+// GENERADOR DE LA BOTONERA
+function obtieneAltoTotal (){
+	var altoContenedor = $("#wrappWidgets")[0].scrollHeight;
+	var numeroDeBtns = Math.floor(altoContenedor / tamanoWidget);
+	$("#navContent").html("");
+	for(var i=0;i < numeroDeBtns;i++){
+		btnDiv = creaBtn();
+		$("#navContent").append(btnDiv);
+	}
+
+	$("#navContent .btnNavWidget:first-child").removeClass("noActiveNav").addClass("ActiveNav");
+}
+
+function creaBtn(){
+		var btnDiv = $("<div>");
+		btnDiv.attr("class","Fright noActiveNav btnNavWidget");
+			return btnDiv;
+}
+
+
+
+function genFooterHeight(){
+		if(altoVentana > tamanoWidget){
+			var restaElementos = $("#avatarNavPrin").height();
+			restaElementos += $("#wr_btnNav").height();
+			restaElementos += $("#tipoServ").height();
+			restaElementos +=60;
+			restaElementos = altoVentana - restaElementos;
+			$("#footer").height(restaElementos);
+		}
+}
+
+
+function ajustaBannerHeight(){
+		if(altoVentana > tamanoWidget){
+			var restaElementos = $("#wr_SuperBanner").height();
+			restaElementos += $("#tipoServ").height();
+			restaElementos += 10;
+			restaElementos = altoVentana - restaElementos;
+			$("#wr_SuperBanner").height($("#wr_SuperBanner").height() + restaElementos);
+			// centra la imagen al div que lo contiene
+			//$("#wr_SuperBanner img").css("margin-top",(restaElementos/2) +"px")
+			$("#wr_SuperBanner img").css("margin-top",10 +"px")
+
+		}
+
+
+}
+
 
 var widgets = [
 				{
@@ -70,10 +128,13 @@ var widgets = [
 					contentMax:'<h2>Content Maxified 4</h2>'
 				}
 			];
-// prueba
+
 function posWidgets(){
+
+
+	
 	var wrapper = $("#wrappWidgets");
-	wrapper.css('height',$(window).height()-wrapper.offset().top);
+	wrapper.css('height',altoVentana-wrapper.offset().top);
 	$("#dataClient").css("width", $(window).width()-830);
 	var widgetTypes = {
 					1:{
@@ -144,9 +205,10 @@ function posWidgets(){
 		var posTop =  wrapper.height()/2;
 		obj.css({'left':posLeft,'top':(posTop-obj.height())});
 		var c;
-		var altoScrolling = wrapper[0].scrollHeight;
+		var altoScrolling = $("#wrappWidgets")[0].scrollHeight;
 		var altosScroll = [];
 
+		obtieneAltoTotal();
 
 		c = $('.btnNavWidget').size();
 		punteroC = c;
@@ -163,7 +225,7 @@ function posWidgets(){
 		dirScroll=false;
 
 
-		function disableWhell(e){
+		/*function disableWhell(e){
     		e.preventDefault();
     	}
  
@@ -173,14 +235,14 @@ function posWidgets(){
     document.attachEvent("on"+mousewheelevt, disableWhell)
 	else if (document.addEventListener) 
     document.addEventListener(mousewheelevt, disableWhell, false)
- 
+ */
 
 
 
 
 		
 		wrapper.scroll(function(e){
-			preventDefault(e);
+			//preventDefault(e);
 
 			if(globalVarOfVal>0) return false;
 			var thisS = $(this);
@@ -207,7 +269,6 @@ function posWidgets(){
 				if(banPosSelect<=1){
 					banPosSelect = 1 ;
 				}else{
-					console.log("resto posicion");
 					banPosSelect--;
 				}
 			}
