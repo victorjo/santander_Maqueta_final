@@ -134,6 +134,7 @@ function posWidgets(){
 
 	
 	var wrapper = $("#wrappWidgets");
+	wrapper.children(".widget-min").remove();
 	wrapper.css('height',altoVentana-wrapper.offset().top);
 	$("#dataClient").css("width", $(window).width()-830);
 	var widgetTypes = {
@@ -150,21 +151,23 @@ function posWidgets(){
 
 	var parser = 0;
 	//fatal hardcode
-	$.ajax({
-		url:'balance_maquetas/informativo.html',
-        type:'GET',
-        dataType:'html',
-        success: function(res){
-        	$('.off').html(res);
-        }
-    });
     //end of fatal hardcode
     wids = sortByKey(widgets, 'order');
 	$.each(wids,function(i,v){
 		var newWidget = $('<div>');
 		var c = fillStyles(v.type);
 		newWidget.attr("class",c);
-		newWidget.html(v.contentMin);
+		if(v.id==null) newWidget.html(v.contentMin);
+		else{
+			$.ajax({
+				url:'widgets/min_'+v.id+'.html',
+		        type:'GET',
+		        dataType:'html',
+		        success: function(res){
+		        	newWidget.html(res);
+		        }
+		    });
+		}
 		wrapper.append(newWidget);
 		newWidget.attr("data-pos",parser+1);
 		//if((parser%3)==0) newWidget.css('float','right');
@@ -195,6 +198,8 @@ function posWidgets(){
 		if($(window).width()>1490) 
 		{
 			$("#wrappWidgets").css("width","1028px");
+			$("[data-pos='3']").after('<div class="widget-min col1 alto2 " data-pos="codom"><h1>Publicidad</h1></div>');
+			$("[data-pos='7']").css('float','left');
 			var alen = 1030;
 		}else{
 			$("#wrappWidgets").css("width","771px");
