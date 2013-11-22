@@ -102,6 +102,7 @@ p{}
     padding: 20px;
     position: relative;
     width: 719px;
+    
 }
 
 #contenido p {
@@ -158,9 +159,9 @@ p{}
 	}
 
 	.tbl_consulta{
-		border:1px solid black;
+		border:1px #A7A7A7 solid;
 	}
-
+	
 	.tbl_consulta th{
 		background: #efefef;
 		text-align: left;
@@ -181,9 +182,9 @@ p{}
 
 	.tbl_consulta td{
 		text-align: center;
-		border-bottom: 1px dotted black;
 		padding:5px;
 		font-size: 11px;
+		border-collapse: collapse; /*cambios realizados 21 1113*/
 	}
 	
 	.tbl_info{
@@ -424,6 +425,9 @@ p{}
     position: absolute;
     right: 0;
     width: 100%;
+}
+.programar{
+	display:none;
 }
 .radio{
 	width:12px; 
@@ -832,6 +836,85 @@ right: 0px;
 }
 
 /*---------*/
+
+/*Panel de búsqueda (Transferencias)*/
+
+.searchpanel{
+	height:35px;
+	width:718px;
+	background-color:#f4f4f4;
+	box-shadow:0 1px 3px #a6a6a6;
+	margin:10 0 0 20;
+	float:left;
+}
+
+#status{
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	float:left;
+	width:155px;
+	text-align: center ;
+	font-weight:bold;
+	border-right:2px #b5b5b5 solid;
+	height:100%
+}
+
+#periodo{
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	float:left;
+	width:155px;
+	text-align: center ;
+	font-weight:bold;
+	border-right:2px #b5b5b5 solid;
+	height:100%
+}
+
+#rango{
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	float:left;
+	width:155px;
+	text-align: center ;
+	font-weight:bold;
+	border-right:2px #b5b5b5 solid;
+	height:100%
+}
+
+#periodo:hover{
+	background-image:url('../lineagrafica/vtabtn.png');
+	background-size:100% 100%;
+	cursor:pointer;
+}
+
+#status:hover{
+	background-image:url('../lineagrafica/vtabtn.png');
+	background-size:100% 100%;
+	cursor:pointer;
+}
+
+#rango:hover{
+	background-image:url('../lineagrafica/vtabtn.png');
+	background-size:100% 100%;
+	cursor:pointer;
+}
+
+.tabletitle{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	background-image:url('../lineagrafica/widamphdr.png');
+	float:left;
+	width:702px;
+	height:23px;
+	border:1px #a7a7a7 solid;
+	background-size: 100% 100%;
+	padding:7px 0 0 15px;
+	border-collapse: collapse;
+}
+/*-----*/
+
+
 
 
 
