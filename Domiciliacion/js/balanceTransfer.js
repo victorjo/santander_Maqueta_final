@@ -35,31 +35,6 @@
 				$("#rdbtn2").addClass("rdselect");
 
 			});
-			
-			$(".onoffswitch").click(function(){
-				
-								
-				/*o  = $(".programar"); 
-				if(o.css("display")=="none"){
-					o.show("slow");
-				}else{
-					o.hide("slow");
-				}*/
-				//$(".programar").fadeToggle("slow");
-			});	
-
-
-			$(".activo").click(function(){
-				$(".activo").hide("fast");
-				$(".inactivo").show("fast");
-				
-			});
-
-			$(".inactivo").click(function(){
-				$(".activo").show("fast");
-				$(".inactivo").hide("fast");
-				
-			});
 
 
 	

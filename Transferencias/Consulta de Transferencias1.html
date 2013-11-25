@@ -4,7 +4,7 @@
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>Consulta de Transferencias 1</title>
-<link rel="stylesheet" href="../css/widgets.css">
+<link rel="stylesheet" href="../css/widgets.css" />
 
 <script src="../js/jquery10.2.min.js"></script>
 <script src="../js/ddSlick.js"></script>
@@ -52,8 +52,8 @@
 	
 	<div id="widget">
 		<div id="titulo">
-			<p class="f_titleWid">PAGO <br />
-				DE SERVICIOS</p>
+			<p class="f_titleWid">TRANSFERENCIAS <br />
+				(Envío de Dinero)</p>
 
 		</div>
 		<div id="header">
@@ -65,95 +65,89 @@
 			</div>
 		</div>
 		<div id="contenido">
-			<h4>1.Seleccione el pago de servicio que desea consultar</h4>
+			<h4 style="color:red">Seleccione el estatus de las transferencias que desea 
+								consultar, así como el periodo de búsqueda y/o rango de 
+								importe para realizar una búsqueda más específica</h4>
+								
+			<div class="searchpanel">
+				<div id="status">
+					<div style="float:left;width :10px;height:10px;border-radius:5px;border:1px gray solid;margin:12px 0 0 25px"></div>
+					<p style="float:left; margin:8px 0 0 20px;">Estatus</p>
+				</div>
+				<div id="periodo">
+					<p style="float:left; margin:8px 0 0 17px;">Periodo de búsqueda</p>
+				</div>
+				<div id="rango">
+					<p style="float:left; margin:8px 0 0 25px;">Rango de importe</p>
+				</div>
+			</div>
 			
+			<h4 style="margin-top:10px;float:left;">Mis últimas 5 transferencias realizadas</h4>
+			<h4 style="margin-top:10px; float:right;margin-right:15px;text-decoration: underline">Calendario de transferencias</h4>
+			
+			<div class="tabletitle"><p style="float:left">Mis transferencias</p>
+									<img src="../img/botones/exportar.png" style="float:right;margin-right:10px"/>
+									<p style="float:right;margin-right:10px">Exportar</p>
+									</div>
 			<table class="tbl_consulta" style="width:100%;float:left;">
 
 				<tr>
-					<td>Nombre del Servicio</td>
-					<td>Fecha de alta</td>
-					<td>Convenio</td>
-					<td>Referencia</td>
-					<td>Último pago</td>
+					<td>Fecha</td>
+					<td>Descripción de la operación</td>
+					<td>Cuenta destino<br/>(Destinatario)</td>
+					<td>Cuenta de cargo</td>
 					<td>Importe (MXP)</td>
 					<td>Estatus</td>
-					<td>Descargar<br>Comprobante</td>
+					<td>Favorita</td>
 				</tr>
 				<tr>
-					
-					<td><div style="width:32px; height:32px; background-color:#ff9c00;float:left; border-radius: 3px;margin: 3px;"></div>Lorem Ipsum</td>
 					<td>dd/mm/aaaa</td>
-					<td>1234</td>
-					<td>1456789009876</td>
-					<td>dd/mm/aaaa</td>
+					<td>123456789123456789123456789<br />123456789123456789123456789</td>
+					<td>1234****5678<br /> (Lorem Ipsum)</td>
+					<td>1234****5678</td>
 					<td>999,999,999.00</td>
-					<td>Activo</td>
-
+					<td>Realizada</td>
+					<td>*</td>
 				</tr>
 				<tr>
-				
-					<td><div style="width:32px; height:32px; background-color:#1717b5;float:left; border-radius: 3px;margin: 3px;"></div>Lorem Ipsum</td>
 					<td>dd/mm/aaaa</td>
-					<td>1234</td>
-					<td>1456789009876</td>
-					<td>dd/mm/aaaa</td>
+					<td>123456789123456789123456789<br />123456789123456789123456789</td>
+					<td>1234****5678<br /> (Lorem Ipsum)</td>
+					<td>1234****5678</td>
 					<td>999,999,999.00</td>
-					<td>Activo</td>
-
+					<td>Realizada</td>
+					<td>*</td>
 				</tr>
 				<tr>
-					
-					<td><div style="width:32px; height:32px; background-color:#ea61b5;float:left; border-radius: 3px;margin: 3px;"></div>Lorem Ipsum</td>
 					<td>dd/mm/aaaa</td>
-					<td>1234</td>
-					<td>1456789009876</td>
-					<td>dd/mm/aaaa</td>
+					<td>123456789123456789123456789<br />123456789123456789123456789</td>
+					<td>1234****5678<br /> (Lorem Ipsum)</td>
+					<td>1234****5678</td>
 					<td>999,999,999.00</td>
-					<td>Activo</td>
-
+					<td>Realizada</td>
+					<td></td>
 				</tr>
 				<tr>
-					
-					<td><div style="width:32px; height:32px; background-color:#61c8ea;float:left; border-radius: 3px;margin: 3px;"></div>Lorem Ipsum</td>
 					<td>dd/mm/aaaa</td>
-					<td>1234</td>
-					<td>1456789009876</td>
-					<td>dd/mm/aaaa</td>
+					<td>123456789123456789123456789<br />123456789123456789123456789</td>
+					<td>1234****5678<br /> (Lorem Ipsum)</td>
+					<td>1234****5678</td>
 					<td>999,999,999.00</td>
-					<td>Activo</td>
-
+					<td>Realizada</td>
+					<td></td>
 				</tr>
 				<tr>
-					
-					<td><div style="width:32px; height:32px; background-color:#a2ea61;float:left; border-radius: 3px;margin: 3px;"></div>Lorem Ipsum</td>
 					<td>dd/mm/aaaa</td>
-					<td>1234</td>
-					<td>1456789009876</td>
-					<td>dd/mm/aaaa</td>
+					<td>123456789123456789123456789<br />123456789123456789123456789</td>
+					<td>1234****5678<br /> (Lorem Ipsum)</td>
+					<td>1234****5678</td>
 					<td>999,999,999.00</td>
-					<td>Activo</td>
-
+					<td>Realizada</td>
+					<td></td>
 				</tr>
-
-				<tr>
-					
-					<td><div style="width:32px; height:32px; background-color:#ae61ea;float:left; border-radius: 3px;margin: 3px;"></div>Lorem Ipsum</td>
-					<td>dd/mm/aaaa</td>
-					<td>1234</td>
-					<td>1456789009876</td>
-					<td>dd/mm/aaaa</td>
-					<td>999,999,999.00</td>
-					<td>Activo</td>
-
-				</tr>
-
-
 			</table>
-			<div class="botonera">
-				<div class="btn">Regresar</div>
-				<div class="btn">Cancelar</div>
-				<div class="btnaceptar">Confirmar</div>
-			</div>
+
+			
 
 		</div>
 		
@@ -162,7 +156,7 @@
 				<li>Entre Cuentas<br />Santander</li>
 				<li>A Otras Cuentas</li>
 				<li>Cuentas Registradas/<br />Alta/Baja</li>
-				<li class="active">Consulta de Transferencias</li>
+				<li class="active">Consulta <br />de Transferencias</li>
 			</ul>
 		</div>
 		
