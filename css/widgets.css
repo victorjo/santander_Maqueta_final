@@ -42,6 +42,14 @@ p{}
         border-bottom:1px solid black;
 }
 
+.btnHeader {
+    float:right;
+    margin-top:5px;
+    margin-right:10px;
+    cursor:pointer;
+    }
+
+
 #headerwidred{
         background-color: #E8E8E8;
         width: 96%;
@@ -323,6 +331,23 @@ p{}
 
 }
 
+.btnaceptar{
+	width:225px;
+	height:23px;
+	padding-top:7px;
+	border-radius:15px 15px 15px 15px;
+	border:thin #F3F3F3 solid;
+	background-color:#FFFFFF;
+	color:#FF0D37;
+	text-align: center;
+	box-shadow:2px 2px 2px gray;
+	float:left;
+	margin-left:20px;
+	font-size:11px;
+	font-weight:bold;
+	
+}
+
 
 
 /**  BALANCE TRANSFER **/
@@ -396,21 +421,21 @@ p{}
 
 
 .btn{
-        width:150px;
-        height:23px;
-        padding-top:7px;
-        border-radius:15px 15px 15px 15px;
-        border:thin #D2D2D3 solid;
-        background-color:#D2D2D3;
-        color:black;
-        text-align: center;
-        box-shadow:2px 2px 5px gray;
-        float:left;
-        margin-left:20px;
-        font-size:12px;
-        font-weight:bold;
-
+	width:225px;
+	height:23px;
+	padding-top:7px;
+	border-radius:15px 15px 15px 15px;
+	border:thin #F3F3F3 solid;
+	background-color:#FFFFFF;
+	color:black;
+	text-align: center;
+	box-shadow:2px 2px 2px gray;
+	float:left;
+	margin-left:20px;
+	font-size:11px;
+	font-weight:bold;
 }
+
 .btn:hover{
         background-color:#B8B8B8;
         color:white;
@@ -441,13 +466,14 @@ p{}
         cursor:pointer;
 }
 
-.botonera{
-        float:right;
-        position:relative;
-        bottom:0;
-        right:0;
-        margin-right:30px;
-        margin-bottom:20px;
+.botonera {
+    bottom: 0;
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
 }
 
 .radio{
