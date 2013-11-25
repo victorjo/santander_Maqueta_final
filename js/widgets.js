@@ -165,7 +165,7 @@ function posWidgets(){
 		if(v.id==null) newWidget.html(v.contentMin);
 		else{
 			$.ajax({
-				url:'widgets/min/'+v.id+'.html',
+				url:'widgets/min/w_'+v.id+'/index.html',
 		        type:'GET',
 		        dataType:'html',
 		        success: function(res){
