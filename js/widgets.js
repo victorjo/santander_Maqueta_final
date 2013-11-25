@@ -138,11 +138,9 @@ var widgets = [
 			];
 
 function posWidgets(){
-
-
-	
 	var wrapper = $("#wrappWidgets");
 	wrapper.children(".widget-min").remove();
+	console.log(altoVentana-wrapper.offset().top);
 	wrapper.css('height',altoVentana-wrapper.offset().top);
 	$("#dataClient").css("width", $(window).width()-830);
 	var widgetTypes = {
@@ -178,7 +176,7 @@ function posWidgets(){
 		}
 		wrapper.append(newWidget);
 		newWidget.attr({"data-pos":parser+1,"data-id":v.id});
-		//if((parser%3)==0) newWidget.css('float','right');
+		if((parser%3)==0) newWidget.css('float','right');
 		var posWid = newWidget.offset();
 		var posWra = wrapper.offset()
 		var a = posWid.top-posWra.top;
