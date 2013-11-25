@@ -140,8 +140,7 @@ var widgets = [
 function posWidgets(){
 	var wrapper = $("#wrappWidgets");
 	wrapper.children(".widget-min").remove();
-	console.log(altoVentana-wrapper.offset().top);
-	wrapper.css('height',altoVentana-wrapper.offset().top);
+	wrapper.css('height',altoVentana-50);
 	$("#dataClient").css("width", $(window).width()-830);
 	var widgetTypes = {
 					1:{
@@ -184,7 +183,6 @@ function posWidgets(){
 		newWidget.css({'top': a+"px",'left':b+"px"});
 		parser++;
 	});
-
 	function sortByKey(array, key) {
 	    return array.sort(function(a, b) {
 	        var x = a[key]; var y = b[key];
@@ -201,6 +199,7 @@ function posWidgets(){
 	}
 
 	(function (wrapper){
+
 		if($(window).width()>1490) 
 		{
 			$("#wrappWidgets").css("width","1028px");
@@ -287,6 +286,7 @@ function posWidgets(){
 				activaBtn($('#navContent > div:nth-child('+banPosSelect+')'));
 
 		});
+
 	})(wrapper);
 }
 
