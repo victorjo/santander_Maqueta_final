@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿#switchbox{
 	width:98px;
 	border:1px #a0a0a0 solid;
@@ -56,3 +57,6 @@
 	border:thin black solid;
 	height:50px;
 }
+=======
+﻿@import "../../css/componentes.css";
+>>>>>>> ce808344fcef7072e120582ce1cf525907bd985a

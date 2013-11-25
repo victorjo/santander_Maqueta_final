@@ -140,8 +140,7 @@ var widgets = [
 function posWidgets(){
 	var wrapper = $("#wrappWidgets");
 	wrapper.children(".widget-min").remove();
-	console.log(altoVentana-wrapper.offset().top);
-	wrapper.css('height',altoVentana-wrapper.offset().top);
+	wrapper.css('height',altoVentana-50);
 	$("#dataClient").css("width", $(window).width()-830);
 	var widgetTypes = {
 					1:{
@@ -166,7 +165,7 @@ function posWidgets(){
 		if(v.id==null) newWidget.html(v.contentMin);
 		else{
 			$.ajax({
-				url:'widgets/min/'+v.id+'.html',
+				url:'widgets/min/w_'+v.id+'/index.html',
 		        type:'GET',
 		        dataType:'html',
 		        success: function(res){
@@ -184,7 +183,6 @@ function posWidgets(){
 		newWidget.css({'top': a+"px",'left':b+"px"});
 		parser++;
 	});
-
 	function sortByKey(array, key) {
 	    return array.sort(function(a, b) {
 	        var x = a[key]; var y = b[key];
@@ -201,12 +199,20 @@ function posWidgets(){
 	}
 
 	(function (wrapper){
+
 		if($(window).width()>1490) 
 		{
 			$("#wrappWidgets").css("width","1028px");
 			$("[data-pos='3']").after('<div class="widget-min col1 alto2 " data-pos="codom"><h1>Publicidad</h1></div>');
 			$("[data-pos='7']").css('float','left');
 			var alen = 1030;
+		}else if($(window).width()<=768){
+			$("body").mousemove(function(e){
+				if(e.pageX<=0){
+					$(".wr_NavPrin").animate({'left':'0px'},'slow');
+				}
+				if(e.pageX>=190) $(".wr_NavPrin").animate({'left':'-190px'});
+			});
 		}else{
 			$("#wrappWidgets").css("width","771px");
 		}
@@ -287,6 +293,7 @@ function posWidgets(){
 				activaBtn($('#navContent > div:nth-child('+banPosSelect+')'));
 
 		});
+
 	})(wrapper);
 }
 
@@ -322,7 +329,7 @@ function newWidgetInstance(obj)
 			this.obj.animate({left: ($(window).width()/2)-467+'px',top:'10%'},300,function(){creaOverlay('#000',document.body,0); var scope = $(this); $(scope).children('.on').fadeOut(800,function(){ $(scope).children('.off').fadeIn(300) }) }).animate({width:'935px',height:'541px'},800);
 			var forA = this.obj;
 			$.ajax({
-				url:'widgets/max/'+this.obj.attr("data-id")+'.html',
+				url:'widgets/max/w_'+this.obj.attr("data-id")+'/index.html',
 		        type:'GET',
 		        dataType:'html',
 		        success: function(res){
