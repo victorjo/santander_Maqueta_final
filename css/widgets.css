@@ -360,7 +360,18 @@ p{}
 /**/
 @media screen and (max-width: 768px) {
 /*@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {*/
-  .wr_NavPrin { display: none; } /* your css rules for ipad portrait */
-  #wr_SuperBanner { display: none; }
+    body
+    {
+        width:768px;
+        overflow-x:hidden;
+    }
+    .wr_NavPrin 
+    { 
+        position:absolute; 
+        left:-190px;
+        z-index:10;
+        background:gray;
+    } 
+    #wr_SuperBanner { display: none; }
 }
 /**/

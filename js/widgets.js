@@ -206,6 +206,13 @@ function posWidgets(){
 			$("[data-pos='3']").after('<div class="widget-min col1 alto2 " data-pos="codom"><h1>Publicidad</h1></div>');
 			$("[data-pos='7']").css('float','left');
 			var alen = 1030;
+		}else if($(window).width()<=768){
+			$("body").mousemove(function(e){
+				if(e.pageX<=0){
+					$(".wr_NavPrin").animate({'left':'0px'},'slow');
+				}
+				if(e.pageX>=190) $(".wr_NavPrin").animate({'left':'-190px'});
+			});
 		}else{
 			$("#wrappWidgets").css("width","771px");
 		}
