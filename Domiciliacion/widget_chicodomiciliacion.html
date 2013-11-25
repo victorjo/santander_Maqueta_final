@@ -11,7 +11,12 @@
 <script src="../js/ddSlick.js"></script>
 <script src="../js/balanceTransfer.js"></script>
 <script src="js/componentes.js"></script>
- 	
+ 	<script>
+ 		$(document).ready(function(){
+ 			switchFunc("switchbox");
+ 			switchFunc("switchbox2");
+ 		});
+ 	</script>
 </head>
 <body>
 	<div id="Widredu">
@@ -22,11 +27,7 @@
 		</div>
 		<p class="cajaTexto">Seleccione la domiciliación que desea realizar.</p>
 		<div id="switchbox">
-			<div style="position:relative;width:500px;">
-				<div id="on">Tarjeta</div>
-				<div id="tope"></div>
-				<div id="off">Servicio</div>
-			</div>
+			
 		</div>
 	</div>	
 </body>
