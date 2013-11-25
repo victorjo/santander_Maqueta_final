@@ -329,7 +329,7 @@ function newWidgetInstance(obj)
 			this.obj.animate({left: ($(window).width()/2)-467+'px',top:'10%'},300,function(){creaOverlay('#000',document.body,0); var scope = $(this); $(scope).children('.on').fadeOut(800,function(){ $(scope).children('.off').fadeIn(300) }) }).animate({width:'935px',height:'541px'},800);
 			var forA = this.obj;
 			$.ajax({
-				url:'widgets/max/'+this.obj.attr("data-id")+'.html',
+				url:'widgets/max/w_'+this.obj.attr("data-id")+'/index.html',
 		        type:'GET',
 		        dataType:'html',
 		        success: function(res){
