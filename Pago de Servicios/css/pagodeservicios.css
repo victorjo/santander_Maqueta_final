@@ -90,31 +90,8 @@ h6{
     right: -225px;
 }
 
-.dropdown{
-	width:100%;float:left;
-	background-color:#EBEDEE;
-	margin-top:10px;
-	height:22px;
-}
-/* Dropdown*/
-#downico1{
-	float:left;
-	margin: 1px 5px 0 10px;
-}
-#downico2{
-	float:left;
-	margin: 1px 5px 0 10px;
-}
-#upico1{
-	float:left;
-	margin: 1px 5px 0 10px;
-	display:none;
-}
-#upico2{
-	float:left;
-	margin: 1px 5px 0 10px;
-	display:none;
-}
+
+
 #select1{
 	display:none;
 }
