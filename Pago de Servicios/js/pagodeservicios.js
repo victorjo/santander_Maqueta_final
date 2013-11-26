@@ -27,7 +27,7 @@ var switchO = '<div style="position:relative;width:230px;">';
     left:"+=80"
     },"fast");
   });
-  
+  //dropdown
   $("#infobtn").click(function(){
 		$("#info").fadeToggle("slow");
        });
@@ -47,7 +47,7 @@ var switchO = '<div style="position:relative;width:230px;">';
   		$("#downico2").show();
   		$("#select2").hide("slow");
   		});
-
+	//enddropdown
 
   		
 
