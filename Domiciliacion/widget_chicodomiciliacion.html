@@ -13,7 +13,7 @@
 <script src="../js/componentes.js"></script>
  	<script>
  		$(document).ready(function(){
- 			switchFunc("switchbox","Tel","OFF");
+ 			switchFuncDomMas("switchbox","Tarjetas","Servicios","Dom");
  		});
  	</script>
 </head>
@@ -25,7 +25,9 @@
 			<div class="btnHeader"><img src="../img/botones/info.png"/></div> 
 		</div>
 		<p class="cajaTexto">Seleccione la domiciliación que desea realizar.</p>
-		<div id="switchbox" class="switch"></div>
+		<div class="centradoSwitch">
+			<div id="switchbox" class="switchDom"></div>
+		</div>	
 	</div>	
 </body>
 </html>
