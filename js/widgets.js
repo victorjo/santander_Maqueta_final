@@ -149,7 +149,7 @@ var widgets = [
 				},
 				{
 					id:null,
-					type:2,
+					type:1,
 					order:2,
 					contentMin:'',
 					contentMax:''
