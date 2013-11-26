@@ -49,3 +49,29 @@ var switchO = '<div style="position:relative;width:230px;">';
     },"fast");
   });
 }
+
+/***********************************************************************************
+**** Html structure for dropIsra     ****    Necesary classes { dropdown,downI,upI }    ****************************************
+<div class="dropdown">
+  <img class="downI" src="../img/iconos/dropdown.png" style="display: block;">
+  <img class="upI" src="../img/iconos/dropup.png" style="display: none;">
+  <h6>Quiero notificación previa de mi pago</h6>
+</div>
+******* *   * * * * * **    
+
+*/
+//Funtion to generate functionality
+
+   function dropIsra(selector){
+      $(".downI").click(function(){
+        $(this).hide();
+        $(this).next().show();
+        $(this).parent().next(".wra_Select4").show("slow");
+      });
+      $(".upI").click(function(){
+        $(this).hide();
+        $(this).prev().show();
+        $(this).parent().next(".wra_Select4").hide("slow");
+      });
+   }
+               
