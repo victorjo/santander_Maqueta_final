@@ -113,20 +113,22 @@
 			}
 
 			.col1{
-				overflow:hidden;width: 245px;height: 578px;
+				overflow:hidden;width: 245px;max-width: 245px;height: 578px;max-height: 578px;
 			}
 
 			.col2{
-				overflow:hidden;width:502px;height: 578px;
+				overflow:hidden;width:502px;max-width: 502px;height: 578px;max-height: 578px;
 			}
 
 
 			.altoTotal{
 				height:578px;
+				max-height: 578px;
 			}
 
 			.alto2{
 				height:283px;
+				max-height: 283px;
 			}
 
 			.medianilIzq{
@@ -162,13 +164,13 @@
 
 			.widget-min
 			{
-		
 				float:left;
 				background-color:#fff;
 				border:1px solid #b9b9b9;
 				margin-right:10px;
 				margin-top:10px;
 				display:inline-table;
+				overflow:hidden;
 			}
 
 			#wrappWidgets::-webkit-scrollbar   {
@@ -178,17 +180,6 @@
 			/*
 
 			*/
-
-
-
-			.btnHeader{
-				float: right;
-				width: 32px;
-				height: 32px;
-				cursor: pointer;
-				
-				
-			}	
 
 			.btnHeaderTable{
 				height: 24px;

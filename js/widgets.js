@@ -389,8 +389,6 @@ function newWidgetInstance(obj)
 	this.chPost = function () {
 			this.obj.attr({"instanced":"true"});
 			this.obj.css({'position':'fixed','top':this.topPos,'left':this.leftPos,'z-index':50});
-			this.obj.animate({left: ($(window).width()/2)-467+'px',top:'10%'},300,function(){creaOverlay('#000',document.body,0); var scope = $(this); $(scope).children('.on').fadeOut(800,function(){ $(scope).children('.off').fadeIn(300) }) }).animate({width:'935px',height:'541px'},800);
-			var forA = this.obj;
 			$.ajax({
 				url:'widgets/max/w_'+this.obj.attr("data-id")+'/index.html',
 		        type:'GET',
@@ -399,13 +397,15 @@ function newWidgetInstance(obj)
 		        	forA.html(res);
 		        }
 		    });
+			this.obj.animate({left: ($(window).width()/2)-467+'px',top:'10%'},300,function(){creaOverlay('#000',document.body,0); var scope = $(this); $(scope).children('.on').fadeOut(800,function(){ $(scope).children('.off').fadeIn(300) }) }).animate({width:'935px',height:'541px'},800);
+			var forA = this.obj;
 
 			};
 	this.routerAction = function(positionMax){
 						if(globalFlah>0) return false;
 						destruyeOverlay();
 						$(this.obj).children('.off').fadeOut('slow',function(){console.log(this.obj); $(this).parent().children('.on').fadeIn()});
-						this.obj.animate({'top':this.topPosIn,'left':this.leftPosIn,'width':this.width+'px','height':this.height+'px'},800,function(){ $("#wrappWidgets").animate({scrollTop:'0px'}); }).animate({'top':'+='+$("#wrappWidgets").offset().top,'left':'+='+$("#wrappWidgets").offset().left},300,function(){
+						this.obj.animate({'top':this.topPosIn,'left':this.leftPosIn,'width':this.width+'px','max-width':this.width+'px','height':this.height+'px','height':this.height+'px'}},800,function(){ $("#wrappWidgets").animate({scrollTop:'0px'}); }).animate({'top':'+='+$("#wrappWidgets").offset().top,'left':'+='+$("#wrappWidgets").offset().left},300,function(){
 							var io = $(this);
 							$.ajax({
 								url:'widgets/min/w_'+io.attr("data-id")+'/index.html',
