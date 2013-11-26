@@ -168,8 +168,8 @@ var widgets = [
 					contentMax:''
 				},
 				{
-					id:null,
-					type:1,
+					id:2,
+					type:2,
 					order:5,
 					contentMin:'',
 					contentMax:''
