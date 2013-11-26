@@ -241,7 +241,7 @@ function posWidgets(){
 		if((parser%3)==0) newWidget.css('float','right');
 		var posWid = newWidget.offset();
 		var posWra = wrapper.offset()
-		var a = posWid.top-posWra.top;
+		var a = posWid.top-posWra.top; 
 		var b = posWid.left-posWra.left;
 		newWidget.css({'top': a+"px",'left':b+"px"});
 		parser++;
