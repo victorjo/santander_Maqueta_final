@@ -78,13 +78,13 @@ function ajustaBannerHeight(){
 }
 
 
-var widgets = [
+/*var widgets = [
 				{
 					id:null,
 					type:1,
 					order:1,
-					contentMin:'<div class="cabecera" style="height: 10px; background: none repeat scroll 0% 0% black; color: white; font-size: 12px; padding: 9px;"><div><p>Administración de tarjeta</p></div><div class="btnCabecera"></div><div class="btnCabecera"></div></div>',
-					contentMax:'<h2>Content Maxified 1</h2>'
+					contentMin:'',
+					contentMax:''
 				},
 				{
 					id:null,
@@ -135,7 +135,70 @@ var widgets = [
 					contentMin:'<div class="cabecera" style="height: 10px; background: none repeat scroll 0% 0% black; color: white; font-size: 12px; padding: 9px;"><div><p>Administración de tarjeta</p></div><div class="btnCabecera"></div><div class="btnCabecera"></div></div>',
 					contentMax:'<h2>Content Maxified 4</h2>'
 				}
+			];*/
+
+
+
+var widgets = [
+				{
+					id:1,
+					type:2,
+					order:1,
+					contentMin:'',
+					contentMax:''
+				},
+				{
+					id:null,
+					type:2,
+					order:2,
+					contentMin:'',
+					contentMax:''
+				},{
+					id:100,
+					type:2,
+					order:3,
+					contentMin:'',
+					contentMax:''
+				},
+				{
+					id:null,
+					type:3,
+					order:4,
+					contentMin:'',
+					contentMax:''
+				},
+				{
+					id:null,
+					type:1,
+					order:5,
+					contentMin:'',
+					contentMax:''
+				},
+				{
+					id:null,
+					type:2,
+					order:6,
+					contentMin:'',
+					contentMax:''
+				},
+				{
+					id:null,
+					type:2,
+					order:7,
+					contentMin:'',
+					contentMax:''
+				},
+				{
+					id:null,
+					type:3,
+					order:8,
+					contentMin:'<div class="cabecera" style="height: 10px; background: none repeat scroll 0% 0% black; color: white; font-size: 12px; padding: 9px;"><div><p>Administración de tarjeta</p></div><div class="btnCabecera"></div><div class="btnCabecera"></div></div>',
+					contentMax:'<h2>Content Maxified 4</h2>'
+				}
 			];
+
+
+
 
 function posWidgets(){
 	var wrapper = $("#wrappWidgets");
