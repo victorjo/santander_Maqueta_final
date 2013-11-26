@@ -192,8 +192,8 @@ var widgets = [
 					id:null,
 					type:3,
 					order:8,
-					contentMin:'<div class="cabecera" style="height: 10px; background: none repeat scroll 0% 0% black; color: white; font-size: 12px; padding: 9px;"><div><p>Administración de tarjeta</p></div><div class="btnCabecera"></div><div class="btnCabecera"></div></div>',
-					contentMax:'<h2>Content Maxified 4</h2>'
+					contentMin:'',
+					contentMax:''
 				}
 			];
 
@@ -241,7 +241,7 @@ function posWidgets(){
 		if((parser%3)==0) newWidget.css('float','right');
 		var posWid = newWidget.offset();
 		var posWra = wrapper.offset()
-		var a = posWid.top-posWra.top;
+		var a = posWid.top-posWra.top; 
 		var b = posWid.left-posWra.left;
 		newWidget.css({'top': a+"px",'left':b+"px"});
 		parser++;

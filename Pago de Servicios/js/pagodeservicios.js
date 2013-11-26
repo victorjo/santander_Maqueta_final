@@ -1,4 +1,9 @@
-﻿/*Funhcion switch (label de mas de dos digitos)--- Flujo: Domiciliaciones Ã³ mas */
+﻿$(document).ready(function(){
+  dropIsra("downico1");
+  dropIsra("downico2");
+});
+
+/*Funhcion switch (label de mas de dos digitos)--- Flujo: Domiciliaciones Ã³ mas */
 function switchFuncDomMas(object,descripcion1,descripcion2,tipoModulo){
 
 var switchO = '<div style="position:relative;width:230px;">';
@@ -27,11 +32,7 @@ var switchO = '<div style="position:relative;width:230px;">';
 		$("#info").fadeToggle("slow");
        });
        
-  $("#downico1").click(function(){
-  		$("#downico1").hide();
-  		$("#upico1").show();
-  		$("#select1").show("slow");
-  		});
+  
   		
   $("#upico1").click(function(){
   		$("#upico1").hide();
@@ -39,11 +40,7 @@ var switchO = '<div style="position:relative;width:230px;">';
   		$("#select1").hide("slow");
   		});
   
-  $("#downico2").click(function(){
-  		$("#downico2").hide();
-  		$("#upico2").show();
-  		$("#select2").show("slow");
-  		});
+  
   		
   $("#upico2").click(function(){
   		$("#upico2").hide();
@@ -56,6 +53,12 @@ var switchO = '<div style="position:relative;width:230px;">';
 
 }
 
-       
+   function dropIsra(selector){
+      $("#"+selector).click(function(){
+      $(this).hide();
+      $(this).next().show();
+      $(this).parent().next("div").show("slow");
+      });
+   }
             	 
-           
+                          
