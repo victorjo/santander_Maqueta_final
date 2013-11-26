@@ -425,4 +425,10 @@ function newWidgetInstance(obj)
 						globalFlah = 0;
 					};
 	this.chPost();
+
+
+	function cierraWidget(){
+		$( ".btnHeader" ).trigger( "click" );
+	}
+	
 }
