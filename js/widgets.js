@@ -426,9 +426,5 @@ function newWidgetInstance(obj)
 					};
 	this.chPost();
 
-
-	function cierraWidget(){
-		$( ".btnHeader" ).trigger( "click" );
-	}
-	
 }
+
