@@ -30,12 +30,13 @@ function creaModal(contenedor,tipo,contenido){
 	divContent.css({"position":pos,"top":"0","left":"50%","width":(anchoTotal-140)+"px","padding":"40px","height":(altoTotal/2)+"px","border":"1px solid black","display":"block","z-index":"1000","box-shadow":"0 0 5px #ccc","overflow":"auto","background":"white","margin-left":"-","margin-top":"10%"});
 	divContent.css({"margin-left":"-"+((divContent.width()/2)+40)+"px"})
 	divContent.fadeIn("slow");
-	
 
 	c.append(divContent);
 	divContent.load(contenido,function(){
 		divContent.append(divCerrar);
 	});
+
+	
 
 }
 
