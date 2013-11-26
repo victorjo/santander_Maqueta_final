@@ -331,13 +331,14 @@ p{}
 	border-radius:15px 15px 15px 15px;
 	border:thin #F3F3F3 solid;
 	background-color:#FFFFFF;
-	color:#FF0D37;
+	color:#FF0D37 !important;
 	text-align: center;
 	box-shadow:2px 2px 2px gray;
 	float:left;
 	margin-left:20px;
 	font-size:11px;
 	font-weight:bold;
+	cursor: pointer;
 	
 }
 
