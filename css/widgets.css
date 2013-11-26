@@ -209,9 +209,8 @@ p{}
 }
 
 #widgetred{
-        border:1px solid black;
         width: 243px;
-        height:281px;
+        min-height:281px;
         font-size: 13px !important;
         margin:auto;
         overflow: hidden;
@@ -675,9 +674,9 @@ p{}
 /*widgets reducidos*/
 
 #widgetred{
-	border:1px solid black;
+	
 	width: 243px;
-	height:289px;
+	min-height:281px;
 	font-size: 13px !important;
 	margin:auto;
 	overflow: hidden;
