@@ -33,7 +33,7 @@ function creaModal(contenedor,tipo,contenido){
 	
 
 	c.append(divContent);
-	divContent.load(contenido,function(){
+	divContent.load("contenidos/"+contenido,function(){
 		divContent.append(divCerrar);
 	});
 

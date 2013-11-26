@@ -53,18 +53,17 @@ margin-left: 0;
 right: 0px;
 }
 
-/*Switch button*/
-#switchbox{
+/*Switch button -- palabras cortas (Normal)*/
+.switch{
 	width:98px;
 	border:1px #a0a0a0 solid;
 	border-radius:5px;
 	height:28px;
 	float:left;
 	overflow:hidden;
-	
 }
 
-#on{
+.on{
 	height:23px;
 	width:45px;
 	background-color:#114E02;
@@ -77,7 +76,7 @@ right: 0px;
 	padding-top:5px;
 }
 
-#off{
+.off{
 	height:23px;
 	width:45px;
 	background-color:#FD1B0F;
@@ -89,11 +88,54 @@ right: 0px;
 	text-align: center;
 	padding-top:5px;
 }
-#tope{
+.tope{
 	height:28px;
 	width:55px;
-	
 	background-color:#CCCCCC;
 	float:left;
 }
-/*End switch button*/
+/*End switch button normal*/
+
+/*Switch button -- Domiciliaciones*/
+.switchDom{
+	width:130px;
+	border:1px #a0a0a0 solid;
+	border-radius:5px;
+	height:28px;
+	float:left;
+	overflow:hidden;
+}
+
+.onDom{
+	height:23px;
+	width:70px;
+	background-color:#114E02;
+	float:left;
+	color:white;
+	font-size:medium;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-align: center;
+	padding-top:5px;
+}
+
+.offDom 
+{
+	height:23px;
+	width:80px;
+	background-color:#FD1B0F;
+	float:left;
+	color:white;
+	font-size:medium;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-align: center;
+	padding-top:5px;
+}
+.topeDom{
+	height:28px;
+	width:60px;
+	background-color:#CCCCCC;
+	float:left;
+}
+/*End switch button -- Domiciliaciones */
