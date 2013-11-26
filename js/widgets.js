@@ -405,7 +405,7 @@ function newWidgetInstance(obj)
 						if(globalFlah>0) return false;
 						destruyeOverlay();
 						$(this.obj).children('.off').fadeOut('slow',function(){console.log(this.obj); $(this).parent().children('.on').fadeIn()});
-						this.obj.animate({'top':this.topPosIn,'left':this.leftPosIn,'width':this.width+'px','max-width':this.width+'px','height':this.height+'px','height':this.height+'px'}},800,function(){ $("#wrappWidgets").animate({scrollTop:'0px'}); }).animate({'top':'+='+$("#wrappWidgets").offset().top,'left':'+='+$("#wrappWidgets").offset().left},300,function(){
+						this.obj.animate({'top':this.topPosIn,'left':this.leftPosIn,'width':this.width+'px','max-width':this.width+'px','height':this.height+'px','max-height':this.height+'px'},800,function(){ $("#wrappWidgets").animate({scrollTop:'0px'}); }).animate({'top':'+='+$("#wrappWidgets").offset().top,'left':'+='+$("#wrappWidgets").offset().left},300,function(){
 							var io = $(this);
 							$.ajax({
 								url:'widgets/min/w_'+io.attr("data-id")+'/index.html',
