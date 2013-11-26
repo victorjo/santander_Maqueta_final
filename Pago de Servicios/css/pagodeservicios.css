@@ -1,0 +1,35 @@
+﻿@import "../../css/widgets.css";
+
+h4{
+	color:red;
+}
+
+.tbl_consulta{
+	width:100%;
+	float:left;
+	margin-top:10px;
+}
+
+.tbl_consulta tr{
+	border-collapse:collapse;
+}
+
+.tbl_consulta td{
+	border:none;
+}
+
+#contenido p{
+	float:left; 
+	margin-top:5px;
+}
+
+.serv_ico{
+	width:30px;
+	height:30px; 
+	float:left;
+	margin-top:0;
+}
+
+#infobtn{
+	float:left;
+}

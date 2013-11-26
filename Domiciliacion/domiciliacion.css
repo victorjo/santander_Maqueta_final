@@ -1,4 +1,4 @@
-﻿@import url('widgets.css');
+﻿@import url('../css/widgets.css');
 
 /*Estilos propios- Domiciliaciones*/
 
@@ -32,18 +32,16 @@
 
 }
 
-/*boton - info / Cerrar*/
-.btnHeader{
-	padding: .2em;
-	float: right;
-	cursor: pointer;
+/*Texto Superior*/
+.textSuperior{
+	margin:10px 0 0 10px;
+	float:left;
 }
-
-.cajaTexto{
-	padding-top: 60px;
-	text-align: center;
-}
-
+/*Centrado de switch*/
 .centradoSwitch{
-	margin:20px 50px;
+	margin:75px 50px;
 }	
+/* link*/
+a:link,a:visited{
+	color:#090909;
+}
