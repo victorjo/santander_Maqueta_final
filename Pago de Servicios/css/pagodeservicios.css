@@ -1,7 +1,22 @@
 ﻿@import "../../css/widgets.css";
+@import "../../css/componentes.css";
+
 
 h4{
 	color:red;
+}
+
+h5{
+	margin-bottom:3px;
+}
+
+h6{
+	margin:3px 0px 0px 10px;
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	font-size:12px;
+	
 }
 
 .tbl_consulta{
@@ -29,7 +44,86 @@ h4{
 	float:left;
 	margin-top:0;
 }
+.serv_ico:hover{
+	cursor:pointer;
+}
 
 #infobtn{
 	float:left;
+	margin:37px 0 0 40px;
 }
+#infobtn:hover{
+	cursor:pointer;
+}
+
+
+.centradoSwitch{
+	float:left;
+	margin:14px 0 0 20px;
+}
+
+#info {
+    display: none;
+    float: left;
+    left: 335px;
+    position: absolute;
+    top: 96px;
+}
+
+#calico{
+	float:left;
+	margin:5px 0 0 15px;
+}
+#calico:hover{
+	cursor:pointer;
+}
+
+.txtbox{
+	margin:3px 0 0 15px;
+	float:left;
+	width:100px;
+}
+
+.botonera {
+    bottom: -37px;
+    float: right;
+    right: -225px;
+}
+.dropdown{
+	width:100%;float:left;
+	background-color:#EBEDEE;
+	margin-top:10px;
+	height:22px;
+}
+#downico1{
+	float:left;
+	margin: 1px 5px 0 10px;
+}
+#downico2{
+	float:left;
+	margin: 1px 5px 0 10px;
+}
+#upico1{
+	float:left;
+	margin: 1px 5px 0 10px;
+	display:none;
+}
+#upico2{
+	float:left;
+	margin: 1px 5px 0 10px;
+	display:none;
+}
+#select1{
+	display:none;
+}
+#select2{
+	display:none;
+}
+
+.dropcontainer{
+	height:100px;
+	width:715px;
+	float:left;
+	overflow:auto;
+}
+
