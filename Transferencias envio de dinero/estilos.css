@@ -130,3 +130,8 @@ p{}
 	text-align:left;
 }
 
+.content2espacios {
+	height:350px;
+	width:200px;
+	backgroun-color:red;
+}
