@@ -282,10 +282,6 @@ p{}
 
 
 .txtwidred{
-<<<<<<< HEAD
-=======
-
->>>>>>> ee9a3aee1f985e3f06ed2d479e89708bc7375c7d
 	background-color:FFFFFF;
 	width:100%;
 	float:left;
@@ -349,10 +345,7 @@ p{}
 }
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> ee9a3aee1f985e3f06ed2d479e89708bc7375c7d
 #rdbtn1:hover{
 	background-color:#838383;
 	color:white;
@@ -373,13 +366,6 @@ p{}
     float: right;
     margin-bottom: 10px;
     margin-right: 0;
-<<<<<<< HEAD
-    position: absolute;
-    right: 0;
-    width: 100%;
-}
-
-=======
     position: relative;
     right: 0;
     width: 100%;
@@ -387,7 +373,7 @@ p{}
 .programar{
 	display:none;
 }
->>>>>>> ee9a3aee1f985e3f06ed2d479e89708bc7375c7d
+
 .radio{
 	width:12px; 
 	height:12px; 
@@ -396,8 +382,7 @@ p{}
 	margin-left:auto; 
 	margin-right:auto;
 
-<<<<<<< HEAD
-=======
+
 }
 
 .btnaceptar{
@@ -415,7 +400,7 @@ p{}
 	font-size:11px;
 	font-weight:bold;
 	
->>>>>>> ee9a3aee1f985e3f06ed2d479e89708bc7375c7d
+
 }
 
 
@@ -536,18 +521,6 @@ p{}
         cursor:pointer;
 }
 
-<<<<<<< HEAD
-.botonera{
-        float:right;
-        position:relative;
-        bottom:0;
-        right:0;
-        margin-right:30px;
-        margin-bottom:20px;
-}
-
-
-=======
 .radio{
         width:12px;
         height:12px;
@@ -556,7 +529,7 @@ p{}
         margin-left:auto;
         margin-right:auto;
 }
->>>>>>> ee9a3aee1f985e3f06ed2d479e89708bc7375c7d
+
 
 .radiochkd{
         background-color:black;
@@ -744,15 +717,6 @@ p{}
 }
 /**/
 
-#widred1x2{
-	width:247px;
-	height:589px;
-	border: 1px #A6A6A6 solid;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:11px;
-	box-shadow:1px 0px 5px #a6a6a6;	
-}
-
 .headerwidred{
 	background-image:url('../lineagrafica/widamphdr.png');
 	background-size:100% 100%;	
@@ -777,8 +741,8 @@ p{}
 }
 
 #widred1x2{
-	width:247px;
-	height:585px;
+	width:245px;
+	height:580px;
 	border: 1px #A6A6A6 solid;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:11px;
@@ -786,7 +750,7 @@ p{}
 }
 
 #widred1x1{
-	width:247px;
+	width:245px;
 	height:285px;
 	border: 1px #A6A6A6 solid;
 	font-family:Arial, Helvetica, sans-serif;
