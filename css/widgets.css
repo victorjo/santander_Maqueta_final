@@ -35,23 +35,19 @@ p{}
 
 
 #header {
-	background-color: #E8E8E8;
-	width: 760px;
-	height: 25px;
-	float: right;
-	border-bottom: 1px solid black;
-	padding-top: 10px;
+        background-color: #E8E8E8;
+        width: 760px;
+        height: 35px;
+        float: right;
+        border-bottom:1px solid black;
 }
 
 .btnHeader {
     float:right;
+    margin-top:5px;
     margin-right:10px;
     cursor:pointer;
-    float: right;
-	width: 32px;
-	height: 32px;
-	cursor: pointer;
- }
+    }
 
 
 #headerwidred{
@@ -124,6 +120,8 @@ p{}
 	border:1px solid #a6a6a6;
 	width: 935px;
 	font-size: 13px !important;
+	margin:auto;
+	overflow: hidden;
 	box-shadow:1px 0px 5px #a6a6a6;
 	
 }
@@ -211,8 +209,9 @@ p{}
 }
 
 #widgetred{
+        border:1px solid black;
         width: 243px;
-        min-height:281px;
+        height:281px;
         font-size: 13px !important;
         margin:auto;
         overflow: hidden;
@@ -647,14 +646,8 @@ p{}
         position:absolute; 
         left:-190px;
         z-index:10;
-        background:#242424;
+        background:gray;
     } 
-    #footer{
-        background-color: #ffffff;
-    }
-    #dataClient{
-        width:303px !important;
-    }
     #wr_SuperBanner { display: none; }
 }
 /**/
@@ -683,9 +676,9 @@ p{}
 /*widgets reducidos*/
 
 #widgetred{
-	
+	border:1px solid black;
 	width: 243px;
-	min-height:281px;
+	height:289px;
 	font-size: 13px !important;
 	margin:auto;
 	overflow: hidden;
@@ -701,10 +694,12 @@ p{}
 }
 
 #widred1x1{
-	width:243px;
-	height:281px;
+	width:245px;
+	height:285px;
+	border: 1px #A6A6A6 solid;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:11px;
+	box-shadow:1px 0px 5px #a6a6a6;	
 }
 
 .headerwidred{
