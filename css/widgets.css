@@ -96,7 +96,7 @@ p{}
         background: #FFFFFF;
         cursor: pointer;
         font-weight: normal;
-        border-top:2px solid black;
+        border-top:2px red solid;
 }
 
 #contenido {
@@ -499,6 +499,7 @@ p{}
         float:left;
         margin:10px 0 0 30px;
         width:35%;
+        font-weight:bold;
 
 }
 .txtbox{
