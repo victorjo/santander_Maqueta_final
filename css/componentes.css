@@ -54,17 +54,16 @@ right: 0px;
 }
 
 /*Switch button*/
-#switchbox{
+.switch{
 	width:98px;
 	border:1px #a0a0a0 solid;
 	border-radius:5px;
 	height:28px;
 	float:left;
 	overflow:hidden;
-	
 }
 
-#on{
+.on{
 	height:23px;
 	width:45px;
 	background-color:#114E02;
@@ -77,7 +76,7 @@ right: 0px;
 	padding-top:5px;
 }
 
-#off{
+.off{
 	height:23px;
 	width:45px;
 	background-color:#FD1B0F;
@@ -89,10 +88,9 @@ right: 0px;
 	text-align: center;
 	padding-top:5px;
 }
-#tope{
+.tope{
 	height:28px;
 	width:55px;
-	
 	background-color:#CCCCCC;
 	float:left;
 }
