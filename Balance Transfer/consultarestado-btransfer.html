@@ -3,8 +3,8 @@
 
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<title>Consultar estado balance transfer</title>
-<link rel="stylesheet" href="../css/widgets.css">
+<title>Balance Transfer</title>
+<link rel="stylesheet" href="../css/widgets.css"/>
 
 <script src="../js/jquery10.2.min.js"></script>
 <script src="../js/ddSlick.js"></script>
@@ -12,151 +12,144 @@
 
 
 
+
+<style>
+
+.btnHeaderTable{
+	height: 24px;
+    margin: -10px;
+    padding-top: 10px;
+    width: 110px;
+}
+
+.titTabla{
+	margin-bottom:0px;
+	padding:10px 10px 5px 30px;
+	border:1px solid black;
+	border-bottom:0;
+	float:left;
+	width:678px;
+	background:#F4F4F4;
+	margin-top:20px;
+	height:20px;
+	font-weight:bold
+}
+
+.titTabla p{
+	float:left;
+}
+
+.titTabla img{
+	float:right;
+	margin-top:-7px;
+	cursor: pointer;
+}
+</style>
 </head>
 
 <body>
 	
 	<div id="widget">
 		<div id="titulo">
-			<p class="f_titleWid">
-				BALANCE TRANSFER
-				</p>
+			<p class="f_titleWid">BALANCE <br />
+				TRANSFER</p>
 
 		</div>
 		<div id="header">
 			<div class="btnHeader">
-				<img src="../img/botones/maximize.png" />
+				<img src="../img/botones/btn_cerrar.png"/>
 			</div>
 			<div class="btnHeader">
-				<img src="../img/botones/info.png" />
-
+				<img src="../img/botones/info_.png"/>
 			</div>
+
 		</div>
+		
 		<div id="contenido">
-			<h4 style="width:450px;">Estatus del último balance transfer solicitado</h4>
-
-
-
-			<table class="tbl_info" style="width:65%;float:left; font-size: 12px;
-     font-family: Helvetica, Arial, sans-serif;">
+		
+		<div id="vtacruzada">
+			
+			<div class="vtaimg">
+			</div>
+			
+			<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
+			
+			<div class="vtapanel">
+				<div class="vtabtn"><img src="../img/iconos/tarjeta.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+				<div class="vtabtn"><img src="../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+				<div class="vtabtn"><img src="../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+			</div>
+			
+		</div>
+		
+			<h4 style="width:35%">Comprobante de pago de servicio.</h4>
+			
+			
+			
+			<table class="tbl_info" style="width:60%;float:left;">
 
 				<tr>
-					<td colspan="3">Tarjeta Destino</td>
-					<td style="color:#CCCCCC">5678****7890</td>
-					<td rowspan="4"></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td>Tarjeta de Destino:</td>
+					<td style="color:#CCCCCC">1234****5678</td>
+				</tr>
+				<tr>
+					<td>Tarjeta de Destino:</td>
+					<td style="color:#CCCCCC">1234****5678</td>
+				</tr>
+				<tr>
+					<td>Tarjeta Cargo:</td>
+					<td style="color:#CCCCCC">1234****5678</td>
+				</tr>
+				<tr>
+					<td>Importe:</td>
+					<td style="color:#CCCCCC">999,999,999.00 (MXP)</td>
 				</tr>
 
 				<tr>
-					<td colspan="3">Tarjeta Destino</td>
-					<td style="color:#CCCCCC">5678****7890</td>
-					<td rowspan="4"></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td>Concepto:</td>
+					<td style="color:#CCCCCC">123456789123456789123456789</td>
+				</tr>
+				<tr>
+					<td>Estatus:</td>
+					<td style="color:#CCCCCC">Lorem Ipsum</td>
+				</tr>
+				<tr>
+					<td>Fecha de cancelación:</td>
+					<td style="color:#CCCCCC">dd/mm/aaaa</td>
+				</tr>
+			
+				<tr>
+					<td>Folio SuperNet:</td>
+					<td style="color:#CCCCCC">12345678912345</td>
 				</tr>
 
 				<tr>
-					<td colspan="3">Tarjeta Cargo</td>
-					<td style="color:#CCCCCC">5678****7890</td>
-					<td rowspan="4"></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td colspan="5" ><div class="btn" style="margin:0; padding:0;height:30px">Quiero hacer otro<br />pago de servicios</div></td>
+					
 				</tr>
+				
 
-				<tr>
-					<td colspan="3">Importe</td>
-					<td style="color:#CCCCCC">5678****7890</td>
-					<td rowspan="4"></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-
-				<tr>
-					<td colspan="3">Concepto</td>
-					<td style="color:#CCCCCC">5678****7890</td>
-					<td rowspan="4"></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-
-				<tr>
-					<td colspan="3">Estatus</td>
-					<td style="color:#CCCCCC">5678****7890</td>
-					<td rowspan="4"></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-
-				<tr>
-					<td colspan="3">Fecha de Cancelación</td>
-					<td style="color:#CCCCCC">5678****7890</td>
-					<td rowspan="4"></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-
-				<tr>
-					<td colspan="3">Folio Santander</td>
-					<td style="color:#CCCCCC">5678****7890</td>
-					<td rowspan="4"></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-
+				
 			</table>
-
-
-
-
-
-
-<div class="widget-min col1 alto2" style="top: 309px; left: 257px; font-color:ff00ff;">
-
-
-</div>
-
-<div class="widget-min2 col11 alto12" style="top: 309px; left: 257px; font-color:ff00ff;">
-<div class="titNavBanner" style="font-size:12px;font-weight:bolder;padding:10px;float-">Quizá le interese:</div>
-
- <div id="wr_btnNav">
-<ul>
-<li class="btnNav"> <img src="images/icon_venta_cruzada1.png" style="margin-left:-50px; margin-right:20px; margin-top:-5px"> Lorem ipsum</li>    
-<li class="btnNav"> <img src="images/icon_venta_cruzada2.png" style="margin-left:-50px; margin-right:20px; margin-top:-5px">Lorem ipsum</li>
-<li class="btnNav"><img src="images/icon_venta_cruzada3.png" style="margin-left:-50px; margin-right:20px; margin-top:-5px">Lorem ipsum</li>
-
-</ul>
-
-</div>
-
-</div>
-
-
-<div class="botonera">  
-	<div class="btn">Finalizar</div>
-	<div class="btn">Regresar</div>
-</div>
-	
+			
+		<div class="botonera" style="margin-right:20px;width:auto;" >
+			<div class="btn"><img src="../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
+			<div class="btnaceptar">Finalizar</div>
+		</div>
 
 		</div>
+		
 		<div id="navegador">
 			<ul>
-				<li >Solicitar Balance <br>  Transfer</li>
-				<li class="active">Consultar estado de <br> Balance Transfer</li>
-
-				<br>
-				
+				<li>Solicitar Balance<br/>Transfer</li>
+				<li class="active">Consultar estado de<br/>Balance Transfer</li>
 			</ul>
+			<div class="aviso"><img src="../img/iconos/img_msj.png" />	</div>
 		</div>
+		
+		
 	</div>
+
 
 </body>
 
