@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="../../../css/widgets.css" />
+<script src="../../../js/ddSlick.js"></script>
+
 <style>
 .btnHeader{
 	float: right;
@@ -31,8 +33,13 @@ width: 110px;
 }
 .titTabla img{
 	float:right;
-	margin-top:-7px;
+	margin-top:0px;
+	margin-right: 15px;
 	cursor: pointer;
+}
+
+.wra_Select2{
+	width: 230px;
 }
 </style>
 
@@ -56,7 +63,7 @@ width: 110px;
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
 		
-		<div class="wra_Select">
+		<div class="wra_Select2">
 			<select name="" id="" >
 				
 				<option value="">Opcion1</option>
@@ -69,13 +76,13 @@ width: 110px;
 			
 		</div>
 		
-		<div class="wra_Select">
+		<div class="wra_Select2">
 			<select name="" id="" >
 				
 			</select>
 			
 		</div>
-		<div class="wra_Select">
+		<div class="wra_Select2">
 			<select name="" id="" >
 				
 				
@@ -129,4 +136,10 @@ width: 110px;
 		</ul>
 	</div>
 </div>
-<script src="../js/balanceTransfer.js"></script>
+<script>
+			$(".wra_Select2 select").ddslick({
+		                    width:"200"
+                });
+                
+            
+</script>
