@@ -49,6 +49,19 @@
 			});	
 
 
+			$(".activo").click(function(){
+				$(".activo").hide("fast");
+				$(".inactivo").show("fast");
+				
+			});
+
+			$(".inactivo").click(function(){
+				$(".activo").show("fast");
+				$(".inactivo").hide("fast");
+				
+			});
+
+
 	
 			$("#navegador ul li").click(function(){
 				$("#navegador").find(".active").attr("class"," ");
