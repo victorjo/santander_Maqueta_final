@@ -273,8 +273,8 @@ function posWidgets(){
 			$("body").mousemove(function(e){
 				if(e.pageX<=0){
 					$(".wr_NavPrin").animate({'left':'0px'},'slow');
-				}
-				if(e.pageX>=190) $(".wr_NavPrin").animate({'left':'-190px'});
+					
+				}else if( $(".wr_NavPrin").offset().left==0 ) $(".wr_NavPrin").animate({'left':'-190px'});
 			});
 		}else{
 			$("#wrappWidgets").css("width","771px");

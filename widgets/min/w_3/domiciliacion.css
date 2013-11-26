@@ -1,0 +1,47 @@
+﻿@import url('../../../css/widgets.css');
+
+/*Estilos propios- Domiciliaciones*/
+
+#Widredu {
+	border:1px solid black;
+	width: 250px;
+	height: 500px;
+	font-size: 13px !important;
+	font-color: #ffffff;
+	margin:auto;
+	overflow: hidden;
+	float: left;
+}
+
+#header {
+	background-color: #000000;
+	font-color: #ffffff;
+	font-weight: bold;
+	width: 250px;
+	height: 35px;
+	float: left;
+}
+
+.h1{
+	color:white;
+	font-size:16;
+	margin-top:10px;
+	margin-left:15px;
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/*Texto Superior*/
+.textSuperior{
+	margin:10px 0 0 10px;
+	float:left;
+}
+/*Centrado de switch*/
+.centradoSwitch{
+	margin:75px 50px;
+}	
+/* link*/
+a:link,a:visited{
+	color:#090909;
+}
