@@ -75,3 +75,19 @@ var switchO = '<div style="position:relative;width:230px;">';
       });
    }
                
+  ////************ Component for blackhorsebox
+  function omniBox(selector,objectCards){
+    var auto = $("#"+selector);
+    auto.autocomplete({
+      source:objectCards,
+      minLength:0,
+      open: function(){
+      $(".ui-autocomplete").css({"max-height":"201px","overflow-y":"scroll","font-size":"13px","width":"480px"})
+      }
+    });
+
+    $("#"+selector).parent().next().next().find("span").on("click",function(){
+      console.log("se creo el evento");
+      auto.autocomplete( "search","");
+    });
+  }
