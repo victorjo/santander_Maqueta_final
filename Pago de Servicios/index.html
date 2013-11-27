@@ -58,6 +58,8 @@
 <body>
 	
 	<div id="widget">
+	
+		
 		<div id="titulo">
 			<p class="f_titleWid">
 				TRANSFERENCIA <br/>
@@ -71,82 +73,279 @@
 				<img src="../img/botones/info_.png"/>
 			</div>
 		</div>
-		<div id="contenido">
-			<h4>Seleccione de su lista de servicios registradros el servicio que desea pagar</h4>
-				<table class="tbl_consulta">
-					<tr>
-						<td colspan="2">Nombre del Servicio</td>
-						<td>Convenio</td>
-						<td>Último pago</td>
-						<td>Importe (MXP)</td>
-						<td>Referencia</td>
-						<td style="background-color:black;color:white">Ver lista<br />completa</td>
-					</tr>
-					<tr>
-						<td><div class="serv_in serv_ico"></div></td>
-						<td>Lorem ipsum</td>
-						<td>1234</td>
-						<td>dd/mm/aaaa</td>
-						<td>999,999,999.00</td>
-						<td colspan="2">1456789009876</td>
-					</tr>
-				</table>
-			<p>Seleccione de su lista de servicios registradros el servicio que desea pagar</p>
-			<div class="wra_Select3">
-				<select name="" id="" style="width:100%">            
-                            <option value="">Lorem ipsum</option>
-                            <option value="">Opcion1</option>
-                            <option value="">Opcion1</option>
-                            <option value="">Opcion1</option>
-                            <option value="">Opcion1</option>
-            	</select>
-			</div>
-			<div class="input" style="margin-left:0px">
-				<p>Importe:</p>
-				<input class="txtbox" type="text" value=" 999,999,999,999.00" name="Text1" style="width:100%; margin-left:0px"/>
-			</div>
-			<div class="input" style="margin-left:150px">
-				<p>Concepto:</p>
-				<input class="txtbox" type="text" value="13516384351351465463878431515" name="Text1" style="width:100%; margin-left:0px"/>
-			</div>
-			
-			<div class="input" style="margin-left:0px">
-				<p>Referencia de pago:</p>
-				<input class="txtbox" type="text" value="13516384351351465463878431515" name="Text1" style="width:100%; margin-left:0px"/>
-			</div>
-			
-			<div id="infobtn"><img src="../img/botones/info_.png"/></div>
+			<div id="contenido">
 				
-			<div class="centradoSwitch">
-				<h5>Programar fecha:</h5>
-				<div id="switchbox" class="switchDom">
-			</div>
+				<div id="step1">
+					<h4>Seleccione de su lista de servicios registradros el servicio que desea pagar</h4>
+						<table class="tbl_consulta">
+							<tr>
+								<td colspan="2">Nombre del Servicio</td>
+								<td>Convenio</td>
+								<td>Último pago</td>
+								<td>Importe (MXP)</td>
+								<td>Referencia</td>
+								<td style="background-color:black;color:white">Ver lista<br />completa</td>
+							</tr>
+							<tr>
+								<td><div class="serv_in serv_ico"></div></td>
+								<td>Lorem ipsum</td>
+								<td>1234</td>
+								<td>dd/mm/aaaa</td>
+								<td>999,999,999.00</td>
+								<td colspan="2">1456789009876</td>
+							</tr>
+						</table>
+					<p>Seleccione de su lista de servicios registradros el servicio que desea pagar</p>
+					<div class="wra_Select3">
+						<select name="" id="" style="width:100%">            
+		                            <option value="">Lorem ipsum</option>
+		                            <option value="">Opcion1</option>
+		                            <option value="">Opcion1</option>
+		                            <option value="">Opcion1</option>
+		                            <option value="">Opcion1</option>
+		            	</select>
+					</div>
+					<div class="input" style="margin-left:0px">
+						<p>Importe:</p>
+						<input class="txtbox" type="text" value=" 999,999,999,999.00" name="Text1" style="width:100%; margin-left:0px"/>
+					</div>
+					<div class="input" style="margin-left:150px">
+						<p>Concepto:</p>
+						<input class="txtbox" type="text" value="13516384351351465463878431515" name="Text1" style="width:100%; margin-left:0px"/>
+					</div>
+					
+					<div class="input" style="margin-left:0px">
+						<p>Referencia de pago:</p>
+						<input class="txtbox" type="text" value="13516384351351465463878431515" name="Text1" style="width:100%; margin-left:0px"/>
+					</div>
+					
+					<div id="infobtn"><img src="../img/botones/info_.png"/></div>
+						
+					<div class="centradoSwitch">
+						<h5>Programar fecha:</h5>
+						<div id="switchbox" class="switchDom">
+					</div>
+					
+					<div id="info"><img src="../img/infoimg.png"/></div>
+					
+					<div id="calico"><img src="../img/iconos/img_calendario.png"/></div>
+					
+					<input class="txtbox" value="dd/mm/aaaa"/>
+									
+					</div> 
+					
+					<div class="dropcontainer">
+						<div class="dropdown">
+							<img id="downico1"src="../img/iconos/dropdown.png"/>
+							<img id="upico1"src="../img/iconos/dropup.png"/>
+							<h6>Quiero notificación previa de mi pago</h6>
+						</div>
+						
+						<div id="select1" class="wra_Select4">
+							<select name="" id="" >  
+								<option value="">3 días</option>
+			                    <option value="">Opcion1</option>
+			                    <option value="">Opcion1</option>
+			                    <option value="">Opcion1</option>
+			                    <option value="">Opcion1</option>
+				           	</select>
+						</div>
+						
+						<div class="dropdown">
+							<img id="downico2" src="../img/iconos/dropdown.png"/>
+							<img id="upico2" src="../img/iconos/dropup.png"/>
+							<h6>Quiero transferir el importe a meses sin intereses</h6>
+						</div>
+									
+						<div id="select2" class="wra_Select4">
+							<select name="" id="" style="width:100%">
+			                            
+			                            <option value="">Opcion1</option>
+			                            <option value="">Opcion1</option>
+			                            <option value="">Opcion1</option>
+			                            <option value="">Opcion1</option>
+			                            <option value="">Opcion1</option>
+			                           
+			            	</select>
+						
+						</div>
+					</div>
+					<div class="botonera">
+							<div class="btn">Cancelar</div>
+							<div id="siguiente"><div class="btnaceptar">Continuar</div></div>
+
+						</div>			
+					
+				</div> <!--fin step1-->
+				
+				<div id="step2">
+					<h4>El pago de servicio seleccionado se efectuará con la siguiente información:</h4>
+						<table class="tbl_info" style="width:100%;float:left;">
+
+				<tr>
+					<td style="width:200px;">Nombre del servicio:</td>
+					<td style="color:#CCCCCC">Lorem Ipsum</td>
+				</tr>
+				<tr>
+					<td>Razón social:</td>
+					<td style="color:#CCCCCC">Lorem Ipsum S.A. de C.V.</td>
+				</tr>
+				<tr>
+					<td>Convenio:</td>
+					<td style="color:#CCCCCC">123456789123456789</td>
+				</tr>
+				<tr>
+					<td>Referencia:</td>
+					<td style="color:#CCCCCC">123456789123456789</td>
+				</tr>
+
+				<tr>
+					<td>Cuenta de cargo:</td>
+					<td style="color:#CCCCCC">1234****5678</td>
+				</tr>
+				<tr>
+					<td>Importe:</td>
+					<td style="color:#CCCCCC">999,999,999.00 (MXP)</td>
+				</tr>
+				<tr>
+					<td>Comisión por pago de servicio:</td>
+					<td style="color:#CCCCCC">0.00 (MXP)</td>
+				</tr>
+				<tr>
+					<td>I.V.A. por comisión de pago de servicio:</td>
+					<td style="color:#CCCCCC">0.00 (MXP)</td>
+				</tr>
+				<tr>
+					<td>Fecha de operación:</td>
+					<td style="color:#CCCCCC">dd/mm/aaaa</td>
+				</tr>
+				<tr>
+					<td>Fecha programada de pago:</td>
+					<td style="color:#CCCCCC">dd/mm/aaaa</td>
+				</tr>
+				<tr>
+					<td>Notificacion previa al pago:</td>
+					<td style="color:#CCCCCC">3 días</td>
+				</tr>
+
+
+
+
+
+
+			</table>
+				<div class="botonera3">
+					<div class="btn">Regresar</div>
+					<div class="btn">Cancelar</div>
+					<div id="siguiente2"><div class="btnaceptar">Confirmar</div></div>
+				</div>
+
+			</div> <!--fin step2-->
 			
-			<div id="info"><img src="../img/infoimg.png"/></div>
+			<div id="step3">
 			
-			<div id="calico"><img src="../img/iconos/img_calendario.png"/></div>
+				<div id="vtacruzada">
 			
-			<input class="txtbox" value="dd/mm/aaaa"/>
+					<div class="vtaimg">
+					</div>
+			
+					<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
+			
+					<div class="vtapanel">
+						<div class="vtabtn"><img src="../img/iconos/tarjeta.png" class="vtaico" /><h6>Lorem Ipsum</h6></div>
+						<div class="vtabtn"><img src="../img/iconos/img_enviar.png" class="vtaico" /><h6>Lorem Ipsum</h6></div>
+						<div class="vtabtn"><img src="../img/iconos/img_icono.png" class="vtaico" /><h6>Lorem Ipsum</h6></div>
+					</div>
+					
+				</div>
+		
+				<h4 style="width:35%">Comprobante de pago de servicio.</h4>
+			
+			
+			
+					<table class="tbl_info" style="width:60%;float:left;">
+		
+						<tr>
+							<td>Nombre del servicio:</td>
+							<td style="color:#CCCCCC">Lorem Ipsum</td>
+						</tr>
+						<tr>
+							<td>Razón social:</td>
+							<td style="color:#CCCCCC">Lorem Ipsum S.A. de C.V.</td>
+						</tr>
+						<tr>
+							<td>Convenio:</td>
+							<td style="color:#CCCCCC">123456789123456789</td>
+						</tr>
+						<tr>
+							<td>Referencia:</td>
+							<td style="color:#CCCCCC">123456789123456789</td>
+						</tr>
+		
+						<tr>
+							<td>Cuenta de cargo:</td>
+							<td style="color:#CCCCCC">1234****5678</td>
+						</tr>
+						<tr>
+							<td>Importe:</td>
+							<td style="color:#CCCCCC">999,999,999.00 (MXP)</td>
+						</tr>
+						<tr>
+							<td>Comisión por pago de servicio:</td>
+							<td style="color:#CCCCCC">0.00 (MXP)</td>
+						</tr>
+						<tr>
+							<td>I.V.A. por comisión de pago de servicio:</td>
+							<td style="color:#CCCCCC">0.00 (MXP)</td>
+						</tr>
+						<tr>
+							<td>Fecha de operación:</td>
+							<td style="color:#CCCCCC">dd/mm/aaaa</td>
+						</tr>
+						<tr>
+							<td>Fecha programada de pago:</td>
+							<td style="color:#CCCCCC">dd/mm/aaaa</td>
+						</tr>
+						<tr>
+							<td>Notificacion previa al pago:</td>
+							<td style="color:#CCCCCC">3 días</td>
+						</tr>
+						<tr>
+							<td>Folio SuperNet:</td>
+							<td style="color:#CCCCCC">12345678912345</td>
+						</tr>
+		
+						<tr>
+							<td colspan="5" ><div id="btnreturn">Quiero hacer otro<br />pago de servicios</div></td>
 							
-			</div> 
+						</tr>
+						
+		
+						
+					</table>
 			
+
+				<div class="botonera2" style="margin-right:20px;width:auto;" >
+					<div class="btn"><img src="../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" style="margin-top:0">Imprimir</p></div>
+					<div class="btnaceptar">Finalizar</div>
+
 			<div class="dropcontainer">
 				<div class="dropdown">
 					<img class="downI"src="../img/iconos/dropdown.png"/>
 					<img class="upI"src="../img/iconos/dropup.png"/>
 					<h6>Quiero notificación previa de mi pago</h6>
+
 				</div>
+
+			
+			</div><!--fin step3-->
+
+		
+		</div><!--cierre contenido-->
+		
 				
-				<div id="select1" class="wra_Select4">
-					<select name="" id="" >  
-						<option value="">3 días</option>
-	                    <option value="">Opcion1</option>
-	                    <option value="">Opcion1</option>
-	                    <option value="">Opcion1</option>
-	                    <option value="">Opcion1</option>
-		           	</select>
-				</div>
 				
+
 				<div class="dropdown">
 					<img class="downI" src="../img/iconos/dropdown.png"/>
 					<img class="upI" src="../img/iconos/dropup.png"/>
@@ -163,23 +362,18 @@
 	                            <option value="">Opcion1</option>
 	                           
 	            	</select>
+
 				
-				</div>
+			<div id="navegador">
+				<ul>
+					<li class="active" >Pago de Servicios</li>
+					<li>Alta de Servicios</li>
+					<li>Consulta de Servicios</li>
+				</ul>
+				<div class="aviso"><img src="../img/iconos/img_msj.png" />	</div>
 			</div>
-			<div class="botonera">
-					<div class="btn">Cancelar</div>
-					<div class="btnaceptar">Continuar</div>
-				</div>			
-			</div>
-				
-		<div id="navegador">
-			<ul>
-				<li class="active">Pago de Servicios</li>
-				<li>Alta de Servicios</li>
-				<li>Consulta de Servicios</li>
-			</ul>
-			<div class="aviso"><img src="../img/iconos/img_msj.png" />	</div>
-		</div>
+		
+		
 		
 		
 	</div>

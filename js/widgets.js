@@ -425,4 +425,6 @@ function newWidgetInstance(obj)
 						globalFlah = 0;
 					};
 	this.chPost();
+
 }
+
