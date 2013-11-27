@@ -38,7 +38,11 @@
 	margin-top:-7px;
 	cursor: pointer;
 }
-
+#botones{
+	width: 152px;
+	height: 34px;
+	background: url(../DOCS/btn_normal.png);
+}
 
 </style>
 
@@ -56,32 +60,36 @@
    				<img src="../img/botones/btn_cerrar.png"/>
    			</div>
    				<div class="btnHeader">
-   					<img src="../img/botones/info_png"/>
+   					<img src="../img/botones/info_.png"/>
    				</div>
    		</div>
 
    		<div id="contenido">
+   			<h4>A continuación podrá modificar, cancelar o ver el detalle de los servicios que tiene domiciliados. Así como descargar el formato que se generó al dar de alta la domiciliación del servicio.</h4>
    			<h4> Su domiciliación de tarjeta se realizará con los siguientes datos. </h4>
+
+   			
 
    			<table class="tbl_info" style="width:100%;float:left;padding-bottom:30%">
 
-				
 								
 			</table>
+
+			<div id="botones"></div>
 
 
 
 				<div class="botonera">
-					<div class="btn">Regresar</div>
-					<div class="btnaceptar">Confirmar</div>
+					<div class="btn" style="float:right; margin-top:10px;">Cancelar domiciliación</div>
+					
 				</div>			
 			</div>
 				
 		<div id="navegador">
 			<ul>
-				<li class="active">Pago de Servicios</li>
-				<li>Alta de Servicios</li>
-				<li>Consulta de Servicios</li>
+				<li class="active">Domicilio de servicios</li>
+				<li>Domicilio de tarjeta de crédito</li>
+				<li>Consulta/Modificacion y Cancelación</li>
 			</ul>
 			<div class="aviso"><img src="../img/iconos/img_msj.png" />	</div>
 		</div>
