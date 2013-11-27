@@ -274,8 +274,8 @@ function posWidgets(){
 			$("body").mousemove(function(e){
 				if(e.pageX<=0 && responsiveFlag==0){
 					$(".wr_NavPrin,#dataClient,#wrappWidgets").animate({'left':'+=190px'},'slow');
-					$("#logo").animate({'left':'224px'});
-					$("#tipoServ").animate({'left':'199px'});
+					$("#logo").animate({'left':'224px'},'slow');
+					$("#tipoServ").animate({'left':'199px'},'slow');
 					responsiveFlag++;
 				}else if( $(".wr_NavPrin").offset().left==900 ) $(".wr_NavPrin").animate({'left':'-190px'});
 			});
