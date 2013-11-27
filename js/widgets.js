@@ -3,6 +3,7 @@ var globalVarOfVal = 0;
 var globalFlah = 0;
 var normal = 1610;
 var altoVentana = $(window).height();
+var responsiveFlag = 0;
 
 var tamanoWidget = 587;
 
@@ -271,10 +272,12 @@ function posWidgets(){
 			var alen = 1030;
 		}else if($(window).width()<=768){
 			$("body").mousemove(function(e){
-				if(e.pageX<=0){
-					$(".wr_NavPrin").animate({'left':'0px'},'slow');
-					
-				}else if( $(".wr_NavPrin").offset().left==0 ) $(".wr_NavPrin").animate({'left':'-190px'});
+				if(e.pageX<=0 && responsiveFlag==0){
+					$(".wr_NavPrin,#dataClient,#wrappWidgets").animate({'left':'+=190px'},'slow');
+					$("#logo").animate({'left':'224px'});
+					$("#tipoServ").animate({'left':'199px'});
+					responsiveFlag++;
+				}else if( $(".wr_NavPrin").offset().left==900 ) $(".wr_NavPrin").animate({'left':'-190px'});
 			});
 		}else{
 			$("#wrappWidgets").css("width","771px");

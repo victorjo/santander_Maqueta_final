@@ -680,9 +680,34 @@ margin-left: 8px;
         position:absolute; 
         left:-190px;
         z-index:10;
-        background:gray;
+        background:#383838;
     } 
     #wr_SuperBanner { display: none; }
+    #dataClient{
+    	width: 170px !important;
+		position: absolute;
+		background-color: black;
+		top: 0px;
+		left: -190px;
+		font-size: 9px;
+		text-align: center;
+		padding-top: 11px;
+		height: 24px;
+    }
+    #logo{
+    	position: relative;
+		left: 33px;
+    }
+    #tipoServ{
+    	position: relative;
+		left: 17px;
+    }
+    #wr_btnNavHeader {
+    	width:323px;
+    }
+    #wrappWidgets{
+    	position:relative;
+    }
 }
 
 @media screen and (max-width: 1229px) {
