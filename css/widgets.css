@@ -132,6 +132,16 @@ p{}
 	
 }
 
+.widget {
+
+	border:1px solid #a6a6a6;
+	width: 935px;
+	font-size: 13px !important;
+	margin:auto;
+	overflow: hidden;
+	box-shadow:1px 0px 5px #a6a6a6;
+	
+}
 
 
 

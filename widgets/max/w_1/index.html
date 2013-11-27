@@ -79,10 +79,13 @@ input[type="radio"]{
 	color:red;
 	text-decoration: underline;
 }
+
+
+
 </style>
 
 <div id="step1">
-	<div id="widget">
+	<div class="widget">
 		<div id="titulo">
 			<p class="f_titleWid">TRANSFERENCIA <br>
 			DE SALDOS</p>
@@ -189,13 +192,13 @@ input[type="radio"]{
 		<div id="navegador">
 			<ul>
 				<li class="active">Solicitar</li>
-				<li onclick="">Consultar</li>
+				<li  onclick="cambiaEstado('4')">Consultar</li>
 			</ul>
 		</div>
 	</div>
 </div>
 <div id="step2">
-	<div id="widget"  style="display:none;">
+	<div class="widget"  style="display:none;">
 		<div id="titulo">
 			<p class="f_titleWid">TRANSFERENCIA <br>
 			DE SALDOS</p>
@@ -255,7 +258,7 @@ input[type="radio"]{
 		<div id="navegador" >
 			<ul>
 				<li class="active">Solicitar</li>
-				<li onclick="">Consultar</li>
+				<li onclick="cambiaEstado('4')">Consultar</li>
 			</ul>
 		</div>
 	</div>
@@ -263,7 +266,7 @@ input[type="radio"]{
 </div>
 <div id="step3" >
 	
-	<div id="widget" style="display:none">
+	<div class="widget" style="display:none">
 		<div id="titulo">
 			<p class="f_titleWid">TRANSFERENCIA <br>
 			DE SALDOS</p>
@@ -343,8 +346,8 @@ input[type="radio"]{
 		
 		<div id="navegador">
 			<ul>
-				<li class="active">Solicitar</li>
-				<li class="active">Consultar</li>
+				<li class="active" >Solicitar</li>
+				<li onclick="cambiaEstado('4')">Consultar</li>
 			</ul>
 			<div class="aviso"><img src="../img/iconos/img_msj.png" />	</div>
 		</div>
@@ -354,7 +357,7 @@ input[type="radio"]{
 </div> 
 
 <div id="step4">
-	<div id="widget" style="display:none;">
+	<div class="widget" style="display:none;">
 		<div id="titulo">
 			<p class="f_titleWid">TRANSFERENCIA <br>
 			DE SALDOS</p>
@@ -367,7 +370,7 @@ input[type="radio"]{
 				<img src="../img/botones/info.png" />
 			</div>
 		</div>
-		<div id="contenido">
+		<div id="contenido" class="calendar">
 			<h4>1. Consulta de transferencias</h4>
 			<p>A continuaci&oacute;n puede consultar las transferencias que ha realizado a sus tarjetas Santander. Seleccione el estatus de las transferencias de saldo que desea consultar, asi como el periodo de b&uacute;squeda y/o rango de saldo transferido para realizar una b&uacute;squeda m&aacute;s especifica:</p>
 			
@@ -408,7 +411,7 @@ input[type="radio"]{
 			<div class="titTabla">
 				Mis transferencias de saldo
 				<div class="Fright btnHeaderTable" style="cursor:pointer;">
-					<p onclick="creaOverlay('#fff','#contenido',1);creaModal('#contenido',1,'alerts/calendar.html')">Exportar</p>
+					<p onclick="creaOverlay('#fff','.calendar',1);creaModal('.calendar',1,'alerts/calendar.html');">Exportar</p>
 					<img src="../img/botones/exportar.png" />
 				</div>
 				
@@ -501,7 +504,7 @@ input[type="radio"]{
 		<div id="navegador">
 			<ul>
 				<li onclick="cambiaEstado('1')">Solicitar</li>
-				<li class="active" >Consultar</li>
+				<li class="active" onclick="cambiaEstado('4')" >Consultar</li>
 			</ul>
 		</div>
 	</div>
@@ -512,33 +515,33 @@ input[type="radio"]{
 		switch(step) {
 
 			case "1":
-				$("#step2").fadeOut("slow");
-				$("#step3").fadeOut("slow");
-				$("#step4").fadeOut("slow");
-				$("#step1").find("#widget").fadeIn("slow");
 
+				$("#step4").find(".widget").fadeOut("slow",function(){
+					$("#step1").find(".widget").fadeIn("slow");
+				});
 				break;
 
 
 				case "2":
-				$("#step1").fadeOut("slow",function(){
-					$("#step2").find("#widget").fadeIn("slow");
+				$("#step1").find(".widget").fadeOut("slow",function(){
+					$("#step2").find(".widget").fadeIn("slow");
 				});
 				break;
 				case "3":
 			
-				$("#step2").fadeOut("slow",function(){
-					$("#step3").find("#widget").fadeIn("slow");
+				$("#step2").find(".widget").fadeOut("slow",function(){
+					$("#step3").find(".widget").fadeIn("slow");
 				});
 				
 				break;
 
 				case "4":
 			
-				$("#step1").fadeOut("slow");
-				$("#step2").fadeOut("slow");
-				$("#step3").fadeOut("slow");
-				$("#step4").find("#widget").fadeIn("slow");
+				$("#step1").find(".widget").fadeOut("slow");
+				$("#step2").find(".widget").fadeOut("slow");
+				$("#step3").find(".widget").fadeOut("slow",function(){
+					$("#step4").find(".widget").delay(1000).fadeIn("slow");
+				});
 				
 				break;
 
