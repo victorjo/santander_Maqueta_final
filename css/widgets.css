@@ -8,6 +8,7 @@
 html,body
 {
 	height:100%;
+	background-color:#dedede;
 }
 
 h1,h2,h3,h4,h5{
@@ -686,13 +687,18 @@ margin-left: 8px;
     #dataClient{
     	width: 170px !important;
 		position: absolute;
-		background-color: black;
+		background-color: #2f2f2f;
 		top: 0px;
 		left: -190px;
 		font-size: 9px;
 		text-align: center;
 		padding-top: 11px;
 		height: 24px;
+		font-weight:bold;
+		border-bottom: 1px black solid;
+    }
+    #fecha{
+    	color:#5d5d5d;
     }
     #logo{
     	position: relative;
