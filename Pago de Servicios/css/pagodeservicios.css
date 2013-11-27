@@ -158,7 +158,9 @@ h6{
 	display:none;
 }
 
-
+#step5{
+	display:none;
+}
 
 .btnaceptar:hover{
 	cursor:pointer;
