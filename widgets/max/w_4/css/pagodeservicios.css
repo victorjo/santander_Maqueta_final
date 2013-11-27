@@ -85,7 +85,7 @@ h6{
 }
 
 .botonera {
-    bottom: -37px;
+    bottom: -0px;
     float: right;
     right: -225px;
 }
@@ -154,6 +154,11 @@ h6{
 	display:none;
 }
 
+#step4{
+	display:none;
+}
+
+
 
 .btnaceptar:hover{
 	cursor:pointer;
@@ -182,4 +187,20 @@ h6{
     height: 30px;
     text-align: center;
     width: 225px;
+}
+
+#btnreturn:hover{
+	cursor: pointer;
+}
+
+/*alta de servicios*/
+
+.servslide{
+	height:56px;
+	width:54px;
+	margin:15px 0 0 10px ;
+	background-color:#C2C2C1;
+	float:left;
+	border-radius: 5px;
+
 }
