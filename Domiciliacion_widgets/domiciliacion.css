@@ -48,41 +48,6 @@ a:link,a:visited{
 	color:#090909;
 }
 
-
-/*Tamaño de vision para cuadro de tarjetas credito*/
-#servlistTarjetas {
-    float: left;
-    margin: 5px 0 0 12px;
-    height:210px;
-    width:210px;
-    overflow:hidden;
-}
-
-#radbtnsTarjetas {
-    float: left;
-    height: 20px;
-    margin-left: 79px;
-    width: 70px;
-}
-
-/*Estilos para seleccion - y excepcion en tablas*/
-.grid tr:nth-child(1) td{
-	font-weight: normal;
-}
-
-
-.bordeHov{
-	border-color:red;
-	border-style:solid;
-	cursor:pointer;
-}
-
-.borde2:hover{
-	border-color:red;
-	border-style:solid;
-	cursor:pointer;
-}
-
 /*Dropdown  */
 
 #downico1{
@@ -113,4 +78,4 @@ a:link,a:visited{
 	float:left;
 	overflow:auto;
 }
-
+/*end +/

@@ -140,3 +140,41 @@ right: 0px;
 	float:left;
 }
 /*End switch button -- Domiciliaciones */
+
+
+.dropdown{
+	width:100%;float:left;
+	background-color:#EBEDEE;
+	margin-top:10px;
+	height:22px;
+}
+/* Dropdown*/
+.downI{
+	float:left;
+	margin: 1px 5px 0 10px;
+}
+
+.upI{
+	float:left;
+	margin: 1px 5px 0 10px;
+	display:none;
+}
+
+h6{
+	margin:3px 0px 0px 10px;
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	font-size:12px;
+	
+}
+
+.btnaceptar:hover{
+                cursor:pointer;
+                background-image:url('../../lineagrafica/vtabtn.png');
+                background-size:100% 100%;
+}
+.btnaceptar:active{
+                background-image:url('../../lineagrafica/widamphdr.png');
+                background-size:100% 100%;
+}

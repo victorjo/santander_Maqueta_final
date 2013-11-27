@@ -80,22 +80,7 @@
                     width:"250"
                     
                 });
-            $("#infobtn").click(function(){
-            	$("#info").fadeOut("slow");
-            	$("#info2").fadeOut("slow");
-            	$("#info").fadeToggle("slow");
-            	 });
-            	 
-            $("#infobtn2").click(function(){
-            	$("#info").fadeOut("slow");
-            	$("#info2").fadeOut("slow");
-            	$("#info2").fadeToggle("slow");
-            	 });
-           	
-           	$(".serv_in").click(function(){
-           		$("#servlist > div > .serv_in").removeClass("servslc");
-           		$(this).toggleClass("servslc");
-           		});
+           
            		
 
 			

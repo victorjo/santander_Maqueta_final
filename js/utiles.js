@@ -87,3 +87,6 @@ $(function(){
 })
 
 
+function cierraWidget(){
+		$( ".btnHeader" ).trigger( "click" );
+	}

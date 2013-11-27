@@ -192,8 +192,8 @@ var widgets = [
 					id:null,
 					type:3,
 					order:8,
-					contentMin:'<div class="cabecera" style="height: 10px; background: none repeat scroll 0% 0% black; color: white; font-size: 12px; padding: 9px;"><div><p>Administración de tarjeta</p></div><div class="btnCabecera"></div><div class="btnCabecera"></div></div>',
-					contentMax:'<h2>Content Maxified 4</h2>'
+					contentMin:'',
+					contentMax:''
 				}
 			];
 
@@ -241,7 +241,7 @@ function posWidgets(){
 		if((parser%3)==0) newWidget.css('float','right');
 		var posWid = newWidget.offset();
 		var posWra = wrapper.offset()
-		var a = posWid.top-posWra.top;
+		var a = posWid.top-posWra.top; 
 		var b = posWid.left-posWra.left;
 		newWidget.css({'top': a+"px",'left':b+"px"});
 		parser++;
@@ -389,23 +389,25 @@ function newWidgetInstance(obj)
 	this.chPost = function () {
 			this.obj.attr({"instanced":"true"});
 			this.obj.css({'position':'fixed','top':this.topPos,'left':this.leftPos,'z-index':50});
-			this.obj.animate({left: ($(window).width()/2)-467+'px',top:'10%'},300,function(){creaOverlay('#000',document.body,0); var scope = $(this); $(scope).children('.on').fadeOut(800,function(){ $(scope).children('.off').fadeIn(300) }) }).animate({width:'935px',height:'541px'},800);
 			var forA = this.obj;
-			$.ajax({
-				url:'widgets/max/w_'+this.obj.attr("data-id")+'/index.html',
-		        type:'GET',
-		        dataType:'html',
-		        success: function(res){
-		        	forA.html(res);
-		        }
-		    });
-
+			this.obj.animate({left: ($(window).width()/2)-467+'px',top:'10%'},300,function(){creaOverlay('#000',document.body,0); forA.children().fadeOut('fast'); var scope = $(this);  }).animate({width:'935px',height:'541px'},800,function(){
+				$.ajax({
+					url:'widgets/max/w_'+forA.attr("data-id")+'/index.html',
+			        type:'GET',
+			        dataType:'html',
+			        success: function(res){
+			        	forA.html(res);
+			        	forA.children().fadeIn('slow');
+			        }
+		    	});
+			});
 			};
 	this.routerAction = function(positionMax){
 						if(globalFlah>0) return false;
 						destruyeOverlay();
-						$(this.obj).children('.off').fadeOut('slow',function(){console.log(this.obj); $(this).parent().children('.on').fadeIn()});
-						this.obj.animate({'top':this.topPosIn,'left':this.leftPosIn,'width':this.width+'px','height':this.height+'px'},800,function(){ $("#wrappWidgets").animate({scrollTop:'0px'}); }).animate({'top':'+='+$("#wrappWidgets").offset().top,'left':'+='+$("#wrappWidgets").offset().left},300,function(){
+						var forA = this.obj;
+						forA.children().hide();
+						this.obj.animate({'top':this.topPosIn,'left':this.leftPosIn,'width':this.width+'px','height':this.height+'px',},800,function(){ $("#wrappWidgets").animate({scrollTop:'0px'}); }).animate({'top':'+='+$("#wrappWidgets").offset().top,'left':'+='+$("#wrappWidgets").offset().left},300,function(){
 							var io = $(this);
 							$.ajax({
 								url:'widgets/min/w_'+io.attr("data-id")+'/index.html',
@@ -413,6 +415,7 @@ function newWidgetInstance(obj)
 								dataType:'html',
 								success: function(res){
 									io.html(res);
+									forA.children().fadeIn('slow');
 								}
 							});
 							io.css({'top':'-='+$("#wrappWidgets").offset().top,'left':'-='+$("#wrappWidgets").offset().left,'position':'static','z-index':0});
@@ -422,4 +425,6 @@ function newWidgetInstance(obj)
 						globalFlah = 0;
 					};
 	this.chPost();
+
 }
+
