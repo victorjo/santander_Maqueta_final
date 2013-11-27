@@ -90,8 +90,47 @@ h6{
     right: -225px;
 }
 
+.botonera3 {
+    bottom: -120px;
+    float: right;
+    position: relative;
+    right: 0;
+    width: 741px;
+}
+
+.botonera2 {
+    bottom: -50px;
+    float: right;
+    position: relative;
+    right: 0;
+}
 
 
+.dropdown{
+	width:100%;float:left;
+	background-color:#EBEDEE;
+	margin-top:10px;
+	height:22px;
+}
+/* Dropdown*/
+#downico1{
+	float:left;
+	margin: 1px 5px 0 10px;
+}
+#downico2{
+	float:left;
+	margin: 1px 5px 0 10px;
+}
+#upico1{
+	float:left;
+	margin: 1px 5px 0 10px;
+	display:none;
+}
+#upico2{
+	float:left;
+	margin: 1px 5px 0 10px;
+	display:none;
+}
 #select1{
 	display:none;
 }
@@ -107,3 +146,40 @@ h6{
 }
 /*end Dropdown*/
 
+#step2{
+	display:none;
+}
+
+#step3{
+	display:none;
+}
+
+
+.btnaceptar:hover{
+	cursor:pointer;
+	background-image:url('../../lineagrafica/vtabtn.png');
+	background-size:100% 100%;
+}
+.btnaceptar:active{
+	background-image:url('../../lineagrafica/widamphdr.png');
+	background-size:100% 100%;
+}
+#return{
+	margin:0; 
+	padding:0 !important;
+	height:30px;
+}
+
+#btnreturn {
+    background-color: #FFFFFF;
+    border: thin solid #F3F3F3;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #808080;
+    color: #000000;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    height: 30px;
+    text-align: center;
+    width: 225px;
+}

@@ -10,6 +10,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script src="../js/ddSlick.js"></script>
 <script src="../js/balanceTransfer.js"></script>
+<script src="../js/componentes.js"></script>
 
 
 
@@ -34,19 +35,8 @@ var cards = [
 				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
 				];
 	$(document).ready(function(){
-		var auto = $("#autocompleteP");
-		auto.autocomplete({
-			source:cards,
-			minLength:0,
-			open: function(){
-				$(".ui-autocomplete").css({"max-height":"201px","overflow-y":"scroll","font-size":"13px","width":"480px"})
-			}
-		});
-
-		$("#autocompleteP").parent().next().next().find("span").on("click",function(){
-				console.log("se creo el evento");
-				auto.autocomplete( "search","");
-			});
+		omniBox("autocompleteP",cards);
+		omniBox("autocompleteQ",cards);
 	});
 
 
@@ -135,7 +125,7 @@ var cards = [
 
 												<table>
 													<tr><td>						
-														<input type="text"  placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+														<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
 													</td><td>
 
 													<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
