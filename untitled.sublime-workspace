@@ -1,0 +1,1079 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"padding-ri",
+				"padding-right:   (property)"
+			],
+			[
+				"Lore",
+				"LoremipLorem"
+			],
+			[
+				"sma",
+				"smallTxt"
+			],
+			[
+				"wi",
+				"width:   (property)"
+			],
+			[
+				"margin",
+				"margin-top:   (property)"
+			],
+			[
+				"v",
+				"vertical-align:   (property)"
+			],
+			[
+				"input",
+				"input	input - radio"
+			],
+			[
+				"fade",
+				"fadeOut  (function)"
+			],
+			[
+				"over",
+				"overflow:   (property)"
+			],
+			[
+				"overflow-y",
+				"overflow-style:   (property)"
+			],
+			[
+				"wrap",
+				"wrappWidgets"
+			],
+			[
+				"scro",
+				"scrollTop	.scrollTop()"
+			],
+			[
+				"has",
+				"hasClass  (function)"
+			],
+			[
+				"cen",
+				"center"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"lorem",
+				"lorem	Lorem ipsum"
+			],
+			[
+				"html",
+				"html	html"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"tit",
+				"titTabla"
+			],
+			[
+				"rig",
+				"right"
+			],
+			[
+				"link",
+				"link	link - stylesheet"
+			],
+			[
+				"shor",
+				"shortcuts  (function)"
+			],
+			[
+				"slid",
+				"slideDown	.slideDown()"
+			],
+			[
+				"he",
+				"height  (function)"
+			],
+			[
+				"script",
+				"script	HTML - Script"
+			],
+			[
+				"border",
+				"border-right"
+			],
+			[
+				"no",
+				"noActiveNav"
+			],
+			[
+				"me",
+				"medianilTop"
+			],
+			[
+				"div",
+				"divTop"
+			],
+			[
+				"F",
+				"Fright"
+			],
+			[
+				"borde",
+				"bordeGris"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"menu",
+				"menuLateral"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"ava",
+				"avatarNavPrin"
+			],
+			[
+				"wr",
+				"wr_NavPrin"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"data",
+				"dataClient"
+			],
+			[
+				"san",
+				"sans-serif  (value)"
+			],
+			[
+				"margen",
+				"margenTop"
+			],
+			[
+				"slide",
+				"slideDown	.slideDown()"
+			],
+			[
+				"mouse",
+				"mouseleave	mouseleave"
+			],
+			[
+				"sub",
+				"sub2Nav"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"wid",
+				"width:   (property)"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"button",
+				"buttonNav"
+			],
+			[
+				"prinCon",
+				"prinContLeft"
+			],
+			[
+				"cont",
+				"contBanner"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"backgro",
+				"background"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"remove",
+				"removeClass	.removeClass"
+			],
+			[
+				"sli",
+				"slideUp	.slideUp()"
+			],
+			[
+				"background-",
+				"background-repeat:   (property)"
+			],
+			[
+				"st",
+				"strokeStyle  (variable)"
+			],
+			[
+				"la",
+				"last-child  (pseudo-class)"
+			],
+			[
+				"heade",
+				"headerSeccion"
+			],
+			[
+				"widt",
+				"width:   (property)"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"ht",
+				"html5	Simple HTML5 Boilerplate"
+			],
+			[
+				"scri",
+				"script	<script>"
+			],
+			[
+				"s",
+				"script>  (element)"
+			],
+			[
+				"labelRadio",
+				"labelRadioOff"
+			],
+			[
+				"inputRadioO",
+				"inputRadioOff"
+			],
+			[
+				"labelRa",
+				"labelRadioOn"
+			],
+			[
+				"inputRadio",
+				"inputRadioOn"
+			],
+			[
+				"in",
+				"input	input - radio"
+			],
+			[
+				"add",
+				"addClass	addClass"
+			],
+			[
+				"h",
+				"html5	Simple HTML5 Boilerplate"
+			],
+			[
+				"wa",
+				"wrappMenu"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"li",
+				"link"
+			],
+			[
+				"ce",
+				"center"
+			],
+			[
+				"trans",
+				"transition	CSS - transition: ;"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"hi",
+				"hidden"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"Slide",
+				"slideToggle  (function)"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"TEXT",
+				"text-transform"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "widgets/max/w_1/indexCONSULTA.html",
+			"settings":
+			{
+				"buffer_size": 2913,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "widgets/max/w_1/index.html",
+			"settings":
+			{
+				"buffer_size": 13672,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/JSLint/JSLint.sublime-build",
+	"command_palette":
+	{
+		"height": 187.0,
+		"selected_items":
+		[
+			[
+				"lorem",
+				"LoremIpsum: (15) some"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Snippet: htmlboiler"
+			],
+			[
+				"jquery",
+				"Snippet: Google AJAX Libraries: jQuery"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"INSTA",
+				"Package Control: Install Package"
+			],
+			[
+				"INST",
+				"Package Control: Install Package"
+			],
+			[
+				"INSTALL",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 602.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/widgets/max/w_1/index.html",
+		"/Users/yomero/Sites/santander_Maqueta_final/balance_maquetas/informativo3.html",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/css/master.css",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/css/widgets.css",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/js/widgets.js",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/alerts/datos.html",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/js/utiles.js",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/widgets/max/w_2/index.html",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/master.html",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/balance_maquetas/contenidos/datos.html",
+		"/Applications/MAMP/htdocs/master.html",
+		"/Applications/MAMP/htdocs/widgets/min/w_1/index.html",
+		"/Applications/MAMP/htdocs/s/master.html",
+		"/Applications/MAMP/htdocs/s/widgets/min/w_1/index.html",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/widgets/min/w_1/index.html",
+		"/Users/yomero/Sites/santander_Maqueta_final/Balance Transfer/widgetreducido.html",
+		"/Users/yomero/Sites/santander_Maqueta_final/master.html",
+		"/Users/yomero/Sites/santander_Maqueta_final/css/widgets.css",
+		"/Users/yomero/Desktop/widgets.css",
+		"/Users/yomero/Sites/santander_Maqueta_final/css/mouseWheel/mouseWheel.css",
+		"/Users/yomero/Sites/santander_Maqueta_final/js/widgets.js",
+		"/Users/yomero/Sites/santander_Maqueta_final/js/master.js",
+		"/Users/yomero/Sites/santander_Maqueta_final/js/utiles.js",
+		"/Users/yomero/Sites/santander_Maqueta_final/balance_maquetas/informativo2.html",
+		"/Users/yomero/Sites/santander_Maqueta_final/css/master.css",
+		"/Users/yomero/Sites/santander_Maqueta_final/balance_maquetas/informativo.html",
+		"/Users/yomero/Sites/santander_Maqueta_final/balance_maquetas/contenidos/datos.html",
+		"/Users/yomero/Sites/santander_Maqueta_final/js/ddSlick.js",
+		"/Users/yomero/Sites/santander_Maqueta_final/DOCS/Maquetas widgets/Reducido1x2.html",
+		"/Volumes/FrontDesign/SANTANDER/Maquetas widgets/banners.html",
+		"/Volumes/FrontDesign/SANTANDER/Maquetas widgets/losestilo.css",
+		"/Users/yomero/Sites/santander_Maqueta_final/DOCS/Maquetas widgets/Informativo.html",
+		"/Users/yomero/Sites/santander_Maqueta_final/componentes/move.html",
+		"/Users/yomero/Sites/santander_Maqueta_final/Santos.sublime-workspace",
+		"/Users/yomero/Sites/santander_Maqueta_final/js/widgets",
+		"/Users/yomero/Sites/santander_Maqueta_final/js/jquery10.2.min.js",
+		"/Users/yomero/Sites/santander_Maqueta_final/css/master",
+		"/Users/yomero/Sites/mensajeria/fx.html",
+		"/Users/yomero/Sites/santander_Maqueta_final/img/interfaz/Logo_Santander.png",
+		"/Users/yomero/Documents/Proyectos1/afirme/AFIRME_PRIVADO/AFIRME_privado/css/styleBancaPriv.css",
+		"/Users/yomero/Documents/Proyectos1/afirme/AFIRME_PRIVADO/AFIRME/js/dropDown.js",
+		"/Users/yomero/Documents/Proyectos1/afirme/AFIRME_PRIVADO/AFIRME/css/styleBancaPriv.css",
+		"/Users/yomero/Documents/Proyectos1/afirme/AFIRME_PRIVADO/AFIRME/index.html",
+		"/Users/yomero/Documents/Proyectos1/afirme/AFIRME_PRIVADO/index.html",
+		"/Users/yomero/Sites/mensajeria/mensajeria.html",
+		"/Users/yomero/Sites/arbor-v0.92/docs/sample-project/style.css",
+		"/Users/yomero/Sites/arbor-v0.92/docs/sample-project/main.js",
+		"/Users/yomero/Sites/arbor-v0.92/docs/sample-project/index.html",
+		"/Users/yomero/Documents/Proyectos1/liverpool/jquery.radar/jquery.radar.js",
+		"/Users/yomero/Documents/Proyectos1/liverpool/jquery.radar/radar.html",
+		"/Users/yomero/Documents/Proyectos1/liverpool/jquery.radar/example.html",
+		"/Users/yomero/Documents/Proyectos/OMNISUITE/OmnisuiteProyect/OmniSuite/maquetaIntegracion/index/mensajeria/fx.html",
+		"/Users/yomero/Documents/Proyectos/OMNISUITE/OmnisuiteProyect/OmniSuite/maqueta ommisuite/pluginsJS/index.html",
+		"/Users/yomero/Documents/Proyectos1/OMNISUITE/demo/src/java/com/omnisuite/servlets/GestionModulos.java",
+		"/Users/yomero/Documents/Proyectos/OMNISUITE/OmnisuiteProyect/OmniSuite/DB/campana/insertsCampanias.sql",
+		"/Users/yomero/Desktop/PGRVIC/mapa.html",
+		"/Users/yomero/Documents/pruebas/pgrDivs/ckeditor.html",
+		"/Users/yomero/Documents/pruebas/ckeditor.html",
+		"/Volumes/YAMIL/Demo/SEP.html",
+		"/Users/yomero/Documents/Proyectos/OMNISUITE/OmnisuiteProyect/OmniSuite/DB/clientes/insertsClientes.sql",
+		"/Users/yomero/Documents/Proyectos/OMNISUITE/OmnisuiteProyect/OmniSuite/maqueta ommisuite/maqueta_omnisuite/Nuevos/layoutComponent.html",
+		"/Users/yomero/Documents/Proyectos/OMNISUITE/OmnisuiteProyect/OmniSuite/maqueta ommisuite/maqueta_omnisuite/Nuevos/layoutComponent",
+		"/Users/yomero/Documents/Proyectos/OMNISUITE/OmnisuiteProyect/OmniSuite/maqueta ommisuite/maqueta_omnisuite/Nuevos/layouts-tablas.html",
+		"/Users/yomero/Documents/Proyectos/OMNISUITE/OmnisuiteProyect/OmniSuite/maqueta ommisuite/maqueta_omnisuite/Nuevos/plantilla-tablas.html",
+		"/Users/yomero/Documents/Proyectos/OMNISUITE/OmnisuiteProyect/OmniSuite/maqueta ommisuite/maqueta_omnisuite/Nuevos/css/main_container.css",
+		"/Users/yomero/Documents/Proyectos/OMNISUITE/OmnisuiteProyect/OmniSuite/maqueta ommisuite/maqueta_omnisuite/Nuevos/css/style-child.css",
+		"/Users/yomero/Documents/Proyectos/OMNISUITE/OmnisuiteProyect/OmniSuite/maqueta ommisuite/maqueta_omnisuite/Nuevos/css/navOmni.css",
+		"/Users/yomero/Documents/Proyectos/OMNISUITE/OmnisuiteProyect/OmniSuite/maquetaIntegracion/wars_machote/main.html",
+		"/Users/yomero/Documents/Proyectos/OMNISUITE/OmnisuiteProyect/OmniSuite/maqueta ommisuite/maqueta_omnisuite/Nuevos/assets/js/script.js",
+		"/Users/yomero/Documents/Proyectos/OMNISUITE/OmnisuiteProyect/OmniSuite/maqueta ommisuite/maqueta_omnisuite/Nuevos/assets/css/style.css",
+		"/Users/yomero/Documents/Proyectos/OMNISUITE/OmnisuiteProyect/OmniSuite/maqueta ommisuite/maqueta_omnisuite/Nuevos/index.html",
+		"/Users/yomero/Documents/Proyectos/OMNISUITE/OmnisuiteProyect/OmniSuite/maqueta ommisuite/maqueta_omnisuite/Nuevos/main.html",
+		"/Users/yomero/Library/Application Support/Sublime Text 2/Packages/Web Inspector/swi.sublime-settings",
+		"/Volumes/NO NAME/santander/maqueta_santander.html",
+		"/Users/yomero/Sites/prueba/css/maqueta_santander.css",
+		"/Users/yomero/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"navegador",
+			"consultar",
+			"consulta",
+			"consl",
+			"paso",
+			"radio",
+			"input",
+			"navegador",
+			"titulo",
+			"Consultar",
+			"CONSULTA",
+			"Transferencia de saldo",
+			"script",
+			"Fright",
+			"Consulta de transferencia",
+			"widgets.css",
+			"header",
+			"/**  BALANCE TRANSFER **/\n/**  BALANCE TRANSFER **/\nBALANCE",
+			"wra_Select",
+			"tbl_consulta",
+			"titlewidred",
+			"widgetred\nwidgetred",
+			"widgetred",
+			"f_titleWid",
+			"titulo",
+			"f_titleWid",
+			"titulo",
+			"searchpanel",
+			"widget",
+			"Lorem ipsum",
+			"wrappWidgets",
+			"btnNavWidget",
+			"push",
+			"\n		",
+			"wrappWidgets",
+			"banderita",
+			"console.log",
+			"activaBtn",
+			"normal",
+			"movescroll",
+			"widgets",
+			"globalVarOfVal",
+			"Fright",
+			"text-align",
+			"wra_Select",
+			"5px",
+			"padding",
+			"220px",
+			"creaOverlay",
+			"body",
+			"img",
+			"wrappWidgets",
+			"dataClient",
+			"wr_btnNavHeader",
+			"alto2",
+			"wrappWidgets",
+			"wrapp",
+			"avatarNav",
+			"wr_btnNavHeader",
+			"#wr_btnNavHeader",
+			"alto2",
+			";\n",
+			"wr_PrinWid",
+			"Fleft",
+			"porcentaje",
+			"alejaElementos",
+			"function",
+			"img",
+			"slideDown",
+			"prinContLeft",
+			"1024112",
+			"navLeft",
+			"contBanner",
+			"prinContLeft",
+			"attr",
+			"fadeOut",
+			"hide",
+			"console.log",
+			"numPasos",
+			"numElement",
+			"numPasos",
+			"alejaElemento",
+			"alejamientos",
+			"fadeIn",
+			"push",
+			"oval",
+			"eachNode",
+			"Graphics",
+			"Render",
+			"Nav",
+			"alone",
+			"2000",
+			"fast",
+			"velocidad",
+			"\"slow\"",
+			"clear: both",
+			"btnNuevo",
+			"aside-item",
+			"tools",
+			"right-menu",
+			"each",
+			"tool-show",
+			"appthumb",
+			"each",
+			"row",
+			"right-menu",
+			"Contenido menu",
+			"Contenido",
+			"Contenido menu",
+			"wd",
+			"aside-item-container",
+			"aside",
+			"aside-item"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"../img"
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "widgets/max/w_1/indexCONSULTA.html",
+					"settings":
+					{
+						"buffer_size": 2913,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								637,
+								2912
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 449.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "widgets/max/w_1/index.html",
+					"settings":
+					{
+						"buffer_size": 13672,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9113,
+								9113
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublime_auto_complete": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5528.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 25.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 243.0,
+	"status_bar_visible": true
+}

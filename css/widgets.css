@@ -8,6 +8,7 @@
 html,body
 {
 	height:100%;
+	background-color:#dedede;
 }
 
 h1,h2,h3,h4,h5{
@@ -48,12 +49,12 @@ p{}
 }
 
 .btnHeader {
-    float:right;
-    margin-top:5px;
-    margin-right:10px;
-    cursor:pointer;
-    }
-
+	float: right;
+	width: 24px;
+	height: 30px;
+	cursor: pointer;
+	margin: 7px 10px 0 0;
+}
 
 #headerwidred{
         background-color: #E8E8E8;
@@ -680,9 +681,39 @@ margin-left: 8px;
         position:absolute; 
         left:-190px;
         z-index:10;
-        background:gray;
+        background:#383838;
     } 
     #wr_SuperBanner { display: none; }
+    #dataClient{
+    	width: 170px !important;
+		position: absolute;
+		background-color: #2f2f2f;
+		top: 0px;
+		left: -190px;
+		font-size: 9px;
+		text-align: center;
+		padding-top: 11px;
+		height: 24px;
+		font-weight:bold;
+		border-bottom: 1px black solid;
+    }
+    #fecha{
+    	color:#5d5d5d;
+    }
+    #logo{
+    	position: relative;
+		left: 33px;
+    }
+    #tipoServ{
+    	position: relative;
+		left: 17px;
+    }
+    #wr_btnNavHeader {
+    	width:323px;
+    }
+    #wrappWidgets{
+    	position:relative;
+    }
 }
 
 @media screen and (max-width: 1229px) {
