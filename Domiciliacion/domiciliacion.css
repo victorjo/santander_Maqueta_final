@@ -74,13 +74,24 @@ a:link,a:visited{
 .bordeHov{
 	border-color:red;
 	border-style:solid;
-	cursor:pointer;
+	cursor:pointer; 
+    
 }
+
 
 .borde2:hover{
 	border-color:red;
 	border-style:solid;
 	cursor:pointer;
+	
+}
+.borde2 > span:after{
+	width:0px;
+	border-right:30px solid black;
+	border-left:30px solid blue;
+	position:absolute;
+	content: '';
+	height:20px;
 }
 
 /*Dropdown  */
