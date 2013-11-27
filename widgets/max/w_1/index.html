@@ -63,7 +63,7 @@ input[type="radio"]{
 	height: 20px;
 }
 </style>
-<div id="paso1">
+<div id="step1">
 	<div id="widget">
 		<div id="titulo">
 			<p class="f_titleWid">
@@ -177,7 +177,7 @@ input[type="radio"]{
 		</div>
 	</div>
 </div>
-<div id="paso2">
+<div id="step2">
 	<div id="widget"  style="display:none;">
 		<div id="titulo">
 			<p class="f_titleWid">
@@ -245,7 +245,7 @@ input[type="radio"]{
 	</div>
 	
 </div>
-<div id="paso3" >
+<div id="step3" >
 	
 	<div id="widget" style="display:none">
 		<div id="titulo">
@@ -345,17 +345,17 @@ input[type="radio"]{
 	</div>
 </div>
 <script>
-	function cambiaEstado(paso){
-		switch(paso) {
+	function cambiaEstado(step){
+		switch(step) {
 			case "2":
-				$("#paso1").fadeOut("slow",function(){
-					$("#paso2").find("#widget").fadeIn("slow");
+				$("#step1").fadeOut("slow",function(){
+					$("#step2").find("#widget").fadeIn("slow");
 				});
 				break;
 			case "3":
 			
-				$("#paso2").fadeOut("slow",function(){
-					$("#paso3").find("#widget").fadeIn("slow");
+				$("#step2").fadeOut("slow",function(){
+					$("#step3").find("#widget").fadeIn("slow");
 				});
 				
 				break;
