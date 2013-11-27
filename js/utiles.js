@@ -88,5 +88,5 @@ $(function(){
 
 
 function cierraWidget(){
-		$( ".btnHeader" ).trigger( "click" );
+		$("#widget").find(".btnHeader").trigger( "click" );
 	}
