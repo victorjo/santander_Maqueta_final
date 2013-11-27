@@ -2,13 +2,17 @@
 
 <head>
  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
- <title> Domiciliación de tarjeta de crtédito </title>
+ <title> Domiciliación de tarjeta de crédito </title>
  <link rel="stylesheet" href="../css/widgets.css" />
  <link rel="stylesheet" href="../css/componentes.css" />
+ <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
  <script src="../js/jquery10.2.min.js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script src="../js/ddSlick.js"></script>
 <script src="../js/balanceTransfer.js"></script>
 <script src="../js/componentes.js"></script>
+
+
 
 
 <script>
@@ -32,14 +36,13 @@ var cards = [
 				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
 				];
 	$(document).ready(function(){
-		omniBox("autocompleteP",cards);
+		omniBox("autocompleteQ",cards);
 		
 	});
 
 
 
 </script>
-
 
 <style>
 .btnHeaderTable{
@@ -143,29 +146,7 @@ var cards = [
 
 											</table>
 
-												<div class="wra_Select4"> 
-
-												<table>
-													<tr><td>						
-														<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
-													</td><td>
-
-													<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-
-															<div class="botonestrella-on"> <img src="../img/iconos/favorito_on.png"/>  </div><td> <span style="font-weight:bold;margin-left:5px"> <div class="marcotriangulo"><div class="triangulo_inf"></span> </td>
-													</td></tr>
-
-												</table>
-											</div>
-
-			
-												<div class="wra_Select3"> 
-			      
-            													</select>
-	
-
-			
-			</div>
+												
 
 
 													<div class="dropdown">
@@ -174,11 +155,21 @@ var cards = [
   																<h6>Datos para domiciliar la tarjeta de crédito.</h6>
   																</div>	
 
+																	
+  																<div id="select1" class="wra_Select4" style="display:none">
 
+											<table>
+													<tr><td>						
+														<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+													</td><td>
 
+													<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
 
+															<div class="botonestrella-on"> <img class="activo" style="display:block;" src="../img/iconos/favorito_on.png"/> <img class="inactivo" style="display:none;" src="../img/iconos/favorito_of.png" </div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span> </td>
+													</td></tr>
 
-  																<div id="select1" class="wra_Select4" style="display:none"><b>Esquema de pago</b>
+												</table><b>Esquema de pago</b>
+
 																	<select name="" id="" >  
 																		<option value="">Pago mínimo</option>
 													                    <option value="">Opcion1</option>
@@ -186,15 +177,13 @@ var cards = [
 													                    <option value="">Opcion1</option>
 													                    <option value="">Opcion1</option>
 														           	</select>
-
 											</div>
 
 														<div class="botonera">
 												
 															<div class="btnaceptar">Continuar</div>
 														 </div>
-				
-			
+	
 	</div>   </tr>
 	<div id="navegador">
 		<ul>
