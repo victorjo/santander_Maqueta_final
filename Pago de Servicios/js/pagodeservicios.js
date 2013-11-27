@@ -65,6 +65,13 @@ var switchO = '<div style="position:relative;width:230px;">';
 			});
 	});
 	
+	$("#siguiente3").click(function(){
+		$("#step4").fadeOut("slow",function(){
+			$("#step5").fadeIn("slow");				
+			});
+	});
+
+	
 	$("#btnreturn").click(function(){
 		$("#step3").fadeOut("slow",function(){
 			$("#step1").fadeIn("slow");				
