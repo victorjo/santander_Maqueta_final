@@ -5,13 +5,12 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>A otras cuentas 1</title>
 <link rel="stylesheet" href="css/transferencias.css" />
-<link rel="stylesheet" href="css/componentes.css"/>
+<link rel="stylesheet" href="../css/widgets.css"/>
+<link rel="stylesheet" href="../css/componentes.css"/>
 <script src="../js/jquery10.2.min.js"></script>
 <script src="../js/ddSlick.js"></script>
 <script src="../js/balanceTransfer.js"></script>
-<script src="js/componentes.js"></script>
-
-
+<script src="../js/componentes.js"></script>
 
 
 <style>
@@ -47,6 +46,11 @@
 	cursor: pointer;
 }
 </style>
+<script>
+$(document).ready(function(){
+  switchFunc('switchbox',"Si","NO",""); 
+});
+</script>
 </head>
 
 <body>
@@ -134,13 +138,7 @@
 											
 				<p>Programar fecha:</p>
 			
-			<div id="switchbox">
-				<div style="position:relative;width:230px;">
-					<div id="on">SI</div>
-					<div id="tope"></div>
-					<div id="off">NO</div>
-				</div>
-			</div>
+			<div id="switchbox" class="switch"></div>
 
 				<div class="programar" style="float:left;margin:7px 0 0 30px"><img src="../img/iconos/img_calendario.png"/></div>
 				

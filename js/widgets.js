@@ -182,8 +182,8 @@ var widgets = [
 					contentMax:''
 				},
 				{
-					id:null,
-					type:2,
+					id:4,
+					type:1,
 					order:7,
 					contentMin:'',
 					contentMax:''
