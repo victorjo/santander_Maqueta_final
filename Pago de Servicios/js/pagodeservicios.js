@@ -70,6 +70,21 @@ var switchO = '<div style="position:relative;width:230px;">';
 			$("#step1").fadeIn("slow");				
 			});
 	});
+	
+	//Transicion entre operaciones
+	$("#navegador > ul > :nth-child(1)").click(function(){
+		$("#contenido > div > div").fadeOut(function(){
+			$("#step1").fadeIn();
+			});
+	});
+
+	
+	$("#navegador > ul > :nth-child(2)").click(function(){
+		$("#contenido > div > div").fadeOut(function(){
+			$("#step4").fadeIn();
+			});
+	});
+		
 
 
 		
