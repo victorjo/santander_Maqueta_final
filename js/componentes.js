@@ -1,3 +1,7 @@
+$(document).ready(function(){
+  dropIsra();  
+});
+
 /*Funcion switch (Normal de label dos digitos)- instanciado mediante clases*/
 function switchFunc(object,descripcion1,descripcion2,tipoModulo){
 
