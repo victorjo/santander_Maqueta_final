@@ -304,6 +304,34 @@ p{}
 
 /*-----*/
 
+.botonestrella-on {
+width: 35px;
+height: 23px;
+margin: -4px;
+border-top: 1px solid gray;
+border-bottom: 1px solid gray;
+border-right: 1px solid gray;
+padding-top: 4px;
+cursor: pointer;
+}
+.marcotriangulo {
+width: 25px;
+height: 17px;
+border: 1px solid gray;
+margin: -1px;
+padding-top: 10px;
+background-color: #E6E6E5;
+}
+
+.triangulo_inf {
+width: 0;
+height: 0;
+border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+border-top: 8px solid #666665;
+margin-left: 8px;
+}
+
 .botonera {
     bottom: 0;
     float: right;
@@ -655,6 +683,12 @@ p{}
         background:gray;
     } 
     #wr_SuperBanner { display: none; }
+}
+
+@media screen and (max-width: 1229px) {
+	#wr_SuperBanner{
+		display:none;
+	}
 }
 /**/
 
