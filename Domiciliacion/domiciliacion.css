@@ -1,39 +1,5 @@
 @import url('../css/widgets.css');
 
-
-
-/*Estilos propios- Domiciliaciones*/
-
-#Widredu {
-	border:1px solid black;
-	width: 250px;
-	height: 500px;
-	font-size: 13px !important;
-	font-color: #ffffff;
-	margin:auto;
-	overflow: hidden;
-	float: left;
-}
-
-#header {
-	background-color: #000000;
-	font-color: #ffffff;
-	font-weight: bold;
-	width: 250px;
-	height: 35px;
-	float: left;
-}
-
-.h1{
-	color:white;
-	font-size:16;
-	margin-top:10px;
-	margin-left:15px;
-	float:left;
-	font-family:Arial, Helvetica, sans-serif;
-
-}
-
 /*Texto Superior*/
 .textSuperior{
 	margin:10px 0 0 10px;
@@ -128,3 +94,88 @@ a:link,a:visited{
 	overflow:auto;
 }
 
+/*Marco informativo*/
+.marcoInformativo{
+border-radius:5px;
+border:2px solid #EBEBEB;
+width:100%;
+padding:5px;
+}
+
+.marcoInformativo2{
+border-radius:5px;
+border:2px solid #EBEBEB;
+width:60%;
+padding:5px;
+}
+
+/**slider*/
+#slider {
+    background-color: #E6E8E8;
+    float: left;
+    height: 85px;
+    margin: 10px 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.serv_in{
+	height:58px;
+	width:58px;
+	margin:10px 0 0 10px ;
+	background-color:#C2C2C1;
+	float:left;
+	border-radius: 5px;
+	border:1px #C2C2C1 solid;
+
+}
+
+.servslc{
+	height:58px;
+	width:58px;
+	margin:10px 0 0 10px ;
+	background-color:#57595A;
+	border:1px #57595A solid;
+	float:left;
+	border-radius: 5px;
+}
+
+
+.servslide{
+	height:56px;
+	width:54px;
+	margin:15px 0 0 10px ;
+	background-color:#C2C2C1;
+	float:left;
+	border-radius: 5px;
+	border: 1px #C2C2C1 solid;
+
+}
+
+
+.servslide:hover{
+	
+	cursor:pointer;
+	border:1px red solid;
+	
+}
+
+.cuadserv {
+	height: 62px;
+	width: 59px;
+	background-color: #58595A;
+	margin-left: 5px;
+	margin-right: 0px;
+	display:inline-table;
+	float:none;
+	padding: 0;
+	margin-top: 5px;
+}
+
+.input{
+	width:50%;
+}
+
+#wra_Select2 .dd-select{
+	width:30px;
+}
