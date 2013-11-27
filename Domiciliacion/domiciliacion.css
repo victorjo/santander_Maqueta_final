@@ -1,4 +1,6 @@
-﻿@import url('../css/widgets.css');
+@import url('../css/widgets.css');
+
+
 
 /*Estilos propios- Domiciliaciones*/
 
@@ -45,3 +47,35 @@
 a:link,a:visited{
 	color:#090909;
 }
+
+/*Dropdown  */
+
+#downico1{
+	float:left;
+	margin:1px 5px 0 10px;
+}
+#downico2{
+	float:left;
+	margin: 1px 5px 0 10px;
+}
+#upico1{
+	float:left;
+	margin: 1px 5px 0 10px;
+}
+#upico2{
+	float:left;
+	margin: 1px 5px 0 10px;
+}
+#select1{ 
+	display:none;
+}
+#select2{
+	di´play:none;
+}
+.dropcontainer{
+	height: 100px;
+	widht:715px;
+	float:left;
+	overflow:auto;
+}
+/*end +/
