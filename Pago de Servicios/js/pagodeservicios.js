@@ -1,5 +1,9 @@
+<<<<<<< HEAD
+﻿
+=======
 ﻿$(document).ready(function(){
   dropIsra();
+<<<<<<< HEAD
 
   //Transición paso 2
   $("#siguiente").click(function(){
@@ -23,3 +27,7 @@
 
 
 		
+>>>>>>> 26ec0643e0932534f21af6bfa39e5a7ee966c52e
+=======
+});
+>>>>>>> parent of 26ec064... commit for isra js fix
