@@ -16,7 +16,6 @@ function creaOverlay(color,contenedor,tipo){
 	divOverlay.css({"position":pos,"top":"0","left":"0","width":(anchoTotal*1.20)+"px","background":color,"opacity":".8","height":"100%",'display':'none'});
 	c.append(divOverlay);
 	divOverlay.fadeIn("slow");
-	divOverlay.click(destruyeOverlay);
 	banPop = true;
 	
 }
@@ -88,5 +87,5 @@ $(function(){
 
 
 function cierraWidget(){
-		$( ".btnHeader" ).trigger( "click" );
+		$("#widget").find(".btnHeader").trigger( "click" );
 	}

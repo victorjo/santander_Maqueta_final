@@ -2,47 +2,11 @@
 
 <head>
  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
- <title> Domiciliación de tarjeta de crédito </title>
- <!--<link rel="stylesheet" href="../css/widgets.css" />-->
- <link rel="stylesheet" href="../css/componentes.css" />
- <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+ <title> Domiciliación de tarjeta de crtédito </title>
+ <link rel="stylesheet" href="domiciliacion.css" />"
  <script src="../js/jquery10.2.min.js"></script>
- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script src="../js/ddSlick.js"></script>
 <script src="js/domiciliacion.js"></script>
-<script src="../js/balanceTransfer.js"></script>
-<script src="../js/componentes.js"></script>
-
-
-
-<script>
-var cards = [
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				];
-	$(document).ready(function(){
-		omniBox("autocompleteQ",cards);
-		
-	});
-
-
-
-</script>
 
 
 <style>
@@ -121,42 +85,43 @@ var cards = [
 													</table>
 
 
-														
+											<div class="dropcontainer">
+				<div class="dropdown">
+					<img id="downico1"src="../img/iconos/dropdown.png"/>
+					<img id="upico1"src="../img/iconos/dropup.png"/>
+					<h6>Quiero notificación previa de mi pago</h6>
+				</div>
+				
+				<div id="select1" class="wra_Select4">
+					<select name="" id="" >  
+						<option value="">3 días</option>
+	                    <option value="">Opcion1</option>
+	                    <option value="">Opcion1</option>
+	                    <option value="">Opcion1</option>
+	                    <option value="">Opcion1</option>
+		           	</select>
+				</div>
 
-													<div class="dropdown">
-  														<img class="downI" src="../img/iconos/dropdown.png" style="display: block;">
-  															<img class="upI" src="../img/iconos/dropup.png" style="display: none;">
-  																<h6>Datos para domiciliar la tarjeta de crédito.</h6>
-  																</div>	
-
-																	
-  																<div id="select1" class="wra_Select4" style="display:none">
-
-											<table>
-													<tr><td>						
-														<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
-													</td><td>
-
-													<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-
-															<div class="botonestrella-on"> <img class="activo" style="display:block;" src="../img/iconos/favorito_on.png"/> <img class="inactivo" style="display:none;" src="../img/iconos/favorito_of.png" </div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span> </td>
-													</td></tr>
-
-												</table><b>Esquema de pago</b>
-
-																	<select name="" id="" >  
-																		<option value="">Pago mínimo</option>
-													                    <option value="">Opcion1</option>
-													                    <option value="">Opcion1</option>
-													                    <option value="">Opcion1</option>
-													                    <option value="">Opcion1</option>
-														           	</select>
-											</div>
-
-														<div class="botonera">
-												
-															<div class="btnaceptar">Continuar</div>
-														 </div>
+				<div class="dropdown">
+					<img id="downico2" src="../img/iconos/dropdown.png"/>
+					<img id="upico2" src="../img/iconos/dropup.png"/>
+					<h6>Quiero transferir el importe a meses sin intereses</h6>
+				</div>
+							
+				<div id="select2" class="wra_Select4">
+					<select name="" id="" style="width:100%">
+	                            
+	                            <option value="">Opcion1</option>
+	                            <option value="">Opcion1</option>
+	                            <option value="">Opcion1</option>
+	                            <option value="">Opcion1</option>
+	                            <option value="">Opcion1</option>
+	                           
+	            	</select>
+				
+				</div>
+			</div>	
+						
 
 
 
