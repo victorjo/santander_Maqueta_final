@@ -94,4 +94,14 @@ var switchO = '<div style="position:relative;width:230px;">';
       console.log("se creo el evento");
       auto.autocomplete( "search","");
     });
+    
+    $(".activo").click(function(){
+      $(".activo").hide("fast");
+      $(".inactivo").show("fast");
+    });
+
+    $(".inactivo").click(function(){
+      $(".activo").show("fast");
+      $(".inactivo").hide("fast");
+    });
   }
