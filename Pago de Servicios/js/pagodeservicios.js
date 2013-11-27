@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+﻿
+=======
 ﻿$(document).ready(function(){
   dropIsra();
 
@@ -23,3 +26,4 @@
 
 
 		
+>>>>>>> 26ec0643e0932534f21af6bfa39e5a7ee966c52e
