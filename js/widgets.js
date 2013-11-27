@@ -393,7 +393,8 @@ function newWidgetInstance(obj)
 			this.obj.attr({"instanced":"true"});
 			this.obj.css({'position':'fixed','top':this.topPos,'left':this.leftPos,'z-index':50});
 			var forA = this.obj;
-			this.obj.animate({left: ($(window).width()/2)-467+'px',top:'10%'},300,function(){creaOverlay('#000',document.body,0); forA.children().fadeOut('fast'); var scope = $(this);  }).animate({width:'935px',height:'541px'},800,function(){
+			forA.children().fadeOut(600);
+			this.obj.animate({width:'935px',height:'541px',left: ($(window).width()/2)-467+'px',top:'10%'},600,function(){creaOverlay('#000',document.body,0); forA.children().fadeOut('fast'); var scope = $(this);  /*}).animate({width:'935px',height:'541px'},800,function(){*/
 				$.ajax({
 					url:'widgets/max/w_'+forA.attr("data-id")+'/index.html',
 			        type:'GET',
@@ -409,8 +410,8 @@ function newWidgetInstance(obj)
 						if(globalFlah>0) return false;
 						destruyeOverlay();
 						var forA = this.obj;
-						forA.children().hide();
-						this.obj.animate({'top':this.topPosIn,'left':this.leftPosIn,'width':this.width+'px','height':this.height+'px',},800,function(){ $("#wrappWidgets").animate({scrollTop:'0px'}); }).animate({'top':'+='+$("#wrappWidgets").offset().top,'left':'+='+$("#wrappWidgets").offset().left},300,function(){
+						forA.children().hide(300);
+						this.obj.animate({'top':(this.topPosIn+$("#wrappWidgets").offset().top),'left':this.leftPosIn,'width':this.width+'px','height':this.height+'px',},800,function(){ /*$("#wrappWidgets").animate({scrollTop:'0px'}); }).animate({'top':'+='+$("#wrappWidgets").offset().top,'left':'+='+$("#wrappWidgets").offset().left},300,function(){*/
 							var io = $(this);
 							$.ajax({
 								url:'widgets/min/w_'+io.attr("data-id")+'/index.html',
