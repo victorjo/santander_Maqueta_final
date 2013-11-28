@@ -132,8 +132,6 @@ var switchO = '<div style="position:relative;width:230px;">';
 
 function cambiaFlujo(step){
 	
-	alert("si entro"+step)
-
 	var npasos = $(".pasos").size();
 		$(".pasos").each(function(index){
 			if((++index) == npasos){
