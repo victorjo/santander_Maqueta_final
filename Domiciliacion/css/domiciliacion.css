@@ -260,9 +260,9 @@ a:link,a:visited{
 
 
 
-tr td{
+		/*tr td{
 			width: 40%;
-		}
+		}*/
 		#contenido{
 			background: #fff;
 		}
@@ -336,6 +336,13 @@ tr td{
 			
 			margin-top: 20px;
 		}
+
+		#tmbt{
+			
+			margin-top: 320px;
+		}
+		
+
 		.botonera2 .btn{
 			width: 30%;
 		}
