@@ -332,13 +332,14 @@ tr td{
 		#circulos #seleccionado{
 			background: #000;
 		}
-		.botonera{
+		.botonera2{
 			
 			margin-top: 20px;
 		}
-		.botonera .btn{
+		.botonera2 .btn{
 			width: 30%;
 		}
+
 		 .tit{
 			color: grey;
 		}
