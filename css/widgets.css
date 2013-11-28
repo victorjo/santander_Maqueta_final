@@ -689,7 +689,7 @@ margin-left: 8px;
 
 
 /**/
-@media screen and (max-width: 768px),all (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+@media screen and (max-width: 768px),all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
 /*@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {*/
     body
     {
@@ -733,19 +733,30 @@ margin-left: 8px;
     }
     #wrappWidgets{
     	position:relative;
+    	max-width:768px;
+    	width:767px !important;
+    	overflow-x:hidden;
+    	padding-left:4px;
     }
     .butter{
     	display:block;
     }
+    .altoTotal {
+		height: 576px;
+	}
+	.widget-min{
+		margin-right: 8px;
+		margin-top: 8px;
+	}
 }
 
-@media screen and (max-width: 1229px) {
+@media screen and (max-width: 1229px),all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
 	#wr_SuperBanner{
 		display:none;
 	}
 }
 
-/**/
+
 
 #widred1x2{
 	width:243px;

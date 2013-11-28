@@ -273,13 +273,13 @@ function posWidgets(qwerty){
 			$("[data-pos='3']").after('<div class="widget-min col1 alto2 " data-pos="codom"><h1>Publicidad</h1></div>');
 			$("[data-pos='7']").css('float','left');
 			var alen = 1030;
-		}else if($(window).width()<=768){
+		/*}else if($(window).width()<=768){ ****CHANGE FOR TOUCH EVENT***
 			$("body").mousemove(function(e){
 				if(e.pageX<=0){
 					moveResObs();
 				}else if( $(".wr_NavPrin").offset().left==900 ) $(".wr_NavPrin").animate({'left':'-190px'});
 			});
-		}else{
+		}*/}else{
 			$("#wrappWidgets").css("width","771px");
 		}
 		var obj = $("#navContent");
@@ -364,11 +364,18 @@ function posWidgets(qwerty){
 }
 
 function moveResObs(){
-	if(responsiveFlag!=0) return false;
+	if(responsiveFlag!=0) return returnMenu();
 	$(".wr_NavPrin,#dataClient,#wrappWidgets,.butter").animate({'left':'+=190px'},'slow');
 	$("#logo").animate({'left':'224px'},'slow');
 	$("#tipoServ").animate({'left':'199px'},'slow');
 	responsiveFlag++;
+}
+function returnMenu(){
+	$(".wr_NavPrin,#dataClient,#wrappWidgets,.butter").animate({'left':'-=190px'},'slow');
+	$("#logo").animate({'left':'33px'},'slow');
+	$("#tipoServ").animate({'left':'17px'},'slow');
+	responsiveFlag=0;
+	return false;
 }
 
 function moveScroll(obj,math){
