@@ -40,13 +40,14 @@
 	border-radius: 5px;
 	border: 1px #C2C2C1 solid;
 
+
 }
 
 
 .servslide:hover{
 	
 	cursor:pointer;
-	border:1px red solid;
+	border:1px #666666 solid;
 	
 }
 
@@ -69,3 +70,4 @@
 #wra_Select2 .dd-select{
 	width:30px;
 }
+
