@@ -111,10 +111,7 @@
 		
 
 			<div class="botonera2">
-				<div class="btn" style="float:right; margin-top:10px;">Continuar</div>
-				<div class="btn" style="float:right; margin-top:10px;">Guardar</div>
-				<div class="btn" style="float:right; margin-top:10px;"><div id="imgim"></div>Imprimir</div>
-
+				<div class="btn" style="float:right; margin-top:10px;">Imprimir</div><div class="btn" style="float:right; margin-top:10px;">Guardar</div><div class="btn" style="float:right; margin-top:10px;">Continuar</div>
 			</div>
 
 

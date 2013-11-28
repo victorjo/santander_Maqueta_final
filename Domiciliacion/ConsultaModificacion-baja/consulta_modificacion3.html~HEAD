@@ -3,14 +3,14 @@
 <head>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 	<title> Domiciliación de tarjeta de crtédito </title>
-	<link rel="stylesheet" href="../css/widgets.css" />
-	<link rel="stylesheet" href="../css/componentes.css" />
+	<link rel="stylesheet" href="../../css/widgets.css" />
+	<link rel="stylesheet" href="../../css/componentes.css" />
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 	<script src="../js/jquery10.2.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-	<script src="../js/ddSlick.js"></script>
-	<script src="../js/balanceTransfer.js"></script>
-	<script src="../js/componentes.js"></script>
+	<script src="../../js/ddSlick.js"></script>
+	<script src="../../js/balanceTransfer.js"></script>
+	<script src="../../js/componentes.js"></script>
 	
 
 	<script>
@@ -159,10 +159,10 @@
 		</div>
 		<div id="header">
    			<div class="btnHeader">
-   				<img src="../img/botones/btn_cerrar.png"/>
+   				<img src="../../img/botones/btn_cerrar.png"/>
    			</div>
    			<div class="btnHeader">
-   				<img src="../img/botones/info_.png"/>
+   				<img src="../../img/botones/info_.png"/>
    			</div>
    			<div id="circulos">
    				<div class="c1" ></div>
@@ -192,9 +192,9 @@
 		
 
 			<div class="botonera">
-				<div class="btn" style="float:right; margin-top:10px;">Continuar</div>
-				<div class="btn" style="float:right; margin-top:10px;">Guardar</div>
-				<div class="btn" style="float:right; margin-top:10px;">Imprimir</div>
+				<div class="btn" style="float:right; margin-top:0px;">Continuar</div>
+				<div class="btn" style="float:right; margin-top:0px;">Guardar</div>
+				<div class="btn"><img src="../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
 				
 
 			</div>
@@ -207,11 +207,11 @@
    		<div id="navegador">
 			<ul>
 				<li> Domiciliación <br> de Servicios </li>
-				<li >Domiciliación de Tarjeta <br> de Crédito </li>
+				<li>Domiciliación de Tarjeta <br> de Crédito </li>
 				<li class="active">Consulta/Modificación <br> y Cancelación </li>
 			</ul>
 			<div class="aviso">
-				<img src="../img/iconos/img_msj.png" /> 
+				<img src="../../img/iconos/img_msj.png" /> 
 			</div>
 		</div>
 	

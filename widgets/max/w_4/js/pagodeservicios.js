@@ -109,35 +109,43 @@ var switchO = '<div style="position:relative;width:230px;">';
 	});
 
 
+
+
 	
 	//Transicion entre operaciones
 	$("#navegador > ul > :nth-child(1)").click(function(){
-		$("#contenido > div > div").fadeOut(function(){
-			$("#step1").fadeIn();
-			});
+		cambiaFlujo("#step1");
 	});
 
 	
 	$("#navegador > ul > :nth-child(2)").click(function(){
-		$("#contenido > div > div").fadeOut(function(){
-			$("#step4").fadeIn();
-			});
+		cambiaFlujo("#step4");
 	});
 	
 	$("#navegador > ul > :nth-child(3)").click(function(){
-		$("#contenido > div > div").fadeOut(function(){
-			$("#step7").fadeIn();
-			});
+		cambiaFlujo("#step7");
 	});
 
 		
-
-
-		
-		
-
-		
 }
+
+
+function cambiaFlujo(step){
+
+	var npasos = $(".pasos").size();
+		$(".pasos").each(function(index){
+			if((++index) == npasos){
+				$(this).fadeOut("slow",function(){
+					$(step).delay(1000).fadeIn();
+				});
+	
+			}else{
+				$(this).fadeOut("slow");
+			}
+		})
+
+}
+
 
        
             	 

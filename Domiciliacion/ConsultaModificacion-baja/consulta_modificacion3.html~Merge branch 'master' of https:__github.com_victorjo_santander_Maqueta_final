@@ -3,14 +3,14 @@
 <head>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 	<title> Domiciliación de tarjeta de crtédito </title>
-	<link rel="stylesheet" href="../css/widgets.css" />
-	<link rel="stylesheet" href="../css/componentes.css" />
+	<link rel="stylesheet" href="../../css/widgets.css" />
+	<link rel="stylesheet" href="../../css/componentes.css" />
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 	<script src="../js/jquery10.2.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-	<script src="../js/ddSlick.js"></script>
-	<script src="../js/balanceTransfer.js"></script>
-	<script src="../js/componentes.js"></script>
+	<script src="../../js/ddSlick.js"></script>
+	<script src="../../js/balanceTransfer.js"></script>
+	<script src="../../js/componentes.js"></script>
 	
 
 	<script>
@@ -44,10 +44,10 @@
 		tr td{
 			width: 40%;
 		}
+
 		#contenido{
 			background: #fff;
 		}
-
 		#btn_select{
 			width: 150px;
 			height: 30px;
@@ -159,10 +159,10 @@
 		</div>
 		<div id="header">
    			<div class="btnHeader">
-   				<img src="../img/botones/btn_cerrar.png"/>
+   				<img src="../../img/botones/btn_cerrar.png"/>
    			</div>
    			<div class="btnHeader">
-   				<img src="../img/botones/info_.png"/>
+   				<img src="../../img/botones/info_.png"/>
    			</div>
    			<div id="circulos">
    				<div class="c1" ></div>
@@ -171,25 +171,20 @@
    			</div>
    		</div>
    		<div id="contenido">
-   			<h4>Para efecto de la actualizacion de los datos de su domicialiación de tarjeta de crédito se le expide el formato de la cancelación y el formato de la nueva solicitud de la domicialización.</h4>
    			
    			
- 			<table style="margin: 0 auto;">
+ 			<table  style="margin: 0 auto;">
  				<tr>
  					<td style="text-align:center; padding:20px;">
- 						Formato de cancelación
+ 						Formato para cancelación de la domiciliación de servicio
  					</td>
- 					<td style="text-align:center;">
- 						Nueva solicitud
- 					</td>
+ 					
  				</tr>
  				<tr>
  					<td>
- 						<iframe src="http://docs.google.com/gview?url=http://victorpimentel.com/stuff/rubik.pdf&embedded=true" style="width:300px; height:275px; margin-left:30px;" frameborder="0"></iframe>
+ 						<iframe src="http://docs.google.com/gview?url=http://victorpimentel.com/stuff/rubik.pdf&embedded=true" style="width:500px; height:300px; margin-left:100px;" frameborder="0"></iframe>
  					</td>
- 					<td>
- 						<iframe src="http://docs.google.com/gview?url=http://victorpimentel.com/stuff/rubik.pdf&embedded=true" style="width:300px; height:275px; margin-left:30px;" frameborder="0"></iframe>
- 					</td>
+ 					
  				</tr>
 
  				
@@ -197,7 +192,11 @@
 		
 
 			<div class="botonera">
-				<div class="btn" style="float:right; margin-top:10px;">Imprimir</div><div class="btn" style="float:right; margin-top:10px;">Guardar</div><div class="btn" style="float:right; margin-top:10px;">Continuar</div>
+				<div class="btn" style="float:right; margin-top:0px;">Continuar</div>
+				<div class="btn" style="float:right; margin-top:0px;">Guardar</div>
+				<div class="btn"><img src="../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
+				
+
 			</div>
 
 
@@ -208,11 +207,11 @@
    		<div id="navegador">
 			<ul>
 				<li> Domiciliación <br> de Servicios </li>
-				<li >Domiciliación de Tarjeta <br> de Crédito </li>
+				<li>Domiciliación de Tarjeta <br> de Crédito </li>
 				<li class="active">Consulta/Modificación <br> y Cancelación </li>
 			</ul>
 			<div class="aviso">
-				<img src="../img/iconos/img_msj.png" /> 
+				<img src="../../img/iconos/img_msj.png" /> 
 			</div>
 		</div>
 	
