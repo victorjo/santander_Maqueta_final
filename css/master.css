@@ -165,7 +165,7 @@
 			}
 
 			#wrappWidgets{
-				overflow-y:scroll;width:771px;height:600px;position:static;background:#dedede;
+				overflow-y:scroll;width:771px;height:600px;position:static;background:#dedede;opacity:0;
 			}
 
 			.widget-min
