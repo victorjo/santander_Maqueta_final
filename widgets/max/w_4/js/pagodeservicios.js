@@ -65,11 +65,30 @@ var switchO = '<div style="position:relative;width:230px;">';
 			});
 	});
 	
+	$("#siguiente3").click(function(){
+		$("#step4").fadeOut("slow",function(){
+			$("#step5").fadeIn("slow");				
+			});
+	});
+	
+	$("#siguiente4").click(function(){
+		$("#step5").fadeOut("slow",function(){
+			$("#step6").fadeIn("slow");				
+			});
+	})
+	
 	$("#btnreturn").click(function(){
 		$("#step3").fadeOut("slow",function(){
 			$("#step1").fadeIn("slow");				
 			});
 	});
+	
+	$("#btnreturn2").click(function(){
+		$("#step6").fadeOut("slow",function(){
+			$("#step4").fadeIn("slow");				
+			});
+	});
+
 	
 	//Transicion entre operaciones
 	$("#navegador > ul > :nth-child(1)").click(function(){
