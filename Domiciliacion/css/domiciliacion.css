@@ -260,9 +260,9 @@ a:link,a:visited{
 
 
 
-tr td{
+		/*tr td{
 			width: 40%;
-		}
+		}*/
 		#contenido{
 			background: #fff;
 		}
@@ -332,11 +332,16 @@ tr td{
 		#circulos #seleccionado{
 			background: #000;
 		}
-		.botonera{
+		.botonera2{
 			
 			margin-top: 20px;
 		}
-		.botonera .btn{
+		.botonera3{
+			
+			margin-top: 320px;
+		}
+		
+		.botonera2 .btn{
 			width: 30%;
 		}
 		 .tit{
