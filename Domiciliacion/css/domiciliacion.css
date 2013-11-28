@@ -210,3 +210,49 @@ a:link,a:visited{
 #contenido {
 	background-color:white;
 	}
+
+/*Cuadro de datos: detalle de servicio*/
+#vtacruzadaIzq{
+	float:left;
+	width:188px;
+	height:380px;
+	margin-top:18px;
+}
+
+.vtaimgIzq{
+	width:154px;
+	height:154px;
+	background-color:#676767;
+	float:left;
+}
+
+/*texto sobre estado*/
+.textoInformativo{
+	float: left;
+    margin-left: 58px;
+    margin-top: 3px;
+}
+
+/*texto - tarjeta*/
+.textoTarjeta1{
+	float: left;
+	margin-left: -3px;
+    margin-top: 9px;
+}
+.textoTarjeta2{
+	 float: right;
+    margin-right: 123px;
+    margin-top: 9px;
+}
+
+.tituloSegundo{
+	 float: left;
+    margin-left: -306px;
+    margin-top: 208px;
+}
+
+.tituloTercero{
+	 float: left;
+    margin-left: -62px;
+    margin-top: 208px;
+}
