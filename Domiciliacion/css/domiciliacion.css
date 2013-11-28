@@ -328,6 +328,7 @@ a:link,a:visited{
 			border-radius:100%; 
 			margin: 0 auto; 
 			border:solid 1px silver;
+			cursor: pointer;
 		}
 		#circulos #seleccionado{
 			background: #000;
