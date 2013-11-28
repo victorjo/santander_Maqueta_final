@@ -275,11 +275,8 @@ function posWidgets(qwerty){
 			var alen = 1030;
 		}else if($(window).width()<=768){
 			$("body").mousemove(function(e){
-				if(e.pageX<=0 && responsiveFlag==0){
-					$(".wr_NavPrin,#dataClient,#wrappWidgets").animate({'left':'+=190px'},'slow');
-					$("#logo").animate({'left':'224px'},'slow');
-					$("#tipoServ").animate({'left':'199px'},'slow');
-					responsiveFlag++;
+				if(e.pageX<=0){
+					moveResObs();
 				}else if( $(".wr_NavPrin").offset().left==900 ) $(".wr_NavPrin").animate({'left':'-190px'});
 			});
 		}else{
@@ -366,6 +363,13 @@ function posWidgets(qwerty){
 	})(wrapper);
 }
 
+function moveResObs(){
+	if(responsiveFlag!=0) return false;
+	$(".wr_NavPrin,#dataClient,#wrappWidgets,.butter").animate({'left':'+=190px'},'slow');
+	$("#logo").animate({'left':'224px'},'slow');
+	$("#tipoServ").animate({'left':'199px'},'slow');
+	responsiveFlag++;
+}
 
 function moveScroll(obj,math){
 
