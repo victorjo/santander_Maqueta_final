@@ -41,11 +41,13 @@
 	</script>
 	<style type="text/css">
 		
+		tr td{
+			width: 40%;
+		}
+
 		#contenido{
 			background: #fff;
 		}
-
-
 		#btn_select{
 			width: 150px;
 			height: 30px;
@@ -111,6 +113,17 @@
 		#circulos #seleccionado{
 			background: #000;
 		}
+		.botonera{
+			
+			margin-top: 20px;
+		}
+		.botonera .btn{
+			width: 30%;
+		}
+		 .tit{
+			color: grey;
+		}
+
 
 		
 	</style>
@@ -152,127 +165,40 @@
    				<img src="../img/botones/info_.png"/>
    			</div>
    			<div id="circulos">
-   				<div class="c1" id="seleccionado"></div>
-				<div class="c1"></div>
+   				<div class="c1" ></div>
+				<div class="c1" id="seleccionado"></div>
 				<div class="c1"></div>
    			</div>
    		</div>
    		<div id="contenido">
-   			<h4>A continuación podrá modificar, cancelar o ver el detalle de los servicios que tiene domiciliados. Así como descargar el formato que se generó al dar de alta la domiciliación del servicio.</h4>
-   			<h4> Su domiciliación de tarjeta se realizará con los siguientes datos.</h4>
- 			<div id="btn_select">
-   				<div id="btn_left">
-   					Tarjetas de creditos
-   				</div>
-   				<div id="btn_right">
-   					<p>Servicios</p>
-   				</div>
-   				
-   			</div>
+   			
+   			
+ 			<table  style="margin: 0 auto;">
+ 				<tr>
+ 					<td style="text-align:center; padding:20px;">
+ 						Formato de domiciliación de tarjetas de crédito
+ 					</td>
+ 					
+ 				</tr>
+ 				<tr>
+ 					<td>
+ 						<iframe src="http://docs.google.com/gview?url=http://victorpimentel.com/stuff/rubik.pdf&embedded=true" style="width:500px; height:300px; margin-left:100px;" frameborder="0"></iframe>
+ 					</td>
+ 					
+ 				</tr>
 
-   			<table class="tbl_consulta" style="width:100%; float:left;">
-
-   				<tr>
-					<td style="border:none"></td>
-					<td style="border:none"></td>
-					<td style="border:none">Número de tarjeta</td>
-					<td style="border:none">Alias</td>
-					<td style="border:none">Esquema de pago</td>
-					<td style="border:none">Estatus</td>
-					<td style="border:none"></td>
-				</tr>
-
-				<tr style="border-collapse:collapse">
-					<td style="border:none;"><div id="c2" style="background:#000"></div></td>
-					<td style="border:none"><img src="../img/iconos/tarjeta.png"></td>
-					<td style="border:none">234****5678</td>
-					<td style="border:none">Alias</td>
-					<td style="border:none">Minimo</td>
-					<td style="border:none">Exitoso</td>
-					<td style="border:none"></td>
-				</tr>
-
-				<tr>
-					<td style="border:none;"><div id="c2"></div></td>
-					<td style="border:none"><img src="../img/iconos/tarjeta.png"></td>
-					<td style="border:none">234****5678</td>
-					<td style="border:none">Alias</td>
-					<td style="border:none">Total</td>
-					<td style="border:none">No exitoso</td>
-					<td style="border:none"></td>
-				</tr>
-
-				<tr style="border-collapse:collapse">
-					<td style="border:none;"><div id="c2"></div></td>
-					<td style="border:none"><img src="../img/iconos/tarjeta.png"></td>
-					<td style="border:none">234****5678</td>
-					<td style="border:none">Alias</td>
-					<td style="border:none">Fijo</td>}
-					<td style="border:none">Programado</td>
-					<td style="border:none"></td>
-				</tr>
-
-				<tr>
-					<td style="border:none;"><div id="c2"></div></td>
-					<td style="border:none"><img src="../img/iconos/tarjeta.png"></td>
-					<td style="border:none">234****5678</td>
-					<td style="border:none">Alias</td>
-					<td style="border:none">Minimo</td>
-					<td style="border:none">Programado</td>
-					<td style="border:none"></td>
-				</tr>
-
-
-			</table>
+ 				
+ 			</table>
+		
 
 			<div class="botonera">
-				<div class="btn" style="float:right; margin-top:10px;">Cancelar domiciliación</div>
-			</div>
-
-
-			<div class="dropdown">
-  				<img class="downI" src="../img/iconos/dropdown.png" style="display: block;">
-  				<img class="upI" src="../img/iconos/dropup.png" style="display: none;">
-  				<h6>Datos para domiciliar la tarjeta de crédito.</h6>
-  			</div>
-
-  			
+				<div class="btn" style="float:right; margin-top:10px;">Continuar</div>
+				<div class="btn" style="float:right; margin-top:10px;">Guardar</div>
+				<div class="btn" style="float:right; margin-top:10px;">Imprimir</div>
 				
-			<div id="select1" class="wra_Select4" style="display:none">
 
-				<table>
-					<tr>
-						<td>						
-							<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="	width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
-						</td>
-						<td>
-						<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-							<div class="botonestrella-on"> 
-								<img class="activo" style="display:block;" src="../img/iconos/favorito_on.png"/> 
-								<img class="inactivo" style="display:none;" src="../img/iconos/favorito_of.png"> 
-							</div>
-							<td> 
-								<span style="font-weight:bold;margin-left:0px"> 
-								<div class="marcotriangulo">
-								<div class="triangulo_inf">
-								</span> 
-							</td>
-						</td>
-					</tr>
-
-				</table><b>Esquema de pago</b>
-				<select name="" id="" >  
-					<option value="">Pago mínimo</option>
-					<option value="">Opcion1</option>
-					<option value="">Opcion1</option>
-					<option value="">Opcion1</option>
-					<option value="">Opcion1</option>
-				</select>
 			</div>
 
-			<div class="botonera">
-				<div class="btn" style="float:right; margin-top:10px;">Cancelar domiciliación</div>
-			</div>
 
 		</div>
 
