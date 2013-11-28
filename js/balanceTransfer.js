@@ -59,8 +59,9 @@
 			});
 
 			$(".wra_Select3 select").ddslick({
-                    width:"500"
-                });
+                    width:"500",
+                    
+                                    });
                 
             $(".wra_Select2 select").ddslick({
                     width:"200"
@@ -70,6 +71,8 @@
                     width:"250"
                     
                 });
+                
+           
            
            		
 
