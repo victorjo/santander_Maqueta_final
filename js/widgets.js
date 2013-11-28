@@ -202,6 +202,8 @@ var widgets = [
 
 
 function posWidgets(qwerty){
+	var absoluteW =$("#absoluteWrapper");
+	//absoluteW.css({'position':'absolute','left':$(window).width()});
 	var wrapper = $("#wrappWidgets");
 	if(qwerty==0) wrapper.children(".widget-min").remove();
 	else if(qwerty==1) $("[data-pos='codom']").remove();
