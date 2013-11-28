@@ -8,7 +8,7 @@ var responsiveFlag = 0;
 var tamanoWidget = 587;
 
 $(document).ready(function(){
-	posWidgets();
+	posWidgets(0);
 	$(".widget-min").click(function(){
 		getInstance(this);
 	});
@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 //para commit
 window.onresize = function(){
-	posWidgets();
+	posWidgets(1);
 }
 
 
@@ -201,9 +201,10 @@ var widgets = [
 
 
 
-function posWidgets(){
+function posWidgets(qwerty){
 	var wrapper = $("#wrappWidgets");
-	wrapper.children(".widget-min").remove();
+	if(qwerty==0) wrapper.children(".widget-min").remove();
+	else if(qwerty==1) $("[data-pos='codom']").remove();
 	wrapper.css('height',altoVentana-50);
 	$("#dataClient").css("width", $(window).width()-830);
 	var widgetTypes = {
@@ -221,6 +222,7 @@ function posWidgets(){
 	var parser = 0;
 	//fatal hardcode
     //end of fatal hardcode
+    if(qwerty==0){
     wids = sortByKey(widgets, 'order');
 	$.each(wids,function(i,v){
 		var newWidget = $('<div>');
@@ -247,6 +249,7 @@ function posWidgets(){
 		newWidget.css({'top': a+"px",'left':b+"px"});
 		parser++;
 	});
+	}//end of validate of resize param
 	function sortByKey(array, key) {
 	    return array.sort(function(a, b) {
 	        var x = a[key]; var y = b[key];
@@ -359,7 +362,7 @@ function posWidgets(){
 				activaBtn($('#navContent > div:nth-child('+banPosSelect+')'));
 
 		});
-
+		wrapper.animate({'opacity':'1'});
 	})(wrapper);
 }
 
