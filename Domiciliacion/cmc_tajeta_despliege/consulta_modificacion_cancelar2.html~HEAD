@@ -187,29 +187,17 @@
 					<td><div class="radio"></div></td>
 					<td><div style="width:18px; height:18px; background-color:gray;float:left; border:2px solid red;sext-align:center;cursor:pointer"></div>Lorem Ipsum</td>
 					<td>9999</td>
-<<<<<<< HEAD:Domiciliacion/cmc_tajeta_despliege/consulta_modificacion_cancelar2.html
-					<td>9999</td>
-					<td>Lorem Ipsum</td>
-					<td>1234****5678</td>
-					<td><u>Exitoso</u></td>
-					<td> </td>
-=======
 					<td>Lorem Ipsum</td>
 					<td>1234****5678</td>
 					<td><u>Exitoso</u></td>
 					<td></td>
->>>>>>> 191140bc03f0b940ddb284eaae78f1a456590a9b:Domiciliacion/cmc_tajeta_despliege/consulta_modificacion_cancelar2.html
 				
 					</tr>
 					
 				<tr style="border:none">
 						
 
-<<<<<<< HEAD:Domiciliacion/cmc_tajeta_despliege/consulta_modificacion_cancelar2.html
-					<td colspan="8"> 
-=======
 					<td colspan="7"> 
->>>>>>> 191140bc03f0b940ddb284eaae78f1a456590a9b:Domiciliacion/cmc_tajeta_despliege/consulta_modificacion_cancelar2.html
 						<div class="botonera">
 							<div class="btn" style="left; margin-left:2px;">Verde detalle</div>
 							
@@ -265,11 +253,7 @@
 			<div class="dropdown">
   				<img class="downI" src="../../img/iconos/dropdown.png" style="display: block;">
   				<img class="upI" src="../../img/iconos/dropup.png" style="display: none;">
-<<<<<<< HEAD:Domiciliacion/cmc_tajeta_despliege/consulta_modificacion_cancelar2.html
-  				<h6>Modificar datos de domicialización de la tarjeta de crédito.</h6>
-=======
   				<h6>Modificar datos de domicialización de servicio</h6>
->>>>>>> 191140bc03f0b940ddb284eaae78f1a456590a9b:Domiciliacion/cmc_tajeta_despliege/consulta_modificacion_cancelar2.html
   			</div>
 
   							

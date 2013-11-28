@@ -3,15 +3,15 @@
 <head>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 	<title> Domiciliación de tarjeta de crtédito </title>
-	<link rel="stylesheet" href="../../css/widgets.css" />
-	<link rel="stylesheet" href="../../css/componentes.css" />
-	<link rel="stylesheet" type="text/css" href="../css/domiciliacion.css">
+	<link rel="stylesheet" href="../css/widgets.css" />
+	<link rel="stylesheet" href="../css/componentes.css" />
+	<link rel="stylesheet" type="text/css" href="../css/">
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-	<script src="../../js/jquery10.2.min.js"></script>
+	<script src="../js/jquery10.2.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-	<script src="../../js/ddSlick.js"></script>
-	<script src="../../js/balanceTransfer.js"></script>
-	<script src="../../js/componentes.js"></script>
+	<script src="../js/ddSlick.js"></script>
+	<script src="../js/balanceTransfer.js"></script>
+	<script src="../js/componentes.js"></script>
 	
 
 	<script>
@@ -145,10 +145,10 @@
 		</div>
 		<div id="header">
    			<div class="btnHeader">
-   				<img src="../../img/botones/btn_cerrar.png"/>
+   				<img src="../img/botones/btn_cerrar.png"/>
    			</div>
    			<div class="btnHeader">
-   				<img src="../../img/botones/info_.png"/>
+   				<img src="../img/botones/info_.png"/>
    			</div>
    			<div id="circulos">
    				<div class="c1" id="seleccionado"></div>
@@ -172,44 +172,39 @@
    			<table class="tbl_consulta" style="width:100%; float:left;">
 
    				<tr>
-					<td></td>
-					<td>Emisora de Servicio</td>
-					<td>Referencia</td>
-					<td>Titular de <br>servicio</td>
-					<td>Cuenta de cargo</td>
-					<td>Estatus</td>
-					
+					<td style="border:none"></td>
+					<td style="border:none"></td>
+					<td style="border:none">Número de tarjeta</td>
+					<td style="border:none">Alias</td>
+					<td style="border:none">Esquema de pago</td>
+					<td style="border:none">Estatus</td>
+					<td style="border:none"></td>
 				</tr>
-					
+
+				<tr style="border-collapse:collapse">
+					<td style="border:none;"><div id="c2" style="background:#000"></div></td>
+					<td style="border:none"><img src="../img/iconos/tarjeta.png"></td>
+					<td style="border:none">234****5678</td>
+					<td style="border:none">Alias</td>
+					<td style="border:none">Minimo</td>
+					<td style="border:none">Exitoso</td>
+					<td style="border:none"></td>
+				</tr>
 
 				<tr>
-					
-					<td><div class="radio"></div></td>
-					<td><div style="width:18px; height:18px; background-color:gray;float:left; border:2px solid red;sext-align:center;cursor:pointer"></div>Lorem Ipsum</td>
-					<td>9999</td>
-<<<<<<< HEAD:Domiciliacion/cmc_tajeta_despliege/consulta_modificacion_cancelar2.html
-					<td>9999</td>
-					<td>Lorem Ipsum</td>
-					<td>1234****5678</td>
-					<td><u>Exitoso</u></td>
-					<td> </td>
-=======
-					<td>Lorem Ipsum</td>
-					<td>1234****5678</td>
-					<td><u>Exitoso</u></td>
-					<td></td>
->>>>>>> 191140bc03f0b940ddb284eaae78f1a456590a9b:Domiciliacion/cmc_tajeta_despliege/consulta_modificacion_cancelar2.html
-				
-					</tr>
-					
+					<td style="border:none;"><div id="c2"></div></td>
+					<td style="border:none"><img src="../img/iconos/tarjeta.png"></td>
+					<td style="border:none">234****5678</td>
+					<td style="border:none">Alias</td>
+					<td style="border:none">Total</td>
+					<td style="border:none">No exitoso</td>
+					<td style="border:none"></td>
+				</tr>
+
 				<tr style="border:none">
 						
 
-<<<<<<< HEAD:Domiciliacion/cmc_tajeta_despliege/consulta_modificacion_cancelar2.html
-					<td colspan="8"> 
-=======
 					<td colspan="7"> 
->>>>>>> 191140bc03f0b940ddb284eaae78f1a456590a9b:Domiciliacion/cmc_tajeta_despliege/consulta_modificacion_cancelar2.html
 						<div class="botonera">
 							<div class="btn" style="left; margin-left:2px;">Verde detalle</div>
 							
@@ -229,47 +224,23 @@
 				</tr>
 
 				<tr>
-					<td><div class="radio"style="background-color:black"></div></td>
-					<td><div style="width:18px; height:18px; background-color:gray;float:left"></div>Lorem Ipsum</td>
-				
-					<td>9999</td>
-					<td>Lorem Ipsum</td>
-					<td>1234****5678</td>
-					<td><u>No Exitoso</u></td>
-					<td> </td>
+					<td style="border:none;"><div id="c2"></div></td>
+					<td style="border:none"><img src="../img/iconos/tarjeta.png"></td>
+					<td style="border:none">234****5678</td>
+					<td style="border:none">Alias</td>
+					<td style="border:none">Minimo</td>
+					<td style="border:none">Programado</td>
+					<td style="border:none"></td>
 				</tr>
 
 
-
-
-							<tr>
-								<td><div class="radio"></div></td>
-								<td><div style="width:18px; height:18px; background-color:gray;float:left"></div>Lorem Ipsum</td>
-							
-								<td>9999</td>
-								<td>Lorem Ipsum</td>
-								<td>1234****5678</td>
-								<td><u>No Exitoso</u></td>
-								<td> </td>
-
-							</tr>
-
-						</table>
-					<div class="btn_intder">
-												
-									<div class="btn" style="margin:0 0 10px 0; padding:0;height:30px; float:right">Cancelar<br />domiciliación</div>
-									
-								</div>
+			</table>
 
 
 			<div class="dropdown">
-  				<img class="downI" src="../../img/iconos/dropdown.png" style="display: block;">
-  				<img class="upI" src="../../img/iconos/dropup.png" style="display: none;">
-<<<<<<< HEAD:Domiciliacion/cmc_tajeta_despliege/consulta_modificacion_cancelar2.html
+  				<img class="downI" src="../img/iconos/dropdown.png" style="display: block;">
+  				<img class="upI" src="../img/iconos/dropup.png" style="display: none;">
   				<h6>Modificar datos de domicialización de la tarjeta de crédito.</h6>
-=======
-  				<h6>Modificar datos de domicialización de servicio</h6>
->>>>>>> 191140bc03f0b940ddb284eaae78f1a456590a9b:Domiciliacion/cmc_tajeta_despliege/consulta_modificacion_cancelar2.html
   			</div>
 
   							
@@ -286,8 +257,8 @@
 						<td>
 						<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
 							<div class="botonestrella-on"> 
-								<img class="activo" style="display:block;" src="../../img/iconos/favorito_on.png"/> 
-								<img class="inactivo" style="display:none;" src="../../img/iconos/favorito_of.png"> 
+								<img class="activo" style="display:block;" src="../img/iconos/favorito_on.png"/> 
+								<img class="inactivo" style="display:none;" src="../img/iconos/favorito_of.png"> 
 							</div>
 							<td> 
 								<span style="font-weight:bold;margin-left:0px"> 
@@ -323,7 +294,7 @@
 				<li class="active">Consulta/Modificación <br> y Cancelación </li>
 			</ul>
 			<div class="aviso">
-				<img src="../../img/iconos/img_msj.png" /> 
+				<img src="../img/iconos/img_msj.png" /> 
 			</div>
 		</div>
 	
