@@ -411,7 +411,7 @@ function newWidgetInstance(obj)
 						destruyeOverlay();
 						var forA = this.obj;
 						forA.children().hide(300);
-						this.obj.animate({'top':(this.topPosIn+$("#wrappWidgets").offset().top),'left':this.leftPosIn,'width':this.width+'px','height':this.height+'px',},800,function(){ /*$("#wrappWidgets").animate({scrollTop:'0px'}); }).animate({'top':'+='+$("#wrappWidgets").offset().top,'left':'+='+$("#wrappWidgets").offset().left},300,function(){*/
+						this.obj.animate({'top':(this.topPos)-10,'left':(this.leftPos),'width':this.width+'px','height':this.height+'px',},800,function(){ /*$("#wrappWidgets").animate({scrollTop:'0px'}); }).animate({'top':'+='+$("#wrappWidgets").offset().top,'left':'+='+$("#wrappWidgets").offset().left},300,function(){*/
 							var io = $(this);
 							$.ajax({
 								url:'widgets/min/w_'+io.attr("data-id")+'/index.html',
