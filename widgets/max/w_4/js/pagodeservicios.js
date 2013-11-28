@@ -22,6 +22,7 @@ var switchO = '<div style="position:relative;width:230px;">';
     left:"+=80"
     },"fast");
   });
+  
   //dropdown
   $("#infobtn").click(function(){
 		$("#info").fadeToggle("slow");
@@ -77,6 +78,18 @@ var switchO = '<div style="position:relative;width:230px;">';
 			});
 	})
 	
+	$("#siguiente5").click(function(){
+		$("#step7").fadeOut("slow",function(){
+			$("#step8").fadeIn("slow");				
+			});
+	})
+	
+	$("#siguiente6").click(function(){
+		$("#step8").fadeOut("slow",function(){
+			$("#step9").fadeIn("slow");				
+			});
+	})
+	
 	$("#btnreturn").click(function(){
 		$("#step3").fadeOut("slow",function(){
 			$("#step1").fadeIn("slow");				
@@ -88,6 +101,13 @@ var switchO = '<div style="position:relative;width:230px;">';
 			$("#step4").fadeIn("slow");				
 			});
 	});
+	
+	$("#btnreturn3").click(function(){
+		$("#step9").fadeOut("slow",function(){
+			$("#step7").fadeIn("slow");				
+			});
+	});
+
 
 	
 	//Transicion entre operaciones
@@ -103,6 +123,13 @@ var switchO = '<div style="position:relative;width:230px;">';
 			$("#step4").fadeIn();
 			});
 	});
+	
+	$("#navegador > ul > :nth-child(3)").click(function(){
+		$("#contenido > div > div").fadeOut(function(){
+			$("#step7").fadeIn();
+			});
+	});
+
 		
 
 

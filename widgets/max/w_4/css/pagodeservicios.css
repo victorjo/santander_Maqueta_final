@@ -134,6 +134,24 @@ right: -205px;
 position: relative;
 }
 
+.botonera6 {
+	bottom: -200px;
+	float: right;
+	position: relative;
+	right: 0;
+	width: 495px;
+}
+
+.botonera7 {
+	bottom: -330px;
+	float: right;
+	position: relative;
+	right: 0;
+	width: 745px;
+}
+
+
+
 .dropdown{
 	width:100%;float:left;
 	background-color:#EBEDEE;
@@ -194,6 +212,21 @@ position: relative;
 	display:none;
 }
 
+#step7{
+	display:none;
+}
+
+#step8{
+	display:none;
+}
+
+#step9{
+	display:none;
+}
+
+
+
+
 .btnaceptar:hover{
 	cursor:pointer;
 	background-image:url('../../lineagrafica/vtabtn.png');
@@ -223,6 +256,19 @@ position: relative;
     width: 225px;
 }
 #btnreturn2 {
+    background-color: #FFFFFF;
+    border: thin solid #F3F3F3;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #808080;
+    color: #000000;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    height: 30px;
+    text-align: center;
+    width: 225px;
+}
+#btnreturn3 {
     background-color: #FFFFFF;
     border: thin solid #F3F3F3;
     border-radius: 15px;
