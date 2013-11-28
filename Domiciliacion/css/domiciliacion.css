@@ -323,8 +323,8 @@ a:link,a:visited{
 			border:solid 1px silver;
 		}
 		#c2{
-			width:20px; 
-			height:20px; 
+			width:15px; 
+			height:15px; 
 			border-radius:100%; 
 			margin: 0 auto; 
 			border:solid 1px silver;
@@ -344,9 +344,17 @@ a:link,a:visited{
 		
 
 		.botonera2 .btn{
-			width: 30%;
+			width: 30%; 
 		}
 
 		 .tit{
-			color: grey;
+			color: grey; 
+		}
+		#imgimp{
+			background: red url("../../img/iconos/img_impresora.png") no-repeat;
+			
+			width: 10%;
+			height: 20px;
+			position: relative;
+			top: 4px;
 		}

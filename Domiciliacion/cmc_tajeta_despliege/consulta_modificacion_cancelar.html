@@ -5,6 +5,7 @@
 	<title> Domiciliación de tarjeta de crtédito </title>
 	<link rel="stylesheet" href="../css/widgets.css" />
 	<link rel="stylesheet" href="../css/componentes.css" />
+	<link rel="stylesheet" type="text/css" href="../css/">
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 	<script src="../js/jquery10.2.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
@@ -41,9 +42,7 @@
 	</script>
 	<style type="text/css">
 		
-		tr td{
-			width: 40%;
-		}
+
 
 
 		#btn_select{
@@ -111,14 +110,6 @@
 		#circulos #seleccionado{
 			background: #000;
 		}
-		.botonera{
-			
-			margin-top: 320px;
-		}
-		 .tit{
-			color: grey;
-		}
-
 
 		
 	</style>
@@ -160,41 +151,137 @@
    				<img src="../img/botones/info_.png"/>
    			</div>
    			<div id="circulos">
-   				<div class="c1" ></div>
-				<div class="c1" id="seleccionado"></div>
+   				<div class="c1" id="seleccionado"></div>
+				<div class="c1"></div>
 				<div class="c1"></div>
    			</div>
    		</div>
    		<div id="contenido">
-   			
- 		
-
-   			<table style="border:solid 1px silver; width:100%;">
-					<tr>
-						<td style="font-weight:bold;" colspan="2">Confirme la actualización de datos de domicialiación de tarjeta de créditos</td>
-					</tr>
+   			<h4>A continuación podrá modificar, cancelar o ver el detalle de los servicios que tiene domiciliados. Así como descargar el formato que se generó al dar de alta la domiciliación del servicio.</h4>
+   			<h4> Su domiciliación de tarjeta se realizará con los siguientes datos.</h4>
+ 			<div id="btn_select">
+   				<div id="btn_left">
+   					Tarjetas de creditos
+   				</div>
+   				<div id="btn_right">
+   					<p>Servicios</p>
+   				</div>
    				
-   					<tr>
-   						<td>Nombre del titular:</td><td class="tit">Lorem Ipsum</td>
-   					</tr>
-   					<tr>
-   						<td>Tarjeta a domiciliar:</td><td class="tit">1234****5678</td>
-   					</tr>
-   					<tr>
-   						<td>Cuenta de cargo:</td><td class="tit">1234****5678</td>
-   					</tr>
-   					<tr>
-   						<td>Esquema de pagos:</td><td class="tit">Pago mínimo</td>
-   					</tr>
+   			</div>
+
+   			<table class="tbl_consulta" style="width:100%; float:left;">
+
+   				<tr>
+					<td style="border:none"></td>
+					<td style="border:none"></td>
+					<td style="border:none">Número de tarjeta</td>
+					<td style="border:none">Alias</td>
+					<td style="border:none">Esquema de pago</td>
+					<td style="border:none">Estatus</td>
+					<td style="border:none"></td>
+				</tr>
+
+				<tr style="border-collapse:collapse">
+					<td style="border:none;"><div id="c2" style="background:#000"></div></td>
+					<td style="border:none"><img src="../img/iconos/tarjeta.png"></td>
+					<td style="border:none">234****5678</td>
+					<td style="border:none">Alias</td>
+					<td style="border:none">Minimo</td>
+					<td style="border:none">Exitoso</td>
+					<td style="border:none"></td>
+				</tr>
+
+				<tr>
+					<td style="border:none;"><div id="c2"></div></td>
+					<td style="border:none"><img src="../img/iconos/tarjeta.png"></td>
+					<td style="border:none">234****5678</td>
+					<td style="border:none">Alias</td>
+					<td style="border:none">Total</td>
+					<td style="border:none">No exitoso</td>
+					<td style="border:none"></td>
+				</tr>
+
+				<tr style="border:none">
+						
+
+					<td colspan="7"> 
+						<div class="botonera">
+							<div class="btn" style="left; margin-left:2px;">Verde detalle</div>
+							
+						
+							
+								<div class="btn" style="float:left; margin-left:8px;">Descarga Formato</div>
+								
+
+					
+					
+							
+								<div class="btn" style="float:left; margin-left:8px;">Descargar comprobante</div>
+									</div>
+
+					</td>
+					
+				</tr>
+
+				<tr>
+					<td style="border:none;"><div id="c2"></div></td>
+					<td style="border:none"><img src="../img/iconos/tarjeta.png"></td>
+					<td style="border:none">234****5678</td>
+					<td style="border:none">Alias</td>
+					<td style="border:none">Minimo</td>
+					<td style="border:none">Programado</td>
+					<td style="border:none"></td>
+				</tr>
+
 
 			</table>
 
-		
 
-			<div class="botonera">
-				<div class="btn" style="float:right; margin-top:10px;">Confirmar</div><div class="btn" style="float:right; margin-top:10px;">Regresar</div>
+			<div class="dropdown">
+  				<img class="downI" src="../img/iconos/dropdown.png" style="display: block;">
+  				<img class="upI" src="../img/iconos/dropup.png" style="display: none;">
+  				<h6>Modificar datos de domicialización de la tarjeta de crédito.</h6>
+  			</div>
+
+  							
+			<div id="select1" class="wra_Select4" style="display:none">
+				<h6>Elija las opciones que desea modificar.</h6>	
+				<h6>Introduzca el nombre, alias o los cuatro dígitos de la cuenta o la terjeta de cargo o seleccionela de las listas.</h6>
+				<table >
+				
+					<tr>
+						
+						<td>						
+							<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="	width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+						</td>
+						<td>
+						<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+							<div class="botonestrella-on"> 
+								<img class="activo" style="display:block;" src="../img/iconos/favorito_on.png"/> 
+								<img class="inactivo" style="display:none;" src="../img/iconos/favorito_of.png"> 
+							</div>
+							<td> 
+								<span style="font-weight:bold;margin-left:0px"> 
+								<div class="marcotriangulo">
+								<div class="triangulo_inf">
+								</span> 
+							</td>
+						</td>
+					</tr>
+
+				</table><b>Esquema de pago</b>
+				<select name="" id="" >  
+					<option value="">Pago mínimo</option>
+					<option value="">Opcion1</option>
+					<option value="">Opcion1</option>
+					<option value="">Opcion1</option>
+					<option value="">Opcion1</option>
+				</select>
 			</div>
 
+			<div class="botonera">
+				<div class="btn" style="float:right; margin-top:10px;">Continuar</div>
+			</div>
 
 		</div>
 
