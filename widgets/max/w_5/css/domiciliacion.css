@@ -1,5 +1,5 @@
-@import url('../../../../css/widgets.css');
-@import url('../../../../css/componentes.css');
+@import url('../../css/widgets.css');
+@import url('../../css/componentes.css');
 
 /*Texto Superior*/
 .textSuperior{
@@ -101,8 +101,6 @@ a:link,a:visited{
 	margin-top: 10px;
 }
 
-
-
 /**slider*/
 #slider {
     background-color: #E6E8E8;
@@ -174,6 +172,11 @@ a:link,a:visited{
 	width:30px;
 }
 
+.btn_abajo{
+	width:auto; 
+	margin-right:-3px; 
+	margin-top:177px;
+}
 
 #contenido {
 	background-color:white;
@@ -326,6 +329,7 @@ a:link,a:visited{
 			top: 4px;
 		}
 
+
 /*
 *Estilos correspondientes a la primera funcionalidad: Domiciliación de servicios
 *Realizado por Abelito -o-o-
@@ -409,3 +413,4 @@ a:link,a:visited{
 	margin-right:-3px; 
 	margin-top:283px;
 }
+

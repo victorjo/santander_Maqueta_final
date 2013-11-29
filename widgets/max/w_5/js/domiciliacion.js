@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 	//Carga de datos para arreglo dinámico
 	var cards = [
 				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
@@ -24,10 +25,12 @@ $(document).ready(function(){
 	ocultaSteps(4);
 	
 
+
 	/*funcionalidad clic en boton info para mostrar imagen*/
 	$("#infobtn").click(function(){
 			$("#info").fadeToggle("slow");
 	 });
+
 
 	/*Transiciones de flujo (siguiente): Domiciliación de servicios*/
 	$("#siguiente").click(function(){
@@ -63,3 +66,4 @@ function ocultaSteps(num_Step){
 		$('#step'+i).hide();
 	}
 }
+

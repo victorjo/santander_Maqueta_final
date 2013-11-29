@@ -1,4 +1,4 @@
-/*Funhcion switch (label de mas de dos digitos)--- Flujo: Domiciliaciones Ã³ mas */
+﻿/*Funhcion switch (label de mas de dos digitos)--- Flujo: Domiciliaciones Ã³ mas */
 function switchFuncDomMas(object,descripcion1,descripcion2,tipoModulo){
 
 var switchO = '<div style="position:relative;width:230px;">';
@@ -131,7 +131,7 @@ var switchO = '<div style="position:relative;width:230px;">';
 
 
 function cambiaFlujo(step){
-
+	
 	var npasos = $(".pasos").size();
 		$(".pasos").each(function(index){
 			if((++index) == npasos){
