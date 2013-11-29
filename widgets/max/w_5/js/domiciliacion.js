@@ -59,6 +59,18 @@ $(document).ready(function(){
 			$("#step1").fadeIn("slow");				
 			});
 	});
+
+		//Transicion entre operaciones
+	$("#navegador > ul > :nth-child(1)").click(function(){
+		alert("aqui");
+	});
+
+	
+	$("#navegador > ul > :nth-child(2)").click(function(){
+		$("#contenido > div > div").fadeOut(function(){
+			$("#step4").fadeIn();
+			});
+	});
 });
 
 /*Mostrara el step 1, mientras que ocultara los demás steps apartir del 2*/

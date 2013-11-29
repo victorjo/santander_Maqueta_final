@@ -3,4 +3,7 @@ $(document).ready(function(){
 	$("#infobtn").click(function(){
 			$("#info").fadeToggle("slow");
 	 });
+
+	
+
 });
