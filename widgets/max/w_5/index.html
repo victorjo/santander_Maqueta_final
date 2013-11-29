@@ -370,72 +370,121 @@ var cards = [
 					<div id="step7">
 						<!---///////////////////////////////////////////////////////////////////////////////////-->	
 
-						<div id="vtacruzada">
-			
-							<div class="vtaimg">
-							</div>
-			
-							<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
-			
-							<div class="vtapanel">
-								<div class="vtabtn"><img src="../../img/iconos/tarjeta.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-								<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-								<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-							</div>
-			
-						</div>
-		
-				
-			
-			
-						<table class="tbl_info" style="width:69%;float:left;">
-							<tr>
-								<td style="font-weight:bold;" colspan="2">
-									Comprobante de actualización de datos de domiciliación de tarjeta de crédito.
-								</td>
-							</tr>
+						<h4>A continuación podrá modificar, cancelar o ver el detalle de los servicios que tiene domiciliados. Así como descargar el formato que se generó al dar de alta la domiciliación del servicio.</h4>
+   			<h4> Su domiciliación de tarjeta se realizará con los siguientes datos.</h4>
+ 			<div id="btn_select">
+   				<div id="btn_left">
+   					Tarjetas de creditos
+   				</div>
+   				<div id="btn_right">
+   					<p>Servicios</p>
+   				</div>
+   				
+   			</div>
+			<div style="height:150px; overflow:scroll; width:100%;">
+   			<table class="tbl_consulta" style="width:100%; float:left; border:none">
 
-							<tr>
-								<td>Nombre del titular:</td>
-								<td style="color:#CCCCCC">Lorem Ipsum</td>
-							</tr>
-							<tr>
-								<td>Tarjeta a domiciliar:</td>
-								<td style="color:#CCCCCC">1234****5678</td>
-							</tr>
-							<tr>
-								<td>Cuenta de cargo:</td>
-								<td style="color:#CCCCCC">1234****5678</td>
-							</tr>
-				
-							<tr>
-								<td>Esquema de pago:</td>
-								<td style="color:#CCCCCC">Pago mínimo</td>
-							</tr>
-					
-							<tr>
-								<td>Fecha de modificación:</td>
-								<td style="color:#CCCCCC">dd/mm/aaaa</td>
-							</tr>
-							<tr>
-				
-								<td>Folio SuperNET:</td>
-								<td style="color:#CCCCCC">12345678910123456789</td>
-							</tr>
-				
-							<tr>
-								<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Quiero modificar otra<br />domiciliación de tarjeta</div></td>
-					
-							</tr>
-				
+   				<tr>
+					<td style="border:none"></td>
+					<td style="border:none"></td>
+					<td style="border:none">Número de tarjeta</td>
+					<td style="border:none">Alias</td>
+					<td style="border:none">Esquema de pago</td>
+					<td style="border:none">Estatus</td>
+					<td style="border:none"></td>
+				</tr>
 
+				<tr style="border-collapse:collapse">
+					<td style="border:none;"><div id="c2" style="background:#000"></div></td>
+					<td style="border:none"><img src="../../img/iconos/tarjeta.png"></td>
+					<td style="border:none">234****5678</td>
+					<td style="border:none">Alias</td>
+					<td style="border:none">Minimo</td>
+					<td style="border:none">Exitoso</td>
+					<td style="border:none"></td>
+				</tr>
+
+				<tr>
+					<td style="border:none;"><div id="c2"></div></td>
+					<td style="border:none"><img src="../../img/iconos/tarjeta.png"></td>
+					<td style="border:none">234****5678</td>
+					<td style="border:none">Alias</td>
+					<td style="border:none">Total</td>
+					<td style="border:none">No exitoso</td>
+					<td style="border:none"></td>
+				</tr>
+
+				<tr style="border-collapse:collapse">
+					<td style="border:none;"><div id="c2"></div></td>
+					<td style="border:none"><img src="../../img/iconos/tarjeta.png"></td>
+					<td style="border:none">234****5678</td>
+					<td style="border:none">Alias</td>
+					<td style="border:none">Fijo</td>
+					<td style="border:none">Programado</td>
+					<td style="border:none"></td>
+				</tr>
+
+				<tr>
+					<td style="border:none;"><div id="c2"></div></td>
+					<td style="border:none"><img src="../../img/iconos/tarjeta.png"></td>
+					<td style="border:none">234****5678</td>
+					<td style="border:none">Alias</td>
+					<td style="border:none">Minimo</td>
+					<td style="border:none">Programado</td>
+					<td style="border:none"></td>
+				</tr>
+
+
+			</table>
+			</div>
+			<div class="botonera">
+				<div class="btn" style="float:right; margin-top:10px;">Cancelar domiciliación</div>
+			</div>
+
+
+			<div class="dropdown">
+  				<img class="downI" src="../../img/iconos/dropdown.png" style="display: block;">
+  				<img class="upI" src="../../img/iconos/dropup.png" style="display: none;">
+  				<h6>Datos para domiciliar la tarjeta de crédito.</h6>
+  			</div>
+
+  			
 				
-						</table>
-			
-						<div class="botonera" style="margin-right:20px;width:auto;" >
-						<div class="btn"><img src="../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
-						<div class="btnaceptar">Finalizar</div>
-						</div>
+			<div id="select1" class="wra_Select4" style="display:none">
+
+				<table>
+					<tr>
+						<td>						
+							<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="	width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+						</td>
+						<td>
+						<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+							<div class="botonestrella-on"> 
+								<img class="activo" style="display:block;" src="../../img/iconos/favorito_on.png"/> 
+								<img class="inactivo" style="display:none;" src="../../img/iconos/favorito_of.png"> 
+							</div>
+							<td> 
+								<span style="font-weight:bold;margin-left:0px"> 
+								<div class="marcotriangulo">
+								<div class="triangulo_inf">
+								</span> 
+							</td>
+						</td>
+					</tr>
+
+				</table><b>Esquema de pago</b>
+				<select name="" id="" >  
+					<option value="">Pago mínimo</option>
+					<option value="">Opcion1</option>
+					<option value="">Opcion1</option>
+					<option value="">Opcion1</option>
+					<option value="">Opcion1</option>
+				</select>
+			</div>
+
+			<div class="botonera">
+				<div class="btn" style="float:right; margin-top:10px;">Cancelar domiciliación</div>
+			</div>
 
 						<!---///////////////////////////////////////////////////////////////////////////////////-->			
 					</div><!--fin step7-->
@@ -603,7 +652,7 @@ var cards = [
 
 				</div>
 
-				<div id="step11">
+				<div id="step11"> <!--falta-->
 					
 				</div>
 
@@ -833,7 +882,7 @@ var cards = [
 				<table  style="margin: 0 auto;">
  					<tr>
  						<td style="text-align:center; padding:20px;">
- 							Formato para cancelación de la domiciliación de servicio
+ 							Formato de la cancelación de la domiciliación de la tarjeta de crédito
  						</td>
  					
  					</tr>
@@ -857,6 +906,7 @@ var cards = [
 				</div>
 		
 			</div>
+
 
 			<div id="step16">
 				
@@ -929,137 +979,11 @@ var cards = [
 
 			</div>
 
-			<div id="step17">
-		
-				<h4> A continuación podrá modificar, cancelar o ver el detalle de los servicios que tiene domiciliados <br>
-   				así como descargar el formato que se generó al dar de alta la domiciliación del servicio. </h4>
-   				<div id="btn_select">
-	   				<div id="btn_left">
-	   					Tarjetas de creditos
-	   				</div>
-	   				<div id="btn_right">
-	   					<p>Servicios</p>
-	   				</div>
-   				
-   				</div>
+			<div id="step17"><!--falta peter-->
+			
+			</div>
 
-  				
-   				<table class="tbl_consulta" style="width:100%;float:left;">
-
-					<tr>
-						<td></td>
-						<td>Emisora de Servicio</td>
-						<td>Referencia</td>
-						<td>Titular de <br>servicio</td>
-						<td>Cuenta de cargo</td>
-						<td>Estatus</td>
-						
-					</tr>
-					<tr>
-						<td><div class="radio"style="background-color:black"></div></td>
-						<td><div style="width:18px; height:18px; background-color:gray;float:left; border:2px solid red;sext-align:center;cursor:pointer"></div>Lorem Ipsum</td>
-					
-						<td>9999</td>
-						<td>Lorem Ipsum</td>
-						<td>1234****5678</td>
-						<td><u>Exitoso</u></td>
-						<td> </td>
-						
-					</tr>
-					<tr>
-						<td><div class="radio"></div></td>
-						<td><div style="width:18px; height:18px; background-color:gray;float:left;"></div>Lorem Ipsum</td>
-						<td>9999</td>
-						<td>Lorem Ipsum</td>
-						<td>1234****5678</td>
-						<td><u>No Exitoso</u></td>
-						<td> </td>
-
-					</tr>
-					<tr>
-						<td><div class="radio"></div></td>
-						<td><div style="width:18px; height:18px; background-color:gray;float:left;"></div>Lorem Ipsum</td>
-						<td>9999</td>
-						<td>Lorem Ipsum</td>
-						<td>1234****5678</td>
-						<td><u>Programado</u></td>
-						<td> </td>
-
-					</tr>
-					<tr>
-						<td><div class="radio"></div></td>
-						<td><div style="width:18px; height:18px; background-color:gray;float:left;"></div>Lorem Ipsum</td>
-						<td>9999</td>
-						<td>Lorem Ipsum</td>
-						<td>1234****5678</td>
-						<td><u>Programado</u></td>
-						<td> </td>
-
-					</tr>
-					<tr>
-						<td><div class="radio"></div></td>
-						<td><div style="width:18px; height:18px; background-color:gray;float:left;"></div>Lorem Ipsum</td>
-						<td>9999</td>
-						<td>Lorem Ipsum</td>
-						<td>1234****5678</td>
-						<td><u>Programado</u></td>
-						<td> </td>
-
-					</tr>
-					
-
-
-				</table> 
-
-					<div class="btn_intder">
-								
-						<div class="btn" style="margin:0 0 10px 0; padding:0;height:30px; float:right">Cancelar<br />domiciliación</div>
-					
-				
-					</div>
-
-						<div class="dropdown">
-  							<img class="downI" src="../../img/iconos/dropdown.png" style="display: block;">
-  							<img class="upI" src="../../img/iconos/dropup.png" style="display: none;">
-  							<h6>Modificar datos de domiciliación de servicio</h6>
-  						</div>	
-
-																	
-  						<div id="select1" class="wra_Select4" style="display:none">
-
-							<table>
-								<tr><td>						
-										<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
-								</td><td>
-
-													<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-
-									<div class="botonestrella-on"> <img class="activo" style="display:block;" src="../../img/iconos/favorito_on.png"/> <img class="inactivo" style="display:none;" src="../../img/iconos/favorito_of.png" </div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo">
-									<div class="triangulo_inf"></span> </td>
-									</td>
-								</tr>
-
-							</table><b>Esquema de pago</b>
-
-							<select name="" id="" >  
-								<option value="">Pago mínimo</option>
-								<option value="">Opcion1</option>
-								<option value="">Opcion1</option>
-								<option value="">Opcion1</option>
-								<option value="">Opcion1</option>
-							</select>
-						</div>
-
-						<div class="botonera">
-												
-							<div class="btnaceptar">Continuar</div>
-						</div>
-					</tr>
-		
-
-				</div>
-
-				<div id="18">
+			<div id="18">
 					
 					
 					
@@ -1188,7 +1112,7 @@ var cards = [
 						</div>	
 				</div>
 
-				<div id="step20">
+				<div id="step20"><!-- cuadro ng-->
 					
 				</div>
 
@@ -1301,9 +1225,8 @@ var cards = [
 					
 				</div>
 
-				<div id="step23">
+				<div id="step23"><!--falta pen colum-->
 					
-
 
 				</div>
 
