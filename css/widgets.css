@@ -45,11 +45,22 @@ p{}
 #header {
         background-image:url('../lineagrafica/widamphdr.png');
         background-size:100% 100%;
-        width: 760px;
-        height: 35px;
+        width: 935px;
+        height: 30px;
         float: right;
-        border-bottom:1px solid black;
+        border-bottom:1px solid #8a8a8a;
         box-shadow:1px 1px 3px gray;
+}
+
+#stepbar {
+	width:935px;
+	background-color:#f4f4f4;
+    background-size:100% 100%;
+    width: 933px;
+    height: 28px;
+    float: right;
+    border:1px solid #dadada;
+    
 }
 
 .btnHeader {
@@ -96,6 +107,9 @@ p{}
         width: 165px;
         padding: 10px 0 10px 10px;
         cursor: pointer;
+       	background-image:url('../lineagrafica/func_unselect.png');
+        background-size:100% 100%;
+        height:30px;
 }
 
 #navegador ul li:hover{
