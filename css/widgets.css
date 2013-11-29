@@ -86,8 +86,8 @@ p{}
 
 #navegador {
         background-color: #E8E8E8;
-        border-right:1px solid black;
-        border-top:1px solid black;
+        border-right:1px #aaaaaa solid;
+        border-top:1px #aaaaaa solid;
         width: 174px;
         height: 475px;
         float: left;
@@ -103,24 +103,33 @@ p{}
         float: left;
         display: block;
         font-weight: bold;
-        border-bottom: 1px solid black;
+        border-bottom: 1px #aaaaaa solid;
         width: 165px;
         padding: 10px 0 10px 10px;
         cursor: pointer;
-       	background-image:url('../lineagrafica/func_unselect.png');
+      	background-image:url('../lineagrafica/widamphdr.png');
+       	background-color:red;
         background-size:100% 100%;
         height:30px;
 }
 
 #navegador ul li:hover{
         font-weight: normal;
+        background-color:white;
+        background:white;
+        color:red;
 }
 
 .active{
         background: #FFFFFF;
         cursor: pointer;
         font-weight: normal;
-        border-top:2px red solid;
+        border-bottom:2px red solid;
+        background-color:white;
+        background:white;
+
+        
+       
 }
 
 #contenido {
@@ -240,7 +249,7 @@ p{}
 	}
 
 
-}
+
 
 #widgetred{
         
@@ -253,7 +262,7 @@ p{}
 #titlewidred{
         border-bottom:1px solid black;
         height:23px;
-        background-color:F4F4F4;
+        background-color:#F4F4F4;
         width:100%;
         float:left;
         font-size:12px;
@@ -615,7 +624,7 @@ margin-left: 8px;
 	width:718px;
 	background-color:#f4f4f4;
 	box-shadow:0 1px 3px #a6a6a6;
-	margin:10 0 0 20;
+	margin:10px 0 0 20px;
 	float:left;
 }
 
@@ -885,7 +894,7 @@ font-size: 11px;
 #titlewidred{
 	border-bottom:1px solid black;
 	height:23px;
-	background-color:F4F4F4;
+	background-color: #F4F4F4;
 	width:100%;
 	float:left;
 	font-size:12px;
@@ -895,7 +904,7 @@ font-size: 11px;
 }
 
 .txtwidred{
-	background-color:FFFFFF;
+	background-color: #FFFFFF;
 	width:100%;
 	float:left;
 	font-size:11px;
