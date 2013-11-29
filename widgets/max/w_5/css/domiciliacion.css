@@ -101,37 +101,6 @@ a:link,a:visited{
 	margin-top: 10px;
 }
 
-/*Marco informativo*/
-.marcoInformativo{
-	border-radius:5px;
-	border:2px solid #EBEBEB;
-	width:100%;
-	padding:5px;
-}
-
-.marcoInformativo2{
-	border-radius:5px;
-	border:2px solid #EBEBEB;
-	width:60%;
-	padding:5px;
-}
-
-.marcoInformativo3{
-	border-radius:5px;
-	border:2px solid #EBEBEB;
-	width:100%;
-	height:250px;
-	padding:5px;
-}
-
-.marcoInformativo4{
-	border-radius:5px;
-	border:2px solid #EBEBEB;
-	width:68%;
-	height:383px;
-	padding:5px;
-}
-
 /**slider*/
 #slider {
     background-color: #E6E8E8;
@@ -208,6 +177,7 @@ a:link,a:visited{
 	margin-right:-3px; 
 	margin-top:177px;
 }
+
 #contenido {
 	background-color:white;
 	}
@@ -358,3 +328,89 @@ a:link,a:visited{
 			position: relative;
 			top: 4px;
 		}
+
+
+/*
+*Estilos correspondientes a la primera funcionalidad: Domiciliación de servicios
+*Realizado por Abelito -o-o-
+*/
+
+#info{
+    display: none;
+    float: left;
+    left: 217px;
+    position: absolute;
+    top: 219px;
+    z-index: 1;
+}
+
+.infor_btn{
+	float: left;
+	padding-left:15px;
+	padding-top:30px;
+}
+
+#infobtn:hover{
+	cursor:pointer;
+}
+
+.inputInicial{
+    float:left;
+    margin:10px 0 0 30px;
+    font-weight:bold;
+}
+.moneda{
+	float: left;
+	color:#B4B4B4;
+	padding-left:11px;
+	padding-top:35px;
+
+}
+
+/*estilo de lista dinamica sin estrella:Pendiente*/
+.marcotrianguloSE {
+    background-color: #E6E6E5;
+    border: 1px solid #808080;
+    height: 17px;
+    margin: -4px;
+    padding-top: 10px;
+    width: 25px;
+}
+
+/*Marco informativo*/
+.marcoInformativo{
+	border-radius:5px;
+	border:2px solid #EBEBEB;
+	width:100%;
+	padding:5px;
+}
+
+.marcoInformativo2{
+	border-radius:5px;
+	border:2px solid #EBEBEB;
+	width:60%;
+	padding:5px;
+}
+
+.marcoInformativo3{
+	border-radius:5px;
+	border:2px solid #EBEBEB;
+	width:100%;
+	height:250px;
+	padding:5px;
+}
+
+.marcoInformativo4{
+	border-radius:5px;
+	border:2px solid #EBEBEB;
+	width:68%;
+	height:383px;
+	padding:5px;
+}
+
+.btn_abajo{
+	width:auto; 
+	margin-right:-3px; 
+	margin-top:283px;
+}
+
