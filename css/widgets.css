@@ -9,6 +9,7 @@ html,body
 {
 	height:100%;
 	background-color:#dedede;
+	overflow:hidden;
 }
 
 h1,h2,h3,h4,h5{
@@ -551,12 +552,13 @@ margin-left: 8px;
 
 }
 .txtbox{
-        color:#CCCCCC;
+        color:#777777;
         width:100%;
-        border-color:#999999;
-
+        border: 1px #a8a8a8 solid;
+        background-image:url('../lineagrafica/txtbox.png');
+        background-size:100% 100%;
+        border-style:solid;
 }
-
 #slider {
      background-color: #E6E8E8;
      float: left;

@@ -86,7 +86,7 @@ var switchO = '<div style="position:relative;width:230px;">';
       source:objectCards,
       minLength:0,
       open: function(){
-      $(".ui-autocomplete").css({"max-height":"201px","overflow-y":"scroll","font-size":"13px","width":"480px"})
+      	$(".ui-autocomplete").css({"max-height":"201px","overflow-y":"scroll","font-size":"13px","width":"480px"})
       }
     });
 
