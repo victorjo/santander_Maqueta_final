@@ -1,30 +1,10 @@
-﻿
-<!--<script src="../../../js/jquery10.2.min.js"></script>
-
-
-<script src="../../../js/componentes.js"></script>
--->
-
+﻿<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-<script src="../../../js/jquery10.2.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script src="../../../js/ddSlick.js"></script>
 <script src="../../../js/balanceTransfer.js"></script>
-<!-- <script src="widgets/max/w_5/js/domicilicion.js"></script> -->
-<script src="../js/domicilicion.js"></script>
-<link rel="stylesheet" href="../css/domiciliacion.css"/>
-<link rel="stylesheet" href="../../../css/componentes.css"/>
-<link rel="stylesheet" href="../../../css/widgets.css" />
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-<script src="../../../js/jquery10.2.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script src="../../../js/componentes.js"></script>
-
-<script>
-	$(document).ready(function(){
-		switchFuncDomMas("switchbox","Si","No","Dom");
-	});
-</script>
+<script src="widgets/max/w_5/js/domiciliacion.js"></script>
+<link rel="stylesheet" href="widgets/max/w_5/css/domiciliacion.css"/>
 
 <style>
 
@@ -78,14 +58,15 @@
 				<div><!-- Funcionalidad: Domiciliación de servicios-->
 					
 					<div id="step1">
-								<h4>Realice la búsqueda del servicio que desea domiciliar mediante el nombre de la empresa o razón social y/o categoría.</h4>
-					<div class="marcoInformativo">
-						<p>Nombre de la empresa, razón social o convenio</p>
-						<div class="marcoInformativo2">
-							<p class="txtbox">Empresa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum</p>
+						<h4>Realice la búsqueda del servicio que desea domiciliar mediante 
+							el nombre de la empresa o razón social y/o categoría.</h4>
+						<div class="marcoInformativo">
+							<p>Nombre de la empresa, razón social o convenio</p>
+							<div class="marcoInformativo2">
+								<p class="txtbox">Empresa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum</p>
+							</div>
 						</div>
-					</div>
-					<table style="margin-top:-19px">
+						<table style="margin-top:-19px">
 							<tr>
 								<td>
 									<div class="input" style="margin-left:10px">
@@ -122,51 +103,58 @@
 									</div>
 								</td>
 							</tr>	
-					</table>
-					<h4>Seleccione el servicio que desea domiciliar dando clic en la imagen.</h4>
-					<div id="slider">
-							
-							<div style="width:680px;overflow: hidden;height:85px">
-								<div style="width:910px;overflow: hidden">
-									<div class="servslide"></div>
-									<div class="servslide"></div>
-									<div class="servslide"></div>
-									<div class="servslide"></div>
-									<div class="servslide"></div>
-									<div class="servslide"></div>
-									<div class="servslide"></div>
-									<div class="servslide"></div>
-									<div class="servslide"></div>
-									<div class="servslide"></div>
-									<div class="servslide"></div>
-									<div class="servslide"></div>
-									<div class="servslide"></div>
-									<div class="servslide"></div>
-								</div>
-							
-							</div>	
-							<div id="rightarrow"><img src="../../../img/botones/flecha_lado_dropdown_largo.png" /></div>
-												
-						</div>
-						<h4>Introduzca el nombre, alias o los cuatro dígitos de la cuenta o tarjeta de cargo o seleccionela de la lista:</h4>
-						
-						
+						</table>
+						<h4>Seleccione el servicio que desea domiciliar dando clic en la imagen.</h4>
+						<div id="slider">
+								
+								<div style="width:680px;overflow: hidden;height:85px">
+									<div style="width:910px;overflow: hidden">
+										<div class="servslide"></div>
+										<div class="servslide"></div>
+										<div class="servslide"></div>
+										<div class="servslide"></div>
+										<div class="servslide"></div>
+										<div class="servslide"></div>
+										<div class="servslide"></div>
+										<div class="servslide"></div>
+										<div class="servslide"></div>
+										<div class="servslide"></div>
+										<div class="servslide"></div>
+										<div class="servslide"></div>
+										<div class="servslide"></div>
+										<div class="servslide"></div>
+									</div>
+								
+								</div>	
+								<div id="rightarrow"><img src="../../../img/botones/flecha_lado_dropdown_largo.png" /></div>
+													
+							</div>
+							<h4>Introduzca el nombre, alias o los cuatro dígitos de la cuenta o tarjeta de cargo o seleccionela de la lista:</h4>
+							<table> <!--lista dinámica c/favorito-->
+								<tr>
+									<td>						
+										<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
+										style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+									</td>
+									<td>
+										<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+										<tr>
+											<td>
+												<span style="font-weight:bold;margin-left:0px"> 
+													<div class="marcotriangulo">
+														<div class="triangulo_inf"></div>
+													</div>
+												</span> 
+											</td>
+										</tr>
+									</td>
+								</tr>
+							</table><!--Fin lista dinámica c/favorito-->
 
-													<table>
-															<tr><td>						
-																<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
-															</td><td>
-
-															<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-
-																	<td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span> </td>
-															</td></tr>
-
-														</table>
 
 						<div class="inputInicial" style="margin-left:0px;width:22%;">
-										<p>Referencia</p>
-										<input class="txtbox" type="text" value="9999" name="Text1" style="width:100%;margin-left:0px"/>
+							<p>Referencia</p>
+							<input class="txtbox" type="text" value="9999" name="Text1" style="width:100%;margin-left:0px"/>
 						</div>
 						<div id="infobtn" class="infor_btn"><img src="../../../img/botones/info_.png"/></div>
 						<div id="info"><img src="../../../img/infoimg.png"/></div>
@@ -224,7 +212,7 @@
 						</div>
 
 					</div> 
-				</div>
+				</div><!--fin step2-->
 					<div id="step3">
 						<table  style="margin: 0 auto;">
  				<tr>
@@ -249,7 +237,7 @@
 				
 
 			</div>
-					</div>
+					</div><!--fin step3-->
 					<div id="step4">
 						<div id="vtacruzada">
 			
@@ -312,11 +300,13 @@
 			<div class="btn"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
 			<div class="btn">Finalizar</div>
 		</div>
-					</div>	
+					</div><!--fin step4-->	
 				
 				</div><!--Fin funcionalidad: Funcionalidad: Domiciliación de servicios-->
 			
 				<div><!--Funcionalidad 2-->
+				
+				<div id="step5">
 					<h4> Seleccione la tarjeta de crédito que desea domiciliar. </h4>
 						
 						<div style="height:150px; overflow:scroll; width:100%;">
@@ -381,9 +371,9 @@
 											</div>				
 
 
-				</div>
-
-					<div id="step4">
+				</div><!--fin step 5-->
+				
+				<div id="step6">
 
 									<h4> Seleccione la tarjeta de crédito que desea domiciliar. </h4>
 
@@ -417,17 +407,30 @@
 																				
 			  																<div id="select1" class="wra_Select4" style="display:none"> <p style="font-size:12px;font-family:Helvetica, Arial, sans-serif"> <b>Introduzca el nombre, alias o los cuatro dígitos de la cuenta de cargo o seleccionela de la lista </b></p>
 
-														<table>
-																<tr><td>						
-																	<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
-																</td><td>
 
-																<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-
-																		<div class="botonestrella-on"> <img class="activo" style="display:block;" src="../../../img/iconos/favorito_on.png"/> <img class="inactivo" style="display:none;" src="../../../img/iconos/favorito_of.png"> </div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span> </td> </div>
-																</td></tr> 
-
-															</table><b>Esquema de pago</b>
+														
+														<strong><table> <!--lista dinámica c/favorito-->
+															<tr>
+																<td>						
+																	<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
+																	style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+																</td>
+																<td>
+																	<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+																	<tr>
+																		<td>
+																			<span style="font-weight:bold;margin-left:0px"> 
+																				<div class="marcotriangulo">
+																					<div class="triangulo_inf"></div>
+																				</div>
+																			</span> 
+																		</td>
+																	</tr>
+																</td>
+															</tr>
+														</table><!--Fin lista dinámica c/favorito-->
+</strong>
+														<b>Esquema de pago</b>
 
 																				<select name="" id="" >  
 																					<option value="">Pago mínimo</option>
@@ -443,9 +446,9 @@
 																		<div class="btnaceptar">Continuar</div>
 																	 </div>
 					
-					</div><!--step4-->
+					</div><!--step6-->
 					
-					<div id="step5">
+					<div id="step7">
 						<h4> Su domiciliación de tarjeta se realizará con los siguientes datos. </h4>
 
    			
@@ -479,9 +482,9 @@
 									<div class="btnaceptar">Confirmar</div>
 								</div>			
 		
-					</div><!--fin step5-->
+					</div><!--fin step7-->
 					
-					<div id="step6"><!--step6-->
+					<div id="step8">
 						
  						<table  style="margin: 0 auto;">
  				<tr>
@@ -510,8 +513,9 @@
 
 			</div>
 
+		</div><!--fin step8-->	
 
-				<div id="step72">
+				<div id="step9">
 
 
 						<h4 style="width:30%">Comprobante de baja de servicio.</h4>
@@ -545,6 +549,7 @@
 									<td>Fecha de operación:</td>
 									<td style="color:#CCCCCC">dd/mm/aaaa</td>
 								</tr>
+								<tr>
 								
 									<td>Folio SuperNET:</td>
 									<td style="color:#CCCCCC">12345678910123456789</td>
@@ -561,14 +566,11 @@
 									<div class="btnaceptar">Finalizar</div>
 								</div>
 
-				</div><!--fin step72-->
-
-					</div><!--fin step6-->	
-				
-				</div><!--Fin funcionalidad 2-->
+				</div><!--fin step9-->
+			</div><!--Fin funcionalidad 2-->
 		
 				<div><!--inicio funcionalidad 3-->
-					<div id="step7">
+					<div id="step10">
 						<!---///////////////////////////////////////////////////////////////////////////////////-->	
 
 						<div id="vtacruzada">
@@ -639,9 +641,9 @@
 						</div>
 
 						<!---///////////////////////////////////////////////////////////////////////////////////-->			
-					</div><!--fin step7-->
+					</div><!--fin step10-->
 					
-					<div id="step8">
+					<div id="step11">
 						<!---///////////////////////////////////////////////////////////////////////////////////-->	
 
 
@@ -698,29 +700,27 @@
 						<div id="select1" class="wra_Select4" style="display:none">
 							<h6>Elija las opciones que desea modificar.</h6>	
 							<h6>Introduzca el nombre, alias o los cuatro dígitos de la cuenta o la terjeta de cargo o seleccionela de las listas.</h6>
-						<table >
-				
-							<tr>
-						
-								<td>						
-								<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="	width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
-								</td>
-								<td>
-						<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-									<div class="botonestrella-on"> 
-										<img class="activo" style="display:block;" src="../../img/iconos/favorito_on.png"/> 
-										<img class="inactivo" style="display:none;" src="../../img/iconos/favorito_of.png"> 
-									</div>
-									<td> 
-										<span style="font-weight:bold;margin-left:0px"> 
-										<div class="marcotriangulo">
-										<div class="triangulo_inf">
-										</span> 
+							<table> <!--lista dinámica c/favorito-->
+								<tr>
+									<td>						
+										<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
+										style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
 									</td>
-								</td>
-							</tr>
-
-						</table><b>Esquema de pago</b>
+									<td>
+										<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+										<tr>
+											<td>
+												<span style="font-weight:bold;margin-left:0px"> 
+													<div class="marcotriangulo">
+														<div class="triangulo_inf"></div>
+													</div>
+												</span> 
+											</td>
+										</tr>
+									</td>
+								</tr>
+							</table><!--Fin lista dinámica c/favorito-->
+<b>Esquema de pago</b>
 							<select name="" id="" >  
 								<option value="">Pago mínimo</option>
 								<option value="">Opcion1</option>
@@ -735,9 +735,9 @@
 						</div>
 
 						<!---///////////////////////////////////////////////////////////////////////////////////-->			
-					</div><!--fin step8-->
+					</div><!--fin step11-->
 							
-					<div id="step9">
+					<div id="step12">
 
 						<table style="border:solid 1px silver; width:100%;">
 							<tr>
@@ -766,8 +766,8 @@
 
 
 
-					</div><!--Fin step 9-->
-				<div id="step10">
+					</div><!--Fin step 12-->
+				<div id="step13">
 					
 
 					<h4>Para efecto de la actualizacion de los datos de su domicialiación de tarjeta de crédito se le expide el formato de la cancelación y el formato de la nueva solicitud de la domicialización.</h4>
@@ -802,13 +802,9 @@
 
 					</div>
 
-				</div>
+				</div><!--Fin step 13-->
 
-				<div id="step11">
-					
-				</div>
-
-				<div id="step12">
+				<div id="step14">
 					
 					<div id="vtacruzada">
 			
@@ -874,9 +870,10 @@
 						<div class="btn"><img src="../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
 						<div class="btnaceptar">Finalizar</div>
 					</div>
-				</div>
+				</div><!--Fin step 14-->
 
-				<div id="step13">
+
+				<div id="step15">
 					
 					<h4>A continuación podrá modificar, cancelar o ver el detalle de los servicios que tiene domiciliados. Así como descargar el formato que se generó al dar de alta la domiciliación del servicio.</h4>
    					<h4>Consulta de tarjetas domiciliadas.</h4>
@@ -961,29 +958,27 @@
 					<div id="select1" class="wra_Select4" style="display:none">
 						<h6>Elija las opciones que desea modificar.</h6>	
 						<h6>Introduzca el nombre, alias o los cuatro dígitos de la cuenta o la terjeta de cargo o seleccionela de las listas.</h6>
-					<table >
-				
+					<table> <!--lista dinámica c/favorito-->
 						<tr>
-						
 							<td>						
-								<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="	width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+								<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
+								style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
 							</td>
 							<td>
-						<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-								<div class="botonestrella-on"> 
-									<img class="activo" style="display:block;" src="../../img/iconos/favorito_on.png"/> 
-									<img class="inactivo" style="display:none;" src="../../img/iconos/favorito_of.png"> 
-								</div>
-								<td> 
-									<span style="font-weight:bold;margin-left:0px"> 
-										<div class="marcotriangulo">
-										<div class="triangulo_inf">
-									</span> 
-								</td>
+								<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+								<tr>
+									<td>
+										<span style="font-weight:bold;margin-left:0px"> 
+											<div class="marcotriangulo">
+												<div class="triangulo_inf"></div>
+											</div>
+										</span> 
+									</td>
+								</tr>
 							</td>
 						</tr>
-
-					</table><b>Esquema de pago</b>
+					</table><!--Fin lista dinámica c/favorito-->
+<b>Esquema de pago</b>
 						<select name="" id="" >  
 							<option value="">Pago mínimo</option>
 							<option value="">Opcion1</option>
@@ -997,9 +992,10 @@
 						<div class="btn" style="float:right; margin-top:10px;">Cancelar domiciliación</div>
 					</div>
 
-				</div>
+				</div><!--Fin step 15-->
 
-				<div id="step14">
+
+				<div id="step16">
 					<table style="border:solid 1px silver; width:100%;">
 						<tr>
 							<td style="font-weight:bold;" colspan="2">Confirme los datos de la tarjeta domiciliadanque desea cancelar</td>
@@ -1028,9 +1024,9 @@
 						<div class="btn" style="float:right; width:30%; margin-top:10px;">Cancelar</div>
 				
 					</div>
-			</div>
+			</div><!--Fin step 16-->
 
-			<div id="step15">
+			<div id="step17">
 				<table  style="margin: 0 auto;">
  					<tr>
  						<td style="text-align:center; padding:20px;">
@@ -1057,9 +1053,10 @@
 
 				</div>
 		
-			</div>
+			</div><!--Fin step 17-->
 
-			<div id="step16">
+
+			<div id="step18">
 				
 
 				<div id="vtacruzada">
@@ -1109,7 +1106,7 @@
 						<td>Fecha de modificación:</td>
 						<td style="color:#CCCCCC">dd/mm/aaaa</td>
 					</tr>
-					
+					<tr>
 						<td>Folio SuperNET:</td>
 						<td style="color:#CCCCCC">12345678910123456789</td>
 					</tr>
@@ -1128,9 +1125,10 @@
 					<div class="btnaceptar">Finalizar</div>
 				</div>
 
-			</div>
+			</div><!--Fin step 18-->
 
-			<div id="step17">
+
+			<div id="step19">
 		
 				<h4> A continuación podrá modificar, cancelar o ver el detalle de los servicios que tiene domiciliados <br>
    				así como descargar el formato que se generó al dar de alta la domiciliación del servicio. </h4>
@@ -1228,19 +1226,28 @@
 																	
   						<div id="select1" class="wra_Select4" style="display:none">
 
-							<table>
-								<tr><td>						
-										<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
-								</td><td>
-
-													<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-
-									<div class="botonestrella-on"> <img class="activo" style="display:block;" src="../../img/iconos/favorito_on.png"/> <img class="inactivo" style="display:none;" src="../../img/iconos/favorito_of.png" </div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo">
-									<div class="triangulo_inf"></span> </td>
+							<table> <!--lista dinámica c/favorito-->
+								<tr>
+									<td>						
+										<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
+										style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+									</td>
+									<td>
+										<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+										<tr>
+											<td>
+												<span style="font-weight:bold;margin-left:0px"> 
+													<div class="marcotriangulo">
+														<div class="triangulo_inf"></div>
+													</div>
+												</span> 
+											</td>
+										</tr>
 									</td>
 								</tr>
-
-							</table><b>Esquema de pago</b>
+							</table><!--Fin lista dinámica c/favorito-->
+							
+							<b>Esquema de pago</b>
 
 							<select name="" id="" >  
 								<option value="">Pago mínimo</option>
@@ -1255,44 +1262,35 @@
 												
 							<div class="btnaceptar">Continuar</div>
 						</div>
-					</tr>
-		
-
-				</div>
-
-				<div id="18">
 					
-					
+				</div><!--Fin step 19-->
+
+
+				<div id="step20">
 					
 					<h4> A continuación podrá modificar, cancelar o ver el detalle de los servicios que tiene domiciliados <br>
    					así como descargar el formato que se generó al dar de alta la domiciliación del servicio. </h4>
 
-   						<table class="tbl_consulta" style="width:100%;float:left;">
-
-									<tr>
-										<td></td>
-										<td>Emisora de Servicio</td>
-										<td>Referencia</td>
-										<td>Titular de <br>servicio</td>
-										<td>Cuenta de cargo</td>
-										<td style="background-color:black; color:white">Ver lista <br>completa</td>
-										
-									</tr>
-									<tr>
-										<td><div class="radio"style="background-color:black"></div></td>
-										<td><div style="width:18px; height:18px; background-color:gray;float:left; sext-align:center;cursor:pointer"></div>Lorem Ipsum</td>
-									
-										<td>9999</td>
-										<td>Lorem Ipsum</td>
-										<td>1234****5678</td>
-										<td><u>Programado</u></td>
-										
-									</tr>
-				
-
-						</table> 
-
-						<div class="btn_intder">
+   					<table class="tbl_consulta" style="width:100%;float:left;">
+						<tr>
+							<td></td>
+							<td>Emisora de Servicio</td>
+							<td>Referencia</td>
+							<td>Titular de <br>servicio</td>
+							<td>Cuenta de cargo</td>
+							<td style="background-color:black; color:white">Ver lista <br>completa</td>
+							
+						</tr>
+						<tr>
+							<td><div class="radio"style="background-color:black"></div></td>
+							<td><div style="width:18px; height:18px; background-color:gray;float:left; sext-align:center;cursor:pointer"></div>Lorem Ipsum</td>
+							<td>9999</td>
+							<td>Lorem Ipsum</td>
+							<td>1234****5678</td>
+							<td><u>Programado</u></td>
+						</tr>
+					</table> 
+					<div class="btn_intder">
 												
 									<div class="btn" style="margin:0 0 10px 0; padding:0;height:30px; float:right">Cancelar<br />domiciliación</div>
 									
@@ -1305,36 +1303,47 @@
   						</div>	
 
 																	
-  																<div id="select1" class="wra_Select4" style="display:none"> <p style="font-family: Helvetica Arial,sans-serif;font-size:11px">  <b> Seleccione los datos que quiere modificar <br>
-  																	Introduzca el nombre, alias o los cuatro dígitos de la cuenta o tarjeta de cargo o seleccionela de la lista </b> </p>
+  						<div id="select1" class="wra_Select4" style="display:none"> 
+  							<p style="font-family: Helvetica Arial,sans-serif;font-size:11px">  
+  								<b> Seleccione los datos que quiere modificar <br>
+  								Introduzca el nombre, alias o los cuatro dígitos de la cuenta o tarjeta de cargo o seleccionela de la lista </b> 
+  							</p>
 
-						<table>
-													<tr><td>						
-														<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
-													</td><td>
+						<table> <!--lista dinámica c/favorito-->
+							<tr>
+								<td>						
+									<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
+									style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+								</td>
+								<td>
+									<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+									<tr>
+										<td>
+											<span style="font-weight:bold;margin-left:0px"> 
+												<div class="marcotriangulo">
+													<div class="triangulo_inf"></div>
+												</div>
+											</span> 
+										</td>
+									</tr>
+								</td>
+							</tr>
+						</table><!--Fin lista dinámica c/favorito-->
+						
+						<table>			
+							<tr>	
+								<td> 
+									<p><b>Referencia</b></p>   
+									<input class="txtbox" type="text" style="width:90%; background-color: #e1e1de" value="Lorem ipsum dolor asimet" name="Text1"> 
+								</td>  
+								<td>	 <p><b>Nombre del titular</b></p>    <input class="txtbox" type="text" style="width:90%" value="Lorem ipsum dolor asimet" name="Text1"> </td>  
+					
+								<td>   <p><b>Monto máximo autorizado</b></p>	<input class="txtbox" type="text" style="width:90%" value="Lorem ipsum dolor asimet" name="Text1"> </td> 
 
-													<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-
-															<div class="botonestrella-on"> <img class="activo" style="display:block;" src="../../img/iconos/favorito_on.png"/> <img class="inactivo" style="display:none;" src="../../img/iconos/favorito_of.png" </div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span> </td>
-													</td></tr>
-
-						</table>
-
-
-						<table>
-											
-
-														<td>  <b>Referencia</b></p>   <input class="txtbox" type="text" style="width:90%; background-color: #e1e1de" value="Lorem ipsum dolor asimet" name="Text1"> </td>  
-												 
-														<td>	<b>Nombre del titular</b></p>    <input class="txtbox" type="text" style="width:90%" value="Lorem ipsum dolor asimet" name="Text1"> </td>  
-												
-														<td>  <b>Monto máximo autorizado</b></p>	<input class="txtbox" type="text" style="width:90%" value="Lorem ipsum dolor asimet" name="Text1"> </td> 
-
-														<td> (MXP) </td>  
-														<td> <div id="infobtn">  
-																	<img src="../../img/botones/info_.png"> </div> </td>
-
-
+								<td> (MXP) </td>
+							 
+								<td> <div id="infobtn"> <img src="../../img/botones/info_.png"> </div> </td>
+							</tr> 
 						</table>	     
 											</div>
 
@@ -1342,13 +1351,14 @@
 												
 							<div class="btnaceptar">Continuar</div>
 						</div>
-						</tr>
+						
 
 
 
-				</div>
+				</div><!--Fin step 20-->
 
-				<div id="step19">
+
+				<div id="step21">
 						<h4> Confirme la actualización de datos de la domiciliación de servicio. </h4>
 
 	   			
@@ -1387,14 +1397,9 @@
 							<div class="btn">Regresar</div>
 							<div class="btnaceptar">Confirmar</div>
 						</div>	
-				</div>
+				</div> <!--Fin step 21-->
 
-				<div id="step20">
-					
-				</div>
-
-
-				<div id="step21">
+				<div id="step22">
 					
 					<h4>Para efecto de la actualizacion de los datos de su domicialiación de tarjeta de crédito se le expide el formato de la cancelación y el formato de la nueva solicitud de la domicialización.</h4>
    			
@@ -1425,8 +1430,9 @@
 						<div class="btn" style="float:right; margin-top:10px;">Imprimir</div><div class="btn" style="float:right; margin-top:10px;">Guardar</div><div class="btn" style="float:right; margin-top:10px;">Continuar</div>
 					</div>
 						
-				</div>
-				<div id="step22">
+				</div><!--Fin step 22-->
+
+				<div id="step23">
 
 					
 					<div id="vtacruzada">
@@ -1480,7 +1486,7 @@
 								<td>Fecha de modificación:</td>
 								<td style="color:#CCCCCC">dd/mm/aaaa</td>
 							</tr>
-							
+							<tr>
 								<td>Folio SuperNET:</td>
 								<td style="color:#CCCCCC">12345678910123456789</td>
 							</tr>
@@ -1500,14 +1506,9 @@
 					</div>
 
 					
-				</div>
+				</div><!--Fin step 23-->
 
-				<div id="step23">
-					
-
-
-				</div>
-
+			
 				<div id="step24">
 					
 					<h4> Confirmación del servicio que desea cancelar </h4>
@@ -1549,7 +1550,8 @@
 						<div class="btnaceptar">Confirmar</div>
 					</div>
 
-				</div>
+				</div><!--Fin step 24-->
+
 				<div id="step25">
 					
 					<table  style="margin: 0 auto;">
@@ -1579,7 +1581,8 @@
 					</div>
 
 
-				</div>
+				</div><!--Fin step 25-->
+
 
 				<div id="step26">
 
@@ -1647,7 +1650,8 @@
 					</div>
 					
 
-				</div>
+				</div><!--Fin step 26-->
+
 				
 				</div><!--Fin funcionalidad 3-->
 
@@ -1669,8 +1673,3 @@
 		
 		
 	
-		
-</body>
-   
-
-</html>

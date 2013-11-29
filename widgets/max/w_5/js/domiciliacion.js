@@ -22,7 +22,8 @@ $(document).ready(function(){
 	];
 
 	omniBox("autocompleteQ",cards);
-	ocultaSteps(4);
+	
+	ocultaSteps(26);
 	
 
 
@@ -66,4 +67,5 @@ function ocultaSteps(num_Step){
 		$('#step'+i).hide();
 	}
 }
+
 

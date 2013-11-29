@@ -1,5 +1,5 @@
-@import url('../../css/widgets.css');
-@import url('../../css/componentes.css');
+﻿@import url('../../../../css/widgets.css');
+@import url('../../../../css/componentes.css');
 
 /*Texto Superior*/
 .textSuperior{
@@ -16,7 +16,7 @@ a:link,a:visited{
 }
 
 
-/*Tamaño de vision para cuadro de tarjetas credito*/
+/*TamaÃ±o de vision para cuadro de tarjetas credito*/
 #servlistTarjetas {
     float: left;
     margin: 5px 0 0 12px;
@@ -86,7 +86,7 @@ a:link,a:visited{
 	display:none;
 }
 #select2{
-	di´play:none;
+	diÂ´play:none;
 }
 .dropcontainer{
 	height: 100px;
@@ -331,7 +331,7 @@ a:link,a:visited{
 
 
 /*
-*Estilos correspondientes a la primera funcionalidad: Domiciliación de servicios
+*Estilos correspondientes a la primera funcionalidad: DomiciliaciÃ³n de servicios
 *Realizado por Abelito -o-o-
 */
 
