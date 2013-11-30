@@ -21,7 +21,7 @@ $(document).ready(function(){
 				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
 	];
 
-	omniBox("autocompleteQ",cards);
+	//omniBox("autocompleteQ",cards);
 	
 	ocultaSteps(26);
 	
