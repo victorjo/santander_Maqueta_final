@@ -228,6 +228,12 @@ a:link,a:visited{
     margin-top: 208px;
 }
 
+.titleDomiciliacion {
+	margin: 8px 0 0 175px; 
+	font-size: 13px;
+	font-weight: bolder;
+	float:left;
+}  
 
 
 		/*tr td{
