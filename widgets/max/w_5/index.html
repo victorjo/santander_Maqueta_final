@@ -356,22 +356,50 @@
 															<td style="border:none">Alias</td>
 															<td style="border:none"></td>
 														</tr>
-							</table>
+							</table>						
+						</div>
+						<div class="dropdown">
+			  				<img class="downI" src="../../img/iconos/dropdown.png" style="display: block;">
+			  				<img class="upI" src="../../img/iconos/dropup.png" style="display: none;">
+			  				<h6>Datos para domiciliar la tarjeta de crédito.</h6>
+  						</div>
 
-												<b>Esquema de pago</b>
+  						<div id="select1" class="wra_Select4" style="display:none">
 
-															<select name="" id="" >  
-																  <option value="">Pago mínimo</option>
-													              <option value="">Opcion1</option>
-													              <option value="">Opcion1</option>
-													              <option value="">Opcion1</option>
-													              <option value="">Opcion1</option>
-														     </select>
-											</div>		
+							<table> <!--lista dinámica c/favorito-->
+								<tr>
+									<td>						
+										<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
+										style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+									</td>
+									<td>
+										<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+										<tr>
+											<td>
+												<span style="font-weight:bold;margin-left:0px"> 
+													<div class="marcotriangulo">
+														<div class="triangulo_inf"></div>
+													</div>
+												</span> 
+											</td>
+										</tr>
+									</td>
+								</tr>
+							</table><!--Fin lista dinámica c/favorito-->
+							
+							<b>Esquema de pago</b>
+							<select name="" id="" >  
+								<option value="">Pago mínimo</option>
+								<option value="">Opcion1</option>
+								<option value="">Opcion1</option>
+								<option value="">Opcion1</option>
+								<option value="">Opcion1</option>
+							</select>
+						</div>		
 
-											<div class="botonera">
-												<div class="btn" style="float:right; margin-top:10px;">Continuar</div>
-											</div>				
+						<div class="botonera">
+							<div class="btn" style="float:right; margin-top:10px;" id="siguiente4">Continuar</div>
+						</div>				
 
 
 				</div><!--fin step 5-->
@@ -444,9 +472,9 @@
 																	           	</select>
 														</div>
 
-															<div class="botonera">
+															<div class="botonera" style="margin-right:20px;width:auto;margin-top:30px;" >
 															
-																		<div class="btnaceptar">Continuar</div>
+																		<div class="btn" id="siguiente5">Continuar</div>
 																	 </div>
 					
 					</div><!--step6-->
@@ -480,9 +508,9 @@
 				
 							</table>
 
-								<div class="botonera">
-									<div class="btn">Regresar</div>
-									<div class="btnaceptar">Confirmar</div>
+								<div class="botonera" style="margin-right:20px;width:auto;margin-top:160px;" >
+									<div class="btn" id="regresar2">Regresar</div>
+									<div class="btn" id="siguiente6">Confirmar</div>
 								</div>			
 		
 					</div><!--fin step7-->
@@ -509,9 +537,9 @@
 		
 
 			<div class="botonera">
-				<div class="btn" style="float:right; margin-top:10px;">Continuar</div>
-				<div class="btn" style="float:right; margin-top:10px;">Guardar</div>
-				<div class="btn" style="float:right; margin-top:10px;">Imprimir</div>
+				<div class="btn" style="float:left; margin-top:50px;  margin-right:-8px;"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
+				<div class="btn" style="float:left; margin-top:50px;">Guardar</div>
+				<div class="btn" style="float:right; margin-top:-33px; margin-right:-8px;" id="siguiente7">Continuar</div>
 				
 
 			</div>
@@ -519,7 +547,19 @@
 		</div><!--fin step8-->	
 
 				<div id="step9" class="pasos">
-
+					<div id="vtacruzada">
+			
+						<div class="vtaimg">
+						</div>
+						
+						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
+						
+						<div class="vtapanel">
+							<div class="vtabtn"><img src="../../../img/iconos/tarjeta.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+							<div class="vtabtn"><img src="../../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+							<div class="vtabtn"><img src="../../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+						</div>
+					</div>
 
 						<h4 style="width:30%">Comprobante de baja de servicio.</h4>
 			
@@ -564,10 +604,10 @@
 				
 							</table>
 			
-								<div class="botonera" style="margin-right:20px;width:auto;" >
-									<div class="btn"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
-									<div class="btnaceptar">Finalizar</div>
-								</div>
+							<div class="botonera" style="margin-right:-200px;width:auto;margin-top:160px;" >
+								<div class="btn"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
+								<div class="btn">Finalizar</div>
+							</div>
 
 				</div><!--fin step9-->
 			</div><!--Fin funcionalidad 2-->
@@ -644,7 +684,7 @@
 			</table>
 			</div>
 			<div class="botonera">
-				<div class="btn" style="float:right; margin-top:10px;">Cancelar domiciliación</div>
+				<div class="btn" style="float:right; margin-top:10px;" >Cancelar domiciliación</div>
 			</div>
 
 
@@ -690,7 +730,7 @@
 			</div>
 
 			<div class="botonera">
-				<div class="btn" style="float:right; margin-top:10px;">Cancelar domiciliación</div>
+				<div class="btn" style="float:right; margin-top:10px;" id="siguiente8">Continuar</div>
 			</div>
 
 						<!---///////////////////////////////////////////////////////////////////////////////////-->			
@@ -784,7 +824,7 @@
 								</div>
 
 						<div class="botonera">
-							<div class="btn" style="float:right; margin-top:10px;">Continuar</div>
+							<div class="btn" style="float:right; margin-top:10px;" id="siguiente9">Continuar</div>
 						</div>
 
 						<!---///////////////////////////////////////////////////////////////////////////////////-->			
@@ -813,7 +853,7 @@
 						</table>
 
 						<div class="botonera" id="tmbt">
-							<div class="btn" style="float:right; margin-top:10px;">Confirmar</div><div class="btn" style="float:right; margin-top:10px;">Regresar</div>
+							<div class="btn" style="float:right; margin-top:10px;" id="siguiente10">Confirmar</div><div class="btn" style="float:right; margin-top:10px;" id="regresar3">Regresar</div>
 						</div>
 
 
@@ -849,7 +889,7 @@
 		
 
 					<div class="botonera2">
-						<div class="btn" style="float:right; margin-top:10px;">Continuar</div>
+						<div class="btn" style="float:right; margin-top:10px;" id="siguiente11">Continuar</div>
 						<div class="btn" style="float:right; margin-top:10px;">Guardar</div>
 						<div class="btn" style="float:right; margin-top:10px;"><div id="imgim"></div>Imprimir</div>
 
@@ -923,9 +963,9 @@
 			
 					</table>
 			
-					<div class="botonera" style="margin-right:20px;width:auto;" >
-						<div class="btn"><img src="../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
-						<div class="btnaceptar">Finalizar</div>
+					<div class="botonera" style="margin-right:-200px;width:auto;margin-top:180px;" >
+						<div class="btn"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
+						<div class="btn">Finalizar</div>
 					</div>
 				</div><!--Fin step 14-->
 
