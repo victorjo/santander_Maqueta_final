@@ -22,8 +22,11 @@ $(document).ready(function(){
 	];
 
 	//omniBox("autocompleteQ",cards);
+<<<<<<< HEAD
+=======
 	
-	ocultaSteps(26);
+>>>>>>> 28990dc70aafc0aa4b2fb0bd927af010307d22f7
+	
 	
 
 
@@ -62,22 +65,33 @@ $(document).ready(function(){
 
 		//Transicion entre operaciones
 	$("#navegador > ul > :nth-child(1)").click(function(){
-		alert("aqui");
+		cambiaFlujo("#step1");
 	});
 
 	
 	$("#navegador > ul > :nth-child(2)").click(function(){
-		$("#contenido > div > div").fadeOut(function(){
-			$("#step4").fadeIn();
-			});
+		cambiaFlujo("#step5");
 	});
+	
+	$("#navegador > ul > :nth-child(3)").click(function(){
+		cambiaFlujo("#step10");
+	});
+
 });
 
-/*Mostrara el step 1, mientras que ocultara los demás steps apartir del 2*/
-function ocultaSteps(num_Step){
-	for(var i=2;i<=num_Step; i++){
-		$('#step'+i).hide();
-	}
-}
+function cambiaFlujo(step){
+	
+	var npasos = $(".pasos").size();
+		$(".pasos").each(function(index){
+			if((++index) == npasos){
+				$(this).fadeOut("slow",function(){
+					$(step).delay(1000).fadeIn();
+				});
+	
+			}else{
+				$(this).fadeOut("slow");
+			}
+		})
 
+}
 

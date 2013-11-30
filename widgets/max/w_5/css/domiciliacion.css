@@ -86,7 +86,7 @@ a:link,a:visited{
 	display:none;
 }
 #select2{
-	diÂ´play:none;
+	display:none;
 }
 .dropcontainer{
 	height: 100px;
@@ -419,4 +419,19 @@ a:link,a:visited{
 	margin-right:-3px; 
 	margin-top:283px;
 }
+
+/*Ocultamiento de steps*/
+#step2{
+	display:none;
+}
+
+#step3{
+	display:none;
+}
+
+#step4{
+	display:none;
+}
+
+
 
