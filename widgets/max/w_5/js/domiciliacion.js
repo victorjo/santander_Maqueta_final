@@ -22,7 +22,10 @@ $(document).ready(function(){
 	];
 
 	//omniBox("autocompleteQ",cards);
+<<<<<<< HEAD
+=======
 	
+>>>>>>> 28990dc70aafc0aa4b2fb0bd927af010307d22f7
 	
 	
 
