@@ -30,9 +30,10 @@ p{}
 }
 
 .f_titleWid{
-        font-size: 13px;
-        font-weight: bolder;
-}
+        margin: 8px 0 0 175px; 
+		font-size: 13px;
+		font-weight: bolder;
+		float:left;}
 
 .f_titleWidred{
         font-size: 12px;
