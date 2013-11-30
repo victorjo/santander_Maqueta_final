@@ -1,32 +1,9 @@
 $(document).ready(function(){
 
 	//Carga de datos para arreglo dinámico
-	var cards = [
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-	];
-
-	//omniBox("autocompleteQ",cards);
-<<<<<<< HEAD
-=======
 	
->>>>>>> 28990dc70aafc0aa4b2fb0bd927af010307d22f7
 	
+	ocultaSteps(26);
 	
 
 
@@ -65,33 +42,22 @@ $(document).ready(function(){
 
 		//Transicion entre operaciones
 	$("#navegador > ul > :nth-child(1)").click(function(){
-		cambiaFlujo("#step1");
+		alert("aqui");
 	});
 
 	
 	$("#navegador > ul > :nth-child(2)").click(function(){
-		cambiaFlujo("#step5");
+		$("#contenido > div > div").fadeOut(function(){
+			$("#step4").fadeIn();
+			});
 	});
-	
-	$("#navegador > ul > :nth-child(3)").click(function(){
-		cambiaFlujo("#step10");
-	});
-
 });
 
-function cambiaFlujo(step){
-	
-	var npasos = $(".pasos").size();
-		$(".pasos").each(function(index){
-			if((++index) == npasos){
-				$(this).fadeOut("slow",function(){
-					$(step).delay(1000).fadeIn();
-				});
-	
-			}else{
-				$(this).fadeOut("slow");
-			}
-		})
-
+/*Mostrara el step 1, mientras que ocultara los demás steps apartir del 2*/
+function ocultaSteps(num_Step){
+	for(var i=2;i<=num_Step; i++){
+		$('#step'+i).hide();
+	}
 }
+
 
