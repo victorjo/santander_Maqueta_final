@@ -711,6 +711,27 @@ margin-left: 8px;
 /*iojuoijioji*/
 
 
+@media screen and (max-width: 960px) {
+	#wr_SuperBanner{
+		display:none;
+	}
+	.wr_NavPrin{
+		display:none;
+	}
+	#wrappWidgets{
+		margin:0 auto;
+	}
+	#navContent{
+		display:none;
+	}
+}
+
+
+@media screen and (max-width: 1229px),all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+	#wr_SuperBanner{
+		display:none;
+	}
+}
 
 /**/
 @media screen and (max-width: 768px),all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
@@ -722,6 +743,7 @@ margin-left: 8px;
     }
     .wr_NavPrin 
     { 
+    	display:block !important;
         position:absolute; 
         left:-190px;
         z-index:10;
@@ -772,11 +794,12 @@ margin-left: 8px;
 		margin-right: 8px;
 		margin-top: 8px;
 	}
-}
+	#widred1x2{
+		height:576px !important;
+	}
 
-@media screen and (max-width: 1229px),all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
-	#wr_SuperBanner{
-		display:none;
+	#titleLogin+div{
+		left:100px !important;
 	}
 }
 
