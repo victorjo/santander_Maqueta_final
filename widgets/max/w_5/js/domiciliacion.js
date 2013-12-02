@@ -1,9 +1,11 @@
 $(document).ready(function(){
 
 	//Carga de datos para arreglo dinámico
+
+
 	
 	ocultaSteps(26);
-	
+
 	/*funcionalidad clic en boton info para mostrar imagen*/
 	$("#infobtn").click(function(){
 			$("#info").fadeToggle("slow");
