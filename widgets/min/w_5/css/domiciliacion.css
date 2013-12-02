@@ -1,5 +1,5 @@
-﻿@import url('../../css/widgets.css');
-@import url('../../css/componentes.css');
+﻿@import url('../../../../css/widgets.css');
+@import url('../../../../css/componentes.css');
 
 /*Texto Superior*/
 .textSuperior{
@@ -7,8 +7,9 @@
 	float:left;
 }
 /*Centrado de switch*/
-.centradoSwitch{
-	margin:75px 50px;
+.centradoSwitch {
+    margin: 15px 52px;
+    float:left; 
 }	
 /* link*/
 a:link,a:visited{
@@ -28,9 +29,19 @@ a:link,a:visited{
 #radbtnsTarjetas {
     float: left;
     height: 20px;
-    margin-left: 79px;
+    margin:15px 0 0 80px;
     width: 70px;
 }
+
+#radbtns{
+	
+    float: left;
+    height: 20px;
+    margin-left: 79px;
+    margin-top: 15px;
+    width: 70px;
+}
+
 
 /*Estilos para seleccion - y excepcion en tablas*/
 .grid tr:nth-child(1) td{
@@ -86,11 +97,11 @@ a:link,a:visited{
 	display:none;
 }
 #select2{
-	diÂ´play:none;
+	display:none;
 }
 .dropcontainer{
 	height: 100px;
-	widht:715px;
+	width:715px;
 	float:left;
 	overflow:auto;
 }

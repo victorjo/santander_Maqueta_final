@@ -1,9 +1,11 @@
 $(document).ready(function(){
 
 	//Carga de datos para arreglo dinámico
+
+
 	
 	ocultaSteps(26);
-	
+
 	/*funcionalidad clic en boton info para mostrar imagen*/
 	$("#infobtn").click(function(){
 			$("#info").fadeToggle("slow");
@@ -105,6 +107,8 @@ $(document).ready(function(){
 			$("#step11").fadeIn("slow");				
 			});
 	});
+
+
 	/*********  FIN Transiciones de flujo(3): Consulta / Modificacion y cancelacion **********/
 
 	//Transicion entre operaciones
@@ -119,7 +123,35 @@ $(document).ready(function(){
 	$("#navegador > ul > :nth-child(3)").click(function(){
 		cambiaFlujo("#step10");
 	});
+
+
+	/*funcion para la ventana del modal*/
+
+
+	$("#btn").on("click", function(){
+			alert("poopju");
+			creaOverlay("#000","#widget",1);
+			insertHTML($("#contenido2").html(),"modalOver");
+			
+			//$("#contenido2").fadeIn();
+
+	});
+			
+
+
 });
+/*inyeccion de html para el modal*/
+
+function insertHTML(html,contenedor){
+			$("#"+contenedor).append(html);
+		}
+
+function follow(){
+	
+	destruyeOverlay();
+	cambiaFlujo("#step3");
+}
+
 
 /*Mostrara el step 1, mientras que ocultara los demás steps apartir del 2*/
 function ocultaSteps(num_Step){

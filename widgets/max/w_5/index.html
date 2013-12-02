@@ -1,4 +1,4 @@
-﻿
+
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
  <script src="../../../js/jquery10.2.min.js"></script>
@@ -6,6 +6,7 @@
 <script src="../../../js/ddSlick.js"></script>
 <script src="../../../js/balanceTransfer.js"></script>
 <script src="../../../js/componentes.js"></script>
+<script src="../../../js/utiles.js"></script>
 <script src="widgets/max/w_5/js/domiciliacion.js"></script>
 <link rel="stylesheet" href="widgets/max/w_5/css/domiciliacion.css"/>
 <link rel="stylesheet" href="../../../css/componentes.css"/>
@@ -224,124 +225,145 @@ var cards = [
 					</div> <!--fin step1-->
 					
 					<div id="step2" class="pasos">
+						<div id="contenido2">
+							<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
+			   				<div id="img"></div>
+			   				<div id="form">
+			   					<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
+			   					<div id="buttons">
+			   					<input type="submit" value="Cancelar" id="can" onclick="destruyeOverlay();">
+			   					<input type="submit" value="Continuar" id="con" onclick="follow();">
+			   					</div>
+			   				</div>
+
+   						</div>
 						<div class="marcoInformativo3">
 							<h4>La domiciliación del servicio se realizará con la siguiente información:</h4>
-					<br>		
-					<table style="font-size: 11px;">
-					<tr>
-						<td style="width:200px;">Nombre del titular del servício:</td>
-						<td style="color:#CCCCCC">Lorem Ipsum</td>
-					</tr>
-					<tr>
-						<td>Servicio a domiciliar:</td>
-						<td style="color:#CCCCCC">Servicio 1</td>
-					</tr>
-					<tr>
-						<td>Cuenta o tarjeta de cargo:</td>
-						<td style="color:#CCCCCC">1234****5678</td>
-					</tr>
-					<tr>
-						<td style="width:200px;">Monto máximo autorizado:</td>
-						<td style="color:#CCCCCC">999,999,999.00<span>(MXN)</span></td>
-					</tr>
-					
-					<tr>
-						<td style="width:200px;">Referencia:</td>
-						<td style="color:#CCCCCC">9999</td>
-					</tr>
-					<tr>
-						<td>Fecha de operación:</td>
-						<td style="color:#CCCCCC">dd/mm/aaaa</td>
-					</tr>
-				</table>
-							
-						<div class="botonera btn_abajo">
-							<div class="btn" id="regresar">Regresar</div>
-							<div class="btn" id="siguiente2">Confirmar</div>
-						</div>
+							<br>		
+							<table style="font-size: 11px;">
+								<tr>
+									<td style="width:200px;">Nombre del titular del servício:</td>
+									<td style="color:#CCCCCC">Lorem Ipsum</td>
+								</tr>
+								<tr>
+									<td>Servicio a domiciliar:</td>
+									<td style="color:#CCCCCC">Servicio 1</td>
+								</tr>
+								<tr>
+									<td>Cuenta o tarjeta de cargo:</td>
+									<td style="color:#CCCCCC">1234****5678</td>
+								</tr>
+								<tr>
+									<td style="width:200px;">Monto máximo autorizado:</td>
+									<td style="color:#CCCCCC">999,999,999.00<span>(MXN)</span></td>
+								</tr>
+								
+								<tr>
+									<td style="width:200px;">Referencia:</td>
+									<td style="color:#CCCCCC">9999</td>
+								</tr>
+								<tr>
+									<td>Fecha de operación:</td>
+									<td style="color:#CCCCCC">dd/mm/aaaa</td>
+								</tr>
+							</table>
+									
+							<div class="botonera btn_abajo">
+								<div class="btn" id="regresar">Regresar</div>
+								<!--<div class="btn" id="siguiente2">Confirmar</div>-->
+								<div class="btn" id="btn">Confirmar</div>
+							</div>
 
-					</div> 
+						</div> 
 				</div><!--fin step2-->
-					<div id="step3" class="pasos">
-						<table  style="margin: 0 auto;">
- 				<tr>
- 					<td>
- 						Formato de domiciliación de servicios.
- 					</td>
- 					
- 				</tr>
- 				<tr>
- 					<td>
- 						<br>
- 						<iframe src="http://docs.google.com/gview?url=http://victorpimentel.com/stuff/rubik.pdf&embedded=true" style="width:500px; height:300px; margin-left:100px;" frameborder="0"></iframe>
- 					</td>
- 					
- 				</tr>
- 			</table>
- 			<br><br>
-			<div class="botonera">
-				<div class="btn" style="float:left; margin-top:5px;"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
-				<div class="btn" style="float:left; margin-top:5px;">Guardar</div>
-				<div class="btn" style="float:right; margin-top:-33px; margin-right:-8px;" id="siguiente3">Continuar</div>
+
+
 				
 
-			</div>
+
+
+
+
+					<div id="step3" class="pasos">
+						<table  style="margin: 0 auto;">
+			 				<tr>
+			 					<td>
+			 						Formato de domiciliación de servicios.
+			 					</td>
+			 					
+			 				</tr>
+			 				<tr>
+			 					<td>
+			 						<br>
+			 						<iframe src="http://docs.google.com/gview?url=http://victorpimentel.com/stuff/rubik.pdf&embedded=true" style="width:500px; height:300px; margin-left:100px;" frameborder="0"></iframe>
+			 					</td>
+ 					
+ 							</tr>
+ 						</table>
+			 			<br><br>
+						<div class="botonera">
+							<div class="btn" style="float:left; margin-top:5px;"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
+							<div class="btn" style="float:left; margin-top:5px;">Guardar</div>
+							<div class="btn" style="float:right; margin-top:-33px; margin-right:-8px;" id="siguiente3">Continuar</div>
+							
+
+						</div>
 					</div><!--fin step3-->
 					<div id="step4" class="pasos">
 						<div id="vtacruzada">
 			
-			<div class="vtaimg">
-			</div>
-			
-			<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
-			
-			<div class="vtapanel">
-				<div class="vtabtn"><img src="../../../img/iconos/tarjeta.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-				<div class="vtabtn"><img src="../../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-				<div class="vtabtn"><img src="../../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-			</div>
-		</div>
-		<div class="marcoInformativo4">
-				<h4>Comprobante de domiciliación de servicio:</h4>
-				
-			<table class="tbl_info" style="width:121%;float:left; border:none;">
+							<div class="vtaimg">
+							</div>
+							
+							<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
+							
+							<div class="vtapanel">
+								<div class="vtabtn"><img src="../../../img/iconos/tarjeta.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+								<div class="vtabtn"><img src="../../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+								<div class="vtabtn"><img src="../../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+							</div>
+						</div>
+					<div class="marcoInformativo4">
+						<h4>Comprobante de domiciliación de servicio:</h4>
+						
+					<table class="tbl_info" style="width:121%;float:left; border:none;">
 
-				<tr>
-					<td colspan="3">Nombre del titular del servicio</td>
-					<td style="color:#CCCCCC">Lorem Ipsum</td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td colspan="3" >Servicio a domiciliar:</td>
-					<td style="color:#CCCCCC">Servicio 1</td>
-				</tr>
-				<tr>
-					<td colspan="3" >Cuenta o tarjeta de cargo:</td>
-					<td style="color:#CCCCCC">1234****5678</td>
-				</tr>
-				<tr>
-					<td colspan="3" >Monto máximo autorizado:</td>
-					<td style="color:#CCCCCC">999,999,999.00(MXN)</td>
-				</tr>
-				<tr>
-					<td colspan="3" >Referencia:</td>
-					<td style="color:#CCCCCC">9999</td>
-				</tr>
-				<tr>
-					<td colspan="3" >Fecha de operación:</td>
-					<td style="color:#CCCCCC">dd/mm/aaaa</td>
-				</tr>
-				<tr>
-					<td colspan="3" >Folio SuperNet</td>
-					<td style="color:#CCCCCC">1234567892345</td>
-				</tr>
-				<tr>
-					<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Quiero hacer otra domiciliación de servicio</div></td>
-					
-				</tr>
-			</table>
+						<tr>
+							<td colspan="3">Nombre del titular del servicio</td>
+							<td style="color:#CCCCCC">Lorem Ipsum</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colspan="3" >Servicio a domiciliar:</td>
+							<td style="color:#CCCCCC">Servicio 1</td>
+						</tr>
+						<tr>
+							<td colspan="3" >Cuenta o tarjeta de cargo:</td>
+							<td style="color:#CCCCCC">1234****5678</td>
+						</tr>
+						<tr>
+							<td colspan="3" >Monto máximo autorizado:</td>
+							<td style="color:#CCCCCC">999,999,999.00(MXN)</td>
+						</tr>
+						<tr>
+							<td colspan="3" >Referencia:</td>
+							<td style="color:#CCCCCC">9999</td>
+						</tr>
+						<tr>
+							<td colspan="3" >Fecha de operación:</td>
+							<td style="color:#CCCCCC">dd/mm/aaaa</td>
+						</tr>
+						<tr>
+							<td colspan="3" >Folio SuperNet</td>
+							<td style="color:#CCCCCC">1234567892345</td>
+						</tr>
+						<tr>
+							<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Quiero hacer otra domiciliación de servicio</div></td>
+							
+						</tr>
+					</table>
 		</div>
 			
 			
@@ -528,6 +550,18 @@ var cards = [
 					</div><!--step6-->
 					
 					<div id="step7" class="pasos">
+						<div id="contenido2">
+							<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
+			   				<div id="img"></div>
+			   				<div id="form">
+			   					<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
+			   					<div id="buttons">
+			   					<input type="submit" value="Cancelar" id="can" onclick="destruyeOverlay();">
+			   					<input type="submit" value="Continuar" id="con" onclick="follow();">
+			   					</div>
+			   				</div>
+
+   						</div>
 						<h4> Su domiciliación de tarjeta se realizará con los siguientes datos. </h4>
 
    			
@@ -558,8 +592,9 @@ var cards = [
 
 								<div class="botonera" style="margin-right:20px;width:auto;margin-top:160px;" >
 									<div class="btn" id="regresar2">Regresar</div>
-									<div class="btn" id="siguiente6">Confirmar</div>
-								</div>			
+									<!--<div class="btn" id="siguiente6">Confirmar</div>-->
+									<div class="btn" id="btn">Confirmar</div>
+							</div>			
 		
 					</div><!--fin step7-->
 					
@@ -1230,7 +1265,7 @@ var cards = [
 				<table class="tbl_info" style="width:69%;float:left;">
 					<tr>
 						<td style="font-weight:bold;" colspan="2">
-							Comprobante de actualización de datos de domiciliación de tarjeta de crédito.
+							Comprobante de la cancelación de la domiciliación de la tarjeta de crédito.
 						</td>
 					</tr>
 
@@ -1239,19 +1274,14 @@ var cards = [
 						<td style="color:#CCCCCC">Lorem Ipsum</td>
 					</tr>
 					<tr>
-						<td>Tarjeta a domiciliar:</td>
+						<td>Domiciliación cancelada de la tarjeta:</td>
 						<td style="color:#CCCCCC">1234****5678</td>
 					</tr>
 					<tr>
 						<td>Cuenta de cargo:</td>
 						<td style="color:#CCCCCC">1234****5678</td>
 					</tr>
-					
-					<tr>
-						<td>Esquema de pago:</td>
-						<td style="color:#CCCCCC">Pago mínimo</td>
-					</tr>
-						
+														
 					<tr>
 						<td>Fecha de modificación:</td>
 						<td style="color:#CCCCCC">dd/mm/aaaa</td>
@@ -1262,7 +1292,7 @@ var cards = [
 					</tr>
 					
 					<tr>
-						<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Quiero modificar otra<br />domiciliación de tarjeta</div></td>
+						<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Quiero cancelar otra<br />tarjeta domiciliada</div></td>
 						
 					</tr>
 					
