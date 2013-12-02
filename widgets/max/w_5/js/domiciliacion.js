@@ -2,11 +2,8 @@ $(document).ready(function(){
 
 	//Carga de datos para arreglo dinámico
 	
-	
 	ocultaSteps(26);
 	
-
-
 	/*funcionalidad clic en boton info para mostrar imagen*/
 	$("#infobtn").click(function(){
 			$("#info").fadeToggle("slow");
@@ -112,13 +109,15 @@ $(document).ready(function(){
 
 	//Transicion entre operaciones
 	$("#navegador > ul > :nth-child(1)").click(function(){
-		alert("aqui");
+		cambiaFlujo("#step1");
 	});
 
 	$("#navegador > ul > :nth-child(2)").click(function(){
-		$("#contenido > div > div").fadeOut(function(){
-			$("#step4").fadeIn();
-			});
+		cambiaFlujo("#step5");
+	});
+	
+	$("#navegador > ul > :nth-child(3)").click(function(){
+		cambiaFlujo("#step10");
 	});
 });
 
@@ -129,4 +128,19 @@ function ocultaSteps(num_Step){
 	}
 }
 
+function cambiaFlujo(step){
+	
+	var npasos = $(".pasos").size();
+		$(".pasos").each(function(index){
+			if((++index) == npasos){
+				$(this).fadeOut("slow",function(){
+					$(step).delay(1000).fadeIn();
+				});
+	
+			}else{
+				$(this).fadeOut("slow");
+			}
+		})
+
+}
 
