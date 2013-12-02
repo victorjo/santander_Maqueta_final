@@ -1,11 +1,11 @@
 ﻿
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script src="../../../js/ddSlick.js"></script>
 <script src="../../../js/balanceTransfer.js"></script>
 <script src="../../../js/componentes.js"></script>
 <script src="widgets/max/w_5/js/domiciliacion.js"></script>
 <link rel="stylesheet" href="widgets/max/w_5/css/domiciliacion.css"/>
 <link rel="stylesheet" href="../../../css/componentes.css"/>
+<script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
 <style>
 
 .btnHeaderTable{
@@ -41,6 +41,35 @@
 
 </style>
 <script>
+	var cards = [
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+	];
+
+	$(document).ready(function(){
+		omniBox("autocompleteQ",cards);
+		omniBox("autocompleteQ1",cards);
+		omniBox("autocompleteQ2",cards);
+		omniBox("autocompleteQ3",cards);
+		omniBox("autocompleteQ4",cards);
+		omniBox("autocompleteQ5",cards);
+		
+	});
 
 </script>
 <div id="widget">
@@ -141,26 +170,17 @@
 													
 							</div>
 							<h4>Introduzca el nombre, alias o los cuatro dígitos de la cuenta o tarjeta de cargo o seleccionela de la lista:</h4>
-							<table> <!--lista dinámica c/favorito-->
-								<tr>
-									<td>						
-										<input type="text" id="autocompleteQ2" onclick="omniBox('autocompleteQ2');" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
-										style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
-									</td>
-									<td>
-										<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-										<tr>
-											<td>
-												<span style="font-weight:bold;margin-left:0px"> 
-													<div class="marcotriangulo">
-														<div class="triangulo_inf"></div>
-													</div>
-												</span> 
-											</td>
-										</tr>
-									</td>
-								</tr>
-							</table><!--Fin lista dinámica c/favorito-->
+							<table>
+								<tr><td>						
+									<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+								</td><td>
+
+								<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+
+										<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span> </td>
+								</td></tr>
+
+							</table>
 
 
 						<div class="inputInicial" style="margin-left:0px;width:22%;">
@@ -181,7 +201,7 @@
 						<span class="moneda">(MXN)</span>							
 						<div id="infobtn2" class="infor_btn"><img src="../../../img/botones/info_.png"/></div>
 						<div class="botonera" style="width:auto; margin-right:20px; margin-top:10px;">
-							<div class="btn" id="siguiente">Continuar</div>	
+							<div class="btn btnaceptar" id="siguiente">Continuar</div>	
 						</div>	
 					</div> <!--fin step1-->
 					
@@ -219,7 +239,7 @@
 							
 						<div class="botonera btn_abajo">
 							<div class="btn" id="regresar">Regresar</div>
-							<div class="btn" id="siguiente2">Confirmar</div>
+							<div class="btn btnaceptar" id="siguiente2">Confirmar</div>
 						</div>
 
 					</div> 
@@ -244,7 +264,7 @@
 			<div class="botonera">
 				<div class="btn" style="float:left; margin-top:5px;"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
 				<div class="btn" style="float:left; margin-top:5px;">Guardar</div>
-				<div class="btn" style="float:right; margin-top:-33px; margin-right:-8px;" id="siguiente3">Continuar</div>
+				<div class="btn btnaceptar" style="float:right; margin-top:-33px; margin-right:-8px;" id="siguiente3">Continuar</div>
 				
 
 			</div>
@@ -373,27 +393,16 @@
   						</div>
 
   						<div id="select1" class="wra_Select4" style="display:none">
+							<table>
+								<tr><td>						
+									<input type="text" id="autocompleteQ1" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+								</td><td>
 
-							<table> <!--lista dinámica c/favorito-->
-								<tr>
-									<td>						
-										<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
-										style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
-									</td>
-									<td>
-										<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-										<tr>
-											<td>
-												<span style="font-weight:bold;margin-left:0px"> 
-													<div class="marcotriangulo">
-														<div class="triangulo_inf"></div>
-													</div>
-												</span> 
-											</td>
-										</tr>
-									</td>
-								</tr>
-							</table><!--Fin lista dinámica c/favorito-->
+								<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+
+										<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span> </td>
+								</td></tr>
+							</table>
 							
 							<b>Esquema de pago</b>
 							<select name="" id="" >  
@@ -406,7 +415,7 @@
 						</div>		
 
 						<div class="botonera">
-							<div class="btn" style="float:right; margin-top:10px;" id="siguiente4">Continuar</div>
+							<div class="btn btnaceptar" style="float:right; margin-top:10px;" id="siguiente4">Continuar</div>
 						</div>				
 
 
@@ -448,26 +457,17 @@
 
 
 														
-														<strong><table> <!--lista dinámica c/favorito-->
-															<tr>
-																<td>						
-																	<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
-																	style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
-																</td>
-																<td>
-																	<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-																	<tr>
-																		<td>
-																			<span style="font-weight:bold;margin-left:0px"> 
-																				<div class="marcotriangulo">
-																					<div class="triangulo_inf"></div>
-																				</div>
-																			</span> 
-																		</td>
-																	</tr>
-																</td>
-															</tr>
-														</table><!--Fin lista dinámica c/favorito-->
+														<strong>
+															<table>
+																<tr><td>						
+																	<input type="text" id="autocompleteQ2" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+																</td><td>
+
+																<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+
+																		<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span> </td>
+																</td></tr>
+															</table>
 </strong>
 														<b>Esquema de pago</b>
 
@@ -482,7 +482,7 @@
 
 															<div class="botonera" style="margin-right:20px;width:auto;margin-top:30px;" >
 															
-																		<div class="btn" id="siguiente5">Continuar</div>
+																		<div class="btn btnaceptar" id="siguiente5">Continuar</div>
 																	 </div>
 					
 					</div><!--step6-->
@@ -518,7 +518,7 @@
 
 								<div class="botonera" style="margin-right:20px;width:auto;margin-top:160px;" >
 									<div class="btn" id="regresar2">Regresar</div>
-									<div class="btn" id="siguiente6">Confirmar</div>
+									<div class="btn btnaceptar" id="siguiente6">Confirmar</div>
 								</div>			
 		
 					</div><!--fin step7-->
@@ -547,7 +547,7 @@
 			<div class="botonera">
 				<div class="btn" style="float:left; margin-top:50px;  margin-right:-8px;"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
 				<div class="btn" style="float:left; margin-top:50px;">Guardar</div>
-				<div class="btn" style="float:right; margin-top:-33px; margin-right:-8px;" id="siguiente7">Continuar</div>
+				<div class="btn btnaceptar" style="float:right; margin-top:-33px; margin-right:-8px;" id="siguiente7">Continuar</div>
 				
 
 			</div>
@@ -624,7 +624,7 @@
 					<div id="step10" class="pasos">
 						<!---///////////////////////////////////////////////////////////////////////////////////-->	
 
-						<h4>A continuación podrá modificar, cancelar o ver el detalle de los servicios que tiene domiciliados. Así como descargar el formato que se generó al dar de alta la domiciliación del servicio.</h4>
+						<h4>A continuación podrxá modificar, cancelar o ver el detalle de los servicios que tiene domiciliados. Así como descargar el formato que se generó al dar de alta la domiciliación del servicio.</h4>
    			<h4> Consultas de tarjetas domiciliadas</h4>
  			<div id="btn_select">
    				<div id="btn_left">
@@ -705,27 +705,16 @@
   			
 				
 			<div id="select1" class="wra_Select4" style="display:none">
+				<table>
+					<tr><td>						
+						<input type="text" id="autocompleteQ4" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+					</td><td>
 
-				<table> <!--lista dinámica c/favorito-->
-															<tr>
-																<td>						
-																	<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
-																	style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
-																</td>
-																<td>
-																	<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-																	<tr>
-																		<td>
-																			<span style="font-weight:bold;margin-left:0px"> 
-																				<div class="marcotriangulo">
-																					<div class="triangulo_inf"></div>
-																				</div>
-																			</span> 
-																		</td>
-																	</tr>
-																</td>
-															</tr>
-														</table><!--Fin lista dinámica c/favorito-->
+					<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+
+							<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span> </td>
+					</td></tr>
+				</table>
 				
 				<b>Esquema de pago</b>
 				<select name="" id="" >  
@@ -738,7 +727,7 @@
 			</div>
 
 			<div class="botonera">
-				<div class="btn" style="float:right; margin-top:10px;" id="siguiente8">Continuar</div>
+				<div class="btn btnaceptar" style="float:right; margin-top:10px;" id="siguiente8">Continuar</div>
 			</div>
 
 						<!---///////////////////////////////////////////////////////////////////////////////////-->			
@@ -801,26 +790,16 @@
 						<div id="select1" class="wra_Select4" style="display:none">
 							<h6>Elija las opciones que desea modificar.</h6>	
 							<h6>Introduzca el nombre, alias o los cuatro dígitos de la cuenta o la terjeta de cargo o seleccionela de las listas.</h6>
-							<table> <!--lista dinámica c/favorito-->
-								<tr>
-									<td>						
-										<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
-										style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
-									</td>
-									<td>
-										<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-										<tr>
-											<td>
-												<span style="font-weight:bold;margin-left:0px"> 
-													<div class="marcotriangulo">
-														<div class="triangulo_inf"></div>
-													</div>
-												</span> 
-											</td>
-										</tr>
-									</td>
-								</tr>
-							</table><!--Fin lista dinámica c/favorito-->
+								<table>
+									<tr><td>						
+										<input type="text" id="autocompleteQ5" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+									</td><td>
+
+									<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+
+											<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span> </td>
+									</td></tr>
+								</table>
 <b>Esquema de pago</b>
 							<select name="" id="" >  
 								<option value="">Pago mínimo</option>
@@ -832,7 +811,7 @@
 								</div>
 
 						<div class="botonera">
-							<div class="btn" style="float:right; margin-top:10px;" id="siguiente9">Continuar</div>
+							<div class="btn btnaceptar" style="float:right; margin-top:10px;" id="siguiente9">Continuar</div>
 						</div>
 
 						<!---///////////////////////////////////////////////////////////////////////////////////-->			
@@ -861,7 +840,7 @@
 						</table>
 
 						<div class="botonera" id="tmbt">
-							<div class="btn" style="float:right; margin-top:10px;" id="siguiente10">Confirmar</div><div class="btn" style="float:right; margin-top:10px;" id="regresar3">Regresar</div>
+							<div class="btn btnaceptar" style="float:right; margin-top:10px;" id="siguiente10">Confirmar</div><div class="btn" style="float:right; margin-top:10px;" id="regresar3">Regresar</div>
 						</div>
 
 
@@ -897,7 +876,7 @@
 		
 
 					<div class="botonera2">
-						<div class="btn" style="float:right; margin-top:10px;" id="siguiente11">Continuar</div>
+						<div class="btn btnaceptar" style="float:right; margin-top:10px;" id="siguiente11">Continuar</div>
 						<div class="btn" style="float:right; margin-top:10px;">Guardar</div>
 						<div class="btn" style="float:right; margin-top:10px;"><div id="imgim"></div>Imprimir</div>
 
@@ -976,7 +955,8 @@
 						<div class="btn">Finalizar</div>
 					</div>
 				</div><!--Fin step 14-->
-
+				<!-- fin de funcionalidad 3: Consulta/Modificacion cancelacion -->
+				<!-- Funcionalidad base -->
 
 				<div id="step15" class="pasos">
 					
