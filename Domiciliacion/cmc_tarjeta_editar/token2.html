@@ -80,17 +80,19 @@
 	</script>
 	<style type="text/css">
 		#contenido2{
-			display: none;
+			display:none;
+			margin: 0 auto;
 		}
 		#img{
 			width: 180px;
 			height: 243px;
-			background:url("nip.png");
-			margin: 0 auto;
+			background:red url("nip.png");
+			margin-left: 35%;
 		}
 		#text{
 			width: 30%;
-			margin: 0 auto;
+			margin-left: 28%;
+			/*margin: 0 auto;*/
 			text-align: center;
 			padding-bottom: 20px;
 			margin-top: 20px;
@@ -131,6 +133,22 @@
 </head>
 <body>
 	<div id="widget">
+		<div id="otr">
+			<div id="contenido2">
+   				<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
+   				<div id="img">
+
+   				</div>
+   				<div id="form">
+   					<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
+   					<div id="buttons">
+   					<input type="submit" value="Cancelar" id="can" onclick="destruyeOverlay();">
+   					<input type="submit" value="Continuar" id="con">
+   					</div>
+   				</div>
+
+   			</div>
+   		</div>
 		<div id="titulo">
 			<p class="f_titleWid">DOMICILIACIONES</p>
 		</div>
@@ -148,20 +166,7 @@
    			</div>
    		</div>
    		<div id="contenido">
-   			<div id="contenido2">
-   				<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
-   				<div id="img">
-
-   				</div>
-   				<div id="form">
-   					<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
-   					<div id="buttons">
-   					<input type="submit" value="Cancelar" id="can" onclick="destruyeOverlay();">
-   					<input type="submit" value="Continuar" id="con">
-   					</div>
-   				</div>
-
-   			</div>
+   			
  		
 
    			<table style="border:solid 1px silver; width:100%;">
