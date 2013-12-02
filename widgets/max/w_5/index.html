@@ -233,7 +233,7 @@
 							<div class="botonera btn_abajo">
 								<div class="btn" id="regresar">Regresar</div>
 								<!--<div class="btn" id="siguiente2">Confirmar</div>-->
-								<div class="btn" id="btn">Confirmar</div>
+								<div class="btn" id="btn1">Confirmar</div>
 							</div>
 
 						</div> 
@@ -379,6 +379,7 @@
 														<td style="border:none"></td>
 													</tr>
 
+
 													<tr>
 															<td style="border:none"><img src="../../../img/iconos/tarjeta.png"></td>
 															<td style="border:none">234****5678</td>
@@ -510,14 +511,14 @@
 					</div><!--step6-->
 					
 					<div id="step7" class="pasos">
-						<div id="contenido2">
+						<div id="contenido3">
 							<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
 			   				<div id="img"></div>
 			   				<div id="form">
 			   					<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
 			   					<div id="buttons">
 			   					<input type="submit" value="Cancelar" id="can" onclick="destruyeOverlay();">
-			   					<input type="submit" value="Continuar" id="con" onclick="follow();">
+			   					<input type="submit" value="Continuar" id="con" onclick="follow2();">
 			   					</div>
 			   				</div>
 
@@ -553,7 +554,7 @@
 								<div class="botonera" style="margin-right:20px;width:auto;margin-top:160px;" >
 									<div class="btn" id="regresar2">Regresar</div>
 									<!--<div class="btn" id="siguiente6">Confirmar</div>-->
-									<div class="btn" id="btn">Confirmar</div>
+									<div class="btn" id="btn2">Confirmar</div>
 							</div>			
 		
 					</div><!--fin step7-->
@@ -784,7 +785,7 @@
 
 
 						<h4>A continuación podrá modificar, cancelar o ver el detalle de los servicios que tiene domiciliados. Así como descargar el formato que se generó al dar de alta la domiciliación del servicio.</h4>
-   						<h4> Su domiciliación de tarjeta se realizará con los siguientes datos.</h4>
+   						<h4> Consulta de tarjetas domiciliadas.</h4>
  						<div id="btn_select">
    							<div id="btn_left">
    								Tarjetas de creditos
@@ -874,10 +875,22 @@
 					</div><!--fin step11-->
 							
 					<div id="step12" class="pasos">
+						<div id="contenido4">
+							<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
+			   				<div id="img"></div>
+			   				<div id="form">
+			   					<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
+			   					<div id="buttons">
+			   					<input type="submit" value="Cancelar" id="can" onclick="destruyeOverlay();">
+			   					<input type="submit" value="Continuar" id="con" onclick="follow3();">
+			   					</div>
+			   				</div>
+
+   						</div>
 
 						<table style="border:solid 1px silver; width:100%;">
 							<tr>
-								<td style="font-weight:bold;" colspan="2">Confirme la actualización de datos de domicialiación de tarjeta de créditos</td>
+								<td style="font-weight:bold;" colspan="2">Confirme la actualización de datos de domicialiación de tarjeta de crédito</td>
 							</tr>
    				
    							<tr>
@@ -896,13 +909,16 @@
 						</table>
 
 						<div class="botonera" id="tmbt">
-							<div class="btn" style="float:right; margin-top:10px;" id="siguiente10">Confirmar</div><div class="btn" style="float:right; margin-top:10px;" id="regresar3">Regresar</div>
+							<div class="btn" id="btn3" style="float:right; margin-top:10px;" id="siguiente10">Confirmar</div>
+							<div class="btn" style="float:right; margin-top:10px;" id="regresar3">Regresar</div>
 						</div>
 
 
 
 
 					</div><!--Fin step 12-->
+
+
 				<div id="step13" class="pasos">
 					
 
@@ -1138,7 +1154,7 @@
 				<div id="step16" class="pasos">
 					<table style="border:solid 1px silver; width:100%;">
 						<tr>
-							<td style="font-weight:bold;" colspan="2">Confirme los datos de la tarjeta domiciliadanque desea cancelar</td>
+							<td style="font-weight:bold;" colspan="2">Confirme los datos de la tarjeta domiciliada que desea cancelar</td>
 						</tr>
    				
    						<tr>
@@ -1504,6 +1520,46 @@
 
 
 				<div id="step21" class="pasos">
+					<div id="contenido5">
+							<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
+			   				<div id="img"></div>
+			   				<div id="form">
+			   					<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
+			   					<div id="buttons">
+			   					<input type="submit" value="Cancelar" id="can" onclick="destruyeOverlay();">
+			   					<input type="submit" value="Continuar" id="con" onclick="follow4();">
+			   					</div>
+			   				</div>
+
+   						</div>
+
+						<table style="border:solid 1px silver; width:100%;">
+							<tr>
+								<td style="font-weight:bold;" colspan="2">Confirme la actualización de datos de domicialiación de tarjeta de créditos</td>
+							</tr>
+   				
+   							<tr>
+   								<td>Nombre del titular:</td><td class="tit">Lorem Ipsum</td>
+   							</tr>
+   							<tr>
+   								<td>Tarjeta a domiciliar:</td><td class="tit">1234****5678</td>
+   							</tr>
+   							<tr>
+   								<td>Cuenta de cargo:</td><td class="tit">1234****5678</td>
+   							</tr>
+   							<tr>
+   								<td>Esquema de pagos:</td><td class="tit">Pago mínimo</td>
+   							</tr>
+
+						</table>
+
+						<div class="botonera" id="tmbt">
+							<div class="btn" id="btn4" style="float:right; margin-top:10px;" id="siguiente10">Confirmar</div>
+							<div class="btn" style="float:right; margin-top:10px;" id="regresar3">Regresar</div>
+						</div>
+
+
+
 						<h4> Confirme la actualización de datos de la domiciliación de servicio. </h4>
 
 	   			

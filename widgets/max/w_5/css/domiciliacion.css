@@ -435,21 +435,33 @@ a:link,a:visited{
 
 /*Estilo para la ventana modal del token*/
 
-	#contenido2{
+		#contenido2, #contenido3, #contenido4, #contenido5{
 			display: none;
 		}
+		
 		#img{
 			width: 180px;
 			height: 243px;
 			background:url("../../../../img/iconos/nip.png");
 			margin: 0 auto;
+			margin-left: 35%;
 		}
-		#text{
+		/*#text{
 			width: 30%;
 			margin: 0 auto;
 			text-align: center;
 			padding-bottom: 20px;
 			margin-top: 20px;
+			color: #fff;
+			font-weight: bold;
+		}*/
+		#text{
+			width: 30%;
+			margin-left: 28%;
+			/*margin: 0 auto;*/
+			text-align: center;
+			padding-bottom: 20px;
+			margin-top: 70px;
 			color: #fff;
 			font-weight: bold;
 		}
@@ -458,19 +470,31 @@ a:link,a:visited{
 			margin: 0 auto;
 			padding-top: 15px;
 		}
+		/*#form input{
+			margin: 0 auto;
+		}*/
 		#form input{
 			margin: 0 auto;
+			margin-left: 95px;
 		}
 		#form #token{
 			display:block;
 			width: 210px;
 			height: 25px;
 		}
-		#form #buttons{
+		/*#form #buttons{
 			padding-top: 10px;
 			width: 250px;
 			margin: 0 auto;
 			margin-left: 170px;
+			
+		}*/
+		#form #buttons{
+			padding-top: 10px;
+			width: 320px;
+			margin: 0 auto;
+			margin-left: 40px;
+			display:inline-block;
 			
 		}
 		#form #can, #con{
@@ -479,4 +503,7 @@ a:link,a:visited{
 			height: 30px;
 			border-radius: 8px;
 		}
-
+		.btn2{
+			
+			width: 100%;
+		}
