@@ -128,15 +128,42 @@ $(document).ready(function(){
 	/*funcion para la ventana del modal*/
 
 
-	$("#btn").on("click", function(){
-			alert("poopju");
+	$("#btn1").on("click", function(){
 			creaOverlay("#000","#widget",1);
 			insertHTML($("#contenido2").html(),"modalOver");
 			
 			//$("#contenido2").fadeIn();
 
 	});
+
+
+
+	$("#btn2").on("click", function(){
+			creaOverlay("#000","#widget",1);
+			insertHTML($("#contenido3").html(),"modalOver");
 			
+			//$("#contenido2").fadeIn();
+
+	});
+
+	$("#btn3").on("click", function(){
+			creaOverlay("#000","#widget",1);
+			insertHTML($("#contenido4").html(),"modalOver");
+			
+			//$("#contenido2").fadeIn();
+
+	});
+		
+		$("#btn4").on("click", function(){
+			creaOverlay("#000","#widget",1);
+			insertHTML($("#contenido5").html(),"modalOver");
+			
+			//$("#contenido2").fadeIn();
+
+	});	
+
+
+
 
 
 });
@@ -151,8 +178,22 @@ function follow(){
 	destruyeOverlay();
 	cambiaFlujo("#step3");
 }
+function follow2(){
+	
+	destruyeOverlay();
+	cambiaFlujo("#step8");
+}
 
-
+function follow3(){
+	
+	destruyeOverlay();
+	cambiaFlujo("#step13");
+}
+function follow4(){
+	
+	destruyeOverlay();
+	cambiaFlujo("#step22");
+}
 /*Mostrara el step 1, mientras que ocultara los demás steps apartir del 2*/
 function ocultaSteps(num_Step){
 	for(var i=2;i<=num_Step; i++){
@@ -176,3 +217,4 @@ function cambiaFlujo(step){
 
 }
 
+/// new commit

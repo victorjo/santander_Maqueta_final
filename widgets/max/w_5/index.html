@@ -1,8 +1,5 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
- <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
- <script src="../../../js/jquery10.2.min.js"></script>
-  <script src="../../../js/jquery10.3.min.js"></script>
 <script src="../../../js/ddSlick.js"></script>
 <script src="../../../js/balanceTransfer.js"></script>
 <script src="../../../js/componentes.js"></script>
@@ -11,42 +8,6 @@
 <link rel="stylesheet" href="widgets/max/w_5/css/domiciliacion.css"/>
 <link rel="stylesheet" href="../../../css/componentes.css"/>
 <style>
-
-<script>
-var cards = [
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				];
-	$(document).ready(function(){
-		omniBox("autocompleteQ",cards);
-		omniBox("autocompleteQ1",cards);
-		omniBox("autocompleteQ2",cards);
-		omniBox("autocompleteQ3",cards);
-		omniBox("autocompleteQ4",cards);
-		omniBox("autocompleteQ5",cards);
-		omniBox("autocompleteQ6",cards);
-		omniBox("autocompleteQ7",cards);
-		
-	});
-
-
-
-</script>
 
 .btnHeaderTable{
 	height: 24px;
@@ -184,8 +145,9 @@ var cards = [
 							<table> <!--lista dinámica c/favorito-->
 								<tr>
 									<td>						
-														<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
-													</td>
+										<input type="text" id="autocompleteQ2" onclick="omniBox('autocompleteQ2');" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
+										style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+									</td>
 									<td>
 										<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
 										<tr>
@@ -271,7 +233,7 @@ var cards = [
 							<div class="botonera btn_abajo">
 								<div class="btn" id="regresar">Regresar</div>
 								<!--<div class="btn" id="siguiente2">Confirmar</div>-->
-								<div class="btn" id="btn">Confirmar</div>
+								<div class="btn" id="btn1">Confirmar</div>
 							</div>
 
 						</div> 
@@ -437,7 +399,7 @@ var cards = [
 							<table> <!--lista dinámica c/favorito-->
 								<tr>
 									<td>						
-										<input type="text" id="autocompleteQ1" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
+										<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
 										style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
 									</td>
 									<td>
@@ -466,8 +428,6 @@ var cards = [
 						</div>		
 
 						<div class="botonera">
-				<div class="cuadroMensaje"></div> <div class="textoMensaje"> <b> >> El monto máximo establecido es menor al valor de la factura </b> <br>
-				<b>Por favor amplíe su monto máximo para que el cargo a la factura <br>se realice de forma correcta  </div>
 							<div class="btn" style="float:right; margin-top:10px;" id="siguiente4">Continuar</div>
 						</div>				
 
@@ -513,7 +473,7 @@ var cards = [
 														<strong><table> <!--lista dinámica c/favorito-->
 															<tr>
 																<td>						
-																	<input type="text" id="autocompleteQ2" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
+																	<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
 																	style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
 																</td>
 																<td>
@@ -550,14 +510,14 @@ var cards = [
 					</div><!--step6-->
 					
 					<div id="step7" class="pasos">
-						<div id="contenido2">
+						<div id="contenido3">
 							<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
 			   				<div id="img"></div>
 			   				<div id="form">
 			   					<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
 			   					<div id="buttons">
 			   					<input type="submit" value="Cancelar" id="can" onclick="destruyeOverlay();">
-			   					<input type="submit" value="Continuar" id="con" onclick="follow();">
+			   					<input type="submit" value="Continuar" id="con" onclick="follow2();">
 			   					</div>
 			   				</div>
 
@@ -593,7 +553,7 @@ var cards = [
 								<div class="botonera" style="margin-right:20px;width:auto;margin-top:160px;" >
 									<div class="btn" id="regresar2">Regresar</div>
 									<!--<div class="btn" id="siguiente6">Confirmar</div>-->
-									<div class="btn" id="btn">Confirmar</div>
+									<div class="btn" id="btn2">Confirmar</div>
 							</div>			
 		
 					</div><!--fin step7-->
@@ -784,7 +744,7 @@ var cards = [
 				<table> <!--lista dinámica c/favorito-->
 															<tr>
 																<td>						
-																	<input type="text" id="autocompleteQ3" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
+																	<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
 																	style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
 																</td>
 																<td>
@@ -813,8 +773,6 @@ var cards = [
 			</div>
 
 			<div class="botonera">
-				<div class="cuadroMensaje"></div> <div class="textoMensaje"> <b> >> El monto máximo establecido es menor al valor de la factura </b> <br>
-				<b>Por favor amplíe su monto máximo para que el cargo a la factura <br>se realice de forma correcta  </div>
 				<div class="btn" style="float:right; margin-top:10px;" id="siguiente8">Continuar</div>
 			</div>
 
@@ -826,7 +784,7 @@ var cards = [
 
 
 						<h4>A continuación podrá modificar, cancelar o ver el detalle de los servicios que tiene domiciliados. Así como descargar el formato que se generó al dar de alta la domiciliación del servicio.</h4>
-   						<h4> Su domiciliación de tarjeta se realizará con los siguientes datos.</h4>
+   						<h4> Consulta de tarjetas domiciliadas.</h4>
  						<div id="btn_select">
    							<div id="btn_left">
    								Tarjetas de creditos
@@ -881,7 +839,7 @@ var cards = [
 							<table> <!--lista dinámica c/favorito-->
 								<tr>
 									<td>						
-										<input type="text" id="autocompleteQ4" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
+										<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
 										style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
 									</td>
 									<td>
@@ -916,10 +874,22 @@ var cards = [
 					</div><!--fin step11-->
 							
 					<div id="step12" class="pasos">
+						<div id="contenido4">
+							<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
+			   				<div id="img"></div>
+			   				<div id="form">
+			   					<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
+			   					<div id="buttons">
+			   					<input type="submit" value="Cancelar" id="can" onclick="destruyeOverlay();">
+			   					<input type="submit" value="Continuar" id="con" onclick="follow3();">
+			   					</div>
+			   				</div>
+
+   						</div>
 
 						<table style="border:solid 1px silver; width:100%;">
 							<tr>
-								<td style="font-weight:bold;" colspan="2">Confirme la actualización de datos de domicialiación de tarjeta de créditos</td>
+								<td style="font-weight:bold;" colspan="2">Confirme la actualización de datos de domicialiación de tarjeta de crédito</td>
 							</tr>
    				
    							<tr>
@@ -938,13 +908,16 @@ var cards = [
 						</table>
 
 						<div class="botonera" id="tmbt">
-							<div class="btn" style="float:right; margin-top:10px;" id="siguiente10">Confirmar</div><div class="btn" style="float:right; margin-top:10px;" id="regresar3">Regresar</div>
+							<div class="btn" id="btn3" style="float:right; margin-top:10px;" id="siguiente10">Confirmar</div>
+							<div class="btn" style="float:right; margin-top:10px;" id="regresar3">Regresar</div>
 						</div>
 
 
 
 
 					</div><!--Fin step 12-->
+
+
 				<div id="step13" class="pasos">
 					
 
@@ -1143,7 +1116,7 @@ var cards = [
 					<table> <!--lista dinámica c/favorito-->
 						<tr>
 							<td>						
-								<input type="text" id="autocompleteQ5" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
+								<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
 								style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
 							</td>
 							<td>
@@ -1180,7 +1153,7 @@ var cards = [
 				<div id="step16" class="pasos">
 					<table style="border:solid 1px silver; width:100%;">
 						<tr>
-							<td style="font-weight:bold;" colspan="2">Confirme los datos de la tarjeta domiciliadanque desea cancelar</td>
+							<td style="font-weight:bold;" colspan="2">Confirme los datos de la tarjeta domiciliada que desea cancelar</td>
 						</tr>
    				
    						<tr>
@@ -1413,7 +1386,7 @@ var cards = [
 							<table> <!--lista dinámica c/favorito-->
 								<tr>
 									<td>						
-										<input type="text" id="autocompleteQ6" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
+										<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
 										style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
 									</td>
 									<td>
@@ -1499,7 +1472,7 @@ var cards = [
 						<table> <!--lista dinámica c/favorito-->
 							<tr>
 								<td>						
-									<input type="text" id="autocompleteQ7" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
+									<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
 									style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
 								</td>
 								<td>
@@ -1546,6 +1519,46 @@ var cards = [
 
 
 				<div id="step21" class="pasos">
+					<div id="contenido5">
+							<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
+			   				<div id="img"></div>
+			   				<div id="form">
+			   					<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
+			   					<div id="buttons">
+			   					<input type="submit" value="Cancelar" id="can" onclick="destruyeOverlay();">
+			   					<input type="submit" value="Continuar" id="con" onclick="follow4();">
+			   					</div>
+			   				</div>
+
+   						</div>
+
+						<table style="border:solid 1px silver; width:100%;">
+							<tr>
+								<td style="font-weight:bold;" colspan="2">Confirme la actualización de datos de domicialiación de tarjeta de créditos</td>
+							</tr>
+   				
+   							<tr>
+   								<td>Nombre del titular:</td><td class="tit">Lorem Ipsum</td>
+   							</tr>
+   							<tr>
+   								<td>Tarjeta a domiciliar:</td><td class="tit">1234****5678</td>
+   							</tr>
+   							<tr>
+   								<td>Cuenta de cargo:</td><td class="tit">1234****5678</td>
+   							</tr>
+   							<tr>
+   								<td>Esquema de pagos:</td><td class="tit">Pago mínimo</td>
+   							</tr>
+
+						</table>
+
+						<div class="botonera" id="tmbt">
+							<div class="btn" id="btn4" style="float:right; margin-top:10px;" id="siguiente10">Confirmar</div>
+							<div class="btn" style="float:right; margin-top:10px;" id="regresar3">Regresar</div>
+						</div>
+
+
+
 						<h4> Confirme la actualización de datos de la domiciliación de servicio. </h4>
 
 	   			
