@@ -434,4 +434,22 @@ a:link,a:visited{
 }
 
 
+		.cuadroMensaje {
+			width:18px;
+			height:18px;
+			background-color:white;
+			float:left;
+			border:2px solid red;
+			margin-top:50px;
+
+		}
+
+		.textoMensaje {
+		font-size:10px;
+		margin-top:45px;
+		margin-left:8px;
+		float:left;
+		font-family:Arial, Helvetica, sans-serif;
+	}
+
 
