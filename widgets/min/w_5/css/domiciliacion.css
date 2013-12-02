@@ -1,5 +1,5 @@
-﻿@import url('../../css/widgets.css');
-@import url('../../css/componentes.css');
+﻿@import url('../../../../css/widgets.css');
+@import url('../../../../css/componentes.css');
 
 /*Texto Superior*/
 .textSuperior{
@@ -7,8 +7,8 @@
 	float:left;
 }
 /*Centrado de switch*/
-.centradoSwitch{
-	margin:75px 50px;
+.centradoSwitch {
+    margin: 0 52px;
 }	
 /* link*/
 a:link,a:visited{
@@ -86,11 +86,11 @@ a:link,a:visited{
 	display:none;
 }
 #select2{
-	diÂ´play:none;
+	display:none;
 }
 .dropcontainer{
 	height: 100px;
-	widht:715px;
+	width:715px;
 	float:left;
 	overflow:auto;
 }
