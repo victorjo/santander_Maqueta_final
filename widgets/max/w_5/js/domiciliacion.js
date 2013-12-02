@@ -129,6 +129,7 @@ $(document).ready(function(){
 
 
 	$("#btn1").on("click", function(){
+			alert("aqui");
 			creaOverlay("#000","#widget",1);
 			insertHTML($("#contenido2").html(),"modalOver");
 			
