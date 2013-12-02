@@ -202,9 +202,9 @@ var widgets = [
 
 
 function posWidgets(qwerty){
-	var absoluteW =$("#absoluteWrapper");
-	$("#loginWrapper").hide();
-	//absoluteW.css({'position':'absolute','left':$(window).width(),'display':'none'});
+	var absoluteW = $("#absoluteWrapper");
+	if(qwerty==1) $("#loginWrapper").hide();
+	if(qwerty==0) absoluteW.css({'position':'absolute','left':$(window).width(),'display':'none'});
 	var wrapper = $("#wrappWidgets");
 	if(qwerty==0) wrapper.children(".widget-min").remove();
 	else if(qwerty==1) $("[data-pos='codom']").remove();
@@ -420,7 +420,7 @@ function newWidgetInstance(obj)
 			        	forA.html(res);
 			        	forA.children().fadeIn('slow');
 			        }
-		    	});
+		    	}); 
 			});
 			};
 	this.routerAction = function(positionMax){
@@ -449,3 +449,20 @@ function newWidgetInstance(obj)
 
 }
 
+function valToForm(){
+	var absoluteW = $("#absoluteWrapper");
+	absoluteW.show();
+	$("#wr_SuperBanner").css({"position":"relative",'background':'none','top':'17px'}).animate({'left':'-255px'},800,function(){ $("#titleLogin").next().html('<h4>EN SANTANDER LE DAMOS VIDA A TUS IDEAS</h4><h1>Bienvenido a SUPERNET <br> la banca mas personal que nunca.</h1><div class="btnaceptar" style="width:180px;margin-left:0px;margin-right:15px" onclick="outaLogin()">Saltar Intro</div><p style="font-weight:bold;margin-top: 18px;">Omitir en: <span class="seger" style="">04</span></p>');$("#titleLogin").next().fadeIn(); });
+	$("#titleLogin").next().fadeOut('fast');
+	setTimeout(function(){ $(".seger").text("03"); },1000);
+	setTimeout(function(){ $(".seger").text("02"); },2000);
+	setTimeout(function(){ $(".seger").text("01"); },3000);
+	setTimeout(function(){ $(".seger").text("00"); $(".seger").parent().remove(); },4000);
+}
+
+function outaLogin(){
+	var absoluteW = $("#absoluteWrapper");
+	$("#loginWrapper").animate({"left":"-="+$(this).width()},1500,function(){$(this).hide()});
+	absoluteW.animate({"left":"0px"},1500);
+	$("#wr_SuperBanner").animate({"left":"+=255px"},1500);
+}
