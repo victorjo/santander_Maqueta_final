@@ -172,13 +172,26 @@ z-index: 1000;
 	.esconde{
 		visibility: none;
 	}
+
+	#tablaDatos{
+		text-align:left; height: 80px;
+	}
+
+	#tablaDatos tr{
+		height: 14px;
+	}
+
+
+	#tablaDatos tr td{
+		font-size:12px;
+	}
 </style>
 <div style="display:none;visibility:hidden;height:0;overflow:hidden;">
 <input type="text" id="textito"  />
 <input type="text" id="textito2" />
 <input type="text" id="textito3" />
 <input type="text" id="textito4" />
-<input type="text" id="textito5" />
+<input type="text" id="textito5" value="9000000" />
 </div>
 
 <!-- APARTIR DE AQUI -->
@@ -214,7 +227,7 @@ z-index: 1000;
 						<p>$ 9,000,000.00 MXN</p>
 						<div style="margin:auto;width:190px;height:190px; position:relative">
 							
-							<canvas id="myCanvas" style="border:1px solid red; position:absolute;top:0;left:0;z-index: 1000;height:190px; width:190px;"></canvas>
+							<canvas id="myCanvas" style="position:absolute;top:0;left:0;z-index: 1000;height:190px; width:190px;"></canvas>
 							<div id="rotatescroll">
 								<div class="viewport">
 									<ul class="overview">
@@ -230,10 +243,10 @@ z-index: 1000;
 								<div class="thumb"></div>
 							</div>
 							<div id="background">
-								<div id="txtBack" style="margin: 110px 86px; text-align:center;">
+								<div id="txtBack" style="margin: 78px 50px; text-align:center;">
 									<h4>Monto simulado:</h4>
 									<p style="color:#4f8aea;font-weight: bolder;">$<span id="cantidadPoner">0</span>.00 MXN</p>
-									<h2 style="color: white; margin-top: -10px;"> <span id="porcentaje">0</span>%</h2>
+									<h2 style="color: #999; margin-top: 5;"> <span id="porcentaje">0</span>%</h2>
 								</div>
 							</div>
 						</div>
@@ -244,8 +257,8 @@ z-index: 1000;
 					<div class="bockcpcontent">
 						<p>Plazo maximo autorizado</p>
 						<p>36 meses</p>
-						<div style="margin:auto;width:190px;height:190px;background:red;">
-							
+						<div style="margin:auto;width:190px;height:190px;">
+							<img src="images/PlazoSimulado.png" alt="">
 							
 						</div>
 					</div>
@@ -253,8 +266,11 @@ z-index: 1000;
 				<div class="blockcp">
 					<p>Simulacion con base en el monto del prestamo deseado</p>
 					<div class="bockcpcontent">
-						<table>
+						<table id="tablaDatos">
 							<tr>
+								<td><b>Datos del cr&eacute;dito:</b></td>
+							</tr>
+							<tr style="padding-right: -top:5px">
 								<td>Monto de credito:</td><td>99.99%</td>
 							</tr>
 							<tr>

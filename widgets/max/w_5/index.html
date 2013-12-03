@@ -65,6 +65,7 @@ var cards = [
 		omniBox("autocompleteQ2",cards);
 		omniBox("autocompleteQ3",cards);
 		omniBox("autocompleteQ4",cards);
+		omniBox("autocompleteQ5",cards);
 		
 	});
 </script>
@@ -84,7 +85,7 @@ var cards = [
 			<div><!-- Funcionalidad: Domiciliación de servicios-->
 				<div id="step1" class="pasos">
 					<h4>Realice la búsqueda del servicio que desea domiciliar mediante 
-							el nombre de la empresa o razón social y/o categorí­a.</h4>
+							el nombre de la empresa o razón social y/o categorí­Â­a.</h4>
 						<div class="marcoInformativo">
 							<p>Nombre de la empresa, razón social o convenio</p>
 							<div class="marcoInformativo2">
@@ -96,7 +97,7 @@ var cards = [
 								<td>
 									<div class="input" style="margin-left:10px">
 									
-										<p>Categorí­a</p>
+										<p>Categorí­Â­a</p>
 										<div class="wra_Select2" style="margin-top:5px">
 											<select name="" id="" >
 					                            <option value="">Opcion1</option>
@@ -152,7 +153,7 @@ var cards = [
 							<div id="rightarrow"><img src="../../../img/botones/flecha_lado_dropdown_largo.png" /></div>
 													
 						</div>
-						<p><b>Introduzca el nombre, alias o los cuatro dígitos de la cuenta o tarjeta de cargo o seleccionela de la lista:</b></p>
+						<p><b>Introduzca el nombre, alias o los cuatro dí­gitos de la cuenta o tarjeta de cargo o seleccionela de la lista:</b></p>
 							<!-- Lista provisional -->
 							<table>
 								<tr><td>						
@@ -205,7 +206,7 @@ var cards = [
 							<br>		
 							<table style="font-size: 11px;">
 								<tr>
-									<td style="width:200px;">Nombre del titular del servi­cio:</td>
+									<td style="width:200px;">Nombre del titular del serviÂ­cio:</td>
 									<td style="color:#CCCCCC">Lorem Ipsum</td>
 								</tr>
 								<tr>
@@ -339,7 +340,7 @@ var cards = [
 				<div><!--Funcionalidad 2-->
 				
 				<div id="step5" class="pasos">
-					<h4> Seleccione la tarjeta de crí©dito que desea domiciliar. </h4>
+					<h4> Seleccione la tarjeta de crédito que desea domiciliar. </h4>
 						
 						<div style="height:150px; overflow:scroll; width:100%;">
    							<table class="tbl_consulta" style="width:100%;float:left;margin-top:10px; overflow:scroll">
@@ -387,14 +388,17 @@ var cards = [
 														</tr>
 							</table>						
 						</div>
-						<div class="dropdown">
-			  				<img class="downI" src="../../img/iconos/dropdown.png" style="display: block;">
-			  				<img class="upI" src="../../img/iconos/dropup.png" style="display: none;">
-			  				<h6>Datos para domiciliar la tarjeta de crédito.</h6>
-  						</div>
 
-  						<div id="select1" class="wra_Select4" style="display:none">
-
+						<div class="dropcontainer">
+							<div class="dropdown">
+								<img class="downI" src="../../../img/iconos/dropdown.png" style="display: block;">
+									<img class="upI" src="../../../img/iconos/dropup.png" style="display: none;">
+										<h6>Datos para domiciliar la tarjeta de crédito.</h6>
+							</div>
+							<div id="select1" class="wra_Select4" style="display:none">
+								<p style="font-size:12px;font-family:Helvetica, Arial, sans-serif"> <b>Introduzca el nombre, alias o los cuatro dí­gitos de la cuenta de cargo o seleccionela de la lista </b></p>
+							
+							<!-- lista -->
 							<table>
 								<tr><td>						
 									<input type="text" id="autocompleteQ1" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
@@ -405,19 +409,19 @@ var cards = [
 										<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span></div></div></td>
 								</td></tr>
 							</table>
-							
 							<b>Esquema de pago</b>
 							<select name="" id="" >  
-								<option value="">Pago mí­nimo</option>
+								<option value="">Pago mí­Â­nimo</option>
 								<option value="">Opcion1</option>
 								<option value="">Opcion1</option>
 								<option value="">Opcion1</option>
 								<option value="">Opcion1</option>
 							</select>
-						</div>		
+							</div>
+						</div>
 
 						<div class="botonera">
-							<div class="btn btnaceptar" style="float:right; margin-top:234px; margin-right: -10px;" id="siguiente4">Continuar</div>
+							<div class="btn btnaceptar" style="float:right; margin-top:170px; margin-right: -10px;" id="siguiente4">Continuar</div>
 						</div>				
 
 
@@ -425,7 +429,7 @@ var cards = [
 				
 				<div id="step6" class="pasos">
 
-									<h4> Seleccione la tarjeta de crédito que desea domiciliar. </h4>
+									<h4> Seleccione la tarjeta de crédito que desea domiciliar.</h4>
 
 			   							<table class="tbl_consulta" style="width:100%;float:left;margin-top:10px;">    
 															<tr>
@@ -447,42 +451,40 @@ var cards = [
 
 																</table>
 
+																
+																<div class="dropcontainer">
+																	<div class="dropdown">
+																		<img class="downI" src="../../../img/iconos/dropdown.png" style="display: block;">
+																			<img class="upI" src="../../../img/iconos/dropup.png" style="display: none;">
+																				<h6>Datos para domiciliar la tarjeta de crédito.</h6>
+																	</div>
+																	<div id="select1" class="wra_Select4" style="display:none">
+																		<p style="font-size:12px;font-family:Helvetica, Arial, sans-serif"> <b>Introduzca el nombre, alias o los cuatro dí­gitos de la cuenta de cargo o seleccionela de la lista </b></p>
+																	
+																	<!-- lista -->
+																	<table>
+																		<tr><td>						
+																			<input type="text" id="autocompleteQ2" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+																		</td><td>
 
-																		<div class="dropdown">
-			  														<img class="downI" src="../../../img/iconos/dropdown.png" style="display: block;">
-			  															<img class="upI" src="../../../img/iconos/dropup.png" style="display: none;">
-			  																<h6>Datos para domiciliar la tarjeta de crédito.</h6>
-			  																</div>	
+																		<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
 
-																				
-			  																<div id="select1" class="wra_Select4" style="display:none"> <p style="font-size:12px;font-family:Helvetica, Arial, sans-serif"> <b>Introduzca el nombre, alias o los cuatro dí­gitos de la cuenta de cargo o seleccionela de la lista </b></p>
-
-
-														
-														<table>
-															<tr><td>						
-																<input type="text" id="autocompleteQ2" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
-															</td><td>
-
-															<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-
-																	<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span></div></div></td>
-															</td></tr>
-														</table>
-														<b>Esquema de pago</b>
-
-																				<select name="" id="" >  
-																					<option value="">Pago mí­nimo</option>
-																                    <option value="">Opcion1</option>
-																                    <option value="">Opcion1</option>
-																                    <option value="">Opcion1</option>
-																                    <option value="">Opcion1</option>
-																	           	</select>
-														</div>
-
+																				<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span></div></div></td>
+																		</td></tr>
+																	</table>
+																	<b>Esquema de pago</b>
+																	<select name="" id="" >  
+																		<option value="">Pago mí­nimo</option>
+																		<option value="">Opcion1</option>
+																		<option value="">Opcion1</option>
+																		<option value="">Opcion1</option>
+																		<option value="">Opcion1</option>
+																	</select>
+																	</div>
+																</div>															
 															<div class="botonera">
 															
-																		<div class="btn btnaceptar" style="float:right; margin-top:303px; margin-right: -10px;" id="siguiente5">Continuar</div>
+																		<div class="btn btnaceptar" style="float:right; margin-top:240px; margin-right: -10px;" id="siguiente5">Continuar</div>
 																	 </div>
 					
 					</div><!--step6-->
@@ -522,7 +524,7 @@ var cards = [
 									</tr>
 									<tr>
 										<td colspan="3" >Esquema de pago:</td>
-										<td style="color:#CCCCCC">pago mí­nimo</td>
+										<td style="color:#CCCCCC">pago mí­Â­nimo</td>
 									</tr>
 
 				
@@ -558,7 +560,7 @@ var cards = [
  				
  			</table>
 		
-			<table class="tbl_botones">
+			<table style="	float: left; margin-left: -19px; margin-top:72px;">
 				<tr>
 					<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
 					<td><div class="btn" >Guardar</div></td>
@@ -604,7 +606,7 @@ var cards = [
 								
 								<tr>
 									<td>Esquema de pago:</td>
-									<td style="color:#CCCCCC">Pago mí­nimo</td>
+									<td style="color:#CCCCCC">Pago mí­Â­nimo</td>
 								</tr>
 								<tr>
 									<td>Hora de aplicación:</td>
@@ -641,7 +643,7 @@ var cards = [
 					<div id="step10" class="pasos">
 						<!---///////////////////////////////////////////////////////////////////////////////////-->	
 
-						<h4>A continuación podrá modificar, cancelar o ver el detalle de los servicios que tiene domiciliados. Así­ como descargar el formato que se genera al dar de alta la domiciliación del servicio.</h4>
+						<h4>A continuación podrá modificar, cancelar o ver el detalle de los servicios que tiene domiciliados. Así­Â­ como descargar el formato que se genera al dar de alta la domiciliación del servicio.</h4>
    			<p><b> Consultas de tarjetas domiciliadas<b></p>
  			<div id="btn_select">
    				<div id="btn_left">
@@ -666,7 +668,7 @@ var cards = [
 				</tr>
 
 				<tr style="border-collapse:collapse">
-					<td style="border:none;"><div id="c2" style="background:#000"></div></td>
+					<td style="border:none;"><input type="radio" name="balance" value="$0.00"  placeholder="" checked ></td>
 					<td style="border:none"><img src="../../img/iconos/tarjeta.png"></td>
 					<td style="border:none">1234****5678</td>
 					<td style="border:none">Alias</td>
@@ -676,7 +678,7 @@ var cards = [
 				</tr>
 
 				<tr>
-					<td style="border:none;"><div id="c2"></div></td>
+					<td style="border:none;"><input type="radio" name="balance" value="$0.00"  placeholder=""></td>
 					<td style="border:none"><img src="../../img/iconos/tarjeta.png"></td>
 					<td style="border:none">1234****5678</td>
 					<td style="border:none">Alias</td>
@@ -686,7 +688,7 @@ var cards = [
 				</tr>
 
 				<tr style="border-collapse:collapse">
-					<td style="border:none;"><div id="c2"></div></td>
+					<td style="border:none;"><input type="radio" name="balance" value="$0.00"  placeholder=""></td>
 					<td style="border:none"><img src="../../img/iconos/tarjeta.png"></td>
 					<td style="border:none">1234****5678</td>
 					<td style="border:none">Alias</td>
@@ -696,7 +698,7 @@ var cards = [
 				</tr>
 
 				<tr>
-					<td style="border:none;"><div id="c2"></div></td>
+					<td style="border:none;"><input type="radio" name="balance" value="$0.00"  placeholder=""></td>
 					<td style="border:none"><img src="../../img/iconos/tarjeta.png"></td>
 					<td style="border:none">1234****5678</td>
 					<td style="border:none">Alias</td>
@@ -712,20 +714,20 @@ var cards = [
 				<div class="btn" style="float:right; margin-top:10px;" >Cancelar domiciliación</div>
 			</div>
 
-
-			<div class="dropdown">
-  				<img class="downI" src="../../img/iconos/dropdown.png" style="display: block;">
-  				<img class="upI" src="../../img/iconos/dropup.png" style="display: none;">
-  				<h6>Datos para domiciliar la tarjeta de crí©dito.</h6>
-  			</div>
-
-  			
-				
-			<div id="select1" class="wra_Select4" style="display:none">
-
+			
+			<div class="dropcontainer">
+				<div class="dropdown">
+					<img class="downI" src="../../../img/iconos/dropdown.png" style="display: block;">
+						<img class="upI" src="../../../img/iconos/dropup.png" style="display: none;">
+							<h6>Datos para domiciliar la tarjeta de crédito.</h6>
+				</div>
+				<div id="select1" class="wra_Select4" style="display:none">
+					<p style="font-size:12px;font-family:Helvetica, Arial, sans-serif"> <b>Introduzca el nombre, alias o los cuatro dí­gitos de la cuenta de cargo o seleccionela de la lista </b></p>
+			
+				<!-- lista -->
 				<table>
 					<tr><td>						
-						<input type="text" id="autocompleteQ3" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+						<input type="text" id="autocompleteQ4" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
 					</td><td>
 
 					<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
@@ -733,19 +735,20 @@ var cards = [
 							<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span></div></div></td>
 					</td></tr>
 				</table>
-														
-				
 				<b>Esquema de pago</b>
 				<select name="" id="" >  
-					<option value="">Pago mí­nimo</option>
+					<option value="">Pago mí­Â­nimo</option>
 					<option value="">Opcion1</option>
 					<option value="">Opcion1</option>
 					<option value="">Opcion1</option>
 					<option value="">Opcion1</option>
 				</select>
+				</div>
 			</div>
 
-			<div class="botonera"  style=" float: right; margin-right:-482px; margin-top:106px;">
+			
+
+			<div class="botonera"  style=" float: right; margin-right:-482px; margin-top:41px;">
 				<div class="btn btnaceptar" id="siguiente8">Continuar</div>
 			</div>
 
@@ -756,7 +759,7 @@ var cards = [
 						<!---///////////////////////////////////////////////////////////////////////////////////-->	
 
 
-						<h4>A continuación podrá modificar, cancelar o ver el detalle de los servicios que tiene domiciliados. Así­ como descargar el formato que se generó al dar de alta la domiciliación del servicio.</h4>
+						<h4>A continuación podrá modificar, cancelar o ver el detalle de los servicios que tiene domiciliados. Así­Â­ como descargar el formato que se generó al dar de alta la domiciliación del servicio.</h4>
    						<h4> Consulta de tarjetas domiciliadas.</h4>
  						<div id="btn_select">
    							<div id="btn_left">
@@ -771,7 +774,7 @@ var cards = [
    						<table class="tbl_consulta" style="width:100%; float:left;" cellspacing="0">
 
    							<tr>
-								<td style="border:none"><div id="c2" style="background:#000"></div></td>
+								<td style="border:none"></td>
 								<td style="border:none"></td>
 								<td style="border:none">Número de tarjeta</td>
 								<td style="border:none">Alias</td>
@@ -780,7 +783,7 @@ var cards = [
 								<td style="border:none"></td>
 							</tr>
 							<tr style="border-collapse:collapse; ">
-								<td style="border:none;background:#A9BCF5;"></td>
+								<td style="border:none;background:#A9BCF5;"><input type="radio" name="balance2" value="$0.00"  placeholder="" checked></td>
 								<td style="border:none; background:#A9BCF5;"><img src="../../img/iconos/tarjeta.png"></td>
 								<td style="border:none;background:#A9BCF5;">1234****5678</td>
 								<td style="border:none;background:#A9BCF5;">Alias</td>
@@ -799,38 +802,38 @@ var cards = [
 						</div>
 
 
-						<div class="dropdown">
-  							<img class="downI" src="../../img/iconos/dropdown.png" style="display: block;">
-  							<img class="upI" src="../../img/iconos/dropup.png" style="display: none;">
-  							<h6>Modificar datos de domicialización de la tarjeta de crí©dito.</h6>
-  						</div>
 
-  							
-						<div id="select1" class="wra_Select4" style="display:none">
-							<h6>Elija las opciones que desea modificar.</h6>
-							<h6>Introduzca el nombre, alias o los cuatro dí­gitos de la cuenta o la terjeta de cargo o seleccionela de las listas.</h6> 
-								<table>
-									<tr><td>						
-										<input type="text" id="autocompleteQ4" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"/> 
-									</td><td>
+						<div class="dropcontainer">
+							<div class="dropdown">
+								<img class="downI" src="../../../img/iconos/dropdown.png" style="display: block;">
+									<img class="upI" src="../../../img/iconos/dropup.png" style="display: none;">
+										<h6>Datos para domiciliar la tarjeta de crédito.</h6>
+							</div>
+							<div id="select1" class="wra_Select4" style="display:none">
+								<p style="font-size:12px;font-family:Helvetica, Arial, sans-serif"> <b>Introduzca el nombre, alias o los cuatro dí­gitos de la cuenta de cargo o seleccionela de la lista </b></p>
+							
+							<!-- lista -->
+							<table>
+								<tr><td>						
+									<input type="text" id="autocompleteQ5" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+								</td><td>
+								<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
 
-									<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-
-											<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></div></div></span> </td>
-									</td></tr>
-
-								</table>
+										<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span></div></div></td>
+								</td></tr>
+							</table>
 							<b>Esquema de pago</b>
 							<select name="" id="" >  
-								<option value="">Pago mí­nimo</option>
+								<option value="">Pago mí­Â­nimo</option>
 								<option value="">Opcion1</option>
 								<option value="">Opcion1</option>
 								<option value="">Opcion1</option>
 								<option value="">Opcion1</option>
 							</select>
-								</div>
+							</div>
+						</div>
 
-						<div class="botonera"  style=" float: right; margin-right:-482px; margin-top:162px;">
+						<div class="botonera"  style=" float: right; margin-right:-482px; margin-top:104px;">
 							<div class="btn btnaceptar" id="siguiente9">Continuar</div>
 						</div>
 
@@ -853,7 +856,7 @@ var cards = [
 
 						<table style="border:solid 1px silver; width:100%;">
 							<tr>
-								<td style="font-weight:bold;" colspan="2">Confirme la actualización de datos de domicialiación de tarjeta de crí©dito</td>
+								<td style="font-weight:bold;" colspan="2">Confirme la actualización de datos de domicialiación de tarjeta de crédito</td>
 							</tr>
    				
    							<tr>
@@ -866,12 +869,12 @@ var cards = [
    								<td>Cuenta de cargo:</td><td class="tit">1234****5678</td>
    							</tr>
    							<tr>
-   								<td>Esquema de pagos:</td><td class="tit">Pago mí­nimo</td>
+   								<td>Esquema de pagos:</td><td class="tit">Pago mí­Â­nimo</td>
    							</tr>
 
 						</table>
 						
-						<table  style="float: right; margin-right:-13px; margin-top: 350px;">
+						<table  style="float: right; margin-right:-13px; margin-top: 366px;">
 							<tr>
 								<td><div class="btn" id="regresar3">Regresar</div></td>
 								<td><div class="btn btnaceptar" id="btn3" id="siguiente10">Confirmar</div></td>
@@ -884,8 +887,8 @@ var cards = [
 				<div id="step13" class="pasos">
 					
 
-					<h4>Para efecto de la actualizacion de los datos de su domicialiación de tarjeta de crí©dito se le expide el formato de la cancelación y el formato de la nueva solicitud de la domicialización.</h4>
-   			
+
+					<h4>Para efecto de la actualizacion de los datos de su domiciliación de tarjeta de crédito se le expide el formato de la cancelación y el formato de la nueva solicitud de la domicialización.</h4>	
    			
  					<table style="margin: 0 auto;">
  						<tr>
@@ -909,9 +912,9 @@ var cards = [
  					</table>
 		
 					
-					<table style="float: left; margin-left: -19px; margin-top:61px;">
+					<table style="float: left; margin-left: -19px; margin-top:72px;">
 						<tr>
-							<td><div class="btn" ><div id="imgim"></div>Imprimir</div></td>
+							<td><div class="btn"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
 							<td><div class="btn" >Guardar</div></td>
 							<td><div class="btn btnaceptar" id="siguiente11">Continuar</div></td>						
 						</tr>
@@ -944,7 +947,7 @@ var cards = [
 					<table class="tbl_info" style="width:69%;float:left;">
 						<tr>
 							<td style="font-weight:bold;" colspan="2">
-								Comprobante de actualización de datos de domiciliación de tarjeta de crí©dito.
+								Comprobante de actualización de datos de domiciliación de tarjeta de crédito.
 							</td>
 						</tr>
 
@@ -963,7 +966,7 @@ var cards = [
 				
 						<tr>
 							<td>Esquema de pago:</td>
-							<td style="color:#CCCCCC">Pago mí­nimo</td>
+							<td style="color:#CCCCCC">Pago mí­Â­nimo</td>
 						</tr>
 					
 						<tr>
@@ -994,7 +997,7 @@ var cards = [
 
 				<div id="step15" class="pasos">
 					
-					<h4>A continuación podrá modificar, cancelar o ver el detalle de los servicios que tiene domiciliados. Así­ como descargar el formato que se generó al dar de alta la domiciliación del servicio.</h4>
+					<h4>A continuación podrá modificar, cancelar o ver el detalle de los servicios que tiene domiciliados. Así­Â­ como descargar el formato que se generó al dar de alta la domiciliación del servicio.</h4>
    					<h4>Consulta de tarjetas domiciliadas.</h4>
  					<div id="btn_select">
    						<div id="btn_left">
@@ -1070,13 +1073,13 @@ var cards = [
 					<div class="dropdown">
   						<img class="downI" src="../../img/iconos/dropdown.png" style="display: block;">
   						<img class="upI" src="../../img/iconos/dropup.png" style="display: none;">
-  						<h6>Modificar datos de domicialización de la tarjeta de crí©dito.</h6>
+  						<h6>Modificar datos de domicialización de la tarjeta de crédito.</h6>
   					</div>
 
   							
 					<div id="select1" class="wra_Select4" style="display:none">
 						<h6>Elija las opciones que desea modificar.</h6>	
-						<h6>Introduzca el nombre, alias o los cuatro dí­gitos de la cuenta o la terjeta de cargo o seleccionela de las listas.</h6>
+						<h6>Introduzca el nombre, alias o los cuatro dí­Â­gitos de la cuenta o la terjeta de cargo o seleccionela de las listas.</h6>
 					<table> <!--lista dinámica c/favorito-->
 						<tr>
 							<td>						
@@ -1099,7 +1102,7 @@ var cards = [
 					</table><!--Fin lista dinámica c/favorito-->
 <b>Esquema de pago</b>
 						<select name="" id="" >  
-							<option value="">Pago mí­nimo</option>
+							<option value="">Pago mí­Â­nimo</option>
 							<option value="">Opcion1</option>
 							<option value="">Opcion1</option>
 							<option value="">Opcion1</option>
@@ -1130,7 +1133,7 @@ var cards = [
    							<td>Cuenta de cargo:</td><td class="tit">1234****5678</td>
    						</tr>
    						<tr>
-   							<td>Esquema de pagos:</td><td class="tit">Pago mí­nimo</td>
+   							<td>Esquema de pagos:</td><td class="tit">Pago mí­Â­nimo</td>
    						</tr>
 
 					</table>
@@ -1149,7 +1152,7 @@ var cards = [
 				<table  style="margin: 0 auto;">
  					<tr>
  						<td style="text-align:center; padding:20px;">
- 							Formato de la cancelación de la domiciliación de la tarjeta de crí©dito
+ 							Formato de la cancelación de la domiciliación de la tarjeta de crédito
  						</td>
  					
  					</tr>
@@ -1202,7 +1205,7 @@ var cards = [
 				<table class="tbl_info" style="width:69%;float:left;">
 					<tr>
 						<td style="font-weight:bold;" colspan="2">
-							Comprobante de la cancelación de la domiciliación de la tarjeta de crí©dito.
+							Comprobante de la cancelación de la domiciliación de la tarjeta de crédito.
 						</td>
 					</tr>
 
@@ -1251,7 +1254,7 @@ var cards = [
 
 					
 				<h4> A continuación podrá modificar, cancelar o ver el detalle de los servicios que tiene domiciliados <br>
-   				así­ como descargar el formato que se generó al dar de alta la domiciliación del servicio. </h4>
+   				así­Â­ como descargar el formato que se generó al dar de alta la domiciliación del servicio. </h4>
    				<div id="btn_select">
    				<div id="btn_left">
    					Tarjetas de creditos
@@ -1371,7 +1374,7 @@ var cards = [
 							<b>Esquema de pago</b>
 
 																	<select name="" id="" >  
-																		<option value="">Pago mí­nimo</option>
+																		<option value="">Pago mí­Â­nimo</option>
 													                    <option value="">Opcion1</option>
 													                    <option value="">Opcion1</option>
 													                    <option value="">Opcion1</option>
@@ -1393,7 +1396,7 @@ var cards = [
 														
 					
 					<h4> A continuación podrá modificar, cancelar o ver el detalle de los servicios que tiene domiciliados <br>
-   					así­ como descargar el formato que se generó al dar de alta la domiciliación del servicio. </h4>
+   					así­Â­ como descargar el formato que se generó al dar de alta la domiciliación del servicio. </h4>
 
    					<table class="tbl_consulta" style="width:100%;float:left;">
 						<tr>
@@ -1423,14 +1426,14 @@ var cards = [
 						<div class="dropdown">
   														<img class="downI" src="../../img/iconos/dropdown.png" style="display: block;">
   															<img class="upI" src="../../img/iconos/dropup.png" style="display: none;">
-  																<h6>Datos para domiciliar la tarjeta de crí©dito.</h6>
+  																<h6>Datos para domiciliar la tarjeta de crédito.</h6>
   						</div>	
 
 																	
   						<div id="select1" class="wra_Select4" style="display:none"> 
   							<p style="font-family: Helvetica Arial,sans-serif;font-size:11px">  
   								<b> Seleccione los datos que quiere modificar <br>
-  								Introduzca el nombre, alias o los cuatro dí­gitos de la cuenta o tarjeta de cargo o seleccionela de la lista </b> 
+  								Introduzca el nombre, alias o los cuatro dí­Â­gitos de la cuenta o tarjeta de cargo o seleccionela de la lista </b> 
   							</p>
 
 						<table> <!--lista dinámica c/favorito-->
@@ -1498,7 +1501,7 @@ var cards = [
 
 						<table style="border:solid 1px silver; width:100%;">
 							<tr>
-								<td style="font-weight:bold;" colspan="2">Confirme la actualización de datos de domicialiación de tarjeta de crí©ditos</td>
+								<td style="font-weight:bold;" colspan="2">Confirme la actualización de datos de domicialiación de tarjeta de créditos</td>
 							</tr>
    				
    							<tr>
@@ -1511,7 +1514,7 @@ var cards = [
    								<td>Cuenta de cargo:</td><td class="tit">1234****5678</td>
    							</tr>
    							<tr>
-   								<td>Esquema de pagos:</td><td class="tit">Pago mí­nimo</td>
+   								<td>Esquema de pagos:</td><td class="tit">Pago mí­Â­nimo</td>
    							</tr>
 
 						</table>
@@ -1566,8 +1569,8 @@ var cards = [
 
 				<div id="step22" class="pasos">
 					
-					<h4>Para efecto de la actualizacion de los datos de su domicialiación de tarjeta de crí©dito se le expide el formato de la cancelación y el formato de la nueva solicitud de la domicialización.</h4>
-   			
+
+					<h4>Para efecto de la actualizacion de los datos de su domiciliación de tarjeta de crédito se le expide el formato de la cancelación y el formato de la nueva solicitud de la domicialización.</h4>			
 		   			
 		 			<table style="margin: 0 auto;">
 		 				<tr>
@@ -1621,7 +1624,7 @@ var cards = [
 						<table class="tbl_info" style="width:69%;float:left;">
 							<tr>
 								<td style="font-weight:bold;" colspan="2">
-									Comprobante de actualización de datos de domiciliación de tarjeta de crí©dito.
+									Comprobante de actualización de datos de domiciliación de tarjeta de crédito.
 								</td>
 							</tr>
 
@@ -1640,7 +1643,7 @@ var cards = [
 							
 							<tr>
 								<td>Referencia:</td>
-								<td style="color:#CCCCCC">Pago mí­nimo</td>
+								<td style="color:#CCCCCC">Pago mí­Â­nimo</td>
 							</tr>
 							<tr>
 								<td>Monto máximo autorizado:</td>
@@ -1829,9 +1832,9 @@ var cards = [
 	<div id="navegador">
 
 			<ul>
-				<li class="active">DOMICILIACIí“N <br>DE SERVICIOS</li>
-				<li>DOMICILIACIí“N DE TARJETA DE CRí‰DITO</li>
-				<li>CONSULTA/MODIFICACIí“N Y CANCELACIí“N</li>
+				<li class="active">DOMICILIACIÓN <br>DE SERVICIOS</li>
+				<li>DOMICILIACIÓN DE TARJETA DE CRÉDITO</li>
+				<li>CONSULTA/MODIFICACIÓN Y CANCELACIÓN</li>
 			</ul>
 		<div class="aviso"><img src="../../../img/iconos/img_msj.png" />	</div>
 
