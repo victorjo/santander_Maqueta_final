@@ -1,4 +1,6 @@
-var banPop = false;
+$(document).ready(function(){
+	$("body").attr("data-banpop","false");
+});
 var spDisplay = true;
 function creaOverlay(color,contenedor,tipo){
 	pos = (tipo==1)?'absolute':'fixed';
@@ -16,8 +18,7 @@ function creaOverlay(color,contenedor,tipo){
 	divOverlay.css({"position":pos,"top":"0","left":"0","width":(anchoTotal*1.20)+"px","background":color,"opacity":".8","height":"100%",'display':'none'});
 	c.append(divOverlay);
 	divOverlay.fadeIn("slow");
-	banPop = true;
-	
+	return $("body").attr("data-banpop","true");
 }
 
 function creaModal(contenedor,tipo,contenido){ 
@@ -53,8 +54,8 @@ function destruyeOver(){
 
 
 
-function destruyeOverlay(){
-	if(banPop){
+function destruyeOverlay(){	
+	if($("body").attr("data-banpop")=="true"){
 		$(".modal").each(function(){
 			$(this).fadeOut("slow",function(){
 				$(this).remove();
