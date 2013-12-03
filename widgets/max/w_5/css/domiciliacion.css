@@ -90,7 +90,7 @@ a:link,a:visited{
 }
 .dropcontainer{
 	height: 100px;
-	widht:715px;
+	width:715px;
 	float:left;
 	overflow:auto;
 }
@@ -346,7 +346,7 @@ a:link,a:visited{
     float: left;
     left: 217px;
     position: absolute;
-    top: 200px;
+    top: 182px;
     z-index: 1;
 }
 
