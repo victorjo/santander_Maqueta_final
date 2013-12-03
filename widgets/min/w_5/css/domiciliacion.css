@@ -157,10 +157,10 @@ a:link,a:visited{
 	height:58px;
 	width:58px;
 	margin:10px 0 0 10px ;
-	background-color:#C2C2C1;
 	float:left;
 	border-radius: 5px;
 	border:1px #C2C2C1 solid;
+	border-shadow:2px 2px 2px gray;
 
 }
 
