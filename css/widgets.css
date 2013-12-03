@@ -1014,9 +1014,10 @@ font-size: 11px;
 }
 
 .vtaimg{
+	background-image:url('../img/menuLateral/autoCompara.png');
 	width:205px;
 	height:245px;
-	background-color:#676767;
+	background-color:white;
 	float:left;
 }
 

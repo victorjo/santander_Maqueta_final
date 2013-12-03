@@ -8,6 +8,7 @@ var responsiveFlag = 0;
 var tamanoWidget = 587;
 
 $(document).ready(function(){
+	if(typeof window.chrome =="undefined") reject();
 	posWidgets(0);
 	$(".widget-min").click(function(){
 		getInstance(this);
@@ -32,6 +33,10 @@ window.onresize = function(){
 	posWidgets(1);
 }
 
+function reject(){
+	alert("Para visualizar este sitio debe usar chrome");
+	window.location.href = "https://www.google.com/intl/es-419/chrome/browser/"
+}
 
 // GENERADOR DE LA BOTONERA
 function obtieneAltoTotal (){
@@ -145,6 +150,7 @@ var widgets = [
 
 
 function posWidgets(qwerty){
+	console.log("entro y calculo");
 	var absoluteW = $("#absoluteWrapper");
 	if(qwerty==1) $("#loginWrapper").hide();
 	if(qwerty==0) absoluteW.css({'position':'absolute','left':$(window).width(),'display':'none'});
@@ -213,10 +219,11 @@ function posWidgets(qwerty){
 
 	(function (wrapper){
 
-		if($(window).width()>1490) 
+		if($(window).width()>1490 || !spDisplay ) 
 		{
 			$("#wrappWidgets").css("width","1028px");
-			$("[data-pos='3']").after('<div class="widget-min col1 alto2 " data-pos="codom"><h1>Publicidad</h1></div>');
+
+			$("[data-pos='3']").after('<div class="widget-min col1 alto2 " data-pos="codom"><img src="img/fake/carrito.jpg" height="275"/></div>');
 			$("[data-pos='7']").css('float','left');
 			var alen = 1030;
 		/*}else if($(window).width()<=768){ ****CHANGE FOR TOUCH EVENT***
@@ -225,9 +232,13 @@ function posWidgets(qwerty){
 					moveResObs();
 				}else if( $(".wr_NavPrin").offset().left==900 ) $(".wr_NavPrin").animate({'left':'-190px'});
 			});
-		}*/}else{
+		}*/}
+			else{
 			$("#wrappWidgets").css("width","771px");
+
 		}
+
+		
 		var obj = $("#navContent");
 		var posLeft = wrapper.offset().left;
 		posLeft += alen || 790;
@@ -401,7 +412,9 @@ function valToForm(){
 	setTimeout(function(){ $(".seger").text("03"); },1000);
 	setTimeout(function(){ $(".seger").text("02"); },2000);
 	setTimeout(function(){ $(".seger").text("01"); },3000);
-	setTimeout(function(){ $(".seger").text("00"); $(".seger").parent().remove(); },4000);
+	setTimeout(function(){ $(".seger").text("00"); $(".seger").parent().remove();},4000);
+	setTimeout(function(){ outaLogin() },4500);
+
 }
 
 function outaLogin(){
