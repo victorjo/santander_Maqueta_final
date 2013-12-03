@@ -127,6 +127,43 @@ var switchO = '<div style="position:relative;width:230px;">';
     });
   }
 
-/*****************SUPER BANNER*****************/
+/*Mostrara el step 1, mientras que ocultara los demás steps apartir del 2*/
+function ocultaSteps(num_Step){
+  for(var i=2;i<=num_Step; i++){
+    $('#step'+i).hide();
+  }
+}
+
+/** funcionalidad de botones Continuar y atras**/
+  /*********  INICIO Transiciones de flujo: Domiciliación de servicios **********/
+  $("#siguiente").click(function(){
+    $("#step1").fadeOut("slow",function(){
+      $("#step2").fadeIn("slow");       
+      });
+  });
+
+  $("#siguiente2").click(function(){
+    $("#step2").fadeOut("slow",function(){
+      $("#step3").fadeIn("slow");       
+      });
+  });
+
+  $("#siguiente3").click(function(){
+    $("#step3").fadeOut("slow",function(){
+      $("#step4").fadeIn("slow");       
+      });
+  });
+  
+
+  /*Transiciones de flujo (atras): Domiciliación de servicios*/
+  $("#regresar").click(function(){
+    $("#step2").fadeOut("slow",function(){
+      $("#step1").fadeIn("slow");       
+      });
+  });
+
+  /*********  FIN Transiciones de flujo(1): Domiciliación de servicios **********/
+
+
 
 
