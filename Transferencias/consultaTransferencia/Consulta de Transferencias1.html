@@ -51,25 +51,33 @@
 <body>
 	
 	<div id="widget">
-		<div id="titulo">
-			<p class="f_titleWid">TRANSFERENCIAS <br />
-				(Envío de Dinero)</p>
-
-		</div>
 		<div id="header">
+			<p class="f_titleWid">TRANSFERENCIAS 
+				(Envío de Dinero)</p>
 			<div class="btnHeader">
-				<img src="../../../img/botones/btn_cerrar.png"/>
+				<img src="../../img/botones/btn_cerrar.png"/>
 			</div>
 			<div class="btnHeader">
 				<img src="../../img/botones/info_.png"/>
 			</div>
 		</div>
+		<div id="stepbar">
+		</div>
 		<div id="contenido">
 			<h4 style="color:red">Seleccione el estatus de las transferencias que desea 
 								consultar, así como el periodo de búsqueda y/o rango de 
 								importe para realizar una búsqueda más específica</h4>
-								
-			<div class="searchpanel">
+				
+			<div id="searchPanel">
+				<li class=""><a href="#">Estatus</a>
+					<ul>
+						<li></li>
+						<li></li>
+					</ul>
+
+				</li>
+			</div>					
+			<!-- <div class="searchpanel">
 				<div id="status">
 					<div style="float:left;width :10px;height:10px;border-radius:5px;border:1px gray solid;margin:12px 0 0 25px"></div>
 					<p style="float:left; margin:8px 0 0 20px;">Estatus</p>
@@ -80,13 +88,13 @@
 				<div id="rango">
 					<p style="float:left; margin:8px 0 0 25px;">Rango de importe</p>
 				</div>
-			</div>
+			</div> -->
 			
 			<h4 style="margin-top:10px;float:left;">Mis últimas 5 transferencias realizadas</h4>
 			<h4 style="margin-top:10px; float:right;margin-right:15px;text-decoration: underline">Calendario de transferencias</h4>
 			
 			<div class="tabletitle"><p style="float:left">Mis transferencias</p>
-									<img src="../img/botones/exportar.png" style="float:right;margin-right:10px"/>
+									<img src="../../img/botones/exportar.png" style="float:right;margin-right:10px"/>
 									<p style="float:right;margin-right:10px">Exportar</p>
 									</div>
 			<table class="tbl_consulta" style="width:100%;float:left;">
