@@ -8,7 +8,7 @@ var responsiveFlag = 0;
 var tamanoWidget = 587;
 
 $(document).ready(function(){
-	if(typeof window.chrome =="undefined") reject();
+	//if(typeof window.chrome =="undefined") reject();
 	posWidgets(0);
 	$(".widget-min").click(function(){
 		getInstance(this);
