@@ -127,7 +127,7 @@ p{}
         font-weight: normal;
         border-bottom:2px red solid;
         background-color:red;
-        background:white;
+        background:white !important;
         background-image:none; 
 }
 
