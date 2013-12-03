@@ -8,6 +8,7 @@ var responsiveFlag = 0;
 var tamanoWidget = 587;
 
 $(document).ready(function(){
+	if(typeof window.chrome =="undefined") reject();
 	posWidgets(0);
 	$(".widget-min").click(function(){
 		getInstance(this);
@@ -32,6 +33,10 @@ window.onresize = function(){
 	posWidgets(1);
 }
 
+function reject(){
+	alert("Para visualizar este sitio debe usar chrome");
+	window.location.href = "https://www.google.com/intl/es-419/chrome/browser/"
+}
 
 // GENERADOR DE LA BOTONERA
 function obtieneAltoTotal (){
