@@ -11,12 +11,12 @@
 	border-collapse:collapse;
 }
 
-.transf td{
-	border:1px #a1a1a1 solid;
+.transf tr:nth-child(even) {
+	background-color:#BFBFBF;
 	}
 
 .transf tr{
-	border:1px #818181 solid;
+	
 }
 
 
