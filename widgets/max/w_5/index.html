@@ -143,26 +143,17 @@
 													
 							</div>
 							<h4>Introduzca el nombre, alias o los cuatro dígitos de la cuenta o tarjeta de cargo o seleccionela de la lista:</h4>
-							<table> <!--lista dinámica c/favorito-->
-								<tr>
-									<td>						
-										<input type="text" id="autocompleteQ2" onclick="omniBox('autocompleteQ2');" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
-										style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
-									</td>
-									<td>
-										<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-										<tr>
-											<td>
-												<span style="font-weight:bold;margin-left:0px"> 
-													<div class="marcotriangulo">
-														<div class="triangulo_inf"></div>
-													</div>
-												</span> 
-											</td>
-										</tr>
-									</td>
-								</tr>
-							</table><!--Fin lista dinámica c/favorito-->
+							<table>
+								<tr><td>						
+									<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+								</td><td>
+
+								<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+
+										<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span></div></td>
+								</td></tr>
+
+							</table>
 
 
 						<div class="inputInicial" style="margin-left:0px;width:22%;">
@@ -835,29 +826,20 @@
 
   							
 						<div id="select1" class="wra_Select4" style="display:none">
-							<h6>Elija las opciones que desea modificar.</h6>	
-							<h6>Introduzca el nombre, alias o los cuatro dígitos de la cuenta o la terjeta de cargo o seleccionela de las listas.</h6>
-							<table> <!--lista dinámica c/favorito-->
-								<tr>
-									<td>						
-										<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
-										style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
-									</td>
-									<td>
-										<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-										<tr>
-											<td>
-												<span style="font-weight:bold;margin-left:0px"> 
-													<div class="marcotriangulo">
-														<div class="triangulo_inf"></div>
-													</div>
-												</span> 
-											</td>
-										</tr>
-									</td>
-								</tr>
-							</table><!--Fin lista dinámica c/favorito-->
-<b>Esquema de pago</b>
+							<h6>Elija las opciones que desea modificar.</h6>
+							<h6>Introduzca el nombre, alias o los cuatro dígitos de la cuenta o la terjeta de cargo o seleccionela de las listas.</h6> 
+								<table>
+									<tr><td>						
+										<input type="text" id="autocompleteQ4" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"/> 
+									</td><td>
+
+									<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+
+											<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></div></div></span> </td>
+									</td></tr>
+
+								</table>
+							<b>Esquema de pago</b>
 							<select name="" id="" >  
 								<option value="">Pago mínimo</option>
 								<option value="">Opcion1</option>
