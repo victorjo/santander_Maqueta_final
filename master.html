@@ -20,10 +20,16 @@
     <script src="js/balanceTransfer.js"></script>
     <script src="js/widgets.js"></script>
     <script src="js/utiles.js"></script>
+    <script src="js/componentes.js"></script>
     <script src="js/mouseWheel/jquery.mousewheel.min.js"></script>
     <script src="js/mouseWheel/jquery.mCustomScrollbar.min.js"></script>
  
     <script>
+    
+    $(document).ready(function(){
+		motorSuperbanner();
+	});
+
     $(function(){
     $.ajax({
     url:'balance_maquetas/informativo.html',
@@ -48,6 +54,10 @@
     });
     $(obj).addClass('ActiveNav').removeClass('noActiveNav');
     }
+    
+    //Superbanner
+    
+    
     </script>
 </head>
 <body>
@@ -69,7 +79,7 @@
                 <div class="btnaceptar" onclick="valToForm();" style="margin-left:0px;width:180px">Aceptar</div>
                 <div class="btnaceptar" style="width:180px">Cancelar</div>
 
-                <p style="float:left;margin-top:20px">Recuerde: En santander  nunca solicitamos a nuestros clientes informacion confidencial tales como usuarios, contraseñas o token.</p>
+                <p style="float:left;margin-top:20px">Recuerde: En santander  nunca solicitamos a nuestros clientes informacion confidencial tales como usuarios, contraseÃ±as o token.</p>
             </div>
         <!--<div id="bottomLogin"></div>-->
     </section>
@@ -98,8 +108,8 @@
             </div>
         </div>
         <div id="wr_PrinNivel1">
-            <div id="wr_SuperBanner" class="columnSB Fleft" style="background:#dedede">
-                <img src="img/superBanner.png" alt="Super banner">
+            <div id="wr_SuperBanner" class="columnSB Fleft">
+                <!--<img src="img/superBanner.png" alt="Super banner">-->
             </div>
             <div class="wr_NavPrin Fleft">
                 <div id="avatarNavPrin">
@@ -120,10 +130,10 @@
                 <div id="footer" style="position:relative">
                     <div style="position:absolute;bottom:20px;left:10px">
                         <p>Derechos Reservador 2011</p>
-                        <p><b><a href="#">Banco Santander (MÃƒÂ©xico) S.A.</a></b></p>
-                        <p>InstituciÃƒÂ³n de Banca MÃƒÂºltiple</p>
+                        <p><b><a href="#">Banco Santander (MÃƒÆ’Ã‚Â©xico) S.A.</a></b></p>
+                        <p>InstituciÃƒÆ’Ã‚Â³n de Banca MÃƒÆ’Ã‚Âºltiple</p>
                         <p>Grupo Financiero</p>
-                        <p>Santander MÃƒÂ©xico</p>
+                        <p>Santander MÃƒÆ’Ã‚Â©xico</p>
                         <br>
                         <p><b><a href="#">AVISO LEGAL</a></b></p>
                     </div>

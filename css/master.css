@@ -1,4 +1,4 @@
-*{
+﻿*{
 				margin: 0;
 				font-family: Arial,sans-serif;
 			}
@@ -17,6 +17,7 @@
 			}
 			.columnSB{
 				width: 255px;
+				height:578;
 			}
 
 			.wr_NavPrin{

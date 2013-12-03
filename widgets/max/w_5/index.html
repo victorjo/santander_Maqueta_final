@@ -1,5 +1,3 @@
-
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script src="../../../js/ddSlick.js"></script>
 <script src="../../../js/balanceTransfer.js"></script>
 <script src="../../../js/componentes.js"></script>
@@ -7,6 +5,7 @@
 <script src="widgets/max/w_5/js/domiciliacion.js"></script>
 <link rel="stylesheet" href="widgets/max/w_5/css/domiciliacion.css"/>
 <link rel="stylesheet" href="../../../css/componentes.css"/>
+<script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
 <style>
 
 .btnHeaderTable{
@@ -39,37 +38,47 @@
 	cursor: pointer;
 }
  
-
 </style>
 <script>
-
+var cards = [
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				];
+	$(document).ready(function(){
+		omniBox("autocompleteQ",cards);
+		
+	});
 </script>
+<div id="osc">
 <div id="widget">
-
-		<!--<div id="titulo">
-			<p class="f_titleWid">
-				PAGO <br/>
-				DE SERVICIOS</p>
-		</div>-->
-		<div id="header">
-			<p class="f_titleWid">
-				DOMICILIACIONES
-				</p>
-
+	<div id="header">
+		<p class="f_titleWid">DOMICILIACIONES</p>
 			<div class="btnHeader">
 				<img src="../img/botones/btn_cerrar.png"/>
 			</div>
 			<div class="btnHeader">
 				<img src="../img/botones/info_.png"/>
 			</div>
-		</div>
-		<div id="stepbar">
-		</div>
-			<div id="contenido">
-			
-				<div><!-- Funcionalidad: Domiciliación de servicios-->
-					
-					<div id="step1" class="pasos">
+	</div>
+	<div id="stepbar"></div>
+		<div id="contenido">
+			<div><!-- Funcionalidad: Domiciliación de servicios-->
+				<div id="step1" class="pasos">
 					<h4>Realice la búsqueda del servicio que desea domiciliar mediante 
 							el nombre de la empresa o razón social y/o categoría.</h4>
 						<div class="marcoInformativo">
@@ -116,54 +125,42 @@
 								</td>
 							</tr>	
 						</table>
-						<h4>Seleccione el servicio que desea domiciliar dando clic en la imagen.</h4>
+						<p><b>Seleccione el servicio que desea domiciliar dando clic en la imagen.</b></p>
 						<div id="slider">
-								
-								<div style="width:680px;overflow: hidden;height:85px">
-									<div style="width:910px;overflow: hidden">
-										<div class="servslide"></div>
-										<div class="servslide"></div>
-										<div class="servslide"></div>
-										<div class="servslide"></div>
-										<div class="servslide"></div>
-										<div class="servslide"></div>
-										<div class="servslide"></div>
-										<div class="servslide"></div>
-										<div class="servslide"></div>
-										<div class="servslide"></div>
-										<div class="servslide"></div>
-										<div class="servslide"></div>
-										<div class="servslide"></div>
-										<div class="servslide"></div>
-									</div>
-								
-								</div>	
-								<div id="rightarrow"><img src="../../../img/botones/flecha_lado_dropdown_largo.png" /></div>
+							<div style="width:680px;overflow: hidden;height:85px">
+								<div style="width:910px;overflow: hidden">
+									<div class="servslide"></div>
+									<div class="servslide"></div>
+									<div class="servslide"></div>
+									<div class="servslide"></div>
+									<div class="servslide"></div>
+									<div class="servslide"></div>
+									<div class="servslide"></div>
+									<div class="servslide"></div>
+									<div class="servslide"></div>
+									<div class="servslide"></div>
+									<div class="servslide"></div>
+									<div class="servslide"></div>
+									<div class="servslide"></div>
+									<div class="servslide"></div>
+								</div>
+							</div>	
+							<div id="rightarrow"><img src="../../../img/botones/flecha_lado_dropdown_largo.png" /></div>
 													
-							</div>
-							<h4>Introduzca el nombre, alias o los cuatro dígitos de la cuenta o tarjeta de cargo o seleccionela de la lista:</h4>
-							<table> <!--lista dinámica c/favorito-->
-								<tr>
-									<td>						
-										<input type="text" id="autocompleteQ2" onclick="omniBox('autocompleteQ2');" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
-										style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
-									</td>
-									<td>
-										<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-										<tr>
-											<td>
-												<span style="font-weight:bold;margin-left:0px"> 
-													<div class="marcotriangulo">
-														<div class="triangulo_inf"></div>
-													</div>
-												</span> 
-											</td>
-										</tr>
-									</td>
-								</tr>
-							</table><!--Fin lista dinámica c/favorito-->
+						</div>
+						<p><b>Introduzca el nombre, alias o los cuatro dígitos de la cuenta o tarjeta de cargo o seleccionela de la lista:</b></p>
+							<!-- Lista provisional -->
+							<table>
+								<tr><td>						
+									<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+								</td><td>
 
+								<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
 
+										<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span></div></div></td>
+								</td></tr>
+							</table>
+							<!-- Fin lista -->
 						<div class="inputInicial" style="margin-left:0px;width:22%;">
 							<p>Referencia</p>
 							<input class="txtbox" type="text" value="9999" name="Text1" style="width:100%;margin-left:0px"/>
@@ -176,13 +173,13 @@
 						</div>
 						<div class="inputInicial" style="margin-left:20px;">
 										<p>Monto máximo autorizado</p>
-										<input class="txtbox" type="text" value="999,999,999.0" name="Text1" style="width:100%;margin-left:0px"/>
+										<input class="txtbox" type="text" value="999,999,999.00" name="Text1" style="width:100%;margin-left:0px"/>
 
 						</div>
 						<span class="moneda">(MXN)</span>							
 						<div id="infobtn2" class="infor_btn"><img src="../../../img/botones/info_.png"/></div>
 						<div class="botonera" style="width:auto; margin-right:20px; margin-top:10px;">
-							<div class="btn" id="siguiente">Continuar</div>	
+							<div class="btn btnaceptar btn_dom" id="siguiente">Continuar</div>	
 						</div>	
 					</div> <!--fin step1-->
 					
@@ -200,7 +197,7 @@
 
    						</div>
 						<div class="marcoInformativo3">
-							<h4>La domiciliación del servicio se realizará con la siguiente información:</h4>
+							<p>La domiciliación del servicio se realizará con la siguiente información:</p>
 							<br>		
 							<table style="font-size: 11px;">
 								<tr>
@@ -231,20 +228,13 @@
 							</table>
 									
 							<div class="botonera btn_abajo">
-								<div class="btn" id="regresar">Regresar</div>
+								<div class="btn btnaceptar btn_dom2" id="btn1">Confirmar</div>
+								<div class="btn btn_dom2" id="regresar">Regresar</div>
 								<!--<div class="btn" id="siguiente2">Confirmar</div>-->
-								<div class="btn" id="btn1">Confirmar</div>
 							</div>
 
 						</div> 
 				</div><!--fin step2-->
-
-
-				
-
-
-
-
 
 					<div id="step3" class="pasos">
 						<table  style="margin: 0 auto;">
@@ -263,13 +253,13 @@
  							</tr>
  						</table>
 			 			<br><br>
-						<div class="botonera">
-							<div class="btn" style="float:left; margin-top:5px;"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
-							<div class="btn" style="float:left; margin-top:5px;">Guardar</div>
-							<div class="btn" style="float:right; margin-top:-33px; margin-right:-8px;" id="siguiente3">Continuar</div>
-							
-
-						</div>
+			 			<table class="tbl_botones">
+			 				<tr>
+			 					<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
+			 					<td><div class="btn " >Guardar</div></td>
+			 					<td><div class="btn btnaceptar" id="siguiente3">Continuar</div></td>
+			 				</tr>	
+			 			</table>
 					</div><!--fin step3-->
 					<div id="step4" class="pasos">
 						<div id="vtacruzada">
@@ -280,7 +270,7 @@
 							<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
 							
 							<div class="vtapanel">
-								<div class="vtabtn"><img src="../../../img/iconos/tarjeta.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+								<div class="vtabtn"><img src="../../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
 								<div class="vtabtn"><img src="../../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
 								<div class="vtabtn"><img src="../../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
 							</div>
@@ -322,17 +312,22 @@
 							<td style="color:#CCCCCC">1234567892345</td>
 						</tr>
 						<tr>
-							<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Quiero hacer otra domiciliación de servicio</div></td>
+							<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo hacer otra domiciliación de servicio</div></td>
 							
 						</tr>
 					</table>
 		</div>
 			
 			
-		<div class="botonera" style="margin-right:20px;width:auto;margin-top:30px;" >
-			<div class="btn"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
-			<div class="btn">Finalizar</div>
-		</div>
+		<table class="tbl_botones2">
+			<tr>
+				<td><div class="btn "><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
+				<td><div class="btn ">Finalizar</div></td>
+			</tr>
+		</table>
+			
+			
+	
 					</div><!--fin step4-->	
 				
 				</div><!--Fin funcionalidad: Funcionalidad: Domiciliación de servicios-->
@@ -356,7 +351,7 @@
 													<tr style="border-collapse:collapse">
 														
 														<td style="border:none"><img src="../../../img/iconos/tarjeta.png"></td>
-														<td style="border:none">234****5678</td>
+														<td style="border:none">1234****5678</td>
 														<td style="border:none">Producto Santander</td>
 														<td style="border:none">Alias</td>
 														<td style="border:none"></td>
@@ -364,7 +359,7 @@
 
 														<tr>
 															<td style="border:none"><img src="../../../img/iconos/tarjeta.png"></td>
-															<td style="border:none">234****5678</td>
+															<td style="border:none">1234****5678</td>
 															<td style="border:none">Producto Santander</td>
 															<td style="border:none">Alias</td>
 															<td style="border:none"></td>
@@ -373,7 +368,7 @@
 															<tr style="border-collapse:collapse">
 
 																<td style="border:none"><img src="../../../img/iconos/tarjeta.png"></td>
-														<td style="border:none">234****5678</td>
+														<td style="border:none">1234****5678</td>
 														<td style="border:none">Producto Santander</td>
 														<td style="border:none">Alias</td>
 														<td style="border:none"></td>
@@ -381,7 +376,7 @@
 
 													<tr>
 															<td style="border:none"><img src="../../../img/iconos/tarjeta.png"></td>
-															<td style="border:none">234****5678</td>
+															<td style="border:none">1234****5678</td>
 															<td style="border:none">Producto Santander</td>
 															<td style="border:none">Alias</td>
 															<td style="border:none"></td>
@@ -428,7 +423,7 @@
 						</div>		
 
 						<div class="botonera">
-							<div class="btn" style="float:right; margin-top:10px;" id="siguiente4">Continuar</div>
+							<div class="btn btnaceptar" style="float:right; margin-top:234px; margin-right: -10px;" id="siguiente4">Continuar</div>
 						</div>				
 
 
@@ -449,8 +444,8 @@
 
 																<tr style="border-collapse:collapse">
 																	
-																	<td style="border:none"><img src="../../../img/iconos/tarjeta.png"></td>
-																	<td style="border:none">234****5678</td>
+																	<td style="border:none"><img src="../../../img/iconos/tarjeta_.png"></td>
+																	<td style="border:none">1234****5678</td>
 																	<td style="border:none">Producto Santander</td>
 																	<td style="border:none">Alias</td>
 																	<td style="border:none"></td>
@@ -502,9 +497,9 @@
 																	           	</select>
 														</div>
 
-															<div class="botonera" style="margin-right:20px;width:auto;margin-top:30px;" >
+															<div class="botonera">
 															
-																		<div class="btn" id="siguiente5">Continuar</div>
+																		<div class="btn btnaceptar" style="float:right; margin-top:303px; margin-right: -10px;" id="siguiente5">Continuar</div>
 																	 </div>
 					
 					</div><!--step6-->
@@ -550,12 +545,14 @@
 				
 							</table>
 
-								<div class="botonera" style="margin-right:20px;width:auto;margin-top:160px;" >
-									<div class="btn" id="regresar2">Regresar</div>
-									<!--<div class="btn" id="siguiente6">Confirmar</div>-->
-									<div class="btn" id="btn2">Confirmar</div>
-							</div>			
-		
+
+
+							<table style="float: right; margin-right:-14px; margin-top: 171px;">
+								<tr>
+									<td><div class="btn" id="regresar2">Regresar</div></td>
+									<td><div class="btn btnaceptar" id="btn2">Confirmar</div></td>
+								</tr>
+							</table>			
 					</div><!--fin step7-->
 					
 					<div id="step8" class="pasos">
@@ -578,14 +575,13 @@
  				
  			</table>
 		
-
-			<div class="botonera">
-				<div class="btn" style="float:left; margin-top:50px;  margin-right:-8px;"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
-				<div class="btn" style="float:left; margin-top:50px;">Guardar</div>
-				<div class="btn" style="float:right; margin-top:-33px; margin-right:-8px;" id="siguiente7">Continuar</div>
-				
-
-			</div>
+			<table class="tbl_botones">
+				<tr>
+					<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
+					<td><div class="btn" >Guardar</div></td>
+					<td><div class="btn btnaceptar" id="siguiente7">Continuar</div></td>
+				</tr>
+			</table>
 
 		</div><!--fin step8-->	
 
@@ -598,7 +594,7 @@
 						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
 						
 						<div class="vtapanel">
-							<div class="vtabtn"><img src="../../../img/iconos/tarjeta.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+							<div class="vtabtn"><img src="../../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
 							<div class="vtabtn"><img src="../../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
 							<div class="vtabtn"><img src="../../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
 						</div>
@@ -642,15 +638,18 @@
 								</tr>
 								
 								<tr>
-									<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Quiero hacer otra<br />domiciliación de tarjeta</div></td>
+									<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo hacer otra<br />domiciliación de tarjeta</div></td>
 								</tr>
 				
 							</table>
 			
-							<div class="botonera" style="margin-right:-200px;width:auto;margin-top:160px;" >
-								<div class="btn"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
-								<div class="btn">Finalizar</div>
-							</div>
+							<br>
+							<table  style="float: left; margin-left:228px; margin-top: 62px;">
+								<tr>
+									<td><div class="btn"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
+									<td><div class="btn">Finalizar</div></td>
+								</tr>
+							</table>
 
 				</div><!--fin step9-->
 			</div><!--Fin funcionalidad 2-->
@@ -834,29 +833,20 @@
 
   							
 						<div id="select1" class="wra_Select4" style="display:none">
-							<h6>Elija las opciones que desea modificar.</h6>	
-							<h6>Introduzca el nombre, alias o los cuatro dígitos de la cuenta o la terjeta de cargo o seleccionela de las listas.</h6>
-							<table> <!--lista dinámica c/favorito-->
-								<tr>
-									<td>						
-										<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" 
-										style="width:450px; height:29px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
-									</td>
-									<td>
-										<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-										<tr>
-											<td>
-												<span style="font-weight:bold;margin-left:0px"> 
-													<div class="marcotriangulo">
-														<div class="triangulo_inf"></div>
-													</div>
-												</span> 
-											</td>
-										</tr>
-									</td>
-								</tr>
-							</table><!--Fin lista dinámica c/favorito-->
-<b>Esquema de pago</b>
+							<h6>Elija las opciones que desea modificar.</h6>
+							<h6>Introduzca el nombre, alias o los cuatro dígitos de la cuenta o la terjeta de cargo o seleccionela de las listas.</h6> 
+								<table>
+									<tr><td>						
+										<input type="text" id="autocompleteQ4" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"/> 
+									</td><td>
+
+									<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+
+											<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></div></div></span> </td>
+									</td></tr>
+
+								</table>
+							<b>Esquema de pago</b>
 							<select name="" id="" >  
 								<option value="">Pago mínimo</option>
 								<option value="">Opcion1</option>
@@ -1872,6 +1862,7 @@
 		<div class="aviso"><img src="../../../img/iconos/img_msj.png" />	</div>
 
 	</div>
+</div>
 		
 		
 	
