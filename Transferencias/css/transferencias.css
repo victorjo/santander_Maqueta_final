@@ -6,17 +6,21 @@
 }
 
 .transf{
-	border:2px #a1a1a1 solid;
-	width:300px;
+	
+	width:730px;
+	height:100px;
 	border-collapse:collapse;
+
 }
 
 .transf tr:nth-child(even) {
-	background-color:#BFBFBF;
+	background-color:#f4f4f4;
 	}
 
-.transf tr{
-	
+.transf td{
+	padding-left:10px;
+	padding-top:3px;
+	height:22px;
 }
 
 
