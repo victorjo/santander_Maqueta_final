@@ -79,67 +79,6 @@ function ajustaBannerHeight(){
 }
 
 
-/*var widgets = [
-				{
-					id:null,
-					type:1,
-					order:1,
-					contentMin:'',
-					contentMax:''
-				},
-				{
-					id:null,
-					type:2,
-					order:2,
-					contentMin:'<div class="on"><div id="widgetred"><div id="headerwidred"><div class="btnHeader"><img src="../img/botones/maximize.png" /></div><div class="btnHeader"><img src="../img/botones/info.png" /></div><p style="width:80%;">TRANSFERENCIA DE SALDOS</p></div><div id="titlewidred"><p>Conoce la transferencia de saldos:</p></div><div class="txtwidred"><p>El beneficio de la Tasa Preferencial<br />Promocional, tendrá una vigencia de 12<br />meses, contados a partir del mes en que se<br />realice la transferencia de saldo a la Tarjeta<br />Santander, una vez transcurrido este periodo,<br />si el tarjetahabiente no terminó de liquidar la<br />deuda objeto de la transferencia, el saldo<br />remanente de la deuda será sujeto a las<br />condiciones del saldo revolvente de la tarjeta<br />de Crédito</p></div><div class="botonera" style="top:10%"><div class="btnwidred" style="margin-right:10px">Sí, me interesa</div></div></div></div><div class="off" style="display:none"></div>',
-					contentMax:'<h2>Content Maxified 2</h2>'
-				},
-				{
-					id:100,
-					type:2,
-					order:3,
-					contentMin:'<div class="cabecera" style="height: 10px; background: none repeat scroll 0% 0% black; color: white; font-size: 12px; padding: 9px;"><div><p>Administración de tarjeta</p></div><div class="btnCabecera"></div><div class="btnCabecera"></div></div>',
-					contentMax:'<h2>Content Maxified 3</h2>'
-				},
-				{
-					id:null,
-					type:3,
-					order:4,
-					contentMin:'<div class="cabecera" style="height: 10px; background: none repeat scroll 0% 0% black; color: white; font-size: 12px; padding: 9px;"><div><p>Administración de tarjeta</p></div><div class="btnCabecera"></div><div class="btnCabecera"></div></div>',
-					contentMax:'<h2>Content Maxified 3</h2>'
-				},
-				{
-					id:null,
-					type:1,
-					order:5,
-					contentMin:'<div class="cabecera" style="height: 10px; background: none repeat scroll 0% 0% black; color: white; font-size: 12px; padding: 9px;"><div><p>Administración de tarjeta</p></div><div class="btnCabecera"></div><div class="btnCabecera"></div></div>',
-					contentMax:'<h2>Content Maxified 3</h2>'
-				},
-				{
-					id:null,
-					type:2,
-					order:6,
-					contentMin:'<div class="cabecera" style="height: 10px; background: none repeat scroll 0% 0% black; color: white; font-size: 12px; padding: 9px;"><div><p>Administración de tarjeta</p></div><div class="btnCabecera"></div><div class="btnCabecera"></div></div>',
-					contentMax:'<h2>Content Maxified 3</h2>'
-				},
-				{
-					id:null,
-					type:2,
-					order:7,
-					contentMin:'<div class="cabecera" style="height: 10px; background: none repeat scroll 0% 0% black; color: white; font-size: 12px; padding: 9px;"><div><p>Administración de tarjeta</p></div><div class="btnCabecera"></div><div class="btnCabecera"></div></div>',
-					contentMax:'<h2>Content Maxified 3</h2>'
-				},
-				{
-					id:null,
-					type:3,
-					order:8,
-					contentMin:'<div class="cabecera" style="height: 10px; background: none repeat scroll 0% 0% black; color: white; font-size: 12px; padding: 9px;"><div><p>Administración de tarjeta</p></div><div class="btnCabecera"></div><div class="btnCabecera"></div></div>',
-					contentMax:'<h2>Content Maxified 4</h2>'
-				}
-			];*/
-
-
-
 var widgets = [
 				{
 					id:1,
@@ -155,14 +94,14 @@ var widgets = [
 					contentMin:'',
 					contentMax:''
 				},{
-					id:100,
+					id:8,
 					type:2,
 					order:3,
 					contentMin:'',
 					contentMax:''
 				},
 				{
-					id:null,
+					id:6,
 					type:3,
 					order:4,
 					contentMin:'',
@@ -176,7 +115,7 @@ var widgets = [
 					contentMax:''
 				},
 				{
-					id:null,
+					id:7,
 					type:2,
 					order:6,
 					contentMin:'',
@@ -453,7 +392,7 @@ function valToForm(){
 	var absoluteW = $("#absoluteWrapper");
 	absoluteW.show();
 	$("#loginWrapper").animate({"background-position":"+=50px"},"slow");
-	$("#wr_SuperBanner").css({"position":"relative",'background':'none','top':'17px'}).animate({'left':'-255px'},800,function(){ $("#titleLogin").next().html('<h4>EN SANTANDER LE DAMOS VIDA A TUS IDEAS</h4><h1>Bienvenido a SUPERNET <br> la banca mas personal que nunca.</h1><div class="btnaceptar" style="width:180px;margin-left:0px;margin-right:15px" onclick="outaLogin()">Saltar Intro</div><p style="font-weight:bold;margin-top: 18px;">Omitir en: <span class="seger" style="">04</span></p>');$("#titleLogin").next().fadeIn(); });
+	$("#wr_SuperBanner").css({"position":"relative",'background-image':'url(img/superbanner/1.png)','top':'10px'}).animate({'left':'-255px'},800,function(){ $("#titleLogin").next().html('<h4>EN SANTANDER LE DAMOS VIDA A TUS IDEAS</h4><h1>Bienvenido a SUPERNET <br> la banca mas personal que nunca.</h1><div class="btnaceptar" style="width:180px;margin-left:0px;margin-right:15px" onclick="outaLogin()">Saltar Intro</div><p style="font-weight:bold;margin-top: 18px;">Omitir en: <span class="seger" style="">04</span></p>');$("#titleLogin").next().fadeIn(); });
 	$("#titleLogin").next().fadeOut('fast');
 	setTimeout(function(){ $(".seger").text("03"); },1000);
 	setTimeout(function(){ $(".seger").text("02"); },2000);
@@ -466,4 +405,19 @@ function outaLogin(){
 	$("#loginWrapper").animate({"left":"-="+$(this).width()},1500,function(){$(this).hide()});
 	absoluteW.animate({"left":"0px"},1500);
 	setTimeout(function(){$("#wr_SuperBanner").animate({"left":"+=255px"},1000);},1200);
+}
+var i=2;
+function motorSuperbanner(){
+		if( i<5){
+		  $("#wr_SuperBanner").css({
+		  "background":"no-repeat",
+	  		"background-image":"url(img/superbanner/"+i+".png)"
+		  		
+		  		}); 
+		  	i++
+		  	}
+		else if (i=4){
+		i=1
+		}  
+		setInterval(function(){ motorSuperbanner(); },15000);
 }

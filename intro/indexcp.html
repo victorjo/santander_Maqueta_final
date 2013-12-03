@@ -1,0 +1,137 @@
+
+/*Styles*/
+body{
+	font-family:arial;
+}
+.blockcp{
+	border-right:1px dotted gray;
+	float:left;
+	height:100%;
+	width:245px;
+}
+.blockcp > p {
+	font-weight:bold;
+	font-size:11px;
+	margin-bottom:8px;
+	margin-left:11px;
+	margin-top:6px;
+	width:200px;
+}
+.bockcpcontent{
+	border:1px solid gray;
+	height:263px;
+	margin-left:9px;
+	text-align:center;
+	width:225px;
+}
+.bockcpcontent > p {
+	color:#000;
+	font-weight:bold;
+	font-size:12px;
+	margin:6px;
+}
+.bockcpcontent > table {
+	font-size:12px;
+}
+.bockcpcontent > table tr {
+	height:20px;
+}
+.bockcpcontent > table tr td:nth-child(2){
+	font-weight:bold;
+}
+.titlecp{
+	color:#ff0d37;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+.boxselectcp{
+	border:1px solid gray;
+	color:#535353;
+	height:70px;
+	width:734px;
+}
+.boxselectcp > p {
+	font-weight:bold;
+	font-size:11px;
+	margin-bottom:8px;
+	margin-left:11px;
+	margin-top:6px;
+}
+div > .blockcp:nth-child(3){
+	border:0px;
+	width:242px;
+}
+#wrapcp{
+	border:1px solid gray;
+	color:#535353;
+	height:319px;
+	width:734px;
+}
+/*Styles*/
+
+<!--HTML-->
+	<p class="titlecp">1. Elige el monto que desea disponer y simule</p>
+	<div id="wrapcp">
+		<div class="blockcp">
+			<p>Gire la perilla y eliga el credito que desea usar</p>
+			<div class="bockcpcontent">
+				<p>Monto maximo autorizado</p>
+				<p>$ 9,000,000.00 MXN</p>
+			</div>  
+		</div>
+		<div class="blockcp">
+			<p>Elija el plazo de pago o escriba los meses que requiera para pagar</p>
+			<div class="bockcpcontent">
+				<p>Plazo maximo autorizado</p>
+				<p>36 meses</p>
+			</div>
+		</div>
+		<div class="blockcp">
+			<p>Simulacion con base en el monto del prestamo deseado</p>
+			<div class="bockcpcontent">
+				<table>
+					<tr>
+						<td>Monto de credito:</td><td>99.99%</td>
+					</tr>
+					<tr>
+						<td>Vigencia de linea:</td><td>mm/dd/aaaa</td>
+					</tr>
+					<tr>
+						<td>Monto a dispuesto:</td><td>99.99%</td>
+					</tr>
+					<tr>
+						<td>Plazo:</td><td>99.99%</td>
+					</tr>
+					<tr>
+						<td>Taza de interes anual:</td><td>99.99%</td>
+					</tr>
+					<tr>
+						<td>Comision por disposicion:</td><td>99.99%</td>
+					</tr>
+					<tr>
+						<td>Esquema aseguramiento:</td><td>99.99%</td>
+					</tr>
+					<tr>
+						<td>Cuota nueva mas (I.V.A):</td><td>99.99%</td>
+					</tr>
+					<tr>
+						<td>Pago por Mil*</td><td>99.99%</td>
+					</tr>
+					<tr>
+						<td>Monto del credito:</td><td>99.99%</td>
+					</tr>
+					<tr>
+						<td>Costo Anual Total:</td><td>99.99%</td>
+					</tr>
+					<tr>
+						<td>Tabla de amortizacion:</td><td>*<a href="#">ver</a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<p class="titlecp">2. Elija los meses de gracia</p>
+	<div class="boxselectcp">
+		<p>Maximo 3 meses desde el desembolso del prestamo y la fecha de pago de la primera amortizacion.</p>
+	</div>
+<!--Html-->
