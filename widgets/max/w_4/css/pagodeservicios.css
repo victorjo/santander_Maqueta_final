@@ -1,5 +1,5 @@
-﻿@import "../../css/widgets.css";
-@import "../../css/componentes.css";
+﻿@import "../../../../css/widgets.css";
+@import url('../../../../css/componentes.css');
 
 
 h4{
@@ -54,10 +54,11 @@ h7 {
 	cursor:pointer;
 }
 
-#infobtn{
-	float:left;
-	margin:37px 0 0 40px;
+#infobtn {
+float: left;
+margin: 5px 0 0 40px;
 }
+
 #infobtn:hover{
 	cursor:pointer;
 }
@@ -69,11 +70,11 @@ h7 {
 }
 
 #info {
-    display: none;
-    float: left;
-    left: 335px;
-    position: absolute;
-    top: 96px;
+display: none;
+float: left;
+left: 235px;
+position: absolute;
+top: 105px;
 }
 
 #calico{
@@ -99,11 +100,11 @@ h7 {
 
 
 .botonera {
-    bottom: -0px;
-    float: right;
-    right: -225px;
+	bottom: -0px;
+	float: right;
+	right: -235px;
+	top: 29px;
 }
-
 .botonera3 {
     bottom: -120px;
     float: right;
