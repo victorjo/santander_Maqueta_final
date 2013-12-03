@@ -1,4 +1,4 @@
-$(document).ready(function(){
+﻿$(document).ready(function(){
   dropIsra();  
 });
 
@@ -126,3 +126,26 @@ var switchO = '<div style="position:relative;width:230px;">';
       $(".inactivo").hide("fast");
     });
   }
+
+/*****************SUPER BANNER*****************/
+
+var i=2;
+
+//function motorSuperbanner(){
+//		if( i<5){
+//		  $("#wr_SuperBanner").css({
+//		  "background":"no-repeat",
+//		  		"background-image":"url(img/superbanner/"+i+".png)"
+//		  		
+//		  		}); 
+//		  	i++
+//		  	}
+//		else if (i=4){
+//		i=1
+//		}  
+//		setTimeout(function(){ motorSuperbanner(); },5000);
+//}
+
+$(document).ready(function(){
+  
+	});

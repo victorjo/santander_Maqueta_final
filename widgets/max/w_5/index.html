@@ -173,7 +173,7 @@ var cards = [
 						</div>
 						<div class="inputInicial" style="margin-left:20px;">
 										<p>Monto máximo autorizado</p>
-										<input class="txtbox" type="text" value="999,999,999.0" name="Text1" style="width:100%;margin-left:0px"/>
+										<input class="txtbox" type="text" value="999,999,999.00" name="Text1" style="width:100%;margin-left:0px"/>
 
 						</div>
 						<span class="moneda">(MXN)</span>							
@@ -228,20 +228,13 @@ var cards = [
 							</table>
 									
 							<div class="botonera btn_abajo">
-								<div class="btn" id="regresar">Regresar</div>
+								<div class="btn btnaceptar btn_dom2" id="btn1">Confirmar</div>
+								<div class="btn btn_dom2" id="regresar">Regresar</div>
 								<!--<div class="btn" id="siguiente2">Confirmar</div>-->
-								<div class="btn btnaceptar btn_dom" id="btn1">Confirmar</div>
 							</div>
 
 						</div> 
 				</div><!--fin step2-->
-
-
-				
-
-
-
-
 
 					<div id="step3" class="pasos">
 						<table  style="margin: 0 auto;">
@@ -260,13 +253,13 @@ var cards = [
  							</tr>
  						</table>
 			 			<br><br>
-						<div class="botonera">
-							<div class="btn" style="float:left; margin-top:5px;"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
-							<div class="btn" style="float:left; margin-top:5px;">Guardar</div>
-							<div class="btn" style="float:right; margin-top:-33px; margin-right:-8px;" id="siguiente3">Continuar</div>
-							
-
-						</div>
+			 			<table class="tbl_botones">
+			 				<tr>
+			 					<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
+			 					<td><div class="btn " >Guardar</div></td>
+			 					<td><div class="btn btnaceptar" id="siguiente3">Continuar</div></td>
+			 				</tr>	
+			 			</table>
 					</div><!--fin step3-->
 					<div id="step4" class="pasos">
 						<div id="vtacruzada">
@@ -277,7 +270,7 @@ var cards = [
 							<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
 							
 							<div class="vtapanel">
-								<div class="vtabtn"><img src="../../../img/iconos/tarjeta.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+								<div class="vtabtn"><img src="../../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
 								<div class="vtabtn"><img src="../../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
 								<div class="vtabtn"><img src="../../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
 							</div>
@@ -319,17 +312,22 @@ var cards = [
 							<td style="color:#CCCCCC">1234567892345</td>
 						</tr>
 						<tr>
-							<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Quiero hacer otra domiciliación de servicio</div></td>
+							<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo hacer otra domiciliación de servicio</div></td>
 							
 						</tr>
 					</table>
 		</div>
 			
 			
-		<div class="botonera" style="margin-right:20px;width:auto;margin-top:30px;" >
-			<div class="btn"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
-			<div class="btn">Finalizar</div>
-		</div>
+		<table class="tbl_botones2">
+			<tr>
+				<td><div class="btn "><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
+				<td><div class="btn ">Finalizar</div></td>
+			</tr>
+		</table>
+			
+			
+	
 					</div><!--fin step4-->	
 				
 				</div><!--Fin funcionalidad: Funcionalidad: Domiciliación de servicios-->
@@ -353,7 +351,7 @@ var cards = [
 													<tr style="border-collapse:collapse">
 														
 														<td style="border:none"><img src="../../../img/iconos/tarjeta.png"></td>
-														<td style="border:none">234****5678</td>
+														<td style="border:none">1234****5678</td>
 														<td style="border:none">Producto Santander</td>
 														<td style="border:none">Alias</td>
 														<td style="border:none"></td>
@@ -361,7 +359,7 @@ var cards = [
 
 														<tr>
 															<td style="border:none"><img src="../../../img/iconos/tarjeta.png"></td>
-															<td style="border:none">234****5678</td>
+															<td style="border:none">1234****5678</td>
 															<td style="border:none">Producto Santander</td>
 															<td style="border:none">Alias</td>
 															<td style="border:none"></td>
@@ -370,7 +368,7 @@ var cards = [
 															<tr style="border-collapse:collapse">
 
 																<td style="border:none"><img src="../../../img/iconos/tarjeta.png"></td>
-														<td style="border:none">234****5678</td>
+														<td style="border:none">1234****5678</td>
 														<td style="border:none">Producto Santander</td>
 														<td style="border:none">Alias</td>
 														<td style="border:none"></td>
@@ -378,7 +376,7 @@ var cards = [
 
 													<tr>
 															<td style="border:none"><img src="../../../img/iconos/tarjeta.png"></td>
-															<td style="border:none">234****5678</td>
+															<td style="border:none">1234****5678</td>
 															<td style="border:none">Producto Santander</td>
 															<td style="border:none">Alias</td>
 															<td style="border:none"></td>
@@ -425,7 +423,7 @@ var cards = [
 						</div>		
 
 						<div class="botonera">
-							<div class="btn" style="float:right; margin-top:10px;" id="siguiente4">Continuar</div>
+							<div class="btn btnaceptar" style="float:right; margin-top:234px; margin-right: -10px;" id="siguiente4">Continuar</div>
 						</div>				
 
 
@@ -446,8 +444,8 @@ var cards = [
 
 																<tr style="border-collapse:collapse">
 																	
-																	<td style="border:none"><img src="../../../img/iconos/tarjeta.png"></td>
-																	<td style="border:none">234****5678</td>
+																	<td style="border:none"><img src="../../../img/iconos/tarjeta_.png"></td>
+																	<td style="border:none">1234****5678</td>
 																	<td style="border:none">Producto Santander</td>
 																	<td style="border:none">Alias</td>
 																	<td style="border:none"></td>
@@ -499,9 +497,9 @@ var cards = [
 																	           	</select>
 														</div>
 
-															<div class="botonera" style="margin-right:20px;width:auto;margin-top:30px;" >
+															<div class="botonera">
 															
-																		<div class="btn" id="siguiente5">Continuar</div>
+																		<div class="btn btnaceptar" style="float:right; margin-top:303px; margin-right: -10px;" id="siguiente5">Continuar</div>
 																	 </div>
 					
 					</div><!--step6-->
@@ -547,12 +545,14 @@ var cards = [
 				
 							</table>
 
-								<div class="botonera" style="margin-right:20px;width:auto;margin-top:160px;" >
-									<div class="btn" id="regresar2">Regresar</div>
-									<!--<div class="btn" id="siguiente6">Confirmar</div>-->
-									<div class="btn" id="btn2">Confirmar</div>
-							</div>			
-		
+
+
+							<table style="float: right; margin-right:-14px; margin-top: 171px;">
+								<tr>
+									<td><div class="btn" id="regresar2">Regresar</div></td>
+									<td><div class="btn btnaceptar" id="btn2">Confirmar</div></td>
+								</tr>
+							</table>			
 					</div><!--fin step7-->
 					
 					<div id="step8" class="pasos">
@@ -575,14 +575,13 @@ var cards = [
  				
  			</table>
 		
-
-			<div class="botonera">
-				<div class="btn" style="float:left; margin-top:50px;  margin-right:-8px;"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
-				<div class="btn" style="float:left; margin-top:50px;">Guardar</div>
-				<div class="btn" style="float:right; margin-top:-33px; margin-right:-8px;" id="siguiente7">Continuar</div>
-				
-
-			</div>
+			<table class="tbl_botones">
+				<tr>
+					<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
+					<td><div class="btn" >Guardar</div></td>
+					<td><div class="btn btnaceptar" id="siguiente7">Continuar</div></td>
+				</tr>
+			</table>
 
 		</div><!--fin step8-->	
 
@@ -595,7 +594,7 @@ var cards = [
 						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
 						
 						<div class="vtapanel">
-							<div class="vtabtn"><img src="../../../img/iconos/tarjeta.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+							<div class="vtabtn"><img src="../../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
 							<div class="vtabtn"><img src="../../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
 							<div class="vtabtn"><img src="../../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
 						</div>
@@ -639,15 +638,18 @@ var cards = [
 								</tr>
 								
 								<tr>
-									<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Quiero hacer otra<br />domiciliación de tarjeta</div></td>
+									<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo hacer otra<br />domiciliación de tarjeta</div></td>
 								</tr>
 				
 							</table>
 			
-							<div class="botonera" style="margin-right:-200px;width:auto;margin-top:160px;" >
-								<div class="btn"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
-								<div class="btn">Finalizar</div>
-							</div>
+							<br>
+							<table  style="float: left; margin-left:228px; margin-top: 62px;">
+								<tr>
+									<td><div class="btn"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
+									<td><div class="btn">Finalizar</div></td>
+								</tr>
+							</table>
 
 				</div><!--fin step9-->
 			</div><!--Fin funcionalidad 2-->
@@ -657,7 +659,7 @@ var cards = [
 						<!---///////////////////////////////////////////////////////////////////////////////////-->	
 
 						<h4>A continuación podrá modificar, cancelar o ver el detalle de los servicios que tiene domiciliados. Así como descargar el formato que se generó al dar de alta la domiciliación del servicio.</h4>
-   			<h4> Consultas de tarjetas domiciliadas</h4>
+   			<p><b> Consultas de tarjetas domiciliadas<b></p>
  			<div id="btn_select">
    				<div id="btn_left">
    					Tarjetas de creditos
@@ -683,7 +685,7 @@ var cards = [
 				<tr style="border-collapse:collapse">
 					<td style="border:none;"><div id="c2" style="background:#000"></div></td>
 					<td style="border:none"><img src="../../img/iconos/tarjeta.png"></td>
-					<td style="border:none">234****5678</td>
+					<td style="border:none">1234****5678</td>
 					<td style="border:none">Alias</td>
 					<td style="border:none">Minimo</td>
 					<td style="border:none">Exitoso</td>
@@ -693,7 +695,7 @@ var cards = [
 				<tr>
 					<td style="border:none;"><div id="c2"></div></td>
 					<td style="border:none"><img src="../../img/iconos/tarjeta.png"></td>
-					<td style="border:none">234****5678</td>
+					<td style="border:none">1234****5678</td>
 					<td style="border:none">Alias</td>
 					<td style="border:none">Total</td>
 					<td style="border:none">No exitoso</td>
@@ -703,7 +705,7 @@ var cards = [
 				<tr style="border-collapse:collapse">
 					<td style="border:none;"><div id="c2"></div></td>
 					<td style="border:none"><img src="../../img/iconos/tarjeta.png"></td>
-					<td style="border:none">234****5678</td>
+					<td style="border:none">1234****5678</td>
 					<td style="border:none">Alias</td>
 					<td style="border:none">Fijo</td>
 					<td style="border:none">Programado</td>
@@ -713,7 +715,7 @@ var cards = [
 				<tr>
 					<td style="border:none;"><div id="c2"></div></td>
 					<td style="border:none"><img src="../../img/iconos/tarjeta.png"></td>
-					<td style="border:none">234****5678</td>
+					<td style="border:none">1234****5678</td>
 					<td style="border:none">Alias</td>
 					<td style="border:none">Minimo</td>
 					<td style="border:none">Programado</td>
@@ -769,8 +771,8 @@ var cards = [
 				</select>
 			</div>
 
-			<div class="botonera">
-				<div class="btn" style="float:right; margin-top:10px;" id="siguiente8">Continuar</div>
+			<div class="botonera"  style=" float: right; margin-right:-482px; margin-top:106px;">
+				<div class="btn btnaceptar" id="siguiente8">Continuar</div>
 			</div>
 
 						<!---///////////////////////////////////////////////////////////////////////////////////-->			
@@ -806,7 +808,7 @@ var cards = [
 							<tr style="border-collapse:collapse; ">
 								<td style="border:none;background:#A9BCF5;"></td>
 								<td style="border:none; background:#A9BCF5;"><img src="../../img/iconos/tarjeta.png"></td>
-								<td style="border:none;background:#A9BCF5;">234****5678</td>
+								<td style="border:none;background:#A9BCF5;">1234****5678</td>
 								<td style="border:none;background:#A9BCF5;">Alias</td>
 								<td style="border:none;background:#A9BCF5;">Minimo</td>
 								<td style="border:none;background:#A9BCF5;">Programado</td>
@@ -854,8 +856,8 @@ var cards = [
 							</select>
 								</div>
 
-						<div class="botonera">
-							<div class="btn" style="float:right; margin-top:10px;" id="siguiente9">Continuar</div>
+						<div class="botonera"  style=" float: right; margin-right:-482px; margin-top:162px;">
+							<div class="btn btnaceptar" id="siguiente9">Continuar</div>
 						</div>
 
 						<!---///////////////////////////////////////////////////////////////////////////////////-->			
@@ -894,15 +896,14 @@ var cards = [
    							</tr>
 
 						</table>
-
-						<div class="botonera" id="tmbt">
-							<div class="btn" id="btn3" style="float:right; margin-top:10px;" id="siguiente10">Confirmar</div>
-							<div class="btn" style="float:right; margin-top:10px;" id="regresar3">Regresar</div>
-						</div>
-
-
-
-
+						
+						<table  style="float: right; margin-right:-13px; margin-top: 350px;">
+							<tr>
+								<td><div class="btn" id="regresar3">Regresar</div></td>
+								<td><div class="btn btnaceptar" id="btn3" id="siguiente10">Confirmar</div></td>
+								
+							</tr>
+						</table>
 					</div><!--Fin step 12-->
 
 
@@ -933,15 +934,14 @@ var cards = [
  				
  					</table>
 		
-
-					<div class="botonera2">
-						<div class="btn" style="float:right; margin-top:10px;" id="siguiente11">Continuar</div>
-						<div class="btn" style="float:right; margin-top:10px;">Guardar</div>
-						<div class="btn" style="float:right; margin-top:10px;"><div id="imgim"></div>Imprimir</div>
-
-					</div>
-
-
+					
+					<table style="float: left; margin-left: -19px; margin-top:61px;">
+						<tr>
+							<td><div class="btn" ><div id="imgim"></div>Imprimir</div></td>
+							<td><div class="btn" >Guardar</div></td>
+							<td><div class="btn btnaceptar" id="siguiente11">Continuar</div></td>						
+						</tr>
+					</table>	
 				</div><!--Fin step 13-->
 
 				
@@ -957,7 +957,7 @@ var cards = [
 						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
 			
 						<div class="vtapanel">
-							<div class="vtabtn"><img src="../../img/iconos/tarjeta.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+							<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
 							<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
 							<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
 						</div>
@@ -1002,17 +1002,19 @@ var cards = [
 						</tr>
 				
 						<tr>
-							<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Quiero modificar otra<br />domiciliación de tarjeta</div></td>
+							<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo modificar otra<br />domiciliación de tarjeta</div></td>
 			
 						</tr>
 		
 			
 					</table>
-			
-					<div class="botonera" style="margin-right:-200px;width:auto;margin-top:180px;" >
-						<div class="btn"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
-						<div class="btn">Finalizar</div>
-					</div>
+
+					<table style="float: left; 	margin-left: 231px; margin-top:62px;">
+						<tr>
+							<td><div class="btn"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
+							<td><div class="btn">Finalizar</div></td>
+						</tr>
+					</table>
 				</div><!--Fin step 14-->
 
 

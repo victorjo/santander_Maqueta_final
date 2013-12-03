@@ -537,7 +537,6 @@ a:link,a:visited{
 	border-radius: 15px 15px 15px 15px;
 	border: thin #F3F3F3 solid;
 	background-color: #FFFFFF;
-	color: #FF0D37 !important;
 	text-align: center;
 	box-shadow: 2px 2px 2px gray;
 	float: right;
@@ -546,6 +545,34 @@ a:link,a:visited{
 	font-size: 11px;
 	font-weight: bold;
 	cursor: pointer;
+}
+
+.btn_dom2{
+	width: 225px;
+	height: 23px;
+	border-radius: 15px 15px 15px 15px;
+	border: thin #F3F3F3 solid;
+	background-color: #FFFFFF;
+	text-align: center;
+	box-shadow: 2px 2px 2px gray;
+	float: right;
+	margin-right: -1px;
+	margin-top: 24px;
+	font-size: 11px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.tbl_botones{
+	float: left; 
+	margin-left: -20px; 
+	margin-top:70px;
+}
+
+.tbl_botones2{
+	float: left; 
+	margin-left: 231px; 
+	margin-top:48px;
 }
 
 h4{
