@@ -20,6 +20,10 @@ $(document).ready(function(){
 		genFooterHeight();
 		ajustaBannerHeight();
 
+
+		setInterval(function(){ motorSuperbanner(); },15000);
+
+
 });
 
 
@@ -406,18 +410,21 @@ function outaLogin(){
 	absoluteW.animate({"left":"0px"},1500);
 	setTimeout(function(){$("#wr_SuperBanner").animate({"left":"+=255px"},1000);},1200);
 }
-var i=2;
+var i=1;
 function motorSuperbanner(){
-		if( i<5){
-		  $("#wr_SuperBanner").css({
-		  "background":"no-repeat",
-	  		"background-image":"url(img/superbanner/"+i+".png)"
-		  		
-		  		}); 
-		  	i++
-		  	}
-		else if (i=4){
-		i=1
-		}  
-		setInterval(function(){ motorSuperbanner(); },15000);
+
+		i++;
+		if( i>4){
+		i=1  
+		}
+
+		$("#wr_SuperBanner").fadeOut("slow",function(){
+				$("#wr_SuperBanner").css({
+				  "background":"no-repeat",
+			  		"background-image":"url(img/superbanner/"+i+".png)"		
+				  		}).fadeIn("slow");
+
+		})
+
+		
 }
