@@ -36,7 +36,7 @@ function creaModal(contenedor,tipo,contenido){
 	c.append(divContent);
 	divContent.load(contenido,function(){
 		divContent.append(divCerrar);
-		divContent.append("<h1>prueba modal</h1>");
+		// divContent.append("");
 	});
 
 }
