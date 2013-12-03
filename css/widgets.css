@@ -594,14 +594,13 @@ margin-left: 8px;
         height:55px;
         width:55px;
         margin:15px 0 0 10px;
-        background-color:#C2C2C1;
         float:left;
         border-radius: 5px;
 }
 
 .serv_in:hover{
-        background-color:#57595A;
         cursor:pointer;
+        border:1px red solid;
 
 }
 
