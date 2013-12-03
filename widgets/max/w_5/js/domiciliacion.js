@@ -174,10 +174,10 @@ function insertHTML(html,contenedor){
 		}
 
 function follow(){
-	if ($("#token").val()==0){
+	/*if ($("#token").val()==0){
 		alert("Debe ingresar su numero de TOKEN");
 		
-	}
+	}*/
 	
 	destruyeOverlay();
 	cambiaFlujo("#step3");

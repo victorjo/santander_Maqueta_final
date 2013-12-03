@@ -556,8 +556,8 @@ a:link,a:visited{
 	text-align: center;
 	box-shadow: 2px 2px 2px gray;
 	float: right;
-	margin-right: -1px;
-	margin-top: 24px;
+	margin-right: 0px;
+	margin-top: 9px;
 	font-size: 11px;
 	font-weight: bold;
 	cursor: pointer;
@@ -565,14 +565,14 @@ a:link,a:visited{
 
 .tbl_botones{
 	float: left; 
-	margin-left: -20px; 
-	margin-top:77px;
+	margin-left: -23px; 
+	margin-top:71px;
 }
 
 .tbl_botones2{
 	float: left; 
-	margin-left: 231px; 
-	margin-top:48px;
+	margin-left: 228px; 
+	margin-top:43px;
 }
 
 h4{
