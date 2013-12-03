@@ -129,7 +129,7 @@ var widgets = [
 					contentMax:''
 				},
 				{
-					id:null,
+					id:9,
 					type:3,
 					order:8,
 					contentMin:'',
