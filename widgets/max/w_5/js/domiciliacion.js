@@ -222,4 +222,4 @@ function cambiaFlujo(step){
 
 }
 
-/// new commit
+/*Funcionalidad para dibujar listas*/
