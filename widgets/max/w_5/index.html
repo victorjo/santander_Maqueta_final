@@ -72,6 +72,11 @@ var cards = [
 		omniBox("autocompleteQ5",cards);
 		
 	});
+
+	function cambiaPasoImg(){
+	$("#stepbar img").attr("src","../img/fake/pasos/paso2.png");
+|	}
+
 </script>
 <div id="osc">
 <div id="widget" class="widget">
@@ -84,7 +89,9 @@ var cards = [
 				<img src="../img/botones/info_.png"/>
 			</div>
 	</div>
-	<div id="stepbar"></div>
+	<div id="stepbar">
+		<img src="../img/fake/pasos/paso1.png"/>
+	</div>
 		<div id="contenido">
 			<div><!-- Funcionalidad: Domiciliación de servicios-->
 				<div id="step1" class="pasos">
@@ -188,7 +195,7 @@ var cards = [
 						<span class="moneda">(MXN)</span>							
 						<div id="infobtn2" class="infor_btn"><img src="../../../img/botones/info_.png"/></div>
 						<div class="botonera" style="width:auto; margin-right:20px; margin-top:19px;">
-							<div class="btn btnaceptar btn_dom" id="siguiente">Continuar</div>	
+							<div class="btn btnaceptar btn_dom" id="siguiente" onclick="cambiaPasoImg();">Continuar</div>	
 						</div>	
 					</div> <!--fin step1-->
 					
@@ -237,7 +244,7 @@ var cards = [
 							</table>
 									
 							<div class="botonera btn_abajo">
-								<div class="btn btnaceptar btn_dom2" id="btn1">Confirmar</div>
+								<div class="btn btnaceptar btn_dom2" id="btn1" >Confirmar</div>
 								<div class="btn btn_dom2" id="regresar">Regresar</div>
 								<!--<div class="btn" id="siguiente2">Confirmar</div>-->
 							</div>
