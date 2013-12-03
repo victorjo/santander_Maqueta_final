@@ -1,4 +1,4 @@
-*{
+﻿*{
 				margin: 0;
 				font-family: Arial,sans-serif;
 			}
@@ -9,9 +9,15 @@
 				width:100%;
 
 			}
-
+			#wr_SuperBanner{
+				background:no-repeat;
+				background-image: url(../img/background/bg_2.png);
+				background-position: center;
+				background-size: cover;
+			}
 			.columnSB{
 				width: 255px;
+				height:578;
 			}
 
 			.wr_NavPrin{
@@ -27,6 +33,10 @@
 				overflow: hidden;
 			}
 			#loginWrapper{
+				background:no-repeat;
+				background-image: url(../img/background/bg_1.png);
+				background-position: 0px;
+				background-size: cover;
 				position:absolute;
 				left:0px;
 				width:100%;
@@ -39,6 +49,7 @@
 				background-color: #000;
 				overflow: hidden;
 				bottom:0px;
+				z-index:50px;
 			}
 			.Fleft{
 				float:left;
