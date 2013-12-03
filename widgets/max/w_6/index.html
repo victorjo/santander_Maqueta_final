@@ -1,7 +1,7 @@
-
 <link rel="stylesheet" href="../../../css/widgets.css" />
 <link rel="stylesheet" href="../../../css/master.css" />
-
+<script type="text/javascript" src="../../../js/jquery.tinycircleslider.min.js"></script>
+<link rel="stylesheet" href="../../../css/website.css" type="text/css" media="screen"/>
 <style>
 .btnHeader{
 	float: right;
@@ -62,11 +62,9 @@ input[type=radio]{
 .tablaConsulta tr td{
 	height: 20px;
 }
-
 .dd-select{
 	margin-left: 15px;
 }
-
 .exitosa{
 	color:green;
 	text-decoration: underline;
@@ -75,14 +73,10 @@ input[type=radio]{
 	color:brown;
 	text-decoration: underline;
 }
-
 .noexitosa{
 	color:red;
 	text-decoration: underline;
 }
-
-
-
 body{
 	font-family:arial;
 }
@@ -107,7 +101,6 @@ body{
 	text-align:center;
 	width:225px;
 	background: #f4f4f4;
-
 }
 .bockcpcontent > p {
 	color:#000;
@@ -152,28 +145,55 @@ div > .blockcp:nth-child(3){
 	height:319px;
 	width:734px;
 }
+#myCanvas{
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		-o-transform: rotate(-90deg);
+		transform: rotate(-90deg);
+	}
+	#rotatescroll {
+height: 190px;
+left: 0;
+position: absolute;
+width: 190px;
+z-index: 1000;
+	}
+	#rotatescroll .overlay {
+		background: none;
+	}
+	#background{
+		top: 0; left: 0; z-index: 900; height: 190px; width: 190px; background:url(images/backCircle.png) center; position: absolute;
+	}
+	#txtBack h4{
+		margin:0;
+	}
 
-
-
+	.esconde{
+		visibility: none;
+	}
 </style>
+<div style="display:none;visibility:hidden;height:0;overflow:hidden;">
+<input type="text" id="textito"  />
+<input type="text" id="textito2" />
+<input type="text" id="textito3" />
+<input type="text" id="textito4" />
+<input type="text" id="textito5" />
+</div>
 
 <!-- APARTIR DE AQUI -->
-
-
-
 <div id="step1">
 	<div class="widget">
 		<!--<div id="titulo">
-			<p class="f_titleWid">
-				PAGO <br/>
-				DE SERVICIOS</p>
+				<p class="f_titleWid">
+					PAGO <br/>
+					DE SERVICIOS</p>
 		</div>-->
 		<div id="header">
-		
+			
 			<p class="f_titleWid">
-				BALANCE TRANSFER
-				</p>
-
+			BALANCE TRANSFER
+			</p>
 			<div class="btnHeader">
 				<img src="../img/botones/btn_cerrar.png"/>
 			</div>
@@ -184,80 +204,100 @@ div > .blockcp:nth-child(3){
 		<div id="stepbar">
 		</div>
 		<div id="contenido">
-				
-
-
-		<p class="titlecp">1. Elige el monto que desea disponer y simule</p>
-	<div id="wrapcp">
-		<div class="blockcp">
-			<p>Gire la perilla y eliga el credito que desea usar</p>
-			<div class="bockcpcontent">
-				<p>Monto m&aacute;ximo autorizado</p>
-				<p>$ 9,000,000.00 MXN</p>
-				<div style="margin:auto;width:190px;height:190px;background:red;">
-					
+			
+			<p class="titlecp">1. Elige el monto que desea disponer y simule</p>
+			<div id="wrapcp">
+				<div class="blockcp">
+					<p>Gire la perilla y eliga el credito que desea usar</p>
+					<div class="bockcpcontent">
+						<p>Monto m&aacute;ximo autorizado</p>
+						<p>$ 9,000,000.00 MXN</p>
+						<div style="margin:auto;width:190px;height:190px; position:relative">
+							
+							<canvas id="myCanvas" style="border:1px solid red; position:absolute;top:0;left:0;z-index: 1000;height:190px; width:190px;"></canvas>
+							<div id="rotatescroll">
+								<div class="viewport">
+									<ul class="overview">
+										
+									</ul>
+								</div>
+								
+								<div id="staticDot" style="position:absolute;top:0;left:85px;">
+									<img src="images/sliderCircOne.png"  />
+								</div>
+								<div class="dot"></div>
+								<div class="overlay"></div>
+								<div class="thumb"></div>
+							</div>
+							<div id="background">
+								<div id="txtBack" style="margin: 110px 86px; text-align:center;">
+									<h4>Monto simulado:</h4>
+									<p style="color:#4f8aea;font-weight: bolder;">$<span id="cantidadPoner">0</span>.00 MXN</p>
+									<h2 style="color: white; margin-top: -10px;"> <span id="porcentaje">0</span>%</h2>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>  
-		</div>
-		<div class="blockcp">
-			<p>Elija el plazo de pago o escriba los meses que requiera para pagar</p>
-			<div class="bockcpcontent">
-				<p>Plazo maximo autorizado</p>
-				<p>36 meses</p>
-				<div style="margin:auto;width:190px;height:190px;background:red;">
-					
+				<div class="blockcp">
+					<p>Elija el plazo de pago o escriba los meses que requiera para pagar</p>
+					<div class="bockcpcontent">
+						<p>Plazo maximo autorizado</p>
+						<p>36 meses</p>
+						<div style="margin:auto;width:190px;height:190px;background:red;">
+							
+							
+						</div>
+					</div>
+				</div>
+				<div class="blockcp">
+					<p>Simulacion con base en el monto del prestamo deseado</p>
+					<div class="bockcpcontent">
+						<table>
+							<tr>
+								<td>Monto de credito:</td><td>99.99%</td>
+							</tr>
+							<tr>
+								<td>Vigencia de linea:</td><td>mm/dd/aaaa</td>
+							</tr>
+							<tr>
+								<td>Monto a dispuesto:</td><td>99.99%</td>
+							</tr>
+							<tr>
+								<td>Plazo:</td><td>99.99%</td>
+							</tr>
+							<tr>
+								<td>Taza de interes anual:</td><td>99.99%</td>
+							</tr>
+							<tr>
+								<td>Comision por disposicion:</td><td>99.99%</td>
+							</tr>
+							<tr>
+								<td>Esquema aseguramiento:</td><td>99.99%</td>
+							</tr>
+							<tr>
+								<td>Cuota nueva mas (I.V.A):</td><td>99.99%</td>
+							</tr>
+							<tr>
+								<td>Pago por Mil*</td><td>99.99%</td>
+							</tr>
+							<tr>
+								<td>Monto del credito:</td><td>99.99%</td>
+							</tr>
+							<tr>
+								<td>Costo Anual Total:</td><td>99.99%</td>
+							</tr>
+							<tr>
+								<td>Tabla de amortizacion:</td><td>*<a href="#">ver</a></td>
+							</tr>
+						</table>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="blockcp">
-			<p>Simulacion con base en el monto del prestamo deseado</p>
-			<div class="bockcpcontent">
-				<table>
-					<tr>
-						<td>Monto de credito:</td><td>99.99%</td>
-					</tr>
-					<tr>
-						<td>Vigencia de linea:</td><td>mm/dd/aaaa</td>
-					</tr>
-					<tr>
-						<td>Monto a dispuesto:</td><td>99.99%</td>
-					</tr>
-					<tr>
-						<td>Plazo:</td><td>99.99%</td>
-					</tr>
-					<tr>
-						<td>Taza de interes anual:</td><td>99.99%</td>
-					</tr>
-					<tr>
-						<td>Comision por disposicion:</td><td>99.99%</td>
-					</tr>
-					<tr>
-						<td>Esquema aseguramiento:</td><td>99.99%</td>
-					</tr>
-					<tr>
-						<td>Cuota nueva mas (I.V.A):</td><td>99.99%</td>
-					</tr>
-					<tr>
-						<td>Pago por Mil*</td><td>99.99%</td>
-					</tr>
-					<tr>
-						<td>Monto del credito:</td><td>99.99%</td>
-					</tr>
-					<tr>
-						<td>Costo Anual Total:</td><td>99.99%</td>
-					</tr>
-					<tr>
-						<td>Tabla de amortizacion:</td><td>*<a href="#">ver</a></td>
-					</tr>
-				</table>
+			<p class="titlecp">2. Elija los meses de gracia</p>
+			<div class="boxselectcp">
+				<p>Maximo 3 meses desde el desembolso del prestamo y la fecha de pago de la primera amortizacion.</p>
 			</div>
-		</div>
-	</div>
-	<p class="titlecp">2. Elija los meses de gracia</p>
-	<div class="boxselectcp">
-		<p>Maximo 3 meses desde el desembolso del prestamo y la fecha de pago de la primera amortizacion.</p>
-	</div>
-
 		</div>
 		<div id="navegador">
 			<ul>
@@ -267,6 +307,39 @@ div > .blockcp:nth-child(3){
 		</div>
 	</div>
 </div>
+<script>
+		var total = .1;
+		var c=document.getElementById("myCanvas");
+		c.width=190;
+		c.height=190;
+		var ctx=c.getContext("2d");
+		function aumentaTotal(numero){
+			ctx.clearRect(0, 0, c.width, c.height);
+			ctx.restore();
+			//total += .1;
+				
+				console.log("numero"+numero+"::::"+numero*Math.PI);
+				ctx.beginPath();
+				ctx.lineWidth = 8;
+				ctx.strokeStyle = "#4f8aea";
+				//ctx.arc(160,160,150,((90*Math.PI)/-180), numero*Math.PI));
+				ctx.arc(95,95,88,0,numero*Math.PI);
+				ctx.stroke();
+				ctx.restore();
+				
+		}
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		/*$('#rotatescroll').tinycircleslider({
+			//interval: true, snaptodots: true
+		
+			});*/
+	$('#rotatescroll').tinycircleslider({
+callback: function(element, index){
+console.log(element, index);
+}
+});
 
-
-
+	});
+</script>
