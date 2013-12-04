@@ -27,19 +27,8 @@ $(document).ready(function(){
 		
 });
 
-$(document).ajaxStart(function() {
-<<<<<<< HEAD
-	$(".loader").show();
-});
-$(document).ajaxStop(function() {
-	$(".loader").hide();
-=======
-	$("body").append("<div style='position:fixed;left:50%;top:50%;z-index:800' class='loader'><img style='position:relative;left:-110px' src='img/loader.gif'></div>");
-});
-$(document).ajaxStop(function() {
-	$(".loader").remove();
->>>>>>> e21ebce9167e046cb0dd40a12bbc83ba607519fd
-});
+
+
 //para commit
 window.onresize = function(){
 	posWidgets(1);
