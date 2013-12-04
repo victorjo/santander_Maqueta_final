@@ -35,7 +35,7 @@ font-weight:bold;
 			}
 			#wr_SuperBanner{
 				background:no-repeat;
-				background-image: url(../img/background/bg_1.jpg);
+				background-image: url(../img/background/bg_2.png);
 				background-position: center;
 				background-size: cover;
 			}
@@ -48,6 +48,7 @@ font-weight:bold;
 				width: 190px;
 				overflow: hidden;
 				height: auto;
+				margin-right: 10px;
 				}
 
 			#titleLogin {
@@ -58,7 +59,7 @@ font-weight:bold;
 			}
 			#loginWrapper{
 				background:no-repeat;
-				background-image: url(../img/background/bg_1.jpg);
+				background-image: url(../img/background/bg_1.png);
 				background-position: 0px;
 				background-size: cover;
 				position:absolute;
