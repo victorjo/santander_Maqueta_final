@@ -190,6 +190,17 @@ function posWidgets(qwerty){
 		        	newWidget.html(res);
 		        }
 		    });
+			$.ajax({
+				url:'widgets/max/w_'+v.id+'/index.html',
+				type:'GET',
+				dataType:'html',
+				success: function(res){
+					newWidget.attr("data-max","true");
+				},
+				error: function(){
+					newWidget.attr("data-max","false");
+				}
+			}); 
 		}
 		wrapper.append(newWidget);
 		newWidget.attr({"data-pos":parser+1,"data-id":v.id});
@@ -223,7 +234,7 @@ function posWidgets(qwerty){
 		{
 			$("#wrappWidgets").css("width","1028px");
 
-			$("[data-pos='3']").after('<div class="widget-min col1 alto2 " data-pos="codom"><img src="img/fake/carrito.jpg" height="275"/></div>');
+			$("[data-pos='3']").after('<div class="widget-min col1 alto2 " data-max="false" data-pos="codom"><img src="img/fake/carrito.jpg" height="275"/></div>');
 			$("[data-pos='7']").css('float','left');
 			var alen = 1030;
 		/*}else if($(window).width()<=768){ ****CHANGE FOR TOUCH EVENT***
@@ -361,6 +372,7 @@ function newWidgetInstance(obj)
 	this.width = this.obj.width();
 	this.height = this.obj.height();
 	this.chPost = function () {
+			if(this.obj.attr("data-max")=="false") return false;
 			this.obj.attr({"instanced":"true"});
 			this.obj.css({'position':'fixed','top':this.topPos,'left':this.leftPos,'z-index':50});
 			var forA = this.obj;
