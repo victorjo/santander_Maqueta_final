@@ -114,7 +114,8 @@
 
 			#wr_btnNav ul {
 				list-style: none;
-				background: #efefef;
+				/*background: #efefef;*/
+				background: #fff;
 				width: 170px;
 				margin: auto;
 				padding: 5px 0 0 0;
@@ -122,8 +123,8 @@
 			}
 			
 			#wr_btnNav ul li{
-				background: url(../img/menuLateral/btn_menu.png);
-				width: 160px;
+				/*background: url(../img/menuLateral/btn_menu.png);*/
+				width: 156px;
 				height: 20px;
 				padding: 10px 5px 0;
 				border-bottom: 1px solid #b9b9b9;
@@ -131,12 +132,13 @@
 			}
 
 			#wr_btnNav ul li:hover{
-				background: #e3e3e3;
+				/*background: #e3e3e3;*/
 			}
 
 			.activate{
-				background: #b9b9b9 !important;
-				border-bottom: 2px solid red !important;
+				/*background: #b9b9b9 !important;*/
+				border: 2px solid red !important;
+				color:red;
 				font-weight: bold;
 
 			}

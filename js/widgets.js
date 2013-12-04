@@ -77,7 +77,8 @@ function ajustaBannerHeight(){
 			restaElementos += $("#tipoServ").height();
 			restaElementos += 10;
 			restaElementos = altoVentana - restaElementos;
-			$("#wr_SuperBanner").height($("#wr_SuperBanner").height() + restaElementos);
+			//$("#wr_SuperBanner").height($("#wr_SuperBanner").height() + restaElementos);
+			$("#wr_SuperBanner").height(600);
 			
 
 		}
