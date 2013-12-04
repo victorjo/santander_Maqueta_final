@@ -39,7 +39,7 @@ function reject(){
 }
 
 // GENERADOR DE LA BOTONERA
-function obtieneAltoTotal (){
+function obtieneAltoTotal(){
 	var altoContenedor = $("#wrappWidgets")[0].scrollHeight;
 	var numeroDeBtns = Math.floor(altoContenedor / tamanoWidget);
 	$("#navContent").html("");
@@ -49,6 +49,7 @@ function obtieneAltoTotal (){
 	}
 
 	$("#navContent .btnNavWidget:first-child").removeClass("noActiveNav").addClass("ActiveNav");
+	$("#navContent").css({"left":20+$("#wrappWidgets").width()+$("#wrappWidgets").offset().left+"px","top":"200px"});
 }
 
 function creaBtn(){
@@ -444,8 +445,8 @@ function valToForm(){
 
 function outaLogin(){
 	var absoluteW = $("#absoluteWrapper");
-	$("#loginWrapper").animate({"left":"-="+$(this).width()},1500,function(){$(this).hide()});
-	absoluteW.animate({"left":"0px"},1500);
+	$("#loginWrapper").animate({"left":"-="+$(this).width()},1500,function(){$(this).hide();});
+	absoluteW.animate({"left":"0px"},1500,function(){obtieneAltoTotal();});
 	setTimeout(function(){$("#wr_SuperBanner").animate({"left":"0px"},0);},0);
 	var outLoginBan = false;
 	
