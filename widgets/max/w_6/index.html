@@ -123,11 +123,12 @@ body{
 	font-weight:bold;
 	margin-bottom:5px;
 }
-.boxselectcp{
-	border:1px solid gray;
-	color:#535353;
-	height:35px;
-	width:715px;
+.boxselectcp {
+	border: 1px solid gray;
+	color: #535353;
+	height: 78px;
+	width: 715px;
+	overflow: auto;
 }
 .boxselectcp > p {
 	font-weight:bold;
@@ -413,7 +414,8 @@ function follow(){
 							</tr>
 							<tr>
 								<td colspan="2"> 
-									<img src="img/fake/depositos.png" alt="">
+									<img src="images/card.png" alt="" style="float:left;margin-top:5px">
+									<p style="font-weight:bold;float:left;margin-left:10px">Elite Rewards Platino<br/>1234****5678</p>
 								</td>
 							</tr>
 
@@ -460,9 +462,18 @@ function follow(){
 					</div>
 				</div>
 			</div>
-			<p class="titlecp">2. Elija los meses de gracia</p>
+			<p class="titlecp" style="margin-top:5px">2. Elija los meses de gracia</p>
 			<div class="boxselectcp">
 				<p>Maximo 3 meses desde el desembolso del prestamo y la fecha de pago de la primera amortizacion.</p>
+				<div class="wra_Select2" style="margin-top:5px">
+											<select name="" id="" >
+					                            <option value="">Opcion1</option>
+					                            <option value="">Opcion1</option>
+					                            <option value="">Opcion1</option>
+					                            <option value="">Opcion1</option>
+					                            <option value="">Opcion1</option>
+					                    	</select>
+										</div>
 			</div>
 			<div id="botonera" style="float:right; margin-right:-10px; margin-top:35px;">
 				<div id="siguiente"><div class="btnaceptar" onclick="cambiaPasoImg()">Aceptar</div></div>
