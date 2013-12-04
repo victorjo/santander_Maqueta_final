@@ -183,11 +183,11 @@ font-weight:bold;
 			}
 
 			.col1{
-				overflow:hidden;width: 245px;max-width:245px;height: 578px;
+				overflow:hidden;width: 245px;height: 578px;
 			}
 
 			.col2{
-				overflow:hidden;width:502px;max-width:502px;height: 578px;
+				overflow:hidden;width:502px;height: 578px;
 			}
 
 
@@ -207,13 +207,11 @@ font-weight:bold;
 
 
 			.altoTotal{
-				height:578px;
-				max-height:578px;
+				height:576px;
 			}
 
 			.alto2{
 				height:283px;
-				max-height:283px;
 			}
 
 			.medianilIzq{
