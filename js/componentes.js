@@ -1,4 +1,4 @@
-$(document).ready(function(){
+﻿$(document).ready(function(){
   dropIsra();
   avatarFade(); 
   $(".widget-min").hover(function(){
@@ -183,6 +183,12 @@ function ocultaSteps(num_Step){
 
   /*********  FIN Transiciones de flujo(1): Domiciliación de servicios **********/
 
+/*Mostrara el step 1, mientras que ocultara los demás steps apartir del 2*/
+function ocultaSteps(num_Step){
+	for(var i=2;i<=num_Step; i++){
+		$('#step'+i).hide();
+	}
+}
 
 
 
