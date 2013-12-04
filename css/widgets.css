@@ -30,7 +30,6 @@ h1,h2,h3,h4,h5{
 }
 
 .f_titleWid{
-<<<<<<< HEAD
          font-size: 13px;
     font-weight: bolder;
     margin: 8px auto 8px 45%;
@@ -39,7 +38,6 @@ h1,h2,h3,h4,h5{
     width: 200px;
     overflow: visible;
 		}
-=======
         margin: 8px 0 0 175px; 
 		font-size: 13px;
 		font-weight: bolder;
@@ -470,6 +468,7 @@ margin-left: 8px;
 
         .tbl_consulta tr:nth-child(even) td{
                 background-color:#F0F0F0;
+                background-color:white;
         }
 
 
