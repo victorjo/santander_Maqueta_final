@@ -1,5 +1,6 @@
 ﻿$(document).ready(function(){
-  dropIsra();  
+  dropIsra();
+  avatarFade(); 
 });
 
 var cards = [
@@ -161,6 +162,17 @@ function ocultaSteps(num_Step){
       $("#step1").fadeIn("slow");       
       });
   });
+
+
+
+  function avatarFade(){
+    $("#avatarNavPrin").hover(function(){
+        $("#fadeAvatar").fadeToggle("slow");
+
+
+    });
+  }
+
 
   /*********  FIN Transiciones de flujo(1): Domiciliación de servicios **********/
 
