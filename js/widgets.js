@@ -111,14 +111,14 @@ var widgets = [
 				{
 					id:6,
 					type:3,
-					order:4,
+					order:5,
 					contentMin:'',
 					contentMax:''
 				},
 				{
 					id:2,
 					type:2,
-					order:5,
+					order:4,
 					contentMin:'',
 					contentMax:''
 				},
@@ -213,7 +213,7 @@ function posWidgets(qwerty){
 		}
 		wrapper.append(newWidget);
 		newWidget.attr({"data-pos":parser+1,"data-id":v.id});
-		if((parser%3)==0 && parser!=0) newWidget.css('float','right');
+		//if((parser%3)==0 && parser!=0) newWidget.css('float','right');
 		var posWid = newWidget.offset();
 		var posWra = wrapper.offset()
 		var a = posWid.top-posWra.top; 
