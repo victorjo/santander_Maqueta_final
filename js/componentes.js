@@ -1,6 +1,13 @@
 ﻿$(document).ready(function(){
   dropIsra();
   avatarFade(); 
+  $(".widget-min").hover(function(){
+    $(this).css("box-shadow","0 0 5px red");
+  },function(){
+    $(this).css("box-shadow","none");
+  }
+
+  );
 });
 
 var cards = [
