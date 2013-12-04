@@ -9,13 +9,44 @@
 <script src="../../js/jquery10.2.min.js"></script>
 <script src="../../js/ddSlick.js"></script>
 <script src="../../js/balanceTransfer.js"></script>
+	 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="../../js/ui/jquery-ui-1.10.3.custom.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$( "#nav" ).menu({position: {at: "left bottom"}});
+		$('#circulo').mouseover(function(){
+			 $('.imagen').attr('src','../../img/interfaz/paginador_encendido.png');
+		});
+
+		$('.activo').click(function(){
+			 $(this).attr('src','../../img/iconos/favorito_on.png');
+		});
+
+		//programada
+		$('#prog').click(function(){
+			$('#ok2').hide();	
+			$('#ok1').show();
+			$('.cambio').text('Programada');
+		});
+
+		//Realizada
+		$('#rel').click(function(){
+			$('#ok1').hide();	
+			$('#ok2').show();
+			 $('.cambio').text('Realizada');
+		});
+
+		//funcionalidad de dias
+		$('#3d,#7d,#1m,#3m').click(function(){
+			 
+			 $('.dias').html("&nbsp;en&nbsp;"+$(this).text());
+		});
+
+	});
 
 
-
-
+</script>
 <style>
-	
-
 .btnHeaderTable{
 	height: 24px;
     margin: -10px;
@@ -45,6 +76,81 @@
 	margin-top:-7px;
 	cursor: pointer;
 }
+
+.tabla{
+	float:left;
+	margin-top: 0px;
+} 
+
+.texto1{
+	float: left;
+	margin-top: 52px;
+}
+
+.texto2{
+	float: right;
+	margin-top: 52px;
+	text-decoration: underline;
+}
+a {
+	text-decoration: none;
+	color: #838383;
+}
+
+a:hover {
+	color: black;
+	background-color: #E3E3E3;
+	font-weight: bold;
+}
+
+#menu {
+	float:left;
+	position: absolute;
+	margin-left: -42px;
+}
+
+#menu a {
+	display: block;
+	width: 140px;
+	height: 12px;
+	text-align: justify;
+	padding: 6px;
+}
+
+#menu ul {
+	list-style-type: none;
+	padding-top: 5px;
+}
+
+#menu li {
+	float: left;
+	position: relative;
+	padding: 3px 0;
+	text-align: center;
+	background-color:#F0F0F0;
+	background-image: url('../../lineagrafica/widamphdr.png');
+	border: 1px #a7a7a7;
+}
+
+#menu ul.sub-menu {
+	display: none;
+	position: absolute;
+	padding: 0px;
+	z-index: 90;
+}
+
+#menu ul.sub-menu li {
+	text-align: left;
+}
+
+#menu li:hover ul.sub-menu {
+	display: block;
+	border: 1px solid #ececec;
+}
+.borrar{
+	display: none;
+}
+
 </style>
 </head>
 
@@ -67,33 +173,42 @@
 			<h4 style="color:red">Seleccione el estatus de las transferencias que desea 
 								consultar, así como el periodo de búsqueda y/o rango de 
 								importe para realizar una búsqueda más específica</h4>
-				
-			<div id="searchPanel">
-				<li class=""><a href="#">Estatus</a>
-					<ul>
-						<li></li>
-						<li></li>
+
+			<div id="menu">
+				<ul>
+					<li><a href="#"><div id="circulo"><img  class="imagen" src="../../img/interfaz/paginador_apagado.png" style="width:12px; height: 12px; margin-left: 10px;"/><span style="margin-left: 10px;">Estatus</span></div></a>
+
+					<ul class="sub-menu">
+						<li><a href="#" class="seleccionado" id="prog"><img  id="ok1" src='../../img/iconos/ok.png' style='width:12px; height: 12px; margin-left: 10px; display:none;'/>Programadas</a></li>
+		                <li><a href="#" id="rel"><img  id="ok2" src='../../img/iconos/ok.png' style='width:12px; height: 12px; margin-left: 10px; display:none;'/>Realizadas</a></li>
 					</ul>
 
-				</li>
-			</div>					
-			<!-- <div class="searchpanel">
-				<div id="status">
-					<div style="float:left;width :10px;height:10px;border-radius:5px;border:1px gray solid;margin:12px 0 0 25px"></div>
-					<p style="float:left; margin:8px 0 0 20px;">Estatus</p>
-				</div>
-				<div id="periodo">
-					<p style="float:left; margin:8px 0 0 17px;">Periodo de búsqueda</p>
-				</div>
-				<div id="rango">
-					<p style="float:left; margin:8px 0 0 25px;">Rango de importe</p>
-				</div>
-			</div> -->
+					</li>
+
+					<li><a href="#">Periodo de búsqueda</a>
+
+					<ul class="sub-menu">
+						<li><a href="#" id="3d">3 días</a></li>
+		                <li><a href="#" id="7d">7 días</a></li>
+		                <li><a href="#" id="1m">1 mes</a></li>
+		                <li><a href="#" id="3m">3 meses</a></li>
+					</ul>
+
+					</li>
+
+					<li><a href="#">Rango de importe</a></li>
+					</li>
+				</ul>
+			</div>	
 			
-			<h4 style="margin-top:10px;float:left;">Mis últimas 5 transferencias realizadas</h4>
-			<h4 style="margin-top:10px; float:right;margin-right:15px;text-decoration: underline">Calendario de transferencias</h4>
+			<div>
+				<span class="texto1"><h4>Mis últimas 5 transferencias realizadas<span class="dias"></span></h4></span>
+				<span class="texto2"><h4>Calendario de transferencias</h4></span>
+			</div>
+
 			
-			<div class="tabletitle"><p style="float:left">Mis transferencias</p>
+			<div class="tabla">
+				<div class="tabletitle"><p style="float:left">Mis transferencias</p>
 									<img src="../../img/botones/exportar.png" style="float:right;margin-right:10px"/>
 									<p style="float:right;margin-right:10px">Exportar</p>
 									</div>
@@ -114,8 +229,8 @@
 					<td>1234****5678<br /> (Lorem Ipsum)</td>
 					<td>1234****5678</td>
 					<td>999,999,999.00</td>
-					<td>Realizada</td>
-					<td>*</td>
+					<td><span class="cambio">Realizada</span></td>
+					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
 				</tr>
 				<tr>
 					<td>dd/mm/aaaa</td>
@@ -123,8 +238,8 @@
 					<td>1234****5678<br /> (Lorem Ipsum)</td>
 					<td>1234****5678</td>
 					<td>999,999,999.00</td>
-					<td>Realizada</td>
-					<td>*</td>
+					<td><span class="cambio">Realizada</span></td>
+					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
 				</tr>
 				<tr>
 					<td>dd/mm/aaaa</td>
@@ -132,8 +247,8 @@
 					<td>1234****5678<br /> (Lorem Ipsum)</td>
 					<td>1234****5678</td>
 					<td>999,999,999.00</td>
-					<td>Realizada</td>
-					<td></td>
+					<td><span class="cambio">Realizada</span></td>
+					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
 				</tr>
 				<tr>
 					<td>dd/mm/aaaa</td>
@@ -141,8 +256,8 @@
 					<td>1234****5678<br /> (Lorem Ipsum)</td>
 					<td>1234****5678</td>
 					<td>999,999,999.00</td>
-					<td>Realizada</td>
-					<td></td>
+					<td><span class="cambio">Realizada</span></td>
+					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
 				</tr>
 				<tr>
 					<td>dd/mm/aaaa</td>
@@ -150,11 +265,11 @@
 					<td>1234****5678<br /> (Lorem Ipsum)</td>
 					<td>1234****5678</td>
 					<td>999,999,999.00</td>
-					<td>Realizada</td>
-					<td></td>
+					<td><span class="cambio">Realizada</span></td>
+					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
 				</tr>
 			</table>
-
+			</div>
 			
 
 		</div>

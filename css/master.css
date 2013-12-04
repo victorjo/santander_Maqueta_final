@@ -1,12 +1,31 @@
-﻿*{
+﻿			@font-face
+{
+font-family: 'ArialBlack';
+src: url(fonts/ArialBlack.ttf);
+font-weight:bold;
+}
+
+
+
+
+			*{
 				margin: 0;
 				font-family: Arial,sans-serif;
+			}
+
+			h1,h2,h3,h4,h5{
+				font-family: 'ArialBlack';
+			}
+
+			h4{
+				font-size: 12px;
 			}
 
 			#absoluteWrapper
 			{
 				margin:0px auto;
 				width:100%;
+				background: #e8e8e8;
 
 			}
 			#wr_SuperBanner{
@@ -124,10 +143,10 @@
 			
 			#wr_btnNav ul li{
 				/*background: url(../img/menuLateral/btn_menu.png);*/
-				width: 158px;
+				width: 150px;
 				height: 20px;
 				padding: 10px 10px 0;
-				border-bottom: 1px solid #b9b9b9;
+				border-bottom: 1px solid #bbbbbb;
 				cursor: pointer; 
 				font-size: 11px;
 				text-transform: uppercase;
@@ -135,6 +154,7 @@
 
 			#wr_btnNav ul li:hover{
 				/*background: #e3e3e3;*/
+				color:#ff0000;
 			}
 
 			.activate{
@@ -158,11 +178,11 @@
 			}
 
 			.col1{
-				overflow:hidden;width: 245px;height: 578px;
+				overflow:hidden;width: 245px;max-width:245px;height: 578px;
 			}
 
 			.col2{
-				overflow:hidden;width:502px;height: 578px;
+				overflow:hidden;width:502px;max-width:502px;height: 578px;
 			}
 
 
@@ -183,12 +203,12 @@
 
 			.altoTotal{
 				height:578px;
-				
+				max-height:578px;
 			}
 
 			.alto2{
 				height:283px;
-				
+				max-height:283px;
 			}
 
 			.medianilIzq{
@@ -219,7 +239,7 @@
 			}
 
 			#wrappWidgets{
-				overflow-y:scroll;width:771px;height:600px;position:static;background:#dedede;opacity:0;
+				overflow-y:scroll;width:771px;height:600px;position:static;opacity:0;
 			}
 
 			.widget-min

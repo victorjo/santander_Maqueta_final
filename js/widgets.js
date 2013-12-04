@@ -147,7 +147,7 @@ var widgets = [
 				{
 					id:10,
 					type:1,
-					order:9,
+					order:0,
 					contentMin:'',
 					contentMax:''
 				}
@@ -213,7 +213,7 @@ function posWidgets(qwerty){
 		}
 		wrapper.append(newWidget);
 		newWidget.attr({"data-pos":parser+1,"data-id":v.id});
-		if((parser%3)==0) newWidget.css('float','right');
+		if((parser%3)==0 && parser!=0) newWidget.css('float','right');
 		var posWid = newWidget.offset();
 		var posWra = wrapper.offset()
 		var a = posWid.top-posWra.top; 
