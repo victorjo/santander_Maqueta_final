@@ -128,6 +128,7 @@ input[type=radio]{
 		</div>
 		<div id="contenido">
 			<h4 style="color:red">1. Realice su transferencia de saldo</h4>
+		 	<div id="envolvente1" style="overflow:hidden;border:1px solid #ccc;padding:5px;">
 			<p>Introduzca los datos de la tarjeta de cr&eacute;dito o comercial de la que desea transferir su saldo:</p>
 			
 			<div class="wra_Select">
@@ -137,7 +138,6 @@ input[type=radio]{
 			
 			<div class="wra_Select">
 				<p><b>Instituci&oacute;n bancaria o comercial</b></p>
-				<input type="text"  placeholder="Seleccionar" />
 				<input type="text"  placeholder="Banco externo" disabled/>
 				
 			</div>
@@ -146,7 +146,7 @@ input[type=radio]{
 				<input type="text" placeholder="$0.00" value="$0.00" />
 				
 			</div>
-			
+			</div>
 			
 			<div style="float: left; margin-top: 25px;">
 				
@@ -166,7 +166,7 @@ input[type=radio]{
 				</tr>
 				<tr>
 					<td>
-						<input type="radio" name="balance" value="" placeholder="">
+						<input type="checkbox" name="balance" placeholder="" style="vertical-align: top;">
 						<img src="../../../img/balanceTransfer/tarjetaBT.png" alt="">
 					</td>
 					<td>
@@ -174,7 +174,29 @@ input[type=radio]{
 						<p>$3,500.00 MXP</p>
 					</td>
 					<td>
-						<input type="text" placeholder="$0.00" value="$0.00" />
+						<input type="text" placeholder="$0.00" value="$0.00" id="txtOne" disabled/>
+					</td>
+					<td>
+						<p>Mensual:</p>
+						<p>$1,000.00 MXP</p>
+					</td>
+					<td>
+						<p>Tasa:</p>
+						<p> 29.3%</p>
+					</td>
+					
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" name="balance" value="$0.00"  style="vertical-align: top;">
+						<img src="../../../img/balanceTransfer/tarjetaBT.png" alt="">
+					</td>
+					<td>
+						<p>Disponible:</p>
+						<p>$8,320.00 MXP</p>
+					</td>
+					<td>
+						<input type="text" placeholder="$0.00" value="$0.00" id="txtTwo" disabled  />
 					</td>
 					<td>
 						<p>Mensual:</p>
@@ -182,29 +204,7 @@ input[type=radio]{
 					</td>
 					<td>
 						<p>Tasa:</p>
-						<p> 00.00%</p>
-					</td>
-					
-				</tr>
-				<tr>
-					<td>
-						<input type="radio" name="balance" value="$0.00"  placeholder="">
-						<img src="../../../img/balanceTransfer/tarjetaBT.png" alt="">
-					</td>
-					<td>
-						<p>Disponible:</p>
-						<p>$9,999,999.00 MXP</p>
-					</td>
-					<td>
-						<input type="text" placeholder="$0.00" value="$0.00" />
-					</td>
-					<td>
-						<p>Mensual:</p>
-						<p>$9,999,999.00 MXP</p>
-					</td>
-					<td>
-						<p>Tasa:</p>
-						<p> 00.00%</p>
+						<p> 21.8%</p>
 					</td>
 					
 				</tr>
@@ -215,7 +215,7 @@ input[type=radio]{
 				*El beneficio de la Tasa Preferencial/Promocional tendrá una vigencia de 12 meses; contados a partir del mes en que se realice la transferencia de saldo a la Tarjeta Santander, una vez transcurrido este periodo, si el tarjetahabiente no terminá de liquidar la deuda objeto de la transferencia, el saldo remanente de la deuda será sujeto a las condiciones del saldo revolviste de la tarjeta de Crédito.
 				</p>
 			</div>
-			<div class='btn Fright marginOne btnaceptar'  style="margin-right: -10px;margin-top: 40px;float: right;">Aceptar</div>
+			<div class='btn Fright marginOne btnaceptar'  style="margin-right: -10px;margin-top: 20px;float: right;" onclick="cambiaEstado('2')">Aceptar</div>
 			
 		</div>
 		<div id="navegador">
@@ -633,5 +633,11 @@ input[type=radio]{
 		                    width:"215"
                 });
               
+
+             function habTxt(txtArea){
+             	$("#"+txtArea).attr("disabled","enabled");
+             } 
+
+
 </script>
 

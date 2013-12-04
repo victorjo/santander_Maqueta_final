@@ -38,12 +38,13 @@ h1,h2,h3,h4,h5{
     width: 200px;
     overflow: visible;
 		}
+/*=======
         margin: 8px 0 0 175px; 
 		font-size: 13px;
 		font-weight: bolder;
 		float:left;}
 >>>>>>> 9e00ca43e238264f819fba9f21a81204a2691272
-
+*/
 .f_titleWidred{
         font-size: 12px;
         font-weight: bolder;
@@ -467,7 +468,6 @@ margin-left: 8px;
         }
 
         .tbl_consulta tr:nth-child(even) td{
-                background-color:#F0F0F0;
                 background-color:white;
         }
 
