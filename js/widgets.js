@@ -9,7 +9,7 @@ var tamanoWidget = 587;
 
 $(document).ready(function(){
 	$("body").append("<div style='position:fixed;left:50%;top:50%;z-index:800;display:none' class='loader'><img style='position:relative;left:-110px' src='img/loader.gif'></div>");
-	//if(typeof window.chrome =="undefined") reject();
+	if(typeof window.chrome =="undefined") reject();
 	posWidgets(0);
 	$(".widget-min").click(function(){
 		getInstance(this);
