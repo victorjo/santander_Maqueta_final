@@ -27,7 +27,12 @@ $(document).ready(function(){
 		
 });
 
-
+$(document).ajaxStart(function() {
+	$(".loader").show();
+});
+$(document).ajaxStop(function() {
+	$(".loader").hide();
+});
 
 //para commit
 window.onresize = function(){
@@ -50,7 +55,7 @@ function obtieneAltoTotal(){
 	}
 
 	$("#navContent .btnNavWidget:first-child").removeClass("noActiveNav").addClass("ActiveNav");
-	$("#navContent").css({"left":20+$("#wrappWidgets").width()+$("#wrappWidgets").offset().left+"px","top":"200px"});
+	$("#navContent").css({"left":$("#wrappWidgets").width()+$("#wrappWidgets").offset().left+"px","top":"48%"});
 }
 
 function creaBtn(){
