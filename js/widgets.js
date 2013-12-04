@@ -8,6 +8,7 @@ var tamanoWidget = 587;
 
 
 $(document).ready(function(){
+	$("body").append("<div style='position:fixed;left:50%;top:50%;z-index:800;display:none' class='loader'><img style='position:relative;left:-110px' src='img/loader.gif'></div>");
 	//if(typeof window.chrome =="undefined") reject();
 	posWidgets(0);
 	$(".widget-min").click(function(){
@@ -23,11 +24,15 @@ $(document).ready(function(){
 
 
 		setInterval(function(){ motorSuperbanner(); },15000);
-
-
+		
 });
 
-
+$(document).ajaxStart(function() {
+	$(".loader").show();
+});
+$(document).ajaxStop(function() {
+	$(".loader").hide();
+});
 //para commit
 window.onresize = function(){
 	posWidgets(1);
@@ -39,7 +44,7 @@ function reject(){
 }
 
 // GENERADOR DE LA BOTONERA
-function obtieneAltoTotal (){
+function obtieneAltoTotal(){
 	var altoContenedor = $("#wrappWidgets")[0].scrollHeight;
 	var numeroDeBtns = Math.floor(altoContenedor / tamanoWidget);
 	$("#navContent").html("");
@@ -49,6 +54,7 @@ function obtieneAltoTotal (){
 	}
 
 	$("#navContent .btnNavWidget:first-child").removeClass("noActiveNav").addClass("ActiveNav");
+	$("#navContent").css({"left":20+$("#wrappWidgets").width()+$("#wrappWidgets").offset().left+"px","top":"200px"});
 }
 
 function creaBtn(){
@@ -444,8 +450,8 @@ function valToForm(){
 
 function outaLogin(){
 	var absoluteW = $("#absoluteWrapper");
-	$("#loginWrapper").animate({"left":"-="+$(this).width()},1500,function(){$(this).hide()});
-	absoluteW.animate({"left":"0px"},1500);
+	$("#loginWrapper").animate({"left":"-="+$(this).width()},1500,function(){$(this).hide();});
+	absoluteW.animate({"left":"0px"},1500,function(){obtieneAltoTotal();});
 	setTimeout(function(){$("#wr_SuperBanner").animate({"left":"0px"},0);},0);
 	var outLoginBan = false;
 	
