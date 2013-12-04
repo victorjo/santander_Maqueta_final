@@ -70,7 +70,8 @@ var cards = [
 		omniBox("autocompleteQ3",cards);
 		omniBox("autocompleteQ4",cards);
 		omniBox("autocompleteQ5",cards);
-		
+		switchFuncDomMas("switchbox","Si","No","Dom");
+		ocultaSteps(15);
 	});
 
 
@@ -81,6 +82,10 @@ function cambiaPasoImg(){
 function backPasoImg(){
 	$("#stepbar img").attr("src","../img/fake/pasos/paso1.png");
 }
+
+
+ 			
+
 
 
 </script>
@@ -134,7 +139,7 @@ function backPasoImg(){
 					<div style="float:left;margin:10px 0 0 ; width:50%; border:solid 1px silver;height:58px;position:relative; margin-top:10px;border-radius: 5px;"> 
 					
 						<div class="centradoSwitch">
-								<div id="switchbox" class="switch" style="margin-top:13px; margin-left:10px;">  </div> 
+								<div id="switchbox" class="switch">  </div> 
 						</div> 
 
 						<img src="../../../img/iconos/img_calendario.png" style="margin-top:20px; margin-left:10px;"> 
