@@ -165,10 +165,9 @@ function backPasoImg(){
 								</div>
 					</div>
 
-					<div class="botonera">
-						<div class="btn" style="float:right; margin-top:10px;">Continuar</div>
-						<div class="btn" style="float:right; margin-top:10px;">Cancelar</div>
-
+					<div class="botonera3">
+						<div class="btn btnaceptar" onclick="cambiaPasoImg();">Continuar</div>
+						<div class="btn">Cancelar</div>
 					</div>
 				</div> <!--fin step1-->
 					
@@ -185,15 +184,111 @@ function backPasoImg(){
 		   				</div>
 
 						</div>-->
-				</div><!--fin step2-->
+				<div id="contenido" style="background-color: #FFFFFF">
+			<h4 style="color:red">Introduzca el nombre, alias o los cuatro dígitos de la cuenta destino o seleccionela de la lista:</h4>
 
-				<div id="step3" class="pasos">			
-				</div><!--fin step3-->
+						<table>
+							<tr><td>						
+								<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+							</td><td>
+
+							<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+
+									<div class="botonestrella-on"> <img class="activo" style="display:block;" src="../../img/iconos/favorito_on.png"/> <img class="inactivo" style="display:none;" src="../../img/iconos/favorito_of.png"> </div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span> </td>
+							</td></tr>
+
+						</table>
+
+
+				<h4>Introduzca el nombre, alias o los cuatro dígitos de la cuenta destino o seleccionela de la lista:</h4>
+
+					<table>
+							<tr><td>						
+								<input type="text" id="autocompleteQ2" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+							</td><td>
+
+							<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+
+									<div class="botonestrella-on">   </div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span> </td>
+							</td></tr>
+
+						</table>
+
 			
-				<div id="step4" class="pasos">
-				</div><!--fin step4-->
+			<div class="wra_Select">
+				<p><b>N&uacute;mero de tarjeta</b></p>
+				<input type="text"  placeholder="Seleccionar" value="1234****5678"/>
+			</div>
+			
+			<div class="wra_Select">
+				<p><b>Instituci&oacute;n bancaria o comercial</b></p>
+				<input type="text"  placeholder="Seleccionar" />
+				
+			</div>
+			
+			
+			
+			<div style="float: left; margin-top: 25px;">
+				
+				
+		
+				
+			</div>
+			
+			
+			<div style="float: left;margin:10px 0 ;">
+			
+			</div>
+			
+					<div style="width:100px; height:20px; margin-top:80px;"><p><b>Programar fecha:</b> </p></div> 
+			<div style="float:left;margin:10px 0 0 ; width:50%; border:solid 1px silver;height:58px;position:relative; margin-top:10px;border-radius: 5px;"> 
 
-			</div><!--Fin funcionalidad: entre cuentas santander-->
+
+
+
+
+					<div class="centradoSwitch">
+							<div id="switchbox" class="switch" style="margin-top:13px; margin-left:10px;">  </div> 
+					</div> 
+						 <img src="../../img/iconos/img_calendario.png" style="margin-top:20px; margin-left:10px;"> 
+					<input type="text" id="date" placeholder="dd/mm/aaaa" style="margin-left:10px;height:25px;margin-top:14px;position:fixed"> <P>(MXP)</P>
+					 
+
+			</div> 
+
+					<div class="dropcontainer">
+								<div class="dropdown">
+									<img id="downico1"src="../../img/iconos/dropdown.png"/>
+									<img id="upico1"src="../../img/iconos/dropup.png"/>
+									<h6>Quiero notificación previa de mi pago</h6>
+								</div>
+								
+								<div id="select1" class="wra_Select4">
+									<select name="" id="" >  
+										<option value="">3 días</option>
+					                    <option value="">Opcion1</option>
+					                    <option value="">Opcion1</option>
+					                    <option value="">Opcion1</option>
+					                    <option value="">Opcion1</option>
+						           	</select>
+								</div>
+					</div>
+
+
+
+			<div class="botonera">
+				<div class="btn" style="float:right; margin-top:10px;">Continuar</div>
+				<div class="btn" style="float:right; margin-top:10px;">Cancelar</div>
+
+			</div>
+		</div>
+				
+
+
+				</div>
+
+
+		<!--Fin funcionalidad: entre cuentas santander-->
 			
 			
 
@@ -849,13 +944,15 @@ function backPasoImg(){
 
 			</div><!--cierre contenido-->
 	<div id="navegador">
-
 			<ul>
-				<li class="active" onclick="backPasoImg();">DOMICILIACIÓN <br>DE SERVICIOS</li>
-				<li onclick="backPasoImg();">DOMICILIACIÓN DE TARJETA DE CRÉDITO</li>
-				<li onclick="backPasoImg();">CONSULTA/MODIFICACIÓN Y CANCELACIÓN</li>
+				<li class="active">Entre Cuentas<br />Santander</li>
+				<li>A Otras Cuentas</li>
+				<li>Cuentas Registradas/<br />Alta/Baja</li>
+				<li  onclick="cambiaEstado('4')">Consulta <br />de Transferencias</li>
 			</ul>
-		<div class="aviso"><img src="../../../img/iconos/img_msj.png" />	</div>
+			<div class="aviso">
+				<img src="../../img/iconos/img_msj.png"/>
+			</div>
 
 	</div>
 </div>
