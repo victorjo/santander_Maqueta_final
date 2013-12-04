@@ -73,9 +73,15 @@ var cards = [
 		
 	});
 
+
 function cambiaPasoImg(){
 	$("#stepbar img").attr("src","../img/fake/pasos/paso2.png");
 }
+
+function backPasoImg(){
+	$("#stepbar img").attr("src","../img/fake/pasos/paso1.png");
+}
+
 
 </script>
 <div id="osc">
@@ -90,8 +96,9 @@ function cambiaPasoImg(){
 			</div>
 	</div>
 	<div id="stepbar">
-				<img src="../img/fake/pasos/paso1.png"/>
-		</div>
+		<img src="../img/fake/pasos/paso1.png"/>
+	</div>
+
 		<div id="contenido">
 			<div><!-- Funcionalidad: Domiciliación de servicios-->
 				<div id="step1" class="pasos">
@@ -244,8 +251,8 @@ function cambiaPasoImg(){
 							</table>
 									
 							<div class="botonera btn_abajo">
-								<div class="btn btnaceptar btn_dom2" id="btn1">Confirmar</div>
-								<div class="btn btn_dom2" id="regresar">Regresar</div>
+								<div class="btn btnaceptar btn_dom2" id="btn1" >Confirmar</div>
+								<div class="btn btn_dom2" id="regresar" onclick="backPasoImg();">Regresar</div>
 								<!--<div class="btn" id="siguiente2">Confirmar</div>-->
 							</div>
 
@@ -431,7 +438,7 @@ function cambiaPasoImg(){
 						</div>
 
 						<div class="botonera" style="">
-							<div class="btn btnaceptar" style="float:right; margin-top:-31px; margin-right:-10px;" id="siguiente4">Continuar</div>
+							<div class="btn btnaceptar" style="float:right; margin-top:-31px; margin-right:-10px;" id="siguiente4" onclick="cambiaPasoImg();">Continuar</div>
 						</div>				
 
 
@@ -493,7 +500,7 @@ function cambiaPasoImg(){
 																</div>															
 															<div class="botonera">
 															
-																		<div class="btn btnaceptar" style="float:right;  margin-top:130px; margin-right:-10px;" id="siguiente5">Continuar</div>
+																		<div class="btn btnaceptar" style="float:right;  margin-top:130px; margin-right:-10px;" id="siguiente5" onclick="cambiaPasoImg();">Continuar</div>
 																	 </div>
 					
 					</div><!--step6-->
@@ -759,7 +766,7 @@ function cambiaPasoImg(){
 
 
 			<div class="botonera"  style=" float: right; margin-right:-482px; margin-top:-50px;">
-				<div class="btn btnaceptar" id="siguiente8">Continuar</div>
+				<div class="btn btnaceptar" id="siguiente8" onclick="cambiaPasoImg();">Continuar</div>
 			</div>
 
 						<!---///////////////////////////////////////////////////////////////////////////////////-->			
@@ -993,9 +1000,9 @@ function cambiaPasoImg(){
 	<div id="navegador">
 
 			<ul>
-				<li class="active">DOMICILIACIÓN <br>DE SERVICIOS</li>
-				<li>DOMICILIACIÓN DE TARJETA DE CRÉDITO</li>
-				<li>CONSULTA/MODIFICACIÓN Y CANCELACIÓN</li>
+				<li class="active" onclick="backPasoImg();">DOMICILIACIÓN <br>DE SERVICIOS</li>
+				<li onclick="backPasoImg();">DOMICILIACIÓN DE TARJETA DE CRÉDITO</li>
+				<li onclick="backPasoImg();">CONSULTA/MODIFICACIÓN Y CANCELACIÓN</li>
 			</ul>
 		<div class="aviso"><img src="../../../img/iconos/img_msj.png" />	</div>
 

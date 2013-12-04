@@ -1,12 +1,31 @@
-﻿*{
+﻿			@font-face
+{
+font-family: 'ArialBlack';
+src: url(fonts/ArialBlack.ttf);
+font-weight:bold;
+}
+
+
+
+
+			*{
 				margin: 0;
 				font-family: Arial,sans-serif;
+			}
+
+			h1,h2,h3,h4,h5{
+				font-family: 'ArialBlack';
+			}
+
+			h4{
+				font-size: 12px;
 			}
 
 			#absoluteWrapper
 			{
 				margin:0px auto;
 				width:100%;
+				background: #e8e8e8;
 
 			}
 			#wr_SuperBanner{
@@ -59,11 +78,11 @@
 			}
 			
 			#wr_PrinHeader{
-				width: 100%;height:50px;background-color:#ff0d37; overflow:hidden;
+				width: 100%;height:50px;background-color:#ff0000; overflow:hidden;
 			}
 
 			#tipoServ{
-				background:black;width:190px;height:50px;
+				background:#282828;width:190px;height:50px;
 			}
 
 			#dataClient{
@@ -75,7 +94,7 @@
 			}
 
 			#wr_btnNavHeader img{
-				border-right: 1px solid #9a051d;
+				border-right: 1px ridge #830d22;
 				padding: 5px 10px;
 				cursor: pointer;
 				float:right;
@@ -114,30 +133,38 @@
 
 			#wr_btnNav ul {
 				list-style: none;
-				background: #efefef;
+				/*background: #efefef;*/
+				background: #fff;
 				width: 170px;
 				margin: auto;
-				padding: 5px 0 0 0;
+				padding: 0 0 0 0;
 				font-size: 12px;			
 			}
 			
 			#wr_btnNav ul li{
-				background: url(../img/menuLateral/btn_menu.png);
-				width: 160px;
+				/*background: url(../img/menuLateral/btn_menu.png);*/
+				width: 150px;
 				height: 20px;
-				padding: 10px 5px 0;
-				border-bottom: 1px solid #b9b9b9;
+				padding: 10px 10px 0;
+				border-bottom: 1px solid #bbbbbb;
 				cursor: pointer; 
+				font-size: 11px;
+				text-transform: uppercase;
 			}
 
 			#wr_btnNav ul li:hover{
-				background: #e3e3e3;
+				/*background: #e3e3e3;*/
+				color:#ff0000;
 			}
 
 			.activate{
-				background: #b9b9b9 !important;
-				border-bottom: 2px solid red !important;
+				/*background: #b9b9b9 !important;*/
+				border: 1px solid red !important;
+				color:red;
 				font-weight: bold;
+				padding-left: 25px !important;
+				width: 133px !important;
+				background: url(../img/iconos/Indicador.png) no-repeat 10px;
 
 			}
 
@@ -151,11 +178,11 @@
 			}
 
 			.col1{
-				overflow:hidden;width: 245px;height: 578px;
+				overflow:hidden;width: 245px;max-width:245px;height: 578px;
 			}
 
 			.col2{
-				overflow:hidden;width:502px;height: 578px;
+				overflow:hidden;width:502px;max-width:502px;height: 578px;
 			}
 
 
@@ -176,12 +203,12 @@
 
 			.altoTotal{
 				height:578px;
-				
+				max-height:578px;
 			}
 
 			.alto2{
 				height:283px;
-				
+				max-height:283px;
 			}
 
 			.medianilIzq{
@@ -212,15 +239,15 @@
 			}
 
 			#wrappWidgets{
-				overflow-y:scroll;width:771px;height:600px;position:static;background:#dedede;opacity:0;
+				overflow-y:scroll;width:771px;height:600px;position:static;opacity:0;
 			}
 
 			.widget-min
 			{
 				float:left;
-				background-color:#fff;
+				/*background-color:#fff;
 				box-shadow: 1px 1px 3px #888888;
-				border:1px solid #b9b9b9;
+				border:1px solid #b9b9b9;*/
 				margin-right:10px;
 				margin-top:10px;
 				display:inline-table;

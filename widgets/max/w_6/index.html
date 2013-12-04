@@ -286,6 +286,10 @@ function cambiaPasoImg(){
 	$("#stepbar img").attr("src","../img/fake/pasos/paso2.png");
 }
 
+function backPasoImg(){
+	$("#stepbar img").attr("src","../img/fake/pasos/paso1.png");
+}
+
 function insertHTML(html,contenedor){
 	$("#"+contenedor).append(html);
 }
@@ -329,7 +333,7 @@ function follow(){
 
 <!-- APARTIR DE AQUI -->
 <div>
-	<div id="widget">
+	<div id="widget" class="widget">
 		<!--<div id="titulo">
 				<p class="f_titleWid">
 					PAGO <br/>
@@ -554,7 +558,7 @@ function follow(){
 
 			</table>
 				<div class="botonera" style="float:right; margin-right:-235px; margin-top:13px;">
-					<div class="btn">Regresar</div>
+					<div class="btn" onclick="backPasoImg();">Regresar</div>
 					
 					<div id="btn1" class="btnaceptar">Aceptar</div>
 				</div>

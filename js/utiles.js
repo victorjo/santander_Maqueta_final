@@ -89,9 +89,7 @@ $(function(){
 
 
 function cierraWidget(){
-
-		$(".widget").find(".btnHeader").trigger( "click" );
-		
+		return false;
 	}
 
 

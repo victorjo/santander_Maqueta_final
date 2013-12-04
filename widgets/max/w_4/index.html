@@ -10,6 +10,13 @@
 	$(document).ready(function(){
  			switchFuncDomMas("switchbox","Tarjetas","Servicios","Dom");
  		});
+ function cambiaPasoImg(){
+	$("#stepbar img").attr("src","../img/fake/pasos/paso2.png");
+}
+
+function backPasoImg(){
+	$("#stepbar img").attr("src","../img/fake/pasos/paso1.png");
+}
 </script>
 <style>
 
@@ -65,6 +72,7 @@
 			</div>
 		</div>
 		<div id="stepbar">
+				<img src="../img/fake/pasos/paso1.png"/>
 		</div>
 			<div id="contenido">
 			<div><!--Inicio Pago de Servicios-->
@@ -167,7 +175,7 @@
 					</div>
 					<div class="botonera">
 							<div class="btn">Cancelar</div>
-							<div id="siguiente"><div class="btnaceptar">Continuar</div></div>
+							<div id="siguiente"><div class="btnaceptar" onclick="cambiaPasoImg()">Continuar</div></div>
 
 						</div>			
 					
@@ -225,7 +233,7 @@
 			</table>
 				<div class="botonera3">
 					<div class="btn">Regresar</div>
-					<div class="btn">Cancelar</div>
+					<div class="btn" onclick="backPasoImg()">Cancelar</div>
 					<div id="siguiente2"><div class="btnaceptar">Confirmar</div></div>
 				</div>
 

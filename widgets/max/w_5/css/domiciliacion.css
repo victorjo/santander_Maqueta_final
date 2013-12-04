@@ -341,13 +341,13 @@ a:link,a:visited{
 *Realizado por Abelito -o-o-
 */
 
-#info{
-    display: none;
-    float: left;
-    left: 217px;
-    position: absolute;
-    top: 182px;
-    z-index: 1;
+#info {
+display: none;
+float: left;
+left: 217px;
+position: absolute;
+top: 190px;
+z-index: 1;
 }
 
 .infor_btn{
