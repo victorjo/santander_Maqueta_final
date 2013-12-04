@@ -39,7 +39,7 @@ function reject(){
 }
 
 // GENERADOR DE LA BOTONERA
-function obtieneAltoTotal (){
+function obtieneAltoTotal(){
 	var altoContenedor = $("#wrappWidgets")[0].scrollHeight;
 	var numeroDeBtns = Math.floor(altoContenedor / tamanoWidget);
 	$("#navContent").html("");
@@ -49,6 +49,7 @@ function obtieneAltoTotal (){
 	}
 
 	$("#navContent .btnNavWidget:first-child").removeClass("noActiveNav").addClass("ActiveNav");
+	$("#navContent").css({"left":20+$("#wrappWidgets").width()+$("#wrappWidgets").offset().left+"px","top":"200px"});
 }
 
 function creaBtn(){
@@ -111,14 +112,14 @@ var widgets = [
 				{
 					id:6,
 					type:3,
-					order:4,
+					order:5,
 					contentMin:'',
 					contentMax:''
 				},
 				{
 					id:2,
 					type:2,
-					order:5,
+					order:4,
 					contentMin:'',
 					contentMax:''
 				},
@@ -221,7 +222,7 @@ function posWidgets(qwerty){
 		}
 		wrapper.append(newWidget);
 		newWidget.attr({"data-pos":parser+1,"data-id":v.id});
-		if((parser%3)==0 && parser!=0) newWidget.css('float','right');
+		//if((parser%3)==0 && parser!=0) newWidget.css('float','right');
 		var posWid = newWidget.offset();
 		var posWra = wrapper.offset()
 		var a = posWid.top-posWra.top; 
@@ -452,8 +453,8 @@ function valToForm(){
 
 function outaLogin(){
 	var absoluteW = $("#absoluteWrapper");
-	$("#loginWrapper").animate({"left":"-="+$(this).width()},1500,function(){$(this).hide()});
-	absoluteW.animate({"left":"0px"},1500);
+	$("#loginWrapper").animate({"left":"-="+$(this).width()},1500,function(){$(this).hide();});
+	absoluteW.animate({"left":"0px"},1500,function(){obtieneAltoTotal();});
 	setTimeout(function(){$("#wr_SuperBanner").animate({"left":"0px"},0);},0);
 	var outLoginBan = false;
 	

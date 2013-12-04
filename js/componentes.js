@@ -1,8 +1,8 @@
-﻿$(document).ready(function(){
+$(document).ready(function(){
   dropIsra();
   avatarFade(); 
   $(".widget-min").hover(function(){
-    $(this).css("box-shadow","0 0 5px red");
+    $(this).css("box-shadow","0 0 3px #757575");
   },function(){
     $(this).css("box-shadow","none");
   }
