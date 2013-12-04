@@ -141,7 +141,17 @@ var widgets = [
 					order:8,
 					contentMin:'',
 					contentMax:''
+				},
+
+				{
+					id:10,
+					type:1,
+					order:9,
+					contentMin:'',
+					contentMax:''
 				}
+
+
 			];
 
 
@@ -188,17 +198,6 @@ function posWidgets(qwerty){
 		        	newWidget.html(res);
 		        }
 		    });
-			$.ajax({
-				url:'widgets/max/w_'+v.id+'/index.html',
-				type:'GET',
-				dataType:'html',
-				success: function(res){
-					newWidget.attr("data-max","true");
-				},
-				error: function(){
-					newWidget.attr("data-max","false");
-				}
-			}); 
 		}
 		wrapper.append(newWidget);
 		newWidget.attr({"data-pos":parser+1,"data-id":v.id});
@@ -370,7 +369,6 @@ function newWidgetInstance(obj)
 	this.width = this.obj.width();
 	this.height = this.obj.height();
 	this.chPost = function () {
-			if(this.obj.attr("data-max")=="false") return false;
 			this.obj.attr({"instanced":"true"});
 			this.obj.css({'position':'fixed','top':this.topPos,'left':this.leftPos,'z-index':50});
 			var forA = this.obj;
