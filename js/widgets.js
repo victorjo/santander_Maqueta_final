@@ -431,7 +431,7 @@ function valToForm(){
 	var absoluteW = $("#absoluteWrapper");
 	absoluteW.show();
 	$("#loginWrapper").animate({"background-position":"+=50px"},"slow");
-	$("#wr_SuperBanner").css({"position":"relative",'background-image':'url(img/superbanner/1.png)'}).animate({'left':'-255px'},800,function(){ $("#titleLogin").next().html('<h4>EN SANTANDER LE DAMOS VIDA A TUS IDEAS</h4><h1>Bienvenido a SUPERNET <br> la banca mas personal que nunca.</h1><div class="btnaceptar" style="width:180px;margin-left:0px;margin-right:15px" onclick="outaLogin()">Saltar Intro</div><p style="font-weight:bold;margin-top: 18px;">Omitir en: <span class="seger" style="">04</span></p>');$("#titleLogin").next().fadeIn(); });
+	$("#wr_SuperBanner").css({"position":"relative",'background-image':'url(img/superbanner/1.png)'}).animate({'left':'-255px'},800,function(){ $("#titleLogin").next().html('<h4>EN SANTANDER LE DAMOS VIDA A TUS IDEAS</h4><h1 class="tituloBold">Bienvenido a SUPERNET <br> la banca mas personal que nunca.</h1><div class="btnaceptar" style="width:180px;margin-left:0px;margin-right:15px" onclick="outaLogin()">Saltar Intro</div><p style="font-weight:bold;font-size:11px;margin-top: 18px;">Omitir en: <span class="seger" style="">04</span></p>');$("#titleLogin").next().fadeIn(); });
 	$("#titleLogin").next().fadeOut('fast');
 	setTimeout(function(){ $(".seger").text("03"); },1000);
 	setTimeout(function(){ $(".seger").text("02"); },2000);
@@ -446,7 +446,7 @@ function outaLogin(){
 	var absoluteW = $("#absoluteWrapper");
 	$("#loginWrapper").animate({"left":"-="+$(this).width()},1500,function(){$(this).hide()});
 	absoluteW.animate({"left":"0px"},1500);
-	setTimeout(function(){$("#wr_SuperBanner").animate({"left":"0px"},1000);},1200);
+	setTimeout(function(){$("#wr_SuperBanner").animate({"left":"0px"},0);},0);
 	var outLoginBan = false;
 	
 }
