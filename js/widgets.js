@@ -122,7 +122,7 @@ var widgets = [
 				{
 					id:5,
 					type:2,
-					order:2,
+					order:4,
 					contentMin:'',
 					contentMax:''
 				},{
@@ -141,7 +141,7 @@ var widgets = [
 				},
 				{
 					id:2,
-					type:2,
+					type:1,
 					order:4,
 					contentMin:'',
 					contentMax:''
@@ -175,7 +175,7 @@ var widgets = [
 					contentMin:'',
 					contentMax:''
 				},
-
+/*
 				{
 					id:11,
 					type:2,
@@ -184,7 +184,7 @@ var widgets = [
 					contentMax:''
 				}
 
-
+*/
 			];
 
 
@@ -243,6 +243,7 @@ function posWidgets(qwerty){
 				}
 			}); 
 		}
+		if(v.id==2) newWidget.css("float","right");
 		wrapper.append(newWidget);
 		newWidget.attr({"data-pos":parser+1,"data-id":v.id});
 		//if((parser%3)==0 && parser!=0) newWidget.css('float','right');
