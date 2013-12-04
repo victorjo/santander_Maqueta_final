@@ -38,7 +38,7 @@ h1,h2,h3,h4,h5{
     margin: 8px auto 8px 45%;
     position: absolute;
     text-align: center;
-    width: 170px;
+    width: 200px;
     overflow: visible;
 		}
 
@@ -69,6 +69,7 @@ h1,h2,h3,h4,h5{
     height: 28px;
     float: right;
     border:1px solid #dadada;
+    text-align: center;
     
 }
 

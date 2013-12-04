@@ -170,14 +170,14 @@ input[type=radio]{
 					</td>
 					<td>
 						<p>Disponible:</p>
-						<p>$0,00.00 MXP</p>
+						<p>$3,500.00 MXP</p>
 					</td>
 					<td>
 						<input type="text" placeholder="$0.00" value="$0.00" />
 					</td>
 					<td>
 						<p>Mensual:</p>
-						<p>$9,999,999.00 MXP</p>
+						<p>$4,000.00 MXP</p>
 					</td>
 					<td>
 						<p>Tasa:</p>
@@ -214,7 +214,7 @@ input[type=radio]{
 				*El beneficio de la Tasa Preferencial/Promocional tendrá una vigencia de 12 meses; contados a partir del mes en que se realice la transferencia de saldo a la Tarjeta Santander, una vez transcurrido este periodo, si el tarjetahabiente no terminá de liquidar la deuda objeto de la transferencia, el saldo remanente de la deuda será sujeto a las condiciones del saldo revolviste de la tarjeta de Crédito.
 				</p>
 			</div>
-			<div class='btn Fright marginOne btnaceptar' onclick="creaOverlay('#fff','#contenido',1);creaModal('#contenido',1,'alerts/datos.html')" style="margin-right: -10px;margin-top: 40px;float: right;">Aceptar</div>
+			<div class='btn Fright marginOne btnaceptar'  style="margin-right: -10px;margin-top: 40px;float: right;">Aceptar</div>
 			
 		</div>
 		<div id="navegador">
@@ -285,12 +285,12 @@ input[type=radio]{
 				<h4>2.Términos y condiciones de producto</h4>
 				<p>
 				<input type="checkbox">
-				He leído y acepto <a href="#"> Términos y condiciones </a>
+				He leído y acepto <a href="#" onclick="creaOverlay('#fff','#contenido',1);creaModal('#contenido',1,'alerts/datos.html')"> Términos y condiciones </a>
 				</p>
 				
 			</div>
 			
-			<div class='btn Fright marginOne btnaceptar' onclick="cambiaEstado('3')" style="float: right;margin-right: -10px;margin-top: 183px">Aceptar</div>
+			<div class='btn Fright marginOne btnaceptar' onclick="cambiaEstado('3')" style="float: right;margin-right: -10px;margin-top: 183px" onclick="cambiaEstado('2')">Aceptar</div>
 			<div class='btn Fright marginOne' onclick="" style="float:right;margin-top:183px;margin-right:-10px;margin:">Cancelar</div>
 		</div>
 		<div id="navegador" >
