@@ -53,10 +53,26 @@ function obtieneAltoTotal(){
 		btnDiv = creaBtn();
 		$("#navContent").append(btnDiv);
 	}
-
+	
+	var c;
+		var altoScrolling = $("#wrappWidgets")[0].scrollHeight;
+		var altosScroll = [];
+	
+	c = $('.btnNavWidget').size();
+		punteroC = c;
+		
+		altoScrolling = altoScrolling/(c);
+		for (c;c>=0;c--){altosScroll.push(Math.round(altoScrolling*c));}
+		altosScroll.reverse();
+		$('.btnNavWidget').each(function(i,v){
+			$(this).attr('onclick','moveScroll(this,'+altosScroll[i]+')');
+		});
+	
 	$("#navContent .btnNavWidget:first-child").removeClass("noActiveNav").addClass("ActiveNav");
 	$("#navContent").css({"left":$("#wrappWidgets").width()+$("#wrappWidgets").offset().left+"px","top":"48%"});
-}
+	
+	
+	}
 
 function creaBtn(){
 		var btnDiv = $("<div>");
@@ -258,8 +274,7 @@ function posWidgets(qwerty){
 		{
 			$("#wrappWidgets").css("width","1022px");
 
-			//$("[data-pos='3']").after('<div class="widget-min col1 alto2"  data-max="false" data-pos="codom"><img src="img/fake/carrito.jpg" height="275"/></div>');
-			
+			$("[data-pos='3']").after('<div class="widget-min col1 alto2"  data-max="false" data-pos="codom"><img src="img/fake/carrito.jpg" height="275"/></div>');
 			$("[data-pos='7']").css('float','left');
 			var alen = 1030;
 		/*}else if($(window).width()<=768){ ****CHANGE FOR TOUCH EVENT***
@@ -280,7 +295,7 @@ function posWidgets(qwerty){
 		posLeft += alen || 790;
 		var posTop =  wrapper.height()/2;
 		obj.css({'left':posLeft,'top':(posTop-obj.height())});
-		var c;
+		/*var c;
 		var altoScrolling = $("#wrappWidgets")[0].scrollHeight;
 		var altosScroll = [];
 
@@ -294,7 +309,7 @@ function posWidgets(qwerty){
 		altosScroll.reverse();
 		$('.btnNavWidget').each(function(i,v){
 			$(this).attr('onclick','moveScroll(this,'+altosScroll[i]+')');
-		});
+		});*/
 
 		banPosSelect = 1;
 		posScroll = 0;
