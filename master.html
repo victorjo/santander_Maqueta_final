@@ -27,45 +27,25 @@
     <script>
     
     $(document).ready(function(){
-		motorSuperbanner();
+		//motorSuperbanner();
+       
+        $("#cierraSB").click(cierraSB);
+
+        $("#cierraSB2").click(cierraSB2);
 	});
 
-    $(function(){
-    $.ajax({
-    url:'balance_maquetas/informativo.html',
-    type:'GET',
-    dataType:'html',
-    success: function(res){
-    $('.off').html(res);
-    }
-    })
-    $("select").ddslick({
-    width:"200"
-    });
 
-
-    //$("#wrappWidgets").mCustomScrollbar();
-
-
-    });
-    function activaBtn(obj){
-    $(".ActiveNav").each(function(){
-    $(this).removeClass('ActiveNav').addClass('noActiveNav');
-    });
-    $(obj).addClass('ActiveNav').removeClass('noActiveNav');
-    }
-    
-    //Superbanner
-    
     
     </script>
+
+
 </head>
 <body>
     <section id="loginWrapper">
         <div id="titleLogin"><img style='position:relative;left:154px' src="img/interfaz/logoSantander.png" alt="logotipo banco Santander"></div>
             <div style="width:400px;height:500px;position:relative;left:200px;top:100px">
                 <h4>Ingreso a</h4>
-                <h1>SUPERNET</h1>
+                <h1><span style="font-weight:normal">SUPER</span><span style="color:red;font-family:ArialBlack;">NET</span></h1>
                 <div style="display:inline-table;margin-bottom:15px">
                     <img style="float:left" src="img/menuLateral/avatar.png" alt="avatar supernet">
                     <div style="width:219px;height: 158px;float:right;margin-top: 10px;margin-left:10px">
@@ -76,10 +56,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="btnaceptar" onclick="valToForm();" style="margin-left:0px;width:180px">Aceptar</div>
-                <div class="btnaceptar" style="width:180px">Cancelar</div>
+                <div class="btnaceptar" style="width:180px; color:#000 !important; font-weight:bold;margin-right:15px;">Cancelar</div>
+                <div class="btnaceptar" onclick="valToForm();" style="margin-left:0px;width:180px;font-family:ArialBlack;">Aceptar</div>
 
-                <p style="float:left;margin-top:20px">Recuerde: En santander  nunca solicitamos a nuestros clientes informacion confidencial tales como usuarios, contraseñas o token.</p>
+                <p style="float:left;margin-top:20px;font-size:11px;line-height: 20px;">Recuerde: En Santander  nunca solicitamos a nuestros clientes informacion confidencial tales como usuarios, contraseñas o token.</p>
             </div>
         <!--<div id="bottomLogin"></div>-->
     </section>
@@ -92,10 +72,10 @@
                  <img src="img/iconos/port.png" alt="">
             </div>
             <div id="tipoServ" class="Fleft">
-                <p style="color:#fff;font-size:15px;margin-top: 17px;margin-left: 53px;">S <span class="clearspace"> </span> E <span class="clearspace"> </span> L <span class="clearspace"> </span> E <span class="clearspace"> </span> C <span class="clearspace"> </span> T</p>
+                <p style="color: rgb(255, 255, 255); text-align: center; font-size: 11px; letter-spacing: 12px; margin-top: 19px;">SELECT</p>
             </div>
             <div id="dataClient" class="Fleft">
-                <p id="nombre"><b>Santiago Alfonso Pimentel</b></p>
+                <p id="nombre"><b>Ver&oacute;nica Alfonso Pimentel</b></p>
                 <p id="fecha">&Uacute;ltimo acceso: 23 de Julio del 2013</p>
                 
             </div>
@@ -108,9 +88,30 @@
             </div>
         </div>
         <div id="wr_PrinNivel1">
-            <div id="wr_SuperBanner" style="background-color:white;" class="columnSB Fleft">
-                <!--<img src="img/superBanner.png" alt="Super banner">-->
+
+
+            <div id="wrappSB" style="overflow:visible;width:265px">
+            
+                <div id="wr_SuperBanner" style="" class="columnSB Fleft">
+                    <div id="cierraSB">
+                        
+                    </div>
+                </div>
+
             </div>
+            
+            <!--<div id="wr_SuperBanner2" style="background-color: white; position: absolute; right: 17px; bottom: 17px;" class="columnSB Fleft">-->
+            <div id="wr_SuperBanner2" class="columnSB Fleft">
+                    <div id="cierraSB2">
+                        
+                    </div>
+                    <img src="img/superBanner.png" alt="Super banner">
+            </div>
+
+
+
+
+
             <div class="wr_NavPrin Fleft">
                 <div id="avatarNavPrin">
                     <img src="img/menuLateral/avatar.png" alt="avatar supernet">

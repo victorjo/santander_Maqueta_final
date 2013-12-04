@@ -1,0 +1,145 @@
+<link rel="stylesheet" href="../../../css/widgets.css" />
+<script src="../../../js/ddSlick.js"></script>
+
+<style>
+.btnHeader{
+	float: right;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	
+	
+	}
+.btnHeaderTable{
+	height: 24px;
+margin: -10px;
+padding-top: 10px;
+width: 110px;
+}
+.titTabla{
+	margin-bottom:0px;
+	padding:10px 10px 5px 30px;
+	border:1px solid black;
+	border-bottom:0;
+	float:left;
+	width:678px;
+	background:#F4F4F4;
+	margin-top:20px;
+	height:20px;
+	font-weight:bold
+}
+.titTabla p{
+	float:left;
+}
+.titTabla img{
+	float:right;
+	margin-top:0px;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.wra_Select2{
+	width: 230px;
+}
+</style>
+
+<div id="widget">
+	<div id="titulo">
+		<p class="f_titleWid">
+		TRANSFERENCIA <br>
+		DE SALDOS</p>
+	</div>
+	<div id="header">
+			<div class="btnHeader">
+				<img src="../img/botones/btn_cerrar.png"/>
+			</div>
+			<div class="btnHeader">
+				<img src="../img/botones/info_.png"/>
+			</div>
+		</div>
+	<div id="contenido">
+		<h4>1. Realice su transferencia de saldo</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+		
+		<div class="wra_Select2">
+			<select name="" id="" >
+				
+				<option value="">Opcion1</option>
+				<option value="">Opcion1</option>
+				<option value="">Opcion1</option>
+				<option value="">Opcion1</option>
+				<option value="">Opcion1</option>
+				
+			</select>
+			
+		</div>
+		
+		<div class="wra_Select2">
+			<select name="" id="" >
+				
+			</select>
+			
+		</div>
+		<div class="wra_Select2">
+			<select name="" id="" >
+				
+				
+				
+			</select>
+			
+		</div>
+		
+		<div class="titTabla">
+			Mis transferencias de saldo
+			<div class="btnHeader btnHeaderTable">
+				<p>Exportar</p>
+				<img src="../img/botones/exportar.png" />
+			</div>
+			
+		</div>
+		<table class="tbl_consulta" style="width:100%;float:left;">
+			<tr>
+				<td>Fecha</td>
+				<td>Tarjeta Destino</td>
+				<td>Tarjeta de Origen</td>
+				<td>Saldo transferido</td>
+				<td>Pago mensual</td>
+				<td>Tasa</td>
+				<td>Estatus</td>
+			</tr>
+			<tr>
+				<td>Fecha</td>
+				<td>Tarjeta Destino</td>
+				<td>Tarjeta de Origen</td>
+				<td>Saldo transferido</td>
+				<td>Pago mensual</td>
+				<td>Tasa</td>
+				<td>Estatus</td>
+			</tr>
+			<tr>
+				<td>Fecha</td>
+				<td>Tarjeta Destino</td>
+				<td>Tarjeta de Origen</td>
+				<td>Saldo transferido</td>
+				<td>Pago mensual</td>
+				<td>Tasa</td>
+				<td>Estatus</td>
+			</tr>
+		</table>
+	</div>
+	<div id="navegador">
+		<ul>
+			<li class="active">Solicitar</li>
+			<li onclick="creaOverlay('#fff','#contenido',1);creaModal('#contenido',1,'balance_maquetas/contenidos/datos.html')">Consultar</li>
+		</ul>
+	</div>
+</div>
+<script>
+			$(".wra_Select2 select").ddslick({
+		                    width:"200"
+                });
+                
+            
+</script>

@@ -1,6 +1,16 @@
 <link rel="stylesheet" href="../../../css/widgets.css" />
 <link rel="stylesheet" href="../../../css/master.css" />
 <script src="../../../js/ddSlick.js"></script>
+<script >
+function cambiaPasoImg(){
+	$("#stepbar img").attr("src","../img/fake/pasos/paso2.png");
+}
+
+function backPasoImg(){
+	$("#stepbar img").attr("src","../img/fake/pasos/paso1.png");
+}
+</script>
+
 <style>
 .btnHeader{
 	float: right;
@@ -105,6 +115,7 @@ input[type=radio]{
 			</div>
 		</div>
 		<div id="stepbar">
+				<img src="../img/fake/pasos/paso1.png"/>
 		</div>
 		<div id="contenido">
 			<h4 style="color:red">1. Realice su transferencia de saldo</h4>
@@ -379,7 +390,11 @@ input[type=radio]{
 				<li onclick="cambiaEstado('4')">CONSULTAR</li>
 			</ul>
 
+<<<<<<< HEAD
 			<div class="aviso"><span style="margin-top: 8px;font-family:Arial, Helvetica, sans-serif; position: absolute; margin-left: 11px;"></span><img src="../img/iconos/img_msj.png"alt="etc" />	</div>
+=======
+			<div class="aviso"><span style="margin-top: 8px;font-family:Arial, Helvetica, sans-serif; position: absolute; margin-left: 11px;"><!--Lorem Lorem ipsum Lorem Lorem ipsum. Lorem Lorem ipsum lorem.--></span><img src="../img/iconos/img_msj.png"alt="etc" />	</div>
+>>>>>>> ba0faa2354f321bc3e684803e759c86610d1c7fd
 
 			<!--<div class="imagenFondo"><img src="URL de la imagen" alt="etc" /><span>El Texo sobre la imagen</span></div>  -->
 

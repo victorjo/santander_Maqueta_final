@@ -1,7 +1,28 @@
+
 @import url('../../css/widgets.css');
 @import url('../../css/componentes.css')
 
+#contenido{
+	background-color:white;
+}
 
+.transf{
+	
+	width:730px;
+	height:100px;
+	border-collapse:collapse;
+
+}
+
+.transf tr:nth-child(even) {
+	background-color:#f4f4f4;
+	}
+
+.transf td{
+	padding-left:10px;
+	padding-top:3px;
+	height:22px;
+}
 
 
 

@@ -3,6 +3,8 @@
 <script type="text/javascript" src="../../../js/jquery.tinycircleslider.min.js"></script>
 <link rel="stylesheet" href="../../../css/website.css" type="text/css" media="screen"/>
 <script type="text/javascript" src="../../../js/componentes.js"></script>
+<script src="../../../js/utiles.js"></script>
+<script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
 <style>
 .btnHeader{
 	float: right;
@@ -175,7 +177,7 @@ z-index: 1000;
 	}
 
 	#tablaDatos{
-		text-align:left; height: 80px;
+		text-align:left; height: 80px;margin: 9px 6px;
 	}
 
 	#tablaDatos tr{
@@ -184,24 +186,141 @@ z-index: 1000;
 
 
 	#tablaDatos tr td{
-		font-size:12px;
+		font-size:11px;
 	}
 
 	.tbl_info td{
 		font-size: 10px;
 		border-collapse: collapse;
+		padding: 0 5px;
 	}
 	.tbl_info tr{
 		height:11px !important;
 		font-size: 10px;
 		border-collapse: collapse;
 	}
+	#contenido2{
+			display: none;
+
+		}
+	#img{
+			width: 180px;
+			height: 243px;
+			background:url("../../../../img/iconos/nip.png");
+			margin: 0 auto;
+			margin-left: 35%;
+		}
+		/*#text{
+			width: 30%;
+			margin: 0 auto;
+			text-align: center;
+			padding-bottom: 20px;
+			margin-top: 20px;
+			color: #fff;
+			font-weight: bold;
+		}*/
+		#text{
+			width: 30%;
+			margin-left: 28%;
+			/*margin: 0 auto;*/
+			text-align: center;
+			padding-bottom: 20px;
+			margin-top: 70px;
+			color: #fff;
+			font-weight: bold;
+		}
+		#form{
+			width: 50%;
+			margin: 0 auto;
+			padding-top: 15px;
+		}
+		/*#form input{
+			margin: 0 auto;
+		}*/
+		#form input{
+			margin: 0 auto;
+			margin-left: 95px;
+		}
+		#form #token{
+			display:block;
+			width: 210px;
+			height: 25px;
+		}
+		/*#form #buttons{
+			padding-top: 10px;
+			width: 250px;
+			margin: 0 auto;
+			margin-left: 170px;
+			
+		}*/
+		#form #buttons{
+			padding-top: 10px;
+			width: 320px;
+			margin: 0 auto;
+			margin-left: 40px;
+			display:inline-block;
+			
+		}
+		#form #can, #con{
+			margin: 0 auto;
+			width: 110px;
+			height: 30px;
+			border-radius: 8px;
+		}
 </style>
 
 <script>
 $(document).ready(function(){
 ocultaSteps(4);
+
+$("#btn1").on("click", function(){
+			creaOverlay("#000","#widget",1);
+			insertHTML($("#contenido2").html(),"modalOver");
+
+	});
+
+
 });
+
+function cambiaPasoImg(){
+	$("#stepbar img").attr("src","../img/fake/pasos/paso2.png");
+}
+
+function backPasoImg(){
+	$("#stepbar img").attr("src","../img/fake/pasos/paso1.png");
+}
+
+function insertHTML(html,contenedor){
+	$("#"+contenedor).append(html);
+}
+
+function cambiaFlujo(step){
+	
+	var npasos = $(".pasos").size();
+		$(".pasos").each(function(index){
+			if((++index) == npasos){
+				$(this).fadeOut("slow",function(){
+					$(step).delay(1000).fadeIn();
+				});
+	
+			}else{
+				$(this).fadeOut("slow");
+			}
+		})
+
+}
+
+function follow(){
+	/*if ($("#token").val()==0){
+		alert("Debe ingresar su numero de TOKEN");
+		
+	}*/
+	
+	destruyeOverlay();
+	cambiaFlujo("#step3");
+	
+}
+
 </script>
 
 <div style="display:none;visibility:hidden;height:0;overflow:hidden;">
@@ -214,7 +333,7 @@ ocultaSteps(4);
 
 <!-- APARTIR DE AQUI -->
 <div>
-	<div class="widget">
+	<div id="widget" class="widget">
 		<!--<div id="titulo">
 				<p class="f_titleWid">
 					PAGO <br/>
@@ -232,7 +351,9 @@ ocultaSteps(4);
 				<img src="../img/botones/info_.png"/>
 			</div>
 		</div>
+		<!-- aqui va para commmit -->
 		<div id="stepbar">
+				<img src="../img/fake/pasos/paso1.png"/>
 		</div>
 		<div id="contenido">
 
@@ -290,44 +411,53 @@ ocultaSteps(4);
 					<div class="bockcpcontent">
 						<table id="tablaDatos">
 							<tr>
-								<td><b>Datos del cr&eacute;dito:</b></td>
+								<td colspan="2"><b>Cuenta de Dep&oacute;sito</b></td>
+							</tr>
+							<tr>
+								<td colspan="2"> 
+									<img src="img/fake/depositos.png" alt="">
+								</td>
+							</tr>
+
+
+							<tr>
+								<td  colspan="2">
+									<b>Datos del cr&eacute;dito:</b>
+								</td>
 							</tr>
 							<tr style="padding-right: -top:5px">
-								<td>Monto de credito:</td><td>99.99%</td>
+								<td>Monto de cr&eacute;dito:</td>
+								<td><b>999,999.99</b></td>
 							</tr>
 							<tr>
-								<td>Vigencia de linea:</td><td>mm/dd/aaaa</td>
+								<td>Monto a disponer:</td>
+								<td><b>999,999.99</b></td>
 							</tr>
 							<tr>
-								<td>Monto a dispuesto:</td><td>99.99%</td>
+								<td>Pago mesual:</td>
+								<td><b>999,999.99</b></td>
 							</tr>
 							<tr>
-								<td>Plazo:</td><td>99.99%</td>
+								<td>Plazo:</td>
+								<td><b>18</b></td>
 							</tr>
 							<tr>
-								<td>Taza de interes anual:</td><td>99.99%</td>
+								<td>Meses de gracia:</td>
+								<td><b>Ninguno</b></td>
 							</tr>
 							<tr>
-								<td>Comision por disposicion:</td><td>99.99%</td>
+								<td>Tasa de inter&eacute;s anual:</td>
+								<td><b>00.00%</b></td>
 							</tr>
 							<tr>
-								<td>Esquema aseguramiento:</td><td>99.99%</td>
+								<td>Comisi&oacute;n por disposici&oacute;n:</td>
+								<td><b>999,999.99</b></td>
 							</tr>
 							<tr>
-								<td>Cuota nueva mas (I.V.A):</td><td>99.99%</td>
+								<td>Esquema de aseguramiento:</td>
+								<td>Lorem</td>
 							</tr>
-							<tr>
-								<td>Pago por Mil*</td><td>99.99%</td>
-							</tr>
-							<tr>
-								<td>Monto del credito:</td><td>99.99%</td>
-							</tr>
-							<tr>
-								<td>Costo Anual Total:</td><td>99.99%</td>
-							</tr>
-							<tr>
-								<td>Tabla de amortizacion:</td><td>*<a href="#">ver</a></td>
-							</tr>
+							
 						</table>
 					</div>
 				</div>
@@ -337,12 +467,25 @@ ocultaSteps(4);
 				<p>Maximo 3 meses desde el desembolso del prestamo y la fecha de pago de la primera amortizacion.</p>
 			</div>
 			<div id="botonera" style="float:right; margin-right:-10px; margin-top:35px;">
-				<div id="siguiente"><div class="btnaceptar">Aceptar</div></div>
+				<div id="siguiente"><div class="btnaceptar" onclick="cambiaPasoImg()">Aceptar</div></div>
 			</div>
 		
 	</div><!--Fin step 1-->
 	
 	<div id="step2" class="pasos" style="display:none">
+		<div id="contenido2">
+							<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
+			   				<div id="img"></div>
+			   				<div id="form">
+			   					<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
+			   					<div id="buttons">
+			   					<input type="submit" value="Cancelar" id="can" onclick="destruyeOverlay();">
+			   					<input type="submit" value="Continuar" id="con" onclick="follow()">
+			   					</div>
+			   				</div>
+
+   						</div>
+
 		<h4 style="color:red;">Por favor confirme que la información desplegada a continuación es correcta:</h4>
 						<table class="tbl_info" style="width:100%;float:left;">
 
@@ -368,7 +511,7 @@ ocultaSteps(4);
 				</tr>
 				<tr>
 					<td style="color:#999999">Monto a disponer:</td>
-					<td >999,999,999.00 (MXP)</td>
+					<td ><span id="disposicion">0</span>.00 (MXP)</td>
 				</tr>
 				<tr>
 					<td style="color:#999999">Pago mensual:</td>
@@ -415,9 +558,9 @@ ocultaSteps(4);
 
 			</table>
 				<div class="botonera" style="float:right; margin-right:-235px; margin-top:13px;">
-					<div class="btn">Regresar</div>
+					<div class="btn" onclick="backPasoImg();">Regresar</div>
 					
-					<div id="siguiente2"><div class="btnaceptar">Aceptar</div></div>
+					<div id="btn1" class="btnaceptar">Aceptar</div>
 				</div>
 	</div><!--Fin step 2-->
 	
@@ -436,7 +579,7 @@ ocultaSteps(4);
 							</div>
 		</div>
 		<h4 style="color:red;">Por favor confirme que la información desplegada a continuación es correcta:</h4>
-						<table class="tbl_info" style="width:70%;float:left;">
+						<table class="tbl_info" style="border:0;width:70%;float:left; height:385px">
 
 				<tr>
 					<td style="width:200px;"><b>Datos del Cliente</b></td>
@@ -456,11 +599,11 @@ ocultaSteps(4);
 				</tr>
 				<tr>
 					<td style="color:#999999">Monto del crédito:</td>
-					<td >999,999,999.00 (MXP)</td>
+					<td >9,000,000.00 (MXP)</td>
 				</tr>
 				<tr>
 					<td style="color:#999999">Monto a disponer:</td>
-					<td >999,999,999.00 (MXP)</td>
+					<td >9,000,000.00(MXP)</td>
 				</tr>
 				<tr>
 					<td style="color:#999999">Pago mensual:</td>
@@ -509,7 +652,7 @@ ocultaSteps(4);
 				<div class="botonera" style="float:right; margin-right:-235px; margin-top:13px;">
 					<div class="btn">Imprimir Documentación</div>
 					
-					<div id="siguiente3"><div class="btnaceptar">Finalizar</div></div>
+					<div><div class="btnaceptar" onclick="cierraWidget()">Finalizar</div></div>
 				</div>
 		
 

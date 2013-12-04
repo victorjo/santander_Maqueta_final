@@ -1,5 +1,7 @@
-var banPop = false;
-
+$(document).ready(function(){
+	$("body").attr("data-banpop","false");
+});
+var spDisplay = true;
 function creaOverlay(color,contenedor,tipo){
 	pos = (tipo==1)?'absolute':'fixed';
 	var divOverlay =  $("<div>");
@@ -16,8 +18,7 @@ function creaOverlay(color,contenedor,tipo){
 	divOverlay.css({"position":pos,"top":"0","left":"0","width":(anchoTotal*1.20)+"px","background":color,"opacity":".8","height":"100%",'display':'none'});
 	c.append(divOverlay);
 	divOverlay.fadeIn("slow");
-	banPop = true;
-	
+	return $("body").attr("data-banpop","true");
 }
 
 function creaModal(contenedor,tipo,contenido){ 
@@ -53,8 +54,8 @@ function destruyeOver(){
 
 
 
-function destruyeOverlay(){
-	if(banPop){
+function destruyeOverlay(){	
+	if($("body").attr("data-banpop")=="true"){
 		$(".modal").each(function(){
 			$(this).fadeOut("slow",function(){
 				$(this).remove();
@@ -88,5 +89,62 @@ $(function(){
 
 
 function cierraWidget(){
-		$("#widget").find(".btnHeader").trigger( "click" );
+		return false;
 	}
+
+
+
+    function cierraSB(){
+        $("#wr_SuperBanner").animate({"width":"hide"},1200,function(){
+            $("#wrappSB").css("display","none");
+            spDisplay = false;
+            posWidgets(1);
+           // muestraSb2();
+           //posWidgets(1);
+
+        });
+    }
+
+    function muestraSb2(){
+
+        $("#wr_SuperBanner2").animate({"bottom":"30px"},1500);
+
+    }
+
+    /*function cierraSB2(){
+
+        $("#wr_SuperBanner2").animate({"bottom":"-615px"},1500,function(){
+            $("#wrappSB").css("display","block");
+            $("#wr_SuperBanner").animate({"width":"show"},1200);
+        });
+
+
+    }*/
+
+
+    $(function(){
+    $.ajax({
+    url:'balance_maquetas/informativo.html',
+    type:'GET',
+    dataType:'html',
+    success: function(res){
+    $('.off').html(res);
+    }
+    })
+    $("select").ddslick({
+    width:"200"
+    });
+
+
+    //$("#wrappWidgets").mCustomScrollbar();
+
+
+    });
+    function activaBtn(obj){
+    $(".ActiveNav").each(function(){
+    $(this).removeClass('ActiveNav').addClass('noActiveNav');
+    });
+    $(obj).addClass('ActiveNav').removeClass('noActiveNav');
+    }
+
+    

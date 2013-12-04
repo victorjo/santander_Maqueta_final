@@ -109,8 +109,7 @@ p{}
         padding: 10px 0 10px 10px;
         cursor: pointer;
       	background-image:url('../lineagrafica/widamphdr.png');
-       	background-color:red;
-        background-size:100% 100%;
+       	background-size:100% 100%;
         height:30px;
 }
 
@@ -138,6 +137,7 @@ p{}
     padding: 20px;
     position: relative;
     width: 719px;
+  
     
 
 }
@@ -773,6 +773,8 @@ margin-left: 8px;
     	position: relative;
 		left: 17px;
     }
+
+    
     #wr_btnNavHeader {
     	width:323px;
     }
@@ -1013,9 +1015,10 @@ font-size: 11px;
 }
 
 .vtaimg{
+	background-image:url('../img/menuLateral/autoCompara.png');
 	width:205px;
 	height:245px;
-	background-color:#676767;
+	background-color:white;
 	float:left;
 }
 
