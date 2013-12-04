@@ -16,7 +16,7 @@ h1,h2,h3,h4,h5{
         margin-bottom: 10px;
 }
 
-p{}
+
 
 
 #titulo {
@@ -762,9 +762,7 @@ margin-left: 8px;
 		font-weight:bold;
 		border-bottom: 1px black solid;
     }
-    #fecha{
-    	color:#5d5d5d;
-    }
+    
     #logo{
     	position: relative;
 		left: 33px;
