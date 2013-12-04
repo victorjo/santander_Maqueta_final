@@ -17,10 +17,7 @@ h1,h2,h3,h4,h5{
 }
 
 
-.rojo{
-	color: #ff0000;
 
-}
 
 #titulo {
         background-image:url('../lineagrafica/widamphdr.png');
@@ -33,6 +30,7 @@ h1,h2,h3,h4,h5{
 }
 
 .f_titleWid{
+<<<<<<< HEAD
          font-size: 13px;
     font-weight: bolder;
     margin: 8px auto 8px 45%;
@@ -41,6 +39,12 @@ h1,h2,h3,h4,h5{
     width: 200px;
     overflow: visible;
 		}
+=======
+        margin: 8px 0 0 175px; 
+		font-size: 13px;
+		font-weight: bolder;
+		float:left;}
+>>>>>>> 9e00ca43e238264f819fba9f21a81204a2691272
 
 .f_titleWidred{
         font-size: 12px;
@@ -51,9 +55,8 @@ h1,h2,h3,h4,h5{
 
 
 #header {
-        /*background-image:url('../lineagrafica/widamphdr.png');
-        background-size:100% 100%;*/
-        background: white;
+        background-image:url('../lineagrafica/widamphdr.png');
+        background-size:100% 100%;
         width: 935px;
         height: 30px;
         float: right;
@@ -119,7 +122,7 @@ h1,h2,h3,h4,h5{
         cursor: pointer;
       	background-image:url('../lineagrafica/widamphdr.png');
        	background-size:100% 100%;
-        
+        height:30px;
 }
 
 #navegador ul li:hover{
@@ -131,17 +134,13 @@ h1,h2,h3,h4,h5{
 }
 
 .active{
-     background: url("../img/iconos/Indicador.png") no-repeat 10px white !important;
-    border-bottom: 2px solid #FF0000;
-    cursor: pointer;
-    font-family: 'ArialBlack';
-    font-weight: normal;
-    padding-left: 20px !important;
-    width: 156px !important;
+        cursor: pointer;
+        font-weight: normal;
+        border-bottom:2px red solid;
+        background-color:red;
+        background:white !important;
+        background-image:none; 
 }
-
-
-
 
 #contenido {
 
@@ -150,7 +149,6 @@ h1,h2,h3,h4,h5{
     padding: 20px;
     position: relative;
     width: 719px;
-    background: white;
   
     
 
@@ -747,7 +745,7 @@ margin-left: 8px;
 }
 
 /**/
-@media screen and (max-width: 768px),all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+@media screen and (max-width: 1212px),screen and (max-width: 768px),all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
 /*@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {*/
     body
     {
@@ -761,6 +759,7 @@ margin-left: 8px;
         left:-190px;
         z-index:10;
         background:#383838;
+		margin-right: 0px;
     } 
     #wr_SuperBanner { display: none; }
     #dataClient{
