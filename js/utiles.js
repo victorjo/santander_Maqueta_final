@@ -3,6 +3,12 @@ $(document).ready(function(){
 });
 var spDisplay = true;
 function creaOverlay(color,contenedor,tipo){
+	$(document).ajaxStart(function() {
+		$(".loader").show();
+	});
+	$(document).ajaxStop(function() {
+		$(".loader").hide();
+	});
 	pos = (tipo==1)?'absolute':'fixed';
 	var divOverlay =  $("<div>");
 	var c = $(contenedor);
