@@ -37,6 +37,7 @@ $(document).ajaxStop(function() {
 //para commit
 window.onresize = function(){
 	posWidgets(1);
+	if($("#wrappSB").css("display")=="none" && $(window).width()<=1222) $("#wrappWidgets").css("width","771px");
 }
 
 function reject(){
