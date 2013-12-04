@@ -37,6 +37,7 @@ $(document).ajaxStop(function() {
 //para commit
 window.onresize = function(){
 	posWidgets(1);
+	if($("#wrappSB").css("display")=="none" && $(window).width()<=1222) $("#wrappWidgets").css("width","771px");
 }
 
 function reject(){
@@ -274,7 +275,7 @@ function posWidgets(qwerty){
 		{
 			$("#wrappWidgets").css("width","1022px");
 
-			$("[data-pos='3']").after('<div class="widget-min col1 alto2"  data-max="false" data-pos="codom"><img src="img/fake/carrito.jpg" height="275"/></div>');
+			//$("[data-pos='3']").after('<div class="widget-min col1 alto2"  data-max="false" data-pos="codom"><img src="img/fake/carrito.jpg" height="275"/></div>');
 			$("[data-pos='7']").css('float','left');
 			var alen = 1030;
 		/*}else if($(window).width()<=768){ ****CHANGE FOR TOUCH EVENT***

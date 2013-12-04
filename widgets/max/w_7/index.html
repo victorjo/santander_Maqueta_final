@@ -1,0 +1,711 @@
+<link rel="stylesheet" href="../../../css/widgets.css" />
+<link rel="stylesheet" href="../../../css/master.css" />
+<script type="text/javascript" src="../../../js/jquery.tinycircleslider.min.js"></script>
+<link rel="stylesheet" href="../../../css/website.css" type="text/css" media="screen"/>
+<script type="text/javascript" src="../../../js/componentes.js"></script>
+<script src="../../../js/utiles.js"></script>
+<script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
+<style>
+.btnHeader{
+	float: right;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	
+	
+	}
+.btnHeaderTable{
+	height: 24px;
+margin: -10px;
+padding-top: 10px;
+width: 110px;
+}
+.titTabla{
+	margin-bottom:0px;
+	padding:10px 10px 5px 30px;
+	border:1px solid black;
+	border-bottom:0;
+	float:left;
+	width:678px;
+	background:#F4F4F4;
+	margin-top:20px;
+	height:20px;
+	font-weight:bold
+}
+.titTabla p{
+	float:left;
+}
+.titTabla img{
+	float:right;
+	margin-top:0px;
+	margin-right: 15px;
+	cursor: pointer;
+}
+.wra_Select2{
+	width: 230px;
+}
+.wra_Select{
+	width: 232px;
+}
+.wra_Select input[type=text]{
+	background: none repeat scroll 0 0 #EFEFEF;
+border: 1px solid #000000;
+height: 25px;
+text-align: center;
+width: 200px;
+}
+.smallTxt{
+	font-size: 10px;
+	line-height: 13px;
+}
+input[type=radio]{
+	vertical-align: top;
+	margin: 5px
+}
+.tablaConsulta tr td{
+	height: 20px;
+}
+.dd-select{
+	margin-left: 15px;
+}
+.exitosa{
+	color:green;
+	text-decoration: underline;
+}
+.programada{
+	color:brown;
+	text-decoration: underline;
+}
+.noexitosa{
+	color:red;
+	text-decoration: underline;
+}
+body{
+	font-family:arial;
+}
+.blockcp{
+	border-right:1px dotted gray;
+	float:left;
+	height:100%;
+	width:245px;
+}
+.blockcp > p {
+	font-weight:bold;
+	font-size:11px;
+	margin-bottom:8px;
+	margin-left:11px;
+	margin-top:6px;
+	width:200px;
+}
+.bockcpcontent{
+	border:1px solid gray;
+	height:250px;
+	margin-left:9px;
+	text-align:center;
+	width:225px;
+	background: #f4f4f4;
+}
+.bockcpcontent > p {
+	color:#000;
+	font-weight:bold;
+	font-size:12px;
+	margin:6px;
+}
+.bockcpcontent > table {
+	font-size:12px;
+}
+.bockcpcontent > table tr {
+	height:20px;
+}
+.bockcpcontent > table tr td:nth-child(2){
+	font-weight:bold;
+}
+.titlecp{
+	color:#ff0d37;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+.boxselectcp{
+	border:1px solid gray;
+	color:#535353;
+	height:35px;
+	width:734px;
+}
+.boxselectcp > p {
+	font-weight:bold;
+	font-size:11px;
+	margin-bottom:8px;
+	margin-left:11px;
+	margin-top:6px;
+}
+div > .blockcp:nth-child(3){
+	border:0px;
+	width:242px;
+}
+#wrapcp{
+	border:1px solid gray;
+	color:#535353;
+	height:319px;
+	width:734px;
+}
+#myCanvas{
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		-o-transform: rotate(-90deg);
+		transform: rotate(-90deg);
+	}
+	#rotatescroll {
+height: 190px;
+left: 0;
+position: absolute;
+width: 190px;
+z-index: 1000;
+	}
+	#rotatescroll .overlay {
+		background: none;
+	}
+	#background{
+		top: 0; left: 0; z-index: 900; height: 190px; width: 190px; background:url(images/backCircle.png) center; position: absolute;
+	}
+	#txtBack h4{
+		margin:0;
+	}
+
+	.esconde{
+		visibility: none;
+	}
+
+	#tablaDatos{
+		text-align:left; height: 80px;margin: 9px 6px;
+	}
+
+	#tablaDatos tr{
+		height: 14px;
+	}
+
+
+	#tablaDatos tr td{
+		font-size:11px;
+	}
+
+	.tbl_info td{
+		font-size: 10px;
+		border-collapse: collapse;
+		padding: 0 5px;
+	}
+	.tbl_info tr{
+		height:11px !important;
+		font-size: 10px;
+		border-collapse: collapse;
+	}
+	#contenido2{
+			display: none;
+
+		}
+	#img{
+			width: 180px;
+			height: 243px;
+			background:url("../../../../img/iconos/nip.png");
+			margin: 0 auto;
+			margin-left: 35%;
+		}
+		/*#text{
+			width: 30%;
+			margin: 0 auto;
+			text-align: center;
+			padding-bottom: 20px;
+			margin-top: 20px;
+			color: #fff;
+			font-weight: bold;
+		}*/
+		#text{
+			width: 30%;
+			margin-left: 28%;
+			/*margin: 0 auto;*/
+			text-align: center;
+			padding-bottom: 20px;
+			margin-top: 70px;
+			color: #fff;
+			font-weight: bold;
+		}
+		#form{
+			width: 50%;
+			margin: 0 auto;
+			padding-top: 15px;
+		}
+		/*#form input{
+			margin: 0 auto;
+		}*/
+		#form input{
+			margin: 0 auto;
+			margin-left: 95px;
+		}
+		#form #token{
+			display:block;
+			width: 210px;
+			height: 25px;
+		}
+		/*#form #buttons{
+			padding-top: 10px;
+			width: 250px;
+			margin: 0 auto;
+			margin-left: 170px;
+			
+		}*/
+		#form #buttons{
+			padding-top: 10px;
+			width: 320px;
+			margin: 0 auto;
+			margin-left: 40px;
+			display:inline-block;
+			
+		}
+		#form #can, #con{
+			margin: 0 auto;
+			width: 110px;
+			height: 30px;
+			border-radius: 8px;
+		}
+</style>
+
+<script>
+$(document).ready(function(){
+ocultaSteps(4);
+
+$("#btn1").on("click", function(){
+			creaOverlay("#000","#widget",1);
+			insertHTML($("#contenido2").html(),"modalOver");
+
+	});
+
+
+});
+
+function cambiaPasoImg(){
+	$("#stepbar img").attr("src","../img/fake/pasos/paso2.png");
+}
+
+function backPasoImg(){
+	$("#stepbar img").attr("src","../img/fake/pasos/paso1.png");
+}
+
+function insertHTML(html,contenedor){
+	$("#"+contenedor).append(html);
+}
+
+function cambiaFlujo(step){
+	
+	var npasos = $(".pasos").size();
+		$(".pasos").each(function(index){
+			if((++index) == npasos){
+				$(this).fadeOut("slow",function(){
+					$(step).delay(1000).fadeIn();
+				});
+	
+			}else{
+				$(this).fadeOut("slow");
+			}
+		})
+
+}
+
+function follow(){
+	/*if ($("#token").val()==0){
+		alert("Debe ingresar su numero de TOKEN");
+		
+	}*/
+	
+	destruyeOverlay();
+	cambiaFlujo("#step3");
+	
+}
+
+</script>
+
+<div style="display:none;visibility:hidden;height:0;overflow:hidden;">
+<input type="text" id="textito"  />
+<input type="text" id="textito2" />
+<input type="text" id="textito3" />
+<input type="text" id="textito4" />
+<input type="text" id="textito5" value="9000000" />
+</div>
+
+<!-- APARTIR DE AQUI -->
+<div>
+	<div id="widget" class="widget">
+		<!--<div id="titulo">
+				<p class="f_titleWid">
+					PAGO <br/>
+					DE SERVICIOS</p>
+		</div>-->
+		<div id="header">
+			
+			<p class="f_titleWid">
+			CR&Eacute;DITOS PERSONALES
+			</p>
+			<div class="btnHeader">
+				<img src="../img/botones/btn_cerrar.png"/>
+			</div>
+			<div class="btnHeader">
+				<img src="../img/botones/info_.png"/>
+			</div>
+		</div>
+		<!-- aqui va para commmit -->
+		<div id="stepbar">
+				<img src="../img/fake/pasos/paso1.png"/>
+		</div>
+		<div id="contenido">
+
+			
+
+
+			<div id="step1" class="pasos" >
+			<p class="titlecp" style="color:red">1. Elige el monto que desea disponer y simule</p>
+			<div id="wrapcp">
+				<div class="blockcp">
+					<p>Gire la perilla y eliga el credito que desea usar</p>
+					<div class="bockcpcontent">
+						<p>Monto m&aacute;ximo autorizado</p>
+						<p>$ 9,000,000.00 MXN</p>
+						<div style="margin:auto;width:190px;height:190px; position:relative">
+							
+							<canvas id="myCanvas" style="position:absolute;top:0;left:0;z-index: 1000;height:190px; width:190px;"></canvas>
+							<div id="rotatescroll">
+								<div class="viewport">
+									<ul class="overview">
+										
+									</ul>
+								</div>
+								
+								<div id="staticDot" style="position:absolute;top:0;left:85px;">
+									<img src="images/sliderCircOne.png"  />
+								</div>
+								<div class="dot"></div>
+								<div class="overlay"></div>
+								<div class="thumb"></div>
+							</div>
+							<div id="background">
+								<div id="txtBack" style="margin: 78px 50px; text-align:center;">
+									<h4>Monto simulado:</h4>
+									<p style="color:#4f8aea;font-weight: bolder;">$<span id="cantidadPoner">0</span>.00 MXN</p>
+									<h2 style="color: #999; margin-top: 5;"> <span id="porcentaje">0</span>%</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="blockcp">
+					<p>Elija el plazo de pago o escriba los meses que requiera para pagar</p>
+					<div class="bockcpcontent">
+						<p>Plazo maximo autorizado</p>
+						<p>36 meses</p>
+						<div style="margin:auto;width:190px;height:190px;">
+							<img src="images/PlazoSimulado.png" alt="">
+							
+						</div>
+					</div>
+				</div>
+				<div class="blockcp">
+					<p>Simulacion con base en el monto del prestamo deseado</p>
+					<div class="bockcpcontent">
+						<table id="tablaDatos">
+							<tr>
+								<td colspan="2"><b>Cuenta de Dep&oacute;sito</b></td>
+							</tr>
+							<tr>
+								<td colspan="2"> 
+									<img src="img/fake/depositos.png" alt="">
+								</td>
+							</tr>
+
+
+							<tr>
+								<td  colspan="2">
+									<b>Datos del cr&eacute;dito:</b>
+								</td>
+							</tr>
+							<tr style="padding-right: -top:5px">
+								<td>Monto de cr&eacute;dito:</td>
+								<td><b>999,999.99</b></td>
+							</tr>
+							<tr>
+								<td>Monto a disponer:</td>
+								<td><b>999,999.99</b></td>
+							</tr>
+							<tr>
+								<td>Pago mesual:</td>
+								<td><b>999,999.99</b></td>
+							</tr>
+							<tr>
+								<td>Plazo:</td>
+								<td><b>18</b></td>
+							</tr>
+							<tr>
+								<td>Meses de gracia:</td>
+								<td><b>Ninguno</b></td>
+							</tr>
+							<tr>
+								<td>Tasa de inter&eacute;s anual:</td>
+								<td><b>00.00%</b></td>
+							</tr>
+							<tr>
+								<td>Comisi&oacute;n por disposici&oacute;n:</td>
+								<td><b>999,999.99</b></td>
+							</tr>
+							<tr>
+								<td>Esquema de aseguramiento:</td>
+								<td>Lorem</td>
+							</tr>
+							
+						</table>
+					</div>
+				</div>
+			</div>
+			<p class="titlecp">2. Elija los meses de gracia</p>
+			<div class="boxselectcp">
+				<p>Maximo 3 meses desde el desembolso del prestamo y la fecha de pago de la primera amortizacion.</p>
+			</div>
+			<div id="botonera" style="float:right; margin-right:-10px; margin-top:35px;">
+				<div id="siguiente"><div class="btnaceptar" onclick="cambiaPasoImg()">Aceptar</div></div>
+			</div>
+		
+	</div><!--Fin step 1-->
+	
+	<div id="step2" class="pasos" style="display:none">
+		<div id="contenido2">
+							<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
+			   				<div id="img"></div>
+			   				<div id="form">
+			   					<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
+			   					<div id="buttons">
+			   					<input type="submit" value="Cancelar" id="can" onclick="destruyeOverlay();">
+			   					<input type="submit" value="Continuar" id="con" onclick="follow()">
+			   					</div>
+			   				</div>
+
+   						</div>
+
+		<h4 style="color:red;">Por favor confirme que la información desplegada a continuación es correcta:</h4>
+						<table class="tbl_info" style="width:100%;float:left;">
+
+				<tr>
+					<td style="width:200px;"><b>Datos del Cliente</b></td>
+					<td ></td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Titular</td>
+					<td >María Peralta Ramírez</td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Cuenta de depósito</td>
+					<td >1234****5678</td>
+				</tr>
+				<tr>
+					<td><b>Datos del Crédito:</b></td>
+					<td ></td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Monto del crédito:</td>
+					<td >999,999,999.00 (MXP)</td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Monto a disponer:</td>
+					<td ><span id="disposicion">0</span>.00 (MXP)</td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Pago mensual:</td>
+					<td >999,999,999.00 (MXP)</td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Plazo:</td>
+					<td >18</td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Meses de gracia:</td>
+					<td >Ninguno</td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Tasa de interés anual:</td>
+					<td >00.00%</td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Comisión por disposición:</td>
+					<td >999,999,999.00</td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Fecha de pago:</td>
+					<td >dd/mm/aaaa</td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Fecha de solicitud:</td>
+					<td >dd/mm/aaaa</td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Correo para notificación</td>
+					<td >correo@correo.com</td>
+					<td> <a style="color:#1974F0">(Editar)</a></td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Celular para notificación</td>
+					<td>55 55 55 55 55</td>
+					<td> <a style="color:#1974F0">(Editar)</a></td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Tabla de amortización:</td>
+					<td><a style="color:#1974F0">*Descargar</a></td>
+				</tr>
+
+			</table>
+				<div class="botonera" style="float:right; margin-right:-235px; margin-top:13px;">
+					<div class="btn" onclick="backPasoImg();">Regresar</div>
+					
+					<div id="btn1" class="btnaceptar">Aceptar</div>
+				</div>
+	</div><!--Fin step 2-->
+	
+	<div id="step3">
+
+		<div id="vtacruzada">
+							<div class="vtaimg">
+							</div>
+							
+							<p style="margin:10px 0 0 0;float:left;font-weight:bold; color:red;">Quizá le interese:</p>
+							
+							<div class="vtapanel" >
+								<div class="vtabtn" style="text-align:left;color:black;"><p style="margin-left:10px">TRANSFERENCIA DE SALDOS</p></div>
+								<div class="vtabtn" style="text-align:left;color:black;"><p style="margin-left:10px">PAGO DE SERVICIOS</p></div>
+								<div class="vtabtn" style="text-align:left;color:black;"><p style="margin-left:10px">RECOMPENSAS</p></div>
+							</div>
+		</div>
+		<h4 style="color:red;">Por favor confirme que la información desplegada a continuación es correcta:</h4>
+						<table class="tbl_info" style="border:0;width:70%;float:left; height:385px">
+
+				<tr>
+					<td style="width:200px;"><b>Datos del Cliente</b></td>
+					<td ></td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Titular</td>
+					<td >María Peralta Ramírez</td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Cuenta de depósito</td>
+					<td >1234****5678</td>
+				</tr>
+				<tr>
+					<td><b>Datos del Crédito:</b></td>
+					<td ></td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Monto del crédito:</td>
+					<td >9,000,000.00 (MXP)</td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Monto a disponer:</td>
+					<td >9,000,000.00(MXP)</td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Pago mensual:</td>
+					<td >999,999,999.00 (MXP)</td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Plazo:</td>
+					<td >18</td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Meses de gracia:</td>
+					<td >Ninguno</td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Tasa de interés anual:</td>
+					<td >00.00%</td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Comisión por disposición:</td>
+					<td >999,999,999.00</td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Fecha de pago:</td>
+					<td >dd/mm/aaaa</td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Fecha de solicitud:</td>
+					<td >dd/mm/aaaa</td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Correo para notificación</td>
+					<td >correo@correo.com</td>
+					<td> <a style="color:#1974F0">(Editar)</a></td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Celular para notificación</td>
+					<td>55 55 55 55 55</td>
+					<td> <a style="color:#1974F0">(Editar)</a></td>
+				</tr>
+				<tr>
+					<td style="color:#999999">Tabla de amortización:</td>
+					<td><a style="color:#1974F0">*Descargar</a></td>
+				</tr>
+
+			</table>
+				<div class="botonera" style="float:right; margin-right:-235px; margin-top:13px;">
+					<div class="btn">Imprimir Documentación</div>
+					
+					<div><div class="btnaceptar" onclick="cierraWidget()">Finalizar</div></div>
+				</div>
+		
+
+	</div><!--Fin step 3-->
+	
+	<div id="step4" class="pasos">
+
+		
+	</div><!--Fin step 4-->
+
+</div>
+	
+		<div id="navegador">
+			<ul>
+				<li class="active">DISPOSICI&Oacute;N DE CR&Eacute;DITOS</li>
+				<li  onclick="cambiaEstado('4')">CONSULTAR CR&Eacute;DITOS</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+		var total = .1;
+		var c=document.getElementById("myCanvas");
+		c.width=190;
+		c.height=190;
+		var ctx=c.getContext("2d");
+		function aumentaTotal(numero){
+			ctx.clearRect(0, 0, c.width, c.height);
+			ctx.restore();
+			//total += .1;
+				
+				console.log("numero"+numero+"::::"+numero*Math.PI);
+				ctx.beginPath();
+				ctx.lineWidth = 8;
+				ctx.strokeStyle = "#4f8aea";
+				//ctx.arc(160,160,150,((90*Math.PI)/-180), numero*Math.PI));
+				ctx.arc(95,95,88,0,numero*Math.PI);
+				ctx.stroke();
+				ctx.restore();
+				
+		}
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		/*$('#rotatescroll').tinycircleslider({
+			//interval: true, snaptodots: true
+		
+			});*/
+	$('#rotatescroll').tinycircleslider({
+callback: function(element, index){
+console.log(element, index);
+}
+});
+
+	});
+</script>
