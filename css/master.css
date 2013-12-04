@@ -301,3 +301,9 @@ font-weight:bold;
 				margin-top:-7px;
 				cursor: pointer;
 			}
+
+
+
+	#fadeAvatar{
+		display:none;background:url(../img/menuLateral/avatar_mensaje.jpg) no-repeat; height:170px;width:170px;position:absolute;top:0;left:0;z-index: 1000;cursor:pointer;
+	}
