@@ -1,0 +1,20 @@
+
+<%
+    // repeat items 
+    _.each(rewards,function(item,key,list){
+        // create variables
+        //var f = item.name.split("").shift().toLowerCase();
+        //console.log(item.get("i_id"));
+        var id = item.get("i_id");
+        var name = item.get("name");
+        var image = item.get("img_small");
+%>
+    <div class="reward-item">
+        <a href="#reward?<%=id%>">
+        	<img src="<%=image%>"/>
+        	<span><%=name%></span>
+        </a>
+    </div>
+<%
+    });
+%>
