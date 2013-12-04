@@ -9,6 +9,7 @@
 <script src="../js/ddSlick.js"></script>
 <script src="../js/balanceTransfer.js"></script>
 <script src="../js/componentes.js"></script>
+<script src="js/transferencias.js"></script>
 
 
 <style>
@@ -48,6 +49,14 @@
 $(document).ready(function(){
   switchFunc('switchbox',"Si","NO",""); 
 });
+
+function cambiaPasoImg(){
+	$("#stepbar img").attr("src","../img/fake/pasos/paso2.png");
+}
+
+function backPasoImg(){
+	$("#stepbar img").attr("src","../img/fake/pasos/paso1.png");
+}
 </script>
 </head>
 
@@ -67,39 +76,40 @@ $(document).ready(function(){
 			</div>
 		</div>
 		<div id="stepbar">
+				<img src="../img/fake/pasos/paso1.png"/>
 		</div>		
 		<div id="contenido">
 			<h4 style="color:red">Seleccione de las últimas transferencias por titular 
 									de la cuenta o ingrese la información correspondiente 
 									para realizar la transferencia</h4>
-			<div style="width:750px;height:115px; overflow:hidden;border:2px #a1a1a1 solid;">					
+			<div style="width:725px;height:115px; overflow:scroll;border:2px #a1a1a1 solid;">					
 			<table class="transf">
 				<tr >
 					<td>Nombre del Titular</td>
 					<td>Fecha</td>
 					<td>Importe (MXP)</td>
 				</tr>
-				<tr>
+				<tr class="lista">
 					<td>Lorem Ipsum</td>
 					<td>dd/mm/aaaa</td>
 					<td>999,999,999.00</td>
 				</tr>
-				<tr>
+				<tr class="lista">
 					<td>Lorem Ipsum</td>
 					<td>dd/mm/aaaa</td>
 					<td>999,999,999.00</td>
 				</tr>
-				<tr>
+				<tr class="lista">
 					<td>Lorem Ipsum</td>
 					<td>dd/mm/aaaa</td>
 					<td>999,999,999.00</td>
 				</tr>
-				<tr>
+				<tr class="lista">
 					<td>Lorem Ipsum</td>
 					<td>dd/mm/aaaa</td>
 					<td>999,999,999.00</td>
 				</tr>
-				<tr>
+				<tr class="lista">
 					<td>Lorem Ipsum</td>
 					<td>dd/mm/aaaa</td>
 					<td>999,999,999.00</td>
@@ -160,9 +170,9 @@ $(document).ready(function(){
 				
 			</div> 
 			
-			<div class="botonera" style="width:auto;margin-right:20px">
+			<div class="botonera">
 				<div class="btn">Cancelar</div>
-				<div class="btnaceptar">Aceptar</div>
+				<div class="btnaceptar" id="siguiente" onclick="cambiaPasoImg()">Aceptar</div>
 			
 			</div>
 
