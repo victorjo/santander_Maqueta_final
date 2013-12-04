@@ -97,7 +97,7 @@ var widgets = [
 				},
 				{
 					id:5,
-					type:1,
+					type:2,
 					order:2,
 					contentMin:'',
 					contentMax:''
@@ -132,14 +132,14 @@ var widgets = [
 				{
 					id:4,
 					type:1,
-					order:7,
+					order:8,
 					contentMin:'',
 					contentMax:''
 				},
 				{
 					id:9,
 					type:3,
-					order:8,
+					order:7,
 					contentMin:'',
 					contentMax:''
 				},
@@ -241,9 +241,9 @@ function posWidgets(qwerty){
 
 		if($(window).width()>1490 || !spDisplay ) 
 		{
-			$("#wrappWidgets").css("width","1028px");
+			$("#wrappWidgets").css("width","1022px");
 
-			$("[data-pos='3']").after('<div class="widget-min col1 alto2 " data-max="false" data-pos="codom"><img src="img/fake/carrito.jpg" height="275"/></div>');
+			$("[data-pos='3']").after('<div class="widget-min col1 alto2"  data-max="false" data-pos="codom"><img src="img/fake/carrito.jpg" height="275"/></div>');
 			$("[data-pos='7']").css('float','left');
 			var alen = 1030;
 		/*}else if($(window).width()<=768){ ****CHANGE FOR TOUCH EVENT***
