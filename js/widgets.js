@@ -9,7 +9,7 @@ var tamanoWidget = 587;
 
 $(document).ready(function(){
 	$("body").append("<div style='position:fixed;left:50%;top:50%;z-index:800;display:none' class='loader'><img style='position:relative;left:-110px' src='img/loader.gif'></div>");
-	//if(typeof window.chrome =="undefined") reject();
+	if(typeof window.chrome =="undefined") reject();
 	posWidgets(0);
 	$(".widget-min").click(function(){
 		getInstance(this);
@@ -122,7 +122,7 @@ var widgets = [
 				{
 					id:5,
 					type:2,
-					order:2,
+					order:4,
 					contentMin:'',
 					contentMax:''
 				},{
@@ -141,7 +141,7 @@ var widgets = [
 				},
 				{
 					id:2,
-					type:2,
+					type:1,
 					order:4,
 					contentMin:'',
 					contentMax:''
@@ -175,7 +175,7 @@ var widgets = [
 					contentMin:'',
 					contentMax:''
 				},
-
+/*
 				{
 					id:11,
 					type:2,
@@ -184,7 +184,7 @@ var widgets = [
 					contentMax:''
 				}
 
-
+*/
 			];
 
 
@@ -243,6 +243,7 @@ function posWidgets(qwerty){
 				}
 			}); 
 		}
+		if(v.id==2) newWidget.css("float","right");
 		wrapper.append(newWidget);
 		newWidget.attr({"data-pos":parser+1,"data-id":v.id});
 		//if((parser%3)==0 && parser!=0) newWidget.css('float','right');
