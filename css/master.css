@@ -7,6 +7,7 @@
 			{
 				margin:0px auto;
 				width:100%;
+				background: #e8e8e8;
 
 			}
 			#wr_SuperBanner{
@@ -124,10 +125,10 @@
 			
 			#wr_btnNav ul li{
 				/*background: url(../img/menuLateral/btn_menu.png);*/
-				width: 158px;
+				width: 150px;
 				height: 20px;
 				padding: 10px 10px 0;
-				border-bottom: 1px solid #b9b9b9;
+				border-bottom: 1px solid #bbbbbb;
 				cursor: pointer; 
 				font-size: 11px;
 				text-transform: uppercase;
@@ -219,7 +220,7 @@
 			}
 
 			#wrappWidgets{
-				overflow-y:scroll;width:771px;height:600px;position:static;background:#dedede;opacity:0;
+				overflow-y:scroll;width:771px;height:600px;position:static;opacity:0;
 			}
 
 			.widget-min
