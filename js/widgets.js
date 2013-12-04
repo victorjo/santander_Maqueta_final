@@ -77,7 +77,8 @@ function ajustaBannerHeight(){
 			restaElementos += $("#tipoServ").height();
 			restaElementos += 10;
 			restaElementos = altoVentana - restaElementos;
-			$("#wr_SuperBanner").height($("#wr_SuperBanner").height() + restaElementos);
+			//$("#wr_SuperBanner").height($("#wr_SuperBanner").height() + restaElementos);
+			$("#wr_SuperBanner").height(600);
 			
 
 		}
@@ -141,7 +142,17 @@ var widgets = [
 					order:8,
 					contentMin:'',
 					contentMax:''
+				},
+
+				{
+					id:10,
+					type:1,
+					order:9,
+					contentMin:'',
+					contentMax:''
 				}
+
+
 			];
 
 
@@ -232,7 +243,7 @@ function posWidgets(qwerty){
 		{
 			$("#wrappWidgets").css("width","1028px");
 
-			$("[data-pos='3']").after('<div class="widget-min col1 alto2 " data-pos="codom"><img src="img/fake/carrito.jpg" height="275"/></div>');
+			$("[data-pos='3']").after('<div class="widget-min col1 alto2 " data-max="false" data-pos="codom"><img src="img/fake/carrito.jpg" height="275"/></div>');
 			$("[data-pos='7']").css('float','left');
 			var alen = 1030;
 		/*}else if($(window).width()<=768){ ****CHANGE FOR TOUCH EVENT***
@@ -441,7 +452,7 @@ function outaLogin(){
 }
 var i=1;
 function motorSuperbanner(){
-
+/*
 		i++;
 		if( i>4){
 		i=1  
@@ -455,5 +466,5 @@ function motorSuperbanner(){
 
 		})
 
-		
+		*/
 }
