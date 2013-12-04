@@ -30,10 +30,14 @@ h1,h2,h3,h4,h5{
 }
 
 .f_titleWid{
-        margin: 8px 0 0 175px; 
-		font-size: 13px;
-		font-weight: bolder;
-		float:left;}
+         font-size: 13px;
+    font-weight: bolder;
+    margin: 8px auto 8px 45%;
+    position: absolute;
+    text-align: center;
+    width: 170px;
+    overflow: visible;
+		}
 
 .f_titleWidred{
         font-size: 12px;
@@ -44,8 +48,9 @@ h1,h2,h3,h4,h5{
 
 
 #header {
-        background-image:url('../lineagrafica/widamphdr.png');
-        background-size:100% 100%;
+        /*background-image:url('../lineagrafica/widamphdr.png');
+        background-size:100% 100%;*/
+        background: white;
         width: 935px;
         height: 30px;
         float: right;
@@ -137,6 +142,7 @@ h1,h2,h3,h4,h5{
     padding: 20px;
     position: relative;
     width: 719px;
+    background: white;
   
     
 
