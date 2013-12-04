@@ -446,7 +446,7 @@ function outaLogin(){
 	var absoluteW = $("#absoluteWrapper");
 	$("#loginWrapper").animate({"left":"-="+$(this).width()},1500,function(){$(this).hide()});
 	absoluteW.animate({"left":"0px"},1500);
-	setTimeout(function(){$("#wr_SuperBanner").animate({"left":"0px"},1000);},1200);
+	setTimeout(function(){$("#wr_SuperBanner").animate({"left":"0px"},0);},0);
 	var outLoginBan = false;
 	
 }

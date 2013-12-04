@@ -94,14 +94,14 @@ font-weight:bold;
 			}
 
 			#wr_btnNavHeader img{
-				border-right: 1px ridge #830d22;
+				border-right: 1px ridge #710b1c;
 				padding: 5px 10px;
 				cursor: pointer;
 				float:right;
 			}
 
-			#wr_btnNavHeader img:first-child{
-				border-left: 1px solid #9a051d;
+			#wr_btnNavHeader img:last-child{
+				border-left: 1px solid #710b1c;
 			}
 
 			#wr_PrinNivel1{
