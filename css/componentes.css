@@ -56,7 +56,7 @@ right: 0px;
 /* PENDIENTE : SWITCH PARA 3 TAMAÃ‘OS - small , medium y large;
 /*Switch button -- palabras cortas (Normal)*/
 .switch{
-	width:98px;
+	width:130px;
 	border:1px #a0a0a0 solid;
 	border-radius:5px;
 	height:28px;
