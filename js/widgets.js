@@ -439,7 +439,7 @@ function outaLogin(){
 }
 var i=1;
 function motorSuperbanner(){
-
+/*
 		i++;
 		if( i>4){
 		i=1  
@@ -453,5 +453,5 @@ function motorSuperbanner(){
 
 		})
 
-		
+		*/
 }
