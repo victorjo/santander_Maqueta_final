@@ -109,8 +109,7 @@ p{}
         padding: 10px 0 10px 10px;
         cursor: pointer;
       	background-image:url('../lineagrafica/widamphdr.png');
-       	background-color:red;
-        background-size:100% 100%;
+       	background-size:100% 100%;
         height:30px;
 }
 
@@ -774,6 +773,8 @@ margin-left: 8px;
     	position: relative;
 		left: 17px;
     }
+
+    
     #wr_btnNavHeader {
     	width:323px;
     }

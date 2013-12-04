@@ -4,8 +4,8 @@ var globalFlah = 0;
 var normal = 1610;
 var altoVentana = $(window).height();
 var responsiveFlag = 0;
-
 var tamanoWidget = 587;
+
 
 $(document).ready(function(){
 	//if(typeof window.chrome =="undefined") reject();
@@ -78,9 +78,7 @@ function ajustaBannerHeight(){
 			restaElementos += 10;
 			restaElementos = altoVentana - restaElementos;
 			$("#wr_SuperBanner").height($("#wr_SuperBanner").height() + restaElementos);
-			// centra la imagen al div que lo contiene
-			//$("#wr_SuperBanner img").css("margin-top",(restaElementos/2) +"px")
-			$("#wr_SuperBanner img").css("margin-top",10 +"px")
+			
 
 		}
 
@@ -143,7 +141,17 @@ var widgets = [
 					order:8,
 					contentMin:'',
 					contentMax:''
+				},
+
+				{
+					id:10,
+					type:1,
+					order:9,
+					contentMin:'',
+					contentMax:''
 				}
+
+
 			];
 
 
@@ -415,11 +423,14 @@ function newWidgetInstance(obj)
 
 }
 
+
+
+
 function valToForm(){
 	var absoluteW = $("#absoluteWrapper");
 	absoluteW.show();
 	$("#loginWrapper").animate({"background-position":"+=50px"},"slow");
-	$("#wr_SuperBanner").css({"position":"relative",'background-image':'url(img/superbanner/1.png)','top':'10px'}).animate({'left':'-255px'},800,function(){ $("#titleLogin").next().html('<h4>EN SANTANDER LE DAMOS VIDA A TUS IDEAS</h4><h1>Bienvenido a SUPERNET <br> la banca mas personal que nunca.</h1><div class="btnaceptar" style="width:180px;margin-left:0px;margin-right:15px" onclick="outaLogin()">Saltar Intro</div><p style="font-weight:bold;margin-top: 18px;">Omitir en: <span class="seger" style="">04</span></p>');$("#titleLogin").next().fadeIn(); });
+	$("#wr_SuperBanner").css({"position":"relative",'background-image':'url(img/superbanner/1.png)'}).animate({'left':'-255px'},800,function(){ $("#titleLogin").next().html('<h4>EN SANTANDER LE DAMOS VIDA A TUS IDEAS</h4><h1>Bienvenido a SUPERNET <br> la banca mas personal que nunca.</h1><div class="btnaceptar" style="width:180px;margin-left:0px;margin-right:15px" onclick="outaLogin()">Saltar Intro</div><p style="font-weight:bold;margin-top: 18px;">Omitir en: <span class="seger" style="">04</span></p>');$("#titleLogin").next().fadeIn(); });
 	$("#titleLogin").next().fadeOut('fast');
 	setTimeout(function(){ $(".seger").text("03"); },1000);
 	setTimeout(function(){ $(".seger").text("02"); },2000);
@@ -429,15 +440,18 @@ function valToForm(){
 
 }
 
+
 function outaLogin(){
 	var absoluteW = $("#absoluteWrapper");
 	$("#loginWrapper").animate({"left":"-="+$(this).width()},1500,function(){$(this).hide()});
 	absoluteW.animate({"left":"0px"},1500);
-	setTimeout(function(){$("#wr_SuperBanner").animate({"left":"+=255px"},1000);},1200);
+	setTimeout(function(){$("#wr_SuperBanner").animate({"left":"0px"},1000);},1200);
+	var outLoginBan = false;
+	
 }
 var i=1;
 function motorSuperbanner(){
-
+/*
 		i++;
 		if( i>4){
 		i=1  
@@ -451,5 +465,5 @@ function motorSuperbanner(){
 
 		})
 
-		
+		*/
 }
