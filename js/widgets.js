@@ -150,6 +150,14 @@ var widgets = [
 					order:0,
 					contentMin:'',
 					contentMax:''
+				},
+
+				{
+					id:11,
+					type:2,
+					order:1000,
+					contentMin:'asdasdasdasd',
+					contentMax:''
 				}
 
 
