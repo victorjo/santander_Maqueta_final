@@ -6,11 +6,26 @@ var altoVentana = $(window).height();
 var responsiveFlag = 0;
 var tamanoWidget = 587;
 
+function validaBrowser(){
+	var ua = navigator.userAgent.toLowerCase(); 
+ if (ua.indexOf('safari')!=-1){ 
+   	if(ua.indexOf('chrome')  > -1){
+    
+    return false; // chrome
+   }
+  }else{
+  	reject();
+  }
+
+}
+
+
 
 $(document).ready(function(){
 	$("body").append("<div style='position:fixed;left:50%;top:50%;z-index:800;display:none' class='loader'><img style='position:relative;left:-110px' src='img/loader.gif'></div>");
+	validaBrowser()
 	//if(typeof window.chrome =="undefined" || typeof window.safari == "undefined") reject();
-	alert(window.safari);
+	validaBrowser();
 	posWidgets(0);
 	$(".widget-min").click(function(){
 		getInstance(this);
@@ -419,7 +434,7 @@ function newWidgetInstance(obj)
 			this.obj.attr({"instanced":"true"});
 			this.obj.css({'position':'fixed','top':this.topPos,'left':this.leftPos,'z-index':50});
 			var forA = this.obj;
-			forA.children().fadeOut(600);
+			forA.children().fadeOut(0);
 			this.obj.animate({width:'935px',height:'541px',left: ($(window).width()/2)-467+'px',top:'10%'},600,function(){creaOverlay('#000',document.body,0); forA.children().fadeOut('fast'); var scope = $(this);  /*}).animate({width:'935px',height:'541px'},800,function(){*/
 				$.ajax({
 					url:'widgets/max/w_'+forA.attr("data-id")+'/index.html',
