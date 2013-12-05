@@ -286,7 +286,7 @@ a:hover {
 					*Calculado al 08 Noviembre del 2013. Considera una línea de crédito de $999,999,999.00, a un plazo de 3 años de amortización del crédito y cubriendo el porcentaje del pago mínimo.
 					</p>
 				</div>
-                <div class='btn Fright marginOne continuar btnaceptar'  style="margin-right: -10px;margin-top: 108px;float: right;">Continuar</div>
+                <div  id="continuar1" class='btn Fright marginOne btnaceptar'  style="margin-right: -10px;margin-top: 39px;float: right;">Continuar</div>
             </div><!-- Fin step1 -->
 
             <div id="step2" class="pasos"><!-- step2 -->
@@ -358,62 +358,94 @@ a:hover {
 				</div>
 			</div><!-- Fin step2 -->
              <div id="step3" class="pasos"><!-- step3 -->
-            	<div id="vtacruzada" style="margin:0">
-				
-				<div class="vtaimg" style="margin-left:-10px;">
-				</div>
-				
-				<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
-				
-				<div class="vtapanel">
-					<div class="vtabtn"><img src="../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-					<div class="vtabtn"><img src="../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-					<div class="vtabtn"><img src="../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-				</div>
-				
-			</div>
-			<p style="color:red"><b>1. Comprobante de la Solicitud de Transferencia de Saldos</b></p>
-			<div id="contenidoVentaCruzada" style="float:left;width:492px;height: 233px;">
-				<table class="tbl_info" style="width:90%;float:left;border: 1px solid #A8A8A8;">
-					<tr>
-						<td>Tarjeta destino</td>
-						<td style="color:#CCCCCC">1234***5678</td>
-					</tr>
-					<tr>
-						<td>Tarjeta cargo</td>
-						<td style="color:#CCCCCC">1234***5678</td>
-					</tr>
-					<tr>
-						<td>Institución:</td>
-						<td style="color:#CCCCCC">Banamex</td>
-					</tr>
-					<tr>
-						<td>Saldo a transferir:</td>
-						<td style="color:#CCCCCC">9,999,999,00(MXP)</td>
-					</tr>
-					<tr>
-						<td>Pago mensual:</td>
-						<td style="color:#CCCCCC">9,999,999,00(MXP)</td>
-					</tr>
-					<tr>
-						<td>Tasa:</td>
-						<td style="color:#CCCCCC">21.08%</td>
-					</tr>
-					<tr>
-						<td>Fecha y hora de operaci&oacute;n:</td>
-						<td style="color:#CCCCCC">11/12/2013 13:30 hrs.</td>
-					</tr>
-					<tr>
-						<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px;margin-top:20px;">Deseo hacer<br />otra transferencia</div></td>
-						
-					</tr>
-				</table>
-			</div>
+            	<div id="vtacruzada"> 
 			
-			<div class="botonera" style="width:auto;margin-top:168px;margin-left:-8px;margin-right:-215px" >
-				<div class="btn" style=" margin-top: 20px"><img src="../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" style="margin-top:0px">Imprimir</p></div>
-				<div class=" btnaceptar " onclick="cierraWidget()" style="float:right;margin-right:0px;margin-top: 20px">Finalizar</div>
-			</div>
+						<div class="vtaimg">
+						</div>
+						
+						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
+						
+						<!--<div class="vtapanel">
+							<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+							<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+							<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+						</div>-->
+						<div id="btn_paso3">
+		                     <ul>
+		                    	<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
+		                        <li class="btnNav"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">Pagar Servicios</span></li>
+		                        <li class="btnNav"><img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">Realizar una Domiciliación</span></li>
+		                      </ul>
+		                </div>
+						
+					</div>
+
+						<h4 style="color:red;">Comprobante de transferencia entre mis cuentas Santander</h4>
+
+									
+							<table class="tbl_info" style="width:60%;float:left;">
+<tr>
+								<td style="width:200px;">Cuenta cargo:</td>
+								<td style="color:#CCCCCC">1234****5678</td>
+							</tr>
+							<tr>
+								<td>Cuenta destino:</td>
+								<td style="color:#CCCCCC">1234****5678</td>
+							</tr>
+							<tr>
+								<td>Concepto:</td>
+								<td style="color:#CCCCCC">123456789123456789123456789 <br> 123456789123456789
+								</td>
+							</tr>
+							<tr>
+								<td>Importe:</td>
+								<td style="color:#CCCCCC">123456789123456789</td>
+							</tr>
+							<tr>
+								<td>Fecha de transferencia:</td>
+								<td style="color:#CCCCCC">13/11/2013</td>
+							</tr>
+							<tr>
+								<td>Fecha programada de transferencia:</td>
+								<td style="color:#CCCCCC">16/11/2013</td>
+							</tr>
+							<tr>
+								<td>Notificación previa al pago:</td>
+								<td style="color:#CCCCCC">3 días</td>
+							</tr>
+							<tr>
+								<td>Comisión por transferencia:</td>
+								<td style="color:#CCCCCC">0.00 (MXP)</td>
+							</tr>
+							<tr>
+								<td>I.V.A. por comisión de transferencia:</td>
+								<td style="color:#CCCCCC">0.00 (MXP)</td>
+							</tr>
+							<tr>
+								<td>Correo para notificacion:</td>
+								<td style="color:#CCCCCC">veronica.pimentel@gmail.com</td>
+							</tr>
+							<tr>
+								<td>Celular para notificacion:</td>
+								<td style="color:#CCCCCC">5555555555</td>
+							</tr>
+							<tr>
+								<td>Folio SuperNET:</td>
+								<td style="color:#CCCCCC">65675868979798</td>
+							</tr>
+							<tr>
+								<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo hacer<br />otra transferencia</div></td>
+								
+							</tr>
+						</table>
+
+						<table style="	float: left; margin-left: -22px; margin-top:25px;">
+							<tr>
+								<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
+								<td><div class="btn" >Guardar en operaciones favoritas</div></td>
+								<td><div class="btn btnaceptar" onclick="cierraWidget();">Finalizar</div></td>
+							</tr>
+						</table>
             </div><!-- Fin step3 -->
         </div>
         <!-- FIN Funcionalidad: Solicitar -->
@@ -472,7 +504,7 @@ a:hover {
     <div id="navegador">
         <ul>
             <li class="active">SOLICITAR</li>
-            <li  onclick="cambiaEstado('4')">CONSULTAR</li>
+            <li >CONSULTAR</li>
         </ul>
     </div>
 </div>
@@ -481,7 +513,7 @@ a:hover {
 <script>
 	
 	
-
+/*
 	function cambiaEstado(step){
 		switch(step) {
 
@@ -521,7 +553,7 @@ a:hover {
 		}
 		
 	}
-
+*/
 
 
 	

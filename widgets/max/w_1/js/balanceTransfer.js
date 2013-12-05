@@ -3,7 +3,7 @@ $(document).ready(function(){
 });
 
 /*Botones*/
-$(".continuar").click(function(){
+$("#continuar1").click(function(){
 		cambiaEstados("2",1,2);
 });
 
@@ -19,10 +19,11 @@ $(".continuar2").click(function(){
 //Transicion entre operaciones
 $("#navegador > ul > :nth-child(1)").click(function(){
 	$("#stepbar img").attr("src","../img/fake/pasos/paso1.png");
-	cambiaFlujo("#step1");
+	//cambiaFlujo("#step1");
 });
 
-$("#navegador > ul > :nth-child(2)").click(function(){
+$("#navegador > ul > :nth-child(2)").click(function(e){
+	e.preventDefault();
 	$("#stepbar img").attr("src","../img/fake/pasos/paso1.png");
 	cambiaFlujo("#step4");
 });

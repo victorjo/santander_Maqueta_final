@@ -284,7 +284,6 @@ function destruyeOverlay(){
 
 /*Transicion de pasos*/
 function cambiaFlujo(step){
-  
   var npasos = $(".pasos").size();
     $(".pasos").each(function(index){
       if((++index) == npasos){
