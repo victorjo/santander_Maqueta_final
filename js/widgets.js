@@ -21,8 +21,9 @@ function validaBrowser(){
 
 
 
+
 $(document).ready(function(){
-	$("body").append("<div style='position:fixed;left:50%;top:50%;z-index:800;display:none' class='loader'><img style='position:relative;left:-110px' src='img/loader.gif'></div>");
+	$("body").append("<div class='loader'><span></span><span></span><span></span></div>");
 	validaBrowser()
 	//if(typeof window.chrome =="undefined" || typeof window.safari == "undefined") reject();
 	validaBrowser();
