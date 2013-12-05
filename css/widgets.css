@@ -35,10 +35,20 @@ h1,h2,h3,h4,h5{
     margin: 8px auto 8px 45%;
     position: absolute;
     text-align: center;
+<<<<<<< HEAD
     width: 239px;
+=======
+    width: 200px;
+>>>>>>> ed005d4ddc42ca24044f7585dc1194804c139cc8
     overflow: visible;
 		}
-
+/*=======
+        margin: 8px 0 0 175px; 
+		font-size: 13px;
+		font-weight: bolder;
+		float:left;}
+>>>>>>> 9e00ca43e238264f819fba9f21a81204a2691272
+*/
 .f_titleWidred{
         font-size: 12px;
         font-weight: bolder;
@@ -48,9 +58,8 @@ h1,h2,h3,h4,h5{
 
 
 #header {
-        /*background-image:url('../lineagrafica/widamphdr.png');
-        background-size:100% 100%;*/
-        background: white;
+        background-image:url('../lineagrafica/widamphdr.png');
+        background-size:100% 100%;
         width: 935px;
         height: 30px;
         float: right;
@@ -66,6 +75,7 @@ h1,h2,h3,h4,h5{
     height: 28px;
     float: right;
     border:1px solid #dadada;
+    text-align: center;
     
 }
 
@@ -142,7 +152,6 @@ h1,h2,h3,h4,h5{
     padding: 20px;
     position: relative;
     width: 719px;
-    background: white;
   
     
 
@@ -463,7 +472,7 @@ margin-left: 8px;
         }
 
         .tbl_consulta tr:nth-child(even) td{
-                background-color:#F0F0F0;
+                background-color:white;
         }
 
 
@@ -753,6 +762,7 @@ margin-left: 8px;
         left:-190px;
         z-index:10;
         background:#383838;
+		margin-right: 0px;
     } 
     #wr_SuperBanner { display: none; }
     #dataClient{

@@ -9,6 +9,36 @@ $(document).ready(function(){
 	switchFuncDomMas("switchbox1","Si","No","Dom");
 	switchFuncDomMas("switchbox2","Si","No","Dom");
 	ocultaSteps(15);
+
+	//Funciones de consulta
+	$( "#nav" ).menu({position: {at: "left bottom"}});
+		$('#circulo').mouseover(function(){
+			 $('.imagen').attr('src','../../img/interfaz/paginador_encendido.png');
+		});
+
+		$('.activo').click(function(){
+			 $(this).attr('src','../../img/iconos/favorito_on.png');
+		});
+
+		//programada
+		$('#prog').click(function(){
+			$('#ok2').hide();	
+			$('#ok1').show();
+			$('.cambio').text('Programada');
+		});
+
+		//Realizada
+		$('#rel').click(function(){
+			$('#ok1').hide();	
+			$('#ok2').show();
+			 $('.cambio').text('Realizada');
+		});
+
+		//funcionalidad de dias
+		$('#3d,#7d,#1m,#3m').click(function(){
+			 
+			 $('.dias').html("&nbsp;en&nbsp;"+$(this).text());
+		});
 });
 
 function cambiaPasoImg(){
@@ -61,7 +91,66 @@ $("#regresar2").click(function(){
 			});
 	});
 
+//dar de alta y baja una transferencia
+	// ALTA
+	$("#darAlta").click(function(){
+		$("#step8").fadeOut("slow",function(){
+			$("#step9").fadeIn("slow");				
+			});
+	});
 
+	$("#siguiente5").click(function(){
+		$("#step9").fadeOut("slow",function(){
+			$("#step10").fadeIn("slow");				
+			});
+	});
+
+	$("#siguiente6").click(function(){
+		$("#step10").fadeOut("slow",function(){
+			$("#step11").fadeIn("slow");				
+			});
+	});
+
+	$("#regresar3").click(function(){
+		$("#step10").fadeOut("slow",function(){
+			$("#step9").fadeIn("slow");				
+			});
+	});
+
+	//BAJA
+
+	$("#darBaja").click(function(){
+		$("#step8").fadeOut("slow",function(){
+			$("#step12").fadeIn("slow");				
+			});
+	});
+
+	$("#regresar4").click(function(){
+		$("#step12").fadeOut("slow",function(){
+			$("#step8").fadeIn("slow");				
+			});
+	});
+
+	$("#siguiente7").click(function(){
+		$("#step12").fadeOut("slow",function(){
+			$("#step13").fadeIn("slow");				
+			});
+	});
+
+	$("#finAlta").click(function(){
+		$("#step11").fadeOut("slow",function(){
+			$("#step8").fadeIn("slow");				
+			});
+	});
+
+	$("#finBaja").click(function(){
+		$("#step13").fadeOut("slow",function(){
+			$("#step8").fadeIn("slow");				
+			});
+	});
+
+
+//fin dar de alta una transferencia
 //Transicion entre operaciones
 $("#navegador > ul > :nth-child(1)").click(function(){
 	cambiaFlujo("#step1");
@@ -72,9 +161,13 @@ $("#navegador > ul > :nth-child(2)").click(function(){
 	cambiaFlujo("#step4");
 });
 
-/*($("#navegador > ul > :nth-child(3)").click(function(){
-	cambiaFlujo("#step10");
-});*/
+$("#navegador > ul > :nth-child(3)").click(function(){
+	cambiaFlujo("#step8");
+});
+
+$("#navegador > ul > :nth-child(4)").click(function(){
+	cambiaFlujo("#step14");
+});
 
 function cambiaFlujo(step){
 	

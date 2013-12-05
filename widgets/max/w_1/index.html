@@ -60,6 +60,15 @@ height: 25px;
 text-align: center;
 width: 200px;
 }
+/* 225*30 */
+input[type='text']{
+	width: 202px;
+	height:25px;
+	background: none repeat scroll 0 0 #EFEFEF;
+border: 1px solid #000000;
+text-align: center;
+
+}
 .smallTxt{
 	font-size: 10px;
 	line-height: 13px;
@@ -119,6 +128,7 @@ input[type=radio]{
 		</div>
 		<div id="contenido">
 			<h4 style="color:red">1. Realice su transferencia de saldo</h4>
+		 	<div id="envolvente1" style="overflow:hidden;border:1px solid #ccc;padding:5px;">
 			<p>Introduzca los datos de la tarjeta de cr&eacute;dito o comercial de la que desea transferir su saldo:</p>
 			
 			<div class="wra_Select">
@@ -128,7 +138,7 @@ input[type=radio]{
 			
 			<div class="wra_Select">
 				<p><b>Instituci&oacute;n bancaria o comercial</b></p>
-				<input type="text"  placeholder="Seleccionar" />
+				<input type="text"  placeholder="Banco externo" disabled/>
 				
 			</div>
 			<div class="wra_Select" style="width:238px !important">
@@ -136,12 +146,12 @@ input[type=radio]{
 				<input type="text" placeholder="$0.00" value="$0.00" />
 				
 			</div>
-			
+			</div>
 			
 			<div style="float: left; margin-top: 25px;">
 				
 				
-				<h4>2. Calcule el saldo a transferir</h4>
+				<h4 style="color:red">2. Calcule el saldo a transferir</h4>
 				<p>A continuaci&oacute;n, seleccione la(s) tarjeta(s) a la(s) que quiere tranferir el saldo:</p>
 				
 			</div>
@@ -156,45 +166,45 @@ input[type=radio]{
 				</tr>
 				<tr>
 					<td>
-						<input type="radio" name="balance" value="" placeholder="">
+						<input type="checkbox" name="balance" placeholder="" style="vertical-align: top;">
 						<img src="../../../img/balanceTransfer/tarjetaBT.png" alt="">
 					</td>
 					<td>
 						<p>Disponible:</p>
-						<p>$0,00.00 MXP</p>
+						<p>$3,500.00 MXP</p>
 					</td>
 					<td>
-						<input type="text" placeholder="$0.00" value="$0.00" />
+						<input type="text" placeholder="$0.00" value="$0.00" id="txtOne" disabled/>
 					</td>
 					<td>
 						<p>Mensual:</p>
-						<p>$9,999,999.00 MXP</p>
+						<p>$1,000.00 MXP</p>
 					</td>
 					<td>
 						<p>Tasa:</p>
-						<p> 00.00%</p>
+						<p> 29.3%</p>
 					</td>
 					
 				</tr>
 				<tr>
 					<td>
-						<input type="radio" name="balance" value="$0.00"  placeholder="">
+						<input type="checkbox" name="balance" value="$0.00"  style="vertical-align: top;">
 						<img src="../../../img/balanceTransfer/tarjetaBT.png" alt="">
 					</td>
 					<td>
 						<p>Disponible:</p>
-						<p>$9,999,999.00 MXP</p>
+						<p>$8,320.00 MXP</p>
 					</td>
 					<td>
-						<input type="text" placeholder="$0.00" value="$0.00" />
+						<input type="text" placeholder="$0.00" value="$0.00" id="txtTwo" disabled  />
 					</td>
 					<td>
 						<p>Mensual:</p>
-						<p>$9,999,999.00 MXP</p>
+						<p>$4,000.00 MXP</p>
 					</td>
 					<td>
 						<p>Tasa:</p>
-						<p> 00.00%</p>
+						<p> 21.8%</p>
 					</td>
 					
 				</tr>
@@ -205,8 +215,8 @@ input[type=radio]{
 				*El beneficio de la Tasa Preferencial/Promocional tendrá una vigencia de 12 meses; contados a partir del mes en que se realice la transferencia de saldo a la Tarjeta Santander, una vez transcurrido este periodo, si el tarjetahabiente no terminá de liquidar la deuda objeto de la transferencia, el saldo remanente de la deuda será sujeto a las condiciones del saldo revolviste de la tarjeta de Crédito.
 				</p>
 			</div>
-			<div class='btn Fright marginOne btnaceptar' onclick="creaOverlay('#fff','#contenido',1);creaModal('#contenido',1,'alerts/datos.html')" style="margin-right: -10px;margin-top: 40px;float: right;">Aceptar</div>
-			<div class='btn Fright marginOne' onclick="" style="float:right; margin-right:-10px;margin-top: 40px">Cancelar</div>
+			<div class='btn Fright marginOne btnaceptar'  style="margin-right: -10px;margin-top: 20px;float: right;" onclick="cambiaEstado('2')">Aceptar</div>
+			
 		</div>
 		<div id="navegador">
 			<ul>
@@ -276,12 +286,12 @@ input[type=radio]{
 				<h4>2.Términos y condiciones de producto</h4>
 				<p>
 				<input type="checkbox">
-				He leído y acepto <a href="#"> Términos y condiciones </a>
+				He leído y acepto <a href="#" onclick="creaOverlay('#fff','#contenido',1);creaModal('#contenido',1,'alerts/datos.html')"> Términos y condiciones </a>
 				</p>
 				
 			</div>
 			
-			<div class='btn Fright marginOne btnaceptar' onclick="cambiaEstado('3')" style="float: right;margin-right: -10px;margin-top: 183px">Aceptar</div>
+			<div class='btn Fright marginOne btnaceptar' onclick="cambiaEstado('3')" style="float: right;margin-right: -10px;margin-top: 183px" onclick="cambiaEstado('2')">Aceptar</div>
 			<div class='btn Fright marginOne' onclick="" style="float:right;margin-top:183px;margin-right:-10px;margin:">Cancelar</div>
 		</div>
 		<div id="navegador" >
@@ -391,7 +401,8 @@ input[type=radio]{
 			</ul>
 
 
-			<div class="aviso"><span style="margin-top: 8px;font-family:Arial, Helvetica, sans-serif; position: absolute; margin-left: 11px;"></span><img src="../img/iconos/img_msj.png"alt="etc" />	</div>
+			<div class="aviso"><span style="margin-top: 8px;font-family:Arial, Helvetica, sans-serif; position: absolute; margin-left: 11px;"><!--Lorem Lorem ipsum Lorem Lorem ipsum. Lorem Lorem ipsum lorem.--></span><img src="../img/iconos/img_msj.png"alt="etc" />	</div>
+
 
 			<!--<div class="imagenFondo"><img src="URL de la imagen" alt="etc" /><span>El Texo sobre la imagen</span></div>  -->
 
@@ -622,5 +633,11 @@ input[type=radio]{
 		                    width:"215"
                 });
               
+
+             function habTxt(txtArea){
+             	$("#"+txtArea).attr("disabled","enabled");
+             } 
+
+
 </script>
 

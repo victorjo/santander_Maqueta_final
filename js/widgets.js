@@ -27,11 +27,17 @@ $(document).ready(function(){
 		
 });
 
-
+$(document).ajaxStart(function() {
+	$(".loader").show();
+});
+$(document).ajaxStop(function() {
+	$(".loader").hide();
+});
 
 //para commit
 window.onresize = function(){
 	posWidgets(1);
+	if($("#wrappSB").css("display")=="none" && $(window).width()<=1222) $("#wrappWidgets").css("width","771px");
 }
 
 function reject(){
@@ -48,10 +54,26 @@ function obtieneAltoTotal(){
 		btnDiv = creaBtn();
 		$("#navContent").append(btnDiv);
 	}
-
+	
+	var c;
+		var altoScrolling = $("#wrappWidgets")[0].scrollHeight;
+		var altosScroll = [];
+	
+	c = $('.btnNavWidget').size();
+		punteroC = c;
+		
+		altoScrolling = altoScrolling/(c);
+		for (c;c>=0;c--){altosScroll.push(Math.round(altoScrolling*c));}
+		altosScroll.reverse();
+		$('.btnNavWidget').each(function(i,v){
+			$(this).attr('onclick','moveScroll(this,'+altosScroll[i]+')');
+		});
+	
 	$("#navContent .btnNavWidget:first-child").removeClass("noActiveNav").addClass("ActiveNav");
-	$("#navContent").css({"left":20+$("#wrappWidgets").width()+$("#wrappWidgets").offset().left+"px","top":"200px"});
-}
+	$("#navContent").css({"left":$("#wrappWidgets").width()+$("#wrappWidgets").offset().left+"px","top":"48%"});
+	
+	
+	}
 
 function creaBtn(){
 		var btnDiv = $("<div>");
@@ -100,7 +122,7 @@ var widgets = [
 				{
 					id:5,
 					type:2,
-					order:2,
+					order:4,
 					contentMin:'',
 					contentMax:''
 				},{
@@ -119,7 +141,7 @@ var widgets = [
 				},
 				{
 					id:2,
-					type:2,
+					type:1,
 					order:4,
 					contentMin:'',
 					contentMax:''
@@ -153,7 +175,7 @@ var widgets = [
 					contentMin:'',
 					contentMax:''
 				},
-
+/*
 				{
 					id:11,
 					type:2,
@@ -161,7 +183,7 @@ var widgets = [
 					contentMin:'asdasdasdasd',
 					contentMax:''
 				}
-
+*/
 
 			];
 
@@ -221,6 +243,7 @@ function posWidgets(qwerty){
 				}
 			}); 
 		}
+		if(v.id==2) newWidget.css("float","right");
 		wrapper.append(newWidget);
 		newWidget.attr({"data-pos":parser+1,"data-id":v.id});
 		//if((parser%3)==0 && parser!=0) newWidget.css('float','right');
@@ -253,7 +276,7 @@ function posWidgets(qwerty){
 		{
 			$("#wrappWidgets").css("width","1022px");
 
-			$("[data-pos='3']").after('<div class="widget-min col1 alto2"  data-max="false" data-pos="codom"><img src="img/fake/carrito.jpg" height="275"/></div>');
+			//$("[data-pos='3']").after('<div class="widget-min col1 alto2"  data-max="false" data-pos="codom"><img src="img/fake/carrito.jpg" height="275"/></div>');
 			$("[data-pos='7']").css('float','left');
 			var alen = 1030;
 		/*}else if($(window).width()<=768){ ****CHANGE FOR TOUCH EVENT***
@@ -274,7 +297,7 @@ function posWidgets(qwerty){
 		posLeft += alen || 790;
 		var posTop =  wrapper.height()/2;
 		obj.css({'left':posLeft,'top':(posTop-obj.height())});
-		var c;
+		/*var c;
 		var altoScrolling = $("#wrappWidgets")[0].scrollHeight;
 		var altosScroll = [];
 
@@ -288,7 +311,7 @@ function posWidgets(qwerty){
 		altosScroll.reverse();
 		$('.btnNavWidget').each(function(i,v){
 			$(this).attr('onclick','moveScroll(this,'+altosScroll[i]+')');
-		});
+		});*/
 
 		banPosSelect = 1;
 		posScroll = 0;

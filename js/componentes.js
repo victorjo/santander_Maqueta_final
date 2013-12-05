@@ -1,4 +1,4 @@
-﻿$(document).ready(function(){
+$(document).ready(function(){
   dropIsra();
   avatarFade(); 
   $(".widget-min").hover(function(){
@@ -118,7 +118,6 @@ var switchO = '<div style="position:relative;width:230px;">';
       	$(".ui-autocomplete").css({"max-height":"201px","overflow-y":"scroll","font-size":"13px","width":"480px"})
       }
     });
-
     $("#"+selector).parent().next().next().find("span").on("click",function(){
       console.log("se creo el evento");
       auto.autocomplete( "search","");

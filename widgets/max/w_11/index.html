@@ -43,29 +43,76 @@
 .espacioTxt{
 	margin-left: 30px;
 }
-</style>
-<script>
-var cards = [
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-				];
 
-</script>
+/*MENU*/
+#menu {
+	float:left;
+	position: absolute;
+	margin-left: -42px;
+}
+
+#menu a {
+	display: block;
+	width: 140px;
+	height: 12px;
+	text-align: justify;
+	padding: 6px;
+}
+
+#menu ul {
+	list-style-type: none;
+	padding-top: 5px;
+}
+
+#menu li {
+	float: left;
+	position: relative;
+	padding: 3px 0;
+	text-align: center;
+	background-color:#F0F0F0;
+	background-image: url('../../lineagrafica/widamphdr.png');
+	border: 1px #a7a7a7;
+}
+
+#menu ul.sub-menu {
+	display: none;
+	position: absolute;
+	padding: 0px;
+	z-index: 90;
+}
+
+#menu ul.sub-menu li {
+	text-align: left;
+}
+
+#menu li:hover ul.sub-menu {
+	display: block;
+	border: 1px solid #ececec;
+}
+
+.texto1{
+	float: left;
+	margin-top: 52px;
+}
+
+.texto2{
+	float: right;
+	margin-top: 52px;
+	text-decoration: underline;
+}
+a {
+	text-decoration: none;
+	color: #838383;
+}
+
+a:hover {
+	color: black;
+	background-color: #E3E3E3;
+	font-weight: bold;
+}
+
+
+</style>
 <div id="osc">
 <div id="widget" class="widget">
 	<div id="header">
@@ -317,7 +364,7 @@ var cards = [
 								<td style="color:#CCCCCC">12345678910123456789</td>
 							</tr>
 							<tr>
-								<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Quiero hacer<br />otra transferencia</div></td>
+								<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo hacer<br />otra transferencia</div></td>
 								
 							</tr>
 						</table>
@@ -672,7 +719,7 @@ var cards = [
 								<td style="color:#CCCCCC">12345678910123456789</td>
 							</tr>
 							<tr>
-								<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Quiero hacer<br />otra transferencia</div></td>
+								<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo hacer<br />otra transferencia</div></td>
 								
 							</tr>
 						</table>
@@ -690,13 +737,488 @@ var cards = [
 			</div><!--Fin Funcionalidad 2 : A otras Cuentas -->
 		
             <div><!--inicio funcionalidad 3 Cuentas Registradas /Alta / Baja-->
+            	<div id="step8" class="pasos"><!-- step8--> 
+
+            		<p style="color:red"><b>A continuación usted podrá consultar las cuentas que tiene dadas de alta, así como elegir aquellas que desee dar de baja</b></p>
+
+			
+			
+			<div>
+				<span class="texto1"><p><b>Calendario de transferencias</b></p></span>
+				<span class="texto2"><p><b>Mis transferencias</b></p></span>
+			</div>
+
+			
+			<div class="tabla">
+				<div class="tabletitle"><p style="float:left">Mis cuentas registradas</p>
+									<img src="../../img/botones/exportar.png" style="float:right;margin-right:10px"/>
+									<p style="float:right;margin-right:10px">Exportar</p>
+									</div>
+			<table class="tbl_consulta" style="width:100%;float:left;">
+
+				<tr>
+					<td></td>
+					<td>Títular de la cuenta</td>
+					<td>Número de cuenta</td>
+					<td>Alias de la cuenta</td>
+					<td>Banco</td>
+					<td>Correo del titular</td>
+					<td>Favorita</td>
+				</tr>
+				<tr>
+					<td><input type="radio" placeholder="" value="$0.00" name="balance"  checked=""></td>
+					<td>Lorem Ipsum</td>
+					<td>1234****5678</td>
+					<td>Lorem Ipsum</td>
+					<td>Lorem Ipsum</td>
+					<td>correo@correo.com</td>
+					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+				<tr>
+					<td><input type="radio"  placeholder="" value="$0.00" name="balance"></td>
+					<td>Lorem Ipsum</td>
+					<td>1234****5678</td>
+					<td>Lorem Ipsum</td>
+					<td>Lorem Ipsum</td>
+					<td>correo@correo.com</td>
+					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+				<tr>
+					<td><input type="radio"  placeholder="" value="$0.00" name="balance"></td>
+					<td>Lorem Ipsum</td>
+					<td>1234****5678</td>
+					<td>Lorem Ipsum</td>
+					<td>Lorem Ipsum</td>
+					<td>correo@correo.com</td>
+					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+				<tr>
+					<td><input type="radio"  placeholder="" value="$0.00" name="balance"></td>
+					<td>Lorem Ipsum</td>
+					<td>1234****5678</td>
+					<td>Lorem Ipsum</td>
+					<td>Lorem Ipsum</td>
+					<td>correo@correo.com</td>
+					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+				<tr>
+					<td><input type="radio"  placeholder="" value="$0.00" name="balance"></td>
+					<td>Lorem Ipsum</td>
+					<td>1234****5678</td>
+					<td>Lorem Ipsum</td>
+					<td>Lorem Ipsum</td>
+					<td>correo@correo.com</td>
+					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+			</table>
+			</div>
+			<table  style="float: left; margin-left:228px; margin-top: 135px;">
+								<tr>
+									<td><div class="btn" id="darAlta">Dar de alta una cuenta</div></td>
+									<td><div class="btn btnaceptar" id="darBaja">Dar de baja</div></td>
+								</tr>
+							</table>
+                       </div><!-- fin de step8--> 
+				<!-- Inicio Flujo Dar Alta-->
+                <div id="step9" class="pasos"><!-- Inicio de step9-->
+
+					<h4 style="color:red">Favor de ingresar la siguiente información:</h4>
+
+			<table>
+				<tr>
+					<td>
+						<p><b>1. Número de cuenta o tarjeta que desea dar de alta</b></p>
+						<input type="text"  placeholder="LoreLorem ipsum" / style="height:25px;width:450px">
+					</td>
+					<td></td>
+					<td>
+						<p><b>Banco</b></p>
+						<input type="text"  placeholder="LoreLorem ipsum" / style="height:25px;width:200px">
+					</td>
+				</tr>
+
+				<tr>
+					
+							<td>
+						<p><b>2. Nombre del titular de la cuenta</b></p>
+						<input type="text"  placeholder="LoreLorem ipsum" / style="height:25px;width:450px">
+					</td>
+					<td></td>
+					<td>
+						<p><b>R.F.C</b></p>
+						<input type="text"  placeholder="LoreLorem ipsum" / style="height:25px;width:200px">
+					</td>
+
+				</tr>
+
+					<tr>
+						<td>
+						<p><b>3. Alias con el que se presentará la cuenta</b></p>
+						<input type="text"  placeholder="LoreLorem ipsum" / style="height:25px;width:450px">
+					</td>
+
+					</tr>
+
+							<tr>
+						<td>
+						<p><b>4.  Correo electrónico del titular de la cuenta</b></p>
+						<input type="text"  placeholder="LoreLorem ipsum" / style="height:25px;width:450px">
+					</td>
+						
+					</tr>
+			</table>
+
+
+			<div style="float: left;margin:10px 0 ;">
+			
+			</div> 
+		
+			<div class="botonera">
+				<div class="btn btnaceptar" style="float:right; margin-top:170px;" id="siguiente5">Continuar</div>
+				<div class="btn" style="float:right; margin-top:170px;">Cancelar</div>
+
+			</div>
+
+                </div><!-- Fin de step9-->
+
+                <div id="step10" class="pasos"><!-- Inicio de step10-->
+
+                	<h4>La operación se realizará con la siguiente información:</h4>			
+			
+			<table class="tbl_info" style="width:730px;float:left; border-color:#a7a7a7">
+
+				<tr>
+					<td colspan="3">Número de cuenta </td>
+					<td style="color:#CCCCCC">1234****5678</td>
+				</tr>
+				<tr>
+					<td colspan="3" >Banco</td>
+					<td style="color:#CCCCCC">Lorem Ipsum</td>
+				</tr>
+				<tr>
+					<td colspan="3" >Nombre del titular de la cuenta</td>
+					<td style="color:#CCCCCC">Lorem Ipsum</td>
+				</tr>
+				<tr>
+					<td colspan="3" >Alias:</td>
+					<td style="color:#CCCCCC">Lorem Ipsum</td>
+				</tr>
+
+				<tr>
+					<td colspan="3" >Correo electrónico del titular de la cuenta:</td>
+					<td style="color:#CCCCCC">correo@cuanta.com</td>
+				</tr>
+				
+				<tr>
+					<td colspan="3" >Fecha de alta:</td>
+					<td style="color:#CCCCCC">dd/mm/aaaa</td>
+				</tr>
+				
+				
+			</table>
+			
+			<table style="	float: left; margin-left: -23px; margin-top:253px;">
+				<tr>
+					<td><div class="btn" id="regresar3">Regresar</div></td>
+					<td><div class="btn" >Cancelar</div></td>
+					<td><div class="btn btnaceptar" id="siguiente6">Continuar</div></td>
+				</tr>
+			</table>
+
+
+                 </div><!-- Fin de step10-->
+					
+                  <div id="step11" class="pasos"><!-- Inicio de step 11 -->
+					<div id="vtacruzada">
+			
+						<div class="vtaimg">
+						</div>
+						
+						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
+						
+						<div class="vtapanel">
+							<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+							<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+							<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+						</div>
+						
+					</div>
+
+						<h4 style="color:red;">Comprobante de transferencia a otras cuentas</h4>
+
+									
+							<table class="tbl_info" style="width:60%;float:left;">
+
+							<tr>
+								<td colspan="3">Número de cuenta </td>
+								<td style="color:#CCCCCC">1234****5678</td>
+							</tr>
+							<tr>
+								<td colspan="3" >Banco</td>
+								<td style="color:#CCCCCC">Lorem Ipsum</td>
+							</tr>
+							<tr>
+								<td colspan="3" >Nombre del titular de la cuenta</td>
+								<td style="color:#CCCCCC">Lorem Ipsum</td>
+							</tr>
+							<tr>
+								<td colspan="3" >Alias:</td>
+								<td style="color:#CCCCCC">Lorem Ipsum</td>
+							</tr>
+
+							<tr>
+								<td colspan="3" >Correo electrónico del titular de la cuenta:</td>
+								<td style="color:#CCCCCC">correo@cuanta.com</td>
+							</tr>
+							
+							<tr>
+								<td colspan="3" >Fecha de alta:</td>
+								<td style="color:#CCCCCC">dd/mm/aaaa</td>
+							</tr>
+
+							<tr>
+								<td colspan="3" >Folio SuperNET:</td>
+								<td style="color:#CCCCCC">12345678910123456789</td>
+							</tr>
+							<tr>
+								<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo hacer<br />otra transferencia</div></td>
+								<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px"><img class="activo" style="display:block; cursor:pointer;margin-left:30px; margin-top: 6px; position: fixed;" src="../../img/iconos/favorito_on.png"/>Agregar a<br />cuentas favoritas</div></td>
+								
+							</tr>
+						</table>
+
+						<table style="	float: right; margin-right: -218px; margin-top:131px;">
+							<tr>
+								<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
+								<td><div class="btn btnaceptar" id="finAlta">Finalizar</div></td>
+							</tr>
+						</table>	
+                 </div><!-- Fin de step11 -->	
+              <!-- Fin Flujo Dar Alta-->
                 
-            </div><!--Fin funcionalidad 3 Cuentas Registradas /Alta / Baja-->
-            
-            <div><!--inicio funcionalidad 4 Consulta de Transferencias-->
+                <!-- Inicio Flujo Dar Baja-->
+
+                <div id="step12" class="pasos"> <!-- Inicio de step12 -->	
+                	<h4>La cuenta a dar de baja se realizará con la siguiente información:</h4>			
+			
+			<table class="tbl_info" style="width:730px;float:left; border-color:#a7a7a7">
+
+				<tr>
+					<td colspan="3">Número de cuenta </td>
+					<td style="color:#CCCCCC">1234****5678</td>
+				</tr>
+				<tr>
+					<td colspan="3" >Banco</td>
+					<td style="color:#CCCCCC">Lorem Ipsum</td>
+				</tr>
+				<tr>
+					<td colspan="3" >Nombre del titular de la cuenta</td>
+					<td style="color:#CCCCCC">Lorem Ipsum</td>
+				</tr>
+				<tr>
+					<td colspan="3" >Alias:</td>
+					<td style="color:#CCCCCC">Lorem Ipsum</td>
+				</tr>
+
+				<tr>
+					<td colspan="3" >Correo electrónico del titular de la cuenta:</td>
+					<td style="color:#CCCCCC">correo@cuanta.com</td>
+				</tr>
+				
+				<tr>
+					<td colspan="3" >Fecha de baja:</td>
+					<td style="color:#CCCCCC">dd/mm/aaaa</td>
+				</tr>
+				
+				
+			</table>
+			
+			<table style="	float: left; margin-left: -23px; margin-top:253px;">
+				<tr>
+					<td><div class="btn" id="regresar4">Regresar</div></td>
+					<td><div class="btn" >Cancelar</div></td>
+					<td><div class="btn btnaceptar" id="siguiente7">Confirmar</div></td>
+				</tr>
+			</table>
+                	
+                	
+                </div> <!-- Fin de step12 -->
+
+                <div id="step13" class="pasos"> <!-- Inicio de step13 -->
+                	
+                	<div id="vtacruzada">
+			
+						<div class="vtaimg">
+						</div>
+						
+						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
+						
+						<div class="vtapanel">
+							<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+							<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+							<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+						</div>
+						
+					</div>
+
+						<h4 style="color:red;">Comprobante de transferencia a otras cuentas</h4>
+
+									
+							<table class="tbl_info" style="width:60%;float:left;">
+
+							<tr>
+								<td colspan="3">Número de cuenta </td>
+								<td style="color:#CCCCCC">1234****5678</td>
+							</tr>
+							<tr>
+								<td colspan="3" >Banco</td>
+								<td style="color:#CCCCCC">Lorem Ipsum</td>
+							</tr>
+							<tr>
+								<td colspan="3" >Nombre del titular de la cuenta</td>
+								<td style="color:#CCCCCC">Lorem Ipsum</td>
+							</tr>
+							<tr>
+								<td colspan="3" >Alias:</td>
+								<td style="color:#CCCCCC">Lorem Ipsum</td>
+							</tr>
+
+							<tr>
+								<td colspan="3" >Correo electrónico del titular de la cuenta:</td>
+								<td style="color:#CCCCCC">correo@cuanta.com</td>
+							</tr>
+							
+							<tr>
+								<td colspan="3" >Fecha de baja:</td>
+								<td style="color:#CCCCCC">dd/mm/aaaa</td>
+							</tr>
+
+							<tr>
+								<td colspan="3" >Folio SuperNET:</td>
+								<td style="color:#CCCCCC">12345678910123456789</td>
+							</tr>
+							<tr>
+								<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo hacer<br />otra transferencia</div></td>
+								
+								
+							</tr>
+						</table>
+
+						<table style="	float: right; margin-right: -218px; margin-top:173px;">
+							<tr>
+								<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
+								<td><div class="btn btnaceptar" id="finBaja">Finalizar</div></td>
+							</tr>
+						</table>
+                </div>	<!-- Fin de step13 -->
+
+                <!-- Fin Flujo Dar Baja-->
             
             </div><!--Fin funcionalidad 4 Consulta de Transferencias -->
 
+            	<div id="step14" class="pasos"> <!-- Fin de step13 -->
+            		
+       	<p style="color:red"><b>Seleccione el estatus de las transferencias que desea 
+								consultar, así como el periodo de búsqueda y/o rango de 
+								importe para realizar una búsqueda más específica</b></p>
+
+			<div id="menu">
+				<ul>
+					<li><a href="#"><div id="circulo"><img  class="imagen" src="../../img/interfaz/paginador_apagado.png" style="width:12px; height: 12px; margin-left: 10px;"/><span style="margin-left: 10px;">Estatus</span></div></a>
+
+					<ul class="sub-menu">
+						<li><a href="#" class="seleccionado" id="prog"><img  id="ok1" src='../../img/iconos/ok.png' style='width:12px; height: 12px; margin-left: 10px; display:none;'/>Programadas</a></li>
+		                <li><a href="#" id="rel"><img  id="ok2" src='../../img/iconos/ok.png' style='width:12px; height: 12px; margin-left: 10px; display:none;'/>Realizadas</a></li>
+					</ul>
+
+					</li>
+
+					<li><a href="#">Periodo de búsqueda</a>
+
+					<ul class="sub-menu">
+						<li><a href="#" id="3d">3 días</a></li>
+		                <li><a href="#" id="7d">7 días</a></li>
+		                <li><a href="#" id="1m">1 mes</a></li>
+		                <li><a href="#" id="3m">3 meses</a></li>
+					</ul>
+
+					</li>
+
+					<li><a href="#">Rango de importe</a></li>
+					</li>
+				</ul>
+			</div>	
+			
+			<div>
+				<span class="texto1"><p><b>Mis últimas 5 transferencias realizadas<span class="dias"></span></p></b></span>
+				<span class="texto2"><p><b>Calendario de transferencias</b></p></span>
+			</div>
+
+			
+			<div class="tabla">
+				<div class="tabletitle"><p style="float:left">Mis transferencias</p>
+									<img src="../../img/botones/exportar.png" style="float:right;margin-right:10px"/>
+									<p style="float:right;margin-right:10px">Exportar</p>
+									</div>
+			<table class="tbl_consulta" style="width:100%;float:left;">
+
+				<tr>
+					<td>Fecha</td>
+					<td>Descripción de la operación</td>
+					<td>Cuenta destino<br/>(Destinatario)</td>
+					<td>Cuenta de cargo</td>
+					<td>Importe (MXP)</td>
+					<td>Estatus</td>
+					<td>Favorita</td>
+				</tr>
+				<tr>
+					<td>dd/mm/aaaa</td>
+					<td>123456789123456789123456789<br />123456789123456789123456789</td>
+					<td>1234****5678<br /> (Lorem Ipsum)</td>
+					<td>1234****5678</td>
+					<td>999,999,999.00</td>
+					<td><span class="cambio">Realizada</span></td>
+					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+				<tr>
+					<td>dd/mm/aaaa</td>
+					<td>123456789123456789123456789<br />123456789123456789123456789</td>
+					<td>1234****5678<br /> (Lorem Ipsum)</td>
+					<td>1234****5678</td>
+					<td>999,999,999.00</td>
+					<td><span class="cambio">Realizada</span></td>
+					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+				<tr>
+					<td>dd/mm/aaaa</td>
+					<td>123456789123456789123456789<br />123456789123456789123456789</td>
+					<td>1234****5678<br /> (Lorem Ipsum)</td>
+					<td>1234****5678</td>
+					<td>999,999,999.00</td>
+					<td><span class="cambio">Realizada</span></td>
+					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+				<tr>
+					<td>dd/mm/aaaa</td>
+					<td>123456789123456789123456789<br />123456789123456789123456789</td>
+					<td>1234****5678<br /> (Lorem Ipsum)</td>
+					<td>1234****5678</td>
+					<td>999,999,999.00</td>
+					<td><span class="cambio">Realizada</span></td>
+					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+				<tr>
+					<td>dd/mm/aaaa</td>
+					<td>123456789123456789123456789<br />123456789123456789123456789</td>
+					<td>1234****5678<br /> (Lorem Ipsum)</td>
+					<td>1234****5678</td>
+					<td>999,999,999.00</td>
+					<td><span class="cambio">Realizada</span></td>
+					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+			</table>
+			</div>
+            	</div><!-- fin step 14 -->
 			</div><!--cierre contenido-->
 	
 		<div id="navegador">
