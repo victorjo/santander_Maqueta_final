@@ -4,6 +4,7 @@ $(document).ready(function(){
 
 /*Botones*/
 $("#continuar1").click(function(){
+	
 		cambiaEstados("2",1,2);
 });
 
@@ -19,7 +20,7 @@ $(".continuar2").click(function(){
 //Transicion entre operaciones
 $("#navegador > ul > :nth-child(1)").click(function(){
 	$("#stepbar img").attr("src","../img/fake/pasos/paso1.png");
-	//cambiaFlujo("#step1");
+	cambiaFlujo("#step1");
 });
 
 $("#navegador > ul > :nth-child(2)").click(function(e){
@@ -66,3 +67,18 @@ function follow(){
 	cambiaFlujo("#step3");	
 }
 
+/*Transicion de pasos*/
+function cambiaFlujo(step){
+  var npasos = $(".pasos").size();
+    $(".pasos").each(function(index){
+      if((++index) == npasos){
+        $(this).fadeOut("slow",function(){
+          $(step).delay(1000).fadeIn();
+        });
+  
+      }else{
+        $(this).fadeOut("slow");
+      }
+    })
+
+}
