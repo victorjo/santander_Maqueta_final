@@ -146,7 +146,7 @@ a:hover {
 						</table>
 
 
-				<p><b>Introduzca el nombre, alias o los cuatro dígitos de la cuenta destino o seleccionela de la lista:</b></p>
+				<p><b>Introduzca el nombre, alias o los cuatro dígitos de la cuenta de cargo o seleccionela de la lista:</b></p>
 
 					<table>
 							<tr><td>						
@@ -199,10 +199,10 @@ a:hover {
 						</div>
 					</div>
 
-					<table class="tbl_botones2">
+					<table class="tbl_botones2" style="float:right">
 						<tr>
-							<td><div class="btn">Cancelar</div></td>
-							<td><div class="btn btnaceptar" id="siguiente" onclick="cambiaPasoImg();">Continuar</div></td>
+							<!--<td><div class="btn">Cancelar</div></td>-->
+							<td><div class="btn btnaceptar" id="siguiente" onclick="cambiaPasoImg();changeComment(2);">Continuar</div></td>
 						</tr>
 					</table>
 				</div> <!--fin step1-->
@@ -243,22 +243,13 @@ a:hover {
 								<td>Importe:</td>
 								<td style="color:#CCCCCC">123456789123456789</td>
 							</tr>
-
-							<tr>
-								<td>Cuenta de cargo:</td>
-								<td style="color:#CCCCCC">1234****5678</td>
-							</tr>
-							<tr>
-								<td>Importe:</td>
-								<td style="color:#CCCCCC">999,999,999.00 (MXP)</td>
-							</tr>
 							<tr>
 								<td>Fecha de transferencia:</td>
-								<td style="color:#CCCCCC">dd/mm/aaaa</td>
+								<td style="color:#CCCCCC">13/11/2013</td>
 							</tr>
 							<tr>
 								<td>Fecha programada de transferencia:</td>
-								<td style="color:#CCCCCC">dd/mm/aaaa</td>
+								<td style="color:#CCCCCC">16/11/2013</td>
 							</tr>
 							<tr>
 								<td>Notificación previa al pago:</td>
@@ -272,6 +263,15 @@ a:hover {
 								<td>I.V.A. por comisión de transferencia:</td>
 								<td style="color:#CCCCCC">0.00 (MXP)</td>
 							</tr>
+							<tr>
+								<td>Correo para notificacion:</td>
+								<td style="color:#CCCCCC">veronica.pimentel@gmail.com (<a href="#">editar</a>)</td>
+							</tr>
+							<tr>
+								<td>Celular para notificacion:</td>
+								<td style="color:#CCCCCC">5555555555 (<a href="#">editar</a>)</td>
+							</tr>
+							
 						</table>
 
 						<!--<div class="botonera">
@@ -281,11 +281,10 @@ a:hover {
 
 						</div>-->
 
-						<table style="	float: left; margin-left: -23px; margin-top:109px;">
+						<table style="	float: right; margin-left: -23px; margin-top:109px;">
 							<tr>
 								<td><div class="btn" id="regresar" onclick="backPasoImg();">Regresar</div></td>
-								<td><div class="btn" >Cancelar</div></td>
-								<td><div class="btn btnaceptar" id="siguiente2" onclick="cambiaPasoImg3();">Continuar</div></td>
+								<td><div class="btn btnaceptar" id="siguiente2" onclick="cambiaPasoImg3();changeComment(3);">Confirmar</div></td>
 							</tr>
 						</table>
 
@@ -296,7 +295,7 @@ a:hover {
 						<div class="vtaimg">
 						</div>
 						
-						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
+						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
 						
 						<!--<div class="vtapanel">
 							<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
@@ -305,9 +304,9 @@ a:hover {
 						</div>-->
 						<div id="btn_paso3">
 		                     <ul>
-		                    	<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Lorem Ipsum</span></li>
-		                        <li class="btnNav"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">Lorem Ipsum</span></li>
-		                        <li class="btnNav"><img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">Lorem Ipsum</span></li>
+		                    	<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
+		                        <li class="btnNav"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">Pagar Servicios</span></li>
+		                        <li class="btnNav"><img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">Realizar una Domiciliación</span></li>
 		                      </ul>
 		                </div>
 						
@@ -317,56 +316,54 @@ a:hover {
 
 									
 							<table class="tbl_info" style="width:60%;float:left;">
-
-							<tr>
-								<td colspan="3">Cuenta cargo</td>
-								<td style="color:#CCCCCC">1234****5678</td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td colspan="3" >Cuenta destino</td>
+<tr>
+								<td style="width:200px;">Cuenta cargo:</td>
 								<td style="color:#CCCCCC">1234****5678</td>
 							</tr>
 							<tr>
-								<td colspan="3" >Concepto:</td>
-								<td style="color:#CCCCCC">123456789123456789123456789 <br>123456789123456789
-			</td>
+								<td>Cuenta destino:</td>
+								<td style="color:#CCCCCC">1234****5678</td>
 							</tr>
 							<tr>
-								<td colspan="3" >Importe:</td>
-								<td style="color:#CCCCCC">999,999,999.00 (MXP)</td>
+								<td>Concepto:</td>
+								<td style="color:#CCCCCC">123456789123456789123456789 <br> 123456789123456789
+								</td>
 							</tr>
-
 							<tr>
-								<td colspan="3" >Fecha de transferencia</td>
-								<td style="color:#CCCCCC">dd/mm/aaaa</td>
+								<td>Importe:</td>
+								<td style="color:#CCCCCC">123456789123456789</td>
 							</tr>
-
 							<tr>
-								<td colspan="3" >Fecha programada de transferencia:</td>
-								<td style="color:#CCCCCC">dd/mm/aaaa</td>
+								<td>Fecha de transferencia:</td>
+								<td style="color:#CCCCCC">13/11/2013</td>
 							</tr>
-
 							<tr>
-								<td colspan="3" >Notificación previa al pago:</td>
+								<td>Fecha programada de transferencia:</td>
+								<td style="color:#CCCCCC">16/11/2013</td>
+							</tr>
+							<tr>
+								<td>Notificación previa al pago:</td>
 								<td style="color:#CCCCCC">3 días</td>
 							</tr>
-
 							<tr>
-								<td colspan="3" >Comisión por transferencia:</td>
+								<td>Comisión por transferencia:</td>
 								<td style="color:#CCCCCC">0.00 (MXP)</td>
 							</tr>
-
 							<tr>
-								<td colspan="3" >I.V.A. por comisión de transferencia</td>
+								<td>I.V.A. por comisión de transferencia:</td>
 								<td style="color:#CCCCCC">0.00 (MXP)</td>
 							</tr>
-
 							<tr>
-								<td colspan="3" >Folio SuperNET:</td>
-								<td style="color:#CCCCCC">12345678910123456789</td>
+								<td>Correo para notificacion:</td>
+								<td style="color:#CCCCCC">veronica.pimentel@gmail.com</td>
+							</tr>
+							<tr>
+								<td>Celular para notificacion:</td>
+								<td style="color:#CCCCCC">5555555555</td>
+							</tr>
+							<tr>
+								<td>Folio SuperNET:</td>
+								<td style="color:#CCCCCC">65675868979798</td>
 							</tr>
 							<tr>
 								<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo hacer<br />otra transferencia</div></td>
@@ -374,10 +371,10 @@ a:hover {
 							</tr>
 						</table>
 
-						<table style="	float: left; margin-left: -22px; margin-top:60px;">
+						<table style="	float: left; margin-left: -22px; margin-top:25px;">
 							<tr>
 								<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
-								<td><div class="btn" >Guardar en opciones favoritas</div></td>
+								<td><div class="btn" >Guardar en operaciones favoritas</div></td>
 								<td><div class="btn btnaceptar" onclick="cierraWidget();">Finalizar</div></td>
 							</tr>
 						</table>	
@@ -1228,12 +1225,13 @@ a:hover {
 	
 		<div id="navegador">
 			<ul>
-				<li class="active">Entre cuentas santander</li>
+				<li class="active">Entre cuentas Santander</li>
 				<li>A otras cuentas</li>
 				<li>Cuentas registradas alta/baja</li>
 				<li  onclick="cambiaEstado('4')">Consulta de transferencias</li>
 			</ul>
 			<div class="aviso">
+				<div id="msg-alert" style="width: 133px;height: 52px;background:#fff;position: absolute;top: 2px;left: 10px;font-weight: bold;font-size: 10px;text-align: left;padding-top: 15px;">Realice sus transferencias desde aqui.</div>
 				<img src="../../img/iconos/img_msj.png"/>
 			</div>
 

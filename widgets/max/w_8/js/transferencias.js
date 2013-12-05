@@ -1,3 +1,7 @@
+function changeComment(a){
+	if(a==2)$("#msg-alert").text("Por favor compuebe que la informacion es correcta antes de confirmar.");
+	if(a==3)$("#msg-alert").text("Se ha realizado su operacion correctamente.");
+}
 $(document).ready(function(){
 	omniBox("autocompleteQ",cards);
 	omniBox("autocompleteQ1",cards);
@@ -5,9 +9,9 @@ $(document).ready(function(){
 	omniBox("autocompleteQ3",cards);
 	omniBox("autocompleteQ4",cards);
 	omniBox("autocompleteQ5",cards);
-	switchFuncDomMas("switchbox","Si","No","Dom");
-	switchFuncDomMas("switchbox1","Si","No","Dom");
-	switchFuncDomMas("switchbox2","Si","No","Dom");
+	switchFuncDomMas("switchbox","No","Si","Dom");
+	switchFuncDomMas("switchbox1","No","Si","Dom");
+	switchFuncDomMas("switchbox2","No","Si","Dom");
 	ocultaSteps(15);
 
 	//Funciones de consulta

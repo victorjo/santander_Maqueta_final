@@ -166,7 +166,7 @@ float:right;
 /*ajuste de botones tamaño paso 3 : copia de wr_btnNav */
 
 #btn_paso3{
-	width: 197px;
+	width: 244px;
 	overflow: hidden;
 	margin-top:50px;
 	position:absolute;
@@ -188,7 +188,7 @@ float:right;
 	list-style: none;
 	/*background: #efefef;*/
 	background: #fff;
-	width: 197px;
+	width: 100%;
 	margin: auto;
 	padding: 0 0 0 0;
 	font-size: 12px;			
@@ -196,13 +196,14 @@ float:right;
 
 #btn_paso3 ul li{
 	/*background: url(../img/menuLateral/btn_menu.png);*/
-	width: 177px;
+	width: 100%;
 	height: 20px;
 	padding: 10px 10px 0;
 	border-bottom: 1px solid #bbbbbb;
 	cursor: pointer; 
-	font-size: 11px;
+	font-size: 9px;
 	text-transform: uppercase;
+	text-align:left;
 }
 
 #btn_paso3 ul li:hover{

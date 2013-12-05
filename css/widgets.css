@@ -1035,13 +1035,13 @@ font-size: 11px;
 /*venta cruzada*/
 #vtacruzada{
 	float:right;
-	width:205px;
+	width:240px;
 	height:380px;
 	margin:0;
 }
 
 .vtaimg{
-	background-image:url('../img/menuLateral/autoCompara.png');
+	background-image:url('../img/fake/7.jpg');
 	width:245px;
 	height:283px;
 	background-color:white;
