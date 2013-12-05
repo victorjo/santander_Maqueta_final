@@ -4,6 +4,7 @@ $(document).ready(function(){
   $(".widget-min").hover(function(){
     $(this).css({"box-shadow":"0 0 3px #757575","border":"1px solid #FF0000"});
 	 $(this).css({"margin-top":"-=2px","margin-right":"-=3px"});
+    $(this).css({"box-shadow":"0 0 3px #757575"});
   },function(){
     $(this).css({"box-shadow":"none","border":"none"});
 	$(this).css({"margin-top":"+=2px","margin-right":"+=3px"});
@@ -91,6 +92,7 @@ var switchO = '<div style="position:relative;width:230px;">';
   <img class="downI" src="../img/iconos/dropdown.png" style="display: block;">
   <img class="upI" src="../img/iconos/dropup.png" style="display: none;">
   <h6>Quiero notificación previa de mi pago</h6>
+  <h6>Quiero notificaciÃ³n previa de mi pago</h6>
 </div>
 ******* *   * * * * * **    
 
@@ -118,6 +120,7 @@ var switchO = '<div style="position:relative;width:230px;">';
       minLength:0,
       open: function(){
       	$(".ui-autocomplete").css({"max-height":"201px","overflow-y":"scroll","font-size":"13px","width":"480px"})
+        $(".ui-autocomplete").css({"max-height":"201px","overflow-y":"scroll","font-size":"13px","width":"480px"})
       }
     });
     $("#"+selector).parent().next().next().find("span").on("click",function(){
@@ -137,6 +140,7 @@ var switchO = '<div style="position:relative;width:230px;">';
   }
 
 /*Mostrara el step 1, mientras que ocultara los demás steps apartir del 2*/
+/*Mostrara el step 1, mientras que ocultara los demÃ¡s steps apartir del 2*/
 function ocultaSteps(num_Step){
   for(var i=2;i<=num_Step; i++){
     $('#step'+i).hide();
@@ -189,6 +193,9 @@ function ocultaSteps(num_Step){
 	for(var i=2;i<=num_Step; i++){
 		$('#step'+i).hide();
 	}
+  for(var i=2;i<=num_Step; i++){
+    $('#step'+i).hide();
+  }
 }
 
 
