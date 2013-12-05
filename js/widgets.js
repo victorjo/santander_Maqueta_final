@@ -422,7 +422,7 @@ function getInstance(obj){
 }
 
 function newWidgetInstance(obj)
-{
+{	
 	this.obj = obj;
 	this.topPos = this.obj.offset().top;
 	this.leftPos = this.obj.offset().left;
@@ -432,6 +432,7 @@ function newWidgetInstance(obj)
 	this.height = this.obj.height();
 	this.chPost = function () {
 			if(this.obj.attr("data-max")=="false") return false;
+			$(this.obj[0].outerHTML).appendTo("#wrappWidgets").insertAfter( $("[data-pos='"+(2)+"']")).attr("clone","true");
 			this.obj.css({"box-shadow":"none","border":"none"});
 			this.obj.attr({"instanced":"true"});
 			this.obj.css({'position':'fixed','top':this.topPos,'left':this.leftPos,'z-index':50});
@@ -462,6 +463,7 @@ function newWidgetInstance(obj)
 								dataType:'html',
 								success: function(res){
 									io.html(res);
+									$("[clone='true']").remove();
 									forA.children().fadeIn('slow');
 								}
 							});
