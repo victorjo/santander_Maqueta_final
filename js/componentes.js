@@ -1,16 +1,26 @@
 $(document).ready(function(){
   dropIsra();
   avatarFade(); 
-  $(".widget-min").hover(function(){
-    $(this).css({"box-shadow":"0 0 3px #757575","border":"1px solid #FF0000"});
+  border();
+});
+
+function border(obj){
+	$("#wrappWidgets").hide().show();
+	var ojec = obj || ".widget-min";
+	$(ojec).hover(function(){
+    if(typeof $(this).attr("instanced") == "undefined" && $(this).attr("instanced")!="true"){ 
+	 $(this).css({"box-shadow":"0 0 3px #757575","border":"1px solid #FF0000"});
 	 $(this).css({"margin-top":"-=2px","margin-right":"-=3px"});
+	}
   },function(){
-    $(this).css({"box-shadow":"none","border":"none"});
-	$(this).css({"margin-top":"+=2px","margin-right":"+=3px"});
+	if(typeof $(this).attr("instanced") == "undefined" && $(this).attr("instanced")!="true"){ 
+		$(this).css({"box-shadow":"none","border":"none"});
+		$(this).css({"margin-top":"+=2px","margin-right":"+=3px"});
+	}
   }
 
   );
-});
+}
 
 var cards = [
         {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
