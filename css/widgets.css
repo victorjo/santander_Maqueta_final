@@ -64,15 +64,15 @@ h1,h2,h3,h4,h5{
 }
 
 #stepbar {
-	width:935px;
-	background-color:#f4f4f4;
-    background-size:100% 100%;
-    width: 933px;
-    height: 28px;
-    float: right;
-    border:1px solid #dadada;
-    text-align: center;
-    
+width: 935px;
+background-color: #f4f4f4;
+background-size: 100% 100%;
+width: 933px;
+height: 24px;
+float: right;
+border: 1px solid #dadada;
+text-align: center;
+padding-top: 4px;
 }
 
 .btnHeader {
@@ -474,7 +474,6 @@ margin-left: 8px;
 
         .tbl_consulta td{
                 text-align: center;
-                border-bottom: 1px dotted black;
                 padding:5px;
                 font-size: 11px;
         }

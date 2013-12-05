@@ -146,6 +146,24 @@ function cambiaFlujo(step){
 
 }
 
+$("#regresar").click(function(){
+		$("#step2").fadeOut("slow",function(){
+			$("#step1").fadeIn("slow");				
+			});
+	});
+
+$("#regresar2").click(function(){
+		$("#step5").fadeOut("slow",function(){
+			$("#step4").fadeIn("slow");				
+			});
+	});
+
+$("#regresar3").click(function(){
+		$("#step8").fadeOut("slow",function(){
+			$("#step7").fadeIn("slow");				
+			});
+	});
+
 
        
             	 

@@ -17,6 +17,9 @@
 function backPasoImg(){
 	$("#stepbar img").attr("src","../img/fake/pasos/paso1.png");
 }
+function cambiaPaso3(){
+	$("#stepbar img").attr("src","../img/fake/pasos/paso3.png");
+}
 </script>
 <style>
 
@@ -232,9 +235,9 @@ function backPasoImg(){
 				</tr>
 			</table>
 				<div class="botonera3">
-					<div class="btn">Regresar</div>
+					<div class="btn" id="regresar" onclick="backPasoImg()">Regresar</div>
 					<div class="btn" onclick="backPasoImg()">Cancelar</div>
-					<div id="siguiente2"><div class="btnaceptar">Confirmar</div></div>
+					<div id="siguiente2"><div class="btnaceptar" onclick="cambiaPaso3()">Confirmar</div></div>
 				</div>
 
 			</div> <!--fin step2-->
@@ -313,7 +316,7 @@ function backPasoImg(){
 						</tr>
 		
 						<tr>
-							<td colspan="5" ><div id="btnreturn">Quiero hacer otro<br />pago de servicios</div></td>
+							<td colspan="5" ><div id="btnreturn" onclick="backPasoImg()">Quiero hacer otro<br />pago de servicios</div></td>
 							
 						</tr>
 						
@@ -322,7 +325,7 @@ function backPasoImg(){
 					</table>
 			
 				<div class="botonera2" style="margin-right:20px;width:100%" >
-					<div class="btnaceptar" style="float:right" onclick="cierraWidget()">Finalizar</div>
+					<div class="btnaceptar" style="float:right" onclick="backPasoImg(); cierraWidget()">Finalizar</div>
 					<div class="btn" style="float:right">
 						<img src="../img/iconos/img_impresora.png" class="btnico"/>
 						<p class="btntxt" style="margin-top:0">Imprimir</p>
@@ -423,8 +426,8 @@ function backPasoImg(){
 				</div>
 				
 				<div class="botonera4">
-					<div class="btn">Cancelar</div>
-					<div id="siguiente3"><div class="btnaceptar">Dar de alta</div></div>	
+					<div class="btn" onclick="backPasoImg()">Cancelar</div>
+					<div id="siguiente3"><div class="btnaceptar" onclick="cambiaPasoImg()">Dar de alta</div></div>	
 				</div>
 			</div><!--step4-->
 			
@@ -479,9 +482,9 @@ function backPasoImg(){
 				</table>
 			
 			<div class="botonera3">
-				<div class="btn">Regresar</div>
-				<div class="btn">Cancelar</div>
-				<div id="siguiente4"><div class="btnaceptar">Confirmar</div></div>
+				<div class="btn" id="regresar2" onclick="backPasoImg()">Regresar</div>
+				<div class="btn" onclick="backPasoImg()">Cancelar</div>
+				<div id="siguiente4"><div class="btnaceptar" onclick="cambiaPaso3()">Confirmar</div></div>
 			</div>
 
 			</div><!--fin step5-->
@@ -523,13 +526,13 @@ function backPasoImg(){
 						<td style="color:#CCCCCC">1234567892345</td>
 					</tr>
 					<tr>
-						<td colspan="5" ><div id="btnreturn2">Quiero dar de alta<br />otro servicio</div></td>
+						<td colspan="5" ><div id="btnreturn2" onclick="backPasoImg()">Quiero dar de alta<br />otro servicio</div></td>
 						
 					</tr>		
 				</table>
 				<div class="botonera5" >
 					<div class="btn"><img src="../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
-					<div class="btnaceptar">Finalizar</div>
+					<div class="btnaceptar" onclick="backPasoImg();cierraWidget()">Finalizar</div>
 				</div>
 			</div>
 			
@@ -606,8 +609,8 @@ function backPasoImg(){
 				</table>
 				<div class="botonera6">
 					
-					<div class="btn">Cancelar</div>
-					<div id="siguiente5"><div class="btnaceptar">Dar de baja</div></div>
+					<div class="btn" onclick="backPasoImg()">Cancelar</div>
+					<div id="siguiente5"><div class="btnaceptar" onclick="cambiaPasoImg()">Dar de baja</div></div>
 				</div>
 				
 				</div><!--fin step7-->
@@ -638,9 +641,9 @@ function backPasoImg(){
 						</tr>
 					</table>
 					<div class="botonera7">
-						<div class="btn">Regresar</div>
-						<div class="btn">Cancelar</div>
-						<div id="siguiente6"><div class="btnaceptar">Confirmar</div></div>
+						<div class="btn" id="regresar3" onclick="backPasoImg()">Regresar</div>
+						<div class="btn" onclick="backPasoImg()">Cancelar</div>
+						<div id="siguiente6"><div class="btnaceptar" onclick="cambiaPaso3()">Confirmar</div></div>
 					</div>		
 				</div><!--fin step8-->
 				
@@ -682,13 +685,13 @@ function backPasoImg(){
 						<td style="color:#CCCCCC">1234567892345</td>
 					</tr>
 					<tr>
-						<td colspan="5" ><div id="btnreturn3">Quiero dar de baja<br />otro servicio</div></td>						
+						<td colspan="5" ><div id="btnreturn3" onclick="backPasoImg()">Quiero dar de baja<br />otro servicio</div></td>						
 					</tr>		
 				</table>
 			
 			<div class="botonera5">
 				<div class="btn"><img src="../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
-				<div class="btnaceptar">Finalizar</div>
+				<div class="btnaceptar" onclick="backPasoImg();cierraWidget()">Finalizar</div>
 			</div>		
 		</div><!--Fin step 9-->
 		
@@ -701,9 +704,9 @@ function backPasoImg(){
 				
 	<div id="navegador">
 		<ul>
-			<li class="active" >Pago de Servicios</li>
-			<li>Alta de Servicios</li>
-			<li>Consulta de Servicios</li>
+			<li class="active" onclick="backPasoImg()">Pago de Servicios</li>
+			<li onclick="backPasoImg()">Alta de Servicios</li>
+			<li onclick="backPasoImg()">Consulta de Servicios</li>
 		</ul>
 		<div class="aviso"><img src="../img/iconos/img_msj.png" />	</div>
 	</div>
