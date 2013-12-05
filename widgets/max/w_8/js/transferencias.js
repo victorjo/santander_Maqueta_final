@@ -16,7 +16,7 @@ $(document).ready(function(){
 			 $('.imagen').attr('src','../../img/interfaz/paginador_encendido.png');
 		});
 
-		$('.activo').click(function(){
+		$('.activo2').click(function(){
 			 $(this).attr('src','../../img/iconos/favorito_on.png');
 		});
 
@@ -45,10 +45,16 @@ function cambiaPasoImg(){
 	$("#stepbar img").attr("src","../img/fake/pasos/paso2.png");
 }
 
+function cambiaPasoImg3(){
+	$("#stepbar img").attr("src","../img/fake/pasos/paso3.png");
+}
 function backPasoImg(){
 	$("#stepbar img").attr("src","../img/fake/pasos/paso1.png");
 }
 
+function quitaPasos(){
+	$("#stepbar img").attr("src","");
+}
 /** funcionalidad de botones Continuar y atras**/
 	/*********  INICIO Transiciones de flujo: Entre Cuentas 
 Santander **********/
@@ -94,24 +100,28 @@ $("#regresar2").click(function(){
 //dar de alta y baja una transferencia
 	// ALTA
 	$("#darAlta").click(function(){
+		backPasoImg();
 		$("#step8").fadeOut("slow",function(){
 			$("#step9").fadeIn("slow");				
 			});
 	});
 
 	$("#siguiente5").click(function(){
+		cambiaPasoImg();
 		$("#step9").fadeOut("slow",function(){
 			$("#step10").fadeIn("slow");				
 			});
 	});
 
 	$("#siguiente6").click(function(){
+		cambiaPasoImg3();
 		$("#step10").fadeOut("slow",function(){
 			$("#step11").fadeIn("slow");				
 			});
 	});
 
 	$("#regresar3").click(function(){
+		backPasoImg();
 		$("#step10").fadeOut("slow",function(){
 			$("#step9").fadeIn("slow");				
 			});
@@ -138,12 +148,14 @@ $("#regresar2").click(function(){
 	});
 
 	$("#finAlta").click(function(){
+		quitaPasos();
 		$("#step11").fadeOut("slow",function(){
 			$("#step8").fadeIn("slow");				
 			});
 	});
 
 	$("#finBaja").click(function(){
+		quitaPasos();
 		$("#step13").fadeOut("slow",function(){
 			$("#step8").fadeIn("slow");				
 			});
@@ -153,6 +165,7 @@ $("#regresar2").click(function(){
 //fin dar de alta una transferencia
 //Transicion entre operaciones
 $("#navegador > ul > :nth-child(1)").click(function(){
+	backPasoImg();
 	cambiaFlujo("#step1");
 });
 
@@ -162,10 +175,12 @@ $("#navegador > ul > :nth-child(2)").click(function(){
 });
 
 $("#navegador > ul > :nth-child(3)").click(function(){
+	quitaPasos();
 	cambiaFlujo("#step8");
 });
 
 $("#navegador > ul > :nth-child(4)").click(function(){
+	quitaPasos();
 	cambiaFlujo("#step14");
 });
 

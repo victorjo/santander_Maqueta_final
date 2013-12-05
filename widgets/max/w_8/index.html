@@ -3,9 +3,9 @@
 <script src="../../../js/balanceTransfer.js"></script>
 <script src="../../../js/componentes.js"></script>
 <script src="../../../js/utiles.js"></script>
-<script src="widgets/max/w_11/js/transferencias.js"></script>
+<script src="widgets/max/w_8/js/transferencias.js"></script>
 <!--<script src="../../../js/utiles.js"></script>-->
-<link rel="stylesheet" href="widgets/max/w_11/css/transferencias.css"/>
+<link rel="stylesheet" href="widgets/max/w_8/css/transferencias.css"/>
 <link rel="stylesheet" href="../../../css/componentes.css"/>
 <!-- nothong -->
 <style>
@@ -287,7 +287,7 @@ a:hover {
 							<tr>
 								<td><div class="btn" id="regresar" onclick="backPasoImg();">Regresar</div></td>
 								<td><div class="btn" >Cancelar</div></td>
-								<td><div class="btn btnaceptar" id="siguiente2">Continuar</div></td>
+								<td><div class="btn btnaceptar" id="siguiente2" onclick="cambiaPasoImg3();">Continuar</div></td>
 							</tr>
 						</table>
 
@@ -473,7 +473,7 @@ a:hover {
 						<table style="float: right; margin-right:-13px; margin-top:8px;">
 							<tr>
 								<td><div class="btn">Cancelar</div></td>
-								<td><div class="btn btnaceptar" id="siguiente3" onclick="cambiaPasoImg();">Continuar</div></td>
+								<td><div class="btn btnaceptar" id="siguiente3">Continuar</div></td>
 							</tr>
 						</table>
 
@@ -559,7 +559,7 @@ a:hover {
 						<table style="float: right; margin-right:-13px; margin-top:59px;">
 							<tr>
 								<td><div class="btn">Cancelar</div></td>
-								<td><div class="btn btnaceptar" id="siguiente4">Continuar</div></td>
+								<td><div class="btn btnaceptar" id="siguiente4" onclick="cambiaPasoImg();">Continuar</div></td>
 							</tr>
 						</table>
 				</div><!-- Fin step5 -->	
@@ -572,7 +572,7 @@ a:hover {
 			   					<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
 			   					<div id="buttons">
 			   					<input type="submit" value="Cancelar" id="can" onclick="destruyeOver();">
-			   					<input type="submit" value="Continuar" id="con" onclick="follow();">
+			   					<input type="submit" value="Continuar" id="con" onclick="follow();cambiaPasoImg3();">
 			   					</div>
 			   				</div>
 
@@ -642,7 +642,7 @@ a:hover {
 
 					<table style="	float: left; margin-left: -23px; margin-top:-32px;">
 							<tr>
-								<td><div class="btn" id="regresar2">Regresar</div></td>
+								<td><div class="btn" id="regresar2" onclick="backPasoImg();">Regresar</div></td>
 								<td><div class="btn" >Cancelar</div></td>
 								<td><div class="btn btnaceptar" id="btn1">Continuar</div></td>
 							</tr>
@@ -772,7 +772,7 @@ a:hover {
 					<td>Lorem Ipsum</td>
 					<td>Lorem Ipsum</td>
 					<td>correo@correo.com</td>
-					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
 				</tr>
 				<tr>
 					<td><input type="radio"  placeholder="" value="$0.00" name="balance"></td>
@@ -781,7 +781,7 @@ a:hover {
 					<td>Lorem Ipsum</td>
 					<td>Lorem Ipsum</td>
 					<td>correo@correo.com</td>
-					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
 				</tr>
 				<tr>
 					<td><input type="radio"  placeholder="" value="$0.00" name="balance"></td>
@@ -790,7 +790,7 @@ a:hover {
 					<td>Lorem Ipsum</td>
 					<td>Lorem Ipsum</td>
 					<td>correo@correo.com</td>
-					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
 				</tr>
 				<tr>
 					<td><input type="radio"  placeholder="" value="$0.00" name="balance"></td>
@@ -799,7 +799,7 @@ a:hover {
 					<td>Lorem Ipsum</td>
 					<td>Lorem Ipsum</td>
 					<td>correo@correo.com</td>
-					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
 				</tr>
 				<tr>
 					<td><input type="radio"  placeholder="" value="$0.00" name="balance"></td>
@@ -808,7 +808,7 @@ a:hover {
 					<td>Lorem Ipsum</td>
 					<td>Lorem Ipsum</td>
 					<td>correo@correo.com</td>
-					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
 				</tr>
 			</table>
 			</div>
@@ -1178,7 +1178,7 @@ a:hover {
 					<td>1234****5678</td>
 					<td>999,999,999.00</td>
 					<td><span class="cambio">Realizada</span></td>
-					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
 				</tr>
 				<tr>
 					<td>dd/mm/aaaa</td>
@@ -1187,7 +1187,7 @@ a:hover {
 					<td>1234****5678</td>
 					<td>999,999,999.00</td>
 					<td><span class="cambio">Realizada</span></td>
-					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
 				</tr>
 				<tr>
 					<td>dd/mm/aaaa</td>
@@ -1196,7 +1196,7 @@ a:hover {
 					<td>1234****5678</td>
 					<td>999,999,999.00</td>
 					<td><span class="cambio">Realizada</span></td>
-					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
 				</tr>
 				<tr>
 					<td>dd/mm/aaaa</td>
@@ -1205,7 +1205,7 @@ a:hover {
 					<td>1234****5678</td>
 					<td>999,999,999.00</td>
 					<td><span class="cambio">Realizada</span></td>
-					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
 				</tr>
 				<tr>
 					<td>dd/mm/aaaa</td>
@@ -1214,7 +1214,7 @@ a:hover {
 					<td>1234****5678</td>
 					<td>999,999,999.00</td>
 					<td><span class="cambio">Realizada</span></td>
-					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
 				</tr>
 			</table>
 			</div>
@@ -1223,10 +1223,10 @@ a:hover {
 	
 		<div id="navegador">
 			<ul>
-				<li class="active">ENTRE CUENTAS<br />SANTANDER</li>
-				<li>A OTRAS CUENTAS</li>
-				<li>CUENTAS REGISTRADAS/<br />ALTA/BAJA</li>
-				<li  onclick="cambiaEstado('4')">CONSULTA <br />DE TRANSFERENCIAS</li>
+				<li class="active">Entre cuentas santander</li>
+				<li>A otras cuentas</li>
+				<li>Cuentas registradas alta/baja</li>
+				<li  onclick="cambiaEstado('4')">Consulta de transferencias</li>
 			</ul>
 			<div class="aviso">
 				<img src="../../img/iconos/img_msj.png"/>
