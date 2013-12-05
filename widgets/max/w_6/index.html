@@ -2,18 +2,19 @@
 <link rel="stylesheet" href="../../../css/master.css" />
 <script type="text/javascript" src="../../../js/jquery.tinycircleslider.min.js"></script>
 <link rel="stylesheet" href="../../../css/website.css" type="text/css" media="screen"/>
+<script src="widgets/max/w_6/js/creditos.js"></script>
 <script type="text/javascript" src="../../../js/componentes.js"></script>
 <script src="../../../js/utiles.js"></script>  
 <script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
 <style>
-.btnHeader{
+/*.btnHeader{
 	float: right;
 	width: 32px;
 	height: 32px;
 	cursor: pointer;
 	
 	
-	}
+	}*/
 .btnHeaderTable{
 	height: 24px;
 margin: -10px;
@@ -571,9 +572,9 @@ function follow(){
 
 			</table>
 				<div class="botonera" style="float:right; margin-right:-235px; margin-top:172px;">
-					<div class="btn" onclick="backPasoImg();">Regresar</div>
+					<div class="btn" id="regresar" onclick="backPasoImg();">Regresar</div>
 					
-					<div id="btn1" class="btnaceptar">Aceptar</div>
+					<div id="btn1" class="btnaceptar" onclick="cambiaPaso3()">Aceptar</div>
 				</div>
 	</div><!--Fin step 2-->
 	
@@ -665,7 +666,7 @@ function follow(){
 				<div class="botonera" style="float:right; margin-right:-235px; margin-top:45px;">
 					<div class="btn">Imprimir Documentación</div>
 					
-					<div><div class="btnaceptar" onclick="cierraWidget()">Finalizar</div></div>
+					<div><div class="btnaceptar" onclick="backPasoImg()";"cierraWidget()">Finalizar</div></div>
 				</div>
 		
 
