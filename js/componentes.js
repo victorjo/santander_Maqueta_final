@@ -1,17 +1,15 @@
 $(document).ready(function(){
   dropIsra();
   avatarFade(); 
-<<<<<<< HEAD
   $(".widget-min").hover(function(){
     $(this).css({"box-shadow":"0 0 3px #757575"});
   
   },function(){
     $(this).css({"box-shadow":"none","border":"none"});
   
-=======
-  border();
+  //border();
 });
-
+/*
 function border(obj){
 	$("#wrappWidgets").hide().show();
 	var ojec = obj || ".widget-min";
@@ -25,11 +23,10 @@ function border(obj){
 		$(this).css({"box-shadow":"none","border":"none"});
 		$(this).css({"margin-top":"+=2px","margin-right":"+=3px"});
 	}
->>>>>>> c37a67db7cd097902a8416de7e346b2777d061da
   }
 
   );
-}
+}*/
 
 var cards = [
         {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},

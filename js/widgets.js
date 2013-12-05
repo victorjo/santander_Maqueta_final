@@ -471,7 +471,7 @@ function newWidgetInstance(obj)
 							io.data('instanced','undefined')
 						});
 						globalFlah = 0;
-						border(this.obj);
+						//border(this.obj);
 					};
 	this.chPost();
 
