@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	alert("esta entrando a su js");
 	omniBox("autocompleteQ",cards);
 	omniBox("autocompleteQ1",cards);
 	omniBox("autocompleteQ2",cards);
