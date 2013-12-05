@@ -433,7 +433,6 @@ function newWidgetInstance(obj)
 	this.chPost = function () {
 			if(this.obj.attr("data-max")=="false") return false;
 			this.obj.css({"box-shadow":"none","border":"none"});
-			this.obj.css({"margin-top":"+=2px","margin-right":"+=3px"});
 			this.obj.attr({"instanced":"true"});
 			this.obj.css({'position':'fixed','top':this.topPos,'left':this.leftPos,'z-index':50});
 			var forA = this.obj;
