@@ -281,3 +281,20 @@ function destruyeOverlay(){
 
   }
 }
+
+/*Transicion de pasos*/
+function cambiaFlujo(step){
+  
+  var npasos = $(".pasos").size();
+    $(".pasos").each(function(index){
+      if((++index) == npasos){
+        $(this).fadeOut("slow",function(){
+          $(step).delay(1000).fadeIn();
+        });
+  
+      }else{
+        $(this).fadeOut("slow");
+      }
+    })
+
+}

@@ -184,21 +184,6 @@ $("#navegador > ul > :nth-child(4)").click(function(){
 	cambiaFlujo("#step14");
 });
 
-function cambiaFlujo(step){
-	
-	var npasos = $(".pasos").size();
-		$(".pasos").each(function(index){
-			if((++index) == npasos){
-				$(this).fadeOut("slow",function(){
-					$(step).delay(1000).fadeIn();
-				});
-	
-			}else{
-				$(this).fadeOut("slow");
-			}
-		})
-
-}
 
 $("#btn1").on("click", function(){
 	creaOverlay("#000","#contenido",1);
