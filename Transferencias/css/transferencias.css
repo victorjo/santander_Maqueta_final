@@ -54,3 +54,12 @@
     width: 494px;
 }
 
+.btnHeader1 {
+	float: right;
+	width: 28px;
+	margin-top: 5px;
+	height: 312px;
+	cursor: pointer;
+	
+	
+	}

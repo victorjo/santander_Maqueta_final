@@ -1,4 +1,4 @@
-﻿/*trabajando*/
+/*trabajando*/
 *{
                 font-family: Arial, Helvetica, sans-serif;
                 margin: 0;
@@ -92,9 +92,8 @@ padding-top: 4px;
 	height: 312px;
 	cursor: pointer;
 	
-	
 	}
-
+	
 #headerwidred{
         background-color: #E8E8E8;
         width: 96%;
@@ -427,13 +426,21 @@ margin-left: 8px;
 	background-color:#FFFFFF;
 	color:#FF0D37 !important;
 	text-align: center;
-	box-shadow:2px 2px 2px gray;
 	float:left;
 	margin-left:20px;
 	font-size:11px;
 	font-weight:bold;
 	cursor: pointer;
+	border: solid 1px #A9A9A9;
 	
+}
+
+.btnaceptar:hover{
+        background-color:#F2F2F2;
+        color:black;
+        border-color:#B8B8B8;
+        cursor:pointer;
+        border: solid 1px red;
 }
 
 
@@ -504,6 +511,8 @@ margin-left: 8px;
                 padding:5px;
                 font-size: 11px;
                 border-bottom: 1px
+                
+
         }
 
 
@@ -516,18 +525,19 @@ margin-left: 8px;
 	background-color:#FFFFFF;
 	color:black;
 	text-align: center;
-	box-shadow:2px 2px 2px gray;
 	float:left;
 	margin-left:20px;
 	font-size:11px;
 	font-weight:bold;
+	border: solid 1px #A9A9A9;
 }
 
 .btn:hover{
-        background-color:#B8B8B8;
-        color:white;
+        background-color:#F2F2F2;
+        color:black;
         border-color:#B8B8B8;
         cursor:pointer;
+        border: solid 1px red;
 }
 
 .btnwidred{
