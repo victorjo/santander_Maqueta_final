@@ -3,8 +3,10 @@
   avatarFade(); 
   $(".widget-min").hover(function(){
     $(this).css({"box-shadow":"0 0 3px #757575","border":"1px solid #FF0000"});
+	 $(this).css({"margin-top":"-=2px","margin-right":"-=3px"});
   },function(){
     $(this).css({"box-shadow":"none","border":"none"});
+	$(this).css({"margin-top":"+=2px","margin-right":"+=3px"});
   }
 
   );
