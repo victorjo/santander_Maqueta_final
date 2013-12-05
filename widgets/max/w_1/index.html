@@ -125,9 +125,125 @@ input[type=radio]{
 	z-index: 90;
 }
 
+<<<<<<< HEAD
+			<div class="btnHeader">
+				<img src="../img/botones/btn_cerrar.png"/>
+			</div>
+			<div class="btnHeader">
+				<img src="../img/botones/info_.png"/>
+			</div>
+		</div>
+		<div id="stepbar">
+				<img src="../img/fake/pasos/paso1.png"/>
+		</div>
+		<div id="contenido">
+			<h4 style="color:red">1. Realice su transferencia de saldo</h4>
+		 	<div id="envolvente1" style="overflow:hidden;border:1px solid #ccc;padding:5px;">
+			<p>Introduzca los datos de la tarjeta de cr&eacute;dito o comercial de la que desea transferir su saldo:</p>
+			
+			<div class="wra_Select">
+				<p><b>N&uacute;mero de tarjeta</b></p>
+				<input type="text"  placeholder="Seleccionar" value="5288 5656 5000 5252"/>
+			</div>
+			
+			<div class="wra_Select">
+				<p><b>Instituci&oacute;n bancaria o comercial</b></p>
+				<input type="text"  placeholder="BANAMEX" disabled/>
+				
+			</div>
+			<div class="wra_Select" style="width:238px !important">
+				<p><b>Ingrese el monto que desea transferir</b></p>
+				<input type="text" placeholder="$10,000" value="$10,000" />
+				
+			</div>
+			</div>
+			
+			<div style="float: left; margin-top: 25px;">
+				
+				
+				<h4 style="color:red">2. Calcule el saldo a transferir</h4>
+				<p>A continuaci&oacute;n, seleccione la(s) tarjeta(s) a la(s) que quiere tranferir el saldo:</p>
+				
+			</div>
+			<table class="tbl_consulta" style="width:100%;float:left;">
+				<tr>
+					<td>Tarjetas de cr&eacute;dito</td>
+					<td>Saldo</td>
+					<td>Saldo a transferir</td>
+					<td>Pago</td>
+					<td>Tasa</td>
+					
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" name="balance" placeholder="" style="vertical-align: top;">
+						<img src="../../../img/balanceTransfer/tarjetaBT.png" alt="">
+					</td>
+					<td>
+						<p>Disponible:</p>
+						<p>$3,500.00 MXP</p>
+					</td>
+					<td>
+						<input type="text" placeholder="$0.00" value="$0.00" id="txtOne" disabled/>
+					</td>
+					<td>
+						<p>Mensual:</p>
+						<p>$1,000.00 MXP</p>
+					</td>
+					<td>
+						<p>Tasa:</p>
+						<p> 29.3%</p>
+					</td>
+					
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" name="balance" value="$0.00"  style="vertical-align: top;">
+						<img src="../../../img/balanceTransfer/tarjetaBT.png" alt="">
+					</td>
+					<td>
+						<p>Disponible:</p>
+						<p>$8,320.00 MXP</p>
+					</td>
+					<td>
+						<input type="text" placeholder="$0.00" value="$0.00" id="txtTwo" disabled  />
+					</td>
+					<td>
+						<p>Mensual:</p>
+						<p>$4,000.00 MXP</p>
+					</td>
+					<td>
+						<p>Tasa:</p>
+						<p> 21.8%</p>
+					</td>
+					
+				</tr>
+			</table>
+			
+			<div style="float: left;margin:10px 0 ;">
+				<p class="smallTxt">
+				*El beneficio de la Tasa Preferencial/Promocional tendrá una vigencia de 12 meses; contados a partir del mes en que se realice la transferencia de saldo a la Tarjeta Santander, una vez transcurrido este periodo, si el tarjetahabiente no terminá de liquidar la deuda objeto de la transferencia, el saldo remanente de la deuda será sujeto a las condiciones del saldo revolviste de la tarjeta de Crédito.
+				</p>
+			</div>
+			<div class='btn Fright marginOne btnaceptar'  style="margin-right: -10px;margin-top: 20px;float: right;" onclick="cambiaEstado('2')">Aceptar</div>
+			
+		</div>
+		<div id="navegador">
+			<ul>
+				<li class="active">SOLICITAR</li>
+				<li  onclick="cambiaEstado('4')">CONSULTAR</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="step2">
+	<div class="widget"  style="display:none;">
+	
+=======
 #menu ul.sub-menu li {
 	text-align: left;
 }
+>>>>>>> bb49b0c8eafc168f84900aeb992dd366d9b3d96f
 
 #menu li:hover ul.sub-menu {
 	display: block;

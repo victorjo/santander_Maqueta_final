@@ -431,12 +431,13 @@ function newWidgetInstance(obj)
 	this.width = this.obj.width();
 	this.height = this.obj.height();
 	this.chPost = function () {
+			var forA = this.obj;
 			if(this.obj.attr("data-max")=="false") return false;
-			$(this.obj[0].outerHTML).appendTo("#wrappWidgets").insertAfter( $("[data-pos='"+(2)+"']")).attr("clone","true");
+			console.log(parseInt(this.obj.attr("data-pos"))-1);
+			$(this.obj[0].outerHTML).appendTo("#wrappWidgets").insertAfter( $("[data-pos='"+(parseInt(forA.attr("data-pos"))-1)+"']")).attr("clone","true");
 			this.obj.css({"box-shadow":"none","border":"none"});
 			this.obj.attr({"instanced":"true"});
 			this.obj.css({'position':'fixed','top':this.topPos,'left':this.leftPos,'z-index':50});
-			var forA = this.obj;
 			forA.children().fadeOut(0);
 			this.obj.animate({width:'935px',height:'541px',left: ($(window).width()/2)-467+'px',top:'10%'},600,function(){creaOverlay('#000',document.body,0); forA.children().fadeOut('fast'); var scope = $(this);  /*}).animate({width:'935px',height:'541px'},800,function(){*/
 				$.ajax({
