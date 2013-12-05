@@ -38,13 +38,9 @@ h1,h2,h3,h4,h5{
     margin: 8px auto 8px 45%;
     position: absolute;
     text-align: center;
-<<<<<<< HEAD
     width: 239px;
-=======
-    width: 200px;
->>>>>>> ed005d4ddc42ca24044f7585dc1194804c139cc8
     overflow: visible;
-		}
+}
 /*=======
         margin: 8px 0 0 175px; 
 		font-size: 13px;
@@ -93,7 +89,7 @@ padding-top: 4px;
 	float: right;
 	width: 28px;
 	margin-top: 5px;
-	height: 32px;
+	height: 312px;
 	cursor: pointer;
 	
 	
@@ -1047,8 +1043,8 @@ font-size: 11px;
 
 .vtaimg{
 	background-image:url('../img/menuLateral/autoCompara.png');
-	width:205px;
-	height:245px;
+	width:245px;
+	height:283px;
 	background-color:white;
 	float:left;
 }
