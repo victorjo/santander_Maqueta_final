@@ -2,12 +2,11 @@ $(document).ready(function(){
   dropIsra();
   avatarFade(); 
   $(".widget-min").hover(function(){
-    $(this).css({"box-shadow":"0 0 3px #757575","border":"1px solid #FF0000"});
-	 $(this).css({"margin-top":"-=2px","margin-right":"-=3px"});
     $(this).css({"box-shadow":"0 0 3px #757575"});
+  
   },function(){
     $(this).css({"box-shadow":"none","border":"none"});
-	$(this).css({"margin-top":"+=2px","margin-right":"+=3px"});
+  
   }
 
   );
@@ -60,7 +59,7 @@ var switchO = '<div style="position:relative;width:230px;">';
   });
 }
 
-/*Funhcion switch (label de mas de dos digitos)--- Flujo: Domiciliaciones ó mas */
+/*Funhcion switch (label de mas de dos digitos)--- Flujo: Domiciliaciones Ã³ mas */
 function switchFuncDomMas(object,descripcion1,descripcion2,tipoModulo){
 
 var switchO = '<div style="position:relative;width:230px;">';
@@ -91,7 +90,6 @@ var switchO = '<div style="position:relative;width:230px;">';
 <div class="dropdown">
   <img class="downI" src="../img/iconos/dropdown.png" style="display: block;">
   <img class="upI" src="../img/iconos/dropup.png" style="display: none;">
-  <h6>Quiero notificación previa de mi pago</h6>
   <h6>Quiero notificaciÃ³n previa de mi pago</h6>
 </div>
 ******* *   * * * * * **    
@@ -119,7 +117,6 @@ var switchO = '<div style="position:relative;width:230px;">';
       source:objectCards || cards,
       minLength:0,
       open: function(){
-      	$(".ui-autocomplete").css({"max-height":"201px","overflow-y":"scroll","font-size":"13px","width":"480px"})
         $(".ui-autocomplete").css({"max-height":"201px","overflow-y":"scroll","font-size":"13px","width":"480px"})
       }
     });
@@ -139,7 +136,6 @@ var switchO = '<div style="position:relative;width:230px;">';
     });
   }
 
-/*Mostrara el step 1, mientras que ocultara los demás steps apartir del 2*/
 /*Mostrara el step 1, mientras que ocultara los demÃ¡s steps apartir del 2*/
 function ocultaSteps(num_Step){
   for(var i=2;i<=num_Step; i++){
@@ -148,7 +144,7 @@ function ocultaSteps(num_Step){
 }
 
 /** funcionalidad de botones Continuar y atras**/
-  /*********  INICIO Transiciones de flujo: Domiciliación de servicios **********/
+  /*********  INICIO Transiciones de flujo: DomiciliaciÃ³n de servicios **********/
   $("#siguiente").click(function(){
     $("#step1").fadeOut("slow",function(){
       $("#step2").fadeIn("slow");       
@@ -168,7 +164,7 @@ function ocultaSteps(num_Step){
   });
   
 
-  /*Transiciones de flujo (atras): Domiciliación de servicios*/
+  /*Transiciones de flujo (atras): DomiciliaciÃ³n de servicios*/
   $("#regresar").click(function(){
     $("#step2").fadeOut("slow",function(){
       $("#step1").fadeIn("slow");       
@@ -186,17 +182,13 @@ function ocultaSteps(num_Step){
   }
 
 
-  /*********  FIN Transiciones de flujo(1): Domiciliación de servicios **********/
+  /*********  FIN Transiciones de flujo(1): DomiciliaciÃ³n de servicios **********/
 
-/*Mostrara el step 1, mientras que ocultara los demás steps apartir del 2*/
+/*Mostrara el step 1, mientras que ocultara los demÃ¡s steps apartir del 2*/
 function ocultaSteps(num_Step){
-	for(var i=2;i<=num_Step; i++){
-		$('#step'+i).hide();
-	}
   for(var i=2;i<=num_Step; i++){
     $('#step'+i).hide();
   }
 }
-
 
 

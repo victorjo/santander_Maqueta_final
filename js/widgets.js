@@ -14,7 +14,6 @@ function validaBrowser(){
     return false; // chrome
    }
   }else{
-  	reject();
   	//reject();
   }
 
