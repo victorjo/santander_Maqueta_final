@@ -8,7 +8,8 @@ $(document).ready(function(){
     $(this).css({"box-shadow":"none","border":"none"});
   
   //border();
-});
+  });
+}); 
 /*
 function border(obj){
 	$("#wrappWidgets").hide().show();
