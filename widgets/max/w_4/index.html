@@ -91,7 +91,7 @@ function cambiaPaso3(){
 								<td style="background-color:gray;color:white;cursor:pointer">Ver lista<br />completa</td>
 							</tr>
 							<tr>
-								<td><div> <img src="../img/servicios/estable_cfe.png"></div></td>
+								<td><div > <img src="../img/servicios/estable_cfe.png"></div></td>
 								<td>CFE</td>
 								<td>1234</td>
 								<td>dd/mm/aaaa</td>
@@ -250,20 +250,27 @@ function cambiaPaso3(){
 			
 			<div id="step3" class="pasos">
 			
-				<div id="vtacruzada">
+				<div id="vtacruzada"> 
 			
-					<div class="vtaimg">
+						<div class="vtaimg">
+						</div>
+						
+						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
+						
+						<!--<div class="vtapanel">
+							<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+							<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+							<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+						</div>-->
+						<div id="btn_paso3">
+		                     <ul>
+		                    	<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
+		                        <li class="btnNav"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">Pagar Servicios</span></li>
+		                        <li class="btnNav"><img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">Realizar una Domiciliación</span></li>
+		                      </ul>
+		                </div>
+						
 					</div>
-			
-					<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
-			
-					<div class="vtapanel">
-						<div class="vtabtn"><img src="../img/iconos/tarjeta.png" class="vtaico" /><h6>Lorem Ipsum</h6></div>
-						<div class="vtabtn"><img src="../img/iconos/img_enviar.png" class="vtaico" /><h6>Lorem Ipsum</h6></div>
-						<div class="vtabtn"><img src="../img/iconos/img_icono.png" class="vtaico" /><h6>Lorem Ipsum</h6></div>
-					</div>
-					
-				</div>
 		
 				<h4 style="width:35%">Comprobante de pago de servicio.</h4>
 			
@@ -322,7 +329,7 @@ function cambiaPaso3(){
 						</tr>
 		
 						<tr>
-							<td colspan="5" ><div id="btnreturn" onclick="backPasoImg()">Quiero hacer otro<br />pago de servicios</div></td>
+							<td colspan="5" ><div id="btnreturn" onclick="backPasoImg()">Deseo hacer otro<br />pago de servicio</div></td>
 							
 						</tr>
 						
@@ -438,56 +445,31 @@ function cambiaPaso3(){
 			</div><!--step4-->
 			
 			<div id="step5" class="pasos">
-				<h4>El pago de servicio seleccionado se efectuará con la siguiente información:</h4>
+				<h4>El servicio seleccionado se dará de altacon la siguiente información:</h4>
 				<table class="tbl_info" style="width:100%;float:left;">
-					<tr>
-						<td style="width:200px;">Nombre del servicio:</td>
-						<td style="color:#CCCCCC">Lorem Ipsum</td>
-					</tr>
-					<tr>
-						<td>Razón social:</td>
-						<td style="color:#CCCCCC">Lorem Ipsum S.A. de C.V.</td>
-					</tr>
-					<tr>
-						<td>Convenio:</td>
-						<td style="color:#CCCCCC">123456789123456789</td>
-					</tr>
-					<tr>
-						<td>Referencia:</td>
-						<td style="color:#CCCCCC">123456789123456789</td>
-					</tr>
-	
-					<tr>
-						<td>Cuenta de cargo:</td>
-						<td style="color:#CCCCCC">1234****5678</td>
-					</tr>
-					<tr>
-						<td>Importe:</td>
-						<td style="color:#CCCCCC">999,999,999.00 (MXP)</td>
-					</tr>
-					<tr>
-						<td>Comisión por pago de servicio:</td>
-						<td style="color:#CCCCCC">0.00 (MXP)</td>
-					</tr>
-					<tr>
-						<td>I.V.A. por comisión de pago de servicio:</td>
-						<td style="color:#CCCCCC">0.00 (MXP)</td>
-					</tr>
-					<tr>
-						<td>Fecha de operación:</td>
-						<td style="color:#CCCCCC">dd/mm/aaaa</td>
-					</tr>
-					<tr>
-						<td>Fecha programada de pago:</td>
-						<td style="color:#CCCCCC">dd/mm/aaaa</td>
-					</tr>
-					<tr>
-						<td>Notificacion previa al pago:</td>
-						<td style="color:#CCCCCC">3 días</td>
-					</tr>
-				</table>
+						<tr>
+							<td colspan="3">Nombre comercial o razón social del servicio</td>
+							<td style="color:#CCCCCC">Lorem Ipsum</td>
+							<td rowspan="4"><img src="../img/servicio.png"/></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colspan="3" >Número de Convenio:</td>
+							<td style="color:#CCCCCC">12345</td>
+						</tr>
+						<tr>
+							<td colspan="3" ></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colspan="3" ></td>
+							<td></td>
+						</tr>
+					</table>
 			
-			<div class="botonera3">
+			<div class="botonera3" style="margin-top:208px;margin-right:-11px">
 				<div class="btn" id="regresar2" onclick="backPasoImg()">Regresar</div>
 				<div class="btn" onclick="backPasoImg()">Cancelar</div>
 				<div id="siguiente4"><div class="btnaceptar" onclick="cambiaPaso3()">Confirmar</div></div>
@@ -496,50 +478,67 @@ function cambiaPaso3(){
 			</div><!--fin step5-->
 			
 			<div id="step6" class="pasos"><!--step6-->
-				<div id="vtacruzada">
-					<div class="vtaimg"></div>
-					<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
-					<div class="vtapanel">
-						<div class="vtabtn"><img src="../img/iconos/tarjeta.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-						<div class="vtabtn"><img src="../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-						<div class="vtabtn"><img src="../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-					</div>
-				</div>
-		
-				<h4 style="width:30%">Comprobante de alta de servicio.</h4>
-				<table class="tbl_info" style="width:60%;float:left;">
-					<tr>
-						<td colspan="3">Nombre comercial o razón social del servicio</td>
-						<td style="color:#CCCCCC">Lorem Ipsum</td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td colspan="3" >Número de Convenio:</td>
-						<td style="color:#CCCCCC">12345</td>
-					</tr>
-					<tr>
-						<td colspan="3" >Fecha y hora de alta:</td>
-						<td style="color:#CCCCCC">dd/mm/aaaa 00:00</td>
-					</tr>
-					<tr>
-						<td colspan="3" >Fecha y hora de activación:</td>
-						<td style="color:#CCCCCC">dd/mm/aaaa 00:00</td>
-					</tr>
-					<tr>
-						<td colspan="3" >Folio SuperNet</td>
-						<td style="color:#CCCCCC">1234567892345</td>
-					</tr>
-					<tr>
-						<td colspan="5" ><div id="btnreturn2" onclick="backPasoImg()">Quiero dar de alta<br />otro servicio</div></td>
+				<div id="vtacruzada"> 
+			
+						<div class="vtaimg">
+						</div>
 						
-					</tr>		
-				</table>
-				<div class="botonera5" >
-					<div class="btn"><img src="../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
-					<div class="btnaceptar" onclick="backPasoImg();cierraWidget()">Finalizar</div>
-				</div>
+						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
+						
+						<!--<div class="vtapanel">
+							<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+							<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+							<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+						</div>-->
+						<div id="btn_paso3">
+		                     <ul>
+		                    	<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
+		                        <li class="btnNav"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">Pagar Servicios</span></li>
+		                        <li class="btnNav"><img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">Realizar una Domiciliación</span></li>
+		                      </ul>
+		                </div>
+						
+					</div>
+
+						<h4 style="color:red;">Comprobante de transferencia entre mis cuentas Santander</h4>
+
+									
+							<table class="tbl_info" style="width:60%;float:left;">
+<tr>
+								<td style="width:200px;">Nombre de la empresa o razón social:</td>
+								<td style="color:#CCCCCC">Lorem ipsum</td>
+							</tr>
+							<tr>
+								<td>Número de convenio:</td>
+								<td style="color:#CCCCCC">1234</td>
+							</tr>
+							<tr>
+								<td>Fecha y hora de alta:</td>
+								<td style="color:#CCCCCC">dd/mm/aaaa 00:00
+								</td>
+							</tr>
+							<tr>
+								<td>Fecha y hora de activación:</td>
+								<td style="color:#CCCCCC">dd/mm/aaaa 00:00</td>
+							</tr>
+							<tr>
+								<td>Folio SuperNet:</td>
+								<td style="color:#CCCCCC">1234567892345</td>
+							</tr>
+							
+							<tr>
+								<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo hacer<br />otra transferencia</div></td>
+								
+							</tr>
+						</table>
+
+						<table style="	float: left; margin-left: -22px; margin-top:61px;">
+							<tr>
+								<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
+								<td><div class="btn" >Guardar en operaciones favoritas</div></td>
+								<td><div class="btn btnaceptar" onclick="cierraWidget();">Finalizar</div></td>
+							</tr>
+						</table>
 			</div>
 			
 		</div><!--Fin Alta de servicios-->
@@ -654,51 +653,64 @@ function cambiaPaso3(){
 				</div><!--fin step8-->
 				
 			<div id="step9" class="pasos">
-				<div id="vtacruzada">		
-					<div class="vtaimg"></div>
-					<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>		
-						<div class="vtapanel">
-							<div class="vtabtn"><img src="../../img/iconos/tarjeta.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+				<div id="vtacruzada"> 
+			
+						<div class="vtaimg">
+						</div>
+						
+						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
+						
+						<!--<div class="vtapanel">
+							<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
 							<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
 							<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-						</div>
-				</div>
-		
-				<h4 style="width:30%">Comprobante de baja de servicio.</h4>	
-				<table class="tbl_info" style="width:60%;float:left;">
-					<tr>
-						<td colspan="3">Nombre comercial o razón social del servicio</td>
-						<td style="color:#CCCCCC">Lorem Ipsum</td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td colspan="3" >Número de Convenio:</td>
-						<td style="color:#CCCCCC">12345</td>
-					</tr>
-					<tr>
-						<td colspan="3" >Fecha y hora de alta:</td>
-						<td style="color:#CCCCCC">dd/mm/aaaa 00:00</td>
-					</tr>
-					<tr>
-						<td colspan="3" >Fecha y hora de activación:</td>
-						<td style="color:#CCCCCC">dd/mm/aaaa 00:00</td>
-					</tr>
-	
-					<tr>
-						<td colspan="3" >Folio SuperNet</td>
-						<td style="color:#CCCCCC">1234567892345</td>
-					</tr>
-					<tr>
-						<td colspan="5" ><div id="btnreturn3" onclick="backPasoImg()">Quiero dar de baja<br />otro servicio</div></td>						
-					</tr>		
-				</table>
-			
-			<div class="botonera5">
-				<div class="btn"><img src="../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div>
-				<div class="btnaceptar" onclick="backPasoImg();cierraWidget()">Finalizar</div>
-			</div>		
+						</div>-->
+						<div id="btn_paso3">
+		                     <ul>
+		                    	<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
+		                        <li class="btnNav"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">Pagar Servicios</span></li>
+		                        <li class="btnNav"><img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">Realizar una Domiciliación</span></li>
+		                      </ul>
+		                </div>
+						
+					</div>
+
+						<h4 style="color:red;">Comprobante de transferencia entre mis cuentas Santander</h4>
+
+									
+							<table class="tbl_info" style="width:60%;float:left;">
+<tr>
+								<td style="width:200px;">Nombre de la empresa o razón social:</td>
+								<td style="color:#CCCCCC">Lorem ipsum</td>
+							</tr>
+							<tr>
+								<td>Número de convenio:</td>
+								<td style="color:#CCCCCC">1234</td>
+							</tr>
+							<tr>
+								<td>Fecha y hora de baja:</td>
+								<td style="color:#CCCCCC">dd/mm/aaaa 00:00
+								</td>
+							</tr>
+							
+							<tr>
+								<td>Folio SuperNet:</td>
+								<td style="color:#CCCCCC">1234567892345</td>
+							</tr>
+							
+							<tr>
+								<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo hacer<br />otra transferencia</div></td>
+								
+							</tr>
+						</table>
+
+						<table style="	float: left; margin-left: -22px; margin-top:61px;">
+							<tr>
+								<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
+								<td><div class="btn" >Guardar en operaciones favoritas</div></td>
+								<td><div class="btn btnaceptar" onclick="cierraWidget();">Finalizar</div></td>
+							</tr>
+						</table>		
 		</div><!--Fin step 9-->
 		
 		</div><!--fin consulta de Servicios-->
