@@ -1,98 +1,52 @@
-<link rel="stylesheet" href="../../../css/master.css" />
 <script src="../../../js/ddSlick.js"></script>
 <script src="../../../js/balanceTransfer.js"></script>
 <script src="../../../js/componentes.js"></script>
-<script src="widgets/max/w_1/js/balanceTransfer.js"></script>
-<link rel="stylesheet" href="widgets/max/w_1/css/balanceTransfer.css"/>
+<script src="widgets/max/w_1/js/balance.js"></script>
+<!--<script src="../../../js/utiles.js"></script>-->
+<link rel="stylesheet" href="widgets/max/w_1/css/balance.css"/>
+<link rel="stylesheet" href="../../../css/componentes.css"/>
+<!-- nothong -->
 <style>
-/*.btnHeader{
-	float: right;
-	width: 18px;
-	height: 32px;
-	cursor: pointer;
-	
-	
-	}*/
+
 .btnHeaderTable{
 	height: 24px;
-margin: -10px;
-padding-top: 10px;
-width: 110px;
+    margin: -10px;
+    padding-top: 10px;
+    width: 110px;
 }
+
 .titTabla{
 	margin-bottom:0px;
 	padding:10px 10px 5px 30px;
 	border:1px solid black;
 	border-bottom:0;
-	float:left;
 	width:678px;
 	background:#F4F4F4;
 	margin-top:20px;
 	height:20px;
 	font-weight:bold
 }
+
 .titTabla p{
 	float:left;
 }
+
 .titTabla img{
 	float:right;
-	margin-top:0px;
-	margin-right: 15px;
+	margin-top:-7px;
 	cursor: pointer;
 }
-.wra_Select2{
-	width: 230px;
-}
-.wra_Select{
-	width: 232px;
-}
-.wra_Select input[type=text]{
-	background: none repeat scroll 0 0 #EFEFEF;
-border: 1px solid #000000;
-height: 25px;
-text-align: center;
-width: 200px;
-}
-/* 225*30 */
-input[type='text']{
-	width: 202px;
-	height:25px;
-	background: none repeat scroll 0 0 #EFEFEF;
-border: 1px solid #000000;
-text-align: center;
-
+ 
+.espacioTxt{
+	margin-left: 30px;
 }
 
-input[type=radio]{
-	vertical-align: top;
-	margin: 5px
-}
-.tablaConsulta tr td{
-	height: 20px;
-}
-
-.dd-select{
-	margin-left: 15px;
-}
-
-.exitosa{
-	color:green;
-	text-decoration: underline;
-}
-.programada{
-	color:brown;
-	text-decoration: underline;
-}
-
-.noexitosa{
-	color:red;
-	text-decoration: underline;
-}
 /*MENU*/
 #menu {
 	float:left;
 	position: absolute;
 	margin-left: -42px;
+	margin-top: 22px;
 }
 
 #menu a {
@@ -136,7 +90,7 @@ input[type=radio]{
 
 .texto1{
 	float: left;
-	margin-top: 52px;
+	margin-top: 0px;
 }
 
 .texto2{
@@ -157,26 +111,22 @@ a:hover {
 
 </style>
 
-<div  id="widget" class="widget">
-    <div id="header">
-    
-        <p class="f_titleWid" >
-            BALANCE TRANSFER
-            </p>
+<div id="widget">
+	<div id="header">
+		<p class="f_titleWid">TRANSFERENCIA DE SALDOS</p>
+			<div class="btnHeader">
+				<img src="../../../img/botones/btn_cerrar.png"/>
+			</div>
+			<div class="btnHeader">
+				<img src="../../../img/botones/info_.png"/>
+			</div>
+	</div>
+	<div id="stepbar">
+		<img src="../../../img/fake/pasos/paso1.png"/>
+	</div>
 
-        <div class="btnHeader">
-            <img src="../img/botones/btn_cerrar.png"/>
-        </div>
-        <div class="btnHeader">
-            <img src="../img/botones/info_.png"/>
-        </div>
-    </div>
-    <div id="stepbar">
-            <img src="../img/fake/pasos/paso1.png"/>
-    </div>
-    <div id="contenido">
-    	
-        <div><!-- Funcionalidad:  Solicitar -->
+		<div id="contenido">
+			<div><!-- Funcionalidad:  Solicitar -->
 	        	<div id="step1" class="pasos"><!-- step1 -->
 	            	<p style="color:red"><b>Introduzca los datos de la tarjeta de cr&eacute;dito o comercial de la que desea transferir su saldo:</b></p>
 			 	<div id="envolvente1" style="overflow:hidden;border:1px solid #ccc;padding:5px;">
@@ -449,17 +399,14 @@ a:hover {
             </div><!-- Fin step3 -->
         </div>
         <!-- FIN Funcionalidad: Solicitar -->
-        
-        <!-- Funcionalidad : Consultar -->
-        <div>
-        	<div id="step4" class="pasos"><!-- inicio de step4 -->
-        		<p style="color:red"><b>Seleccione el estatus de las transferencias que desea 
-								consultar, así como el periodo de búsqueda y/o rango de 
-								importe para realizar una búsqueda más específica</b></p>
+	        <div><!-- Flujo de  consulta -->
+				<div id="step4" class="pasos">
+					 	<p style="color:red"><b>A continuación puede consultar las transferencias que ha realizado a sus tarjetas Santander. 
+Seleccione  el estatus de las transferencias de saldo que desea consultar, así como el período de búsqueda y/o rango de saldo transferido para realizar una búsqueda más específica</b></p>
 
 			<div id="menu">
 				<ul>
-					<li><a href="#"><div id="circulo"><img  class="imagen" src="../../img/interfaz/paginador_apagado.png" style="width:12px; height: 12px; margin-left: 10px;"/><span style="margin-left: 10px;">Estatus</span></div></a>
+					<li><a href="#"><div id="circulo"><img  class="imagen" src="../../img/interfaz/paginador_apagado.png" style="width:12px; height: 12px; margin-left: 10px;"/><span style="margin-left: 10px;">Periodo de búsqueda</span></div></a>
 
 					<ul class="sub-menu">
 						<li><a href="#" class="seleccionado" id="prog"><img  id="ok1" src='../../img/iconos/ok.png' style='width:12px; height: 12px; margin-left: 10px; display:none;'/>Programadas</a></li>
@@ -468,7 +415,7 @@ a:hover {
 
 					</li>
 
-					<li><a href="#">Periodo de búsqueda</a>
+					<li><a href="#">Tarjeta de origen</a>
 
 					<ul class="sub-menu">
 						<li><a href="#" id="3d">3 días</a></li>
@@ -485,99 +432,86 @@ a:hover {
 			</div>	
 			
 			<div>
-				<span class="texto2"><p><b>Nueva búsqueda</b></p></span>
+				<span class="texto1"><p><b>Criterios de búsqueda:<span class="dias"></span></p></b></span>
+				<span class="texto2"><p><b>Calendario de transferencias</b></p></span>
 			</div>
 
 			
 			<div class="tabla">
-				<div class="tabletitle"><p style="float:left">Mis transferencias de saldos</p>
+				<div class="tabletitle"><p style="float:left">Mis transferencias</p>
 									<img src="../../img/botones/exportar.png" style="float:right;margin-right:10px"/>
 									<p style="float:right;margin-right:10px">Exportar</p>
 									</div>
-			
+			<table class="tbl_consulta" style="width:100%;float:left;">
+
+				<tr>
+					<td>Fecha</td>
+					<td>Descripción de la operación</td>
+					<td>Cuenta destino<br/>(Destinatario)</td>
+					<td>Cuenta de cargo</td>
+					<td>Importe (MXP)</td>
+					<td>Estatus</td>
+					<td>Favorita</td>
+				</tr>
+				<tr>
+					<td>dd/mm/aaaa</td>
+					<td>123456789123456789123456789<br />123456789123456789123456789</td>
+					<td>1234****5678<br /> (Lorem Ipsum)</td>
+					<td>1234****5678</td>
+					<td>999,999,999.00</td>
+					<td><span class="cambio">Realizada</span></td>
+					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+				<tr>
+					<td>dd/mm/aaaa</td>
+					<td>123456789123456789123456789<br />123456789123456789123456789</td>
+					<td>1234****5678<br /> (Lorem Ipsum)</td>
+					<td>1234****5678</td>
+					<td>999,999,999.00</td>
+					<td><span class="cambio">Realizada</span></td>
+					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+				<tr>
+					<td>dd/mm/aaaa</td>
+					<td>123456789123456789123456789<br />123456789123456789123456789</td>
+					<td>1234****5678<br /> (Lorem Ipsum)</td>
+					<td>1234****5678</td>
+					<td>999,999,999.00</td>
+					<td><span class="cambio">Realizada</span></td>
+					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+				<tr>
+					<td>dd/mm/aaaa</td>
+					<td>123456789123456789123456789<br />123456789123456789123456789</td>
+					<td>1234****5678<br /> (Lorem Ipsum)</td>
+					<td>1234****5678</td>
+					<td>999,999,999.00</td>
+					<td><span class="cambio">Realizada</span></td>
+					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+				<tr>
+					<td>dd/mm/aaaa</td>
+					<td>123456789123456789123456789<br />123456789123456789123456789</td>
+					<td>1234****5678<br /> (Lorem Ipsum)</td>
+					<td>1234****5678</td>
+					<td>999,999,999.00</td>
+					<td><span class="cambio">Realizada</span></td>
+					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+			</table>
 			</div>
-        	</div><!-- Fin step4 -->
-        </div>
-        <!-- FIN Funcionalidad : Consultar -->
-        
-    </div>
-    <div id="navegador">
-        <ul>
-            <li class="active">SOLICITAR</li>
-            <li >CONSULTAR</li>
-        </ul>
-    </div>
+				</div>
+	        	
+	        </div><!-- FIN flujo consulta -->
+		</div><!--cierre contenido-->
+	
+		<div id="navegador">
+			<ul>
+				<li class="active">SOLICITAR</li>
+				<li>CONSULTAR</li>
+			</ul>
+		</div>
 </div>
-
-
-<script>
-	
-	
-/*
-	function cambiaEstado(step){
-		switch(step) {
-
-			case "1":
-
-				$("#step4").find(".widget").fadeOut("slow",function(){
-					$("#step1").find(".widget").fadeIn("slow");
-				});
-				break;
-
-
-				case "2":
-				$("#step1").find(".widget").fadeOut("slow",function(){
-					$("#step2").find(".widget").fadeIn("slow");
-				});
-				break;
-				case "3":
-			
-				$("#step2").find(".widget").fadeOut("slow",function(){
-					$("#step3").find(".widget").fadeIn("slow");
-				});
-				
-				break;
-
-				case "4":
-			
-				$("#step1").find(".widget").fadeOut("slow");
-				$("#step2").find(".widget").fadeOut("slow");
-				$("#step3").find(".widget").fadeOut("slow",function(){
-					$("#step4").find(".widget").delay(1000).fadeIn("slow");
-				});
-				
-				break;
-
-				default:
-				break;
-		}
 		
-	}
-
-
-
+		
 	
-</script>
-
-<!-- SCRIPT DE CONSULTA -->
-
-<script>
-			$("#select1").ddslick({
-		                    width:"215"
-                });
-			$("#select2").ddslick({
-		                    width:"215"
-                });
-
-			$("#select3").ddslick({
-		                    width:"215"
-                });
-              
-
-             function habTxt(txtArea){
-             	$("#"+txtArea).attr("disabled","enabled");
-             } 
-
-
-</script>
-
