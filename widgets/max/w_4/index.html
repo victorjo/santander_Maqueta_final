@@ -183,8 +183,8 @@ function cambiaPaso3(){
 						</div>
 					</div>
 					<div class="botonera">
-							<div class="btn">Cancelar</div>
-							<div id="siguiente"><div class="btnaceptar" onclick="cambiaPasoImg()">Continuar</div></div>
+							
+							<div id="siguiente"><div class="btnaceptar" onclick="cambiaPasoImg()" style="float:right; margin-right:224px;margin-top:8px">Continuar</div></div>
 
 						</div>			
 					
@@ -215,6 +215,11 @@ function cambiaPaso3(){
 					<td>Cuenta de cargo:</td>
 					<td style="color:#CCCCCC">1234****5678</td>
 				</tr>
+
+				<tr>
+					<td>Concepto</td>
+					<td style="color:#CCCCCC">123456789123456789123456789<br> 123456789123456789</td>
+				</tr>
 				<tr>
 					<td>Importe:</td>
 					<td style="color:#CCCCCC">999,999,999.00 (MXP)</td>
@@ -228,21 +233,14 @@ function cambiaPaso3(){
 					<td style="color:#CCCCCC">0.00 (MXP)</td>
 				</tr>
 				<tr>
-					<td>Fecha de operación:</td>
+					<td>Fecha de pago:</td>
 					<td style="color:#CCCCCC">dd/mm/aaaa</td>
 				</tr>
-				<tr>
-					<td>Fecha programada de pago:</td>
-					<td style="color:#CCCCCC">dd/mm/aaaa</td>
-				</tr>
-				<tr>
-					<td>Notificacion previa al pago:</td>
-					<td style="color:#CCCCCC">3 días</td>
-				</tr>
+				
 			</table>
 				<div class="botonera3">
 					<div class="btn" id="regresar" onclick="backPasoImg()">Regresar</div>
-					<div class="btn" onclick="backPasoImg()">Cancelar</div>
+					
 					<div id="siguiente2"><div class="btnaceptar" onclick="cambiaPaso3()">Confirmar</div></div>
 				</div>
 
@@ -286,43 +284,42 @@ function cambiaPaso3(){
 							<td>Razón social:</td>
 							<td style="color:#CCCCCC">Lorem Ipsum S.A. de C.V.</td>
 						</tr>
+						
 						<tr>
-							<td>Convenio:</td>
-							<td style="color:#CCCCCC">123456789123456789</td>
-						</tr>
-						<tr>
-							<td>Referencia:</td>
-							<td style="color:#CCCCCC">123456789123456789</td>
-						</tr>
-		
-						<tr>
-							<td>Cuenta de cargo:</td>
-							<td style="color:#CCCCCC">1234****5678</td>
-						</tr>
-						<tr>
-							<td>Importe:</td>
-							<td style="color:#CCCCCC">999,999,999.00 (MXP)</td>
-						</tr>
-						<tr>
-							<td>Comisión por pago de servicio:</td>
-							<td style="color:#CCCCCC">0.00 (MXP)</td>
-						</tr>
-						<tr>
-							<td>I.V.A. por comisión de pago de servicio:</td>
-							<td style="color:#CCCCCC">0.00 (MXP)</td>
-						</tr>
-						<tr>
-							<td>Fecha de operación:</td>
-							<td style="color:#CCCCCC">dd/mm/aaaa</td>
-						</tr>
-						<tr>
-							<td>Fecha programada de pago:</td>
-							<td style="color:#CCCCCC">dd/mm/aaaa</td>
-						</tr>
-						<tr>
-							<td>Notificacion previa al pago:</td>
-							<td style="color:#CCCCCC">3 días</td>
-						</tr>
+					<td>Convenio:</td>
+					<td style="color:#CCCCCC">123456789123456789</td>
+				</tr>	
+				<tr>
+					<td>Referencia:</td>
+					<td style="color:#CCCCCC">123456789123456789</td>
+				</tr>
+				<tr>
+					<td>Cuenta de cargo:</td>
+					<td style="color:#CCCCCC">1234****5678</td>
+				</tr>
+				<tr>
+					<td>Concepto:</td>
+					<td style="color:#CCCCCC">123456789123456789123456789<br> 123456789123456789</td>
+				</tr>
+
+				<tr>
+					<td>Importe:</td>
+					<td style="color:#CCCCCC">999,999,999.00 (MXP)</td>
+				</tr>
+				<tr>
+					<td>Comisión por pago de servicio:</td>
+					<td style="color:#CCCCCC">0.00 (MXP)</td>
+				</tr>
+				<tr>
+					<td>I.V.A. por comisión de pago de servicio:</td>
+					<td style="color:#CCCCCC">0.00 (MXP)</td>
+				</tr>
+				<tr>
+					<td>Fecha de pago:</td>
+					<td style="color:#CCCCCC">dd/mm/aaaa</td>
+				</tr>
+
+
 						<tr>
 							<td>Folio SuperNet:</td>
 							<td style="color:#CCCCCC">12345678912345</td>
@@ -337,7 +334,7 @@ function cambiaPaso3(){
 						
 					</table>
 			
-				<div class="botonera2" style="margin-right:20px;width:100%" >
+				<div class="botonera2" style="margin-right:-11px;width:100%" >
 					<div class="btnaceptar" style="float:right;margin-top:7px;" onclick="backPasoImg(); cierraWidget()">Finalizar</div>
 					<div class="btn" style="float:right;margin-top:7px">
 						<img src="../img/iconos/img_impresora.png" class="btnico"/>
@@ -439,8 +436,8 @@ function cambiaPaso3(){
 				</div>
 				
 				<div class="botonera4">
-					<div class="btn" onclick="backPasoImg()">Cancelar</div>
-					<div id="siguiente3"><div class="btnaceptar" onclick="cambiaPasoImg()">Dar de alta</div></div>	
+				
+					<div id="siguiente3"><div class="btnaceptar" onclick="cambiaPasoImg()" style="float:right;margin-right:-10px">Dar de alta</div></div>	
 				</div>
 			</div><!--step4-->
 			
@@ -471,7 +468,7 @@ function cambiaPaso3(){
 			
 			<div class="botonera3" style="margin-top:208px;margin-right:-11px">
 				<div class="btn" id="regresar2" onclick="backPasoImg()">Regresar</div>
-				<div class="btn" onclick="backPasoImg()">Cancelar</div>
+				
 				<div id="siguiente4"><div class="btnaceptar" onclick="cambiaPaso3()">Confirmar</div></div>
 			</div>
 
@@ -558,7 +555,7 @@ function cambiaPaso3(){
 						<td>Estatus</td>
 					</tr>
 					<tr>
-						<td><div class="radio"></div></td>
+						<td><input type="radio"  name="balance" value="$0.00" placeholder=""></td>  
 						<td><div style="width:18px; height:18px; background-color:gray;float:left;"></div>Lorem Ipsum</td>
 						<td>dd/mm/aaaa</td>
 						<td>1234</td>
@@ -569,7 +566,7 @@ function cambiaPaso3(){
 	
 					</tr>
 					<tr>
-						<td><div class="radio"></div></td>
+						<td><input type="radio"  name="balance" value="$0.00" placeholder=""></td>
 						<td><div style="width:18px; height:18px; background-color:gray;float:left;"></div>Lorem Ipsum</td>
 						<td>dd/mm/aaaa</td>
 						<td>1234</td>
@@ -580,7 +577,7 @@ function cambiaPaso3(){
 	
 					</tr>
 					<tr>
-						<td><div class="radio"></div></td>
+						<td><input type="radio"  name="balance" value="$0.00" placeholder=""></td>
 						<td><div style="width:18px; height:18px; background-color:gray;float:left;"></div>Lorem Ipsum</td>
 						<td>dd/mm/aaaa</td>
 						<td>1234</td>
@@ -591,7 +588,7 @@ function cambiaPaso3(){
 	
 					</tr>
 					<tr>
-						<td><div class="radio"></div></td>
+						<td><input type="radio" name="balance" value="$0.00" placeholder=""></td>
 						<td><div style="width:18px; height:18px; background-color:gray;float:left;"></div>Lorem Ipsum</td>
 						<td>dd/mm/aaaa</td>
 						<td>1234</td>
@@ -602,7 +599,7 @@ function cambiaPaso3(){
 	
 					</tr>
 					<tr>
-						<td><div class="radio"></div></td>
+						<td><input type="radio"  name="balance" value="$0.00" placeholder=""></div></td>
 						<td><div style="width:18px; height:18px; background-color:gray;float:left;"></div>Lorem Ipsum</td>
 						<td>dd/mm/aaaa</td>
 						<td>1234</td>
@@ -614,8 +611,8 @@ function cambiaPaso3(){
 				</table>
 				<div class="botonera6">
 					
-					<div class="btn" onclick="backPasoImg()">Cancelar</div>
-					<div id="siguiente5"><div class="btnaceptar" onclick="cambiaPasoImg()">Dar de baja</div></div>
+					
+					<div id="siguiente5"><div class="btnaceptar" onclick="cambiaPasoImg()" style="float: right;margin-right: -11px;margin-top: 12px">Dar de baja</div></div>
 				</div>
 				
 				</div><!--fin step7-->
@@ -647,7 +644,7 @@ function cambiaPaso3(){
 					</table>
 					<div class="botonera7">
 						<div class="btn" id="regresar3" onclick="backPasoImg()">Regresar</div>
-						<div class="btn" onclick="backPasoImg()">Cancelar</div>
+						
 						<div id="siguiente6"><div class="btnaceptar" onclick="cambiaPaso3()">Confirmar</div></div>
 					</div>		
 				</div><!--fin step8-->

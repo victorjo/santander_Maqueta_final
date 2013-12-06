@@ -42,7 +42,7 @@ h7 {
 
 #contenido p{
 	float:left; 
-	margin-top:5px;
+	margin-top:0px;
 }
 
 .serv_ico{
@@ -110,10 +110,11 @@ z-index: 1;
 
 .botonera3 {
 bottom: -126px;
-float: right;
 position: relative;
 right: 0;
 width: 741px;
+float: left;
+margin-left: 236px;
 }
 
 .botonera2 {
@@ -124,10 +125,10 @@ width: 741px;
 }
 
 .botonera4 {
-	bottom: -40px;
+	bottom: -44px;
 	float: right;
 	position: relative;
-	right: 0;
+	right: -259;
 	width: 495px;
 }
 
@@ -147,11 +148,12 @@ position: relative;
 }
 
 .botonera7 {
-	bottom: -330px;
+	bottom: 10px;
 	float: right;
-	position: relative;
-	right: 0;
+	position: absolute;
+	right: 21;
 	width: 745px;
+	margin-left: 236px;
 }
 
 
