@@ -604,9 +604,14 @@ a:hover {
 						
 						<table>
 							<tr>
+<<<<<<< HEAD
 								<td><span>Correo electrónico para notificación:</span></td>
 								<td><input type="text" style="height:25px;width:324px" placeholder="cuentadecorreoelectronico@gmail.com.mx"></td>
 								<td><span style='text-decoration:underline;'>Ver aviso de privacidad</span></td>
+=======
+								<td><div class="btn" id="regresar" onclick="backPasoImg();">Regresar</div></td>
+								<td><div class="btn btnaceptar" id="siguiente2" onclick="creaOverlay('#000','#contenido',1);insertHTML($('#contenido2').html(),'modalOver');">Confirmar</div></td>
+>>>>>>> 734b6ab5e7c7b3e3403060978befbdf70a78a81b
 							</tr>
 						</table>
 					</div>
@@ -624,6 +629,158 @@ a:hover {
 					
 					<div class="vtaimg">
 					</div>
+<<<<<<< HEAD
+=======
+
+						<h4 style="color:red;">Comprobante de transferencia entre mis cuentas Santander</h4>
+
+									
+							<table class="tbl_info" style="width:60%;float:left;">
+<tr>
+								<td style="width:200px;">Cuenta cargo:</td>
+								<td style="color:#CCCCCC">1234****5678</td>
+							</tr>
+							<tr>
+								<td>Cuenta destino:</td>
+								<td style="color:#CCCCCC">1234****5678</td>
+							</tr>
+							<tr>
+								<td>Concepto:</td>
+								<td style="color:#CCCCCC">123456789123456789123456789 <br> 123456789123456789
+								</td>
+							</tr>
+							<tr>
+								<td>Importe:</td>
+								<td style="color:#CCCCCC">123456789123456789</td>
+							</tr>
+							<tr>
+								<td>Fecha de transferencia:</td>
+								<td style="color:#CCCCCC">13/11/2013</td>
+							</tr>
+							<tr>
+								<td>Fecha programada de transferencia:</td>
+								<td style="color:#CCCCCC">16/11/2013</td>
+							</tr>
+							<tr>
+								<td>Notificación previa al pago:</td>
+								<td style="color:#CCCCCC">3 días</td>
+							</tr>
+							<tr>
+								<td>Comisión por transferencia:</td>
+								<td style="color:#CCCCCC">0.00 (MXP)</td>
+							</tr>
+							<tr>
+								<td>I.V.A. por comisión de transferencia:</td>
+								<td style="color:#CCCCCC">0.00 (MXP)</td>
+							</tr>
+							<tr>
+								<td>Correo para notificacion:</td>
+								<td style="color:#CCCCCC">veronica.pimentel@gmail.com</td>
+							</tr>
+							<tr>
+								<td>Celular para notificacion:</td>
+								<td style="color:#CCCCCC">5555555555</td>
+							</tr>
+							<tr>
+								<td>Folio SuperNET:</td>
+								<td style="color:#CCCCCC">65675868979798</td>
+							</tr>
+							<tr>
+								<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo hacer<br />otra transferencia</div></td>
+								
+							</tr>
+						</table>
+
+						<table style="	float: left; margin-left: -22px; margin-top:25px;">
+							<tr>
+								<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
+								<td><div class="btn" >Guardar en operaciones favoritas</div></td>
+								<td><div class="btn btnaceptar" onclick="cierraWidget();">Finalizar</div></td>
+							</tr>
+						</table>	
+				</div><!-- Fin step3 -->
+
+			</div><!--Fin funcionalidad: entre cuentas santander-->
+			
+			<div><!--Funcionalidad 2 : A otras Cuentas-->
+				<div id="step4" class="pasos"><!-- step4 -->
+					<p style="color:red"><b>Seleccione de las últimas transferencias por titular 
+									de la cuenta o ingrese la información correspondiente 
+									para realizar la transferencia</b></p>
+						<div class="transfWrap" style="width:725px;height:115px; overflow:scroll;border:2px #a1a1a1 solid;">					
+						<table class="transf">
+							<tr onclick="achiquer(this)">
+								<td>Nombre del Titular</td>
+								<td>Fecha</td>
+								<td>Importe (MXP)</td>
+							</tr>
+							<tr onclick="achiquer(this)" class="lista">
+								<td>Lorem Ipsum</td>
+								<td>dd/mm/aaaa</td>
+								<td>999,999,999.00</td>
+							</tr>
+							<tr onclick="achiquer(this)" class="lista">
+								<td>Lorem Ipsum</td>
+								<td>dd/mm/aaaa</td>
+								<td>999,999,999.00</td>
+							</tr>
+							<tr onclick="achiquer(this)" class="lista">
+								<td>Lorem Ipsum</td>
+								<td>dd/mm/aaaa</td>
+								<td>999,999,999.00</td>
+							</tr>
+							<tr onclick="achiquer(this)" class="lista">
+								<td>Lorem Ipsum</td>
+								<td>dd/mm/aaaa</td>
+								<td>999,999,999.00</td>
+							</tr>
+							<tr onclick="achiquer(this)" class="lista">
+								<td>Lorem Ipsum</td>
+								<td>dd/mm/aaaa</td>
+								<td>999,999,999.00</td>
+							</tr>
+
+						</table>
+						</div>
+						
+						<p style="margin-top:10px; float:left;"><b>Introduzca el nombre, alias o los cautro dígitos de la cuenta 
+							destino o seleccionela de la lista</b></p>
+
+						
+						<div class="wra_Select3" style="margin-top:0px; color:#828282">
+									<select name="" id="" >
+			                           	<option value="">A1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
+			                            <option value="">B1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
+			                            <option value="">C1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
+			                            <option value="">D1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
+			                            <option value="">E1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
+			                    	</select>
+								</div>
+						<p style="margin-top:5px; float:left;"><b>Si la cuenta o tarjeta no se encuentra registarda de clic AQUI</b></p>
+						<p style="margin-top:10px; float:left;"><b>Introduzca el nombre, alias o los cuatro dígitos de la cuenta de cargo o seleccionela de la lista:</b></p>
+						
+						<div class="wra_Select3" style="margin-top:0px; color:#828282">
+									<select name="" id="" >
+			                           	<option value="">A1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
+			                            <option value="">B1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
+			                            <option value="">C1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
+			                            <option value="">D1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
+			                            <option value="">E1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
+			                    	</select>
+								</div>
+								
+						<div class="input" style="margin-left:0px">
+							<p>Importe:</p>
+							<input class="txtbox" type="text" value=" 999,999,999,999.00" name="Text1" style="width:100%; margin-left:0px"/>
+						</div>
+						
+						<div class="input" style="margin-left:150px">
+							<p>Concepto:</p>
+							<input class="txtbox" type="text" value="123456789123456789123456789123456789123456789" name="Text1" style="width:100%; margin-left:0px"/>
+						</div>
+						
+						<div style="width:100px; height:20px; margin-top:80px;"><p><b>Programar fecha:</b> </p></div> 
+>>>>>>> 734b6ab5e7c7b3e3403060978befbdf70a78a81b
 					
 					<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
 					
@@ -694,6 +851,7 @@ a:hover {
 					</tr>
 				</table>
 				
+<<<<<<< HEAD
 				</div><!-- Fin step7 -->
 				
 				</div><!--Fin Funcionalidad 2 : A otras Cuentas -->
@@ -714,6 +872,37 @@ a:hover {
 						<p style="float:right;margin-right:10px">Exportar</p>
 					</div>
 					<table class="tbl_consulta" style="width:100%;float:left;">
+=======
+				<div id="step6" class="pasos"><!-- step6 -->
+                <div id="contenido2">
+							<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
+			   				<div id="img"></div>
+			   				<div id="form">
+			   					<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
+			   					<div id="buttons">
+			   					<input type="submit" value="Cancelar" id="can" onclick="destruyeOver();">
+			   					<input type="submit" value="Continuar" id="con" onclick="cambiaPasoImg3();changeComment(3);follow();" data-onclicio="follow();cambiaPasoImg3();">
+			   					</div>
+			   				</div>
+
+   						</div>
+					
+                    <p style="color:red"><b>La operación se realizará con la siguiente información:</b></p>
+					<table  class="tbl_info" style="width:100%">
+							<tr>
+							<td style="width:200px;">Cuenta cargo:</td>
+							<td style="color:#CCCCCC">1234****5678</td>
+						</tr>
+						<tr>
+							<td>Cuenta destino:</td>
+							<td style="color:#CCCCCC">1234****5678</td>
+						</tr>
+						<tr>
+							<td>Concepto:</td>
+							<td style="color:#CCCCCC">123456789123456789123456789 <br> 123456789123456789
+		</td>
+						</tr>
+>>>>>>> 734b6ab5e7c7b3e3403060978befbdf70a78a81b
 						<tr>
 							<td></td>
 							<td>Títular de la cuenta</td>
@@ -768,6 +957,7 @@ a:hover {
 							<td>correo@correo.com</td>
 							<td><img  src="../../img/iconos/favorito_of.png"/></td>
 						</tr>
+<<<<<<< HEAD
 					</table>
 				</div>
 				<table  style="float: left; margin-left:228px; margin-top: 135px;">
@@ -777,6 +967,208 @@ a:hover {
 					</tr>
 				</table>
 				</div><!-- fin de step8-->
+=======
+
+						</table>
+                        
+					<div class="dropcontainer" style="max-height: 200px; height: 200px; overflow: visible;">
+						<div class="dropdown">
+							<img class="downI" src="../../../img/iconos/dropdown.png" style="display: block;">
+								<img class="upI" src="../../../img/iconos/dropup.png" style="display: none;">
+									<h6>Quiero notificar al beneficiario</h6>
+						</div>
+						<div id="select1" class="wra_Select4" style="display:none">
+							
+							<table>
+                            	<tr>
+                                	<td><span>Correo electrónico para notificación:</span></td>
+                                    <td><input type="text" style="height:25px;width:324px" placeholder="cuentadecorreoelectronico@gmail.com.mx"></td>
+                                    <td><span style='text-decoration:underline;'>Ver aviso de privacidad</span></td>
+                                </tr>
+                            </table>
+						</div>
+					</div>
+
+					<table style="	float: right; margin-left: -23px; margin-top:-32px;">
+							<tr>
+								<td><div class="btn" id="regresar2" onclick="backPasoImg();">Regresar</div></td>
+								<td></td>
+								<td><div class="btn btnaceptar" id="btn1">Continuar</div></td>
+							</tr>
+						</table>
+				</div><!-- Fin step6 -->
+
+				<div id="step7" class="pasos"><!-- step7-->
+					<div id="vtacruzada">
+			
+						<div class="vtaimg">
+						</div>
+						
+						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
+						
+						<div class="vtapanel">
+							<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+							<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+							<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+						</div>
+						
+					</div>
+
+						<h4 style="color:red;">Comprobante de transferencia a otras cuentas</h4>
+
+									
+							<table class="tbl_info" style="width:60%;float:left;">
+
+							<tr>
+								<td colspan="3">Cuenta cargo</td>
+								<td style="color:#CCCCCC">1234****5678</td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td colspan="3" >Cuenta destino (beneficiario)</td>
+								<td style="color:#CCCCCC">1234****5678</td>
+							</tr>
+							<tr>
+								<td colspan="3" >Concepto:</td>
+								<td style="color:#CCCCCC">123456789123456789123456789 <br>123456789123456789
+			</td>
+							</tr>
+							<tr>
+								<td colspan="3" >Importe:</td>
+								<td style="color:#CCCCCC">999,999,999.00 (MXP)</td>
+							</tr>
+
+							<tr>
+								<td colspan="3" >Fecha de operación:</td>
+								<td style="color:#CCCCCC">dd/mm/aaaa</td>
+							</tr>
+
+							<tr>
+								<td colspan="3" >Fecha de transferencia:</td>
+								<td style="color:#CCCCCC">dd/mm/aaaa</td>
+							</tr>
+							<tr>
+								<td colspan="3" >Comisión por transferencia:</td>
+								<td style="color:#CCCCCC">0.00 (MXP)</td>
+							</tr>
+
+							<tr>
+								<td colspan="3" >I.V.A. por comisión de transferencia</td>
+								<td style="color:#CCCCCC">0.00 (MXP)</td>
+							</tr>
+							<tr>
+								<td colspan="3" >Correo electrónico para notificación:</td>
+								<td style="color:#CCCCCC">cuentadecorreoelectronico@gmail.com.mx</td>
+							</tr>
+
+							<tr>
+								<td colspan="3" >Folio SuperNET:</td>
+								<td style="color:#CCCCCC">12345678910123456789</td>
+							</tr>
+							<tr>
+								<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo hacer<br />otra transferencia</div></td>
+								
+							</tr>
+						</table>
+
+						<table style="	float: left; margin-left: -24px; margin-top:52px;">
+							<tr>
+								<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
+								<td><div class="btn" >Guardar en opciones favoritas</div></td>
+								<td><div class="btn btnaceptar" onclick="cierraWidget();">Finalizar</div></td>
+							</tr>
+						</table>	
+					 
+				</div><!-- Fin step7 -->
+					
+			</div><!--Fin Funcionalidad 2 : A otras Cuentas -->
+		
+            <div><!--inicio funcionalidad 3 Cuentas Registradas /Alta / Baja-->
+            	<div id="step8" class="pasos"><!-- step8--> 
+
+            		<p style="color:red"><b>A continuación usted podrá consultar las cuentas que tiene dadas de alta, así como elegir aquellas que desee dar de baja</b></p>
+
+			
+			
+			<div>
+				<span class="texto1"><p><b>Calendario de transferencias</b></p></span>
+				<span class="texto2"><p><b>Mis transferencias</b></p></span>
+			</div>
+
+			
+			<div class="tabla">
+				<div class="tabletitle"><p style="float:left">Mis cuentas registradas</p>
+									<img src="../../img/botones/exportar.png" style="float:right;margin-right:10px"/>
+									<p style="float:right;margin-right:10px">Exportar</p>
+									</div>
+			<table class="tbl_consulta" style="width:100%;float:left;">
+
+				<tr>
+					<td></td>
+					<td>Títular de la cuenta</td>
+					<td>Número de cuenta</td>
+					<td>Alias de la cuenta</td>
+					<td>Banco</td>
+					<td>Correo del titular</td>
+					<td>Favorita</td>
+				</tr>
+				<tr>
+					<td><input type="radio" placeholder="" value="$0.00" name="balance"  checked=""></td>
+					<td>Lorem Ipsum</td>
+					<td>1234****5678</td>
+					<td>Lorem Ipsum</td>
+					<td>Lorem Ipsum</td>
+					<td>correo@correo.com</td>
+					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+				<tr>
+					<td><input type="radio"  placeholder="" value="$0.00" name="balance"></td>
+					<td>Lorem Ipsum</td>
+					<td>1234****5678</td>
+					<td>Lorem Ipsum</td>
+					<td>Lorem Ipsum</td>
+					<td>correo@correo.com</td>
+					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+				<tr>
+					<td><input type="radio"  placeholder="" value="$0.00" name="balance"></td>
+					<td>Lorem Ipsum</td>
+					<td>1234****5678</td>
+					<td>Lorem Ipsum</td>
+					<td>Lorem Ipsum</td>
+					<td>correo@correo.com</td>
+					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+				<tr>
+					<td><input type="radio"  placeholder="" value="$0.00" name="balance"></td>
+					<td>Lorem Ipsum</td>
+					<td>1234****5678</td>
+					<td>Lorem Ipsum</td>
+					<td>Lorem Ipsum</td>
+					<td>correo@correo.com</td>
+					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+				<tr>
+					<td><input type="radio"  placeholder="" value="$0.00" name="balance"></td>
+					<td>Lorem Ipsum</td>
+					<td>1234****5678</td>
+					<td>Lorem Ipsum</td>
+					<td>Lorem Ipsum</td>
+					<td>correo@correo.com</td>
+					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+			</table>
+			</div>
+			<table  style="float: left; margin-left:228px; margin-top: 135px;">
+								<tr>
+									<td><div class="btn" id="darAlta">Dar de alta una cuenta</div></td>
+									<td><div class="btn btnaceptar" id="darBaja">Dar de baja</div></td>
+								</tr>
+							</table>
+                       </div><!-- fin de step8--> 
+>>>>>>> 734b6ab5e7c7b3e3403060978befbdf70a78a81b
 				<!-- Inicio Flujo Dar Alta-->
 				<div id="step9" class="pasos"><!-- Inicio de step9-->
 				<h4 style="color:red">Favor de ingresar la siguiente información:</h4>
