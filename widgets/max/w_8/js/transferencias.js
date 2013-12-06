@@ -208,7 +208,7 @@ function follow(){
 	}*/
 	
 	destruyeOver();
-	//cambiaFlujo("#step7");
+	cambiaFlujo("#step7");
 	
 }
 
