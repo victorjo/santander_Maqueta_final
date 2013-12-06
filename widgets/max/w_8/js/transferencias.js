@@ -68,7 +68,7 @@ $("#siguiente").click(function(){
 			});
 	});
 
-$("#siguiente2").click(function(){
+$("#con---").click(function(){
 		$("#step2").fadeOut("slow",function(){
 			$("#step3").fadeIn("slow");				
 			});
@@ -85,7 +85,7 @@ Santander **********/
 
 $("#siguiente3").click(function(){
 		$("#step4").fadeOut("slow",function(){
-			$("#step5").fadeIn("slow");				
+			$("#step6").fadeIn("slow");				
 			});
 	});
 
@@ -97,7 +97,7 @@ $("#siguiente4").click(function(){
 
 $("#regresar2").click(function(){
 		$("#step6").fadeOut("slow",function(){
-			$("#step5").fadeIn("slow");				
+			$("#step4").fadeIn("slow");				
 			});
 	});
 
@@ -208,6 +208,17 @@ function follow(){
 	}*/
 	
 	destruyeOver();
-	cambiaFlujo("#step7");
+	//cambiaFlujo("#step7");
 	
+}
+
+function achiquer(scope){
+	var table = $('.transf'),tableWrap = $(".transfWrap"),clon = tableWrap.clone();
+
+	table.css({'position':'relative'});
+	tableWrap.css({'overflow':'hidden','margin-bottom':'65px'});
+	$(scope).css('background-color','#cccccc');
+	table.animate({'top':($(scope).offset().top*-1)+tableWrap.offset().top+10},'slow');
+	tableWrap.animate({'height':'50px'},'slow');
+	return clon;
 }

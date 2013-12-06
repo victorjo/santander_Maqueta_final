@@ -284,7 +284,7 @@ a:hover {
 						<table style="	float: right; margin-left: -23px; margin-top:109px;">
 							<tr>
 								<td><div class="btn" id="regresar" onclick="backPasoImg();">Regresar</div></td>
-								<td><div class="btn btnaceptar" id="siguiente2" onclick="cambiaPasoImg3();changeComment(3);">Confirmar</div></td>
+								<td><div class="btn btnaceptar" id="siguiente2" onclick="creaOverlay('#000','#contenido',1);insertHTML($('#contenido2').html(),'modalOver');">Confirmar</div></td>
 							</tr>
 						</table>
 
@@ -387,34 +387,34 @@ a:hover {
 					<p style="color:red"><b>Seleccione de las últimas transferencias por titular 
 									de la cuenta o ingrese la información correspondiente 
 									para realizar la transferencia</b></p>
-						<div style="width:725px;height:115px; overflow:scroll;border:2px #a1a1a1 solid;">					
+						<div class="transfWrap" style="width:725px;height:115px; overflow:scroll;border:2px #a1a1a1 solid;">					
 						<table class="transf">
-							<tr >
+							<tr onclick="achiquer(this)">
 								<td>Nombre del Titular</td>
 								<td>Fecha</td>
 								<td>Importe (MXP)</td>
 							</tr>
-							<tr class="lista">
+							<tr onclick="achiquer(this)" class="lista">
 								<td>Lorem Ipsum</td>
 								<td>dd/mm/aaaa</td>
 								<td>999,999,999.00</td>
 							</tr>
-							<tr class="lista">
+							<tr onclick="achiquer(this)" class="lista">
 								<td>Lorem Ipsum</td>
 								<td>dd/mm/aaaa</td>
 								<td>999,999,999.00</td>
 							</tr>
-							<tr class="lista">
+							<tr onclick="achiquer(this)" class="lista">
 								<td>Lorem Ipsum</td>
 								<td>dd/mm/aaaa</td>
 								<td>999,999,999.00</td>
 							</tr>
-							<tr class="lista">
+							<tr onclick="achiquer(this)" class="lista">
 								<td>Lorem Ipsum</td>
 								<td>dd/mm/aaaa</td>
 								<td>999,999,999.00</td>
 							</tr>
-							<tr class="lista">
+							<tr onclick="achiquer(this)" class="lista">
 								<td>Lorem Ipsum</td>
 								<td>dd/mm/aaaa</td>
 								<td>999,999,999.00</td>
@@ -574,14 +574,14 @@ a:hover {
 			   					<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
 			   					<div id="buttons">
 			   					<input type="submit" value="Cancelar" id="can" onclick="destruyeOver();">
-			   					<input type="submit" value="Continuar" id="con" onclick="follow();cambiaPasoImg3();">
+			   					<input type="submit" value="Continuar" id="con" onclick="cambiaPasoImg3();changeComment(3);follow();" data-onclicio="follow();cambiaPasoImg3();">
 			   					</div>
 			   				</div>
 
    						</div>
 					
                     <p style="color:red"><b>La operación se realizará con la siguiente información:</b></p>
-					<table  class="tbl_info">
+					<table  class="tbl_info" style="width:100%">
 							<tr>
 							<td style="width:200px;">Cuenta cargo:</td>
 							<td style="color:#CCCCCC">1234****5678</td>
@@ -642,7 +642,7 @@ a:hover {
 						</div>
 					</div>
 
-					<table style="	float: left; margin-left: -23px; margin-top:-32px;">
+					<table style="	float: right; margin-left: -23px; margin-top:-32px;">
 							<tr>
 								<td><div class="btn" id="regresar2" onclick="backPasoImg();">Regresar</div></td>
 								<td></td>
