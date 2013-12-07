@@ -23,6 +23,8 @@ $(function(){
 
 
 function cierraWidget(){
+    $(".widget-min").find(".btnHeader").click();
+    $(".widget-min").find(".btnHeader").click();
 		return false;
 	}
 
