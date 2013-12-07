@@ -1,4 +1,7 @@
-﻿$(document).ready(function(){
+﻿var msjAlert = ["","Txt1.","Txt2.","Txt3."];
+
+
+$(document).ready(function(){
 	//Transicion entre operaciones
 	$("#navegador > ul > :nth-child(1)").click(function(){
 		cambiaFlujo("#step1");

@@ -1,3 +1,6 @@
+var msjAlert = ["","Txt1.","Txt2.","Txt3."];
+
+
 
 var estatusTranf = 0;
 $(document).ready(function(){
@@ -86,7 +89,7 @@ $(".regresar").click(function(){
 });
 
 $(".continuar2").click(function(){
-	creaOverlay("#000","#contenido",1);
+	creaOverlay("#FFF","#contenido",1);
 	insertHTML($("#contenido2").html(),"modalOver");
 });
 

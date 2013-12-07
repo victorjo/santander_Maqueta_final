@@ -104,6 +104,13 @@ function creaBtn(){
 
 
 
+function changeComment(a){
+	$("#msg-alert").text(msjAlert[a]);
+}
+
+
+
+
 function genFooterHeight(){
 		if(altoVentana > tamanoWidget){
 			var restaElementos = $("#avatarNavPrin").height();

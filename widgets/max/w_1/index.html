@@ -37,7 +37,6 @@ width: 110px;
 	margin-top:-7px;
 	cursor: pointer;
 }
-
 .espacioTxt{
 	margin-left: 30px;
 }
@@ -311,7 +310,7 @@ a:hover {
 			*Calculado al 08 Noviembre del 2013. Considera una línea de crédito de $999,999,999.00, a un plazo de 3 años de amortización del crédito y cubriendo el porcentaje del pago mínimo.
 			</p>
 		</div>
-		<div  id="continuar1" class='btn Fright marginOne btnaceptar'  style="margin-top: 20px;float: right;">Continuar</div>
+		<div  id="continuar1" class='btn Fright marginOne btnaceptar' style="margin-top: 20px;float: right;" onclick="changeComment(2)">Continuar</div>
 		</div><!-- Fin step1 -->
 		<div id="step2" class="pasos"><!-- step2 -->
 		<!-- bloqueo -->
@@ -384,7 +383,7 @@ a:hover {
 			<table style="position: relative;margin-left: 101px;padding-top: 17px;">
 				<tr>
 					<td><div class='btn' onclick="destruyeOver();">Cancelar</div></td>
-					<td><div class='btn' onclick="destruyeOver();cambiaEstados('3',2,3);">Continuar</div></td>
+					<td><div class='btn' onclick="destruyeOver();cambiaEstados('3',2,3);changeComment(3)">Continuar</div></td>
 				</tr>
 			</table>
 		</div>
@@ -435,9 +434,9 @@ a:hover {
 			</p>
 		</div>
 		<div class="botonera" style="float:right; margin-right:-218px; margin-top:135px;">
-			<div class="btn regresar">Regresar</div>
+			<div class="btn regresar" onclick="changeComment(1)">Regresar</div>
 			
-			<div id="btn1" class=" btnaceptar continuar2">Confirmar</div>
+			<div id="btn1" class=" btnaceptar continuar2" >Confirmar</div>
 		</div>
 		</div><!-- Fin step2 -->
 		
@@ -450,9 +449,9 @@ a:hover {
 			<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
 			
 			<!--<div class="vtapanel">
-					<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-					<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-					<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+						<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+						<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+						<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
 			</div>-->
 			<div id="btn_paso3">
 				<ul>
@@ -562,12 +561,10 @@ a:hover {
 		</li>
 	</ul>
 </div>
-
 <div>
 	<span class="texto1"><p><b>Criterios de búsqueda:<span class="dias"></span></p></b></span>
 	<span class="texto2"><a href="">Nueva búsqueda</a></span>
 </div>
-
 <div class="tabla">
 	<div class="tabletitleTransf"><p style="float:left">Mis transferencias de saldos</p>
 		<img src="../../img/botones/exportar.png" style="float:right;margin-right:10px"/>
@@ -651,14 +648,17 @@ a:hover {
 	</div>
 </div>
 </div>
-
 </div><!-- FIN flujo consulta -->
 </div><!--cierre contenido-->
-
 <div id="navegador">
 <ul>
 	<li class="active">SOLICITAR</li>
-	<li>CONSULTAR</li>
+	<li onclick="changeComment(1)">CONSULTAR</li>
 </ul>
+<div class="aviso">
+	<div id="msg-alert" style="width: 133px;height: 52px;background:#fff;position: absolute;top: 2px;left: 10px;font-weight: bold;font-size: 10px;text-align: left;padding-top: 15px;">Txt1.</div>
+	<img src="../../img/iconos/img_msj.png"/>
+</div>
+
 </div>
 </div>
