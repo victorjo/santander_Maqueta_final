@@ -1,4 +1,5 @@
 ﻿/*Funhcion switch (label de mas de dos digitos)--- Flujo: Domiciliaciones Ã³ mas */
+
 function switchFuncDomMas(object,descripcion1,descripcion2,tipoModulo){
 
 var switchO = '<div style="position:relative;width:230px;">';
