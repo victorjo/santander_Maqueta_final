@@ -264,7 +264,7 @@ z-index: 1000;
 </style>
 <script>
 $(document).ready(function(){
-ocultaSteps(4);
+ocultaSteps(10);
 $("#btn1").on("click", function(){
 			creaOverlay("#000","#widget",1);
 			insertHTML($("#contenido2").html(),"modalOver");
@@ -436,212 +436,7 @@ function follow(){
 								<tr>
 									<td>Esquema de aseguramiento:</td>
 									<td>Lorem</td>
-								</tr>
-								
-							</table>
-						</div>
-					</div>
-				</div>
-				<p class="titlecp" style="margin-top:5px">2. Elija los meses de gracia</p>
-				<div class="boxselectcp">
-					<p sytle="margin-top:5px;margin-bottom:0px">Maximo 3 meses desde el desembolso del prestamo y la fecha de pago de la primera amortizacion.</p>
-					<div class="wra_Select2" style="margin-top:-5px">
-						<select name="" id="" >
-							<option value="">Ninguno</option>
-							<option value="">1</option>
-							<option value="">2</option>
-							<option value="">3</option>
-							
-						</select>
-					</div>
-				</div>
-				<div id="botonera" style="float:right; margin-right:-10px; margin-top:15px;width:500px;">
-					<div class="btn">Tabla de Amortización</div>
-					<div id="siguiente"><div class="btnaceptar" onclick="cambiaPasoImg()">Aceptar</div></div>
-				</div>
-				
-				</div><!--Fin step 1-->
-				
-				<div id="step2" class="pasos" style="display:none">
-					<div id="contenido2">
-						<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
-						<div id="img"></div>
-						<div id="form">
-							<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
-							<div id="buttons">
-								<input type="submit" value="Cancelar" id="can" onclick="destruyeOverlay();">
-								<input type="submit" value="Continuar" id="con" onclick="follow()">
-							</div>
-						</div>
-					</div>
-					<h4 style="color:red;">Por favor confirme que la información desplegada a continuación es correcta:</h4>
-					<table class="tbl_info" style="width:100%;float:left;">
-						<tr>
-							<td style="width:200px;"><b>Datos del Cliente</b></td>
-							<td ></td>
-						</tr>
-						<tr>
-							<td style="color:#999999">Titular</td>
-							<td ><b>María Peralta Ramírez</b></td>
-						</tr>
-						<tr>
-							<td style="color:#999999">Cuenta de depósito</td>
-							<td ><b>1234****5678</b></td>
-						</tr>
-						<tr>
-							<td><b>Datos del Crédito:</b></td>
-							<td ></td>
-						</tr>
-						<tr>
-							<td style="color:#999999">Monto de crédito:</td>
-							<td ><b>9,999,999.99 (MXP)</b></td>
-						</tr>
-						<tr>
-							<td style="color:#999999">Capacidad de pago:</td>
-							<td ><strong>9,999,999.99 (MXP)</strong></td>
-						</tr>
-						<tr>
-							<td style="color:#999999">Monto a disponer:</td>
-							<td ><b>9,999,999.99 (MXP)</b></td>
-						</tr>
-						<tr>
-							<td style="color:#999999">Pago mensual:</td>
-							<td ><b>9,999,999.99 (MXP)</b></td>
-						</tr>
-						<tr>
-							<td style="color:#999999">Plazo:</td>
-							<td ><b>18</b></td>
-						</tr>
-						<tr>
-							<td style="color:#999999">Meses de gracia:</td>
-							<td ><b>Ninguno</b></td>
-						</tr>
-						<tr>
-							<td style="color:#999999">Tasa de interés anual:</td>
-							<td ><b>00.00%</b></td>
-						</tr>
-						<tr>
-							<td style="color:#999999">Comisión por disposición:</td>
-							<td ><b>9,999,999.99</b></td>
-						</tr>
-						<tr>
-							<td style="color:#999999">Esquema aseguramiento:</td>
-							<td ><b>Lorem</b></td>
-						</tr>
-						<tr>
-							<td style="color:#999999">Fecha de pago:</td>
-							<td ><b>dd/mm/aa</b></td>
-						</tr>
-						<tr>
-							<td style="color:#999999">Fecha de solicitud:</td>
-							<td ><b>dd/mm/aa</b></td>
-						</tr>
-						<tr>
-							<td style="color:#999999">Correo para notificación</td>
-							<td ><b>correo@correo.com</b></td>
-							<td> <a style="color:#1974F0;margin-right:180px">(Editar)</a></td>
-						</tr>
-						<tr>
-							<td style="color:#999999">Celular para notificación</td>
-							<td><b>55 55 55 55 55 </b></td>
-							<td> <a style="color:#1974F0;margin-right:180px">(Editar)</a></td>
-						</tr>
-						<tr>
-							<td style="color:#999999">Tabla de amortización:</td>
-							<td><a style="color:#1974F0">*Descargar</a></td>
-						</tr>
-					</table>
-					<div class="botonera" style="float:right; margin-right:-235px; margin-top:123px;">
-						<div class="btn" id="regresar" onclick="backPasoImg();">Regresar</div>
-						
-						<div id="btn1" class="btnaceptar" onclick="cambiaPaso3()">Aceptar</div>
-					</div>
-					</div><!--Fin step 2-->
-					
-					<div id="step3">
-						<div id="vtacruzada">
-							
-							<div class="vtaimg">
-							</div>
-							
-							<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
-							
-							<!--<div class="vtapanel">
-									<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-									<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-									<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-							</div>-->
-							<div id="btn_paso3">
-								<ul>
-									<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
-									<li class="btnNav"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">Pagar Servicios</span></li>
-									<li class="btnNav"><img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">Realizar una Domiciliación</span></li>
-								</ul>
-							</div>
-							
-						</div>
-						
-						<h4 style="width:35%">Comprobante de pago de servicio.</h4>
-						
-						
-						
-						<table class="tbl_info" style="width:62%;float:left;">
-							
-							<tr>
-								<td style="width:200px;"><b>Datos del Cliente</b></td>
-								<td ></td>
-							</tr>
-							<tr>
-								<td style="color:#999999">Titular</td>
-								<td ><b>María Peralta Ramírez</b></td>
-							</tr>
-							<tr>
-								<td style="color:#999999">Cuenta de depósito</td>
-								<td ><b>1234****5678</b></td>
-							</tr>
-							<tr>
-								<td><b>Datos del Crédito:</b></td>
-								<td ></td>
-							</tr>
-							<tr>
-								<td style="color:#999999">Monto de crédito:</td>
-								<td ><b>9,999,999.99 (MXP)</b></td>
-							</tr>
-							<tr>
-								<td style="color:#999999">Capacidad de pago:</td>
-								<td ><strong>9,999,999.99 (MXP)</strong></td>
-							</tr>
-							<tr>
-								<td style="color:#999999">Monto a disponer:</td>
-								<td ><b>9,999,999.99 (MXP)</b></td>
-							</tr>
-							<tr>
-								<td style="color:#999999">Pago mensual:</td>
-								<td ><b>9,999,999.99 (MXP)</b></td>
-							</tr>
-							<tr>
-								<td style="color:#999999">Plazo:</td>
-								<td ><b>18</b></td>
-							</tr>
-							<tr>
-								<td style="color:#999999">Meses de gracia:</td>
-								<td ><b>Ninguno</b></td>
-							</tr>
-							<tr>
-								<td style="color:#999999">Tasa de interés anual:</td>
-								<td ><b>00.00%</b></td>
-							</tr>
-							<tr>
-								<td style="color:#999999">Comisión por disposición:</td>
-								<td ><b>9,999,999.99</b></td>
-							</tr>
-							<tr>
-								<td style="color:#999999">Esquema aseguramiento:</td>
-								<td ><b>Lorem</b></td>
-							</tr>
-<<<<<<< HEAD
-=======
-							
+								</tr>						
 						</table>
 					</div>
 				</div>
@@ -668,8 +463,8 @@ function follow(){
 		
 	</div><!--Fin step 1-->
 	
-	<div id="step2" class="pasos" style="display:none">
-		<div id="contenido2">
+	<div id="step2" class="pasos">
+		<!--<div id="contenido2">
 			<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
 			<div id="img"></div>
 			<div id="form">
@@ -679,7 +474,7 @@ function follow(){
 					<input type="submit" value="Continuar" id="con" onclick="follow()">
 				</div>
 			</div>
-		</div>
+		</div>-->
 
 		<h4 style="color:red;">Por favor confirme que la información desplegada a continuación es correcta:</h4>
 						<table class="tbl_info" style="width:100%;float:left;">
@@ -890,7 +685,6 @@ function follow(){
 	<div id="step4" class="pasos">
 						<p class="titlecp" style="color:red">1. Seleccione la cuenta depósito</p>
 		<table id="tablaDatos">
->>>>>>> b2a0cc3d4e2aafe2fce4b4f47d5bfb8e466134e9
 							<tr>
 								<td style="color:#999999">Fecha de pago:</td>
 								<td ><b>dd/mm/aa</b></td>
@@ -928,7 +722,7 @@ function follow(){
 						
 						</div><!--Fin step 3-->
 						
-						<div id="step4" class="pasos">
+						<div id="step4" class="pasos" style="display:none">
 							<p class="titlecp" style="color:red">1. Seleccione la cuenta depósito</p>
 							<table id="tablaDatos">
 								<tr>
