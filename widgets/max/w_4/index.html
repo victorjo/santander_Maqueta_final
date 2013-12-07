@@ -5,10 +5,12 @@
 <script src="../../../js/ddSlick.js"></script>
 <script src="../../../js/balanceTransfer.js"></script>
 <script src="widgets/max/w_4/js/pagodeservicios.js"></script>
+<script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
 <link rel="stylesheet" href="widgets/max/w_4/css/pagodeservicios.css"/>
+
 <script>
 	$(document).ready(function(){
- 			switchFuncDomMas("switchbox","Tarjetas","Servicios","Dom");
+ 			switchFuncDomMas("switchbox","Si","No","Dom");
  		});
  function cambiaPasoImg(){
 	$("#stepbar img").attr("src","../img/fake/pasos/paso2.png");
@@ -182,13 +184,16 @@ function cambiaPaso3(){
 						
 						</div>
 					</div>
-					<div class="botonera">
+					<div class="botonera"> 
 							
 							<div id="siguiente"><div class="btnaceptar" onclick="cambiaPasoImg()" style="float:right; margin-right:224px;margin-top:8px">Continuar</div></div>
 
 						</div>			
 					
 				</div> <!--fin step1-->
+
+
+
 				
 				<div id="step2" class="pasos">
 					<h4>El pago de servicio seleccionado se efectuará con la siguiente información:</h4>
@@ -233,8 +238,16 @@ function cambiaPaso3(){
 					<td style="color:#CCCCCC">0.00 (MXP)</td>
 				</tr>
 				<tr>
-					<td>Fecha de pago:</td>
+					<td>Fecha de operación:</td>
 					<td style="color:#CCCCCC">dd/mm/aaaa</td>
+				</tr>
+				<tr>
+					<td>Fecha programada de pago:</td>
+					<td style="color:#CCCCCC">dd/mm/aaaa</td>
+				</tr>
+				<tr>
+					<td>Notificación previa del pago:</td>
+					<td style="color:#CCCCCC">3 días</td>
 				</tr>
 				
 			</table>
@@ -466,7 +479,7 @@ function cambiaPaso3(){
 						</tr>
 					</table>
 			
-			<div class="botonera3" style="margin-top:208px;margin-right:-11px">
+			<div class="botonera3" style="margin-bottom:95px;margin-right:-0px;position:absolute">
 				<div class="btn" id="regresar2" onclick="backPasoImg()">Regresar</div>
 				
 				<div id="siguiente4"><div class="btnaceptar" onclick="cambiaPaso3()">Confirmar</div></div>

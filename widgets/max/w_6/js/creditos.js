@@ -1,4 +1,23 @@
-﻿/*Funhcion switch (label de mas de dos digitos)--- Flujo: Domiciliaciones Ã³ mas */
+﻿$(document).ready(function(){
+	//Transicion entre operaciones
+	$("#navegador > ul > :nth-child(1)").click(function(){
+		cambiaFlujo("#step1");
+	});
+
+	
+	$("#navegador > ul > :nth-child(2)").click(function(){
+		cambiaFlujo("#step4");
+	});
+	
+	/*$("#navegador > ul > :nth-child(3)").click(function(){
+		cambiaFlujo("#step7");
+	});*/
+});
+
+
+
+
+/*Funhcion switch (label de mas de dos digitos)--- Flujo: Domiciliaciones Ã³ mas */
 function switchFuncDomMas(object,descripcion1,descripcion2,tipoModulo){
 
 var switchO = '<div style="position:relative;width:230px;">';
@@ -107,31 +126,12 @@ var switchO = '<div style="position:relative;width:230px;">';
 			$("#step7").fadeIn("slow");				
 			});
 	});
-
-
-
-
 	
-	//Transicion entre operaciones
-	$("#navegador > ul > :nth-child(1)").click(function(){
-		cambiaFlujo("#step1");
-	});
-
-	
-	$("#navegador > ul > :nth-child(2)").click(function(){
-		cambiaFlujo("#step4");
-	});
-	
-	$("#navegador > ul > :nth-child(3)").click(function(){
-		cambiaFlujo("#step7");
-	});
-
-		
 }
 
 
 function cambiaFlujo(step){
-	
+	alert("...");
 	var npasos = $(".pasos").size();
 		$(".pasos").each(function(index){
 			if((++index) == npasos){
