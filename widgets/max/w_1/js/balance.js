@@ -1,11 +1,84 @@
+
+var estatusTranf = 0;
 $(document).ready(function(){
 	ocultaSteps(15);
+	//funcionalidad de botones
+	$('#1').click(function(){
+		$('#ok1').show();
+		$('#ok2').hide();
+		$('#ok3').hide();
+		$('#ok4').hide();
+	});
+	$('#2').click(function(){
+		$('#ok2').show();
+		$('#ok1').hide();
+		$('#ok3').hide();
+		$('#ok4').hide();
+	});
+	$('#3').click(function(){
+		$('#ok3').show();
+		$('#ok2').hide();
+		$('#ok1').hide();
+		$('#ok4').hide();
+	});
+	$('#4').click(function(){
+		$('#ok4').show();
+		$('#ok2').hide();
+		$('#ok3').hide();
+		$('#ok1').hide();
+		//Bloqueo para inserccion de  Daypiker
+		creaOverlay("#FFF","#contenido",1);
+		insertHTML($("#calendario").html(),"modalOver");
+		day();
+	});
+
+	$("#a1,#a2").click(function(){
+
+		if(estatusTranf == 0){
+			 estatusTranf = 1;
+			$(this).attr('src','../../img/interfaz/paginador_encendido.png');
+			//muestra datos
+			$('.activacion'+$(this).attr('id')).show();
+		}else{
+			 estatusTranf = 0;
+			$(this).attr('src','../../img/interfaz/paginador_apagado.png');
+			//muestra datos
+			$('.activacion'+$(this).attr('id')).hide();
+		}
+	});
+
+	$('#txtT').keyup(function(){
+		var value = $(this).val();
+		buscaTar(value);
+	});
+
+	$('#editaCorreo').click(function(){
+		creaOverlay("#fff","#contenido",1);
+		insertHTML($("#contraTel").html(),"modalOver");
+
+	});
+
+	$('#editaCel').click(function(){
+		
+		creaOverlay("#fff","#contenido",1);
+		insertHTML($("#contraTel").html(),"modalOver");
+	});
+
 });
+
+
+
+function buscaTar(val){
+	if(val.length == 12){
+		$('#txtB').val("Banamex");
+	}else{
+		$('#txtB').val("Banco no asignado");
+	}
+}
 
 /*Botones*/
 $("#continuar1").click(function(){
-	
-		cambiaEstados("2",1,2);
+	cambiaEstados("2",1,2);
 });
 
 $(".regresar").click(function(){
@@ -17,6 +90,8 @@ $(".continuar2").click(function(){
 	insertHTML($("#contenido2").html(),"modalOver");
 });
 
+
+
 //Transicion entre operaciones
 $("#navegador > ul > :nth-child(1)").click(function(){
 	$("#stepbar img").attr("src","../img/fake/pasos/paso1.png");
@@ -27,6 +102,7 @@ $("#navegador > ul > :nth-child(2)").click(function(){
 	$("#stepbar img").attr("src","../img/fake/pasos/paso1.png");
 	cambiaFlujo("#step4");
 });
+
 
 
 	function cambiaEstados(paso,stepInicio,stepFin){
@@ -57,7 +133,7 @@ $("#navegador > ul > :nth-child(2)").click(function(){
 	}
 
 function insertHTML(html,contenedor){
-	$("#"+contenedor).append(html);
+	$("#"+contenedor).append(html).fadeIn();
 }
 
 function follow(){
@@ -65,6 +141,13 @@ function follow(){
 	destruyeOver();
 	cambiaFlujo("#step3");	
 }
+
+function overlay2(){
+	$('#modalOver').empty();
+    insertHTML($("#formTerminos").html(),"modalOver");
+       
+	
+}	
 
 /*Transicion de pasos*/
 function cambiaFlujo(step){
@@ -81,3 +164,5 @@ function cambiaFlujo(step){
     })
 
 }
+
+//Daypiker
