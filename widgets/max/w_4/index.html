@@ -186,7 +186,7 @@ function cambiaPaso3(){
 					</div>
 					<div class="botonera"> 
 							
-							<div id="siguiente"><div class="btnaceptar" onclick="cambiaPasoImg()" style="float:right; margin-right:224px;margin-top:8px">Continuar</div></div>
+							<div id="siguiente"><div class="btnaceptar" onclick="cambiaPasoImg();changeComment(2)" style="float:right; margin-right:224px;margin-top:8px">Continuar</div></div>
 
 						</div>			
 					
@@ -252,9 +252,9 @@ function cambiaPaso3(){
 				
 			</table>
 				<div class="botonera3">
-					<div class="btn" id="regresar" onclick="backPasoImg()">Regresar</div>
+					<div class="btn" id="regresar" onclick="backPasoImg();changeComment(1)">Regresar</div>
 					
-					<div id="siguiente2"><div class="btnaceptar" onclick="cambiaPaso3()">Confirmar</div></div>
+					<div id="siguiente2"><div class="btnaceptar" onclick="cambiaPaso3();changeComment(3)">Confirmar</div></div>
 				</div>
 
 			</div> <!--fin step2-->
@@ -450,7 +450,7 @@ function cambiaPaso3(){
 				
 				<div class="botonera4">
 				
-					<div id="siguiente3"><div class="btnaceptar" onclick="cambiaPasoImg()" style="float:right;margin-right:-10px">Dar de alta</div></div>	
+					<div id="siguiente3"><div class="btnaceptar" onclick="cambiaPasoImg();changeComment(2)" style="float:right;margin-right:-10px">Dar de alta</div></div>	
 				</div>
 			</div><!--step4-->
 			
@@ -480,9 +480,9 @@ function cambiaPaso3(){
 					</table>
 			
 			<div class="botonera3" style="margin-bottom:95px;margin-right:-0px;position:absolute">
-				<div class="btn" id="regresar2" onclick="backPasoImg()">Regresar</div>
+				<div class="btn" id="regresar2" onclick="backPasoImg();changeComment(1)">Regresar</div>
 				
-				<div id="siguiente4"><div class="btnaceptar" onclick="cambiaPaso3()">Confirmar</div></div>
+				<div id="siguiente4"><div class="btnaceptar" onclick="cambiaPaso3();changeComment(3)">Confirmar</div></div>
 			</div>
 
 			</div><!--fin step5-->
@@ -625,7 +625,7 @@ function cambiaPaso3(){
 				<div class="botonera6">
 					
 					
-					<div id="siguiente5"><div class="btnaceptar" onclick="cambiaPasoImg()" style="float: right;margin-right: -11px;margin-top: 12px">Dar de baja</div></div>
+					<div id="siguiente5"><div class="btnaceptar" onclick="cambiaPasoImg();changeComment(2)" style="float: right;margin-right: -11px;margin-top: 12px">Dar de baja</div></div>
 				</div>
 				
 				</div><!--fin step7-->
@@ -656,9 +656,9 @@ function cambiaPaso3(){
 						</tr>
 					</table>
 					<div class="botonera7">
-						<div class="btn" id="regresar3" onclick="backPasoImg()">Regresar</div>
+						<div class="btn" id="regresar3" onclick="backPasoImg();changeComment(1)">Regresar</div>
 						
-						<div id="siguiente6"><div class="btnaceptar" onclick="cambiaPaso3()">Confirmar</div></div>
+						<div id="siguiente6"><div class="btnaceptar" onclick="cambiaPaso3();changeComment(3)">Confirmar</div></div>
 					</div>		
 				</div><!--fin step8-->
 				
@@ -670,11 +670,7 @@ function cambiaPaso3(){
 						
 						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
 						
-						<!--<div class="vtapanel">
-							<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-							<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-							<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-						</div>-->
+						
 						<div id="btn_paso3">
 		                     <ul>
 		                    	<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
@@ -732,11 +728,16 @@ function cambiaPaso3(){
 				
 	<div id="navegador">
 		<ul>
-			<li class="active" onclick="backPasoImg()">Pago de Servicios</li>
-			<li onclick="backPasoImg()">Alta de Servicios</li>
-			<li onclick="backPasoImg()">Consulta de Servicios</li>
+			<li class="active" onclick="backPasoImg();changeComment(1)">Pago de Servicios</li>
+			<li onclick="backPasoImg();changeComment(1)">Alta de Servicios</li>
+			<li onclick="backPasoImg();changeComment(1)">Consulta de Servicios</li>
 		</ul>
-		<div class="aviso"><img src="../img/iconos/img_msj.png" />	</div>
+		<div class="aviso">
+	<div id="msg-alert" style="width: 133px;height: 52px;background:#fff;position: absolute;top: 2px;left: 10px;font-weight: bold;font-size: 10px;text-align: left;padding-top: 15px;">Txt1.</div>
+	<img src="../../img/iconos/img_msj.png"/>
+</div>
+
+
 	</div>
 		
 		

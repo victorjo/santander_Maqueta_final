@@ -108,6 +108,70 @@ a:hover {
 	width:200px;
 	text-align: center;
 }
+
+
+
+
+
+
+#widreducido {
+	background-image:url('../grid/grid.png');
+	background-color:white;
+    border: 1px solid #BBBBBB;
+    height: 283px;
+    margin: 10px;
+    position: relative;
+    width: 243px;
+}
+
+
+#header{
+	width:243px;
+	height:29px;
+	border-bottom:1px #bbbbbb solid;
+	overflow:hidden;
+}
+
+#subtitulo {
+    line-height: 15px;
+}
+
+#token {
+    float: left;
+    height: 65px;
+    margin: 10px 0 0 60px;
+}
+
+
+#input {
+    float: left;
+    margin-left: 10px;
+}
+
+input[type="text"] {
+    background-color: #E8E8E8;
+    border: 1px solid #A6A6A6;
+    box-shadow: 1px 1px 5px #C6C6C6 inset;
+    color: #A4A4A4;
+    font-family: 'ArialBlack';
+    font-size: 11px;
+    height: 28px;
+    margin-top: 8px;
+    text-align: center;
+    width: 223px;
+}
+
+
+
+.botonera {
+    bottom: 13px;
+    float: right;
+    position: absolute;
+    right: 8px;
+}
+
+
+
 </style>
 <div id="widget">
 	<div id="header">
@@ -315,46 +379,36 @@ a:hover {
 		<div id="step2" class="pasos"><!-- step2 -->
 		<!-- bloqueo -->
 		<div id="contenido2">
-			<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
-			<div id="img"></div>
-			<div id="form">
-				<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
-				<div id="buttons">
-					<input type="submit" value="Cancelar" id="can" onclick="destruyeOver();">
-					<input type="submit" value="Continuar" id="con" onclick="overlay2();">
+			
+
+
+				<div id="widreducido">
+					<div id="header">
+						<p>TOKEN</p>
+						<div id="btninfo"></div>
+					</div>
+					<div id="subtitulo">
+						<p>Para realizar su operación es necesario<br/>ingresar el código del TOKEN:</p>
+					</div>
+					
+					<div id="token">
+						<img src="img/token.png"/>
+					</div>
+					
+					<div id="input">
+						<input class="input" type="text" value="Ingresar TOKEN" />
+					</div>
+					<div class="botonera">
+						<div class="btn">Cancelar</div>
+						
+						<div class="btnaceptar">Aceptar</div>
+					</div>
+					
 				</div>
-			</div>
-		</div>
-		<!-- Bloqueo de datos-->
-		<div id="contraTel">
-			<span class="txtform">A continuación puede actualizar su correo electrónico y número celular para recibir notificaciones.</span>
-			<br><br>
-			<span class="txtform">Correo registrado para notificación: correo@correo.com <br><br>
-			Celular registrado para notificación: 5555555555
-			</span>
-			<table class="tablaForm">
-				<tr>
-					<td><img  src="../../../img/interfaz/paginador_encendido.png" width="12" height="12">
-						<span>Correo que quedará registrado para notificación:</span><br>
-						<input type="text" size="52" placeholder="Correo@correo.com">
-					</td>
-				</tr>
-				<tr>
-					<td><img  src="../../../img/interfaz/paginador_apagado.png" width="12" height="12">
-						<span>Celular que quedará registrado para notificación:</span><br>
-						<input type="text" size="52" placeholder="5555555555">
-					</td>
-				</tr>
-			</table>
-			<span class="smallTxtMod">*Este medio cambiará para todas las operacivones de supernet. ¿esta seguro que desea realizar la acción?</span>
-			<table style="float: left;margin-left: 238px;margin-top: 46px;">
-				<tr>
-					<td><div class='btn' onclick="destruyeOver();">Guardar cambios</div></td>
-				</tr>
-				<tr>
-					<td><div class='btn' onclick="destruyeOver();">Cancelar</div></td>
-				</tr>
-			</table>
+	
+
+
+
 			
 		</div>
 		<div id="formTerminos">

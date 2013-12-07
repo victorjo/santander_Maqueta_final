@@ -1,4 +1,7 @@
-﻿/*Funhcion switch (label de mas de dos digitos)--- Flujo: Domiciliaciones Ã³ mas */
+﻿var msjAlert = ["","Txt1.","Txt2.","Txt3."];
+
+
+/*Funhcion switch (label de mas de dos digitos)--- Flujo: Domiciliaciones Ã³ mas */
 
 function switchFuncDomMas(object,descripcion1,descripcion2,tipoModulo){
 
