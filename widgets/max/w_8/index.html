@@ -8,14 +8,12 @@
 <link rel="stylesheet" href="../../../css/componentes.css"/>
 <!-- nothong -->
 <style>
-
 .btnHeaderTable{
 	height: 24px;
-    margin: -10px;
-    padding-top: 10px;
-    width: 110px;
+margin: -10px;
+padding-top: 10px;
+width: 110px;
 }
-
 .titTabla{
 	margin-bottom:0px;
 	padding:10px 10px 5px 30px;
@@ -27,28 +25,24 @@
 	height:20px;
 	font-weight:bold
 }
-
 .titTabla p{
 	float:left;
 }
-
 .titTabla img{
 	float:right;
 	margin-top:-7px;
 	cursor: pointer;
 }
- 
+
 .espacioTxt{
 	margin-left: 30px;
 }
-
 /*MENU*/
 #menu {
 	float:left;
 	position: absolute;
 	margin-left: -42px;
 }
-
 #menu a {
 	display: block;
 	width: 140px;
@@ -56,12 +50,10 @@
 	text-align: justify;
 	padding: 6px;
 }
-
 #menu ul {
 	list-style-type: none;
 	padding-top: 5px;
 }
-
 #menu li {
 	float: left;
 	position: relative;
@@ -71,28 +63,23 @@
 	background-image: url('../../lineagrafica/widamphdr.png');
 	border: 1px #a7a7a7;
 }
-
 #menu ul.sub-menu {
 	display: none;
 	position: absolute;
 	padding: 0px;
 	z-index: 90;
 }
-
 #menu ul.sub-menu li {
 	text-align: left;
 }
-
 #menu li:hover ul.sub-menu {
 	display: block;
 	border: 1px solid #ececec;
 }
-
 .texto1{
 	float: left;
 	margin-top: 52px;
 }
-
 .texto2{
 	float: right;
 	margin-top: 52px;
@@ -102,18 +89,55 @@ a {
 	text-decoration: none;
 	color: #838383;
 }
-
 a:hover {
 	color: black;
 	background-color: #E3E3E3;
 	font-weight: bold;
 }
 
+.inputTabla{
+	width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;
+}
+
+.fechaLabel{
+	width:100px; height:20px; margin-top:80px;
+}
+
+.interes{
+	margin:10px 0 0 0;float:left;font-weight:bold;
+}
+
+.dropcontainer{
+	max-height: 200px; height: 200px; overflow: visible;
+}
+
+.tablaBtn{
+	float: right; margin-right:-13px; margin-top:59px;clear:both;
+}
+
+.activo2{
+	display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png
+}
+
 
 </style>
 <div id="osc">
 <div id="widget" class="widget">
+	
 	<div id="header">
+
+		<p class="f_titleWid">TRANSFERENCIAS(ENVÍO DE DINERO)</p>
+		<div class="btnHeader">
+				<img src="../../../img/botones/btn_cerrar.png"/>
+		</div>
+		<div class="btnHeader">
+				<img src="../../../img/botones/info_.png"/>
+		</div>
+	</div>
+
+
+
+	<!--<div id="header">
 		<p class="f_titleWid">TRANSFERENCIAS(ENVÍO DE DINERO)</p>
 			<div class="btnHeader">
 				<img src="../../../img/botones/btn_cerrar.png"/>
@@ -121,7 +145,7 @@ a:hover {
 			<div class="btnHeader">
 				<img src="../../../img/botones/info_.png"/>
 			</div>
-	</div>
+	</div>-->
 	<div id="stepbar">
 		<img src="../../../img/fake/pasos/paso1.png"/>
 	</div>
@@ -228,48 +252,48 @@ a:hover {
 
 							<tr>
 								<td style="width:200px;">Cuenta cargo:</td>
-								<td style="color:#CCCCCC">1234****5678</td>
+								<td class="gris">1234****5678</td>
 							</tr>
 							<tr>
 								<td>Cuenta destino:</td>
-								<td style="color:#CCCCCC">1234****5678</td>
+								<td class="gris">1234****5678</td>
 							</tr>
 							<tr>
 								<td>Concepto:</td>
-								<td style="color:#CCCCCC">123456789123456789123456789 <br> 123456789123456789
+								<td class="gris">123456789123456789123456789 <br> 123456789123456789
 								</td>
 							</tr>
 							<tr>
 								<td>Importe:</td>
-								<td style="color:#CCCCCC">123456789123456789</td>
+								<td class="gris">123456789123456789</td>
 							</tr>
 							<tr>
 								<td>Fecha de transferencia:</td>
-								<td style="color:#CCCCCC">13/11/2013</td>
+								<td class="gris">13/11/2013</td>
 							</tr>
 							<tr>
 								<td>Fecha programada de transferencia:</td>
-								<td style="color:#CCCCCC">16/11/2013</td>
+								<td class="gris">16/11/2013</td>
 							</tr>
 							<tr>
 								<td>Notificación previa al pago:</td>
-								<td style="color:#CCCCCC">3 días</td>
+								<td class="gris">3 días</td>
 							</tr>
 							<tr>
 								<td>Comisión por transferencia:</td>
-								<td style="color:#CCCCCC">0.00 (MXP)</td>
+								<td class="gris">0.00 (MXP)</td>
 							</tr>
 							<tr>
 								<td>I.V.A. por comisión de transferencia:</td>
-								<td style="color:#CCCCCC">0.00 (MXP)</td>
+								<td class="gris">0.00 (MXP)</td>
 							</tr>
 							<tr>
 								<td>Correo para notificacion:</td>
-								<td style="color:#CCCCCC">veronica.pimentel@gmail.com (<a href="#">editar</a>)</td>
+								<td class="gris">veronica.pimentel@gmail.com (<a href="#">editar</a>)</td>
 							</tr>
 							<tr>
 								<td>Celular para notificacion:</td>
-								<td style="color:#CCCCCC">5555555555 (<a href="#">editar</a>)</td>
+								<td class="gris">5555555555 (<a href="#">editar</a>)</td>
 							</tr>
 							
 						</table>
@@ -284,7 +308,7 @@ a:hover {
 						<table style="	float: right; margin-left: -23px; margin-top:109px;">
 							<tr>
 								<td><div class="btn" id="regresar" onclick="backPasoImg();">Regresar</div></td>
-								<td><div class="btn btnaceptar" id="siguiente2" onclick="cambiaPasoImg3();changeComment(3);">Confirmar</div></td>
+								<td><div class="btn btnaceptar" id="siguiente2" onclick="creaOverlay('#000','#contenido',1);insertHTML($('#contenido2').html(),'modalOver');">Confirmar</div></td>
 							</tr>
 						</table>
 
@@ -296,12 +320,6 @@ a:hover {
 						</div>
 						
 						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
-						
-						<!--<div class="vtapanel">
-							<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-							<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-							<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-						</div>-->
 						<div id="btn_paso3">
 		                     <ul>
 		                    	<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
@@ -318,52 +336,52 @@ a:hover {
 							<table class="tbl_info" style="width:60%;float:left;">
 <tr>
 								<td style="width:200px;">Cuenta cargo:</td>
-								<td style="color:#CCCCCC">1234****5678</td>
+								<td class="gris">1234****5678</td>
 							</tr>
 							<tr>
 								<td>Cuenta destino:</td>
-								<td style="color:#CCCCCC">1234****5678</td>
+								<td class="gris">1234****5678</td>
 							</tr>
 							<tr>
 								<td>Concepto:</td>
-								<td style="color:#CCCCCC">123456789123456789123456789 <br> 123456789123456789
+								<td class="gris">123456789123456789123456789 <br> 123456789123456789
 								</td>
 							</tr>
 							<tr>
 								<td>Importe:</td>
-								<td style="color:#CCCCCC">123456789123456789</td>
+								<td class="gris">123456789123456789</td>
 							</tr>
 							<tr>
 								<td>Fecha de transferencia:</td>
-								<td style="color:#CCCCCC">13/11/2013</td>
+								<td class="gris">13/11/2013</td>
 							</tr>
 							<tr>
 								<td>Fecha programada de transferencia:</td>
-								<td style="color:#CCCCCC">16/11/2013</td>
+								<td class="gris">16/11/2013</td>
 							</tr>
 							<tr>
 								<td>Notificación previa al pago:</td>
-								<td style="color:#CCCCCC">3 días</td>
+								<td class="gris">3 días</td>
 							</tr>
 							<tr>
 								<td>Comisión por transferencia:</td>
-								<td style="color:#CCCCCC">0.00 (MXP)</td>
+								<td class="gris">0.00 (MXP)</td>
 							</tr>
 							<tr>
 								<td>I.V.A. por comisión de transferencia:</td>
-								<td style="color:#CCCCCC">0.00 (MXP)</td>
+								<td class="gris">0.00 (MXP)</td>
 							</tr>
 							<tr>
 								<td>Correo para notificacion:</td>
-								<td style="color:#CCCCCC">veronica.pimentel@gmail.com</td>
+								<td class="gris">veronica.pimentel@gmail.com</td>
 							</tr>
 							<tr>
 								<td>Celular para notificacion:</td>
-								<td style="color:#CCCCCC">5555555555</td>
+								<td class="gris">5555555555</td>
 							</tr>
 							<tr>
 								<td>Folio SuperNET:</td>
-								<td style="color:#CCCCCC">65675868979798</td>
+								<td class="gris">65675868979798</td>
 							</tr>
 							<tr>
 								<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo hacer<br />otra transferencia</div></td>
@@ -387,34 +405,34 @@ a:hover {
 					<p style="color:red"><b>Seleccione de las últimas transferencias por titular 
 									de la cuenta o ingrese la información correspondiente 
 									para realizar la transferencia</b></p>
-						<div style="width:725px;height:115px; overflow:scroll;border:2px #a1a1a1 solid;">					
+						<div class="transfWrap" style="width:725px;height:115px; overflow:scroll;border:2px #a1a1a1 solid;">					
 						<table class="transf">
-							<tr >
+							<tr onclick="achiquer(this)">
 								<td>Nombre del Titular</td>
 								<td>Fecha</td>
 								<td>Importe (MXP)</td>
 							</tr>
-							<tr class="lista">
+							<tr onclick="achiquer(this)" class="lista">
 								<td>Lorem Ipsum</td>
 								<td>dd/mm/aaaa</td>
 								<td>999,999,999.00</td>
 							</tr>
-							<tr class="lista">
+							<tr onclick="achiquer(this)" class="lista">
 								<td>Lorem Ipsum</td>
 								<td>dd/mm/aaaa</td>
 								<td>999,999,999.00</td>
 							</tr>
-							<tr class="lista">
+							<tr onclick="achiquer(this)" class="lista">
 								<td>Lorem Ipsum</td>
 								<td>dd/mm/aaaa</td>
 								<td>999,999,999.00</td>
 							</tr>
-							<tr class="lista">
+							<tr onclick="achiquer(this)" class="lista">
 								<td>Lorem Ipsum</td>
 								<td>dd/mm/aaaa</td>
 								<td>999,999,999.00</td>
 							</tr>
-							<tr class="lista">
+							<tr onclick="achiquer(this)" class="lista">
 								<td>Lorem Ipsum</td>
 								<td>dd/mm/aaaa</td>
 								<td>999,999,999.00</td>
@@ -423,8 +441,7 @@ a:hover {
 						</table>
 						</div>
 						
-						<p style="margin-top:10px; float:left;"><b>Introduzca el nombre, alias o los cautro dígitos de la cuenta 
-							destino o seleccionela de la lista</b></p>
+						<p style="margin-top:10px; float:left;"><b>Introduzca el nombre, alias o los cautro dígitos de la cuenta destino o seleccionela de la lista</b></p>
 
 						
 						<div class="wra_Select3" style="margin-top:0px; color:#828282">
@@ -558,7 +575,7 @@ a:hover {
 							<input type="text" id="date" placeholder="dd/mm/aaaa" style="margin-left:10px;height:25px;margin-top:14px;position:fixed">
 						</div> 
 						
-						<table style="float: right; margin-right:-13px; margin-top:59px;">
+						<table class="tablaBtn">
 							<tr>
 								<td></td>
 								<td><div class="btn btnaceptar" id="siguiente4" onclick="cambiaPasoImg();">Continuar</div></td>
@@ -574,52 +591,52 @@ a:hover {
 			   					<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
 			   					<div id="buttons">
 			   					<input type="submit" value="Cancelar" id="can" onclick="destruyeOver();">
-			   					<input type="submit" value="Continuar" id="con" onclick="follow();cambiaPasoImg3();">
+			   					<input type="submit" value="Continuar" id="con" onclick="cambiaPasoImg3();changeComment(3);follow();" data-onclicio="follow();cambiaPasoImg3();">
 			   					</div>
 			   				</div>
 
    						</div>
 					
                     <p style="color:red"><b>La operación se realizará con la siguiente información:</b></p>
-					<table  class="tbl_info">
+					<table  class="tbl_info" style="width:100%">
 							<tr>
 							<td style="width:200px;">Cuenta cargo:</td>
-							<td style="color:#CCCCCC">1234****5678</td>
+							<td class="gris">1234****5678</td>
 						</tr>
 						<tr>
 							<td>Cuenta destino:</td>
-							<td style="color:#CCCCCC">1234****5678</td>
+							<td class="gris">1234****5678</td>
 						</tr>
 						<tr>
 							<td>Concepto:</td>
-							<td style="color:#CCCCCC">123456789123456789123456789 <br> 123456789123456789
+							<td class="gris">123456789123456789123456789 <br> 123456789123456789
 		</td>
 						</tr>
 						<tr>
 							<td>Importe:</td>
-							<td style="color:#CCCCCC">999,999,999.00(MXP)</td>
+							<td class="gris">999,999,999.00(MXP)</td>
 						</tr>
 
 						
 						<tr>
 							<td>Fecha de transferencia:</td>
-							<td style="color:#CCCCCC">dd/mm/aaaa</td>
+							<td class="gris">dd/mm/aaaa</td>
 						</tr>
 						<tr>
 							<td>Fecha programada de transferencia:</td>
-							<td style="color:#CCCCCC">dd/mm/aaaa</td>
+							<td class="gris">dd/mm/aaaa</td>
 						</tr>
 						<tr>
 							<td>Notificación previa al pago:</td>
-							<td style="color:#CCCCCC">3 días</td>
+							<td class="gris">3 días</td>
 						</tr>
 						<tr>
 							<td>Comisión por transferencia:</td>
-							<td style="color:#CCCCCC">0.00 (MXP)</td>
+							<td class="gris">0.00 (MXP)</td>
 						</tr>
 						<tr>
 							<td>I.V.A. por comisión de transferencia:</td>
-							<td style="color:#CCCCCC">0.00 (MXP)</td>
+							<td class="gris">0.00 (MXP)</td>
 						</tr>
 
 						</table>
@@ -642,7 +659,7 @@ a:hover {
 						</div>
 					</div>
 
-					<table style="	float: left; margin-left: -23px; margin-top:-32px;">
+					<table style="	float: right; margin-left: -23px; margin-top:-32px;">
 							<tr>
 								<td><div class="btn" id="regresar2" onclick="backPasoImg();">Regresar</div></td>
 								<td></td>
@@ -652,18 +669,25 @@ a:hover {
 				</div><!-- Fin step6 -->
 
 				<div id="step7" class="pasos"><!-- step7-->
-					<div id="vtacruzada">
+					<div id="vtacruzada"> 
 			
 						<div class="vtaimg">
 						</div>
 						
-						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
+						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
 						
-						<div class="vtapanel">
+						<!--<div class="vtapanel">
 							<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
 							<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
 							<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-						</div>
+						</div>-->
+						<div id="btn_paso3">
+		                     <ul>
+		                    	<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
+		                        <li class="btnNav"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">Pagar Servicios</span></li>
+		                        <li class="btnNav"><img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">Realizar una Domiciliación</span></li>
+		                      </ul>
+		                </div>
 						
 					</div>
 
@@ -674,51 +698,51 @@ a:hover {
 
 							<tr>
 								<td colspan="3">Cuenta cargo</td>
-								<td style="color:#CCCCCC">1234****5678</td>
+								<td class="gris">1234****5678</td>
 								<td></td>
 								<td></td>
 								<td></td>
 							</tr>
 							<tr>
 								<td colspan="3" >Cuenta destino (beneficiario)</td>
-								<td style="color:#CCCCCC">1234****5678</td>
+								<td class="gris">1234****5678</td>
 							</tr>
 							<tr>
 								<td colspan="3" >Concepto:</td>
-								<td style="color:#CCCCCC">123456789123456789123456789 <br>123456789123456789
+								<td class="gris">123456789123456789123456789 <br>123456789123456789
 			</td>
 							</tr>
 							<tr>
 								<td colspan="3" >Importe:</td>
-								<td style="color:#CCCCCC">999,999,999.00 (MXP)</td>
+								<td class="gris">999,999,999.00 (MXP)</td>
 							</tr>
 
 							<tr>
 								<td colspan="3" >Fecha de operación:</td>
-								<td style="color:#CCCCCC">dd/mm/aaaa</td>
+								<td class="gris">dd/mm/aaaa</td>
 							</tr>
 
 							<tr>
 								<td colspan="3" >Fecha de transferencia:</td>
-								<td style="color:#CCCCCC">dd/mm/aaaa</td>
+								<td class="gris">dd/mm/aaaa</td>
 							</tr>
 							<tr>
 								<td colspan="3" >Comisión por transferencia:</td>
-								<td style="color:#CCCCCC">0.00 (MXP)</td>
+								<td class="gris">0.00 (MXP)</td>
 							</tr>
 
 							<tr>
 								<td colspan="3" >I.V.A. por comisión de transferencia</td>
-								<td style="color:#CCCCCC">0.00 (MXP)</td>
+								<td class="gris">0.00 (MXP)</td>
 							</tr>
 							<tr>
 								<td colspan="3" >Correo electrónico para notificación:</td>
-								<td style="color:#CCCCCC">cuentadecorreoelectronico@gmail.com.mx</td>
+								<td class="gris">cuentadecorreoelectronico@gmail.com.mx</td>
 							</tr>
 
 							<tr>
 								<td colspan="3" >Folio SuperNET:</td>
-								<td style="color:#CCCCCC">12345678910123456789</td>
+								<td class="gris">12345678910123456789</td>
 							</tr>
 							<tr>
 								<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo hacer<br />otra transferencia</div></td>
@@ -774,7 +798,7 @@ a:hover {
 					<td>Lorem Ipsum</td>
 					<td>Lorem Ipsum</td>
 					<td>correo@correo.com</td>
-					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+					<td><img class="activo2"/></td>
 				</tr>
 				<tr>
 					<td><input type="radio"  placeholder="" value="$0.00" name="balance"></td>
@@ -783,7 +807,7 @@ a:hover {
 					<td>Lorem Ipsum</td>
 					<td>Lorem Ipsum</td>
 					<td>correo@correo.com</td>
-					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+					<td><img class="activo2"/></td>
 				</tr>
 				<tr>
 					<td><input type="radio"  placeholder="" value="$0.00" name="balance"></td>
@@ -792,7 +816,7 @@ a:hover {
 					<td>Lorem Ipsum</td>
 					<td>Lorem Ipsum</td>
 					<td>correo@correo.com</td>
-					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+					<td><img class="activo2"/></td>
 				</tr>
 				<tr>
 					<td><input type="radio"  placeholder="" value="$0.00" name="balance"></td>
@@ -801,7 +825,7 @@ a:hover {
 					<td>Lorem Ipsum</td>
 					<td>Lorem Ipsum</td>
 					<td>correo@correo.com</td>
-					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+					<td><img class="activo2"/></td>
 				</tr>
 				<tr>
 					<td><input type="radio"  placeholder="" value="$0.00" name="balance"></td>
@@ -810,7 +834,7 @@ a:hover {
 					<td>Lorem Ipsum</td>
 					<td>Lorem Ipsum</td>
 					<td>correo@correo.com</td>
-					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+					<td><img class="activo2"/></td>
 				</tr>
 			</table>
 			</div>
@@ -890,35 +914,35 @@ a:hover {
 
 				<tr>
 					<td colspan="3">Número de cuenta </td>
-					<td style="color:#CCCCCC">1234****5678</td>
+					<td class="gris">1234****5678</td>
 				</tr>
 				<tr>
 					<td colspan="3" >Banco</td>
-					<td style="color:#CCCCCC">Lorem Ipsum</td>
+					<td class="gris">Lorem Ipsum</td>
 				</tr>
 				<tr>
 					<td colspan="3" >Nombre del titular de la cuenta</td>
-					<td style="color:#CCCCCC">Lorem Ipsum</td>
+					<td class="gris">Lorem Ipsum</td>
 				</tr>
 				<tr>
 					<td colspan="3" >Alias:</td>
-					<td style="color:#CCCCCC">Lorem Ipsum</td>
+					<td class="gris">Lorem Ipsum</td>
 				</tr>
 
 				<tr>
 					<td colspan="3" >Correo electrónico del titular de la cuenta:</td>
-					<td style="color:#CCCCCC">correo@cuanta.com</td>
+					<td class="gris">correo@cuanta.com</td>
 				</tr>
 				
 				<tr>
 					<td colspan="3" >Fecha de alta:</td>
-					<td style="color:#CCCCCC">dd/mm/aaaa</td>
+					<td class="gris">dd/mm/aaaa</td>
 				</tr>
 				
 				
 			</table>
 			
-			<table style="	float: left; margin-left: -23px; margin-top:253px;">
+			<table class="tablaBtn">
 				<tr>
 					<td><div class="btn" id="regresar3">Regresar</div></td>
 					<td></td>
@@ -930,18 +954,20 @@ a:hover {
                  </div><!-- Fin de step10-->
 					
                   <div id="step11" class="pasos"><!-- Inicio de step 11 -->
-					<div id="vtacruzada">
+					<div id="vtacruzada"> 
 			
 						<div class="vtaimg">
 						</div>
 						
-						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
+						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
 						
-						<div class="vtapanel">
-							<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-							<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-							<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-						</div>
+						<div id="btn_paso3">
+		                     <ul>
+		                    	<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
+		                        <li class="btnNav"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">Pagar Servicios</span></li>
+		                        <li class="btnNav"><img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">Realizar una Domiciliación</span></li>
+		                      </ul>
+		                </div>
 						
 					</div>
 
@@ -952,34 +978,34 @@ a:hover {
 
 							<tr>
 								<td colspan="3">Número de cuenta </td>
-								<td style="color:#CCCCCC">1234****5678</td>
+								<td class="gris">1234****5678</td>
 							</tr>
 							<tr>
 								<td colspan="3" >Banco</td>
-								<td style="color:#CCCCCC">Lorem Ipsum</td>
+								<td class="gris">Lorem Ipsum</td>
 							</tr>
 							<tr>
 								<td colspan="3" >Nombre del titular de la cuenta</td>
-								<td style="color:#CCCCCC">Lorem Ipsum</td>
+								<td class="gris">Lorem Ipsum</td>
 							</tr>
 							<tr>
 								<td colspan="3" >Alias:</td>
-								<td style="color:#CCCCCC">Lorem Ipsum</td>
+								<td class="gris">Lorem Ipsum</td>
 							</tr>
 
 							<tr>
 								<td colspan="3" >Correo electrónico del titular de la cuenta:</td>
-								<td style="color:#CCCCCC">correo@cuanta.com</td>
+								<td class="gris">correo@cuanta.com</td>
 							</tr>
 							
 							<tr>
 								<td colspan="3" >Fecha de alta:</td>
-								<td style="color:#CCCCCC">dd/mm/aaaa</td>
+								<td class="gris">dd/mm/aaaa</td>
 							</tr>
 
 							<tr>
 								<td colspan="3" >Folio SuperNET:</td>
-								<td style="color:#CCCCCC">12345678910123456789</td>
+								<td class="gris">12345678910123456789</td>
 							</tr>
 							<tr>
 								<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo hacer<br />otra transferencia</div></td>
@@ -1006,35 +1032,35 @@ a:hover {
 
 				<tr>
 					<td colspan="3">Número de cuenta </td>
-					<td style="color:#CCCCCC">1234****5678</td>
+					<td class="gris">1234****5678</td>
 				</tr>
 				<tr>
 					<td colspan="3" >Banco</td>
-					<td style="color:#CCCCCC">Lorem Ipsum</td>
+					<td class="gris">Lorem Ipsum</td>
 				</tr>
 				<tr>
 					<td colspan="3" >Nombre del titular de la cuenta</td>
-					<td style="color:#CCCCCC">Lorem Ipsum</td>
+					<td class="gris">Lorem Ipsum</td>
 				</tr>
 				<tr>
 					<td colspan="3" >Alias:</td>
-					<td style="color:#CCCCCC">Lorem Ipsum</td>
+					<td class="gris">Lorem Ipsum</td>
 				</tr>
 
 				<tr>
 					<td colspan="3" >Correo electrónico del titular de la cuenta:</td>
-					<td style="color:#CCCCCC">correo@cuanta.com</td>
+					<td class="gris">correo@cuanta.com</td>
 				</tr>
 				
 				<tr>
 					<td colspan="3" >Fecha de baja:</td>
-					<td style="color:#CCCCCC">dd/mm/aaaa</td>
+					<td class="gris">dd/mm/aaaa</td>
 				</tr>
 				
 				
 			</table>
 			
-			<table style="	float: left; margin-left: -23px; margin-top:253px;">
+			<table class="tablaBtn" style="margin-top: 260px;">
 				<tr>
 					<td><div class="btn" id="regresar4">Regresar</div></td>
 					<td></td>
@@ -1047,18 +1073,20 @@ a:hover {
 
                 <div id="step13" class="pasos"> <!-- Inicio de step13 -->
                 	
-                	<div id="vtacruzada">
+                	<div id="vtacruzada"> 
 			
 						<div class="vtaimg">
 						</div>
 						
-						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p>
+						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
 						
-						<div class="vtapanel">
-							<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-							<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-							<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-						</div>
+						<div id="btn_paso3">
+		                     <ul>
+		                    	<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
+		                        <li class="btnNav"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">Pagar Servicios</span></li>
+		                        <li class="btnNav"><img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">Realizar una Domiciliación</span></li>
+		                      </ul>
+		                </div>
 						
 					</div>
 
@@ -1069,34 +1097,34 @@ a:hover {
 
 							<tr>
 								<td colspan="3">Número de cuenta </td>
-								<td style="color:#CCCCCC">1234****5678</td>
+								<td class="gris">1234****5678</td>
 							</tr>
 							<tr>
 								<td colspan="3" >Banco</td>
-								<td style="color:#CCCCCC">Lorem Ipsum</td>
+								<td class="gris">Lorem Ipsum</td>
 							</tr>
 							<tr>
 								<td colspan="3" >Nombre del titular de la cuenta</td>
-								<td style="color:#CCCCCC">Lorem Ipsum</td>
+								<td class="gris">Lorem Ipsum</td>
 							</tr>
 							<tr>
 								<td colspan="3" >Alias:</td>
-								<td style="color:#CCCCCC">Lorem Ipsum</td>
+								<td class="gris">Lorem Ipsum</td>
 							</tr>
 
 							<tr>
 								<td colspan="3" >Correo electrónico del titular de la cuenta:</td>
-								<td style="color:#CCCCCC">correo@cuanta.com</td>
+								<td class="gris">correo@cuanta.com</td>
 							</tr>
 							
 							<tr>
 								<td colspan="3" >Fecha de baja:</td>
-								<td style="color:#CCCCCC">dd/mm/aaaa</td>
+								<td class="gris">dd/mm/aaaa</td>
 							</tr>
 
 							<tr>
 								<td colspan="3" >Folio SuperNET:</td>
-								<td style="color:#CCCCCC">12345678910123456789</td>
+								<td class="gris">12345678910123456789</td>
 							</tr>
 							<tr>
 								<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo hacer<br />otra transferencia</div></td>
@@ -1119,7 +1147,8 @@ a:hover {
 
             	<div id="step14" class="pasos"> <!-- Fin de step13 -->
             		
-       	<p style="color:red"><b>Seleccione el estatus de las transferencias que desea 
+       	<p style="color:red">
+       		<b>Seleccione el estatus de las transferencias que desea 
 								consultar, así como el periodo de búsqueda y/o rango de 
 								importe para realizar una búsqueda más específica</b></p>
 
@@ -1179,7 +1208,7 @@ a:hover {
 					<td>1234****5678</td>
 					<td>999,999,999.00</td>
 					<td><span class="cambio">Realizada</span></td>
-					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+					<td><img class="activo2"/></td>
 				</tr>
 				<tr>
 					<td>dd/mm/aaaa</td>
@@ -1188,7 +1217,7 @@ a:hover {
 					<td>1234****5678</td>
 					<td>999,999,999.00</td>
 					<td><span class="cambio">Realizada</span></td>
-					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+					<td><img class="activo2"/></td>
 				</tr>
 				<tr>
 					<td>dd/mm/aaaa</td>
@@ -1197,7 +1226,7 @@ a:hover {
 					<td>1234****5678</td>
 					<td>999,999,999.00</td>
 					<td><span class="cambio">Realizada</span></td>
-					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+					<td><img class="activo2"/></td>
 				</tr>
 				<tr>
 					<td>dd/mm/aaaa</td>
@@ -1206,7 +1235,7 @@ a:hover {
 					<td>1234****5678</td>
 					<td>999,999,999.00</td>
 					<td><span class="cambio">Realizada</span></td>
-					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+					<td><img class="activo2"/></td>
 				</tr>
 				<tr>
 					<td>dd/mm/aaaa</td>
@@ -1215,7 +1244,7 @@ a:hover {
 					<td>1234****5678</td>
 					<td>999,999,999.00</td>
 					<td><span class="cambio">Realizada</span></td>
-					<td><img class="activo2" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+					<td><img class="activo2" /></td>
 				</tr>
 			</table>
 			</div>

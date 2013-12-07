@@ -1,74 +1,17 @@
 @import url('../../../../css/widgets.css');
-@import url('../../../../css/componentes.css')
+@import url('../../../../css/componentes.css');
 
-#contenido{
-	background-color:white;
+.smallTxt{
+	font-size: 10px;
+	line-height: 13px;
+	width: 374px;
+	text-align: justify;
 }
 
-.transf{
-	
-	width:708px;
-	height:100px;
-	border-collapse:collapse;
-
+.textoPrincipal{
+	/*Texto rojo pendiente*/
 }
-
-.transf tr:nth-child(even) {
-	background-color:#f4f4f4;
-	}
-
-.transf td{
-	padding-left:10px;
-	padding-top:3px;
-	height:22px;
-}
-
-.lista:hover{
-	cursor:pointer;
-	background:none;
-	background-image:url('../../lineagrafica/drop.png');
-	
-}
-
-.listaslct{
-	border:1px red solid;
-	background-image:url('../../lineagrafica/vtabtn.png');
-	
-}
-
-.botonera {
-    margin: 24px -10px 0 0;
-    width: auto;
-}
-
-.botonera1 {
-    float: right;
-    margin: 60px -10px 0 0;
-    width: 494px;
-}
-
-.botonera2 {
-    float: right;
-    margin: 165px -10px 0 0;
-    width: 494px;
-
-
-}
-
-/* EStilos transferencias*/
-
-.tbl_botones2{
-	float: left; 
-	margin-left:228px; 
-	margin-top:30px;
-}
-
-.botonera3 {
-margin: 145px -10px 0 0;
-width: 494px;
-float:right;
-}
-
+/*Modal bloqueo*/
 #contenido2, #contenido3, #contenido4, #contenido5{
 	display: none;
 
@@ -178,7 +121,7 @@ float:right;
 	height:93px;
 
 }
- 
+
 #btn_paso3 > ul > li:first
 {
 	font-weight:bolder;
@@ -216,7 +159,6 @@ float:right;
 	margin-left: 5px;
 	margin-top: -5px
 }
-
 .txtbtn_3{
 	margin-left: 17px;
 }
