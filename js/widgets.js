@@ -318,9 +318,9 @@ function posWidgets(qwerty){
 		posLeft += alen || 790;
 		var posTop =  wrapper.height()/2;
 		obj.css({'left':posLeft,'top':(posTop-obj.height())});
+		var altosScroll = [];
 		/*var c;
 		var altoScrolling = $("#wrappWidgets")[0].scrollHeight;
-		var altosScroll = [];
 
 		obtieneAltoTotal();
 

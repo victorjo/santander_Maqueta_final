@@ -209,6 +209,9 @@ function follow(){
 	
 	destruyeOver();
 	//cambiaFlujo("#step7");
+	 $("#step2").fadeOut("slow",function(){
+      $("#step3").fadeIn("slow");       
+      });
 	
 }
 

@@ -162,7 +162,7 @@ function ocultaSteps(num_Step){
 
 /** funcionalidad de botones Continuar y atras**/
   /*********  INICIO Transiciones de flujo: DomiciliaciÃ³n de servicios **********/
-  $("#siguiente").click(function(){
+ /* $("#siguiente").click(function(){
     $("#step1").fadeOut("slow",function(){
       $("#step2").fadeIn("slow");       
       });
@@ -182,12 +182,12 @@ function ocultaSteps(num_Step){
   
 
   /*Transiciones de flujo (atras): DomiciliaciÃ³n de servicios*/
-  $("#regresar").click(function(){
+ /* $("#regresar").click(function(){
     $("#step2").fadeOut("slow",function(){
       $("#step1").fadeIn("slow");       
       });
   });
-
+*/
 
 
   function avatarFade(){
