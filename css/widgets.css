@@ -33,12 +33,12 @@ h1,h2,h3,h4,h5{
 }
 
 .f_titleWid{
-         font-size: 13px;
+    font-size: 13px;
     font-weight: bolder;
-    margin: 8px auto 8px 45%;
     position: absolute;
     text-align: center;
-    width: 239px;
+    width: 865px;
+    margin-top: 8px !important;
     overflow: visible;
 }
 /*=======
@@ -90,8 +90,9 @@ padding-top: 4px;
 	float: right;
 	width: 28px;
 	margin-top: 5px;
-	height: 312px;
+	height: 28px;
 	cursor: pointer;
+
 	
 	}
 	
@@ -127,13 +128,12 @@ padding-top: 4px;
         float: left;
         display: block;
         font-weight:normal;
-        /*border-bottom: 1px #aaaaaa solid;*/
         width: 165px;
         padding: 10px 0 10px 10px;
         cursor: pointer;
-              background-image:url('../lineagrafica/widamphdr.png');
-               background-size:100% 100%;
-        height:15px;
+        background-image:url('../lineagrafica/widamphdr.png');
+        background-size:100% 100%;
+        
 }
 
 #navegador ul li:hover{
