@@ -515,7 +515,7 @@ function motorSuperbanner(){
 		i++;
 		if( i>4){
 		i=1  
-		}
+		} 
 
 		$("#wr_SuperBanner").fadeOut("slow",function(){
 				$("#wr_SuperBanner").css({
