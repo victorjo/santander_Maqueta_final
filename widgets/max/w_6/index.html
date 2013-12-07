@@ -483,24 +483,25 @@ function follow(){
 			</div>
 			<div id="botonera" style="float:right; margin-right:-10px; margin-top:15px;width:500px;">
 				<div class="btn">Tabla de Amortización</div>
-				<div id="siguiente"><div class="btnaceptar" onclick="cambiaPasoImg()">Aceptar</div></div>
+				<div id="siguiente">
+
+			<div class="btnaceptar" id="siguiente" onclick="cambiaPasoImg()">Aceptar</div></div>
 			</div>
 		
 	</div><!--Fin step 1-->
 	
 	<div id="step2" class="pasos" style="display:none">
 		<div id="contenido2">
-							<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
-			   				<div id="img"></div>
-			   				<div id="form">
-			   					<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
-			   					<div id="buttons">
-			   					<input type="submit" value="Cancelar" id="can" onclick="destruyeOverlay();">
-			   					<input type="submit" value="Continuar" id="con" onclick="follow()">
-			   					</div>
-			   				</div>
-
-   						</div>
+			<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
+			<div id="img"></div>
+			<div id="form">
+				<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
+				<div id="buttons">
+					<input type="submit" value="Cancelar" id="can" onclick="destruyeOverlay();">
+					<input type="submit" value="Continuar" id="con" onclick="follow()">
+				</div>
+			</div>
+		</div>
 
 		<h4 style="color:red;">Por favor confirme que la información desplegada a continuación es correcta:</h4>
 						<table class="tbl_info" style="width:100%;float:left;">
