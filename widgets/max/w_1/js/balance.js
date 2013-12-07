@@ -32,7 +32,7 @@ $(document).ready(function(){
 		day();
 	});
 
-	$("#a1,#a2").click(function(){
+	$("#a1,#a2,#a3,#a4,#a5").click(function(){
 
 		if(estatusTranf == 0){
 			 estatusTranf = 1;
