@@ -1,12 +1,11 @@
 <link rel="stylesheet" href="../../../css/widgets.css" />
 <link rel="stylesheet" href="../../../css/master.css" />
+<link rel="stylesheet" href="../../../css/token.css" />
 <link rel="stylesheet" href="widgets/max/w_6/css/creditos.css"/>
 <script type="text/javascript" src="../../../js/jquery.tinycircleslider.min.js"></script>
-<link rel="stylesheet" href="../../../css/website.css" type="text/css" media="screen"/>
 <script src="widgets/max/w_6/js/creditos.js"></script>
 <script type="text/javascript" src="../../../js/componentes.js"></script>
-<script src="widgets/max/w_1/js/balance.js"></script>
-<script src="../../../js/balanceTransfer.js"></script>
+<script type="text/javascript" src="../../../js/ddSlick.js"></script>
 <!--<script src="../../../js/utiles.js"></script>  -->
 <script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
 <style>
@@ -158,16 +157,6 @@ div > .blockcp:nth-child(3){
 		-o-transform: rotate(-90deg);
 		transform: rotate(-90deg);
 	}
-	#rotatescroll {
-height: 190px;
-left: 0;
-position: absolute;
-width: 190px;
-z-index: 1000;
-	}
-	#rotatescroll .overlay {
-		background: none;
-	}
 	#background{
 		top: 0; left: 0; z-index: 900; height: 190px; width: 190px; background:url(images/backCircle.png) center; position: absolute;
 	}
@@ -263,14 +252,15 @@ z-index: 1000;
 			height: 30px;
 			border-radius: 8px;
 		}
+
+		.gris{
+			color:#999999
+		}
 </style>
 <script>
 $(document).ready(function(){
 ocultaSteps(10);
-$("#btn1").on("click", function(){
-			creaOverlay("#000","#widget",1);
-			insertHTML($("#contenido2").html(),"modalOver");
-	});
+
 });
 function cambiaPasoImg(){
 	$("#stepbar img").attr("src","../img/fake/pasos/paso2.png");
@@ -321,9 +311,9 @@ function follow(){
 <div>
 	<div id="widget" class="widget">
 		<!--<div id="titulo">
-					<p class="f_titleWid">
-						PAGO <br/>
-						DE SERVICIOS</p>
+						<p class="f_titleWid">
+							PAGO <br/>
+							DE SERVICIOS</p>
 		</div>-->
 		<div id="header">
 			
@@ -369,7 +359,7 @@ function follow(){
 									<div class="thumb"></div>
 								</div>
 								<div id="background">
-									<div id="txtBack" style="margin: 78px 50px; text-align:center;">
+									<div id="txtBack" style="margin: 55px 50px; text-align:center;">
 										<h4>Monto simulado:</h4>
 										<p style="color:#4f8aea;font-weight: bolder;">$<span id="cantidadPoner">0</span>.00 MXN</p>
 										<h2 style="color: #999; margin-top: 5;"> <span id="porcentaje">0</span>%</h2>
@@ -438,498 +428,500 @@ function follow(){
 								<tr>
 									<td>Esquema de aseguramiento:</td>
 									<td>Lorem</td>
-								</tr>						
-						</table>
-					</div>
-				</div>
-			</div>
-			<p class="titlecp" style="margin-top:5px">2. Elija los meses de gracia</p>
-			<div class="boxselectcp">
-				<p sytle="margin-top:5px;margin-bottom:0px">Maximo 3 meses desde el desembolso del prestamo y la fecha de pago de la primera amortizacion.</p>
-				<div class="wra_Select2" style="margin-top:-5px">
-											<select name="" id="" >
-					                            <option value="">Ninguno</option>
-					                            <option value="">1</option>
-					                            <option value="">2</option>
-					                            <option value="">3</option>
-					                            
-					                    	</select>
-										</div>
-			</div>
-			<div id="botonera" style="float:right; margin-right:-10px; margin-top:15px;width:500px;">
-				<div class="btn">Tabla de Amortización</div>
-				<div id="siguiente">
-
-			<div class="btnaceptar" id="continuar1" onclick="cambiaPasoImg()">Aceptar</div></div>
-			</div>
-		
-	</div><!--Fin step 1-->
-	
-	<div id="step2" class="pasos">
-		<!--<div id="contenido2">
-			<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
-			<div id="img"></div>
-			<div id="form">
-				<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
-				<div id="buttons">
-					<input type="submit" value="Cancelar" id="can" onclick="destruyeOverlay();">
-					<input type="submit" value="Continuar" id="con" onclick="follow()">
-				</div>
-			</div>
-		</div>-->
-
-		<h4 style="color:red;">Por favor confirme que la información desplegada a continuación es correcta:</h4>
-						<table class="tbl_info" style="width:100%;float:left;">
-
-						<tr>
-					<td style="width:200px;"><b>Datos del Cliente</b></td>
-					<td ></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Titular</td>
-					<td ><b>María Peralta Ramírez</b></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Cuenta de depósito</td>
-					<td ><b>1234****5678</b></td>
-				</tr>
-				<tr>
-					<td><b>Datos del Crédito:</b></td>
-					<td ></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Monto de crédito:</td>
-					<td ><b>9,999,999.99 (MXP)</b></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Capacidad de pago:</td>
-					<td ><strong>9,999,999.99 (MXP)</strong></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Monto a disponer:</td>
-					<td ><b>9,999,999.99 (MXP)</b></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Pago mensual:</td>
-					<td ><b>9,999,999.99 (MXP)</b></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Plazo:</td>
-					<td ><b>18</b></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Meses de gracia:</td>
-					<td ><b>Ninguno</b></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Tasa de interés anual:</td>
-					<td ><b>00.00%</b></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Comisión por disposición:</td>
-					<td ><b>9,999,999.99</b></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Esquema aseguramiento:</td>
-					<td ><b>Lorem</b></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Fecha de pago:</td>
-					<td ><b>dd/mm/aa</b></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Fecha de solicitud:</td>
-					<td ><b>dd/mm/aa</b></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Correo para notificación</td>
-					<td ><b>correo@correo.com</b></td>
-					<td> <a style="color:#1974F0;margin-right:180px">(Editar)</a></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Celular para notificación</td>
-					<td><b>55 55 55 55 55 </b></td>
-					<td> <a style="color:#1974F0;margin-right:180px">(Editar)</a></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Tabla de amortización:</td>
-					<td><a style="color:#1974F0">*Descargar</a></td>
-				</tr>
-
-			</table>
-				<div class="botonera" style="float:right; margin-right:-236px; margin-top:143px;">
-					<div class="btn" id="regresar" onclick="backPasoImg();">Regresar</div>
-					
-					<div id="btn1" class="btnaceptar" onclick="cambiaPaso3()">Aceptar</div>
-				</div>
-	</div><!--Fin step 2-->
-	
-	<div id="step3">
-
-		<div id="vtacruzada"> 
-			
-						<div class="vtaimg">
+								</tr>
+							</table>
 						</div>
-						
-						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
-						
-						<!--<div class="vtapanel">
-							<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-							<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-							<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-						</div>-->
-						<div id="btn_paso3">
-		                     <ul>
-		                    	<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
-		                        <li class="btnNav"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">Pagar Servicios</span></li>
-		                        <li class="btnNav"><img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">Realizar una Domiciliación</span></li>
-		                      </ul>
-		                </div>
-						
-					</div>
-		
-				<h4 style="width:35%">Comprobante de pago de servicio.</h4>
-			
-			
-			
-					<table class="tbl_info" style="width:62%;float:left;">
-		
-						<tr>
-					<td style="width:200px;"><b>Datos del Cliente</b></td>
-					<td ></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Titular</td>
-					<td ><b>María Peralta Ramírez</b></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Cuenta de depósito</td>
-					<td ><b>1234****5678</b></td>
-				</tr>
-				<tr>
-					<td><b>Datos del Crédito:</b></td>
-					<td ></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Monto de crédito:</td>
-					<td ><b>9,999,999.99 (MXP)</b></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Capacidad de pago:</td>
-					<td ><strong>9,999,999.99 (MXP)</strong></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Monto a disponer:</td>
-					<td ><b>9,999,999.99 (MXP)</b></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Pago mensual:</td>
-					<td ><b>9,999,999.99 (MXP)</b></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Plazo:</td>
-					<td ><b>18</b></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Meses de gracia:</td>
-					<td ><b>Ninguno</b></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Tasa de interés anual:</td>
-					<td ><b>00.00%</b></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Comisión por disposición:</td>
-					<td ><b>9,999,999.99</b></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Esquema aseguramiento:</td>
-					<td ><b>Lorem</b></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Fecha de pago:</td>
-					<td ><b>dd/mm/aa</b></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Fecha de solicitud:</td>
-					<td ><b>dd/mm/aa</b></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Correo para notificación</td>
-					<td ><b>correo@correo.com</b></td>
-					<td> <a style="color:#1974F0;margin-right:180px">(Editar)</a></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Celular para notificación</td>
-					<td><b>55 55 55 55 55 </b></td>
-					<td> <a style="color:#1974F0;margin-right:180px">(Editar)</a></td>
-				</tr>
-				<tr>
-					<td style="color:#999999">Tabla de amortización:</td>
-					<td><a style="color:#1974F0">*Descargar</a></td>
-				</tr>
-						
-		
-						
-					</table>
-			
-				<div class="botonera2" style="margin-right:-11px;width:96%" >
-					<div class="btnaceptar" style="float:right;margin-top:12px;" onclick="backPasoImg(); cierraWidget()">Finalizar</div>
-					<div class="btn" style="float:right;margin-top:12px">
-						<img src="../img/iconos/img_impresora.png" class="btnico"/>
-						<p class="btntxt" style="margin-top:0px">Imprimir</p>
 					</div>
 				</div>
-		
+				<p class="titlecp" style="margin-top:5px">2. Elija los meses de gracia</p>
+				<div class="boxselectcp">
+					<p sytle="margin-top:5px;margin-bottom:0px">Maximo 3 meses desde el desembolso del prestamo y la fecha de pago de la primera amortizacion.</p>
+					<div class="wra_Select3" style="margin-top:-5px">
+						<select>
+							<option value="">Ninguno</option>
+							<option value="">1</option>
+							
+						</select>
+					</div>
+				</div>
+				<div id="botonera" style="float:right; margin-right:-10px; margin-top:15px;width:500px;">
+					<div class="btn">Tabla de Amortización</div>
+					<div id="siguiente">
+						<div class="btnaceptar" id="continuar1" onclick="cambiaPasoImg();changeComment(2);cambiaFlujo('#step2')">Aceptar</div></div>
+					</div>
+					
+					
 
-	</div><!--Fin step 3-->
-	
-	<div id="step4" class="pasos">
-						<p class="titlecp" style="color:red">1. Seleccione la cuenta depósito</p>
-		<table id="tablaDatos">
+
+					</div><!--Fin step 1-->
+					
+					<div id="step2" class="pasos">
+						<div id="contenido2" >
+								
+						</div>
+						<h4 style="color:red;">Por favor confirme que la información desplegada a continuación es correcta:</h4>
+						<table class="tbl_info" style="width:100%;float:left;">
 							<tr>
-								<td style="color:#999999">Fecha de pago:</td>
+								<td style="width:200px;"><b>Datos del Cliente</b></td>
+								<td ></td>
+							</tr>
+							<tr>
+								<td class="gris">Titular</td>
+								<td ><b>María Peralta Ramírez</b></td>
+							</tr>
+							<tr>
+								<td class="gris">Cuenta de depósito</td>
+								<td ><b>1234****5678</b></td>
+							</tr>
+							<tr>
+								<td><b>Datos del Crédito:</b></td>
+								<td ></td>
+							</tr>
+							<tr>
+								<td class="gris">Monto de crédito:</td>
+								<td ><b>9,999,999.99 (MXP)</b></td>
+							</tr>
+							<tr>
+								<td class="gris">Capacidad de pago:</td>
+								<td ><strong>9,999,999.99 (MXP)</strong></td>
+							</tr>
+							<tr>
+								<td class="gris">Monto a disponer:</td>
+								<td ><b>9,999,999.99 (MXP)</b></td>
+							</tr>
+							<tr>
+								<td class="gris">Pago mensual:</td>
+								<td ><b>9,999,999.99 (MXP)</b></td>
+							</tr>
+							<tr>
+								<td class="gris">Plazo:</td>
+								<td ><b>18</b></td>
+							</tr>
+							<tr>
+								<td class="gris">Meses de gracia:</td>
+								<td ><b>Ninguno</b></td>
+							</tr>
+							<tr>
+								<td class="gris">Tasa de interés anual:</td>
+								<td ><b>00.00%</b></td>
+							</tr>
+							<tr>
+								<td class="gris">Comisión por disposición:</td>
+								<td ><b>9,999,999.99</b></td>
+							</tr>
+							<tr>
+								<td class="gris">Esquema aseguramiento:</td>
+								<td ><b>Lorem</b></td>
+							</tr>
+							<tr>
+								<td class="gris">Fecha de pago:</td>
 								<td ><b>dd/mm/aa</b></td>
 							</tr>
 							<tr>
-								<td style="color:#999999">Fecha de solicitud:</td>
+								<td class="gris">Fecha de solicitud:</td>
 								<td ><b>dd/mm/aa</b></td>
 							</tr>
 							<tr>
-								<td style="color:#999999">Correo para notificación</td>
+								<td class="gris">Correo para notificación</td>
 								<td ><b>correo@correo.com</b></td>
 								<td> <a style="color:#1974F0;margin-right:180px">(Editar)</a></td>
 							</tr>
 							<tr>
-								<td style="color:#999999">Celular para notificación</td>
+								<td class="gris">Celular para notificación</td>
 								<td><b>55 55 55 55 55 </b></td>
 								<td> <a style="color:#1974F0;margin-right:180px">(Editar)</a></td>
 							</tr>
 							<tr>
-								<td style="color:#999999">Tabla de amortización:</td>
+								<td class="gris">Tabla de amortización:</td>
 								<td><a style="color:#1974F0">*Descargar</a></td>
 							</tr>
-							
-							
-							
 						</table>
-						
-						<div class="botonera2" style="margin-right:-11px;width:96%" >
-							<div class="btnaceptar" style="float:right;margin-top:12px;" onclick="backPasoImg(); cierraWidget()">Finalizar</div>
-							<div class="btn" style="float:right;margin-top:12px">
-								<img src="../img/iconos/img_impresora.png" class="btnico"/>
-								<p class="btntxt" style="margin-top:0px">Imprimir</p>
-							</div>
+						<div class="botonera" style="float:right; margin-right:-236px; margin-top:143px;">
+							<div class="btn" id="regresar" onclick="backPasoImg();">Regresar</div>
+							
+							<div id="btn1" class="btnaceptar" onclick="cambiaPasoImg();creaOverlay('#FFF','#contenido',1);insertHTML($('#contenido2').html(),'modalOver');">Aceptar</div>
 						</div>
+						</div><!--Fin step 2-->
 						
-						</div><!--Fin step 3-->
-						
-						<div id="step4" class="pasos" style="display:none">
-							<p class="titlecp" style="color:red">1. Seleccione la cuenta depósito</p>
-							<table id="tablaDatos">
-								<tr>
-									<td colspan="2"><b>Cuenta de Dep&oacute;sito:</b></td>
-								</tr>
-								<tr>
-									<td colspan="2">
-										<img src="images/card.png" alt="" style="float:left;margin-top:5px">
-										<p style="font-weight:bold;float:left;margin-left:10px">Elite Rewards Platino<br/>1234****5678</p>
-									</td>
-								</tr>
+						<div id="step3">
+							<div id="vtacruzada">
 								
-							</table>
-							<table style="margin-top:-19px">
-								<tr>
-									<td>
-										<div class="input" style="margin-left:10px">
-											
-											<p style="width: 220px;color:red">2. Seleccione el número de contrato</p>
-											<div class="wra_Select2" style="margin-top:5px">
-												<select name="" id="" style="color:#1974F0">
-													<option value="">1234****5678</option>
-													<option value="">1234****5678</option>
-													<option value="">1234****5678</option>
-													<option value="">1234****5678</option>
-													<option value="">1234****5678</option>
-												</select>
-											</div>
-										</div>
-									</td>
-									
-								</tr>
-							</table>
-							<p>En la siguiente lista podrá ver los cargos a su cuenta por su disposición de crédito: </p>
-							
-							
-							<table class="tbl_info" style="width:100%;float:left;height:215px">
-								<tr>
-									<td><b>No. de pago</b></td>
-									<td><b>Pago Fijo</b></td>
-									<td><b>Amortización</b></td>
-									<td><b>Interés sin IVA</b></td>
-									<td><b>IVA de los intereses</b></td>
-									<td><b>Pago Total</b></td>
-									<td><b>Saldo de Capital</b></td>
-								</tr>
-								<tr>
-									<td>1 - 48</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-								</tr>
-								<tr>
-									<td>2 - 48</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-								</tr>
-								<tr>
-									<td>3 - 48</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-								</tr>
-								<tr>
-									<td>4 - 48</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-								</tr>
-								<tr>
-									<td>5 - 48</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-								</tr>
-								<tr>
-									<td>6 - 48</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-								</tr>
-								<tr>
-									<td>7 - 48</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-								</tr>
-								<tr>
-									<td>8 - 48</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-								</tr>
-								<tr>
-									<td>9 - 48</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-								</tr>
-								<tr>
-									<td>1 - 48</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-									<td>9,999,999.99</td>
-								</table>
-								<table class="tbl_consulta" style="width:100%; float:left;" cellspacing="0">
-									<tr>
-										<td style="border:none"><div id="c2" style="background:#000"></div></td>
-										<td style="border:none"></td>
-										<td style="border:none">1 - 48</td>
-										<td style="border:none">Total (MXP)pagos efectuados(incluye intereses):</td>
-										<td style="border:none">9,999,999.99</td>
-										
-									</tr>
-									
-									<tr>
-										<td style="border:none"><div id="c2" style="background:#000"></div></td>
-										<td style="border:none"></td>
-										<td style="border:none"></td>
-										<td style="border:none">Saldo pendiente de pago(incluye intereses):</td>
-										<td style="border:none">9,999,999.99</td>
-										
-									</tr>
-									
-								</table>
+								<div class="vtaimg">
+								</div>
 								
+								<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
 								
-								</div><!--Fin step 4-->
+								<!--<div class="vtapanel">
+										<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+										<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+										<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
+								</div>-->
+								<div id="btn_paso3">
+									<ul>
+										<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
+										<li class="btnNav"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">Pagar Servicios</span></li>
+										<li class="btnNav"><img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">Realizar una Domiciliación</span></li>
+									</ul>
+								</div>
+								
 							</div>
 							
-							<div id="navegador">
-								<ul>
-									<li class="active" onclick="changeComment(1)">DISPOSICI&Oacute;N DE CR&Eacute;DITOS</li>
-									<li  onclick="cambiaEstado('4');changeComment(1)">CONSULTAR CR&Eacute;DITOS</li>
-								</ul>
-								<div class="aviso">
-									<div id="msg-alert" style="width: 133px;height: 52px;background:#fff;position: absolute;top: 2px;left: 10px;font-weight: bold;font-size: 10px;text-align: left;padding-top: 15px;">Txt1.</div>
-									<img src="../../img/iconos/img_msj.png"/>
+							<h4 style="width:35%">Comprobante de pago de servicio.</h4>
+							
+							
+							
+							<table class="tbl_info" style="width:62%;float:left;">
+								
+								<tr>
+									<td style="width:200px;"><b>Datos del Cliente</b></td>
+									<td ></td>
+								</tr>
+								<tr>
+									<td class="gris">Titular</td>
+									<td ><b>María Peralta Ramírez</b></td>
+								</tr>
+								<tr>
+									<td class="gris">Cuenta de depósito</td>
+									<td ><b>1234****5678</b></td>
+								</tr>
+								<tr>
+									<td><b>Datos del Crédito:</b></td>
+									<td ></td>
+								</tr>
+								<tr>
+									<td class="gris">Monto de crédito:</td>
+									<td ><b>9,999,999.99 (MXP)</b></td>
+								</tr>
+								<tr>
+									<td class="gris">Capacidad de pago:</td>
+									<td ><strong>9,999,999.99 (MXP)</strong></td>
+								</tr>
+								<tr>
+									<td class="gris">Monto a disponer:</td>
+									<td ><b>9,999,999.99 (MXP)</b></td>
+								</tr>
+								<tr>
+									<td class="gris">Pago mensual:</td>
+									<td ><b>9,999,999.99 (MXP)</b></td>
+								</tr>
+								<tr>
+									<td class="gris">Plazo:</td>
+									<td ><b>18</b></td>
+								</tr>
+								<tr>
+									<td class="gris">Meses de gracia:</td>
+									<td ><b>Ninguno</b></td>
+								</tr>
+								<tr>
+									<td class="gris">Tasa de interés anual:</td>
+									<td ><b>00.00%</b></td>
+								</tr>
+								<tr>
+									<td class="gris">Comisión por disposición:</td>
+									<td ><b>9,999,999.99</b></td>
+								</tr>
+								<tr>
+									<td class="gris">Esquema aseguramiento:</td>
+									<td ><b>Lorem</b></td>
+								</tr>
+								<tr>
+									<td class="gris">Fecha de pago:</td>
+									<td ><b>dd/mm/aa</b></td>
+								</tr>
+								<tr>
+									<td class="gris">Fecha de solicitud:</td>
+									<td ><b>dd/mm/aa</b></td>
+								</tr>
+								<tr>
+									<td class="gris">Correo para notificación</td>
+									<td ><b>correo@correo.com</b></td>
+									<td> <a style="color:#1974F0;margin-right:180px">(Editar)</a></td>
+								</tr>
+								<tr>
+									<td class="gris">Celular para notificación</td>
+									<td><b>55 55 55 55 55 </b></td>
+									<td> <a style="color:#1974F0;margin-right:180px">(Editar)</a></td>
+								</tr>
+								<tr>
+									<td class="gris">Tabla de amortización:</td>
+									<td><a style="color:#1974F0">*Descargar</a></td>
+								</tr>
+								
+								
+								
+							</table>
+							
+									<!--<div class="botonera2" style="margin-right:-11px;width:96%" >
+										<div class="btnaceptar" style="float:right;margin-top:12px;" onclick="backPasoImg(); cierraWidget()">12e</div>
+										<div class="btn" style="float:right;margin-top:12px">
+											<img src="../img/iconos/img_impresora.png" class="btnico"/>
+											<p class="btntxt" style="margin-top:0px">Imprimir</p>
+										</div>
+									</div>-->
+							
+									<table style="	float: right; margin-left: -22px; margin-top:50px;">
+			<tr>
+				<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
+				<td><div class="btn btnaceptar" onclick="cierraWidget();">Finalizar</div></td>
+			</tr>
+		</table>
+
+							</div><!--Fin step 3-->
+							
+							<div id="step4" class="pasos">
+								<p class="titlecp" style="color:red">1. Seleccione la cuenta depósito</p>
+								<table id="tablaDatos">
+									<tr>
+										<td class="gris">Fecha de pago:</td>
+										<td ><b>dd/mm/aa</b></td>
+									</tr>
+									<tr>
+										<td class="gris">Fecha de solicitud:</td>
+										<td ><b>dd/mm/aa</b></td>
+									</tr>
+									<tr>
+										<td class="gris">Correo para notificación</td>
+										<td ><b>correo@correo.com</b></td>
+										<td> <a style="color:#1974F0;margin-right:180px">(Editar)</a></td>
+									</tr>
+									<tr>
+										<td class="gris">Celular para notificación</td>
+										<td><b>55 55 55 55 55 </b></td>
+										<td> <a style="color:#1974F0;margin-right:180px">(Editar)</a></td>
+									</tr>
+									<tr>
+										<td class="gris" style="">Tabla de amortización:</td>
+										<td><a style="color:#1974F0">*Descargar</a></td>
+									</tr>
+									
+									
+									
+								</table>
+								
+								<div class="botonera2" style="margin-right:-11px;width:96%" >
+									<div class="btnaceptar" style="float:right;margin-top:12px;" onclick="backPasoImg(); cierraWidget()">ijniuiuhiuh</div>
+									<div class="btn" style="float:right;margin-top:12px">
+										<img src="../img/iconos/img_impresora.png" class="btnico"/>
+										<p class="btntxt" style="margin-top:0px">Imprimir</p>
+									</div>
+								</div>
+								
+								</div><!--Fin step 3-->
+								
+								<div id="step4" class="pasos" style="display:none">
+									<p class="titlecp" style="color:red">1. Seleccione la cuenta depósito</p>
+									<table id="tablaDatos">
+										<tr>
+											<td colspan="2"><b>Cuenta de Dep&oacute;sito:</b></td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<img src="images/card.png" alt="" style="float:left;margin-top:5px">
+												<p style="font-weight:bold;float:left;margin-left:10px">Elite Rewards Platino<br/>1234****5678</p>
+											</td>
+										</tr>
+										
+									</table>
+									<table style="margin-top:-19px">
+										<tr>
+											<td>
+												<div class="input" style="margin-left:10px">
+													
+													<p style="width: 220px;color:red">2. Seleccione el número de contrato</p>
+													<div class="wra_Select2" style="margin-top:5px">
+														<select style="color:#1974F0">
+															<option value="">1234****5678</option>
+															<option value="">1234****5678</option>
+															<option value="">1234****5678</option>
+															<option value="">1234****5678</option>
+															<option value="">1234****5678</option>
+														</select>
+													</div>
+												</div>
+											</td>
+											
+										</tr>
+									</table>
+									<p>En la siguiente lista podrá ver los cargos a su cuenta por su disposición de crédito: </p>
+									
+									
+									<table class="tbl_info" style="width:100%;float:left;height:215px">
+										<tr>
+											<td><b>No. de pago</b></td>
+											<td><b>Pago Fijo</b></td>
+											<td><b>Amortización</b></td>
+											<td><b>Interés sin IVA</b></td>
+											<td><b>IVA de los intereses</b></td>
+											<td><b>Pago Total</b></td>
+											<td><b>Saldo de Capital</b></td>
+										</tr>
+										<tr>
+											<td>1 - 48</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+										</tr>
+										<tr>
+											<td>2 - 48</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+										</tr>
+										<tr>
+											<td>3 - 48</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+										</tr>
+										<tr>
+											<td>4 - 48</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+										</tr>
+										<tr>
+											<td>5 - 48</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+										</tr>
+										<tr>
+											<td>6 - 48</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+										</tr>
+										<tr>
+											<td>7 - 48</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+										</tr>
+										<tr>
+											<td>8 - 48</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+										</tr>
+										<tr>
+											<td>9 - 48</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+										</tr>
+										<tr>
+											<td>1 - 48</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+											<td>9,999,999.99</td>
+										</table>
+										<table class="tbl_consulta" style="width:100%; float:left;" cellspacing="0">
+											<tr>
+												<td style="border:none"><div id="c2" style="background:#000"></div></td>
+												<td style="border:none"></td>
+												<td style="border:none">1 - 48</td>
+												<td style="border:none">Total (MXP)pagos efectuados(incluye intereses):</td>
+												<td style="border:none">9,999,999.99</td>
+												
+											</tr>
+											
+											<tr>
+												<td style="border:none"><div id="c2" style="background:#000"></div></td>
+												<td style="border:none"></td>
+												<td style="border:none"></td>
+												<td style="border:none">Saldo pendiente de pago(incluye intereses):</td>
+												<td style="border:none">9,999,999.99</td>
+												
+											</tr>
+											
+										</table>
+										
+										
+										</div><!--Fin step 4-->
+									</div>
+									
+									<div id="navegador">
+										<ul>
+											<li class="active" onclick="changeComment(1)">DISPOSICI&Oacute;N DE CR&Eacute;DITOS</li>
+											<li  onclick="cambiaEstado('4');changeComment(1)">CONSULTAR CR&Eacute;DITOS</li>
+										</ul>
+										<div class="aviso">
+											<div id="msg-alert" style="width: 133px;height: 52px;background:#fff;position: absolute;top: 2px;left: 10px;font-weight: bold;font-size: 10px;text-align: left;padding-top: 15px;">Txt1.</div>
+											<img src="../../img/iconos/img_msj.png"/>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-					<script>
-							var total = .1;
-							var c=document.getElementById("myCanvas");
-							c.width=190;
-							c.height=190;
-							var ctx=c.getContext("2d");
-							function aumentaTotal(numero){
-								ctx.clearRect(0, 0, c.width, c.height);
-								ctx.restore();
-								//total += .1;
-									
-									console.log("numero"+numero+"::::"+numero*Math.PI);
-									ctx.beginPath();
-									ctx.lineWidth = 8;
-									ctx.strokeStyle = "#4f8aea";
-									//ctx.arc(160,160,150,((90*Math.PI)/-180), numero*Math.PI));
-									ctx.arc(95,95,88,0,numero*Math.PI);
-									ctx.stroke();
-									ctx.restore();
-									
-							}
-					</script>
-					<script type="text/javascript">
-						$(document).ready(function(){
-							/*$('#rotatescroll').tinycircleslider({
-								//interval: true, snaptodots: true
-							
-								});*/
-						$('#rotatescroll').tinycircleslider({
-					callback: function(element, index){
-					console.log(element, index);
-					}
-					});
-						});
-					</script>
+							<script>
+									var total = .1;
+									var c=document.getElementById("myCanvas");
+									c.width=190;
+									c.height=190;
+									var ctx=c.getContext("2d");
+									function aumentaTotal(numero){
+										ctx.clearRect(0, 0, c.width, c.height);
+										ctx.restore();
+										//total += .1;
+											
+											console.log("numero"+numero+"::::"+numero*Math.PI);
+											ctx.beginPath();
+											ctx.lineWidth = 8;
+											ctx.strokeStyle = "#4f8aea";
+											//ctx.arc(160,160,150,((90*Math.PI)/-180), numero*Math.PI));
+											ctx.arc(95,95,88,0,numero*Math.PI);
+											ctx.stroke();
+											ctx.restore();
+											
+									}
+							</script>
+							<script type="text/javascript">
+
+								$(document).ready(function(){
+															
+
+								$(".wra_Select3 select").ddslick({
+									width: 630
+								});
+								
+								$('#rotatescroll').tinycircleslider({
+									radius: 95,
+									callback: function(element, index){
+									console.log(element, index);
+									}
+								});
+								
+								});
+							</script>
+
+
+

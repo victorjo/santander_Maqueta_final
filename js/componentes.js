@@ -6,30 +6,13 @@ $(document).ready(function(){
   
   },function(){
     $(this).css({"box-shadow":"none","border":"none"});
-  
-  //border();
   });
-}); 
-/*
-function border(obj){
-	$("#wrappWidgets").hide().show();
-	var ojec = obj || ".widget-min";
-	$(ojec).hover(function(){
-    if(typeof $(this).attr("instanced") == "undefined" && $(this).attr("instanced")!="true"){ 
-	 $(this).css({"box-shadow":"0 0 3px #757575","border":"1px solid #FF0000"});
-	 $(this).css({"margin-top":"-=2px","margin-right":"-=3px"});
-	}
-  },function(){
-	if(typeof $(this).attr("instanced") == "undefined" && $(this).attr("instanced")!="true"){ 
-		$(this).css({"box-shadow":"none","border":"none"});
-		$(this).css({"margin-top":"+=2px","margin-right":"+=3px"});
-	}
-  }
 
-  );
-}*/
+}); 
+
 
 var cards = [
+
         {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
         {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
         {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
@@ -47,7 +30,8 @@ var cards = [
         {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
         {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
         {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
-  ];
+        
+        ];
 
 
 /*Funcion switch (Normal de label dos digitos)- instanciado mediante clases*/
@@ -167,49 +151,14 @@ tokenHTML += '<p>Para realizar su operación es necesario<br/>ingresar el códig
 tokenHTML += '<img src="img/token.png"/></div><div id="input"><input class="input" type="text" placeholder="Ingresar TOKEN" />';
 tokenHTML += '</div><div class="botoneraWidget"><div class="btn" onclick="'+cbTokenCanc+'">Cancelar</div><div class="btnaceptar" onclick="'+cbTokenAcep+'" '+moreData+'>Aceptar</div></div></div>';
 
-
-
-  $("#"+contenedor).html(tokenHTML);
-
+$("#"+contenedor).html(tokenHTML);
 
 }
-
-
-/** funcionalidad de botones Continuar y atras**/
-  /*********  INICIO Transiciones de flujo: DomiciliaciÃ³n de servicios **********/
- /* $("#siguiente").click(function(){
-    $("#step1").fadeOut("slow",function(){
-      $("#step2").fadeIn("slow");       
-      });
-  });
-
-  $("#siguiente2").click(function(){
-    $("#step2").fadeOut("slow",function(){
-      $("#step3").fadeIn("slow");       
-      });
-  });
-
-  $("#siguiente3").click(function(){
-    $("#step3").fadeOut("slow",function(){
-      $("#step4").fadeIn("slow");       
-      });
-  });
-  
-
-  /*Transiciones de flujo (atras): DomiciliaciÃ³n de servicios*/
- /* $("#regresar").click(function(){
-    $("#step2").fadeOut("slow",function(){
-      $("#step1").fadeIn("slow");       
-      });
-  });
-*/
 
 
   function avatarFade(){
     $("#avatarNavPrin").hover(function(){
         $("#fadeAvatar").fadeToggle("slow");
-
-
     });
   }
 
@@ -234,6 +183,7 @@ function creaOverlay(color,contenedor,tipo){
     $(".loader").hide();
   });
   pos = (tipo==1)?'absolute':'fixed';
+  zposition = (tipo==1)?'1000':'';
   var divOverlay =  $("<div>");
   var c = $(contenedor);
   c.css("position","relative");
@@ -245,7 +195,7 @@ function creaOverlay(color,contenedor,tipo){
   }
   altoTotal = c.height();
   anchoTotal = c.width();
-  divOverlay.css({"position":pos,"top":"0","left":"0","width":(anchoTotal*1.20)+"px","background":color,"opacity":".8","height":"100%",'display':'none'});
+  divOverlay.css({"position":pos,"top":"0","left":"0","width":(anchoTotal*1.20)+"px","background":color,"opacity":".8","height":"100%",'display':'none',"z-index":zposition});
   c.append(divOverlay);
   divOverlay.fadeIn("slow");
   return $("body").attr("data-banpop","true");
