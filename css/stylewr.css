@@ -1,0 +1,330 @@
+﻿@font-face
+{
+font-family: 'ArialBlack';
+src: url(../fonts/ArialBlack.ttf);
+font-weight:bold;
+}
+
+body{
+	background-color:#e8e8e8;
+}
+/*widget 1x1*/
+#widreducido1x1 {
+	background-color:white;
+    border: 1px solid #BBBBBB;
+    height: 283px;
+    position: relative;
+    width: 243px;
+}
+
+#header_wr1x1{
+	width:243px;
+	height:29px;
+	border-bottom:1px #bbbbbb solid;
+	overflow:hidden;
+}
+
+#header_wr1x1 p{
+	margin-top:5px;
+	margin-left:15px;
+	font-family:'ArialBlack';
+	color:#282828;
+	font-size:12px;
+	float:left;
+}
+
+/*Fin widget 1x1*/
+
+
+#widreducido2x1 {
+	background-color:white;
+    border: 1px solid #BBBBBB;
+    height: 283px;
+    position: relative;
+    width: 498px;
+}
+#header_wr{
+	width:498px;
+	height:29px;
+	border-bottom:1px #bbbbbb solid;
+	overflow:hidden;
+}
+
+#header_wr p{
+	margin-top:5px;
+	margin-left:15px;
+	font-family:'ArialBlack';
+	color:#282828;
+	font-size:12px;
+	float:left;
+}
+
+#btnampliar_wr{
+	width:20px;
+	height:20px;
+	background-image:url('../btransfer/img/ampliar.png');
+	float:right;
+	margin:5px 5px 0 0;
+	background-size:100% 100%;
+}
+
+#btnampliar_wr:hover{
+	background-image:url('../btransfer/img/ampliarslct.png');
+	cursor: pointer;
+}
+
+
+#btninfo_wr{
+	width:20px;
+	height:20px;
+	background-image:url('../btransfer/img/info.png');
+	float:right;
+	margin:5px 5px 0 0;
+	background-size:100% 100%;
+}
+
+#btninfo_wr:hover{
+	background-image:url('../btransfer/img/infoslct.png');
+	cursor: pointer;
+}
+
+#cont_reducido_wr{
+	width:478px;
+	height:39px;
+	margin:10px 0 0 10px;
+	float:left;
+}
+
+#tarjeta_wr{
+	width:50px;
+	height:40px;
+	float:left;
+}
+
+#cont_reducido_wr p{
+	text-align: left;
+	margin-left:10px;
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#626262;
+	font-size:11px;
+	margin-top:0px;
+	line-height:85%;
+}
+
+.btn_wr{
+	background-color: #FFFFFF;
+    border: 1px #A6A6A6 solid ;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px #E1E1E1;
+    color: #626262;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    height: 23px;
+    padding-top: 7px;
+    text-align: center;
+    width: 223px;
+    font-family:'ArialBlack';
+    margin-top:10px;
+}
+
+.btn_wr:hover{
+	border:1px red solid;
+}
+
+
+.btnaceptar_wr {
+    background-color: #FFFFFF;
+    border: 1px #A6A6A6 solid ;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px #E1E1E1;
+    color: #FF0000;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    height: 23px;
+    padding-top: 7px;
+    text-align: center;
+    width: 223px;
+    font-family:'ArialBlack';
+    margin-top:10px;
+}
+
+.btnaceptar_wr:hover{
+	border:1px red solid;
+}
+
+#botonera_wr {
+bottom: 10px;
+float: right;
+position: absolute;
+right: 8px;
+}
+
+/*Creditos Personales*/
+#infotbl_wr{
+	width:498px;
+	height:88px;
+	border-top:1px #bbbbbb solid;
+	border-bottom:1px #bbbbbb solid;
+	border-collapse:collapse;
+	float:left;
+	margin-left:0px;
+	/*overflow:hidden;*/
+}
+
+#infotbl_wr p:nth-child(1){
+	color:#282828;
+}
+
+#infotbl_wr td{
+	text-align: left;
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#626262;
+	font-size:11px;
+	width:108px;
+	font-size:11px;
+	padding-left:15px;
+	height:88px;
+	line-height:9px;
+}
+
+#infotbl_wr p{
+	line-height:21px;
+}
+
+#infotbl_wr td:nth-child(2){
+	border-left:1px #bbbbbb solid;
+	width:114px;
+	padding-left:10px;
+}
+
+#infotbl_wr td:nth-child(3){
+	border-left:1px #bbbbbb solid;
+	border-right:1px #bbbbbb solid;
+	width:113px;
+	padding-left:10px;
+}
+
+#infotbl_wr td:nth-child(4){
+	width:110px;
+	padding-left:10px;
+}
+
+#infocredito_wr p:nth-child(3){
+	color:#282828;
+}
+
+#infocredito_wr{
+	
+	float:left;
+	line-height:20px;
+}
+#infocredito_wr p{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:11px;
+	color:#626262;
+	margin-left:15px;
+}
+
+.wra_Select_wr{
+	float:right;
+	box-shadow: 1px 1px 2px #E1E1E1;
+
+}
+
+.dd-select{
+	height:28px;
+	border-radius:0;
+	border-color:#a6a6a6;
+	background-color:#f7f7f7;
+	font-family:'ArialBlack';
+	font-size:10px;
+	color:#4573ec;
+	padding-top:0px;
+	
+}
+
+.dd-selected{
+	font-size:11px;
+	text-align: center;
+	font-family:'ArialBlack';
+	font-size:10px;
+	color:#4573ec;
+}
+
+.dd-option{
+	height:23px;
+	padding:5px 0 0 10px;
+	font-family:'ArialBlack';
+	font-size:10px;
+	color:#4573ec;
+	text-align: center;
+}
+
+.dd-pointer-up {
+    -moz-border-bottom-colors: none !important;
+    -moz-border-left-colors: none !important;
+    -moz-border-right-colors: none !important;
+    -moz-border-top-colors: none !important;
+    border-image: url('') none !important;
+    border-left-style: solid !important;
+	border-left-color: rgba(0, 0, 0, 0) !important;
+	border-left-width: 2px !important;
+	border-right-style: solid !important;
+	border-right-color: rgba(0, 0, 0, 0) !important;
+	border-right-width: 2px !important;
+	border-top-style: solid !important;
+	border-top-color: rgba(0, 0, 0, 0) !important;
+	border-top-width: 2px !important;
+	border-bottom-style: solid !important;
+	border-bottom-color: #626262 !important;
+	border-bottom-width: 2px !important;
+}
+
+.dd-pointer-down {
+    border-left: 2px solid rgba(0, 0, 0, 0);
+	border-top: 2px solid #626262;
+	border-bottom: 2px solid rgba(0, 0, 0, 0);
+	-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-image: url('') none;
+    border-right: 2px solid rgba(0, 0, 0, 0);
+    }
+
+.dd-option:hover{
+	border-color:#ff0000;
+	color:#ff0000
+}
+/*Fin Creditos Personales*/
+
+/*Balance Transfer*/
+#subtitulo_wr{
+	border-bottom:1px #bbbbbb solid;
+	height:25px;
+}
+
+#subtitulo_wr p{
+	margin:10px 0 0 15px;
+	font-family:Arial;
+	font-size:11px;
+	font-weight:bold;
+	color:#626262;
+}
+
+#framebox{
+	width:223px;
+	height:113px;
+	border:1px red solid;
+	margin:10px 0 0 10px;
+	float:left;
+	background-image:url('../frames/1.png')
+}
+/*Fin Balance Transfer*/
