@@ -5,6 +5,8 @@
 <link rel="stylesheet" href="../../../css/website.css" type="text/css" media="screen"/>
 <script src="widgets/max/w_6/js/creditos.js"></script>
 <script type="text/javascript" src="../../../js/componentes.js"></script>
+<script src="widgets/max/w_1/js/balance.js"></script>
+<script src="../../../js/balanceTransfer.js"></script>
 <!--<script src="../../../js/utiles.js"></script>  -->
 <script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
 <style>
@@ -172,24 +174,18 @@ z-index: 1000;
 	#txtBack h4{
 		margin:0;
 	}
-
 	.esconde{
 		visibility: none;
 	}
-
 	#tablaDatos{
 		text-align:left; height: 80px;margin: 9px 6px;
 	}
-
 	#tablaDatos tr{
 		height: 14px;
 	}
-
-
 	#tablaDatos tr td{
 		font-size:11px;
 	}
-
 	.tbl_info td{
 		font-size: 10px;
 		border-collapse: collapse;
@@ -202,7 +198,6 @@ z-index: 1000;
 	}
 	#contenido2{
 			display: none;
-
 		}
 	#img{
 			width: 180px;
@@ -269,35 +264,26 @@ z-index: 1000;
 			border-radius: 8px;
 		}
 </style>
-
 <script>
 $(document).ready(function(){
-ocultaSteps(4);
-
+ocultaSteps(10);
 $("#btn1").on("click", function(){
 			creaOverlay("#000","#widget",1);
 			insertHTML($("#contenido2").html(),"modalOver");
-
 	});
-
-
 });
-
 function cambiaPasoImg(){
 	$("#stepbar img").attr("src","../img/fake/pasos/paso2.png");
 }
-
 function backPasoImg(){
 	$("#stepbar img").attr("src","../img/fake/pasos/paso1.png");
 }
 function cambiaPaso3(){
 	$("#stepbar img").attr("src","../img/fake/pasos/paso3.png");
 }
-
 function insertHTML(html,contenedor){
 	$("#"+contenedor).append(html);
 }
-
 function cambiaFlujo(step){
 	
 	var npasos = $(".pasos").size();
@@ -311,9 +297,7 @@ function cambiaFlujo(step){
 				$(this).fadeOut("slow");
 			}
 		})
-
 }
-
 function follow(){
 	/*if ($("#token").val()==0){
 		alert("Debe ingresar su numero de TOKEN");
@@ -325,24 +309,21 @@ function follow(){
 	cambiaFlujo("#step3");
 	
 }
-
 </script>
-
 <div style="display:none;visibility:hidden;height:0;overflow:hidden;">
-<input type="text" id="textito"  />
-<input type="text" id="textito2" />
-<input type="text" id="textito3" />
-<input type="text" id="textito4" />
-<input type="text" id="textito5" value="9000000" />
+	<input type="text" id="textito"  />
+	<input type="text" id="textito2" />
+	<input type="text" id="textito3" />
+	<input type="text" id="textito4" />
+	<input type="text" id="textito5" value="9000000" />
 </div>
-
 <!-- APARTIR DE AQUI -->
 <div>
 	<div id="widget" class="widget">
 		<!--<div id="titulo">
-				<p class="f_titleWid">
-					PAGO <br/>
-					DE SERVICIOS</p>
+					<p class="f_titleWid">
+						PAGO <br/>
+						DE SERVICIOS</p>
 		</div>-->
 		<div id="header">
 			
@@ -358,112 +339,106 @@ function follow(){
 		</div>
 		<!-- aqui va para commmit -->
 		<div id="stepbar">
-				<img src="../img/fake/pasos/paso1.png"/>
+			<img src="../img/fake/pasos/paso1.png"/>
 		</div>
 		<div id="contenido">
-
 			
-
-
 			<div id="step1" class="pasos" >
-			<p class="titlecp" style="color:red">1. Elija el monto que desea disponer y simule</p>
-			<div id="wrapcp">
-				<div class="blockcp">
-					<p>Gire la perilla y elija el cr&eacute;dito que desea usar.</p>
-					<div class="bockcpcontent">
-						<p>Monto m&aacute;ximo autorizado:</p>
-						<p>$ 9,999,999.99 MXN</p>
-						<div style="margin:auto;width:190px;height:190px; position:relative">
-							
-							<canvas id="myCanvas" style="position:absolute;top:0;left:0;z-index: 1000;height:190px; width:190px;"></canvas>
-							<div id="rotatescroll">
-								<div class="viewport">
-									<ul class="overview">
-										
-									</ul>
-								</div>
+				<p class="titlecp" style="color:red">1. Elija el monto que desea disponer y simule</p>
+				<div id="wrapcp">
+					<div class="blockcp">
+						<p>Gire la perilla y elija el cr&eacute;dito que desea usar.</p>
+						<div class="bockcpcontent">
+							<p>Monto m&aacute;ximo autorizado:</p>
+							<p>$ 9,999,999.99 MXN</p>
+							<div style="margin:auto;width:190px;height:190px; position:relative">
 								
-								<div id="staticDot" style="position:absolute;top:0;left:85px;">
-									<img src="images/sliderCircOne.png"  />
+								<canvas id="myCanvas" style="position:absolute;top:0;left:0;z-index: 1000;height:190px; width:190px;"></canvas>
+								<div id="rotatescroll">
+									<div class="viewport">
+										<ul class="overview">
+											
+										</ul>
+									</div>
+									
+									<div id="staticDot" style="position:absolute;top:0;left:85px;">
+										<img src="images/sliderCircOne.png"  />
+									</div>
+									<div class="dot"></div>
+									<div class="overlay"></div>
+									<div class="thumb"></div>
 								</div>
-								<div class="dot"></div>
-								<div class="overlay"></div>
-								<div class="thumb"></div>
-							</div>
-							<div id="background">
-								<div id="txtBack" style="margin: 78px 50px; text-align:center;">
-									<h4>Monto simulado:</h4>
-									<p style="color:#4f8aea;font-weight: bolder;">$<span id="cantidadPoner">0</span>.00 MXN</p>
-									<h2 style="color: #999; margin-top: 5;"> <span id="porcentaje">0</span>%</h2>
+								<div id="background">
+									<div id="txtBack" style="margin: 78px 50px; text-align:center;">
+										<h4>Monto simulado:</h4>
+										<p style="color:#4f8aea;font-weight: bolder;">$<span id="cantidadPoner">0</span>.00 MXN</p>
+										<h2 style="color: #999; margin-top: 5;"> <span id="porcentaje">0</span>%</h2>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="blockcp">
-					<p>Elija el plazo de pago o escriba los meses que requiera para pagar.</p>
-					<div class="bockcpcontent">
-						<p>Plazo m&aacute;ximo autorizado:</p>
-						<p>36 meses</p>
-						<div style="margin:auto;width:190px;height:190px;">
-							<img src="images/PlazoSimulado.png" alt="">
-							
+					<div class="blockcp">
+						<p>Elija el plazo de pago o escriba los meses que requiera para pagar.</p>
+						<div class="bockcpcontent">
+							<p>Plazo m&aacute;ximo autorizado:</p>
+							<p>36 meses</p>
+							<div style="margin:auto;width:190px;height:190px;">
+								<img src="images/PlazoSimulado.png" alt="">
+								
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="blockcp">
-					<p>Simulacion con base en el monto del prestamo deseado:</p>
-					<div class="bockcpcontent">
-						<table id="tablaDatos">
-							<tr>
-								<td colspan="2"><b>Cuenta de Dep&oacute;sito:</b></td>
-							</tr>
-							<tr>
-								<td colspan="2"> 
-									<img src="images/card.png" alt="" style="float:left;margin-top:5px">
-									<p style="font-weight:bold;float:left;margin-left:10px">Elite Rewards Platino<br/>1234****5678</p>
-								</td>
-							</tr>
-
-
-							<tr>
-								<td  colspan="2">
-									<b>Datos del cr&eacute;dito:</b>
-								</td>
-							</tr>
-							<tr style="padding-right: -top:5px">
-								<td>Monto de cr&eacute;dito:</td>
-								<td><b>999,999.99</b></td>
-							</tr>
-							<tr>
-								<td>Monto a disponer:</td>
-								<td><b>999,999.99</b></td>
-							</tr>
-							<tr>
-								<td>Pago mesual:</td>
-								<td><b>999,999.99</b></td>
-							</tr>
-							<tr>
-								<td>Plazo:</td>
-								<td><b>18</b></td>
-							</tr>
-							<tr>
-								<td>Meses de gracia:</td>
-								<td><b>Ninguno</b></td>
-							</tr>
-							<tr>
-								<td>Tasa de inter&eacute;s anual:</td>
-								<td><b>00.00%</b></td>
-							</tr>
-							<tr>
-								<td>Comisi&oacute;n por disposici&oacute;n:</td>
-								<td><b>999,999.99</b></td>
-							</tr>
-							<tr>
-								<td>Esquema de aseguramiento:</td>
-								<td>Lorem</td>
-							</tr>
-							
+					<div class="blockcp">
+						<p>Simulacion con base en el monto del prestamo deseado:</p>
+						<div class="bockcpcontent">
+							<table id="tablaDatos">
+								<tr>
+									<td colspan="2"><b>Cuenta de Dep&oacute;sito:</b></td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<img src="images/card.png" alt="" style="float:left;margin-top:5px">
+										<p style="font-weight:bold;float:left;margin-left:10px">Elite Rewards Platino<br/>1234****5678</p>
+									</td>
+								</tr>
+								<tr>
+									<td  colspan="2">
+										<b>Datos del cr&eacute;dito:</b>
+									</td>
+								</tr>
+								<tr style="padding-right: -top:5px">
+									<td>Monto de cr&eacute;dito:</td>
+									<td><b>999,999.99</b></td>
+								</tr>
+								<tr>
+									<td>Monto a disponer:</td>
+									<td><b>999,999.99</b></td>
+								</tr>
+								<tr>
+									<td>Pago mesual:</td>
+									<td><b>999,999.99</b></td>
+								</tr>
+								<tr>
+									<td>Plazo:</td>
+									<td><b>18</b></td>
+								</tr>
+								<tr>
+									<td>Meses de gracia:</td>
+									<td><b>Ninguno</b></td>
+								</tr>
+								<tr>
+									<td>Tasa de inter&eacute;s anual:</td>
+									<td><b>00.00%</b></td>
+								</tr>
+								<tr>
+									<td>Comisi&oacute;n por disposici&oacute;n:</td>
+									<td><b>999,999.99</b></td>
+								</tr>
+								<tr>
+									<td>Esquema de aseguramiento:</td>
+									<td>Lorem</td>
+								</tr>						
 						</table>
 					</div>
 				</div>
@@ -483,24 +458,25 @@ function follow(){
 			</div>
 			<div id="botonera" style="float:right; margin-right:-10px; margin-top:15px;width:500px;">
 				<div class="btn">Tabla de Amortización</div>
-				<div id="siguiente"><div class="btnaceptar" onclick="cambiaPasoImg()">Aceptar</div></div>
+				<div id="siguiente">
+
+			<div class="btnaceptar" id="continuar1" onclick="cambiaPasoImg()">Aceptar</div></div>
 			</div>
 		
 	</div><!--Fin step 1-->
 	
-	<div id="step2" class="pasos" style="display:none">
-		<div id="contenido2">
-							<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
-			   				<div id="img"></div>
-			   				<div id="form">
-			   					<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
-			   					<div id="buttons">
-			   					<input type="submit" value="Cancelar" id="can" onclick="destruyeOverlay();">
-			   					<input type="submit" value="Continuar" id="con" onclick="follow()">
-			   					</div>
-			   				</div>
-
-   						</div>
+	<div id="step2" class="pasos">
+		<!--<div id="contenido2">
+			<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
+			<div id="img"></div>
+			<div id="form">
+				<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
+				<div id="buttons">
+					<input type="submit" value="Cancelar" id="can" onclick="destruyeOverlay();">
+					<input type="submit" value="Continuar" id="con" onclick="follow()">
+				</div>
+			</div>
+		</div>-->
 
 		<h4 style="color:red;">Por favor confirme que la información desplegada a continuación es correcta:</h4>
 						<table class="tbl_info" style="width:100%;float:left;">
@@ -581,7 +557,7 @@ function follow(){
 				</tr>
 
 			</table>
-				<div class="botonera" style="float:right; margin-right:-235px; margin-top:123px;">
+				<div class="botonera" style="float:right; margin-right:-236px; margin-top:143px;">
 					<div class="btn" id="regresar" onclick="backPasoImg();">Regresar</div>
 					
 					<div id="btn1" class="btnaceptar" onclick="cambiaPaso3()">Aceptar</div>
@@ -712,226 +688,248 @@ function follow(){
 						<p class="titlecp" style="color:red">1. Seleccione la cuenta depósito</p>
 		<table id="tablaDatos">
 							<tr>
-								<td colspan="2"><b>Cuenta de Dep&oacute;sito:</b></td>
+								<td style="color:#999999">Fecha de pago:</td>
+								<td ><b>dd/mm/aa</b></td>
 							</tr>
 							<tr>
-								<td colspan="2"> 
-									<img src="images/card.png" alt="" style="float:left;margin-top:5px">
-									<p style="font-weight:bold;float:left;margin-left:10px">Elite Rewards Platino<br/>1234****5678</p>
-								</td>
+								<td style="color:#999999">Fecha de solicitud:</td>
+								<td ><b>dd/mm/aa</b></td>
 							</tr>
-
-
+							<tr>
+								<td style="color:#999999">Correo para notificación</td>
+								<td ><b>correo@correo.com</b></td>
+								<td> <a style="color:#1974F0;margin-right:180px">(Editar)</a></td>
+							</tr>
+							<tr>
+								<td style="color:#999999">Celular para notificación</td>
+								<td><b>55 55 55 55 55 </b></td>
+								<td> <a style="color:#1974F0;margin-right:180px">(Editar)</a></td>
+							</tr>
+							<tr>
+								<td style="color:#999999">Tabla de amortización:</td>
+								<td><a style="color:#1974F0">*Descargar</a></td>
+							</tr>
+							
+							
 							
 						</table>
-
-						<table style="margin-top:-19px">
-							<tr>
-								<td>
-									<div class="input" style="margin-left:10px">
-									
-										<p style="width: 220px;color:red">2. Seleccione el número de contrato</p>
-										<div class="wra_Select2" style="margin-top:5px">
-											<select name="" id="" style="color:#1974F0">
-					                            <option value="">1234****5678</option>
-					                            <option value="">1234****5678</option>
-					                            <option value="">1234****5678</option>
-					                            <option value="">1234****5678</option>
-					                            <option value="">1234****5678</option>
-					                    	</select>
-										</div>
-									</div>
-								</td>
+						
+						<div class="botonera2" style="margin-right:-11px;width:96%" >
+							<div class="btnaceptar" style="float:right;margin-top:12px;" onclick="backPasoImg(); cierraWidget()">Finalizar</div>
+							<div class="btn" style="float:right;margin-top:12px">
+								<img src="../img/iconos/img_impresora.png" class="btnico"/>
+								<p class="btntxt" style="margin-top:0px">Imprimir</p>
+							</div>
+						</div>
+						
+						</div><!--Fin step 3-->
+						
+						<div id="step4" class="pasos" style="display:none">
+							<p class="titlecp" style="color:red">1. Seleccione la cuenta depósito</p>
+							<table id="tablaDatos">
+								<tr>
+									<td colspan="2"><b>Cuenta de Dep&oacute;sito:</b></td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<img src="images/card.png" alt="" style="float:left;margin-top:5px">
+										<p style="font-weight:bold;float:left;margin-left:10px">Elite Rewards Platino<br/>1234****5678</p>
+									</td>
+								</tr>
 								
-							</tr>	
-						</table>
-
-			<p>En la siguiente lista podrá ver los cargos a su cuenta por su disposición de crédito: </p>
-			
-			
-			<table class="tbl_info" style="width:100%;float:left;height:215px">
-
-				<tr>
-					<td><b>No. de pago</b></td>
-					<td><b>Pago Fijo</b></td>
-					<td><b>Amortización</b></td>
-					<td><b>Interés sin IVA</b></td>
-					<td><b>IVA de los intereses</b></td>
-					<td><b>Pago Total</b></td>
-					<td><b>Saldo de Capital</b></td>
-				</tr>
-				<tr>
-					<td>1 - 48</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-				</tr>
-				<tr>
-					<td>2 - 48</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-				</tr>
-				<tr>
-					<td>3 - 48</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-				</tr>
-				<tr>
-					<td>4 - 48</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-				</tr>
-				<tr>
-					<td>5 - 48</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-				</tr>
-				<tr>
-					<td>6 - 48</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-				</tr>
-				<tr>
-					<td>7 - 48</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-				</tr>
-				<tr>
-					<td>8 - 48</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-				</tr>
-				<tr>
-					<td>9 - 48</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-				</tr>
-				<tr>
-					<td>1 - 48</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-					<td>9,999,999.99</td>
-
-			</table>
-<table class="tbl_consulta" style="width:100%; float:left;" cellspacing="0">
-
-   				<tr>
-					<td style="border:none"><div id="c2" style="background:#000"></div></td>
-					<td style="border:none"></td>
-					<td style="border:none">1 - 48</td>
-					<td style="border:none">Total (MXP)pagos efectuados(incluye intereses):</td>
-					<td style="border:none">9,999,999.99</td>
-					
-				</tr>
-				
-				<tr>
-					<td style="border:none"><div id="c2" style="background:#000"></div></td>
-					<td style="border:none"></td>
-					<td style="border:none"></td>
-					<td style="border:none">Saldo pendiente de pago(incluye intereses):</td>
-					<td style="border:none">9,999,999.99</td>
-					
-				</tr>
-				
-
-
-			</table>
-
-	
-
-		
-	</div><!--Fin step 4-->
-
-</div>
-	
-		<div id="navegador">
-			<ul>
-				<li class="active">DISPOSICI&Oacute;N DE CR&Eacute;DITOS</li>
-				<li  onclick="cambiaEstado('4')">CONSULTAR CR&Eacute;DITOS</li>
-
-
-			</ul>
-
-			<div class="aviso">
-				<div id="msg-alert" style="width: 133px;height: 52px;background:#fff;position: absolute;top: 2px;left: 10px;font-weight: bold;font-size: 10px;text-align: left;padding-top: 15px;">Txt1.</div>
-				<img src="../../img/iconos/img_msj.png"/>
-			</div>
-
-
-		</div>
-	</div>
-</div>
-<script>
-		var total = .1;
-		var c=document.getElementById("myCanvas");
-		c.width=190;
-		c.height=190;
-		var ctx=c.getContext("2d");
-		function aumentaTotal(numero){
-			ctx.clearRect(0, 0, c.width, c.height);
-			ctx.restore();
-			//total += .1;
-				
-				console.log("numero"+numero+"::::"+numero*Math.PI);
-				ctx.beginPath();
-				ctx.lineWidth = 8;
-				ctx.strokeStyle = "#4f8aea";
-				//ctx.arc(160,160,150,((90*Math.PI)/-180), numero*Math.PI));
-				ctx.arc(95,95,88,0,numero*Math.PI);
-				ctx.stroke();
-				ctx.restore();
-				
-		}
-</script>
-<script type="text/javascript">
-	$(document).ready(function(){
-		/*$('#rotatescroll').tinycircleslider({
-			//interval: true, snaptodots: true
-		
-			});*/
-	$('#rotatescroll').tinycircleslider({
-callback: function(element, index){
-console.log(element, index);
-}
-});
-
-	});
-</script>
+							</table>
+							<table style="margin-top:-19px">
+								<tr>
+									<td>
+										<div class="input" style="margin-left:10px">
+											
+											<p style="width: 220px;color:red">2. Seleccione el número de contrato</p>
+											<div class="wra_Select2" style="margin-top:5px">
+												<select name="" id="" style="color:#1974F0">
+													<option value="">1234****5678</option>
+													<option value="">1234****5678</option>
+													<option value="">1234****5678</option>
+													<option value="">1234****5678</option>
+													<option value="">1234****5678</option>
+												</select>
+											</div>
+										</div>
+									</td>
+									
+								</tr>
+							</table>
+							<p>En la siguiente lista podrá ver los cargos a su cuenta por su disposición de crédito: </p>
+							
+							
+							<table class="tbl_info" style="width:100%;float:left;height:215px">
+								<tr>
+									<td><b>No. de pago</b></td>
+									<td><b>Pago Fijo</b></td>
+									<td><b>Amortización</b></td>
+									<td><b>Interés sin IVA</b></td>
+									<td><b>IVA de los intereses</b></td>
+									<td><b>Pago Total</b></td>
+									<td><b>Saldo de Capital</b></td>
+								</tr>
+								<tr>
+									<td>1 - 48</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+								</tr>
+								<tr>
+									<td>2 - 48</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+								</tr>
+								<tr>
+									<td>3 - 48</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+								</tr>
+								<tr>
+									<td>4 - 48</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+								</tr>
+								<tr>
+									<td>5 - 48</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+								</tr>
+								<tr>
+									<td>6 - 48</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+								</tr>
+								<tr>
+									<td>7 - 48</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+								</tr>
+								<tr>
+									<td>8 - 48</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+								</tr>
+								<tr>
+									<td>9 - 48</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+								</tr>
+								<tr>
+									<td>1 - 48</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+									<td>9,999,999.99</td>
+								</table>
+								<table class="tbl_consulta" style="width:100%; float:left;" cellspacing="0">
+									<tr>
+										<td style="border:none"><div id="c2" style="background:#000"></div></td>
+										<td style="border:none"></td>
+										<td style="border:none">1 - 48</td>
+										<td style="border:none">Total (MXP)pagos efectuados(incluye intereses):</td>
+										<td style="border:none">9,999,999.99</td>
+										
+									</tr>
+									
+									<tr>
+										<td style="border:none"><div id="c2" style="background:#000"></div></td>
+										<td style="border:none"></td>
+										<td style="border:none"></td>
+										<td style="border:none">Saldo pendiente de pago(incluye intereses):</td>
+										<td style="border:none">9,999,999.99</td>
+										
+									</tr>
+									
+								</table>
+								
+								
+								</div><!--Fin step 4-->
+							</div>
+							
+							<div id="navegador">
+								<ul>
+									<li class="active" onclick="changeComment(1)">DISPOSICI&Oacute;N DE CR&Eacute;DITOS</li>
+									<li  onclick="cambiaEstado('4');changeComment(1)">CONSULTAR CR&Eacute;DITOS</li>
+								</ul>
+								<div class="aviso">
+									<div id="msg-alert" style="width: 133px;height: 52px;background:#fff;position: absolute;top: 2px;left: 10px;font-weight: bold;font-size: 10px;text-align: left;padding-top: 15px;">Txt1.</div>
+									<img src="../../img/iconos/img_msj.png"/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<script>
+							var total = .1;
+							var c=document.getElementById("myCanvas");
+							c.width=190;
+							c.height=190;
+							var ctx=c.getContext("2d");
+							function aumentaTotal(numero){
+								ctx.clearRect(0, 0, c.width, c.height);
+								ctx.restore();
+								//total += .1;
+									
+									console.log("numero"+numero+"::::"+numero*Math.PI);
+									ctx.beginPath();
+									ctx.lineWidth = 8;
+									ctx.strokeStyle = "#4f8aea";
+									//ctx.arc(160,160,150,((90*Math.PI)/-180), numero*Math.PI));
+									ctx.arc(95,95,88,0,numero*Math.PI);
+									ctx.stroke();
+									ctx.restore();
+									
+							}
+					</script>
+					<script type="text/javascript">
+						$(document).ready(function(){
+							/*$('#rotatescroll').tinycircleslider({
+								//interval: true, snaptodots: true
+							
+								});*/
+						$('#rotatescroll').tinycircleslider({
+					callback: function(element, index){
+					console.log(element, index);
+					}
+					});
+						});
+					</script>

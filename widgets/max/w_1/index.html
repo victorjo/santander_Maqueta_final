@@ -108,6 +108,141 @@ a:hover {
 	width:200px;
 	text-align: center;
 }
+
+
+/*Estilos de bloqueo de Token*/
+#widreducido {
+	background-color:white;
+    border: 1px solid #BBBBBB;
+    height: 283px;
+    margin: 100px 0 0 235px;
+    position: relative;
+    width: 243px;
+    opacity:1 !important;
+}
+#header_wr{
+	width:243px;
+	height:29px;
+	border-bottom:1px #bbbbbb solid;
+	overflow:hidden;
+}
+
+#header_wr p{
+	margin-top:5px;
+	margin-left:15px;
+	font-family:'ArialBlack';
+	color:#282828;
+	font-size:12px;
+	float:left;
+}
+
+#btninfo_wr{
+	width:20px;
+	height:20px;
+	background-image:url('../../img/botones/info.png');
+	float:right;
+	margin:5px 5px 0 0;
+	background-size:100% 100%;
+}
+
+#btninfo_wr:hover{
+	background-image:url('../../img/botones/infoslct.png');
+	cursor: pointer;
+}
+
+.btn_wr{
+	background-color: #FFFFFF;
+    border: 1px #A6A6A6 solid ;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px #E1E1E1;
+    color: #626262;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    height: 23px;
+    padding-top: 7px;
+    text-align: center;
+    width: 223px;
+    font-family:'ArialBlack';
+    margin-top:10px;
+}
+
+.btnaceptar_wr {
+    background-color: #FFFFFF;
+    border: 1px #A6A6A6 solid ;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px #E1E1E1;
+    color: #FF0000;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    height: 23px;
+    padding-top: 7px;
+    text-align: center;
+    width: 223px;
+    font-family:'ArialBlack';
+    margin-top:10px;
+}
+
+.btnaceptar_wr:hover{
+	border:1px red solid;
+}
+
+.btn_wr:hover{
+	border:1px red solid;
+}
+
+.botonera_wr {
+    bottom: 13px;
+    float: right;
+    position: absolute;
+    right: 8px;
+}
+
+#token {
+    float: left;
+    height: 65px;
+    margin: 10px 0 0 60px;
+}
+
+#subtitulo_wr{
+	line-height:15px !important;
+}
+
+#subtitulo_wr p{
+	margin:10px 0 0 15px;
+	font-family:Arial;
+	font-size:11px;
+	font-weight:bold;
+	color:#626262;
+	width:233px;
+}
+#input_wr {
+    float: left;
+    margin-left: 10px;
+}
+
+input[type=text] {
+    background-color: #E8E8E8;
+    border: 1px solid #A6A6A6;
+    box-shadow: 1px 1px 5px #C6C6C6 inset;
+    color: #A4A4A4;
+    font-family: 'ArialBlack';
+    font-size: 11px;
+    height: 28px;
+    margin-top: 8px;
+    text-align: center;
+    width: 223px;
+}
+
+/* Fin Widget Reducido Token*/
+
+
+
+
+
+
+
 </style>
 <div id="widget">
 	<div id="header">
@@ -128,7 +263,7 @@ a:hover {
 		
 		<!-- bloqueo de cambio de contraseña y correo -->
 		
-		<p style="color:red"><b>Introduzca los datos de la tarjeta de cr&eacute;dito o comercial de la que desea transferir su saldo:</b></p>
+		<p style="color:red"><b>Introduzca los datos de la tarjeta de cr&eacute;dito o comercial de la que desea transferir su saldo:asdfasdf</b></p>
 		<div id="envolvente1" style="overflow:hidden;border:1px solid #ccc;padding:5px;">
 			
 			<div class="wra_Select">
@@ -310,51 +445,41 @@ a:hover {
 			*Calculado al 08 Noviembre del 2013. Considera una línea de crédito de $999,999,999.00, a un plazo de 3 años de amortización del crédito y cubriendo el porcentaje del pago mínimo.
 			</p>
 		</div>
-		<div  id="continuar1" class='btn Fright marginOne btnaceptar' style="margin-top: 20px;float: right;" onclick="changeComment(2)">Continuar</div>
+		<div  id="continuar1" class='btn Fright marginOne btnaceptar' style="margin-top: 6px;float: right;" onclick="changeComment(2)">Continuar</div>
 		</div><!-- Fin step1 -->
 		<div id="step2" class="pasos"><!-- step2 -->
 		<!-- bloqueo -->
 		<div id="contenido2">
-			<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
-			<div id="img"></div>
-			<div id="form">
-				<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
-				<div id="buttons">
-					<input type="submit" value="Cancelar" id="can" onclick="destruyeOver();">
-					<input type="submit" value="Continuar" id="con" onclick="overlay2();">
+			
+
+
+				<div id="widreducido">
+					<div id="header_wr">
+						<p>TOKEN</p>
+						<div id="btninfo_wr"></div>
+					</div>
+					<div id="subtitulo_wr">
+						<p style="line-height:15px">Para realizar su operación es necesario<br/>ingresar el código del TOKEN:</p>
+					</div>
+					
+					<div id="token">
+						<img src="../../img/iconos/token.png"/>
+					</div>
+					
+					<div id="input_wr">
+						<input class="input_wr" type="text" value="Ingresar TOKEN" />
+					</div>
+					<div class="botonera_wr">
+						<div class="btn_wr">Cancelar</div>
+						
+						<div class="btnaceptar_wr" id="siguiente2">Aceptar</div>
+					</div>
+					
 				</div>
-			</div>
-		</div>
-		<!-- Bloqueo de datos-->
-		<div id="contraTel">
-			<span class="txtform">A continuación puede actualizar su correo electrónico y número celular para recibir notificaciones.</span>
-			<br><br>
-			<span class="txtform">Correo registrado para notificación: correo@correo.com <br><br>
-			Celular registrado para notificación: 5555555555
-			</span>
-			<table class="tablaForm">
-				<tr>
-					<td><img  src="../../../img/interfaz/paginador_encendido.png" width="12" height="12">
-						<span>Correo que quedará registrado para notificación:</span><br>
-						<input type="text" size="52" placeholder="Correo@correo.com">
-					</td>
-				</tr>
-				<tr>
-					<td><img  src="../../../img/interfaz/paginador_apagado.png" width="12" height="12">
-						<span>Celular que quedará registrado para notificación:</span><br>
-						<input type="text" size="52" placeholder="5555555555">
-					</td>
-				</tr>
-			</table>
-			<span class="smallTxtMod">*Este medio cambiará para todas las operacivones de supernet. ¿esta seguro que desea realizar la acción?</span>
-			<table style="float: left;margin-left: 238px;margin-top: 46px;">
-				<tr>
-					<td><div class='btn' onclick="destruyeOver();">Guardar cambios</div></td>
-				</tr>
-				<tr>
-					<td><div class='btn' onclick="destruyeOver();">Cancelar</div></td>
-				</tr>
-			</table>
+	
+
+
+
 			
 		</div>
 		<div id="formTerminos">
@@ -433,7 +558,7 @@ a:hover {
 			*Calculado al 08 Noviembre del 2013. Considera una línea de crédito de $999,999,999.00, a un plazo de 3 años de amortización del crédito y cubriendo el porcentaje del pago mínimo.
 			</p>
 		</div>
-		<div class="botonera" style="float:right; margin-right:-218px; margin-top:135px;">
+		<div class="botonera" style="float:right; margin-right:-235px; margin-top:125px;">
 			<div class="btn regresar" onclick="changeComment(1)">Regresar</div>
 			
 			<div id="btn1" class=" btnaceptar continuar2" >Confirmar</div>
