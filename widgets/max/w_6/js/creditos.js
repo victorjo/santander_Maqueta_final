@@ -1,7 +1,9 @@
 ﻿var msjAlert = ["","Txt1.","Txt2.","Txt3."];
 
-
 $(document).ready(function(){
+
+	creaToken("contenido2","destruyeOverlay()","follow();cambiaPaso3();changeComment(3);","");
+
 	//Transicion entre operaciones
 	$("#navegador > ul > :nth-child(1)").click(function(){
 		cambiaFlujo("#step1");

@@ -12,8 +12,6 @@ function shortcuts(){
    			default:
    			break;
    		}
-
-
 	});
 }
 

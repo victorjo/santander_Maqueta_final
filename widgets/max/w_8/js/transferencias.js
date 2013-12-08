@@ -1,5 +1,8 @@
 var msjAlert = ["","Realice sus transferencias desde aquí.","Por favor compuebe que la información es correcta antes de confirmar.","Se ha realizado su operación correctamente."]
 
+
+
+
 $(document).ready(function(){
 
 	creaToken('modalContenido2','destruyeOver();','cambiaPasoImg3();changeComment(3);follow();','data-onclicio="follow();cambiaPasoImg3();"');
@@ -203,17 +206,13 @@ function insertHTML(html,contenedor){
 }
 
 function follow(){
-	/*if ($("#token").val()==0){
-		alert("Debe ingresar su numero de TOKEN");
-		
-	}*/
 	
-	destruyeOver();
-		 $("#step6").fadeOut("slow");
+	 destruyeOver();
+	 $("#step6").fadeOut("slow");
 
-	//cambiaFlujo("#step7");
+	 //cambiaFlujo("#step7");
 	 $("#step2").fadeOut("slow",function(){
-      $("#step3").fadeIn("slow");       
+     $("#step3").fadeIn("slow");       
       });
 
 
