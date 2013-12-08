@@ -1,3 +1,6 @@
+var msjAlert = ["","Txt1.","Txt2.","Txt3."];
+
+
 $(document).ready(function(){
 
 	//Carga de datos para arreglo dinámico
