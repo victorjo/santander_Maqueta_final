@@ -43,8 +43,8 @@ $(document).ready(function(){
 		setInterval(function(){ motorSuperbanner(); },15000);
 		
 		//
-			valToForm();
-			outaLogin();
+			//valToForm();
+			//outaLogin();
 		//
 });
 

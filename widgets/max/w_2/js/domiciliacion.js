@@ -179,7 +179,7 @@ function follow(){
 		
 	}*/
 	
-	destruyeOverlay();
+	destruyeOver();
 	cambiaFlujo("#step3");
 	
 }
