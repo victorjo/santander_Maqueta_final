@@ -1,6 +1,9 @@
 var msjAlert = ["","Realice sus transferencias desde aquí.","Por favor compuebe que la información es correcta antes de confirmar.","Se ha realizado su operación correctamente."]
 
 $(document).ready(function(){
+
+	creaToken('modalContenido2','destruyeOver();','cambiaPasoImg3();changeComment(3);follow();','data-onclicio="follow();cambiaPasoImg3();"');
+
 	omniBox("autocompleteQ",cards);
 	omniBox("autocompleteQ1",cards);
 	omniBox("autocompleteQ2",cards);
@@ -188,7 +191,7 @@ $("#navegador > ul > :nth-child(4)").click(function(){
 
 
 $("#btn1").on("click", function(){
-	creaOverlay("#000","#contenido",1);
+	creaOverlay("#FFF","#contenido",1);
 	insertHTML($("#contenido2").html(),"modalOver");
 	
 	//$("#contenido2").fadeIn();
@@ -206,11 +209,14 @@ function follow(){
 	}*/
 	
 	destruyeOver();
+		 $("#step6").fadeOut("slow");
+
 	//cambiaFlujo("#step7");
 	 $("#step2").fadeOut("slow",function(){
       $("#step3").fadeIn("slow");       
       });
-	
+
+
 }
 
 function achiquer(scope){

@@ -6,6 +6,7 @@
 <!--<script src="../../../js/utiles.js"></script>-->
 <link rel="stylesheet" href="widgets/max/w_8/css/transferencias.css"/>
 <link rel="stylesheet" href="../../../css/componentes.css"/>
+<link rel="stylesheet" href="../../../css/token.css"/>
 <!-- nothong -->
 <style>
 .btnHeaderTable{
@@ -492,7 +493,7 @@ a:hover {
 						<table style="float: right; margin-right:-13px; margin-top:87px;">
 							<tr>
 								<td></td>
-								<td><div class="btn btnaceptar" id="siguiente3">Continuar</div></td>
+								<td><div class="btn btnaceptar" id="siguiente3" onclick="cambiaPasoImg()">Continuar</div></td>
 							</tr>
 						</table>
 
@@ -585,7 +586,8 @@ a:hover {
 				
 				<div id="step6" class="pasos"><!-- step6 -->
                 <div id="contenido2">
-							<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
+                		<div id="modalContenido2"></div>
+							<!--<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
 			   				<div id="img"></div>
 			   				<div id="form">
 			   					<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
@@ -593,9 +595,9 @@ a:hover {
 			   					<input type="submit" value="Cancelar" id="can" onclick="destruyeOver();">
 			   					<input type="submit" value="Continuar" id="con" onclick="cambiaPasoImg3();changeComment(3);follow();" data-onclicio="follow();cambiaPasoImg3();">
 			   					</div>
-			   				</div>
+			   				</div>-->
 
-   						</div>
+   				</div>
 					
                     <p style="color:red"><b>La operación se realizará con la siguiente información:</b></p>
 					<table  class="tbl_info" style="width:100%">
@@ -610,7 +612,7 @@ a:hover {
 						<tr>
 							<td>Concepto:</td>
 							<td class="gris">123456789123456789123456789 <br> 123456789123456789
-		</td>
+							</td>
 						</tr>
 						<tr>
 							<td>Importe:</td>
@@ -1017,7 +1019,7 @@ a:hover {
 						<table style="	float: right; margin-right: -218px; margin-top:131px;">
 							<tr>
 								<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
-								<td><div class="btn btnaceptar" id="finAlta">Finalizar</div></td>
+								<td><div class="btn btnaceptar" id="finAlta"  onclick="cierraWidget();">Finalizar</div></td>
 							</tr>
 						</table>	
                  </div><!-- Fin de step11 -->	
@@ -1136,7 +1138,7 @@ a:hover {
 						<table style="	float: right; margin-right: -218px; margin-top:173px;">
 							<tr>
 								<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
-								<td><div class="btn btnaceptar" id="finBaja">Finalizar</div></td>
+								<td><div class="btn btnaceptar" id="finBaja"  onclick="cierraWidget();">Finalizar</div></td>
 							</tr>
 						</table>
                 </div>	<!-- Fin de step13 -->

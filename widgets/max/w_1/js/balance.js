@@ -1,19 +1,6 @@
 var msjAlert = ["","Txt1.","Txt2.","Txt3."];
 
 
-function creaToken(contenedor,cbTokenCanc,cbTokenAcep){
-
-tokenHTML = '<div id="widreducido"><div id="headerWidget"><p>TOKEN</p><div id="btninfo"></div></div><div id="subtitulo">';
-tokenHTML += '<p>Para realizar su operación es necesario<br/>ingresar el código del TOKEN:</p></div><div id="token">';
-tokenHTML += '<img src="img/token.png"/></div><div id="input"><input class="input" type="text" placeholder="Ingresar TOKEN" />';
-tokenHTML += '</div><div class="botoneraWidget"><div class="btn" onclick="'+cbTokenCanc+'">Cancelar</div><div class="btnaceptar" onclick="'+cbTokenAcep+'">Aceptar</div></div></div>';
-
-
-
-	$("#"+contenedor).html(tokenHTML);
-
-
-}
 
 
 

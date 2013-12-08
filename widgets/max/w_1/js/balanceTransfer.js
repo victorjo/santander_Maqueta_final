@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	ocultaSteps(15);
-	creaToken('contenido2','destruyeOver()','overlay2()');
+	creaToken('contenido2','destruyeOver()','overlay2()','');
 });
 
 /*Botones*/
