@@ -1,4 +1,4 @@
-var msjAlert = ["","Realice sus transferencias desde aquí.","Por favor compuebe que la información es correcta antes de confirmar.","Se ha realizado su operación correctamente."]
+var msjAlert = ["","Realice sus transferencias entre sus cuentas Santander desde aquí.","Por favor compuebe que la información es correcta antes de confirmar","La operación se ha realizado correctamente.","Por favor compruebe que la información es correcta antes de confirmar"]
 
 
 

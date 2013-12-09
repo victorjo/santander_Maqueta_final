@@ -1,8 +1,4 @@
-var msjAlert = ["","Txt1.","Txt2.","Txt3."];
-
-
-
-
+var msjAlert = ["Desde aquí puede consultar el estado de todas sus Transferencias de Saldo","Balance Transfer le permite transferir a sus tarjetas Santander la deuda de sus otras tarjetas de otros bancos.","Por favor compuebe que la información es correcta antes de confirmar.","La operación se ha realizado correctamente."];
 
 var estatusTranf = 0;
 $(document).ready(function(){

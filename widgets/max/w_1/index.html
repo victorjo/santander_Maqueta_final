@@ -9,7 +9,10 @@
 <script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
 <script>
-	
+	function escondePasos(tipo){
+		if(!tipo) $("#stepbar img").fadeOut("slow")
+		else $("#stepbar img").fadeIn("slow")
+	}
 </script>
 <!-- nothong -->
 <style>
@@ -200,7 +203,7 @@ a:hover {
 						<p>999,999,999.00</p>
 					</td>
 					<td class="activaciona1">
-						<input type="text" class="inpTxt" placeholder="999,999,999.00" value="999,999,999.00"  disabled/>
+						<input type="text" class="inpTxt" placeholder="999,999,999.00" value="999,999,999.00" />
 					</td>
 					<td class="activaciona1">
 						<p>999,999,999.00 (MXP)</p>
@@ -220,7 +223,7 @@ a:hover {
 						<p>999,999,999.00</p>
 					</td>
 					<td class="activaciona2">
-						<input class="inpTxt" type="text" placeholder="999,999,999.00" value="999,999,999.00"  disabled/>
+						<input class="inpTxt" type="text" placeholder="999,999,999.00" value="999,999,999.00" />
 					</td>
 					<td class="activaciona2">
 						<p>999,999,999.00 (MXP)</p>
@@ -240,7 +243,7 @@ a:hover {
 						<p>999,999,999.00</p>
 					</td>
 					<td class="activaciona3">
-						<input type="text" class="inpTxt" placeholder="999,999,999.00" value="999,999,999.00"  disabled/>
+						<input type="text" class="inpTxt" placeholder="999,999,999.00" value="999,999,999.00"  />
 					</td>
 					<td class="activaciona3">
 						<p>999,999,999.00 (MXP)</p>
@@ -260,7 +263,7 @@ a:hover {
 						<p>999,999,999.00</p>
 					</td>
 					<td class="activaciona4">
-						<input type="text" class="inpTxt" placeholder="999,999,999.00" value="999,999,999.00"  disabled/>
+						<input type="text" class="inpTxt" placeholder="999,999,999.00" value="999,999,999.00" />
 					</td>
 					<td class="activaciona4">
 						<p>999,999,999.00 (MXP)</p>
@@ -280,7 +283,7 @@ a:hover {
 						<p>999,999,999.00</p>
 					</td>
 					<td class="activaciona5">
-						<input type="text" class="inpTxt" placeholder="999,999,999.00" value="999,999,999.00"  disabled/>
+						<input type="text" class="inpTxt" placeholder="999,999,999.00" value="999,999,999.00" />
 					</td>
 					<td class="activaciona5">
 						<p>999,999,999.00 (MXP)</p>
@@ -300,7 +303,7 @@ a:hover {
 						<p>999,999,999.00</p>
 					</td>
 					<td class="activaciona6">
-						<input type="text" class="inpTxt" placeholder="999,999,999.00" value="999,999,999.00"  disabled/>
+						<input type="text" class="inpTxt" placeholder="999,999,999.00" value="999,999,999.00"  />
 					</td>
 					<td class="activaciona6">
 						<p>999,999,999.00 (MXP)</p>
@@ -550,8 +553,12 @@ a:hover {
 			<div id="widreducido"><div id="headerWidget"><p>Intervalo de fechas personalizado</p><div id="btninfo"></div></div><div id="subtitulo" style="padding-left: 12px;"><p>Desde</p></div><div><input class="input"onmouseover="$(this).datepicker();" id="d1" type="text" placeholder="dd/mm/aaaa" /></div><div id="subtitulo" style="padding-left: 12px;"><p>Hasta</p></div><div id="dia2"><input class="input" type="text" placeholder="dd/mm/aaaa" /></div><div class="botoneraWidget"><div class="btn" style="margin-top:51px;" onclick="destruyeOver();">Consultar</div></div></div>
 		</div>
 
-		<p style="color:red"><b>A continuación puede consultar las transferencias que ha realizado a sus tarjetas Santander.
-		Seleccione  el estatus de las transferencias de saldo que desea consultar, así como el período de búsqueda y/o rango de saldo transferido para realizar una búsqueda más específica</b></p>
+		<p style="color:red;font-size:10px"><b>A continuación puede consultar las transferencias que ha realizado a sus tarjetas Santander. Seleccione el estatus de las transferencias de saldo que desea consultar, así como el período de búsqueda y/o rango de saldo transferido para realizar una búsqueda más específica. A continuación puede consultar las transferencias que ha realizado a sus tarjetas Santander.</b></p>
+
+
+		<p style="color:red;font-size:10px"><b> Seleccione el estatus de las transferencias de saldo que desea consultar, así como el período de búsqueda y/o rango de saldo transferido para realizar una búsqueda más específica. </b></p>
+
+
 		<div id="menu">
 			<ul>
 				<li><a href="#"><div id="circulo"><span style="margin-left: 10px;">Periodo de búsqueda</span></div></a>
@@ -588,66 +595,66 @@ a:hover {
 				<td>Estatus</td>
 			</tr>
 			<tr>
-				<td>dd/mm/aaaa</td>
+				<td>23/11/2013</td>
 				<td>123456789123</td>
 				<td>123456789123</td>
-				<td>999,999,999.00 MXP</td>
-				<td>999,999,999.00 MXP</td>
-				<td>0.00%</td>
+				<td>2,000.00 MXP</td>
+				<td>1,500.00 MXP</td>
+				<td>23.54%</td>
 				<td><u>Exitosa</u></td>
 			</tr>
 			<tr>
-				<td>dd/mm/aaaa</td>
+				<td>22/11/2013</td>
 				<td>123456789123</td>
 				<td>123456789123</td>
-				<td>999,999,999.00 MXP</td>
-				<td>999,999,999.00 MXP</td>
-				<td>0.00%</td>
+				<td>5,000.00 MXP</td>
+				<td>1,500.00 MXP</td>
+				<td>27.67%</td>
 				<td><u>Exitosa</u></td>
 			</tr>
 			<tr>
-				<td>dd/mm/aaaa</td>
+				<td>15/11/2013</td>
 				<td>123456789123</td>
 				<td>123456789123</td>
-				<td>999,999,999.00 MXP</td>
-				<td>999,999,999.00 MXP</td>
-				<td>0.00%</td>
+				<td>3,000.00 MXP</td>
+				<td>1,500.00 MXP</td>
+				<td>24.64%</td>
 				<td><u>Exitosa</u></td>
 			</tr>
 			<tr>
-				<td>dd/mm/aaaa</td>
+				<td>11/11/2013</td>
 				<td>123456789123</td>
 				<td>123456789123</td>
-				<td>999,999,999.00 MXP</td>
-				<td>999,999,999.00 MXP</td>
-				<td>0.00%</td>
+				<td>4,000.00 MXP</td>
+				<td>1,500.00 MXP</td>
+				<td>23.54%</td>
 				<td><u>Exitosa</u></td>
 			</tr>
 			<tr>
-				<td>dd/mm/aaaa</td>
+				<td>09/11/2013</td>
 				<td>123456789123</td>
 				<td>123456789123</td>
-				<td>999,999,999.00 MXP</td>
-				<td>999,999,999.00 MXP</td>
-				<td>0.00%</td>
+				<td>3,000.00 MXP</td>
+				<td>1,500.00 MXP</td>
+				<td>23.54%</td>
 				<td><u>Exitosa</u></td>
 			</tr>
 			<tr>
-				<td>dd/mm/aaaa</td>
+				<td>02/11/2013</td>
 				<td>123456789123</td>
 				<td>123456789123</td>
-				<td>999,999,999.00 MXP</td>
-				<td>999,999,999.00 MXP</td>
-				<td>0.00%</td>
+				<td>2,000.00 MXP</td>
+				<td>1,500.00 MXP</td>
+				<td>27.34%</td>
 				<td><u>Exitosa</u></td>
 			</tr>
 			<tr>
-				<td>dd/mm/aaaa</td>
+				<td>28/10/2013</td>
 				<td>123456789123</td>
 				<td>123456789123</td>
-				<td>999,999,999.00 MXP</td>
-				<td>999,999,999.00 MXP</td>
-				<td>0.00%</td>
+				<td>5,000.00 MXP</td>
+				<td>1,500.00 MXP</td>
+				<td>27.34%</td>
 				<td><u>Exitosa</u></td>
 			</tr>
 		</table>
@@ -658,11 +665,13 @@ a:hover {
 </div><!--cierre contenido-->
 <div id="navegador">
 <ul>
-	<li class="active">SOLICITAR</li>
-	<li onclick="changeComment(1)">CONSULTAR</li>
+	<li class="active" onclick="changeComment(1);escondePasos(true);">SOLICITAR</li>
+	<li onclick="changeComment(0);escondePasos(false);">CONSULTAR</li>
 </ul>
 <div class="aviso">
-	<div id="msg-alert" style="width: 133px;height: 52px;background:#fff;position: absolute;top: 2px;left: 10px;font-weight: bold;font-size: 10px;text-align: left;padding-top: 15px;">Txt1.</div>
+	<div id="msg-alert" style="width: 133px;height: 52px;background:#fff;position: absolute;top: 2px;left: 10px;font-weight: bold;font-size: 10px;text-align: left;padding-top: 15px;">
+		Balance Transfer le permite transferir a sus tarjetas Santander la deuda de sus otras tarjetas de otros bancos.
+	</div>
 	<img src="../../img/iconos/img_msj.png"/>
 </div>
 

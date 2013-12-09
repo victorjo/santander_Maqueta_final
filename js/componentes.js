@@ -30,6 +30,7 @@ var cards = [
         {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
         {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
         {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+        {label:'123456789012 SUPER CUENTA UNIVERSITARIA Principal 1,345.67 MXP',value:'1234****5678  Producto Santander'},
         
         ];
 
