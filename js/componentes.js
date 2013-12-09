@@ -175,7 +175,7 @@ function ocultaSteps(num_Step){
 
 /*Funciones de bloqueo (Overlay)*/
 
-function creaOverlay(color,contenedor,tipo){
+function creaOverlay(color,contenedor,tipo,call){
   $(document).ajaxStart(function() {
     $(".loader").show();
   });
@@ -197,7 +197,7 @@ function creaOverlay(color,contenedor,tipo){
   anchoTotal = c.width();
   divOverlay.css({"position":pos,"top":"0","left":"0","width":(anchoTotal*1.20)+"px","background":color,"opacity":".8","height":"100%",'display':'none',"z-index":zposition});
   c.append(divOverlay);
-  divOverlay.fadeIn("slow");
+  divOverlay.fadeIn("slow",call);
   return $("body").attr("data-banpop","true");
 }
 
