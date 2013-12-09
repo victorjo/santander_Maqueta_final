@@ -185,13 +185,13 @@ function follow(){
 }
 function follow2(){
 	
-	destruyeOverlay();
+	destruyeOver();
 	cambiaFlujo("#step8");
 }
 
 function follow3(){
 	
-	destruyeOverlay();
+	destruyeOver();
 	cambiaFlujo("#step13");
 }
 function follow4(){
