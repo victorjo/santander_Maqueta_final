@@ -259,7 +259,46 @@ div > .blockcp:nth-child(3){
 </style>
 <script>
 $(document).ready(function(){
-ocultaSteps(10);
+	ocultaSteps(10);
+	var ddData = [
+    {
+        text: "Elite Rewards Platino",
+        value: 1,
+        selected: false,
+        description: "1234****5678",
+        imageSrc: "images/card.png"
+    },
+    {
+        text: "Elite Rewards Platino",
+        value: 2,
+        selected: false,
+        description: "1234****5678",
+        imageSrc: "images/card.png"
+    },
+    {
+        text: "Elite Rewards Platino",
+        value: 3,
+        selected: true,
+        description: "1234****5678",
+        imageSrc: "images/card.png"
+    },
+    {
+        text: "Elite Rewards Platino",
+        value: 4,
+        selected: false,
+        description: "1234****5678",
+        imageSrc: "images/card.png"
+    }
+];
+
+	 $('#myDropdown').ddslick({
+	    data:ddData,
+	    width:300,
+	    imagePosition:"left",
+	    onSelected: function(selectedData){
+	        //callback function: do something with selectedData;
+	    }   
+    });	
 
 });
 function cambiaPasoImg(){
@@ -299,7 +338,10 @@ function follow(){
 	cambiaFlujo("#step3");
 	
 }
+
+
 </script>
+
 <div style="display:none;visibility:hidden;height:0;overflow:hidden;">
 	<input type="text" id="textito"  />
 	<input type="text" id="textito2" />
@@ -693,9 +735,29 @@ function follow(){
 										<td class="gris" style="">Tabla de amortización:</td>
 										<td><a style="color:#1974F0">*Descargar</a></td>
 									</tr>
+									<table>  
+										
 									
-									
-									
+										<tr>
+											<td>
+												
+											    <div id="myDropdown">
+													<!--<div class="wra_Select3" style="margin-top:-5px">
+														<select id="demo-htmlselect">
+													        <option value="0" data-imagesrc="images/card.png"
+													            data-description="1234****5678">Elite Rewards Platino</option>
+													        <option value="1" data-imagesrc="images/card.png"
+													            data-description="1234****5678">Elite Rewards Platino</option>
+													        <option value="2" selected="selected" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/linkedin-icon-32.png"
+													            data-description="1234****5678">Elite Rewards Platino</option>
+													        <option value="3" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/foursquare-icon-32.png"
+													            data-description="1234****5678">Elite Rewards Platino</option>
+													    </select>-->
+													</div>
+												
+											</td>
+										</tr>
+									</table>
 								</table>
 								
 								<div class="botonera2" style="margin-right:-11px;width:96%" >
