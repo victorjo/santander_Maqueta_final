@@ -34,7 +34,7 @@ $(document).ready(function(){
 		//Bloqueo para inserccion de  Daypiker
 		creaOverlay("#FFF","#contenido",1);
 		insertHTML($("#calendario").html(),"modalOver");
-		day();
+		$('#dia1').datepicker();
 	});
 
 	$("#a1,#a2,#a3,#a4,#a5").click(function(){

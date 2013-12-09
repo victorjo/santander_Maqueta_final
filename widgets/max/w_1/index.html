@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="../../../css/token.css"/>
 <script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+<script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
 <script>
 	
 </script>
@@ -388,7 +389,7 @@ a:hover {
 				</table>
             		
             </div>
-            
+
 			<table style="position: relative;margin-left: 101px;padding-top: 17px;">
 				<tr>
 					<td><div class='btn' onclick="destruyeOver();">Cancelar</div></td>
@@ -540,12 +541,11 @@ a:hover {
 	<!-- FIN Funcionalidad: Solicitar -->
 	<div><!-- Flujo de  consulta -->
 	<div id="step4" class="pasos">
+		
 		<div id="calendario">
-			<div class="dia tablaDay" >
-				<span class="txtform">Intervalo de fechas personalizado</span>
-				<span style="color:#000;">Desde</span><input type="text" id="date1"  placeholder="dd/mm/aaaa">
-			</div>
+			<div id="widreducido"><div id="headerWidget"><p>Intervalo de fechas personalizado</p><div id="btninfo"></div></div><div id="subtitulo" style="padding-left: 12px;"><p>Desde</p></div><div id="dia1"><input class="input" type="text" placeholder="dd/mm/aaaa" /></div><div id="subtitulo" style="padding-left: 12px;"><p>Hasta</p></div><div id="dia2"><input class="input" type="text" placeholder="dd/mm/aaaa" /></div><div class="botoneraWidget"><div class="btn" style="margin-top:51px;" onclick="destruyeOver();">Consultar</div></div></div>
 		</div>
+
 		<p style="color:red"><b>A continuación puede consultar las transferencias que ha realizado a sus tarjetas Santander.
 		Seleccione  el estatus de las transferencias de saldo que desea consultar, así como el período de búsqueda y/o rango de saldo transferido para realizar una búsqueda más específica</b></p>
 		<div id="menu">
@@ -558,14 +558,7 @@ a:hover {
 					<li><a href="#" id="4"><img  id="ok4" src='../../img/iconos/ok.png' style='width:12px; height: 12px; margin-left: 10px; display:none;'/>Intervalo personalizado</a></li>
 				</ul>
 			</li>
-			<li><a href="#">Tarjeta de origen</a>
-				<ul class="sub-menu">
-					<li><a href="#" id="3d">3 días</a></li>
-					<li><a href="#" id="7d">7 días</a></li>
-					<li><a href="#" id="1m">1 mes</a></li>
-					<li><a href="#" id="3m">3 meses</a></li>
-				</ul>
-			</li>
+			<li><a href="#">Tarjeta de origen</a></li>
 			<li><a href="#">Rango de importe</a></li>
 		</li>
 	</ul>
