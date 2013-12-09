@@ -22,7 +22,7 @@
 	/*Texto rojo pendiente*/
 }
 /*Modal bloqueo*/
-#contenido2, #contraTel, #formTerminos , #calendario{
+#contenido2, #contraTel, #formTerminos , #calendario, #datosTelCorreo{
 	display: none;
 
 }

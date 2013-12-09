@@ -59,14 +59,14 @@ $(document).ready(function(){
 
 	$('#editaCorreo').click(function(){
 		creaOverlay("#fff","#contenido",1);
-		insertHTML($("#contraTel").html(),"modalOver");
+		insertHTML($("#datosTelCorreo").html(),"modalOver");
 
 	});
 
 	$('#editaCel').click(function(){
 		
 		creaOverlay("#fff","#contenido",1);
-		insertHTML($("#contraTel").html(),"modalOver");
+		insertHTML($("#datosTelCorreo").html(),"modalOver");
 	});
 
 });
