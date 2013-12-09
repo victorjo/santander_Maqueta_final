@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="../../../css/token.css"/>
 <script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
-<script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
 <script>
 	
 </script>
@@ -114,6 +113,11 @@ a:hover {
 
 
 </style>
+<script>
+	//$('#diaform').datepicker();
+	
+</script>
+
 <div id="widget">
 	<div id="header">
 		<p class="f_titleWid">TRANSFERENCIA DE SALDOS</p>
@@ -138,7 +142,7 @@ a:hover {
 			
 			<div class="wra_Select">
 				<p><b>N&uacute;mero de tarjeta</b></p>
-				<input type="text" class="inpTxt" id="txtT" placeholder="Seleccionar" />
+				<input type="text" class="inpTxt" id="diaform" placeholder="Seleccionar" />
 			</div>
 			
 			<div class="wra_Select">
@@ -543,7 +547,7 @@ a:hover {
 	<div id="step4" class="pasos">
 		
 		<div id="calendario">
-			<div id="widreducido"><div id="headerWidget"><p>Intervalo de fechas personalizado</p><div id="btninfo"></div></div><div id="subtitulo" style="padding-left: 12px;"><p>Desde</p></div><div id="dia1"><input class="input" type="text" placeholder="dd/mm/aaaa" /></div><div id="subtitulo" style="padding-left: 12px;"><p>Hasta</p></div><div id="dia2"><input class="input" type="text" placeholder="dd/mm/aaaa" /></div><div class="botoneraWidget"><div class="btn" style="margin-top:51px;" onclick="destruyeOver();">Consultar</div></div></div>
+			<div id="widreducido"><div id="headerWidget"><p>Intervalo de fechas personalizado</p><div id="btninfo"></div></div><div id="subtitulo" style="padding-left: 12px;"><p>Desde</p></div><div><input class="input"onmouseover="$(this).datepicker();" id="d1" type="text" placeholder="dd/mm/aaaa" /></div><div id="subtitulo" style="padding-left: 12px;"><p>Hasta</p></div><div id="dia2"><input class="input" type="text" placeholder="dd/mm/aaaa" /></div><div class="botoneraWidget"><div class="btn" style="margin-top:51px;" onclick="destruyeOver();">Consultar</div></div></div>
 		</div>
 
 		<p style="color:red"><b>A continuación puede consultar las transferencias que ha realizado a sus tarjetas Santander.

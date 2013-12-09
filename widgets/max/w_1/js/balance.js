@@ -33,8 +33,9 @@ $(document).ready(function(){
 		$('#ok1').hide();
 		//Bloqueo para inserccion de  Daypiker
 		creaOverlay("#FFF","#contenido",1);
-		insertHTML($("#calendario").html(),"modalOver");
-		$('#dia1').datepicker();
+		insertHTML($("#calendario").html(),"modalOver",function(){
+			//$('#d1').datepicker();
+		});
 	});
 
 	$("#a1,#a2,#a3,#a4,#a5").click(function(){
@@ -137,8 +138,9 @@ $("#navegador > ul > :nth-child(2)").click(function(){
 		});
 	}
 
-function insertHTML(html,contenedor){
-	$("#"+contenedor).append(html).fadeIn();
+function insertHTML(html,contenedor,callback){
+	$("#"+contenedor).append(html).fadeIn('slow');
+	callback();
 }
 
 function follow(){
