@@ -31,10 +31,6 @@ $(document).ready(function(){
 	$(".widget-min").click(function(){
 		getInstance(this);
 	});
-	$(".btnHeader").click(function(){
-		globalFlah++;
-		console.log(globalFlah);
-	});
 
 		genFooterHeight();
 		ajustaBannerHeight();
@@ -428,8 +424,9 @@ function moveScroll(obj,math){
 
 function getInstance(obj){
 	var thisW = $(obj);
-	if(typeof thisW.data("instanced") == 'undefined' || thisW.data("instanced") == 'undefined') thisW.data("instanced",new newWidgetInstance(thisW));
-	else thisW.find(".btnHeader").click(function(){thisW.data('instanced').routerAction()});
+	if(typeof thisW.data("instanced") == 'undefined' || thisW.data("instanced") == 'undefined'){
+		thisW.data("instanced",new newWidgetInstance(thisW));
+	}
 }
 
 function newWidgetInstance(obj)
@@ -450,7 +447,7 @@ function newWidgetInstance(obj)
 			this.obj.attr({"instanced":"true"});
 			this.obj.css({'position':'fixed','top':this.topPos,'left':this.leftPos,'z-index':50});
 			forA.children().fadeOut(0);
-			this.obj.animate({width:'935px',height:'541px',left: ($(window).width()/2)-467+'px',top:'10%'},600,function(){creaOverlay('#000',document.body,0); forA.children().fadeOut('fast'); var scope = $(this);  /*}).animate({width:'935px',height:'541px'},800,function(){*/
+			this.obj.animate({width:'935px',height:'541px',left: ($(window).width()/2)-467+'px',top:'10%'},600,function(){creaOverlay('#000',document.body,0,function(){$("#banOverlay").attr("onclick","closeAction()");});  forA.children().fadeOut('fast'); var scope = $(this);  /*}).animate({width:'935px',height:'541px'},800,function(){*/
 				$.ajax({
 					url:'widgets/max/w_'+forA.attr("data-id")+'/index.html',
 			        type:'GET',
@@ -458,12 +455,13 @@ function newWidgetInstance(obj)
 			        success: function(res){
 			        	forA.html(res);
 			        	forA.children().fadeIn('slow');
+			        	forA.find(".btnHeader").attr("onclick","closeAction()");
 			        }
 		    	}); 
 			});
 			};
 	this.routerAction = function(positionMax){
-						if(globalFlah>0) return false;
+						//if(globalFlah>0) return false;
 						destruyeOverlay();
 						var forA = this.obj;
 						forA.children().hide(300);
@@ -490,7 +488,10 @@ function newWidgetInstance(obj)
 
 }
 
-
+function closeAction(){
+	$("[instanced='true']").data('instanced').routerAction();
+	globalFlah++;
+}
 
 
 function valToForm(){
