@@ -173,13 +173,15 @@ a:hover {
 		<div style="float:left;margin:10px 0 0 ; width:50%; border:solid 1px silver;height:58px;position:relative; margin-top:10px;border-radius: 5px;">
 			
 			<div class="centradoSwitch">
-				<div id="switchbox" class="switch" style="margin-top:13px; margin-left:10px;">  </div>
+				<div id="switchbox" onclick="$(this).parent().next().toggle();$('.dropcontainer').toggle();" class="switch" style="margin-top:13px; margin-left:10px;">  </div>
 			</div>
+			<div style="display:none">
 			<img src="../../../img/iconos/img_calendario.png" style="margin-top:20px; margin-left:10px;">
 			
 			<input type="text" id="date" placeholder="dd/mm/aaaa" style="margin-left:10px;height:25px;margin-top:14px;position:fixed">
+			</div>
 		</div>
-		<div class="dropcontainer" style="max-height: 200px; height: 200px; overflow: visible;">
+		<div class="dropcontainer" style="display:none;max-height: 200px; height: 200px; overflow: visible;">
 			<div class="dropdown">
 				<img class="downI" src="../../../img/iconos/dropdown.png" style="display: block;">
 				<img class="upI" src="../../../img/iconos/dropup.png" style="display: none;">
@@ -196,7 +198,7 @@ a:hover {
 		<table class="tbl_botones2" style="float:right">
 			<tr>
 				<!--<td><div class="btn">Cancelar</div></td>-->
-				<td><div class="btn btnaceptar" id="siguiente" onclick="cambiaPasoImg();changeComment(2);cambiaFlujo(2)">Continuar</div></td>
+				<td><div class="btn btnaceptar" id="siguiente" style="position: absolute;right: 15px;bottom: 12px;" onclick="cambiaPasoImg();changeComment(2);cambiaFlujo(2)">Continuar</div></td>
 			</tr>
 		</table>
 		</div> <!--fin step1-->
