@@ -6,6 +6,10 @@ var msjAlert = ["","Txt1.","Txt2.","Txt3."];
 
 var estatusTranf = 0;
 $(document).ready(function(){
+
+
+
+
 	ocultaSteps(15);
 	//funcionalidad de botones
 	$('#1').click(function(){

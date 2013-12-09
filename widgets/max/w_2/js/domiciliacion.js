@@ -1,7 +1,12 @@
+var msjAlert = ["","Txt1.","Txt2.","Txt3."];
+
+
 $(document).ready(function(){
 
 	//Carga de datos para arreglo dinámico
-
+	creaToken('contenido2','destruyeOver()','follow();changeComment(2)','');
+	creaToken('contenido3','destruyeOver()','follow2();changeComment(2)','');
+	creaToken('contenido4','destruyeOver()','follow3()','changeComment(2)');
 
 	
 	ocultaSteps(26);
@@ -129,7 +134,7 @@ $(document).ready(function(){
 
 
 	$("#btn1").on("click", function(){
-			creaOverlay("#000","#contenido",1);
+			creaOverlay("#FFF","#contenido",1);
 			insertHTML($("#contenido2").html(),"modalOver");
 			
 			//$("#contenido2").fadeIn();
@@ -139,7 +144,7 @@ $(document).ready(function(){
 
 
 	$("#btn2").on("click", function(){
-			creaOverlay("#000","#contenido",1);
+			creaOverlay("#FFF","#contenido",1);
 			insertHTML($("#contenido3").html(),"modalOver");
 			
 			//$("#contenido2").fadeIn();
@@ -147,7 +152,7 @@ $(document).ready(function(){
 	});
 
 	$("#btn3").on("click", function(){
-			creaOverlay("#000","#contenido",1);
+			creaOverlay("#FFF","#contenido",1);
 			insertHTML($("#contenido4").html(),"modalOver");
 			
 			//$("#contenido2").fadeIn();
@@ -155,7 +160,7 @@ $(document).ready(function(){
 	});
 		
 		$("#btn4").on("click", function(){
-			creaOverlay("#000","#contenido",1);
+			creaOverlay("#FFF","#contenido",1);
 			insertHTML($("#contenido5").html(),"modalOver");
 			
 			//$("#contenido2").fadeIn();

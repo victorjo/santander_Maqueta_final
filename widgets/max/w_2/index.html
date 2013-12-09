@@ -5,6 +5,7 @@
 <script src="widgets/max/w_2/js/domiciliacion.js"></script>
 <link rel="stylesheet" href="widgets/max/w_2/css/domiciliacion.css"/>
 <link rel="stylesheet" href="../../../css/componentes.css"/>
+<link rel="stylesheet" href="../../../css/token.css"/>
 <script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
 <!-- nothong -->
 <style>
@@ -208,6 +209,8 @@ function backPasoImg(){
 					
 					<div id="step2" class="pasos">
 						<div id="contenido2">
+							
+
 							<div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
 			   				<div id="img"></div>
 			   				<div id="form">
@@ -217,6 +220,10 @@ function backPasoImg(){
 			   					<input type="submit" value="Continuar" id="con" onclick="follow();">
 			   					</div>
 			   				</div>
+
+
+			
+
 
    						</div>
 						<div class="marcoInformativo3">
@@ -1014,7 +1021,14 @@ function backPasoImg(){
 				<li onclick="backPasoImg();">DOMICILIACIÓN DE TARJETA DE CRÉDITO</li>
 				<li onclick="backPasoImg();">CONSULTA/MODIFICACIÓN Y CANCELACIÓN</li>
 			</ul>
-		<div class="aviso"><img src="../../../img/iconos/img_msj.png" />	</div>
+
+	<div class="aviso">
+	<div id="msg-alert" style="width: 133px;height: 52px;background:#fff;position: absolute;top: 2px;left: 10px;font-weight: bold;font-size: 10px;text-align: left;padding-top: 15px;">Txt1.</div>
+	<img src="../../img/iconos/img_msj.png"/>
+	</div>
+
+
+
 
 	</div>
 </div>
