@@ -158,16 +158,7 @@ $("#"+contenedor).html(tokenHTML);
 
   function avatarFade(){
     $("#avatarNavPrin").hover(function(){
-<<<<<<< HEAD
-        if($("#fadeAvatar").is(":animated")){
-          return false
-        }else{
-          $("#fadeAvatar").fadeToggle("slow");
-        }      
-        
-=======
         $("#fadeAvatar").fadeToggle("slow");
->>>>>>> bca67e77d287c59de686b305eaa6d159a4deb0d8
     });
   }
 

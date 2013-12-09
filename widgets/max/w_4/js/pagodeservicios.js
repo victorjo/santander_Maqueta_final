@@ -1,9 +1,4 @@
-﻿$(document).ready(function(){
-	creaToken("modal2","destruyeOver();changeComment(3);follow();",'data-onclicio="follow();cambiaPasoIm3();');
-//	});
-});
-
-var msjAlert = ["","Txt1.","Txt2.","Txt3."];
+﻿var msjAlert = ["","Txt1.","Txt2.","Txt3."];
 
 
 /*Funhcion switch (label de mas de dos digitos)--- Flujo: Domiciliaciones Ã³ mas */

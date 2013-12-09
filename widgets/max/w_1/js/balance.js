@@ -1,12 +1,9 @@
 var msjAlert = ["","Txt1.","Txt2.","Txt3."];
 
-<<<<<<< HEAD
-=======
 
 
 
 
->>>>>>> bca67e77d287c59de686b305eaa6d159a4deb0d8
 var estatusTranf = 0;
 $(document).ready(function(){
 	ocultaSteps(15);
