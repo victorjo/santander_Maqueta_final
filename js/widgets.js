@@ -456,11 +456,12 @@ function newWidgetInstance(obj)
 			        	forA.html(res);
 			        	forA.children().fadeIn('slow');
 			        	forA.find(".btnHeader").attr("onclick","closeAction()");
+						forA.find(".vtaimg").attr("onclick","closeAction(null,7);");
 			        }
 		    	}); 
 			});
 			};
-	this.routerAction = function(positionMax){
+	this.routerAction = function(positionMax,id){
 						//if(globalFlah>0) return false;
 						destruyeOverlay();
 						var forA = this.obj;
@@ -475,6 +476,7 @@ function newWidgetInstance(obj)
 									io.html(res);
 									$("[clone='true']").remove();
 									forA.children().fadeIn('slow');
+									$("[data-id='"+id+"']").click();
 								}
 							});
 							io.css({'top':'-='+$("#wrappWidgets").offset().top,'left':'-='+$("#wrappWidgets").offset().left,'position':'static','z-index':0});
@@ -488,8 +490,8 @@ function newWidgetInstance(obj)
 
 }
 
-function closeAction(){
-	$("[instanced='true']").data('instanced').routerAction();
+function closeAction(od,id){
+	$("[instanced='true']").data('instanced').routerAction(od,id);
 	globalFlah++;
 }
 
