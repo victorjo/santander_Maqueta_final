@@ -97,7 +97,7 @@ function cambiaPaso3(){
 								<td>CFE</td>
 								<td>1234</td>
 								<td>dd/mm/aaaa</td>
-								<td>999,999,999.00</td>
+								<td>$ 999,999,999.00</td>
 								<td colspan="2">1456789009876</td>
 							</tr>
 						</table>
@@ -144,7 +144,7 @@ function cambiaPaso3(){
 					
 					<div id="calico"><img src="../img/iconos/img_calendario.png"/></div>
 					
-					<input class="txtbox" value="dd/mm/aaaa"/>
+					<input class="txtbox" onmouseover="$(this).datepicker();" onkeyup="$(this).val(getMask(this.value,event));" placeholder="dd/mm/aaaa"/>
 									
 					</div> 
 					

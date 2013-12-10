@@ -255,3 +255,13 @@ function cambiaFlujo(step){
     })
 
 }
+
+function getMask(str,event){
+	console.log(event);
+	if(str.length>9) return str.substring(10,-1);
+	if((str.length>1 && str.length < 3) || (str.length==5 && str.length > 3) ) return str += "/";
+	return str;
+}
+
+
+

@@ -119,6 +119,7 @@ right: 0px;
 	font-weight:bold;
 	text-align: center;
 	padding-top:5px;
+	cursor:pointer;
 }
 
 .offDom 
@@ -134,6 +135,7 @@ right: 0px;
 	font-weight:bold;
 	text-align: center;
 	padding-top:5px;
+	cursor:pointer
 }
 .topeDom{
 	height:28px;
