@@ -145,7 +145,13 @@ $("#"+contenedor).html(tokenHTML);
 
   function avatarFade(){
     $("#avatarNavPrin").hover(function(){
-        $("#fadeAvatar").fadeToggle("slow");
+      if($("#fadeAvatar").is(":animated")){
+        return false
+      }else{
+         $("#fadeAvatar").fadeToggle("slow");
+      }
+
+       
     });
   }
 
