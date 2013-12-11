@@ -28,9 +28,6 @@ $(document).ready(function(){
 	//if(typeof window.chrome =="undefined" || typeof window.safari == "undefined") reject();
 	validaBrowser();
 	posWidgets(0);
-	$(".widget-min").click(function(){
-		getInstance(this);
-	});
 
 		genFooterHeight();
 		ajustaBannerHeight();
@@ -173,21 +170,21 @@ var widgets = [
 				{
 					id:7,
 					type:2,
-					order:6,
+					order:8,
 					contentMin:'',
 					contentMax:''
 				},
 				{
 					id:4,
 					type:1,
-					order:8,
+					order:7,
 					contentMin:'',
 					contentMax:''
 				},
 				{
 					id:9,
 					type:3,
-					order:7,
+					order:6,
 					contentMin:'',
 					contentMax:''
 				},
@@ -253,6 +250,10 @@ function posWidgets(qwerty){
 		        dataType:'html',
 		        success: function(res){
 		        	newWidget.html(res);
+		        	$("div > div:first,.btnaceptar_wr",newWidget).click(function(){
+						console.log(this);
+						getInstance(newWidget);
+					});
 		        }
 		    });
 			$.ajax({
@@ -276,6 +277,7 @@ function posWidgets(qwerty){
 		var a = posWid.top-posWra.top; 
 		var b = posWid.left-posWra.left;
 		newWidget.css({'top': a+"px",'left':b+"px"});
+		
 		parser++;
 	});
 	}//end of validate of resize param
@@ -477,6 +479,10 @@ function newWidgetInstance(obj)
 									$("[clone='true']").remove();
 									forA.children().fadeIn('slow');
 									$("[data-id='"+id+"']").click();
+									/*$("div > div:first,.btnaceptar_wr",newWidget).click(function(){
+										console.log(this);
+										getInstance(newWidget);
+									});*/
 								}
 							});
 							io.css({'top':'-='+$("#wrappWidgets").offset().top,'left':'-='+$("#wrappWidgets").offset().left,'position':'static','z-index':0});
