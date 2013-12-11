@@ -1,147 +1,76 @@
-<!--<script src="../js/balanceTransfer.js"></script>-->
+﻿<script src="../js/jquery10.2.min.js"></script>
+<script src="../js/ddSlick.js"></script>
+<script src="../js/widredu.js"></script>
+<script src="widgets/min/w_4/css/js/pservicios.js"></script>
+<link rel="stylesheet" href="widgets/min/w_4/css/pservicios.css" />
+<link rel="stylesheet" href="css/stylewr.css" />
 
-<style>
-
-#Widredu {
-	border:1px solid black;
-	width: 247px;
-	height: 5589px;
-	font-size: 11px !important;
-	font-color: #ffffff;
-	margin:auto;
-	overflow: hidden;
-	float: left;
-}
-
-
-.header {
-	background-color: #000000;
-	font-color: #ffffff;
-	font-weight: bold;
-	width: 250px;
-	height: 35px;
-	float: right;
-	margin-right: 0px;
-}
-
-
-.h1{
-	color:white;
-	font-size:16;
-	margin-top:10px;
-	margin-left:15px;
-	float:left;
-	font-family:Arial, Helvetica, sans-serif;
-
-}
-
-.contenido
-{
-width:100%;
-height:100%;
-background-color:#E6E6E6;
-float:left;
-}
-
-.establecimientos {
-	width:100%;
-	height:100%;
-	background-color:#E6E6E6;
-	float:left;
-}
-
-.cajatexto {
-	margin: 0px auto;
-	width: 220px;
-	height: 158px;
-	margin-right: 0px;
-	float:left;
-	
-}
-
-
-</style>
-
-
-
-
-
-	
-		<img style="width:100%;height:100%" src="img/fake/servicios.jpg">
-
-
-<!--
-<div id="widred1x2">
-	<div class="headerwidred">  
-		<p style="font-weight:Bold;width:150px; margin:8px 0 0 10px">PAGO DE SERVICIOS</p>
-		<div class="btnHeadereduci"><img src="../img/iconos/ampli_widredu.png"/></div>
-		<div class="btnHeadereduci"><img src="../img/botones/info_.png"/></div>
- 	</div>
-
-	<p style="margin:10px 0 0 10px;float:left;">Seleccione de la lista el servicio al cual desea realizar el pago</p>
-	
-	<div id="servlist">
-	
-		<div style="height:210px; width:210px; float:left" class="1">			
-			<div class="serv_in"></div>
-			<div class="serv_in"></div>
-			<div class="serv_in"></div>
-			<div class="serv_in"></div>
-			<div class="serv_in"></div>
-			<div class="serv_in"></div>
-			<div class="serv_in"></div>
-			<div class="serv_in"></div>
-			<div class="serv_in"></div>
+	<div id="widreducido1x2">
+		<div>
+			<p>PAGO DE SERVICIOS</p>
+			<div id="btnampliar_wr"></div>
+			<div id="btninfo_wr"></div>
 		</div>
 		
-		<div style="height:210px; width:210px; float:left;" class="2">			
-			<div class="serv_in"></div>
-			<div class="serv_in"></div>
-			<div class="serv_in"></div>
-			<div class="serv_in"></div>
-			<div class="serv_in"></div>
-			<div class="serv_in"></div>
-			<div class="serv_in"></div>
-			<div class="serv_in"></div>
-			<div class="serv_in"></div>
+		<p>Seleccione el servicio a pagar:</p>
+		
+		<div id="servgrid">
+			<table class="servgrid">
+				<tr>
+					<td ><img src="widgets/min/w_4/Servicios/Servicio_1.png" class="imgservicio"/></td>
+					<td ><img src="widgets/min/w_4/Servicios/Servicio_2.png" class="imgservicio"/></td>
+					<td ><img src="widgets/min/w_4/Servicios/Servicio_3.png" class="imgservicio"/></td>
+				</tr>
+				<tr>
+					<td><img src="widgets/min/w_4/Servicios/Servicio_4.png" class="imgservicio"/></td>
+					<td><img src="widgets/min/w_4/Servicios/Servicio_5.png" class="imgservicio"/></td>
+					<td><img src="widgets/min/w_4/Servicios/Servicio_6.png" class="imgservicio"/></td>
+				</tr>
+				<tr>
+					<td class="serv"><img src="widgets/min/w_4/Servicios/Servicio_7.png" class="imgservicio"/></td>
+					<td class="serv"><img src="widgets/min/w_4/Servicios/Servicio_8.png" class="imgservicio"/></td>
+					<td class="serv"><img src="widgets/min/w_4/Servicios/Servicio_9.png" class="imgservicio"/></td>
+				</tr>
+			</table>
+			<div id="carruselServicios">
+				<div class="selector">1</div>
+				<div class="selector">2</div>
+				<div class="selector">3</div>
+				<div class="selector">4</div>
+				<div class="selector">5</div>
+			</div>
+		</div>
+		
+		<p>O realice una búsqueda avanzada:</p>
+		
+		<div class="busqueda">
+			<p>Nombre o Razón Social:</p>
+			
+			<div class="wra_Select_wr">
+				<select name="" id="" value="1" > 
+	            </select>
+			</div>
+
+			<p>Convenio</p>
+			<div id="input_wr">
+				<input class="input" type="text" value="Ingresar texto" />
+			</div>
+			
+			<p>Región o Ubicación Geográfica:</p>
+			
+			<div class="wra_Select_wr">
+				<select name="" id="" value="1" > 
+	            </select>
+			</div>
+
 		</div>
 
-	</div>
-	
-	<div id="radbtns">
-		<div class="rdselect"  id="rdbtn1">1</div> 
-		<div id="rdbtn2" >2</div>
-	</div>
-
-	<p style="margin:5px 0 0 10px;float:left;"> Favor de ingresar el nombre comercial o <br />
-												número de convenio del servicio que desea <br />
-												pagar</p>
-												
-	
-	<div style="float:left">
-
-		<div style="margin-left:10px; margin-top:10px; font-weight: bold">
-			<p>Nombre Comercial o Razón Social del servicio</p>
-			<input class="txtbox" type="text" style="width:222px; height:25px; margin-left:0px; margin-top:5px" name="Text1" value=" Lorem ipsum dolor asimet"/>
+		<div id="botonera_wr">		
+			<div class="btnaceptar_wr">Ver Detalle</div>
 		</div>
-	</div>
 
-	<div style="float:left">
-		<div style="margin-left:10px; margin-top:5px; font-weight: bold">
-			<p>Número de Convenio</p>
-			<input class="txtbox" type="text" style="width:222px; height:25px; margin-left:0px; margin-top:5px" name="Text1" value=" 12345"/>
-		</div>
-	</div>
-	
-	<div class="btnaceptar" style="margin:10px 0 0 8px">Pagar Servicio</div>
-
-	<div class="btn" style="margin:10px 0 0 8px">Búsqueda avanzada</div>
-
-	
 
 		
-		
-</div>-->
-
-
-
+	</div>
+	
+	
