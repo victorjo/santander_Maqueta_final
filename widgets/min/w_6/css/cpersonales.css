@@ -52,7 +52,7 @@
 }
 
 #infotbl_wr p{
-	line-height: 22px;
+	line-height: 20px !important;
 }
 
 #infotbl_wr p:nth-child(1){
