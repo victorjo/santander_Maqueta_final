@@ -170,14 +170,14 @@ var widgets = [
 				{
 					id:7,
 					type:2,
-					order:8,
+					order:7,
 					contentMin:'',
 					contentMax:''
 				},
 				{
 					id:4,
 					type:1,
-					order:7,
+					order:8,
 					contentMin:'',
 					contentMax:''
 				},
