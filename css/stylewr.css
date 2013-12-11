@@ -1,30 +1,50 @@
-﻿@font-face
-{
-font-family: 'ArialBlack';
+﻿@font-face {   
+font-family: 'ArialBlack';    
+src: url('fonts/arialblack.eot');    
+src: url('fonts/arialblack.eot') format('embedded-opentype'),         
+url('fonts/arialblack.woff') format('woff'),         
+url('fonts/arialblack.ttf') format('truetype'),         
+url('fonts/arialblack.svg#ArialBlackRegular') format('svg');
 src: url(../fonts/ArialBlack.ttf);
 font-weight:bold;
 }
 
+@font-face
+{
+font-family: 'ArialBlack';
+src: url(fonts/ArialBlack.ttf);
+font-weight:bold;
+}
+
+
 body{
 	background-color:#e8e8e8;
 }
-/*widget 1x1*/
+
 #widreducido1x1 {
 	background-color:white;
     border: 1px solid #BBBBBB;
-    height: 281px;
+    height: 283px;
+    margin: 10px;
     position: relative;
     width: 243px;
 }
 
-#header_wr1x1{
-	width:243px;
+#widreducido2x1 > div:first-of-type{
+	width:100%;
 	height:29px;
 	border-bottom:1px #bbbbbb solid;
 	overflow:hidden;
 }
 
-#header_wr1x1 p{
+#widreducido1x1 > div:first-of-type{
+	width:100%;
+	height:29px;
+	border-bottom:1px #bbbbbb solid;
+	overflow:hidden;
+}
+
+#widreducido1x1 > div:first-of-type p{
 	margin-top:5px;
 	margin-left:15px;
 	font-family:'ArialBlack';
@@ -33,43 +53,45 @@ body{
 	float:left;
 }
 
-/*Fin widget 1x1*/
+#widreducido2x1 > div:first-of-type p{
+	margin-top:5px;
+	margin-left:15px;
+	font-family:'ArialBlack';
+	color:#282828;
+	font-size:12px;
+	float:left;
+}
+
+#widreducido1x2 {
+	background-image:url('../grid/grid.png');
+	background-color:white;
+    border: 1px solid #BBBBBB;
+    height: 578px;
+    margin: 10px;
+    position: relative;
+    width: 243px;
+}
 
 
 #widreducido2x1 {
 	background-color:white;
     border: 1px solid #BBBBBB;
-    height: 281px;
+    height: 283px;
     position: relative;
-    width: 500px;
-}
-#header_wr{
-	width:498px;
-	height:29px;
-	border-bottom:1px #bbbbbb solid;
-	overflow:hidden;
-}
-
-#header_wr p{
-	margin-top:5px;
-	margin-left:15px;
-	font-family:'ArialBlack';
-	color:#282828;
-	font-size:12px;
-	float:left;
+    width: 498px;
 }
 
 #btnampliar_wr{
 	width:20px;
 	height:20px;
-	background-image:url('../btransfer/img/ampliar.png');
+	background-image:url('../img/ampliar.png');
 	float:right;
 	margin:5px 5px 0 0;
 	background-size:100% 100%;
 }
 
 #btnampliar_wr:hover{
-	background-image:url('../btransfer/img/ampliarslct.png');
+	background-image:url('../img/ampliarslct.png');
 	cursor: pointer;
 }
 
@@ -77,14 +99,14 @@ body{
 #btninfo_wr{
 	width:20px;
 	height:20px;
-	background-image:url('../btransfer/img/info.png');
+	background-image:url('../img/info.png');
 	float:right;
 	margin:5px 5px 0 0;
 	background-size:100% 100%;
 }
 
 #btninfo_wr:hover{
-	background-image:url('../btransfer/img/infoslct.png');
+	background-image:url('../img/infoslct.png');
 	cursor: pointer;
 }
 
@@ -194,7 +216,7 @@ right: 8px;
 }
 
 #infotbl_wr p{
-	line-height:21px;
+	line-height:9px;
 }
 
 #infotbl_wr td:nth-child(2){
@@ -222,7 +244,7 @@ right: 8px;
 #infocredito_wr{
 	
 	float:left;
-	line-height:20px;
+	line-height:9px;
 }
 #infocredito_wr p{
 	font-family:Arial, Helvetica, sans-serif;
@@ -306,25 +328,98 @@ right: 8px;
 /*Fin Creditos Personales*/
 
 /*Balance Transfer*/
-#subtitulo_wr{
-	border-bottom:1px #bbbbbb solid;
-	height:25px;
+
+
+/*Fin Balance Transfer*/
+
+/*Pago de Servicios*/
+.servgrid{
+	border-collapse:collapse;
+	margin:10px 0 0 10px;
+	border:1px red solid;
+	
 }
 
-#subtitulo_wr p{
-	margin:10px 0 0 15px;
-	font-family:Arial;
+.servgrid td{
+	width:72px;
+	height:72px;
+	border:1px #a6a6a6 solid;
+}
+
+.servgrid td:hover{
+	cursor:pointer;
+}
+
+
+.imgservicio{
+	float:left;
+	margin:6px 0 0 6px;
+}
+
+#carruselServicios{
+	width:224px;
+	height:28px;
+	float:left;
+	height:28px;
+	border-bottom:1px #a6a6a6 solid;
+	border-left:1px #a6a6a6 solid;
+	border-right:1px #a6a6a6 solid;
+	background-color:#f7f7f7;
+	font-family:'ArialBlack';
+	font-size:10px;
+	padding-top:0px;
+	margin-left:10px;
+	box-shadow: 1px 1px 2px #E1E1E1;
+}
+.selector{
+	width:17px;
+	height:16px;
+	border-radius:9px;
+	border: 1px #F7F7F7 solid;
+	float:left;
+	margin: 4px 0 0 21px;
+	color:#626262;
+	font-family:'ArialBlack';
 	font-size:11px;
 	font-weight:bold;
-	color:#626262;
+	text-align: center;
 }
 
-#framebox{
-	width:223px;
-	height:113px;
-	border:1px red solid;
+.selector:hover{
+	cursor:pointer;
+}
+.carselect{
+	color:#ff0000;
+	border:1px #ff0000 solid;
+}
+
+.servselect{
+	border-bottom:1px #ff0000 solid;
+}
+
+.busqueda p{
+	color:#a6a6a6;
+	float:left;
+}
+
+.comentario{
+	color:#282828;
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
 	margin:10px 0 0 10px;
 	float:left;
-	background-image:url('../frames/1.png')
+	
 }
-/*Fin Balance Transfer*/
+
+.busqueda{
+	float:left;
+	color:#626262;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	margin:-4px 0 0 10px;
+	float:left;
+	font-size:11px;
+
+}
+/*Fin Pago de Servicios*/
