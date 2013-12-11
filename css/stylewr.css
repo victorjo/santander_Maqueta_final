@@ -84,14 +84,14 @@ body{
 #btnampliar_wr{
 	width:20px;
 	height:20px;
-	background-image:url('../img/ampliar.png');
+	background-image:url('/img/iconos/ampliar.png');
 	float:right;
 	margin:5px 5px 0 0;
 	background-size:100% 100%;
 }
 
 #btnampliar_wr:hover{
-	background-image:url('../img/ampliarslct.png');
+	background-image:url('/img/iconos/ampliarslct.png');
 	cursor: pointer;
 }
 
@@ -99,14 +99,14 @@ body{
 #btninfo_wr{
 	width:20px;
 	height:20px;
-	background-image:url('../img/info.png');
+	background-image:url('/img/iconos/info.png');
 	float:right;
 	margin:5px 5px 0 0;
 	background-size:100% 100%;
 }
 
 #btninfo_wr:hover{
-	background-image:url('../img/infoslct.png');
+	background-image:url('/img/iconos/infoslct.png');
 	cursor: pointer;
 }
 
