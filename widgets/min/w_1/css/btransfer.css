@@ -1,9 +1,9 @@
 .btn_wr,.btnaceptar_wr{
-	width:203px;
+	width:203px !important;
 }
 #widreducido1x1{
-	width:220px;
-	height:261px;
+	width:220px !important;
+	height:261px !important;
 }
 
 #widreducido1x1 > div:nth-of-type(2){
