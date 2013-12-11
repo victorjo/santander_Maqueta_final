@@ -301,7 +301,7 @@ function posWidgets(qwerty){
 		if($(window).width()>1490 || !spDisplay ) 
 		{
 			$("#wrappWidgets").css("width","1022px");
-
+				$("#cierraSB").fadeOut("fast");
 			//$("[data-pos='3']").after('<div class="widget-min col1 alto2"  data-max="false" data-pos="codom"><img src="img/fake/carrito.jpg" height="275"/></div>');
 			$("[data-pos='7']").css('float','left');
 			var alen = 1030;
@@ -314,6 +314,7 @@ function posWidgets(qwerty){
 		}*/}
 			else{
 			$("#wrappWidgets").css("width","771px");
+				$("#cierraSB").fadeIn("fast");
 
 		}
 
@@ -479,10 +480,9 @@ function newWidgetInstance(obj)
 									$("[clone='true']").remove();
 									forA.children().fadeIn('slow');
 									$("[data-id='"+id+"']").click();
-									/*$("div > div:first,.btnaceptar_wr",newWidget).click(function(){
-										console.log(this);
-										getInstance(newWidget);
-									});*/
+									$("div > div:first,.btnaceptar_wr",io).click(function(){
+										getInstance(io);
+									});
 								}
 							});
 							io.css({'top':'-='+$("#wrappWidgets").offset().top,'left':'-='+$("#wrappWidgets").offset().left,'position':'static','z-index':0});
