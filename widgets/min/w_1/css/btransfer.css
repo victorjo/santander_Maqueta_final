@@ -1,9 +1,10 @@
 .btn_wr,.btnaceptar_wr{
-	width:203px !important;
+	width:223px !important;
 }
 #widreducido1x1{
-	width:220px !important;
-	height:261px !important;
+	width:243px !important;
+	height:281px !important;
+	margin:0px !important;
 }
 
 #widreducido1x1 > div:nth-of-type(2){
@@ -20,7 +21,7 @@
 }
 
 #framebox{
-	width:200px;
+	width:220px;
 	height:113px;
 	margin:10px 0 0 10px;
 	float:left;
