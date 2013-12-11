@@ -1,0 +1,219 @@
+@font-face
+{
+font-family: 'ArialBlack';
+src: url(../fonts/ArialBlack.ttf);
+font-weight:bold;
+}
+
+body{
+	background-color:#e8e8e8;
+	font-family:'ArialBlack';
+	font-size:11px;
+	color:#ff0000;
+}
+
+h2{
+	font-family:'ArialBlack';
+	font-size:11px;
+	color:#ff0000;
+	margin:10px 0 0 20px;
+	float:left;
+}
+
+/*----Estilos en fuentes----*/
+.bold{
+	color:#242424;
+	font-weight:bold;
+}
+
+.link{
+	color:#2c6ef6;
+}
+/*---- Fin Estilos en fuentes----*/
+	
+#widampliado {
+	/*background-image:url('../grid/grid.png');*/
+	background-color:white;
+    border: 1px solid #BBBBBB;
+    height: 578px;
+    margin: 10px;
+    position: relative;
+    width: 923px;
+}
+
+/*---Header---*/
+#widampliado > div:first-of-type{
+	width:923px;
+	height:29px;
+	border-bottom:1px #bbbbbb solid;
+	overflow:hidden;
+}
+
+/*---Título---*/
+#widampliado > div:first-of-type p{
+	margin-top:5px;
+	font-family:'ArialBlack';
+	color:#282828;
+	font-size:12px;
+	text-align:center;
+	width:400px;
+	margin-left:auto;
+	margin-right:auto;
+}
+/*---Boton Reducir Widget---*/
+#widampliado > div:first-of-type > div:first-of-type {
+    background-image: url("../img/reducir.png");
+    background-size: 100% 100%;
+    float: right;
+    height: 20px;
+    position: relative;
+    right: 7px;
+    top: -30px;
+    width: 20px;
+}
+
+/*---Boton Reducir Widget Hover---*/
+#widampliado > div:first-of-type > div:first-of-type:hover{
+	background-image:url('../img/reducirslct.png');
+	cursor: pointer;
+}
+
+/*---Boton Info---*/
+#widampliado > div:first-of-type > div:nth-of-type(2) {
+    background-image: url("../img/info.png");
+    background-size: 100% 100%;
+    float: right;
+    height: 20px;
+    position: relative;
+    right: 13px;
+    top: -30px;
+    width: 20px;
+}
+
+/*---Boton Info Hover---*/
+#widampliado > div:first-of-type > div:nth-of-type(2):hover{
+	background-image:url('../img/infoslct.png');
+	cursor: pointer;
+}
+/*---Fin de Header---*/
+
+/*---Indicador de Paso Actual---*/
+#widampliado > div:nth-of-type(2){
+	background-color: #F4F4F4;
+    border-bottom: 1px solid #BBBBBB;
+    float: left;
+    height: 28px;
+    text-align: center;
+    width: 923px;
+}
+
+.steps{
+	margin-left: auto;
+    margin-right: auto;
+    width: 261px;
+    margin-top:3px;	
+}
+/*---Fin de indicador de Pasos---*/
+
+/*---Navegador---*/
+#widampliado > div:nth-of-type(3){
+	width:168px;
+	border-right:1px #bbbbbb solid;
+	background-color:#F4F4F4;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#282828;
+	font-size:11px;
+	height:519px;
+	float:left;
+}
+
+#widampliado > div:nth-of-type(3) ul{
+	padding:0px;
+	margin: 0px;
+}
+
+#widampliado > div:nth-of-type(3) ul li{
+	border-bottom:1px #bbbbbb solid;
+	font-family:Arial;
+	font-size:11px;
+	text-decoration:none;
+	text-indent:none;
+	list-style:none;
+	padding:0;
+	width:169px;
+	height:29px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+.liActive{
+	background-color:#fff;
+	border-bottom:1px solid #ff0000 !important;
+	width:169px;
+}
+
+.liShadow{
+box-shadow: 0px 1px 1px #cccccc;
+}
+
+#widampliado > div:nth-of-type(3) > ul > li > p{
+margin: 0px;
+position: relative;
+bottom: -7px;
+left: 10px;
+}
+/*---Fin Navegador---*/
+
+/*---Botones---*/
+.btn {
+	background-color: #FFFFFF;
+	border: 1px #A6A6A6 solid;
+	border-radius: 15px;
+	box-shadow: 1px 1px 2px #E1E1E1;
+	color: #626262;
+	cursor: pointer;
+	font-size: 11px;
+	font-weight: bold;
+	height: 23px;
+	padding-top: 7px;
+	text-align: center;
+	width: 223px;
+	font-family: 'ArialBlack';
+	margin-top: 10px;
+	float: left;
+	margin-right: 10px;
+}
+
+.btnaceptar {
+	background-color: #FFFFFF;
+	border: 1px #A6A6A6 solid;
+	border-radius: 15px;
+	box-shadow: 1px 1px 2px #E1E1E1;
+	color: #FF0000;
+	cursor: pointer;
+	font-size: 11px;
+	font-weight: bold;
+	height: 23px;
+	padding-top: 7px;
+	text-align: center;
+	width: 223px;
+	font-family: 'ArialBlack';
+	margin-top: 10px;
+	float: left;
+}
+.btnaceptar:hover{
+	border:1px red solid;
+}
+
+.btn:hover{
+	border:1px red solid;
+}
+
+.botonera {
+	bottom: 10px;
+	float: right;
+	position: absolute;
+	right: 8px;
+}
+/*---Fin Botones---*/
