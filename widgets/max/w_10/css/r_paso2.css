@@ -1,0 +1,19 @@
+#widampliado > div:nth-of-type(4){
+	float:left;
+	margin:10px 0 0 10px;
+	border:1px #bcbcbc solid;
+	width:730px;
+	height: 220px;
+	font-family:Arial;
+	font-size:11px;
+	color:#626262;
+
+}
+
+#widampliado > div:nth-of-type(4) > div {
+    float: left;
+    height: 20px;
+    line-height: 19px;
+    margin: 10px 0 0 10px;
+    width: 206px;
+}
