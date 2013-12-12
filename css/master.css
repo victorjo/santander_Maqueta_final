@@ -126,9 +126,9 @@ font-weight:bold;
 				width: 170px;
 				overflow: hidden;
 				margin: auto;
-				border-left: 1px solid #b9b9b9;
-				border-right: 1px solid #b9b9b9;
+			
 				height: 255px;
+				background: #212121;
 
 			}
 
@@ -140,7 +140,7 @@ font-weight:bold;
 			#wr_btnNav ul {
 				list-style: none;
 				/*background: #efefef;*/
-				background: #fff;
+				background: #282828;
 				width: 170px;
 				margin: auto;
 				padding: 0 0 0 0;
@@ -152,21 +152,22 @@ font-weight:bold;
 				width: 150px;
 				height: 20px;
 				padding: 10px 10px 0;
-				border-bottom: 1px solid #bbbbbb;
+				border-bottom: 1px solid #000;
 				cursor: pointer; 
 				font-size: 11px;
 				text-transform: uppercase;
+				color:#a4a4a4;
 			}
 
 			#wr_btnNav ul li:hover{
 				/*background: #e3e3e3;*/
-				color:#ff0000;
+				color:#fff;				
 			}
 
 			.activate{
 				/*background: #b9b9b9 !important;*/
 				border: 1px solid red !important;
-				color:red;
+				color:#fff !important;
 				font-weight: bold;
 				padding-left: 25px !important;
 				width: 133px !important;
@@ -175,12 +176,16 @@ font-weight:bold;
 			}
 
 			#footer{	
-				width:170px;height:125px;margin:auto;font-size:10px;border:1px solid #b9b9b9;text-align: center;padding-top:40px;border-top:0;background:#ffffff;
+				width:170px;height:125px;margin:auto;font-size:10px;text-align: center;padding-top:40px;border-top:0;background:#212121;
+			}
+			
+			#footer div{
+				color:#a4a4a4;
 			}
 
 			#footer a{
 				text-decoration: none;
-				color: black;
+				color: white;
 			}
 
 			.col1{
@@ -332,9 +337,9 @@ img { border: 0; }
 #superbanner {
 	width:253px;
 	height:598px;
-	/*border:1px #a6a6a6 solid;*/
+	/*border:1px #a6a6a6 solid;
 	box-shadow:0 0 1px black;
-	background-color:#D7E9C9;
+	background-color:#D7E9C9;*/
 	position:relative;
 	background-image:url('../img/bannerBkgnd1.png')
 }
@@ -385,21 +390,21 @@ img { border: 0; }
 }
 
 .btnaceptar_sb {
-    background-image:url('../img/btn_bkgnd.png');
-    background-size:100% 100%;
-    border: 1px #b6b6b6 solid ;
-    border-radius: 15px;
-    box-shadow: 1px 1px 2px #E1E1E1;
-    cursor: pointer;
-    font-size: 11px;
-    font-weight: bold;
-    height: 23px;
-    padding-top: 7px;
-    text-align: center;
-    width: 223px;
-    font-family:'ArialBlack';
-    margin-top:10px;
-    color:#ff0000;
+		background-size: 100% 100%;
+		border: 1px #b6b6b6 solid;
+		border-radius: 15px;
+		box-shadow: 2px 2px 3px #999;
+		cursor: pointer;
+		font-size: 11px;
+		font-weight: bold;
+		height: 23px;
+		padding-top: 7px;
+		text-align: center;
+		width: 223px;
+		font-family: 'ArialBlack';
+		margin-top: 10px;
+		color: #ff0000;
+		background: white;
 }
 
 .btnaceptar_sb:hover{
