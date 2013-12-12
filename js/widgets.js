@@ -250,7 +250,7 @@ function posWidgets(qwerty){
 		        dataType:'html',
 		        success: function(res){
 		        	newWidget.html(res);
-		        	$("div > div:first,.btnaceptar_wr",newWidget).click(function(){
+		        	$("div > div:first,.btnaceptar_wr,img",newWidget).click(function(){
 						console.log(this);
 						getInstance(newWidget);
 					});
@@ -480,7 +480,7 @@ function newWidgetInstance(obj)
 									$("[clone='true']").remove();
 									forA.children().fadeIn('slow');
 									$("[data-id='"+id+"']").click();
-									$("div > div:first,.btnaceptar_wr",io).click(function(){
+									$("div > div:first,.btnaceptar_wr,img",io).click(function(){
 										getInstance(io);
 									});
 								}
