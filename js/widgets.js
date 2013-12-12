@@ -131,7 +131,7 @@ function ajustaBannerHeight(){
 
 }
 
-
+/* ESTABLE JSON
 var widgets = [
 				{
 					id:1,
@@ -204,10 +204,76 @@ var widgets = [
 					contentMin:'asdasdasdasd',
 					contentMax:''
 				}
-*/
+
 
 			];
+*/
 
+var widgets = [
+				{
+					id:1,
+					type:2,
+					order:1,
+					contentMin:'',
+					contentMax:''
+				},
+				{
+					id:5,
+					type:2,
+					order:4,
+					contentMin:'',
+					contentMax:''
+				},{
+					id:8,
+					type:2,
+					order:3,
+					contentMin:'',
+					contentMax:''
+				},
+				{
+					id:6,
+					type:3,
+					order:5,
+					contentMin:'',
+					contentMax:''
+				},
+				{
+					id:2,
+					type:1,
+					order:4,
+					contentMin:'',
+					contentMax:''
+				},
+				{
+					id:7,
+					type:2,
+					order:7,
+					contentMin:'',
+					contentMax:''
+				},
+				{
+					id:4,
+					type:1,
+					order:8,
+					contentMin:'',
+					contentMax:''
+				},
+				{
+					id:9,
+					type:3,
+					order:6,
+					contentMin:'',
+					contentMax:''
+				},
+
+				{
+					id:10,
+					type:1,
+					order:0,
+					contentMin:'',
+					contentMax:''
+				}
+			];
 
 
 
