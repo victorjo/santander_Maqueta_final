@@ -42,6 +42,8 @@ width: 110px;
 	float:left;
 	position: absolute;
 	margin-left: -42px;
+	margin-left: -36px;
+	margin-top: -4px;
 }
 #menu a {
 	display: block;
@@ -143,24 +145,24 @@ a:hover {
 				<p style="color:red"><b>Introduzca el nombre, alias o los cuatro dígitos de la cuenta destino o seleccionela de la lista:</b></p>
 				<table>
 					<tr><td>
-						<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;">
+						<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias    155,741,654.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;">
 					</td><td>
 					<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-					<div class="botonestrella-on"> <img class="activo" style="display:block;" src="../../img/iconos/favorito_on.png"/> <img class="inactivo" style="display:none;" src="../../img/iconos/favorito_of.png"> </div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span> </td>
+					<div class="botonestrella-on"> <img id="starblack" class="activo starblack" style="display:block;" src="../../img/iconos/favorito_on.png"/> <img class="inactivo starblack" style="display:none;" src="../../img/iconos/favorito_of.png"> </div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span> </td>
 				</td></tr>
 			</table>
 			<p><b>Introduzca el nombre, alias o los cuatro dígitos de la cuenta de cargo o seleccionela de la lista:</b></p>
 			<table>
 				<tr><td>
-					<input type="text" id="autocompleteQ2" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;">
+					<input type="text" id="autocompleteQ2" placeholder="1234****5678        Producto Santander       Alias     123,147,369.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;">
 				</td><td>
 				<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-				<div class="botonestrella-on">   </div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span> </td>
+				<div class="btnstar botonestrella-on">   </div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marctri marcotriangulo"><div class="triangulo_inf"></span> </td>
 			</td></tr>
 		</table>
 		<div class="wra_Select">
 			<p><b>Importe</b></p>
-			<input type="text"  placeholder="999,999,999.00" / style="height:25px;width:200px"> (MXP)
+			<input type="text"  placeholder=" 987,145,789.00'" / style="height:25px;width:200px"> (MXP)
 		</div>
 		
 		<div class="wra_Select">
@@ -170,7 +172,7 @@ a:hover {
 		
 		<div style="width:100px; height:20px; margin-top:80px;"><p><b>Programar fecha:</b> </p></div>
 		
-		<div style="float:left;margin:10px 0 0 ; width:50%; border:solid 1px silver;height:58px;position:relative; margin-top:10px;border-radius: 5px;">
+		<div style="float:left;margin:10px 0 0 ; width:55%; border:solid 1px silver;height:58px;position:relative; margin-top:10px;border-radius: 5px;">
 			
 			<div class="centradoSwitch">
 				<div id="switchbox" onclick="$(this).parent().next().toggle();$('.dropcontainer').toggle();" class="switch" style="margin-top:13px; margin-left:10px;">  </div>
@@ -404,11 +406,11 @@ a:hover {
 			
 			<div class="wra_Select3" style="margin-top:0px; color:#828282">
 				<select name="" id="" >
-					<option value="">A1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
-					<option value="">B1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
-					<option value="">C1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
-					<option value="">D1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
-					<option value="">E1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
+					<option value="">A1234****5678     Producto Santander     Alias     789,365,963.00      *</option>
+					<option value="">B1234****5678     Producto Santander     Alias     526,123,124.00      *</option>
+					<option value="">C1234****5678     Producto Santander     Alias   	789,147,999.00      *</option>
+					<option value="">D1234****5678     Producto Santander     Alias     152,784,173.00      *</option>
+					<option value="">E1234****5678     Producto Santander     Alias     123,147,369.00      *</option>
 				</select>
 			</div>
 			<p style="margin-top:5px; float:left;"><b>Si la cuenta o tarjeta no se encuentra registarda de clic AQUI</b></p>
@@ -416,17 +418,17 @@ a:hover {
 			
 			<div class="wra_Select3" style="margin-top:0px; color:#828282">
 				<select name="" id="" >
-					<option value="">A1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
-					<option value="">B1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
-					<option value="">C1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
-					<option value="">D1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
-					<option value="">E1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
+					<option value="">A1234****5678     Producto Santander     Alias     129,125,147.00      *</option>
+					<option value="">B1234****5678     Producto Santander     Alias     912,147,123.00      *</option>
+					<option value="">C1234****5678     Producto Santander     Alias     155,741,654.00      *</option>
+					<option value="">D1234****5678     Producto Santander     Alias     987,145,789.00     *</option>
+					<option value="">E1234****5678     Producto Santander     Alias     123,245,456.00      *</option>
 				</select>
 			</div>
 			
 			<div class="input" style="margin-left:0px">
 				<p>Importe:</p>
-				<input class="txtbox" type="text" value=" 999,999,999,999.00" name="Text1" style="width:100%; margin-left:0px"/>
+				<input class="txtbox" type="text" value=" 155,741,654.00 " name="Text1" style="width:100%; margin-left:0px"/>
 			</div>
 			
 			<div class="input" style="margin-left:150px">
@@ -436,7 +438,7 @@ a:hover {
 			
 			<div style="width:100px; height:20px; margin-top:80px;"><p><b>Programar fecha:</b> </p></div>
 			
-			<div style="float:left;margin:10px 0 0 ; width:50%; border:solid 1px silver;height:58px;position:relative; margin-top:24px;border-radius: 5px;">
+			<div style="float:left;margin:10px 0 0 ; width:55%; border:solid 1px silver;height:58px;position:relative; margin-top:24px;border-radius: 5px;">
 				
 				<div class="centradoSwitch">
 					<div id="switchbox1" class="switch" style="margin-top:13px; margin-left:10px;">  </div>
@@ -475,7 +477,7 @@ a:hover {
 					<td style="border:none; background:#A9BCF5;"></td>
 					
 					<td style="border:none;background:#A9BCF5;">dd/mm/aaaa</td>
-					<td style="border:none;background:#A9BCF5;">999,999,999.00</td>
+					<td style="border:none;background:#A9BCF5;">155,741,654.00 </td>
 					<td style="border:none;background:#A9BCF5;"></td>
 					
 				</tr>
@@ -486,11 +488,11 @@ a:hover {
 				
 				<div class="wra_Select3" style="margin-top:0px; color:#828282">
 					<select name="" id="" >
-						<option value="">A1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
-						<option value="">B1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
-						<option value="">C1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
-						<option value="">D1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
-						<option value="">E1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
+						<option value="">A1234****5678     Producto Santander     Alias     152,784,173.00      *</option>
+						<option value="">B1234****5678     Producto Santander     Alias     123,147,369.00      *</option>
+						<option value="">C1234****5678     Producto Santander     Alias     789,365,963.00      *</option>
+						<option value="">D1234****5678     Producto Santander     Alias     123,456,258.00      *</option>
+						<option value="">E1234****5678     Producto Santander     Alias     147,144,852.00      *</option>
 					</select>
 				</div>
 				<p style="margin-top:5px; float:left;"><b>Si la cuenta o tarjeta no se encuentra registarda de clic AQUI</b></p>
@@ -498,17 +500,17 @@ a:hover {
 				
 				<div class="wra_Select3" style="margin-top:0px; color:#828282">
 					<select name="" id="" >
-						<option value="">A1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
-						<option value="">B1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
-						<option value="">C1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
-						<option value="">D1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
-						<option value="">E1234****5678     Producto Santander     Alias     999,999,999.00      *</option>
+						<option value="">A1234****5678     Producto Santander     Alias     152,784,173.00      *</option>
+						<option value="">B1234****5678     Producto Santander     Alias     123,147,369.00      *</option>
+						<option value="">C1234****5678     Producto Santander     Alias     789,365,963.00      *</option>
+						<option value="">D1234****5678     Producto Santander     Alias     123,456,258.00      *</option>
+						<option value="">E1234****5678     Producto Santander     Alias     147,144,852.00      *</option>
 					</select>
 				</div>
 				
 				<div class="input" style="margin-left:0px">
 					<p>Importe:</p>
-					<input class="txtbox" type="text" placeholder=" 999,999,999,999.00" name="Text1" style="width:100%; margin-left:0px"/>
+					<input class="txtbox" type="text" placeholder=" 123,147,369.00" name="Text1" style="width:100%; margin-left:0px"/>
 				</div>
 				
 				<div class="input" style="margin-left:150px">
@@ -660,7 +662,7 @@ a:hover {
 					</tr>
 					<tr>
 						<td colspan="3" >Importe:</td>
-						<td class="gris">999,999,999.00 (MXP)</td>
+						<td class="gris">9123,147,369.00 (MXP)</td>
 					</tr>
 					<tr>
 						<td colspan="3" >Fecha de operación:</td>
