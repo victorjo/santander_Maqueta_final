@@ -113,7 +113,7 @@ padding-top: 4px;
         background-color: #E8E8E8;
         border-right:1px #aaaaaa solid;
         /*border-top:1px #aaaaaa solid;*/
-        width: 174px;
+        width: 175px;
         height: 505px;
         float: left;
         position:relative;
@@ -379,6 +379,9 @@ padding-top: 4px;
 cursor: pointer;
 margin-top: 2px;/*************Se agregaro nuevo estilo****************/
 }
+.btnstar{
+	display: none;
+}
 .marcotriangulo {
 width: 25px;
 height: 17px;
@@ -387,6 +390,9 @@ margin: -1px;
 padding-top: 10px;
 background-color: #E6E6E5;
 margin-top: 5px;/*************Se agregaro nuevo estilo****************/
+}
+.marctri{
+	margin-left: -8px;
 }
 
 .triangulo_inf {
@@ -454,7 +460,7 @@ margin-left: 8px;
 .wra_Select{
                 margin-top: 20px;
                 float:left;
-                width:240px;
+                width:244px;
         }
 
 .wra_Select2{
@@ -533,6 +539,7 @@ margin-left: 8px;
 	font-size:11px;
 	font-weight:bold;
 	border: solid 1px #A9A9A9;
+	margin-top: -16px;
 }
 
 .btn:hover{
