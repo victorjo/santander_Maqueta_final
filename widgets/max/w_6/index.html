@@ -8,6 +8,12 @@
 <script type="text/javascript" src="../../../js/ddSlick.js"></script>
 <!--<script src="../../../js/utiles.js"></script>  -->
 <script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript">
+	$(document).on("ready", function(){
+		$(".btn").css("color","green");
+		alert("nada");
+	});
+</script>
 <style>
 /*.btnHeader{
 	float: right;
@@ -256,6 +262,13 @@ div > .blockcp:nth-child(3){
 		.gris{
 			color:#999999
 		}
+		.dd-options{
+
+		max-width: 215px;
+		margin-left:0px;
+		
+
+		}
 </style>
 <script>
 $(document).ready(function(){
@@ -476,7 +489,7 @@ function follow(){
 					</div>
 				</div>
 				<p class="titlecp" style="margin-top:5px">2. Elija los meses de gracia</p>
-				<div class="boxselectcp">
+				<div class="boxselectcp" style="overflow-x:hidden">
 					<p sytle="margin-top:5px;margin-bottom:0px">Maximo 3 meses desde el desembolso del prestamo y la fecha de pago de la primera amortizacion.</p>
 					<div class="wra_Select3" style="margin-top:-5px">
 						<select>
@@ -484,10 +497,27 @@ function follow(){
 							<option value="">1</option>
 							
 						</select>
+
+					</div>
+					<div class="wra_Select3" style="margin-top: -30px; margin-left: 235px;">
+						<select>
+							<option value="">Ninguno</option>
+							<option value="">1</option>
+							
+						</select>
+						
+					</div>
+					<div class="wra_Select3" style="margin-top: -30px; margin-left: 465px;">
+						<select>
+							<option value="">Ninguno</option>
+							<option value="">1</option>
+							
+						</select>
+						
 					</div>
 				</div>
 				<div id="botonera" style="float:right; margin-right:-10px; margin-top:15px;width:500px;">
-					<div class="btn">Tabla de Amortización</div>
+					<div class="btn" style="margin-top:0px;">Tabla de Amortización</div>
 					<div id="siguiente">
 						<div class="btnaceptar" id="continuar1" onclick="cambiaPasoImg();changeComment(2);cambiaFlujo('#step2')">Aceptar</div></div>
 					</div>
@@ -939,7 +969,7 @@ function follow(){
 											<li  onclick="cambiaEstado('4');changeComment(1)">CONSULTAR CR&Eacute;DITOS</li>
 										</ul>
 										<div class="aviso">
-											<div id="msg-alert" style="width: 133px;height: 52px;background:#fff;position: absolute;top: 2px;left: 10px;font-weight: bold;font-size: 10px;text-align: left;padding-top: 15px;">Txt1.</div>
+											<div id="msg-alert" style="width: 133px;height: 52px;background:#fff;position: absolute;top: 2px;left: 10px;font-weight: bold;font-size: 10px;text-align: left;padding-top: 15px;">Usted puede elegir la cantidad que habra de usar, de forma rapida.</div>
 											<img src="../../img/iconos/img_msj.png"/>
 										</div>
 									</div>

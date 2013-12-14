@@ -92,7 +92,7 @@ $(".regresar").click(function(){
 });
 
 $(".continuar2").click(function(){
-	creaOverlay("#FFF","#contenido",1);
+	creaOverlay("#D8D8D8","#widget",1);
 	insertHTML($("#contenido2").html(),"modalOver");
 });
 

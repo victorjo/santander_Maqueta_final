@@ -121,10 +121,12 @@
 			border: 1px #fff solid;
 			margin-top: 62px;
 			position: absolute;
-			margin-left: 236px;
+			/*margin-left: 236px;*/
+			margin-left: 355px;
 			width: 254px;
 			height: 28px;
 			color: #fff;
+			background: #fff;
 		}
 		#form{
 			width: 50%;
