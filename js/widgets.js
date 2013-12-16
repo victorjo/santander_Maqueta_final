@@ -343,7 +343,7 @@ function posWidgets(qwerty){
 			});
 		}*/}
 			else{
-			$("#wrappWidgets").css("width","771px");
+			$("#wrappWidgets").css("width","755px");
 				$("#cierraSB").fadeIn("fast");
 
 		}

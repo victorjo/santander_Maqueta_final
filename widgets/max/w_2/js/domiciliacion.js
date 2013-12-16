@@ -1,4 +1,4 @@
-var msjAlert = ["","Txt1.","Txt2.","Txt3."];
+var msjAlert = ["","Txt1qsqsqsq.","Txt2zzzzzz.","Txt3."];
 
 
 $(document).ready(function(){
@@ -134,7 +134,7 @@ $(document).ready(function(){
 
 
 	$("#btn1").on("click", function(){
-			creaOverlay("#D8D8D8","#widget",1);
+			creaOverlay("#fff","#widget",1);
 			insertHTML($("#contenido2").html(),"modalOver");
 			
 			//$("#contenido2").fadeIn();
@@ -144,7 +144,7 @@ $(document).ready(function(){
 
 
 	$("#btn2").on("click", function(){
-			creaOverlay("#D8D8D8","#widget",1);
+			creaOverlay("#fff","#widget",1);
 			insertHTML($("#contenido3").html(),"modalOver");
 			
 			//$("#contenido2").fadeIn();
@@ -152,7 +152,7 @@ $(document).ready(function(){
 	});
 
 	$("#btn3").on("click", function(){
-			creaOverlay("#D8D8D8","#widget",1);
+			creaOverlay("#fff","#widget",1);
 			insertHTML($("#contenido4").html(),"modalOver");
 			
 			//$("#contenido2").fadeIn();
@@ -160,7 +160,7 @@ $(document).ready(function(){
 	});
 		
 		$("#btn4").on("click", function(){
-			creaOverlay("#D8D8D8","#widget",1);
+			creaOverlay("#fff","#widget",1);
 			insertHTML($("#contenido5").html(),"modalOver");
 			
 			//$("#contenido2").fadeIn();

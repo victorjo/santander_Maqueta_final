@@ -1,4 +1,11 @@
+var msjAlert = ["Desde aquí puede consultar el estado de todas sus Transferencias de Saldo","Balance Transfer le permite transferir a sus tarjetas Santander la deuda de sus otras tarjetas de otros bancos.","Por favor compuebe que la información es correcta antes de confirmar.","La operación se ha realizado correctamente."];
 $(document).ready(function(){
+
+
+$("#widreducido").css("position","fixed");
+
+
+
   dropIsra();
   avatarFade(); 
   $(".widget-min").hover(function(){
@@ -182,7 +189,7 @@ function creaOverlay(color,contenedor,tipo,call){
   }
   altoTotal = c.height();
   anchoTotal = c.width();
-  divOverlay.css({"position":pos,"top":"0","left":"0","width":(anchoTotal*1.20)+"px","background":color,"opacity":".8","height":"100%",'display':'none',"z-index":zposition});
+  divOverlay.css({"position":pos,"top":"0","left":"0","width":(anchoTotal*1.20)+"px","background":color,"opacity":".9","height":"100%",'display':'none',"z-index":zposition});
   c.append(divOverlay);
   divOverlay.fadeIn("slow",call);
   return $("body").attr("data-banpop","true");

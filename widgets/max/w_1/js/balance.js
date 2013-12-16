@@ -32,7 +32,7 @@ $(document).ready(function(){
 		$('#ok3').hide();
 		$('#ok1').hide();
 		//Bloqueo para inserccion de  Daypiker
-		creaOverlay("#FFF","#contenido",1);
+		creaOverlay("#fff","#widget",1);
 		insertHTML($("#calendario").html(),"modalOver",function(){
 			//$('#d1').datepicker();
 		});
@@ -59,14 +59,14 @@ $(document).ready(function(){
 	});
 
 	$('#editaCorreo').click(function(){
-		creaOverlay("#fff","#contenido",1);
+		creaOverlay("#fff","#widget",1);
 		insertHTML($("#datosTelCorreo").html(),"modalOver");
 
 	});
 
 	$('#editaCel').click(function(){
 		
-		creaOverlay("#fff","#contenido",1);
+		creaOverlay("#fff","#widget",1);
 		insertHTML($("#datosTelCorreo").html(),"modalOver");
 	});
 
@@ -92,7 +92,7 @@ $(".regresar").click(function(){
 });
 
 $(".continuar2").click(function(){
-	creaOverlay("#D8D8D8","#widget",1);
+	creaOverlay("#fff","#widget",1);
 	insertHTML($("#contenido2").html(),"modalOver");
 });
 
