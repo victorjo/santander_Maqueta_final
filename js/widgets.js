@@ -2,7 +2,7 @@
 var globalVarOfVal = 0;
 var globalFlah = 0;
 var normal = 1610;
-var altoVentana = $(window).height();
+var altoVentana;
 var responsiveFlag = 0;
 var tamanoWidget = 587;
 
@@ -17,41 +17,6 @@ function validaBrowser(){
   	//reject();
   }
 
-}
-
-
-
-
-$(document).ready(function(){
-	$("body").append("<div class='loader'><span></span><span></span><span></span></div>");
-	validaBrowser()
-	//if(typeof window.chrome =="undefined" || typeof window.safari == "undefined") reject();
-	validaBrowser();
-	posWidgets(0);
-
-		genFooterHeight();
-		ajustaBannerHeight();
-
-
-		setInterval(function(){ motorSuperbanner(); },15000);
-		
-		//
-			//valToForm();
-			//outaLogin();
-		//
-});
-
-$(document).ajaxStart(function() {
-	$(".loader").show();
-});
-$(document).ajaxStop(function() {
-	$(".loader").hide();
-});
-
-//para commit
-window.onresize = function(){
-	posWidgets(1);
-	if($("#wrappSB").css("display")=="none" && $(window).width()<=1222) $("#wrappWidgets").css("width","771px");
 }
 
 function reject(){
@@ -317,7 +282,6 @@ function posWidgets(qwerty){
 		        success: function(res){
 		        	newWidget.html(res);
 		        	$("div > div:first,.btnaceptar_wr,img",newWidget).click(function(){
-						console.log(this);
 						getInstance(newWidget);
 					});
 		        }

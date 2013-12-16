@@ -6,8 +6,6 @@ font-weight:bold;
 }
 
 
-
-
 			*{
 				margin: 0;
 				font-family: Arial,sans-serif;
@@ -30,7 +28,7 @@ font-weight:bold;
 			{
 				margin:0px auto;
 				width:100%;
-				background: #e8e8e8;
+				background: #E6E9EB;
 
 			}
 			#wr_SuperBanner{
@@ -341,7 +339,8 @@ img { border: 0; }
 	box-shadow:0 0 1px black;
 	background-color:#D7E9C9;*/
 	position:relative;
-	background-image:url('../img/bannerBkgnd1.png')
+
+	/*background-image:url('../img/bannerBkgnd1.png')*/
 }
 
 #superbanner p{
@@ -413,5 +412,3 @@ img { border: 0; }
 .starblack{
 	margin-left: 8px;
 }
-
-
