@@ -68,7 +68,7 @@ h2{
     height: 20px;
     position: relative;
     right: 7px;
-    top: -30px;
+    top: -20px;
     width: 20px;
 }
 
@@ -86,7 +86,7 @@ h2{
     height: 20px;
     position: relative;
     right: 13px;
-    top: -30px;
+    top: -20px;
     width: 20px;
 }
 
@@ -215,5 +215,6 @@ left: 10px;
 	float: right;
 	position: absolute;
 	right: 8px;
+	width: auto !important;
 }
 /*---Fin Botones---*/
