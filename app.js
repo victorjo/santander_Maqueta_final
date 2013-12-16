@@ -13,11 +13,11 @@
 
 	});
 
-	requirejs(['jquery','widgets','utiles','components','ddslick'],function   ($) {
+	requirejs(['jquery','widgets','utiles','components','ddslick'],function($){	
+			$(".loader").css('display','none');
 			altoVentana = $(window).height();
 			//motorSuperbanner();
        		$("#cierraSB").click(cierraSB);
-				$("body").append("<div class='loader'><span></span><span></span><span></span></div>");
 				validaBrowser()
 				//if(typeof window.chrome =="undefined" || typeof window.safari == "undefined") reject();
 				validaBrowser();
@@ -29,12 +29,12 @@
 						//valToForm();
 						//outaLogin();
 					//
-			$(document).ajaxStart(function() {
-				$(".loader").show();
+			/*$(document).ajaxStart(function() {
+				$(".loader").css('display','block');
 			});
 			$(document).ajaxStop(function() {
-				$(".loader").hide();
-			});
+				$(".loader").css('display','none');
+			});*/
 			$("body").attr("data-banpop","false");
 			shortcuts();
 			//para commit
