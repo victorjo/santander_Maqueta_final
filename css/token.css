@@ -4,6 +4,7 @@
 #widreducido {
 	/*background-image:url('../grid/grid.png');*/
 	background-color:#fff;
+    /*background: rgb(0,0,0,0.5);*/
     border: 1px solid #BBBBBB;
     height: 283px;
     margin: 10px;
