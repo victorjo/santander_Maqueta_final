@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title> Domiciliación de tarjeta de crtédito </title>
+	<link rel="stylesheet" href="../css/widgets.css" />
+	<link rel="stylesheet" href="../css/componentes.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<script src="../js/jquery10.2.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script src="../js/ddSlick.js"></script>
+	<script src="../js/balanceTransfer.js"></script>
+	<script src="../js/componentes.js"></script>
+	
+
+	<script>
+	var cards = [
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				];
+	$(document).ready(function(){
+		omniBox("autocompleteQ",cards);
+		
+	});
+
+	</script>
+	<style type="text/css">
+		
+		tr td{
+			width: 40%;
+		}
+
+		#contenido{
+			background: #fff;
+		}
+		#btn_select{
+			width: 150px;
+			height: 30px;
+			float: right;
+			margin-bottom: 10px;
+			background: grey;
+			border-radius: 10px;
+			text-align: center;
+
+		}
+		.fondocl{
+			background:silver;	
+			
+		}
+		#btn_select #btn_left{
+			width: 74px;
+			height: 30px;
+			float: left;
+			border-right: 1px #fff solid;
+			border-radius: 10px 0px 0px 10px;
+			/*background: -webkit-linear-gradient(top,silver,grey);*/
+		}
+		#btn_select #btn_right{
+			width: 74px;
+			height: 30px;
+			float: right;
+			border-radius: 0px 10px 10px 0px;
+			/*background: -webkit-linear-gradient(top,silver,grey);*/
+		}
+		#btn_select #btn_right p{
+			margin-top: 5px;
+			font-size: 10px;
+			cursor: pointer;
+		}
+		#btn_select #btn_left{
+			font-size: 10px;
+			cursor:pointer;
+			
+		}
+		#circulos{
+			width: 230px;
+			height: 100%;
+			margin-left: 35%;
+		}
+		#circulos .c1{
+			position: relative;
+			top: 6px;
+			width: 22px;
+			height: 22px;
+			border-radius: 100%;
+			background: #fff;
+			display: inline-block;
+			margin-right: 50px;
+			border:solid 1px silver;
+		}
+		#c2{
+			width:20px; 
+			height:20px; 
+			border-radius:100%; 
+			margin: 0 auto; 
+			border:solid 1px silver;
+		}
+		#circulos #seleccionado{
+			background: #000;
+		}
+		.botonera{
+			
+			margin-top: 20px;
+		}
+		.botonera .btn{
+			width: 30%;
+		}
+		 .tit{
+			color: grey;
+		}
+
+
+		
+	</style>
+	<script type="text/javascript">
+		$(document).on("ready",function(){
+
+			$("#btn_select #btn_left").on("click",function(){
+
+				$("#btn_select #btn_left").addClass("fondocl");
+				$("#btn_select #btn_right").removeClass("fondocl");
+				
+			});
+
+			$("#btn_select #btn_right").on("click",function(){
+
+				$("#btn_select #btn_right").addClass("fondocl");
+				$("#btn_select #btn_left").removeClass("fondocl");
+				
+			});
+
+			
+		});
+		
+
+	</script>
+
+
+</head>
+<body>
+	<div id="widget">
+		<div id="titulo">
+			<p class="f_titleWid">DOMICILIACIONES</p>
+		</div>
+		<div id="header">
+   			<div class="btnHeader">
+   				<img src="../img/botones/btn_cerrar.png"/>
+   			</div>
+   			<div class="btnHeader">
+   				<img src="../img/botones/info_.png"/>
+   			</div>
+   			<div id="circulos">
+   				<div class="c1" ></div>
+				<div class="c1" id="seleccionado"></div>
+				<div class="c1"></div>
+   			</div>
+   		</div>
+   		<div id="contenido">
+   			
+   			
+ 			<table  style="margin: 0 auto;">
+ 				<tr>
+ 					<td style="text-align:center; padding:20px;">
+ 						Formato de cancelación de la domiciliación de la tarjeta de crédito
+ 					</td>
+ 					
+ 				</tr>
+ 				<tr>
+ 					<td>
+ 						<iframe src="http://docs.google.com/gview?url=http://victorpimentel.com/stuff/rubik.pdf&embedded=true" style="width:500px; height:300px; margin-left:100px;" frameborder="0"></iframe>
+ 					</td>
+ 					
+ 				</tr>
+
+ 				
+ 			</table>
+		
+
+			<div class="botonera">
+				<div class="btn" style="float:right; margin-top:10px;">Continuar</div>
+				<div class="btn" style="float:right; margin-top:10px;">Guardar</div>
+				<div class="btn" style="float:right; margin-top:10px;">Imprimir</div>
+				
+
+			</div>
+
+
+		</div>
+
+
+
+   		<div id="navegador">
+			<ul>
+				<li> Domiciliación <br> de Servicios </li>
+				<li >Domiciliación de Tarjeta <br> de Crédito </li>
+				<li class="active">Consulta/Modificación <br> y Cancelación </li>
+			</ul>
+			<div class="aviso">
+				<img src="../img/iconos/img_msj.png" /> 
+			</div>
+		</div>
+	
+	</div>
+</body>

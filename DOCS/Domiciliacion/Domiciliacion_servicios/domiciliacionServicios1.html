@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+<head>
+		 <title> DomiciliaciÃ³n de tarjeta de crÃ©dito </title>
+	 <link rel="stylesheet" href="../css/domiciliacion.css">
+	 <link rel="stylesheet" href="../../css/componentes.css" />
+	 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	 <script src="../../js/jquery10.2.min.js"></script>
+	<script src="../../js/ddSlick.js"></script>
+	<script src="../../js/balanceTransfer.js"></script>
+	<script src="../../js/componentes.js"></script>
+	<script src="../js/domiciliacion.js"></script>
+|	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script>
+var cards = [
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				{label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+				];
+	$(document).ready(function(){
+		omniBox("autocompleteQ",cards);
+		
+	});
+</script>
+<style>
+	.inputInicial{
+        float:left;
+        margin:10px 0 0 30px;
+        font-weight:bold;
+}
+.infor_btn{
+	float: left;
+	padding-left:15px;
+	padding-top:30px;
+}
+#infobtn:hover{
+	cursor:pointer;
+}
+#info{
+    display: none;
+    float: left;
+    left: 217px;
+    position: absolute;
+    top: 219px;
+    z-index: 1;
+}
+
+.moneda{
+	float: left;
+	color:#B4B4B4;
+	padding-left:11px;
+	padding-top:35px;
+
+}
+</style>
+</head>
+<body>
+	<div id="widget">
+		<div id="titulo">
+			<p class="f_titleWid">DOMICILIACIONES</p>
+		</div>
+		<div id="header">
+   			<div class="btnHeader">
+   				<img src="../../img/botones/btn_cerrar.png"/>
+   			</div>
+   			<div class="btnHeader">
+   				<img src="../../img/botones/info.png"/>
+   			</div>
+   			<div id="circulos">
+   				<div class="c1" id="seleccionado"></div>
+				<div class="c1" ></div>
+				<div class="c1" ></div>
+   			</div>
+   		</div>
+   		<div id="contenido">
+			<h4>Realice la bÃºsqueda del servicio que desea domiciliar mediante el nombre de la empresa o razÃ³n social y/o categorÃ­a.</h4>
+			<div class="marcoInformativo">
+				<p>Nombre de la empresa, razÃ³n social o convenio</p>
+				<div class="marcoInformativo2">
+					<p class="txtbox">Empresa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum</p>
+				</div>
+			</div>
+			<table style="margin-top:-19px">
+					<tr>
+						<td>
+							<div class="input" style="margin-left:10px">
+							
+								<p>CategorÃ­a</p>
+								<div class="wra_Select2" style="margin-top:5px">
+									<select name="" id="" >
+			                            <option value="">Opcion1</option>
+			                            <option value="">Opcion1</option>
+			                            <option value="">Opcion1</option>
+			                            <option value="">Opcion1</option>
+			                            <option value="">Opcion1</option>
+			                    	</select>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="input" style="margin-left:10px">
+								<p>UbicaciÃ³n</p>
+								<div class="wra_Select2" style="margin-top:5px">
+									<select name="" id="" >
+			                            <option value="">Opcion1</option>
+			                            <option value="">Opcion1</option>
+			                            <option value="">Opcion1</option>
+			                            <option value="">Opcion1</option>
+			                            <option value="">Opcion1</option>
+			                    	</select>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="botonera">
+								<div class="btn" style="margin-top:40px">Buscar</div>
+							</div>
+						</td>
+					</tr>	
+			</table>
+			<h4>Seleccione el servicio que desea domiciliar dando clic en la imagen.</h4>
+			<div id="slider">
+					
+					<div style="width:680px;overflow: hidden;height:85px">
+						<div style="width:910px;overflow: hidden">
+							<div class="servslide"></div>
+							<div class="servslide"></div>
+							<div class="servslide"></div>
+							<div class="servslide"></div>
+							<div class="servslide"></div>
+							<div class="servslide"></div>
+							<div class="servslide"></div>
+							<div class="servslide"></div>
+							<div class="servslide"></div>
+							<div class="servslide"></div>
+							<div class="servslide"></div>
+							<div class="servslide"></div>
+							<div class="servslide"></div>
+							<div class="servslide"></div>
+						</div>
+					
+					</div>	
+					<div id="rightarrow"><img src="../../img/botones/flecha_lado_dropdown_largo.png" /></div>
+										
+				</div>
+				<h4>Introduzca el nombre, alias o los cuatro dÃ­gitos de la cuenta o tarjeta de cargo o seleccionela de la lista:</h4>
+				
+				
+
+											<table>
+													<tr><td>						
+														<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+													</td><td>
+
+													<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+
+															<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span> </td>
+													</td></tr>
+
+												</table>
+
+				<div class="inputInicial" style="margin-left:0px;width:22%;">
+								<p>Referencia</p>
+								<input class="txtbox" type="text" value="9999" name="Text1" style="width:100%;margin-left:0px"/>
+				</div>
+				<div id="infobtn" class="infor_btn"><img src="../../img/botones/info_.png"/></div>
+				<div id="info"><img src="../../img/infoimg.png"/></div>
+				<div class="inputInicial" style="margin-left:10px;">
+								<p>Nombre del titular del servicio</p>
+								<input class="txtbox" type="text" value="Lorem ipsum" name="Text1" style="width:100%;margin-left:0px"/>
+				</div>
+				<div class="inputInicial" style="margin-left:20px;">
+								<p>Monto mÃ¡ximo autorizado</p>
+								<input class="txtbox" type="text" value="999,999,999.0" name="Text1" style="width:100%;margin-left:0px"/>
+
+				</div>
+				<span class="moneda">(MXN)</span>							
+				<div id="infobtn2" class="infor_btn"><img src="../../img/botones/info_.png"/></div>
+				<div class="botonera" style="width:auto; margin-right:20px; margin-top:10px;">
+					<div class="btn">Continuar</div>	
+				</div>
+		</div>
+		<div id="navegador">
+			<ul>
+				<li>Domiciliacion <br>de Servicios</li>
+				<li>Domiciliacion de Tarjeta de CrÃ©dito</li>
+				<li class="active">Consulta/ModificaciÃ³n y CancelaciÃ³n</li>
+			</ul>
+			<div class="aviso"><img src="../../img/iconos/img_msj.png" />	</div>
+		</div>		
+				
+   		</div>
+   		
+	
+	</div>
+</body>
