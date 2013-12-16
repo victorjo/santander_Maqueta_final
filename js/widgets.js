@@ -2,7 +2,7 @@
 var globalVarOfVal = 0;
 var globalFlah = 0;
 var normal = 1610;
-var altoVentana = $(window).height();
+var altoVentana;
 var responsiveFlag = 0;
 var tamanoWidget = 587;
 

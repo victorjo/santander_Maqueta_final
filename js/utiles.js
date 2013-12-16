@@ -1,6 +1,3 @@
-$(document).ready(function(){
-	$("body").attr("data-banpop","false");
-});
 var spDisplay = true;
 function shortcuts(){
 	$('body').keypress(function(e){
@@ -14,11 +11,6 @@ function shortcuts(){
    		}
 	});
 }
-
-$(function(){
-	shortcuts();
-})
-
 
 function cierraWidget(){
     $(".widget-min").find(".btnHeader:last").click();
@@ -52,7 +44,7 @@ function cierraWidget(){
 
     }*/
 
-
+    /*
     $(function(){
     $.ajax({
     url:'balance_maquetas/informativo.html',
@@ -65,12 +57,12 @@ function cierraWidget(){
     $("select").ddslick({
     width:"200"
     });
-
+    
 
     //$("#wrappWidgets").mCustomScrollbar();
 
 
-    });
+    });*/
     function activaBtn(obj){
     $(".ActiveNav").each(function(){
     $(this).removeClass('ActiveNav').addClass('noActiveNav');

@@ -14,6 +14,7 @@
 	});
 
 	requirejs(['jquery','widgets','utiles','components','ddslick'],function   ($) {
+			altoVentana = $(window).height();
 			//motorSuperbanner();
        		$("#cierraSB").click(cierraSB);
 				$("body").append("<div class='loader'><span></span><span></span><span></span></div>");
@@ -34,7 +35,8 @@
 			$(document).ajaxStop(function() {
 				$(".loader").hide();
 			});
-
+			$("body").attr("data-banpop","false");
+			shortcuts();
 			//para commit
 			window.onresize = function(){
 				posWidgets(1);
