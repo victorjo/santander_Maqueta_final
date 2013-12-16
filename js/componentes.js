@@ -133,7 +133,7 @@ function ocultaSteps(num_Step){
 
 function creaToken(contenedor,cbTokenCanc,cbTokenAcep,moreData){
 
-tokenHTML = '<div id="widreducido"><div id="headerWidget"><p>TOKEN1</p><div id="btninfo"></div></div><div id="subtitulo">';
+tokenHTML = '<div id="widreducido"><div id="headerWidget"><p>TOKEN</p><div id="btninfo"></div></div><div id="subtitulo">';
 tokenHTML += '<p>Para realizar su operación es necesario<br/>ingresar el código del TOKEN:</p></div><div id="token">';
 tokenHTML += '<img src="img/token.png"/></div><div id="input"><input class="input" type="text" placeholder="Ingresar TOKEN" />';
 tokenHTML += '</div><div class="botoneraWidget"><div class="btn" onclick="'+cbTokenCanc+'">Cancelar</div><div class="btnaceptar" onclick="'+cbTokenAcep+'" '+moreData+'>Aceptar</div></div></div>';
