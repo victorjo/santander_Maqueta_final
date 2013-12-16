@@ -16,6 +16,7 @@
     margin-top: 115px;
     overflow: hidden;
 
+
 }
 
 
@@ -89,7 +90,8 @@
 #terminosCond{
 	width: 252px;
     height: 296px;
-    overflow: scroll;
+    /*overflow: scroll;*/
+    overflow: hidden;
     overflow-x: hidden;
     border: 2px #fff solid;
     float: right;
@@ -97,4 +99,10 @@
     background: #fff;
     margin-right: 511px;
     margin-top: 91px;
+    text-align: center;
+    border:1px solid silver;
+    margin-top: 100px;
+}
+#terminosCond p{
+    margin-top: 20px;
 }

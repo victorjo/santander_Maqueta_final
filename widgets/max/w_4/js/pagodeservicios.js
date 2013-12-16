@@ -1,4 +1,4 @@
-﻿var msjAlert = ["","Txt1.","Txt2.","Txt3."];
+﻿var msjAlert = ["","Txt1.","Es importante que verifique los datos antes de confirmar.","Para finalizar puede guardar una copia de su servicio efectuado."];
 
 
 /*Funhcion switch (label de mas de dos digitos)--- Flujo: Domiciliaciones Ã³ mas */
