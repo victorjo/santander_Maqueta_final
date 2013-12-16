@@ -19,41 +19,6 @@ function validaBrowser(){
 
 }
 
-
-
-
-$(document).ready(function(){
-	$("body").append("<div class='loader'><span></span><span></span><span></span></div>");
-	validaBrowser()
-	//if(typeof window.chrome =="undefined" || typeof window.safari == "undefined") reject();
-	validaBrowser();
-	posWidgets(0);
-
-		genFooterHeight();
-		ajustaBannerHeight();
-
-
-		setInterval(function(){ motorSuperbanner(); },15000);
-		
-		//
-			//valToForm();
-			//outaLogin();
-		//
-});
-
-$(document).ajaxStart(function() {
-	$(".loader").show();
-});
-$(document).ajaxStop(function() {
-	$(".loader").hide();
-});
-
-//para commit
-window.onresize = function(){
-	posWidgets(1);
-	if($("#wrappSB").css("display")=="none" && $(window).width()<=1222) $("#wrappWidgets").css("width","771px");
-}
-
 function reject(){
 	alert("Para visualizar este sitio debe usar chrome");
 	window.location.href = "https://www.google.com/intl/es-419/chrome/browser/"
@@ -317,7 +282,6 @@ function posWidgets(qwerty){
 		        success: function(res){
 		        	newWidget.html(res);
 		        	$("div > div:first,.btnaceptar_wr,img",newWidget).click(function(){
-						console.log(this);
 						getInstance(newWidget);
 					});
 		        }
