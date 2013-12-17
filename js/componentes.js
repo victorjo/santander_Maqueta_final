@@ -176,6 +176,12 @@ function ocultaSteps(num_Step){
 /*Funciones de bloqueo (Overlay)*/
 
 function creaOverlay(color,contenedor,tipo,call){
+  $(document).ajaxStart(function() {
+    $(".loader").show();
+  });
+  $(document).ajaxStop(function() {
+    $(".loader").hide();
+  });
   pos = (tipo==1)?'absolute':'fixed';
   zposition = (tipo==1)?'1000':'';
   var divOverlay =  $("<div>");
