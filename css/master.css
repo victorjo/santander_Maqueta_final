@@ -28,8 +28,6 @@ font-weight:bold;
 			{
 				margin:0px auto;
 				width:100%;
-				background: #E6E9EB;
-
 			}
 			#wr_SuperBanner{
 				background:no-repeat;
@@ -98,10 +96,15 @@ font-weight:bold;
 			}
 
 			#wr_btnNavHeader img{
-				border-right: 1px ridge #710b1c;
+				/*border-right: 1px ridge #710b1c;
 				padding: 5px 10px;
 				cursor: pointer;
-				float:right;
+				float:right;*/
+				border-right: 2px groove #FA3535;
+         		padding: 5px 5px;
+          		cursor: pointer;
+          		float:right;
+         		background:url(../img/background/gradiente.jpg);
 			}
 
 			#wr_btnNavHeader img:last-child{
@@ -364,8 +367,8 @@ img { border: 0; }
 
 
 #cierraSB{
-	background-image:url('../img/close_btn.png');
-	margin: 10px 10px 0 0;
+	background-image:url('../img/close_btnslct.png');
+ 	margin-right: -10px;
 	float:right;
 	width:40px;
 	height:40px;
@@ -373,7 +376,7 @@ img { border: 0; }
 }
 
 #cierraSB:hover{
-	background-image:url('../img/close_btnslct.png');
+	background-image:url('../img/close_btn.png');
 	background-size:100% 100%;
 	cursor:pointer;
 	
@@ -412,3 +415,10 @@ img { border: 0; }
 .starblack{
 	margin-left: 8px;
 }
+
+	#logo{
+
+   width: 245px;
+   border-left: 2px groove #FA3535;
+   background: url(../img/background/gradiente.jpg);
+	}
