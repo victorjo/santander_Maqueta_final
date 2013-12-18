@@ -2,6 +2,7 @@
 <script src="../../../js/ddSlick.js"></script>
 <script src="../../../js/paso2.js"></script>-->
 <link rel="stylesheet" href="../../../css/general.css"/>
+<link rel="stylesheet" href="../../../css/token.css"/>
 <link rel="stylesheet" href="widgets/max/w_10/css/recompensas.css"/>
 <link rel="stylesheet" href="widgets/max/w_10/css/r_paso2.css"/>
 <link rel="stylesheet" href="widgets/max/w_10/css/r_paso3.css"/>
@@ -17,6 +18,7 @@
 		init();
 	});
 	function init(){
+		$(".fin").click(function(){closeAction()});
 		$(".stepWrapp").hide();
 		$("#step1").show();
 		$(".btnaceptar").click(function(){
@@ -32,17 +34,16 @@
 			$(".btnaceptar").click(function(){
 				creaOverlay("#fff","#widampliado",1);
 				creaToken("modalOver",null,"javascript: $('#step2').hide();$('#step3').show();$('#modalOver').fadeOut();",null,function(){$(".steps").replaceWith("<img src='img/paso_3.png' class='steps'>");});
-				$(".fin").click(function(){
-					closeAction();
-				});
 			});
 		});
+
+
 	}
 </script>
 <div id="widampliado">
 	<div>
 		<p>RECOMPENSAS DE TARJETA DE CRÉDITO</p>
-		<div></div>
+		<div class="fin"></div>
 		<div></div>
 	</div>
 	<div>
