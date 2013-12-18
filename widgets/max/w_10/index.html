@@ -20,6 +20,7 @@
 		$(".stepWrapp").hide();
 		$("#step1").show();
 		$(".btnaceptar").click(function(){
+			$(".steps").replaceWith("<img src='img/paso_2.png' class='steps'>");
 			$("#step1").hide();
 			$("#step2").show();
 			$(".btn").click(function(){
@@ -30,7 +31,7 @@
 			});
 			$(".btnaceptar").click(function(){
 				creaOverlay("#fff","#widampliado",1);
-				creaToken("modalOver",null,"javascript: $('#step2').hide();$('#step3').show();$('#modalOver').fadeOut();");
+				creaToken("modalOver",null,"javascript: $('#step2').hide();$('#step3').show();$('#modalOver').fadeOut();",null,function(){$(".steps").replaceWith("<img src='img/paso_3.png' class='steps'>");});
 				$(".fin").click(function(){
 					closeAction();
 				});
