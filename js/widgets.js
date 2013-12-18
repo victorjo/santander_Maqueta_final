@@ -172,7 +172,7 @@ var widgets = [
 					id:null,
 					type:1,
 					order:8,
-					contentMin:'<img src="img/fake/bannerVertical.jpg" />',
+					contentMin:'<img style="height:579px" src="img/fake/bannerVertical.jpg" />',
 					contentMax:''
 				}
 
@@ -273,6 +273,8 @@ function posWidgets(qwerty){
 			$("[data-pos='4']").insertBefore('[data-pos="3"]');
 			$("[data-pos='9']").insertAfter('[data-pos="6"]');
 			$("[data-pos='10']").insertAfter('[data-pos="9"]');
+			$("[data-pos='11']").insertAfter('[data-pos="10"]');
+			$("[data-pos='9']").hide();
 			$("#wrappWidgets").css("width","1022px");
 				$("#cierraSB").fadeOut("fast");
 			//$("[data-pos='3']").after('<div class="widget-min col1 alto2"  data-max="false" data-pos="codom"><img src="img/fake/carrito.jpg" height="275"/></div>');
