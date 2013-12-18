@@ -14,7 +14,7 @@ function validaBrowser(){
     return false; // chrome
    }
   }else{
-  	//reject();
+  	reject();
   }
 
 }
@@ -167,7 +167,15 @@ var widgets = [
 					order:8,
 					contentMin:'',
 					contentMax:''
+				},
+				{
+					id:null,
+					type:1,
+					order:8,
+					contentMin:'<img src="img/fake/bannerVertical.jpg" />',
+					contentMax:''
 				}
+
 			];
 
 

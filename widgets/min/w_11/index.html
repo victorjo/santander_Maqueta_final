@@ -1,7 +1,7 @@
 <script>
 	bCuentasCheck = false;
 	$(function(){
-		$("#cuentasChequeras").click(function(){
+		$(".cuentasChequeras").click(function(){
 			if(!bCuentasCheck){
 				$(this).css({"border":"1px double red","box-shadow":"0 0 10px red"});
 				bCuentasCheck=true;
@@ -10,16 +10,21 @@
 				bCuentasCheck=false;
 			}
 		})
-	})
 
-		$("#botonera_wr").click(function(){
-		$(".loader").hide();
-		$("#paso2CuentasChequeras").fadeOut('slow',function(){
-			$("#wrappTable").fadeIn('slow');
-			$("#botonera_wr").fadeOut("fast");
-		});
+		$("#botonera_wr").click(actualizaPosicion);
 
 	})
+
+
+		function actualizaPosicion(){
+
+			$(".loader").hide();
+			$("#paso2CuentasChequeras").fadeToggle('slow',function(){
+				$("#wrappTable").fadeToggle('slow');
+				$("#botonera_wr").fadeToggle("fast");
+			});
+
+		}
 
 </script>
 <style>
@@ -71,12 +76,11 @@
 <div id="widreducido2x1">
 	<div>
 		<p>SALDOS CONSOLIDADOS</p>
-		<div id="btnampliar_wr"></div>
-		<div id="btninfo_wr"></div>
+		
 	</div>
 	<div id="paso1CuentasChequeras" style="width:477px;height:228px;margin:0px;margin-left:20px;margin-top:12px;">
 		<div id="wrappTable" style="margin-left:-20px;margin-top:-12px;display:none" >
-				<table cellspacing="0" id="consolidados">
+				<table cellspacing="0" id="consolidados" onclick="actualizaPosicion()" style="cursor:pointer;">
 					<tr>
 						<td>Cuentas y Chequeras (3)<div class="dd-pointer dd-pointer-down"></div></td>
 					</tr>
@@ -108,7 +112,7 @@
 							<td style="width:116px;">999,999,999.00</td>
 						</tr>
 					</table>
-					<table cellspacing="0" id="consolidadosProducto">
+					<table cellspacing="0" id="consolidadosProducto" >
 						<tr>
 							<td width="100">1234****5678</td>
 							<td width="52"><img src="img/recompensas/card.png"/></td>
@@ -158,40 +162,40 @@
 
 			
 
-		<div id="paso2CuentasChequeras" style="cursor:pointer;width:146px;height:91px;border:solid 1px #a6a6a6;display:inline-table;margin-right:10px;float:left;margin-bottom:5px">
+		<div id="paso2CuentasChequeras" class="cuentasChequeras" style="cursor:pointer;width:146px;height:91px;border:solid 1px #a6a6a6;display:inline-table;margin-right:10px;float:left;margin-bottom:5px">
 			<table style="height: 100%;width:100%">
 				<tr><td style="font-size: 11px;width: 70px;">Cuentas y chequeras</td><td style="text-align:center"><img style="width:35px" src="img/iconos/img_icono.png"></td></tr>
-				<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">3</td></tr>
+				<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">10,000.00 MXP</td></tr>
 			</table>
 		</div>
 		<div style="width:146px;height:91px;border:solid 1px #a6a6a6;display:inline-table;margin-right:10px;float:left;margin-bottom:5px">
 			<table style="height: 100%;width:100%">
 				<tr><td style="font-size: 11px;width: 70px;">Tarjetas de Crédito</td><td style="text-align:center"><img style="width:35px" src="img/iconos/img_enviar.png"></td></tr>
-				<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">3</td></tr>
+				<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">5,000.00 MXP</td></tr>
 			</table>
 		</div>
 		<div style="width:146px;height:91px;border:solid 1px #a6a6a6;display:inline-table;margin-right:10px;float:left;margin-bottom:5px">
 			<table style="height: 100%;width:100%">
 				<tr><td style="font-size: 11px;width: 70px;">Credito</td><td style="text-align:center"><img style="width:35px" src="img/iconos/img_formulario.png"></td></tr>
-				<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">1</td></tr>
+				<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">3,000.00 MXP</td></tr>
 			</table>
 		</div>
 		<div style="width:146px;height:91px;border:solid 1px #a6a6a6;display:inline-table;margin-right:10px;float:left;margin-bottom:5px">
 			<table style="height: 100%;width:100%">
 				<tr><td style="font-size: 11px;width: 70px;">Fondos de inversion</td><td style="text-align:center"><img style="width:35px" src="img/iconos/tarjeta.png"></td></tr>
-				<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">3</td></tr>
+				<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">1,000.00 MXP</td></tr>
 			</table>
 		</div>
 		<div style="width:146px;height:91px;border:solid 1px #a6a6a6;display:inline-table;margin-right:10px;float:left;margin-bottom:5px">
 			<table style="height: 100%;width:100%">
 				<tr><td style="font-size: 11px;width: 70px;">Inversion vista</td><td style="text-align:center"><img style="width:35px" src="img/iconos/img_mensaje.png"></td></tr>
-				<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">3</td></tr>
+				<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">500.00 MXP</td></tr>
 			</table>
 		</div>
 		<div style="width:146px;height:91px;border:solid 1px #a6a6a6;display:inline-table;margin-right:10px;float:left;margin-bottom:5px">
 			<table style="height: 100%;width:100%">
 				<tr><td style="font-size: 11px;width: 70px;">Inversion plazo</td><td style="text-align:center"><img style="width:35px" src="img/iconos/img_icono.png"></td></tr>
-				<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">3</td></tr>
+				<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">1,000.00 MXP</td></tr>
 			</table>
 		</div>
 	</div>
