@@ -263,6 +263,8 @@ function posWidgets(qwerty){
 		if($(window).width()>1490 || !spDisplay ) 
 		{
 			$("[data-pos='4']").insertBefore('[data-pos="3"]');
+			$("[data-pos='9']").insertAfter('[data-pos="6"]');
+			$("[data-pos='10']").insertAfter('[data-pos="9"]');
 			$("#wrappWidgets").css("width","1022px");
 				$("#cierraSB").fadeOut("fast");
 			//$("[data-pos='3']").after('<div class="widget-min col1 alto2"  data-max="false" data-pos="codom"><img src="img/fake/carrito.jpg" height="275"/></div>');

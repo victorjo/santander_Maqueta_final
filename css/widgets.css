@@ -799,6 +799,12 @@ margin-left: 8px;
 		margin-right: 0px;
     } 
     #wr_SuperBanner { display: none; }
+    [data-pos="9"]{
+    	display:none;
+    }
+    [data-pos="10"]{
+    	float:right;
+    }
     #dataClient{
     	width: 170px !important;
 		position: absolute;
