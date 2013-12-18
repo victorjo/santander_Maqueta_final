@@ -1,3 +1,10 @@
+<!--<script src="../../../js/jquery10.2.min.js"></script>
+<script src="../../../js/ddSlick.js"></script>
+<script src="../../../js/paso2.js"></script>-->
+<link rel="stylesheet" href="../../../css/general.css"/>
+<link rel="stylesheet" href="widgets/max/w_10/css/recompensas.css"/>
+<link rel="stylesheet" href="widgets/max/w_10/css/r_paso2.css"/>
+<link rel="stylesheet" href="widgets/max/w_10/css/r_paso3.css"/>
 <script>
 	
 	$('#Dropdown').ddslick({
@@ -6,14 +13,31 @@
 		
 		}
 		});
+	$(document).ready(function(){
+		init();
+	});
+	function init(){
+		$(".stepWrapp").hide();
+		$("#step1").show();
+		$(".btnaceptar").click(function(){
+			$("#step1").hide();
+			$("#step2").show();
+			$(".btn").click(function(){
+				$(".btnaceptar").off("click");
+				$(".btn").off("click");
+				$(".fin").off("click");
+				init();
+			});
+			$(".btnaceptar").click(function(){
+				creaOverlay("#fff","#widampliado",1);
+				creaToken("modalOver",null,"javascript: $('#step2').hide();$('#step3').show();$('#modalOver').fadeOut();");
+				$(".fin").click(function(){
+					closeAction();
+				});
+			});
+		});
+	}
 </script>
-<script src="../../../js/jquery10.2.min.js"></script>
-<script src="../../../js/ddSlick.js"></script>
-<script src="../../../js/paso2.js"></script>
-<link rel="stylesheet" href="../../../css/general.css"/>
-<link rel="stylesheet" href="widgets/max/w_10/css/recompensas.css"/>
-<link rel="stylesheet" href="widgets/max/w_10/css/r_paso2.css"/>
-<link rel="stylesheet" href="widgets/max/w_10/css/r_paso3.css"/>
 <div id="widampliado">
 	<div>
 		<p>RECOMPENSAS DE TARJETA DE CRÉDITO</p>
@@ -162,7 +186,7 @@
 			
 			<div class="botonera">
 				<div class="btn">Imprimir</div>
-				<div class="btnaceptar">Finalizar</div>
+				<div class="btnaceptar fin">Finalizar</div>
 			</div>
 			
 		</div>
