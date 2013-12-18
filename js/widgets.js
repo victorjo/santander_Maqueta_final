@@ -176,22 +176,29 @@ var widgets = [
 
 var widgets = [
 				{
+					id:11,
+					type:3,
+					order:-1,
+					contentMin:'',
+					contentMax:''
+				},
+				{
 					id:1,
 					type:2,
-					order:1,
+					order:4,
 					contentMin:'',
 					contentMax:''
 				},
 				{
 					id:5,
 					type:2,
-					order:4,
+					order:1,
 					contentMin:'',
 					contentMax:''
 				},{
 					id:8,
 					type:2,
-					order:3,
+					order:0,
 					contentMin:'',
 					contentMax:''
 				},
@@ -219,7 +226,7 @@ var widgets = [
 				{
 					id:4,
 					type:1,
-					order:8,
+					order:9,
 					contentMin:'',
 					contentMax:''
 				},
@@ -234,7 +241,7 @@ var widgets = [
 				{
 					id:10,
 					type:1,
-					order:0,
+					order:8,
 					contentMin:'',
 					contentMax:''
 				}
