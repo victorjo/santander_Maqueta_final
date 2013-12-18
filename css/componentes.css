@@ -110,6 +110,7 @@ right: 0px;
 .onDom{
 	height:23px;
 	width:70px;
+	background: red;
 	background-image:url('../lineagrafica/swichbtnon.png');
 	background-size:100% 100%;
 	float:left;
@@ -126,6 +127,7 @@ right: 0px;
 {
 	height:23px;
 	width:80px;
+	background: green;
 	background-image:url('../lineagrafica/swichbtnoff.png');
 	background-size:100% 100%;
 	float:left;
