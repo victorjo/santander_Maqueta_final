@@ -17,7 +17,6 @@
 			altoVentana = $(window).height();
 			//motorSuperbanner();
        		$("#cierraSB").click(cierraSB);
-				$("body").append("<div class='loader'><span></span><span></span><span></span></div>");
 				validaBrowser()
 				//if(typeof window.chrome =="undefined" || typeof window.safari == "undefined") reject();
 				validaBrowser();
@@ -29,12 +28,14 @@
 						//valToForm();
 						//outaLogin();
 					//
+					/*
 			$(document).ajaxStart(function() {
 				$(".loader").show();
 			});
 			$(document).ajaxStop(function() {
 				$(".loader").hide();
 			});
+					*/
 			$("body").attr("data-banpop","false");
 			shortcuts();
 			//para commit
@@ -42,6 +43,8 @@
 				posWidgets(1);
 				if($("#wrappSB").css("display")=="none" && $(window).width()<=1222) $("#wrappWidgets").css("width","771px");
 			}
+		$("#loginWrapper").show();
+		$(".loader").hide();
 	});
 
 })(document, window || this, require);

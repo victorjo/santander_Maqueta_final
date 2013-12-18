@@ -5,6 +5,9 @@ src: url(fonts/ArialBlack.ttf);
 font-weight:bold;
 }
 
+section{
+	display:none;
+}
 
 			*{
 				margin: 0;
