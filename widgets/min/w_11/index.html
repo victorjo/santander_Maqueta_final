@@ -1,54 +1,206 @@
+<script>
+	bCuentasCheck = false;
+	$(function(){
+		$("#cuentasChequeras").click(function(){
+			if(!bCuentasCheck){
+				$(this).css({"border":"1px double red","box-shadow":"0 0 10px red"});
+				bCuentasCheck=true;
+			}else{
+				$(this).css({"border":"1px solid #a6a6a6","box-shadow":"none"});
+				bCuentasCheck=false;
+			}
+		})
+	})
+
+		$("#botonera_wr").click(function(){
+		
+		$("#paso2CuentasChequeras").fadeOut('slow',function(){
+			$("#wrappTable").fadeIn('slow');
+			$("#botonera_wr").fadeOut("fast");
+		});
+
+	})
+
+</script>
+<style>
+	
+#consolidados td a:link {
+	color: #4573ec;
+	text-decoration: none;
+}
+
+#consolidados td{
+	position: relative;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #282828;
+	width: 498px;
+	height: 30px;
+	padding-left: 20px;
+	border-bottom: 1px #bbbbbb solid;
+	background-color: #f7f7f7;
+}
+
+#consolidadosProducto td{
+	position: relative;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #282828;
+	height: 40px;
+	padding-left: 20px;
+	border-bottom: 1px #bbbbbb solid;
+	background-color: #fff;
+}
+
+#tituloConsolidados td{
+	position: relative;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #282828;
+	width: 498px;
+	height: 30px;
+	padding-left: 20px;
+	border-bottom: 1px #bbbbbb solid;
+	background-color: #fcfcfc;
+}
+
+</style>
+
 <div id="widreducido2x1">
-		<div>
-			<p>SALDOS CONSOLIDADOS</p>
-			<div id="btnampliar_wr"></div>
-			<div id="btninfo_wr"></div>
-		</div>
-
-		<div style="width:477px;height:228px;margin:0px;margin-left:20px;margin-top:12px;">
-			<div style="width:146px;height:91px;border:solid 1px #a6a6a6;display:inline-table;margin-right:10px;float:left;margin-bottom:5px">
-				<table style="height: 100%;width:100%">
-					<tr><td style="font-size: 11px;width: 70px;">Cuentas y chequeras</td><td style="text-align:center"><img style="width:35px" src="img/iconos/img_icono.png"></td></tr>
-					<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">3</td></tr>
-				</table>
-			</div>
-			<div style="width:146px;height:91px;border:solid 1px #a6a6a6;display:inline-table;margin-right:10px;float:left;margin-bottom:5px">
-				<table style="height: 100%;width:100%">
-					<tr><td style="font-size: 11px;width: 70px;">Tarjetas de Crédito</td><td style="text-align:center"><img style="width:35px" src="img/iconos/img_enviar.png"></td></tr>
-					<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">3</td></tr>
-				</table>
-			</div>
-			<div style="width:146px;height:91px;border:solid 1px #a6a6a6;display:inline-table;margin-right:10px;float:left;margin-bottom:5px">
-				<table style="height: 100%;width:100%">
-					<tr><td style="font-size: 11px;width: 70px;">Credito</td><td style="text-align:center"><img style="width:35px" src="img/iconos/img_formulario.png"></td></tr>
-					<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">1</td></tr>
-				</table>
-			</div>
-			<div style="width:146px;height:91px;border:solid 1px #a6a6a6;display:inline-table;margin-right:10px;float:left;margin-bottom:5px">
-				<table style="height: 100%;width:100%">
-					<tr><td style="font-size: 11px;width: 70px;">Fondos de inversion</td><td style="text-align:center"><img style="width:35px" src="img/iconos/tarjeta.png"></td></tr>
-					<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">3</td></tr>
-				</table>
-			</div>
-			<div style="width:146px;height:91px;border:solid 1px #a6a6a6;display:inline-table;margin-right:10px;float:left;margin-bottom:5px">
-				<table style="height: 100%;width:100%">
-					<tr><td style="font-size: 11px;width: 70px;">Inversion vista</td><td style="text-align:center"><img style="width:35px" src="img/iconos/img_mensaje.png"></td></tr>
-					<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">3</td></tr>
-				</table>
-			</div>
-			<div style="width:146px;height:91px;border:solid 1px #a6a6a6;display:inline-table;margin-right:10px;float:left;margin-bottom:5px">
-				<table style="height: 100%;width:100%">
-					<tr><td style="font-size: 11px;width: 70px;">Inversion plazo</td><td style="text-align:center"><img style="width:35px" src="img/iconos/img_icono.png"></td></tr>
-					<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">3</td></tr>
-				</table>
-			</div>
-		</div>
-				
-
-		
-		<div id="botonera_wr">
-			<div class="btnaceptar_wr">Ver Detalle</div>
-		</div>
-
-		
+	<div>
+		<p>SALDOS CONSOLIDADOS</p>
+		<div id="btnampliar_wr"></div>
+		<div id="btninfo_wr"></div>
 	</div>
+	<div id="paso1CuentasChequeras" style="width:477px;height:228px;margin:0px;margin-left:20px;margin-top:12px;">
+		<div id="wrappTable" style="margin-left:-20px;margin-top:-12px;display:none" >
+				<table cellspacing="0" id="consolidados">
+					<tr>
+						<td>Cuentas y Chequeras (3)<div class="dd-pointer dd-pointer-down"></div></td>
+					</tr>
+				</table>
+				
+				<table cellspacing="0" id="tituloConsolidados">
+					<tr>
+						<td>Número de cuenta</td>
+						<td>Producto</td>
+						<td>Alias</td>
+						<td>Saldo (MXP)</td>
+					</tr>
+				</table>
+				<div style="overflow:auto; height: 155px;">
+					
+					
+					<table cellspacing="0" id="consolidadosProducto">
+						<tr>
+							<td width="100">1234****5678</td>
+							<td width="52"><img src="img/recompensas/card.png"/></td>
+							<td width="20">Elite Rewards</td>
+							<td width="90">Lorem Ipsum</td>
+							<td width="107">999,999,999.00</td>
+						</tr>
+					</table>
+					<table cellspacing="0" id="tituloConsolidados">
+						<tr>
+							<td style="width:340px;">Total en (MXP)</td>
+							<td style="width:116px;">999,999,999.00</td>
+						</tr>
+					</table>
+					<table cellspacing="0" id="consolidadosProducto">
+						<tr>
+							<td width="100">1234****5678</td>
+							<td width="52"><img src="img/recompensas/card.png"/></td>
+							<td width="20">Elite Rewards</td>
+							<td width="90">Lorem Ipsum</td>
+							<td width="107">999,999,999.00</td>
+						</tr>
+						<tr>
+							<td width="100">1234****5678</td>
+							<td width="52"><img src="img/recompensas/card.png"/></td>
+							<td width="20">Elite Rewards</td>
+							<td width="90">Lorem Ipsum</td>
+							<td width="107">999,999,999.00</td>
+						</tr>
+						<tr>
+							<td width="100">1234****5678</td>
+							<td width="52"><img src="img/recompensas/card.png"/></td>
+							<td width="20">Elite Rewards</td>
+							<td width="90">Lorem Ipsum</td>
+							<td width="107">999,999,999.00</td>
+						</tr>
+						<tr>
+							<td width="100">1234****5678</td>
+							<td width="52"><img src="img/recompensas/card.png"/></td>
+							<td width="20">Elite Rewards</td>
+							<td width="90">Lorem Ipsum</td>
+							<td width="107">999,999,999.00</td>
+						</tr>
+						<tr>
+							<td width="100">1234****5678</td>
+							<td width="52"><img src="img/recompensas/card.png"/></td>
+							<td width="20">Elite Rewards</td>
+							<td width="90">Lorem Ipsum</td>
+							<td width="107">999,999,999.00</td>
+						</tr>
+					</table>
+					
+					
+				</div>
+				<table cellspacing="0" id="tituloConsolidados" style="border-top:1px solid #ccc">
+					<tr>
+						<td style="width:340px;">Total en (USD)</td>
+						<td style="width:116px;">999,999,999.00</td>
+					</tr>
+				</table>
+			</div>
+
+			
+
+		<div id="paso2CuentasChequeras" style="cursor:pointer;width:146px;height:91px;border:solid 1px #a6a6a6;display:inline-table;margin-right:10px;float:left;margin-bottom:5px">
+			<table style="height: 100%;width:100%">
+				<tr><td style="font-size: 11px;width: 70px;">Cuentas y chequeras</td><td style="text-align:center"><img style="width:35px" src="img/iconos/img_icono.png"></td></tr>
+				<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">3</td></tr>
+			</table>
+		</div>
+		<div style="width:146px;height:91px;border:solid 1px #a6a6a6;display:inline-table;margin-right:10px;float:left;margin-bottom:5px">
+			<table style="height: 100%;width:100%">
+				<tr><td style="font-size: 11px;width: 70px;">Tarjetas de Crédito</td><td style="text-align:center"><img style="width:35px" src="img/iconos/img_enviar.png"></td></tr>
+				<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">3</td></tr>
+			</table>
+		</div>
+		<div style="width:146px;height:91px;border:solid 1px #a6a6a6;display:inline-table;margin-right:10px;float:left;margin-bottom:5px">
+			<table style="height: 100%;width:100%">
+				<tr><td style="font-size: 11px;width: 70px;">Credito</td><td style="text-align:center"><img style="width:35px" src="img/iconos/img_formulario.png"></td></tr>
+				<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">1</td></tr>
+			</table>
+		</div>
+		<div style="width:146px;height:91px;border:solid 1px #a6a6a6;display:inline-table;margin-right:10px;float:left;margin-bottom:5px">
+			<table style="height: 100%;width:100%">
+				<tr><td style="font-size: 11px;width: 70px;">Fondos de inversion</td><td style="text-align:center"><img style="width:35px" src="img/iconos/tarjeta.png"></td></tr>
+				<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">3</td></tr>
+			</table>
+		</div>
+		<div style="width:146px;height:91px;border:solid 1px #a6a6a6;display:inline-table;margin-right:10px;float:left;margin-bottom:5px">
+			<table style="height: 100%;width:100%">
+				<tr><td style="font-size: 11px;width: 70px;">Inversion vista</td><td style="text-align:center"><img style="width:35px" src="img/iconos/img_mensaje.png"></td></tr>
+				<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">3</td></tr>
+			</table>
+		</div>
+		<div style="width:146px;height:91px;border:solid 1px #a6a6a6;display:inline-table;margin-right:10px;float:left;margin-bottom:5px">
+			<table style="height: 100%;width:100%">
+				<tr><td style="font-size: 11px;width: 70px;">Inversion plazo</td><td style="text-align:center"><img style="width:35px" src="img/iconos/img_icono.png"></td></tr>
+				<tr><td colspan="2" style="border-top:1px #a6a6a6 solid;text-align:center;font-weight:bold;color:#db1539">3</td></tr>
+			</table>
+		</div>
+	</div>
+	
+	
+	<div id="botonera_wr">
+		<div class="btnaceptar_wr">Ver Detalle</div>
+	</div>
+
+
+
+</div>
