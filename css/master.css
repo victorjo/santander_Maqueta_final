@@ -346,7 +346,7 @@ img { border: 0; }
 	background-color:#D7E9C9;*/
 	position:relative;
 
-	/*background-image:url('../img/bannerBkgnd1.png')*/
+	background:url('../img/back_img.png') no-repeat;
 }
 
 #superbanner p{
@@ -388,7 +388,7 @@ img { border: 0; }
 
 
 #superbanner > div:nth-of-type(2){
-	bottom: 75px;
+	bottom: 40px;
 	float: right;
 	position: absolute;
 	right: 15px;

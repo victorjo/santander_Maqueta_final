@@ -96,83 +96,6 @@ function ajustaBannerHeight(){
 
 }
 
-/* ESTABLE JSON
-var widgets = [
-				{
-					id:1,
-					type:2,
-					order:1,
-					contentMin:'',
-					contentMax:''
-				},
-				{
-					id:5,
-					type:2,
-					order:4,
-					contentMin:'',
-					contentMax:''
-				},{
-					id:8,
-					type:2,
-					order:3,
-					contentMin:'',
-					contentMax:''
-				},
-				{
-					id:6,
-					type:3,
-					order:5,
-					contentMin:'',
-					contentMax:''
-				},
-				{
-					id:2,
-					type:1,
-					order:4,
-					contentMin:'',
-					contentMax:''
-				},
-				{
-					id:7,
-					type:2,
-					order:7,
-					contentMin:'',
-					contentMax:''
-				},
-				{
-					id:4,
-					type:1,
-					order:8,
-					contentMin:'',
-					contentMax:''
-				},
-				{
-					id:9,
-					type:3,
-					order:6,
-					contentMin:'',
-					contentMax:''
-				},
-
-				{
-					id:10,
-					type:1,
-					order:0,
-					contentMin:'',
-					contentMax:''
-				},
-/*
-				{
-					id:11,
-					type:2,
-					order:1000,
-					contentMin:'asdasdasdasd',
-					contentMax:''
-				}
-
-
-			];
-*/
 
 var widgets = [
 				{
@@ -538,11 +461,10 @@ function valToForm(){
 	$("#loginWrapper").animate({"background-position":"+=50px"},"slow");
 	$("#wr_SuperBanner").css({"position":"relative"}).animate({'left':'-255px'},800,function(){ $("#titleLogin").next().html('<h4>EN SANTANDER LE DAMOS VIDA A TUS IDEAS</h4><h1 class="tituloBold">Bienvenido a SUPERNET <br> la banca mas personal que nunca.</h1><div class="btnaceptar" style="width:180px;margin-left:0px;margin-right:15px" onclick="outaLogin()">Saltar Intro</div><p style="font-weight:bold;font-size:11px;margin-top: 18px;">Omitir en: <span class="seger" style="">04</span></p>');$("#titleLogin").next().fadeIn(); });
 	$("#titleLogin").next().fadeOut('fast');
-	setTimeout(function(){ $(".seger").text("03"); },1000);
-	setTimeout(function(){ $(".seger").text("02"); },2000);
-	setTimeout(function(){ $(".seger").text("01"); },3000);
-	setTimeout(function(){ $(".seger").text("00"); $(".seger").parent().remove();},4000);
-	setTimeout(function(){ outaLogin() },4500);
+	setTimeout(function(){ $(".seger").text("02"); },1000);
+	setTimeout(function(){ $(".seger").text("01"); },2000);
+	setTimeout(function(){ $(".seger").text("00"); $(".seger").parent().remove();},3000);
+	setTimeout(function(){ outaLogin() },3200);
 
 }
 
