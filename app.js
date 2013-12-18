@@ -28,14 +28,7 @@
 						//valToForm();
 						//outaLogin();
 					//
-					/*
-			$(document).ajaxStart(function() {
-				$(".loader").show();
-			});
-			$(document).ajaxStop(function() {
-				$(".loader").hide();
-			});
-					*/
+					
 			$("body").attr("data-banpop","false");
 			shortcuts();
 			//para commit

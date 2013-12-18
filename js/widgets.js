@@ -389,6 +389,7 @@ function getInstance(obj){
 	var thisW = $(obj);
 	if(typeof thisW.data("instanced") == 'undefined' || thisW.data("instanced") == 'undefined'){
 		thisW.data("instanced",new newWidgetInstance(thisW));
+		$(".loader").show();
 	}
 }
 
@@ -417,6 +418,7 @@ function newWidgetInstance(obj)
 			        dataType:'html',
 			        success: function(res){
 			        	forA.html(res);
+			        	$(".loader").hide();
 			        	forA.children().fadeIn('slow');
 			        	forA.find(".btnHeader").attr("onclick","closeAction()");
 						forA.find(".vtaimg").attr("onclick","closeAction(null,7);");
@@ -438,7 +440,8 @@ function newWidgetInstance(obj)
 								success: function(res){
 									io.html(res);
 									$("[clone='true']").remove();
-									forA.children().fadeIn('slow');
+									forA.children().fadeIn('slow',function(){
+									});
 									$("[data-id='"+id+"']").click();
 									$("div > div:first,.btnaceptar_wr,img",io).click(function(){
 										getInstance(io);
