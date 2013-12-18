@@ -212,7 +212,8 @@ function posWidgets(qwerty){
 		        success: function(res){
 		        	newWidget.html(res);
 		        	$("div > div:first,.btnaceptar_wr,img",newWidget).click(function(){
-						getInstance(newWidget);
+						if(typeof $(this).attr("src") != 'undefined' && $(this).attr("src").indexOf("fake")==-1)  return false;
+							getInstance(newWidget);
 					});
 		        }
 		    });
