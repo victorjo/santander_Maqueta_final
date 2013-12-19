@@ -174,6 +174,13 @@ var widgets = [
 					order:8,
 					contentMin:'<img style="height:579px" src="img/fake/bannerVertical.jpg" />',
 					contentMax:''
+				},				
+				{
+					id:13,
+					type:2,
+					order:11,
+					contentMin:'',
+					contentMax:''
 				}
 
 			];
