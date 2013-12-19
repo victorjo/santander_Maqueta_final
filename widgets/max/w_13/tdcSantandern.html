@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Créditos Personales</title>
+<script src="../js/jquery10.2.min.js"></script>
+<!-- jquery ui -->
+ <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="../js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="../js/ddSlick.js"></script>
+<script src="../js/widredu.js"></script>
+<script src="../js/componentes.js"></script>
+<link rel="stylesheet" href="../css/stylewr.css" />
+<!-- css propio -->
+<link rel="stylesheet" href="css/tdcSantander.css" />
+<script src="js/tdcSantander.js"></script>
+</head>
+<body>
+	<div id="widampliado">
+<!--		<div id="header">
+			<p>CRÉDITOS PERSONALES</p>
+			<div id="btnreducir"></div>
+			<div id="btninfo"></div>
+		</div>
+		<div id="stepbar">
+			<img src="../img/paso_1.png" class="steps"/>			
+		</div>
+		
+		<div id="navegador">
+			<ul>
+				<li>
+ 					<p>Mis TDC Santander</p>
+				</li>
+				<li>
+					<p>A otras tarjetas</p>
+				</li>
+				<li style="height: 58px;">
+					<p>Consulta de tarjetas /<br /> 
+						Alta / Baja</p>
+				</li>
+			</ul>
+
+		</div>-->
+
+		<h2>Seleccione la(s) tarjeta(s) registradas que desee pagar.</h2>
+		<!-- div exportar -->
+			<div class="exportar">
+				<p>Exportar</p>	
+				<div class="ico"></div>
+			</div>
+		<!-- Fin div exportar -->
+
+		<!-- Tabs -->
+		<ul id="tabs">
+			<li class="current"><a href="#tab1"><span class="texto">Mis tarjetas 3</span></a></li>
+			<li><a href="#tab2"><span class="texto">Tarjetas a pagar 1</span></a></li>
+		</ul>
+		<!-- Tabs container / content -->
+		<div id="content">
+			<div id="tab1" class="current">
+				<table  class="tablaDot" style="border-collapse: collapse;">
+					<tr>
+						<td class="marco"></td>
+						<td class="marco"><div class="infoCabecera">Pago minimo(MXP)</div></td>
+						<td class="marco"><div class="infoCabecera2">Para no generar interéses(MXP)</div></td>
+						<td class="marco"><span class="infoCabecera">Fecha límite de pago</span></td>
+						<td><img class="estrella" src="../img/estrella.png"/></td>
+					</tr>
+					<tr>
+						<td class="marco">
+						<table class="posicionTabla">
+							<tr>
+								<td><div class="tarjeta"></div></td>
+								<td>
+									<span class="infoTxt">Elite Rewards Platino</span>
+									<span class="infoTxt">1234****5678</span>
+								</td>
+							</tr>
+						</table>
+						
+						</td>
+						<td class="marco" style="width: 165px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 174px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 136px;"><span class="infoNum">01/01/2014</span></td>
+						<td style="width: 45px;"><div class="radio"></div></td>
+					</tr>
+					<tr class="seleccionado">
+						<td class="marco">
+						<table class="posicionTabla">
+							<tr>
+								<td><div class="tarjeta"></div></td>
+								<td>
+									<span class="infoTxt">Elite Rewards Platino</span>
+									<span class="infoTxt">1234****5678</span>
+								</td>
+							</tr>
+						</table>
+						
+						</td>
+						<td class="marco" style="width: 165px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 174px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 136px;"><span class="infoNum">01/01/2014</span></td>
+						<td style="width: 45px;"><div class="radio"></div></td>
+					</tr>
+					<tr>
+						<td class="marco">
+						<table class="posicionTabla">
+							<tr>
+								<td><div class="tarjeta"></div></td>
+								<td>
+									<span class="infoTxt">Elite Rewards Platino</span>
+									<span class="infoTxt">1234****5678</span>
+								</td>
+							</tr>
+						</table>
+						
+						</td>
+						<td class="marco" style="width: 165px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 174px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 136px;"><span class="infoNum">01/01/2014</span></td>
+						<td style="width: 45px;"><div class="radio"></div></td>
+					</tr>
+				</table>
+			</div>
+			<div id="tab2">
+				<table  class="tablaDot" style="border-collapse: collapse;">
+					<tr>
+						<td class="marco"></td>
+						<td class="marco"><div class="infoCabecera">Pago minimo(MXP)</div></td>
+						<td class="marco"><div class="infoCabecera2">Para no generar interéses(MXP)</div></td>
+						<td class="marco"><span class="infoCabecera">Fecha límite de pago</span></td>
+						<td><img class="estrella" src="../img/tornillo.png"/></td>
+					</tr>
+					<tr>
+						<td class="marco">
+						<table class="posicionTabla">
+							<tr>
+								<td><div class="tarjeta"></div></td>
+								<td>
+									<span class="infoTxt">Elite Rewards Platino</span>
+									<span class="infoTxt">1234****5678</span>
+								</td>
+							</tr>
+						</table>
+						
+						</td>
+						<td class="marco" style="width: 165px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 174px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 136px;"><span class="infoNum">01/01/2014</span></td>
+						<td style="width: 45px;"><div class="radio"></div></td>
+					</tr>
+					<tr class="seleccionado">
+						<td class="marco">
+						<table class="posicionTabla">
+							<tr>
+								<td><div class="tarjeta"></div></td>
+								<td>
+									<span class="infoTxt">Elite Rewards Platino</span>
+									<span class="infoTxt">1234****5678</span>
+								</td>
+							</tr>
+						</table>
+						
+						</td>
+						<td class="marco" style="width: 165px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 174px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 136px;"><span class="infoNum">01/01/2014</span></td>
+						<td style="width: 45px;"><div class="radio"></div></td>
+					</tr>
+					<tr>
+						<td class="marco">
+						<table class="posicionTabla">
+							<tr>
+								<td><div class="tarjeta"></div></td>
+								<td>
+									<span class="infoTxt">Elite Rewards Platino</span>
+									<span class="infoTxt">1234****5678</span>
+								</td>
+							</tr>
+						</table>
+						
+						</td>
+						<td class="marco" style="width: 165px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 174px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 136px;"><span class="infoNum">01/01/2014</span></td>
+						<td style="width: 45px;"><div class="radio"></div></td>
+					</tr>
+				</table>
+			</div>
+		</div><!-- End tab-->
+		<div class="oculta">
+			<div class="divLista">
+				<p>Introduzca el nombre, alias o los últimos cuatro dígitos de la cuenta de cargo seleccione la lista:</p>
+				<!-- checar la lista mas actual -->
+				<table>
+					<tr><td>						
+						<input type="text" id="autocompleteQ" placeholder="1234****5678        Elite Rewards Platino       Alias     999,999,999.00 (MXP)" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+					</td><td>
+
+					<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+
+							<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span> </td>
+					</td></tr>
+
+				</table>
+			</div>
+			<div class="divFlotante">
+				<span class="txtPago">Pago mínimo:</span>
+				<div class="imagen"></div>
+				<input  class="input" type="text" value="9,999,999.99"/><span class="mxp">(MXP)</span>
+				<span class="txtPago">Concepto:</span>
+				<input  class="input2" type="text" value="123456789"/>
+			</div>
+			<div class="divFlotante">
+				<span class="txtPago">Pago mínimo:</span>
+				<div class="imagen"></div>
+				<input  class="input" type="text" disabled value="9,999,999.99"/><span class="mxp">(MXP)</span>
+				<span class="txtPago">Programar fecha:</span>
+				<div class="switchCont">
+					<div id="switchBox">
+						<div class="switchSlide">					
+								<div class="switchLabel"><span class="switchs">Si</span></div>
+								<div class="switchIndicador"></div>
+								<div class="switchLabelR"><span span class="switchs">No</span></div>				
+						</div>
+					</div>		
+				</div>
+				<div id="ico" class="calicoNo"></div>
+				<input class="input3"  id="dia" value="01/01/2013" disabled='disabled' type="text"/>
+			</div>
+			<div class="divFlotante">
+				<span class="txtPago">Pago mínimo:</span>
+				<div class="imagen"></div>
+				<input  class="input" type="text" disabled value="9,999,999.99"/><span class="mxp">(MXP)</span>
+			</div>
+		</div>
+
+		<div class="botonera">
+			<div class="btn calendario">Calendario de pago</div>
+			<div class="btn">Agregar otro pago</div>
+			<div class="btnaceptar">Continuar</div>
+		</div>
+			
+	</div>
+</body>
+</html>	

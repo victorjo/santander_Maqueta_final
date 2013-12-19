@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf8"/>
+	<title>Pago de tarjeta de crédito</title>
+	<script src="widgets/max/w_13/js/jquery10.2.min.js"></script>
+	<script src="widgets/max/w_13/js/ddSlick.js"></script>
+	<script src="widgets/max/w_13/js/paso3.js"></script>
+	<link rel="stylesheet" href="widgets/max/w_13/css/paso3.css" />
+	<link rel="stylesheet" type="text/css" href="widgets/max/w_13/css/pagoTarjeta.css">
+	<!--<link rel="stylesheet" href="widgets/max/w_13/css/tdcSantander.css" />
+	<script src="widgets/max/w_13/js/tdcSantander.js"></script>-->
+	<script type="text/javascript">
+		$(document).on("ready",function(){
+			
+			$(".btnaction").click(function(){
+
+				if ($(this).hasClass("btnaction2")) {
+					$(this).removeClass("btnaction2");
+				}else{
+					$(this).addClass("btnaction2");
+				}
+				$("#consultas, #treg").slideToggle("slow");
+				$("#altas").slideUp("slow");
+
+			});
+
+
+
+			$(".btnaction2").click(function(){
+
+				if ($(this).hasClass("btnactionx")) {
+					$(this).removeClass("btnactionx");
+				}else{
+					$(this).addClass("btnactionx");
+				}
+				$("#altas").slideToggle("slow");
+				$("#consultas, #treg").slideUp("slow");
+				$(".btnaction").addClass("btnaction2");
+
+			});
+
+						
+			$("#r1").click(function(){
+				$("#confel").slideToggle("slow");
+				$(".iconos ul > li:nth-of-type(3),.iconos ul > li:nth-of-type(4),.iconos ul > li:nth-of-type(5)").slideToggle("slow");
+				$(".main ul > li:nth-of-type(6),.main ul > li:nth-of-type(5),.main ul > li:nth-of-type(4)").slideToggle("slow");
+				if ($(this).hasClass("radselect")) {
+					$(this).removeClass("radselect");
+				}else{
+					$(this).addClass("radselect");
+				}
+				
+			});
+			$("#r2").click(function(){
+				$("#confel").slideToggle("slow");
+				$(".iconos ul > li:nth-of-type(4),.iconos ul > li:nth-of-type(5)").slideToggle("slow");
+				$(".main ul > li:nth-of-type(6),.main ul > li:nth-of-type(5)").slideToggle("slow");
+				if ($(this).hasClass("radselect")) {
+					$(this).removeClass("radselect");
+				}else{
+					$(this).addClass("radselect");
+				}
+
+
+			});
+			$("#r3").click(function(){
+				$("#confel").slideToggle("slow");
+				$(".iconos ul > li:nth-of-type(5)").slideToggle("slow");
+				$(".main ul > li:nth-of-type(6)").slideToggle("slow");
+				if ($(this).hasClass("radselect")) {
+					$(this).removeClass("radselect");
+				}else{
+					$(this).addClass("radselect");
+				}
+			
+			});
+			$("#r4").click(function(){
+				$("#confel").slideToggle("slow");
+				if ($(this).hasClass("radselect")) {
+					$(this).removeClass("radselect");
+				}else{
+					$(this).addClass("radselect");
+				}
+			
+			});
+
+			////////////////////////////////////////////////
+
+			$("#r5").click(function(){
+				
+				$("#save").slideToggle("slow");
+				$(".textedit").slideToggle("slow");
+				$(".textedit #text1").attr("placeholder","1234****5678");
+				$(".textedit #text2").attr("placeholder","Efrain Juarez");
+				$(".textedit #text3").attr("placeholder","Efrain Juarez");
+				$(".textedit #text4").attr("placeholder","Banorte");
+				//alert(pl);
+				//$(".main ul > li:nth-of-type(5)").slideToggle("slow");
+				$(".iconos ul > li:nth-of-type(3),.iconos ul > li:nth-of-type(4),.iconos ul > li:nth-of-type(5)").slideToggle("slow");
+				$(".main ul > li:nth-of-type(6),.main ul > li:nth-of-type(5),.main ul > li:nth-of-type(4)").slideToggle("slow");
+				if ($(this).hasClass("radselect")) {
+					$(this).removeClass("radselect");
+				}else{
+					$(this).addClass("radselect");
+				}
+				
+			});
+			$("#r6").click(function(){
+				$("#save").slideToggle("slow");
+				$(".textedit").slideToggle("slow");
+				$(".textedit #text1").attr("placeholder","1234****5678");
+				$(".textedit #text2").attr("placeholder","Elba Solis");
+				$(".textedit #text3").attr("placeholder","Elba Solis");
+				$(".textedit #text4").attr("placeholder","HSBC");
+				//$(".main ul > li:nth-of-type(5)").slideToggle("slow");
+				$(".iconos ul > li:nth-of-type(4),.iconos ul > li:nth-of-type(5)").slideToggle("slow");
+				$(".main ul > li:nth-of-type(6),.main ul > li:nth-of-type(5)").slideToggle("slow");
+				if ($(this).hasClass("radselect")) {
+					$(this).removeClass("radselect");
+				}else{
+					$(this).addClass("radselect");
+				}
+
+
+			});
+			$("#r7").click(function(){
+				$("#save").slideToggle("slow");
+				$(".textedit").slideToggle("slow");
+				$(".textedit #text1").attr("placeholder","1234****5678");
+				$(".textedit #text2").attr("placeholder","Diana Cruz");
+				$(".textedit #text3").attr("placeholder","Diana Cruz");
+				$(".textedit #text4").attr("placeholder","Santander");
+				//$(".main ul > li:nth-of-type(7)").slideToggle("slow");
+				//$(".main ul > li:nth-of-type(5)").slideToggle("slow");
+				$(".iconos ul > li:nth-of-type(5)").slideToggle("slow");
+				$(".main ul > li:nth-of-type(6)").slideToggle("slow");
+				if ($(this).hasClass("radselect")) {
+					$(this).removeClass("radselect");
+				}else{
+					$(this).addClass("radselect");
+				}
+			
+			});
+			$("#r8").click(function(){
+				$(".textedit").slideToggle("slow");
+				//$(".main ul > li:nth-of-type(5)").slideToggle("slow");
+				$("#save").slideToggle("slow");
+				$(".textedit #text1").attr("placeholder","1234****5678");
+				$(".textedit #text2").attr("placeholder","Esteban García");
+				$(".textedit #text3").attr("placeholder","Esteban García");
+				$(".textedit #text4").attr("placeholder","Bancomer");
+				if ($(this).hasClass("radselect")) {
+					$(this).removeClass("radselect");
+				}else{
+					$(this).addClass("radselect");
+				}
+			
+			});
+
+			////////////////////////////////////////////////////////////////////
+
+
+
+			$("#imagen1").mouseover(function(){
+				$("#infotext1").css("display","inline");
+			});
+			$("#imagen1").mouseout(function(){
+				$("#infotext1").css("display","none");
+			});
+
+			
+			$("#imagen2").mouseover(function(){
+				$("#infotext2").css("display","inline");
+			});
+			$("#imagen2").mouseout(function(){
+				$("#infotext2").css("display","none");
+			});
+
+			$("#imagen3").mouseover(function(){
+				$("#infotext3").css("display","inline");
+			});
+			$("#imagen3").mouseout(function(){
+				$("#infotext3").css("display","none");
+			});
+
+
+			$("#imagen4").mouseover(function(){
+				$("#infotext4").css("display","inline");
+			});
+			$("#imagen4").mouseout(function(){
+				$("#infotext4").css("display","none");
+			});
+
+			
+		
+		});
+	</script>
+</head>
+
+<body>
+
+	<div id="widampliado">
+		<div>
+			<p>PAGO TARJETA DE CRÉDITO</p>
+			<div></div>
+			<div></div>
+		</div>
+		<div>
+			<img src="widgets/max/w_13/img/paso_1.png" class="steps"/>			
+		</div>
+		
+		<div class="navegador">
+			<ul>
+				<li>
+ 					<p onclick="$('.m1').fadeIn();$('.m3').hide();">Mis TDC Santander</p>
+				</li>
+				<li>
+					<p>A otras tarjetas</p>
+				</li>
+				<li style="height:35px; padding-bottom:7px;">
+					<p onclick="$('.m1').hide();$('.m3').fadeIn();" style="width:100px;">Consulta de tarjetas/Alta/Baja</p>
+				</li>
+			</ul>
+		</div>
+			
+		<div class="m3">
+			<div id="titulo" style="color:red">Seleccione la(s) tarjeta(s) que desea pagar.</div>
+			
+			<div class="mk" style="border:solid 1px silver; margin-top:15px; margin-left:40px; width:79%; text-align:left; height:25px; font-size:12px;">
+				<span style="position:relative; top:5px;">DAR DE ALTA UNA TARJETA</span>
+				<div class="btnaction"></div>
+			</div>
+			
+			<div  id="treg" style="margin-top:20px; margin-left:48px; width:79%; font-size: 11px; font-family: Arial, sans-serif, Helvetica;">Tarjetas registradas <a href="../docs/pantalla" title="Exportar"><div id="exportar"></div></a></div>
+
+			<div class"cons"  id="consultas" style="border:solid 1px silver; margin-top:10px; margin-left:40px; width:79%; height:176px; text-align:left;">
+				<div class="cols main" id="c1">
+					<ul>
+						<li>Número de tarjeta</li>
+						<li>1234****5678</li>
+						<li>1234****5678</li>
+						<li>1234****5678</li>
+						
+						<li>1234****5678</li>
+						<li>1234****5678</li>
+					</ul>
+					<div class="textedit"><input type="" id="text1" style="width:80px;" placeholder="xx"></div>
+				</div>
+				<div class="cols main" id="c2">
+					<ul>
+						<li>Nombre del titular</li>
+						<li>Adrian Moráles </li>
+						<li>Efrain Juarez</li>
+						<li>Elba Solis</li>
+					
+						<li>Diana Cruz</li>
+						<li>Esteban García</li>
+					</ul>
+					<div class="textedit"><input type="" id="text2"style="width:80px;" placeholder="xx"></div>
+				</div>
+				<div class="cols main" id="c3">
+					<ul>
+						<li>Alias</li>
+						<li>Adrian Moráles </li>
+						<li>Efrain Juarez</li>
+						<li>Elba Solis</li>
+					
+						<li>Diana Cruz</li>
+						<li>Esteban García</li>
+					</ul>
+					<div class="textedit"><input type="" id="text3" style="width:80px;" placeholder="xx"></div>
+				</div>
+				<div class="cols main" id="c4">
+					<ul>
+						<li>Banco</li>
+						<li>Banamex</li>
+						<li>Banorte</li>
+						<li>HSBC</li>
+				
+						<li>Santander</li>
+						<li>Bancomer</li>
+					</ul>
+					<div class="textedit"><input type="" id="text4" style="width:80px;" placeholder="xx"></div>
+				</div>
+				<div class="cols iconos">
+					<ul>
+						<li><div id="infotext1"><div class="deletetext" >Eliminar tarjeta</div></div><img id="imagen1" src="widgets/max/w_13/img/elipse.png" style="margin-bottom:9px;"></li>
+						<li><div class="rad" id="r1"></div></li>
+						<li><div class="rad" id="r2"></div></li>
+						<li><div class="rad" id="r3"></div></li>
+						<li><div class="rad" id="r4"></div></li>
+					</ul>
+					<div id="save"><input type="submit" value="Guardar"></div>
+					<div id="confel"><input type="submit" value="Confirmar eliminar"></div>
+				</div>
+				<div class="cols iconos">
+					<ul>
+						<li><div id="infotext2"><div class="deletetext" >Editar tarjeta</div></div><img id="imagen2" src="widgets/max/w_13/img/EDITAR.png"  style="margin-bottom:9px;"></li>
+						<li><div class="rad" id="r5"></div></li>
+						<li><div class="rad" id="r6"></div></li>
+						<li><div class="rad" id="r7"></div></li>
+						<li><div class="rad" id="r8"></div></li>
+					</ul>
+				</div>
+				<div class="cols iconos">
+					<ul>
+						<li><div id="infotext3"><div class="deletetext" >Imprimir tarjeta</div></div><img id="imagen3" src="widgets/max/w_13/img/imprimir.png"  style="margin-bottom:10px;"></li>
+						<li><div class="rad" id="r9"></div></li>
+						<li><div class="rad" id="r10"></div></li>
+						<li><div class="rad" id="r11"></div></li>
+						<li><div class="rad" id="r12"></div></li>
+					</ul>
+				</div>
+				<div class="cols iconos">
+					<ul>
+						<li><div id="infotext4"><div class="deletetext" >Agregar a favorito</div></div><img id="imagen4" src="widgets/max/w_13/img/FAVORITO.png"  style="margin-bottom:10px;"></li>
+						<li><div class="rad" id="r13"></div></li>
+						<li><div class="rad" id="r14"></div></li>
+						<li><div class="rad" id="r15"></div></li>
+						<li><div class="rad" id="r16"></div></li>
+					</ul>
+				</div>
+			</div>
+			<div style="border:solid 1px silver; margin-top:15px; margin-left:40px; width:79%; text-align:left; height:25px; font-size:12px;">
+				<span style="position:relative; top:5px;">DAR DE ALTA UNA TARJETA</span>
+				<div id="btnaction" class="btnaction2"></div>
+			</div>
+			<div id="altas" style="margin-top:10px; margin-left:40px; width:79%; height:180px; text-align:left;">
+				<div style="font-size: 11px; font-family: Arial, sans-serif, Helvetica;">Favor de ingresar la siguiente información para dar de alta una nueva tarjeta.</div>
+				<div class="cols2">
+					<ul>
+						<li>Número de cuenta</li>
+						<li><input type="text" value="1234****5678"></li>
+					</ul>
+				</div>
+				<div class="cols2">
+					<ul>
+						<li>Nombre del titular de la tarjeta</li>
+						<li><input type="text" placeholder="Arturo Carmona"></li>
+					</ul>
+				</div>
+				<div class="cols2">
+					<ul>
+						<li>Alias de la tarjeta</li>
+						<li><input type="text" placeholder="Artur89"></li>
+					</ul>
+				</div>
+				<div class="cols2">
+					<ul>
+						<li>Correo electrónico del titular</li>
+						<li><input type="text" placeholder="artur89@webmail.com"></li>
+					</ul>
+				</div>
+				<div class="cols2">
+					<ul>
+						<li>Banco</li>
+						<li><input type="text" placeholder="Skotiabank Inverlat"></li>
+					</ul>
+				</div>
+				<div class="cols2">
+					<ul>
+						<li>R.F.C</li>
+						<li><input type="text" placeholder="CEST850421LMH"></li>
+					</ul>
+				</div>
+			</div>
+		<div class="botonera">
+			<div class="btn">Calendario de operaciones</div>
+			<div class="btnaceptar">Continuar</div>
+		</div>
+		</div>
+		<div class="m1" style="display:none">
+					<h2>Seleccione la(s) tarjeta(s) registradas que desee pagar.</h2>
+		<!-- div exportar -->
+			<div class="exportar">
+				<p>Exportar</p>	
+				<div class="ico"></div>
+			</div>
+		<!-- Fin div exportar -->
+
+		<!-- Tabs -->
+		<ul id="tabs">
+			<li class="current"><a href="#tab1"><span class="texto">Mis tarjetas 3</span></a></li>
+			<li><a href="#tab2"><span class="texto">Tarjetas a pagar 1</span></a></li>
+		</ul>
+		<!-- Tabs container / content -->
+		<div id="content">
+			<div id="tab1" class="current">
+				<table  class="tablaDot" style="border-collapse: collapse;">
+					<tr>
+						<td class="marco"></td>
+						<td class="marco"><div class="infoCabecera">Pago minimo(MXP)</div></td>
+						<td class="marco"><div class="infoCabecera2">Para no generar interéses(MXP)</div></td>
+						<td class="marco"><span class="infoCabecera">Fecha límite de pago</span></td>
+						<td><img class="estrella" src="widgets/max/w_13/img/estrella.png"/></td>
+					</tr>
+					<tr>
+						<td class="marco">
+						<table class="posicionTabla">
+							<tr>
+								<td><div class="tarjeta"></div></td>
+								<td>
+									<span class="infoTxt">Elite Rewards Platino</span>
+									<span class="infoTxt">1234****5678</span>
+								</td>
+							</tr>
+						</table>
+						
+						</td>
+						<td class="marco" style="width: 165px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 174px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 136px;"><span class="infoNum">01/01/2014</span></td>
+						<td style="width: 45px;"><div class="radio"></div></td>
+					</tr>
+					<tr class="seleccionado">
+						<td class="marco">
+						<table class="posicionTabla">
+							<tr>
+								<td><div class="tarjeta"></div></td>
+								<td>
+									<span class="infoTxt">Elite Rewards Platino</span>
+									<span class="infoTxt">1234****5678</span>
+								</td>
+							</tr>
+						</table>
+						
+						</td>
+						<td class="marco" style="width: 165px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 174px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 136px;"><span class="infoNum">01/01/2014</span></td>
+						<td style="width: 45px;"><div class="radio"></div></td>
+					</tr>
+					<tr>
+						<td class="marco">
+						<table class="posicionTabla">
+							<tr>
+								<td><div class="tarjeta"></div></td>
+								<td>
+									<span class="infoTxt">Elite Rewards Platino</span>
+									<span class="infoTxt">1234****5678</span>
+								</td>
+							</tr>
+						</table>
+						
+						</td>
+						<td class="marco" style="width: 165px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 174px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 136px;"><span class="infoNum">01/01/2014</span></td>
+						<td style="width: 45px;"><div class="radio"></div></td>
+					</tr>
+				</table>
+			</div>
+			<div id="tab2">
+				<table  class="tablaDot" style="border-collapse: collapse;">
+					<tr>
+						<td class="marco"></td>
+						<td class="marco"><div class="infoCabecera">Pago minimo(MXP)</div></td>
+						<td class="marco"><div class="infoCabecera2">Para no generar interéses(MXP)</div></td>
+						<td class="marco"><span class="infoCabecera">Fecha límite de pago</span></td>
+						<td><img class="estrella" src="widgets/max/w_13/img/tornillo.png"/></td>
+					</tr>
+					<tr>
+						<td class="marco">
+						<table class="posicionTabla">
+							<tr>
+								<td><div class="tarjeta"></div></td>
+								<td>
+									<span class="infoTxt">Elite Rewards Platino</span>
+									<span class="infoTxt">1234****5678</span>
+								</td>
+							</tr>
+						</table>
+						
+						</td>
+						<td class="marco" style="width: 165px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 174px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 136px;"><span class="infoNum">01/01/2014</span></td>
+						<td style="width: 45px;"><div class="radio"></div></td>
+					</tr>
+					<tr class="seleccionado">
+						<td class="marco">
+						<table class="posicionTabla">
+							<tr>
+								<td><div class="tarjeta"></div></td>
+								<td>
+									<span class="infoTxt">Elite Rewards Platino</span>
+									<span class="infoTxt">1234****5678</span>
+								</td>
+							</tr>
+						</table>
+						
+						</td>
+						<td class="marco" style="width: 165px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 174px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 136px;"><span class="infoNum">01/01/2014</span></td>
+						<td style="width: 45px;"><div class="radio"></div></td>
+					</tr>
+					<tr>
+						<td class="marco">
+						<table class="posicionTabla">
+							<tr>
+								<td><div class="tarjeta"></div></td>
+								<td>
+									<span class="infoTxt">Elite Rewards Platino</span>
+									<span class="infoTxt">1234****5678</span>
+								</td>
+							</tr>
+						</table>
+						
+						</td>
+						<td class="marco" style="width: 165px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 174px;"><span class="infoNum">9,999,999.99</span></td>
+						<td class="marco" style="width: 136px;"><span class="infoNum">01/01/2014</span></td>
+						<td style="width: 45px;"><div class="radio"></div></td>
+					</tr>
+				</table>
+			</div>
+		</div><!-- End tab-->
+		<div class="oculta">
+			<div class="divLista">
+				<p>Introduzca el nombre, alias o los últimos cuatro dígitos de la cuenta de cargo seleccione la lista:</p>
+				<!-- checar la lista mas actual -->
+				<table>
+					<tr><td>						
+						<input type="text" id="autocompleteQ" placeholder="1234****5678        Elite Rewards Platino       Alias     999,999,999.00 (MXP)" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+					</td><td>
+
+					<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+
+							<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span> </td>
+					</td></tr>
+
+				</table>
+			</div>
+			<div class="divFlotante">
+				<span class="txtPago">Pago mínimo:</span>
+				<div class="imagen"></div>
+				<input  class="input" type="text" value="9,999,999.99"/><span class="mxp">(MXP)</span>
+				<span class="txtPago">Concepto:</span>
+				<input  class="input2" type="text" value="123456789"/>
+			</div>
+			<div class="divFlotante">
+				<span class="txtPago">Pago mínimo:</span>
+				<div class="imagen"></div>
+				<input  class="input" type="text" disabled value="9,999,999.99"/><span class="mxp">(MXP)</span>
+				<span class="txtPago">Programar fecha:</span>
+				<div class="switchCont">
+					<div id="switchBox">
+						<div class="switchSlide">					
+								<div class="switchLabel"><span class="switchs">Si</span></div>
+								<div class="switchIndicador"></div>
+								<div class="switchLabelR"><span span class="switchs">No</span></div>				
+						</div>
+					</div>		
+				</div>
+				<div id="ico" class="calicoNo"></div>
+				<input class="input3"  id="dia" value="01/01/2013" disabled='disabled' type="text"/>
+			</div>
+			<div class="divFlotante">
+				<span class="txtPago">Pago mínimo:</span>
+				<div class="imagen"></div>
+				<input  class="input" type="text" disabled value="9,999,999.99"/><span class="mxp">(MXP)</span>
+			</div>
+		</div>
+
+		<div class="botonera">
+			<div class="btn calendario">Calendario de pago</div>
+			<div class="btn">Agregar otro pago</div>
+			<div class="btnaceptar">Continuar</div>
+		</div>
+		</div>
+
+	</div>
+	
+</body>
+</html>
