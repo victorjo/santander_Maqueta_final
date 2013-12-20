@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf8"/>
 	<title>Pago de tarjeta de crédito</title>
-	<script src="widgets/max/w_13/js/jquery10.2.min.js"></script>
+	<!--<script src="widgets/max/w_13/js/jquery10.2.min.js"></script>-->
+	<script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
 	<script src="widgets/max/w_13/js/ddSlick.js"></script>
 	<script src="widgets/max/w_13/js/paso3.js"></script>
 	<link rel="stylesheet" href="widgets/max/w_13/css/paso3.css" />
@@ -213,17 +214,17 @@
 		<div class="navegador">
 			<ul>
 				<li>
- 					<p onclick="$('.m1').fadeIn();$('.m3').hide();">Mis TDC Santander</p>
+ 					<p onclick="$('.m1').fadeIn();$('.m3').hide();$('.m2').hide();">Mis TDC Santander</p>
 				</li>
 				<li>
-					<p>A otras tarjetas</p>
+					<p onclick="$('.m1').hide();$('.m3').fadeOut();$('.m2').fadeIn('fast');">A otras tarjetas</p>
 				</li>
 				<li style="height:35px; padding-bottom:7px;">
 					<p onclick="$('.m1').hide();$('.m3').fadeIn();" style="width:100px;">Consulta de tarjetas/Alta/Baja</p>
 				</li>
 			</ul>
 		</div>
-			
+	
 		<div class="m3">
 			<div id="titulo" style="color:red">Seleccione la(s) tarjeta(s) que desea pagar.</div>
 			
@@ -373,10 +374,7 @@
 		<div class="m1" style="display:none">
 					<span class="textoH2">Seleccione la(s) tarjeta(s) registradas que desee pagar.</span>
 		<!-- div exportar -->
-			<div class="exportar">
-				<p>Exportar</p>	
-				<div class="ico"></div>
-			</div>
+			<div class="exportar"></div>
 		<!-- Fin div exportar -->
 
 		<!-- Tabs -->
@@ -389,10 +387,10 @@
 			<div id="tab1" class="current">
 				<table  class="tablaDot" style="border-collapse: collapse;">
 					<tr>
-						<td class="marco"></td>
-						<td class="marco"><div class="infoCabecera">Pago minimo(MXP)</div></td>
-						<td class="marco"><div class="infoCabecera2">Para no generar interéses(MXP)</div></td>
-						<td class="marco"><span class="infoCabecera">Fecha límite de pago</span></td>
+						<td></td>
+						<td><span>Pago mínimo (MXP)</span></td>
+						<td ><span>Para no generar interéses(MXP)</span></td>
+						<td><span>Fecha límite de pago</span></td>
 						<td><img class="estrella" src="widgets/max/w_13/img/favorito.png"/></td>
 					</tr>
 					<tr>
@@ -408,10 +406,10 @@
 						</table>
 						
 						</td>
-						<td class="marco" style="width: 165px;"><span class="infoNum">9,999,999.99</span></td>
-						<td class="marco" style="width: 174px;"><span class="infoNum">9,999,999.99</span></td>
-						<td class="marco" style="width: 136px;"><span class="infoNum">01/01/2014</span></td>
-						<td style="width: 45px;"><div class="radios"></div></td>
+						<td><span class="infoNum">9,999,999.99</span></td>
+						<td><span class="infoNum">9,999,999.99</span></td>
+						<td><span class="infoNum">01/01/2014</span></td>
+						<td><div class="radioEstrella"></div></td>
 					</tr>
 					<tr class="seleccionado">
 						<td class="marco">
@@ -426,10 +424,10 @@
 						</table>
 						
 						</td>
-						<td class="marco" style="width: 165px;"><span class="infoNum">9,999,999.99</span></td>
-						<td class="marco" style="width: 174px;"><span class="infoNum">9,999,999.99</span></td>
-						<td class="marco" style="width: 136px;"><span class="infoNum">01/01/2014</span></td>
-						<td style="width: 45px;"><div class="radios"></div></td>
+						<td><span class="infoNum">9,999,999.99</span></td>
+						<td><span class="infoNum">9,999,999.99</span></td>
+						<td><span class="infoNum">01/01/2014</span></td>
+						<td><div class="radioEstrella"></div></td>
 					</tr>
 					<tr>
 						<td class="marco">
@@ -444,21 +442,21 @@
 						</table>
 						
 						</td>
-						<td class="marco" style="width: 165px;"><span class="infoNum">9,999,999.99</span></td>
-						<td class="marco" style="width: 174px;"><span class="infoNum">9,999,999.99</span></td>
-						<td class="marco" style="width: 136px;"><span class="infoNum">01/01/2014</span></td>
-						<td style="width: 45px;"><div class="radios"></div></td>
+						<td><span class="infoNum">9,999,999.99</span></td>
+						<td><span class="infoNum">9,999,999.99</span></td>
+						<td><span class="infoNum">01/01/2014</span></td>
+						<td><div class="radioEstrella"></div></td>
 					</tr>
 				</table>
 			</div>
 			<div id="tab2">
 				<table  class="tablaDot" style="border-collapse: collapse;">
 					<tr>
-						<td class="marco"></td>
-						<td class="marco"><div class="infoCabecera">Pago minimo(MXP)</div></td>
-						<td class="marco"><div class="infoCabecera2">Para no generar interéses(MXP)</div></td>
-						<td class="marco"><span class="infoCabecera">Fecha límite de pago</span></td>
-						<td><img class="estrella" src="widgets/max/w_13/img/tornillo.png"/></td>
+						<td></td>
+						<td><span>Pago mínimo (MXP)</span></td>
+						<td ><span>Para no generar interéses(MXP)</span></td>
+						<td><span>Fecha límite de pago</span></td>
+						<td><img class="estrella" src="widgets/max/w_13/img/favorito.png"/></td>
 					</tr>
 					<tr>
 						<td class="marco">
@@ -473,10 +471,10 @@
 						</table>
 						
 						</td>
-						<td class="marco" style="width: 165px;"><span class="infoNum">9,999,999.99</span></td>
-						<td class="marco" style="width: 174px;"><span class="infoNum">9,999,999.99</span></td>
-						<td class="marco" style="width: 136px;"><span class="infoNum">01/01/2014</span></td>
-						<td style="width: 45px;"><div class="radios"></div></td>
+						<td><span class="infoNum">9,999,999.99</span></td>
+						<td><span class="infoNum">9,999,999.99</span></td>
+						<td><span class="infoNum">01/01/2014</span></td>
+						<td><div class="radioEstrella"></div></td>
 					</tr>
 					<tr class="seleccionado">
 						<td class="marco">
@@ -491,10 +489,10 @@
 						</table>
 						
 						</td>
-						<td class="marco" style="width: 165px;"><span class="infoNum">9,999,999.99</span></td>
-						<td class="marco" style="width: 174px;"><span class="infoNum">9,999,999.99</span></td>
-						<td class="marco" style="width: 136px;"><span class="infoNum">01/01/2014</span></td>
-						<td style="width: 45px;"><div class="radios"></div></td>
+						<td><span class="infoNum">9,999,999.99</span></td>
+						<td><span class="infoNum">9,999,999.99</span></td>
+						<td><span class="infoNum">01/01/2014</span></td>
+						<td><div class="radioEstrella"></div></td>
 					</tr>
 					<tr>
 						<td class="marco">
@@ -509,21 +507,21 @@
 						</table>
 						
 						</td>
-						<td class="marco" style="width: 165px;"><span class="infoNum">9,999,999.99</span></td>
-						<td class="marco" style="width: 174px;"><span class="infoNum">9,999,999.99</span></td>
-						<td class="marco" style="width: 136px;"><span class="infoNum">01/01/2014</span></td>
-						<td style="width: 45px;"><div class="radios"></div></td>
+						<td><span class="infoNum">9,999,999.99</span></td>
+						<td><span class="infoNum">9,999,999.99</span></td>
+						<td><span class="infoNum">01/01/2014</span></td>
+						<td><div class="radioEstrella"></div></td>
 					</tr>
 				</table>
 			</div>
 		</div><!-- End tab-->
 		<div class="oculta">
 			<div class="divLista">
-				<p>Introduzca el nombre, alias o los últimos cuatro dígitos de la cuenta de cargo seleccione la lista:</p>
+				<span>Introduzca el nombre, alias o los últimos cuatro dígitos de la cuenta de cargo seleccione la lista:</span>
 				<!-- checar la lista mas actual -->
 				<table>
 					<tr><td>						
-						<input type="text" id="autocompleteQ" placeholder="1234****5678        Elite Rewards Platino       Alias     999,999,999.00 (MXP)" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+						<input type="text" id="autocompleteQ" placeholder="1234****5678        Elite Rewards Platino       Alias     999,999,999.00 (MXP)" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;" class="acomodo"> 
 					</td><td>
 
 					<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
@@ -533,17 +531,16 @@
 
 				</table>
 			</div>
+			
 			<div class="divFlotante">
-				<span class="txtPago">Pago mínimo:</span>
+				<span class="txtPago">Otra cantidad:</span>
 				<div class="imagen"></div>
-				<input  class="input" type="text" value="9,999,999.99"/><span class="mxp">(MXP)</span>
-				<span class="txtPago">Concepto:</span>
-				<input  class="input2" type="text" value="123456789"/>
+				<input  class="input1" type="text" value="9,999,999.99"/><span class="mxp">(MXP)</span>
 			</div>
 			<div class="divFlotante">
-				<span class="txtPago">Pago mínimo:</span>
+				<span class="txtPago">Pago para no generar intereses:</span>
 				<div class="imagen"></div>
-				<input  class="input" type="text" disabled value="9,999,999.99"/><span class="mxp">(MXP)</span>
+				<input  class="input1" type="text" disabled value="9,999,999.99"/><span class="mxp">(MXP)</span>
 				<span class="txtPago">Programar fecha:</span>
 				<div class="switchCont">
 					<div id="switchBox">
@@ -560,8 +557,11 @@
 			<div class="divFlotante">
 				<span class="txtPago">Pago mínimo:</span>
 				<div class="imagen"></div>
-				<input  class="input" type="text" disabled value="9,999,999.99"/><span class="mxp">(MXP)</span>
+				<input  class="input1" type="text" value="9,999,999.99"/><span class="mxp">(MXP)</span>
+				<span class="txtPago">Concepto:</span>
+				<input  class="input2" type="text" value="123456789"/>
 			</div>
+			
 		</div>
 
 		<div class="botonera">
@@ -571,6 +571,126 @@
 		</div>
 		</div>
 
+		<!-- m2 -->
+		<div class="m2" style="display:none">
+			<h2>Seleccione la(s) tarjeta(s) que desee pagar.</h2>
+	
+					<div id="pagoTDC">
+						<!-- div exportar -->
+						<div class="exportar_tar"></div>
+					<!-- Fin div exportar -->	
+					<p>Tarjetas registradas</p>
+					<table class="cardList">
+						<tr>
+							<th>Número de tarjeta</th>
+							<th>Banco</th>
+							<th>Alias</th>
+							<th><img class="estrellaCuenta" src="widgets/max/w_13/img/favorito.png"/></th>
+						</tr>
+						<tr>
+							<td>1234****5678</td>
+							<td>Lorem Ipsum</td>
+							<td>Lorem Ipsum</td>
+							<td><div class="radioEstrella"></div></td>
+						</tr>
+						<tr  class="seleccionado">
+							<td>1234****5678</td>
+							<td>Lorem Ipsum</td>
+							<td>Lorem Ipsum</td>
+							<td><div class="radioEstrella"></div></td>
+						</tr>
+						<tr>
+							<td>1234****5678</td>
+							<td>Lorem Ipsum</td>
+							<td>Lorem Ipsum</td>
+							<td><div class="radioEstrella"></div></td>
+						</tr>
+						<tr>
+							<td>1234****5678</td>
+							<td>Lorem Ipsum</td>
+							<td>Lorem Ipsum</td>
+							<td><div class="radioEstrella"></div></td>
+						</tr>
+						<tr>
+							<td>1234****5678</td>
+							<td>Lorem Ipsum</td>
+							<td>Lorem Ipsum</td>
+							<td><div class="radioEstrella"></div></td>
+						</tr>
+					</table>
+					
+					<p>Si la tarjeta deseada no se encuentra en la lista lo invitamos a registrarla <span class="sub">Aquí.</span></p>
+					
+					<p>Introduzca el nombre, alias o los últimos cuatro dígitos de la cuenta de cargo o seleccionela de la lista</p>
+					<div class="lista">
+						<table>
+							<tr><td>						
+								<input type="text" id="autocompleteQ1" placeholder="1234****5678        Elite Rewards Platino       Alias     999,999,999.00 (MXP)" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;" class="acomodo"> 
+							</td><td>
+
+							<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+
+									<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span> </td>
+							</td></tr>
+
+						</table>
+					</div>
+					
+					<div id="datos">
+						<div>
+							<p>Importe:</p>
+							<input class="input4" type="text" placeholder="999,999,999.00"/>
+						</div>				
+						<div>
+							<p>Concepto:</p>
+							<input class="input4" type="text" placeholder="123456789" />
+						</div>	
+					</div>
+
+
+					<div id="programar">
+					
+						<p>Programar fecha:</p>
+						<div id="switchBoxT">
+							<div class="switchSlide">					
+								<div class="switchLabel"><span class="switchs">si</span></div>
+								<div class="switchIndicador"></div>
+								<div class="switchLabelR"><span class="switchs">no</span></div>				
+							</div>
+						</div>
+						<div class="dateInput">
+							<div id="icoT" class="calicoNoT"></div>
+							<input id="diaT" class="input5" type="text" disabled='disabled' value="01/01/2013"/>
+						</div>					
+					</div>
+				
+					
+					<!--div class="switchCont">
+					<p>Transferencias de saldos de otras <br/>
+					tarjetas de crédito</p>
+					<div id="switchBox">
+						<div class="switchSlide">					
+								<div class="switchLabel"></div>
+								<div class="switchIndicador"></div>
+								<div class="switchLabelR"></div>				
+						</div>
+					</div>			
+					<p>Disposición de tarjeta<br/>
+						a cuenta de cheques</p>			
+				</div>-->
+
+				</div>
+				
+				<div class="botonera">
+					<div class="btn">Calendario de Operaciones</div>
+					<div class="btnaceptar">Continuar</div>
+				</div>
+				
+			</div>
+		</div>
+
+
+		
 	</div>
 	
 </body>

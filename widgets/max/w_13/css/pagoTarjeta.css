@@ -356,7 +356,7 @@ span{
 	display: none;
 	position: absolute;
 	margin-left: 10px;
-	width: 734px;
+	width: 744px;
 }
 
 #content .current{
@@ -381,7 +381,6 @@ span{
 
 .infoNum{
 	margin-top: -15px;
-	margin-left: 10px;
 }
 
 .infoCabecera{
@@ -389,11 +388,6 @@ span{
 	margin-left: 10px;
 }
 
-.infoCabecera2{
-	width: 184px;
-	margin-left: 9px;
-	margin-top: 3px;
-}
 
 .posicionTabla{
 	width: 198px;
@@ -403,7 +397,7 @@ span{
 .estrella{
 	position: absolute;
 	margin-top: -7px;
-	margin-left: 12px
+	margin-left: 12px;
 
 }
 
@@ -423,8 +417,9 @@ span{
 .divFlotante{
 	width: 238px;
 	height: 130px;
-	float: left;
-	margin-left: 13px;
+	float: right;
+	margin-right: 11px;
+	margin-top: -5px;
 
 }
 
@@ -437,7 +432,7 @@ span{
 
 }
 
-.input {
+.input1{
    background-color: #E8E8E8;
 	border: 1px solid #a4a4a4;
 	box-shadow: 1px 1px 5px #C6C6C6 inset;
@@ -503,16 +498,18 @@ span{
 	background-image: url('../../../../img/iconos/radioSel.png');
 }
 
-.radios{
+.radioEstrella{
 	width: 20px;
 	height: 20px;
 	background-image: url('../../../../img/iconos/radio.png');
 	background-size: 100% 100%;
+	margin-right: 13px;
 	margin-left: 15px;
-	margin-top: -15px;
+	margin-top: 2px;
+	float: left;
 }
 
-.radios:hover{
+.radioEstrella:hover{
 	cursor: pointer;
 }
 
@@ -548,6 +545,18 @@ span{
 	float:left;
 	position:relative;
 	overflow:hidden;
+	margin-top: -2px;
+}
+
+#switchBoxT{
+	border:1px #a6a6a6 solid;
+	width:78px;
+	height:28px;
+	margin:0 0 0 10px;
+	float:left;
+	position:relative;
+	overflow:hidden;
+	margin-top: 8px;
 }
 
 .switchSlide{
@@ -592,7 +601,7 @@ span{
 .txtPago{
 	float: left;
 	margin-top: 9px;
-	margin-left: 35px;	
+	margin-left: 36px;
 }
 
 .mxp{
@@ -607,35 +616,20 @@ span{
 }
 
 .exportar{
-	width: 86px;
+	width: 80px;
 	height: 22px;
-	float: right;
-	margin-right: 8px;
-	margin-top: 38px;
-}
-
-.exportar p{
-	color: #4a76ec;
-	text-decoration: underline; 
-	margin-top: 2px;
-	margin-left: 7px;
-	cursor: pointer;
-}
-
-.ico{
-	width: 20px;
-	height: 20px;
-	background-image: url('../../img/excel.png');
+	background-image: url('../img/exportar.png');
 	background-size: 100% 100%;
 	float: right;
-	margin-top: -28px;
-	margin-right: 12px;
+	margin-right: 31px;
+	margin-top: 38px;
+	cursor: pointer;
 }
 
 .calico{
 	width: 30px;
 	height: 30px;
-	background-image: url('../../img/calendario.png');
+	background-image: url('../../../../img/iconos/calendario.png');
 	background-size: 100% 100%;
 	float: left;
 	margin-top: -38px;
@@ -650,7 +644,7 @@ span{
 .calicoNo{
 	width: 30px;
 	height: 30px;
-	background-image: url('../../img/calendarioNo.png');
+	background-image: url('../../../../img/iconos/calendario.png');
 	background-size: 100% 100%;
 	float: left;
 	margin-top: -38px;
@@ -658,3 +652,385 @@ span{
 }
 
 /*----- Fin -----*/
+
+/*Clase de Tabla Mis TDC Santander */
+.tablaDot {
+	color: #626262;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	width: 744px;
+	height: 180px;
+	float:left;
+}
+
+.tablaDot th{
+	color:#282828;
+	height:20px;
+	text-align:left;
+	padding-left:10px;
+	padding-top:5px;
+	border-left:1px #c7c7c7 dashed;
+
+}
+
+.tablaDot th:nth-of-type(1){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+	width:198px;
+}
+
+.tablaDot th:nth-of-type(2){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+	width:173px;
+}
+
+.tablaDot th:nth-of-type(3){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+	width:173px;
+}
+
+.tablaDot th:nth-of-type(4){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+	width:63px;
+}
+
+
+.tablaDot td{
+	height:5px;
+}
+
+.tablaDot td:nth-of-type(1){
+	padding-left:10px;
+
+}
+
+.tablaDot td:nth-of-type(2){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+
+}
+
+.tablaDot td:nth-of-type(3){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+	
+}
+
+.tablaDot td:nth-of-type(4){
+	border-left:1px #c7c7c7 dashed;
+	border-right:1px #c7c7c7 dashed;
+	padding-left:10px;
+}
+
+.posicionTabla td:nth-of-type(2){
+	border-left:none;
+}
+/*---- Fin Mis TDC Santander ----*/
+
+/*---- A otras cuentas----*/
+
+/*Tabla*/
+.cardList {
+	color: #626262;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	width: 746px;
+	height: 180px;
+	border: 1px #c7c7c7 solid;
+	margin-left: 15px;
+	border-collapse: collapse;
+	margin-left:10px;
+	float:left;
+}
+
+.cardList th{
+	color:#282828;
+	height:20px;
+	text-align:left;
+	padding-left:10px;
+	padding-top:5px;
+	border-left:1px #c7c7c7 dashed;
+
+}
+
+.cardList th:nth-of-type(1){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+	width:228px;
+}
+
+.cardList th:nth-of-type(2){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+	width:218px;
+}
+
+.cardList th:nth-of-type(3){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+	width:218px;
+}
+
+.cardList th:nth-of-type(4){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+	width:63px;
+}
+
+
+.cardList td{
+	height:30px;
+}
+
+.cardList td:nth-of-type(2){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+	width:218px;
+}
+
+.cardList td:nth-of-type(3){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+	width:218px;
+}
+
+.cardList td:nth-of-type(4){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+	width:63px;
+}
+
+#pagoTDC{
+	float:left;
+	width:81%;
+}
+
+#pagoTDC p{
+	color:#282828;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	float:left;
+	font-weight:bold;
+	margin-left:10px;
+	margin-top:5px;
+}
+
+#pagoTDC p:first-of-type{
+	color:#282828;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	float:left;
+	font-weight:bold;
+	margin-left:20px;
+	margin-top:20px;
+}
+
+#pagoTDC p:nth-of-type(3){
+	color:#282828;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	float:left;
+	font-weight:bold;
+	margin-top:35px;
+}
+
+#cheques{
+	float:left;
+	width:81%;
+	display:none;
+}
+
+.lista{
+	float:left;
+	margin: 0px 0 0 10px;
+}
+
+.chequera h2{
+	float:left;
+}
+
+/*.input3{
+	width:223px;
+	height:28px;
+	background-color: #E8E8E8;
+	border: 1px solid #A4A4A4;
+	box-shadow: 1px 1px 5px #C6C6C6 inset;
+	color: #A4A4A4;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	float:left;			
+}*/
+
+#cheques .input3:first-of-type{
+	margin:20px 0 0 35px;	
+}
+
+#cheques p:first-of-type{
+	color:#282828;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	float:left;		
+}
+
+#cheques p:first-of-type{
+	margin: 28px 0 0 10px;	
+}
+
+#cheques div:nth-of-type(3){
+	float:left;
+	width:270px;
+	margin:-10px 0 0 25px;
+}
+
+#cheques div:nth-of-type(3) .input3{
+margin:20px 0 0 10px;
+}
+
+#cheques div:nth-of-type(4){
+	float:left;
+	width:270px;
+	margin:-10px 0 0 -35px;
+}
+
+#cheques div:nth-of-type(4) .input3{
+margin:20px 0 0 10px;
+}
+
+
+#datos{
+	float:left;
+}
+
+#datos div{
+	width:230px;
+	float:left;
+	margin:20px 0 0 10px;
+}
+
+#datos p{
+	color:#282828;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	margin:0px !important;
+	width:100%
+}
+
+#programar{
+	float:left;
+	width: 315px;
+	margin-left: -53px;
+}
+
+.dateInput{
+	float:left;
+}
+
+.input5{
+	width:83px;
+	height:25px;
+	border: 1px solid #A4A4A4;
+	box-shadow: 1px 1px 5px #C6C6C6 inset;
+	color: #626262;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	float:left;
+	margin-left: 9px;
+	margin-top: 8px;				
+}
+
+
+.dateInput div{
+	float:left;
+	margin-left:10px;
+}
+
+#programar p{
+	float:left;
+	color:#626262;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	margin-top:0px;
+	width:100%;
+}
+
+.input4{
+	width:148px;
+	height:28px;
+	background-color: #E8E8E8;
+	border: 1px solid #A4A4A4;
+	box-shadow: 1px 1px 5px #C6C6C6 inset;
+	color: #A4A4A4;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+	margin-top:10px;			
+}
+
+.exportar_tar{
+	width: 80px;
+	height: 22px;
+	background-image: url('../img/exportar.png');
+	background-size: 100% 100%;
+	float: right;
+	margin-right: 31px;
+	margin-top: 18px;
+	cursor: pointer;
+}
+
+.sub{
+	color: #4a76ec;
+	text-decoration: underline; 
+	margin-top: 2px;
+	cursor: pointer;
+}
+
+.estrellaCuenta{
+	float: left;
+	position: absolute;
+	margin-top: -7px;
+	margin-left: 13px;  
+}
+
+/*Icono calendario */
+
+.calicoT{
+	width: 30px;
+	height: 30px;
+	background-image: url('../../../../img/iconos/calendario.png');
+	background-size: 100% 100%;
+	float: left;
+	margin-top: 10px;
+	margin-left: 124px;
+}
+
+.activo{
+	color: #626262;
+	background-color: #fff;
+}
+
+.calicoNoT{
+	width: 30px;
+	height: 30px;
+	background-image: url('../../../../img/iconos/calendarioNo.png');
+	background-size: 100% 100%;
+	float: left;
+	margin-top: 10px;
+	margin-left: 124px;
+}
+
+
+/*---- Fin A otras cuentas----*/
