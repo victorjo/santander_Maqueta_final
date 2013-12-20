@@ -2,17 +2,35 @@
 <link rel="stylesheet" href="../../../css/master.css" />
 <link rel="stylesheet" href="../../../css/token.css" />
 <link rel="stylesheet" href="widgets/max/w_6/css/creditos.css"/>
+<script type="text/javascript" src="../../../js/accounting.js"></script>
 <script type="text/javascript" src="../../../js/jquery.tinycircleslider.min.js"></script>
 <script src="widgets/max/w_6/js/creditos.js"></script>
 <script type="text/javascript" src="../../../js/componentes.js"></script>
 <script type="text/javascript" src="../../../js/ddSlick.js"></script>
+
 <!--<script src="../../../js/utiles.js"></script>  -->
 <script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
 <script type="text/javascript">
-	$(document).on("ready", function(){
-		$(".btn").css("color","green");
-		alert("nada");
-	});
+
+
+	$(function(){
+
+		$(".btnPlazoAuto").click(function(){
+			$(".btnPlazoAuto").each(function(){
+				$(this).css({"background":""});
+				$(".btnPlazoAuto span").hide("fast");
+
+			});
+			$(this).css({"background":"url(images/btn_plazoSim.png)"});
+			$(this).find("span").show("fast");
+			numeroPlazo = $(this).find("span").text();
+			$("#numPlazo").text(numeroPlazo);
+
+		})
+
+		$("#btn_plazoSim2").css("background","url(images/btn_plazoSim.png)");
+		$("#btn_plazoSim2 span").css("display","block");
+	})
 </script>
 <style>
 /*.btnHeader{
@@ -269,6 +287,28 @@ div > .blockcp:nth-child(3){
 		
 
 		}
+
+		#plazoAuto{margin:auto;width:190px;height:190px;position:relative;}
+		.btnPlazoAuto{
+			position: absolute;
+			cursor: pointer;
+			width: 13px;
+			padding: 8px;
+			height: 13px;
+			color: #6487ed;
+		}
+
+
+		.btnPlazoAuto span{
+			display: none;
+		}
+
+		#plazoTxt{
+			  width:100px;height:20px;top: 93px;left: 44px;
+              color: #6487ed;position: absolute;
+		}
+
+
 </style>
 <script>
 $(document).ready(function(){
@@ -423,12 +463,27 @@ function follow(){
 							</div>
 						</div>
 					</div>
+					
 					<div class="blockcp">
 						<p>Elija el plazo de pago o escriba los meses que requiera para pagar.</p>
 						<div class="bockcpcontent">
 							<p>Plazo m&aacute;ximo autorizado:</p>
 							<p>36 meses</p>
-							<div style="margin:auto;width:190px;height:190px;">
+							<div style="" id="plazoAuto">
+								<div id="plazoTxt"><span id="numPlazo">9</span> meses</div>
+
+								<div id="btn_plazoSim1" class="btnPlazoAuto" style="top:78px;left:157px">
+									<span>18</span>
+								</div>
+								<div id="btn_plazoSim2" class="btnPlazoAuto" style="display:block;left:82px;">
+									<span>9</span>
+								</div>
+								<div id="btn_plazoSim3" class="btnPlazoAuto" style="left:2px;top:77px;">
+									<span>48</span>
+								</div>
+								<div id="btn_plazoSim4" class="btnPlazoAuto" style="top:156px;left:82px">
+									<span>32</span>
+								</div>
 								<img src="images/PlazoSimulado.png" alt="">
 								
 							</div>
