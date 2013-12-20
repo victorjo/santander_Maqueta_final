@@ -20,8 +20,8 @@ h2{
 	
 	
 #widampliado {
-	background-image: url('../../../../img/grid.png');
-	/*background-color:white;*/
+	/*background-image: url('../../../../img/grid.png');*/
+	background-color:white;
     border: 1px solid #BBBBBB ;
     height: 578px;
     
