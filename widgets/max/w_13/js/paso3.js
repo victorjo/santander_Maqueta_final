@@ -36,30 +36,36 @@
   
   // --- Switch --- //
   $(".switchLabel").click(function(){
-    $(".switchSlide").animate({
+    $(this).parent().animate({
       "left":"-=39px"
       },"fast");
+    /*Primer input de fecha*/
     $('.input3').attr('disabled','disabled');
     $('.input3').removeClass('activo');
-    $('#ico').removeClass('calico');
-    $('#ico').addClass('calicoNo');
+    /*Segundo input de fecha*/
+    $('.input5').attr('disabled','disabled');
+    $('.input5').removeClass('activo');
+    $('.ico').removeClass('icoNormal');
   });
   
   $(".switchLabelR").click(function(){
-    $(".switchSlide").animate({
+     $(this).parent().animate({
       "left":"+=39px"
       },"fast");
+      /*Primer input de fecha*/
     $('.input3').removeAttr('disabled');
     $('.input3').addClass('activo');
-    $('#ico').removeClass('calicoNo');
-    $('#ico').addClass('calico');
+     /*Segundo input de fecha*/
+    $('.input5').removeAttr('disabled');
+    $('.input5').addClass('activo');
+    $('.ico').addClass('icoNormal');
   });
 
   // --- Fin Switch --- //
 
   //datepicker
   $( "#dia" ).datepicker();
-
+  $( "#diaT" ).datepicker();
   //lista omniBox
   omniBox("autocompleteQ",cards);
   omniBox("autocompleteQ1",cards);

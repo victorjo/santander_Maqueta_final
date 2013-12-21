@@ -405,7 +405,7 @@ border-top: 8px solid #666665;
 margin-left: 8px;
 }
 
-.botonera {
+/*.botonera {
     bottom: 0;
     float: right;
     margin-bottom: 10px;
@@ -413,7 +413,7 @@ margin-left: 8px;
     position: relative;
     right: 0;
     width: 100%;
-}
+}*/
 .programar{
 	display:none;
 }
@@ -541,7 +541,7 @@ margin-left: 8px;
 	font-weight:bold;
 	border: solid 1px #A9A9A9;
 	/*margin-top: -16px;*/
-	margin-top: 0px;/***********************Cambio 13/12/2013*************************/
+	margin-top: 0px;/***********************Cambio 13/12/2013************************/
 }
 
 .btn:hover{
