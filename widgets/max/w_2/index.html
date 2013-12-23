@@ -83,7 +83,9 @@ function cambiaPasoImg(){
 function backPasoImg(){
 	$("#stepbar img").attr("src","../img/fake/pasos/paso1.png");
 }
-
+function ultimoPasoImg(){
+	$("#stepbar img").attr("src","../img/fake/pasos/paso3.png");
+}
 
 </script>
 <div id="osc">
@@ -218,7 +220,7 @@ function backPasoImg(){
 			   					<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
 			   					<div id="buttons">
 			   					<input type="submit" value="Cancelar" id="can" onclick="destruyeOver();">
-			   					<input type="submit" value="Continuar" id="con" onclick="follow();">
+			   					<input type="submit" value="Continuar" id="con"  onclick="follow();">
 			   					</div>
 			   				</div>
 
@@ -259,7 +261,7 @@ function backPasoImg(){
 							</table>
 									
 							<div class="botonera btn_abajo">
-								<div class="btn btnaceptar btn_dom2" id="btn1" >Confirmar</div>
+								<div class="btn btnaceptar btn_dom2" id="btn1" onclick="ultimoPasoImg();">Confirmar</div>
 								<div class="btn btn_dom2" id="regresar" onclick="backPasoImg();">Regresar</div>
 								<!--<div class="btn" id="siguiente2">Confirmar</div>-->
 							</div>
@@ -307,9 +309,9 @@ function backPasoImg(){
 							</div>-->
 							<div id="btn_paso3">
 		                     <ul>
-		                    	<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
-		                        <li class="btnNav"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">Pagar Servicios</span></li>
-		                        <li class="btnNav"><img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">Realizar una Domiciliación</span></li>
+		                    	<li class="btnNav"><!--<img src="../../img/iconos/tarjeta_.png" class="vtaico" />--><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
+		                        <li class="btnNav"><!--<img src="../../img/iconos/img_enviar.png" class="vtaico" />--><span class="txtbtn_3">Pagar Servicios</span></li>
+		                        <li class="btnNav"><!--<img src="../../img/iconos/img_icono.png" class="vtaico" />--><span class="txtbtn_3">Realizar una Domiciliación</span></li>
 		                      </ul>
 		                </div>
 						</div>
@@ -515,7 +517,7 @@ function backPasoImg(){
 																</div>															
 															<div class="botonera">
 															
-																		<div class="btn btnaceptar" style="float:right;  margin-top:130px; margin-right:-10px;" id="siguiente5" onclick="cambiaPasoImg();">Continuar</div>
+																		<div class="btn btnaceptar" style="float:right;  margin-top:130px; margin-right:-10px;" id="siguiente5" onclick="ultimoPasoImg();">Continuar</div>
 																	 </div>
 					
 					</div><!--step6-->
@@ -610,9 +612,9 @@ function backPasoImg(){
 						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
 						<div id="btn_paso3">
 		                     <ul>
-		                    	<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
-		                        <li class="btnNav"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">Pagar Servicios</span></li>
-		                        <li class="btnNav"><img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">Realizar una Domiciliación</span></li>
+		                    	<li class="btnNav"><!--<img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">-->Realizar un Balance Transfer</span></li>
+		                        <li class="btnNav"><!--<img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">-->Pagar Servicios</span></li>
+		                        <li class="btnNav"><!--<img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">-->Realizar una Domiciliación</span></li>
 		                      </ul>
 		                </div>
 						
@@ -867,7 +869,7 @@ function backPasoImg(){
 						</div>
 
 						<div class="botonera"  style=" float: right;  margin-top:60px; margin-right:-10px; height:25px;">
-							<div class="btn btnaceptar" id="siguiente9" style="float:right;">Continuar</div>
+							<div class="btn btnaceptar" id="siguiente9" style="float:right;" onclick="ultimoPasoImg();">Continuar</div>
 						</div>
 
 						<!---///////////////////////////////////////////////////////////////////////////////////-->			
@@ -956,9 +958,9 @@ function backPasoImg(){
 						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
 						<div id="btn_paso3">
 		                     <ul>
-		                    	<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
-		                        <li class="btnNav"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">Pagar Servicios</span></li>
-		                        <li class="btnNav"><img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">Realizar una Domiciliación</span></li>
+		                    	<li class="btnNav"><!--<img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">-->Realizar un Balance Transfer</span></li>
+		                        <li class="btnNav"><!--<img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">-->Pagar Servicios</span></li>
+		                        <li class="btnNav"><!--<img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">-->Realizar una Domiciliación</span></li>
 		                      </ul>
 		                </div>
 						

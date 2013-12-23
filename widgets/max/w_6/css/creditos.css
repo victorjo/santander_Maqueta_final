@@ -69,4 +69,11 @@
 #wra_Select2 .dd-select{
 	width:30px;
 }
+.dd-selected-image {
+vertical-align: middle;
+float: left;
+margin-right: 5px;
+max-width: 55px;
+margin-top: -6px;
+}
 

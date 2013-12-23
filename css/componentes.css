@@ -110,8 +110,10 @@ right: 0px;
 .onDom{
 	height:23px;
 	width:70px;
-	background-image:url('../lineagrafica/swichbtnon.png');
-	background-size:100% 100%;
+	/*background-image:url('../lineagrafica/swichbtnon.png');*/
+	background-image: url(../img/botones/switch_der.png);
+	background-size:200% 100%;
+	/*background-size:100% 100%;*/
 	float:left;
 	color:white;
 	font-size:medium;
@@ -126,8 +128,10 @@ right: 0px;
 {
 	height:23px;
 	width:80px;
-	background-image:url('../lineagrafica/swichbtnoff.png');
-	background-size:100% 100%;
+	/*background-image:url('../lineagrafica/swichbtnoff.png');*/
+	background-image: url(../img/botones/switch_der.png);
+	background-size:200% 100%;
+	/*background-size:100% 100%;*/
 	float:left;
 	color:white;
 	font-size:medium;
