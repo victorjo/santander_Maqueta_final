@@ -138,8 +138,8 @@ function ocultaSteps(num_Step){
   }
 }
 
-function creaToken(contenedor,cbTokenCanc,cbTokenAcep,moreData){
-
+function creaToken(contenedor,cbTokenCanc,cbTokenAcep,moreData,fn){
+if(typeof fn !="undefined" || fn != null || fn != undefined) fn();
 tokenHTML = '<div id="widreducido"><div id="headerWidget"><p>TOKEN</p><div id="btninfo"></div></div><div id="subtitulo">';
 tokenHTML += '<p>Para realizar su operación es necesario<br/>ingresar el código del TOKEN:</p></div><div id="token">';
 tokenHTML += '<img src="img/token.png"/></div><div id="input"><input class="input" type="text" placeholder="Ingresar TOKEN" />';
@@ -176,12 +176,7 @@ function ocultaSteps(num_Step){
 /*Funciones de bloqueo (Overlay)*/
 
 function creaOverlay(color,contenedor,tipo,call){
-  $(document).ajaxStart(function() {
-    $(".loader").show();
-  });
-  $(document).ajaxStop(function() {
-    $(".loader").hide();
-  });
+
   pos = (tipo==1)?'absolute':'fixed';
   zposition = (tipo==1)?'1000':'';
   var divOverlay =  $("<div>");

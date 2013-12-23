@@ -14,7 +14,7 @@ function validaBrowser(){
     return false; // chrome
    }
   }else{
-  	//reject();
+  	reject();
   }
 
 }
@@ -96,130 +96,60 @@ function ajustaBannerHeight(){
 
 }
 
-/* ESTABLE JSON
-var widgets = [
-				{
-					id:1,
-					type:2,
-					order:1,
-					contentMin:'',
-					contentMax:''
-				},
-				{
-					id:5,
-					type:2,
-					order:4,
-					contentMin:'',
-					contentMax:''
-				},{
-					id:8,
-					type:2,
-					order:3,
-					contentMin:'',
-					contentMax:''
-				},
-				{
-					id:6,
-					type:3,
-					order:5,
-					contentMin:'',
-					contentMax:''
-				},
-				{
-					id:2,
-					type:1,
-					order:4,
-					contentMin:'',
-					contentMax:''
-				},
-				{
-					id:7,
-					type:2,
-					order:7,
-					contentMin:'',
-					contentMax:''
-				},
-				{
-					id:4,
-					type:1,
-					order:8,
-					contentMin:'',
-					contentMax:''
-				},
-				{
-					id:9,
-					type:3,
-					order:6,
-					contentMin:'',
-					contentMax:''
-				},
 
-				{
-					id:10,
-					type:1,
-					order:0,
-					contentMin:'',
-					contentMax:''
-				},
-/*
+var widgets = [
 				{
 					id:11,
-					type:2,
-					order:1000,
-					contentMin:'asdasdasdasd',
+					type:3,
+					order:-1,
+					contentMin:'',
 					contentMax:''
-				}
-
-
-			];
-*/
-
-var widgets = [
+				},
 				{
 					id:1,
 					type:2,
-					order:1,
+					order:5,
 					contentMin:'',
 					contentMax:''
 				},
 				{
 					id:5,
 					type:2,
-					order:4,
+					order:9,
 					contentMin:'',
 					contentMax:''
 				},{
 					id:8,
 					type:2,
-					order:3,
+					order:0,
 					contentMin:'',
 					contentMax:''
 				},
 				{
 					id:6,
 					type:3,
-					order:5,
+					order:10,
 					contentMin:'',
 					contentMax:''
 				},
 				{
 					id:2,
 					type:1,
-					order:4,
+					order:7,
 					contentMin:'',
 					contentMax:''
 				},
 				{
 					id:7,
 					type:2,
-					order:7,
+					order:4,
 					contentMin:'',
 					contentMax:''
 				},
 				{
 					id:4,
 					type:1,
-					order:8,
+					order:3,
 					contentMin:'',
 					contentMax:''
 				},
@@ -234,10 +164,25 @@ var widgets = [
 				{
 					id:10,
 					type:1,
-					order:0,
+					order:8,
+					contentMin:'',
+					contentMax:''
+				},
+				{
+					id:null,
+					type:1,
+					order:8,
+					contentMin:'<img style="height:579px" src="img/fake/bannerVertical.jpg" />',
+					contentMax:''
+				},				
+				{
+					id:13,
+					type:2,
+					order:11,
 					contentMin:'',
 					contentMax:''
 				}
+
 			];
 
 
@@ -282,7 +227,8 @@ function posWidgets(qwerty){
 		        success: function(res){
 		        	newWidget.html(res);
 		        	$("div > div:first,.btnaceptar_wr,img",newWidget).click(function(){
-						getInstance(newWidget);
+						if(typeof $(this).attr("src") != 'undefined' && $(this).attr("src").indexOf("fake")==-1)  return false;
+							getInstance(newWidget);
 					});
 		        }
 		    });
@@ -328,12 +274,17 @@ function posWidgets(qwerty){
 
 	(function (wrapper){
 
+		$("[data-pos='7']").css('float','left');
 		if($(window).width()>1490 || !spDisplay ) 
 		{
+			$("[data-pos='4']").insertBefore('[data-pos="3"]');
+			$("[data-pos='9']").insertAfter('[data-pos="6"]');
+			$("[data-pos='10']").insertAfter('[data-pos="9"]');
+			$("[data-pos='11']").insertAfter('[data-pos="10"]');
+			$("[data-pos='9']").hide();
 			$("#wrappWidgets").css("width","1022px");
 				$("#cierraSB").fadeOut("fast");
 			//$("[data-pos='3']").after('<div class="widget-min col1 alto2"  data-max="false" data-pos="codom"><img src="img/fake/carrito.jpg" height="275"/></div>');
-			$("[data-pos='7']").css('float','left');
 			var alen = 1030;
 		/*}else if($(window).width()<=768){ ****CHANGE FOR TOUCH EVENT***
 			$("body").mousemove(function(e){
@@ -341,11 +292,10 @@ function posWidgets(qwerty){
 					moveResObs();
 				}else if( $(".wr_NavPrin").offset().left==900 ) $(".wr_NavPrin").animate({'left':'-190px'});
 			});
-		}*/}
-			else{
-			$("#wrappWidgets").css("width","771px");
-				$("#cierraSB").fadeIn("fast");
-
+		}*/}else{
+			$("[data-pos='3']").insertBefore('[data-pos="4"]');
+			$("#wrappWidgets").css("width","767px");
+			$("#cierraSB").fadeIn("fast");
 		}
 
 		
@@ -459,6 +409,7 @@ function getInstance(obj){
 	var thisW = $(obj);
 	if(typeof thisW.data("instanced") == 'undefined' || thisW.data("instanced") == 'undefined'){
 		thisW.data("instanced",new newWidgetInstance(thisW));
+		$(".loader").show();
 	}
 }
 
@@ -473,8 +424,8 @@ function newWidgetInstance(obj)
 	this.height = this.obj.height();
 	this.chPost = function () {
 			var forA = this.obj;
-			if(this.obj.attr("data-max")=="false" || this.obj.is(":animated")) return false;
-			console.log(parseInt(this.obj.attr("data-pos"))-1);
+			if(this.obj.attr("data-max")=="false" || this.obj.is(":animated"))return false;
+			//console.log(parseInt(this.obj.attr("data-pos"))-1);
 			$(this.obj[0].outerHTML).appendTo("#wrappWidgets").insertAfter( $("[data-pos='"+(parseInt(forA.attr("data-pos"))-1)+"']")).attr("clone","true");
 			this.obj.css({"box-shadow":"none","border":"none"});
 			this.obj.attr({"instanced":"true"});
@@ -487,6 +438,7 @@ function newWidgetInstance(obj)
 			        dataType:'html',
 			        success: function(res){
 			        	forA.html(res);
+			        	$(".loader").hide();
 			        	forA.children().fadeIn('slow');
 			        	forA.find(".btnHeader").attr("onclick","closeAction()");
 						forA.find(".vtaimg").attr("onclick","closeAction(null,7);");
@@ -508,7 +460,8 @@ function newWidgetInstance(obj)
 								success: function(res){
 									io.html(res);
 									$("[clone='true']").remove();
-									forA.children().fadeIn('slow');
+									forA.children().fadeIn('slow',function(){
+									});
 									$("[data-id='"+id+"']").click();
 									$("div > div:first,.btnaceptar_wr,img",io).click(function(){
 										getInstance(io);
@@ -538,11 +491,10 @@ function valToForm(){
 	$("#loginWrapper").animate({"background-position":"+=50px"},"slow");
 	$("#wr_SuperBanner").css({"position":"relative"}).animate({'left':'-255px'},800,function(){ $("#titleLogin").next().html('<h4>EN SANTANDER LE DAMOS VIDA A TUS IDEAS</h4><h1 class="tituloBold">Bienvenido a SUPERNET <br> la banca mas personal que nunca.</h1><div class="btnaceptar" style="width:180px;margin-left:0px;margin-right:15px" onclick="outaLogin()">Saltar Intro</div><p style="font-weight:bold;font-size:11px;margin-top: 18px;">Omitir en: <span class="seger" style="">04</span></p>');$("#titleLogin").next().fadeIn(); });
 	$("#titleLogin").next().fadeOut('fast');
-	setTimeout(function(){ $(".seger").text("03"); },1000);
-	setTimeout(function(){ $(".seger").text("02"); },2000);
-	setTimeout(function(){ $(".seger").text("01"); },3000);
-	setTimeout(function(){ $(".seger").text("00"); $(".seger").parent().remove();},4000);
-	setTimeout(function(){ outaLogin() },4500);
+	setTimeout(function(){ $(".seger").text("02"); },1000);
+	setTimeout(function(){ $(".seger").text("01"); },2000);
+	setTimeout(function(){ $(".seger").text("00"); $(".seger").parent().remove();},3000);
+	setTimeout(function(){ outaLogin() },3200);
 
 }
 

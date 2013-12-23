@@ -5,6 +5,9 @@ src: url(fonts/ArialBlack.ttf);
 font-weight:bold;
 }
 
+section{
+	display:none;
+}
 
 			*{
 				margin: 0;
@@ -28,8 +31,6 @@ font-weight:bold;
 			{
 				margin:0px auto;
 				width:100%;
-				background: #E6E9EB;
-
 			}
 			#wr_SuperBanner{
 				background:no-repeat;
@@ -46,7 +47,7 @@ font-weight:bold;
 				width: 190px;
 				overflow: hidden;
 				height: auto;
-				margin-right: 10px;
+				margin-right: 0px;
 				}
 
 			#titleLogin {
@@ -90,18 +91,23 @@ font-weight:bold;
 			}
 
 			#dataClient{
-				width:435px;height:30px;text-align: right; color: white; font-size: 12px;padding:15px 10px;
+				max-width: 694px;height:30px;text-align: right; color: white; font-size: 12px;padding:15px 10px;
 			}
 
 			#wr_btnNavHeader{
-				width:350px;height:50px;
+				width:350px;height:50px;float:right;
 			}
 
 			#wr_btnNavHeader img{
-				border-right: 1px ridge #710b1c;
+				/*border-right: 1px ridge #710b1c;
 				padding: 5px 10px;
 				cursor: pointer;
-				float:right;
+				float:right;*/
+				border-right: 2px groove #FA3535;
+         		padding: 5px 5px;
+          		cursor: pointer;
+          		float:right;
+         		background:url(../img/background/gradiente.jpg);
 			}
 
 			#wr_btnNavHeader img:last-child{
@@ -109,7 +115,7 @@ font-weight:bold;
 			}
 
 			#wr_PrinNivel1{
-				height:530px;width:100%;
+				height:530px;width:100%;max-width: 1511px;margin: 0 auto;
 			}
 			
 			#avatarNavPrin{
@@ -211,11 +217,11 @@ font-weight:bold;
 
 
 			.altoTotal{
-				height:576px;
+				height:580px;
 			}
 
 			.alto2{
-				height:283px;
+				height:285px;
 			}
 
 			.medianilIzq{
@@ -340,7 +346,7 @@ img { border: 0; }
 	background-color:#D7E9C9;*/
 	position:relative;
 
-	/*background-image:url('../img/bannerBkgnd1.png')*/
+	background:url('../img/back_img.png') no-repeat;
 }
 
 #superbanner p{
@@ -364,16 +370,15 @@ img { border: 0; }
 
 
 #cierraSB{
-	background-image:url('../img/close_btn.png');
-	margin: 10px 10px 0 0;
+	background-image:url('../img/close_btnslct.png');
+ 	margin-right: 10px;
 	float:right;
-	width:40px;
-	height:40px;
+	height:30px;
 	background-size:100% 100%;
 }
 
 #cierraSB:hover{
-	background-image:url('../img/close_btnslct.png');
+	background-image:url('../img/close_btn.png');
 	background-size:100% 100%;
 	cursor:pointer;
 	
@@ -382,7 +387,7 @@ img { border: 0; }
 
 
 #superbanner > div:nth-of-type(2){
-	bottom: 75px;
+	bottom: 40px;
 	float: right;
 	position: absolute;
 	right: 15px;
@@ -412,3 +417,10 @@ img { border: 0; }
 .starblack{
 	margin-left: 8px;
 }
+
+	#logo{
+
+   width: 245px;
+   border-left: 2px groove #FA3535;
+   background: url(../img/background/gradiente.jpg);
+	}
