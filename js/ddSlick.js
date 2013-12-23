@@ -1,3 +1,4 @@
+var tSlide="down";
 (function (a) {
     function g(a, b) {
         var c = a.data("ddslick");
@@ -32,18 +33,18 @@
             d = c.siblings(".dd-options"),
             e = c.find(".dd-pointer"),
             f = d.is(":visible");
-        a(".dd-click-off-close").not(d).slideUp(50);
+        a(".dd-click-off-close").not(d).fadeOut(50);
         a(".dd-pointer").removeClass("dd-pointer-up");
         if (f) {
-            d.slideUp("fast");
+            d.fadeOut("fast");
             e.removeClass("dd-pointer-up")
         } else {
 
-        	if(tipoSlide == "up"){
-
+        	if(tipoSlide=="up"){
+        		d.css({"top":"-"+d.height()+"px"});
         	}
 
-            d.slideDown("fast");
+            d.fadeIn("fast");
             e.addClass("dd-pointer-up")
         }
         k(b)
@@ -95,6 +96,7 @@
             imagePosition: "left",
             showSelectedHTML: true,
             clickOffToClose: true,
+            tipoSlide:tSlide,
             onSelected: function () {}
         }, d = '<div class="dd-select"><input class="dd-selected-value" type="hidden" /><a class="dd-selected"></a><span class="dd-pointer dd-pointer-down"></span></div>',
         e = '<ul class="dd-options"></ul>',
