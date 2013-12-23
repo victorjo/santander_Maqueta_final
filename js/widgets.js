@@ -230,7 +230,7 @@ function posWidgets(qwerty){
 		var newWidget = $('<div>');
 		var c = fillStyles(v.type);
 		newWidget.attr("class",c);
-		if(v.id==null) newWidget.html(v.contentMin);
+		if(v.id==null || v.contentMin!="") newWidget.html(v.contentMin);
 		else{
 			$.ajax({
 				url:'widgets/min/w_'+v.id+'/index.html',
