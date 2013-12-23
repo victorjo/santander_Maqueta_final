@@ -14,7 +14,7 @@ $(".regresar").click(function(){
 });
 
 $(".continuar2").click(function(){
-	creaOverlay("#fff","#contenido",1);
+	creaOverlay("#fff","#widget",1);
 	insertHTML($("#contenido2").html(),"modalOver");
 });
 

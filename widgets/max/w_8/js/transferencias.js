@@ -194,7 +194,7 @@ $("#navegador > ul > :nth-child(4)").click(function(){
 
 
 $("#btn1").on("click", function(){
-	creaOverlay("#FFF","#contenido",1);
+	creaOverlay("#FFF","#widget",1);
 	insertHTML($("#contenido2").html(),"modalOver");
 	
 	//$("#contenido2").fadeIn();

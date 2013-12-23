@@ -296,9 +296,9 @@ a:hover {
 				<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
 				<div id="btn_paso3">
 					<ul>
-						<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
-						<li class="btnNav"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">Pagar Servicios</span></li>
-						<li class="btnNav"><img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">Realizar una Domiciliación</span></li>
+						<li class="btnNav"><!--<img src="../../img/iconos/tarjeta_.png" class="vtaico" />--><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
+						<li class="btnNav"><!--<img src="../../img/iconos/img_enviar.png" class="vtaico" />--><span class="txtbtn_3">Pagar Servicios</span></li>
+						<li class="btnNav"><!--<img src="../../img/iconos/img_icono.png" class="vtaico" />--><span class="txtbtn_3">Realizar una Domiciliación</span></li>
 					</ul>
 				</div>
 				
@@ -372,47 +372,10 @@ a:hover {
 			
 			<div><!--Funcionalidad 2 : A otras Cuentas-->
 			<div id="step4" class="pasos"><!-- step4 -->
-			<p style="color:red"><b>Seleccione de las últimas transferencias por titular
-			de la cuenta o ingrese la información correspondiente
-			para realizar la transferencia</b></p>
-			<div class="transfWrap" style="width:725px;height:115px; overflow:scroll;border:2px #a1a1a1 solid;">
-				<table class="transf">
-					<tr onclick="achiquer(this)">
-						<td>Nombre del Titular</td>
-						<td>Fecha</td>
-						<td>Importe (MXP)</td>
-					</tr>
-					<tr onclick="achiquer(this)" class="lista">
-						<td>David Castro</td>
-						<td>24/11/2013</td>
-						<td>10,000.00 MXP</td>
-					</tr>
-					<tr onclick="achiquer(this)" class="lista">
-						<td>Carlos Aguirre</td>
-						<td>22/11/2013</td>
-						<td>25,000.00 MXP</td>
-					</tr>
-					<tr onclick="achiquer(this)" class="lista">
-						<td>Juan G&oacute;mez</td>
-						<td>20/11/2013</td>
-						<td>7,000.00 MXP</td>
-					</tr>
-					<tr onclick="achiquer(this)" class="lista">
-						<td>Jes&uacute;s L&oacute;pez</td>
-						<td>14/11/2013</td>
-						<td>5,000.00 MXP</td>
-					</tr>
-					<tr onclick="achiquer(this)" class="lista">
-						<td>Jorge L&oacute;pez</td>
-						<td>02/11/2013</td>
-						<td>9,000.00 MXP</td>
-					</tr>
-				</table>
-			</div>
 			
-			<p style="margin-top:10px; float:left;"><b>Introduzca el nombre, alias o los cautro dígitos de la cuenta destino o seleccionela de la lista</b></p>
-			
-			<div class="wra_Select3" style="margin-top:0px; color:#828282">
+			<div class="boldred">1. Introduzca el nombre, alias o los cuatro dígitos de la cuenta destino o seleccionela de la lista</div>
+
+				<div class="wra_Select3" style="margin-top:0px; color:#828282">
 				<select name="" id="" >
 					<option value="">A1234****5678     Producto Santander     Alias     789,365,963.00      *</option>
 					<option value="">B1234****5678     Producto Santander     Alias     526,123,124.00      *</option>
@@ -453,7 +416,7 @@ a:hover {
 				</div>
 				<img src="../../../img/iconos/img_calendario.png" style="margin-top:20px; margin-left:10px;">
 				
-				<input type="text" id="date" placeholder="dd/mm/aaaa" style="margin-left:10px;height:25px;margin-top:14px;position:fixed">
+				<input type="text" id="date" placeholder="25/05/2013" style="margin-left:10px;height:25px;margin-top:14px;position:fixed">
 			</div>
 			
 			<table style="float: right; margin-right:-13px; margin-top:87px;">
@@ -1049,7 +1012,7 @@ a:hover {
 						
 					</tr>
 				</table>
-				<table style="	float: right; margin-right: -218px; margin-top:173px;">
+				<table style="	float: right; margin-right: -255px; margin-top:173px;">
 					<tr>
 						<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt">Imprimir</p></div></td>
 						<td><div class="btn btnaceptar" id="finBaja"  onclick="cierraWidget();">Finalizar</div></td>

@@ -26,6 +26,10 @@
 	display: none;
 
 }
+#datosTelCorreo{
+	background: red;
+
+}
 
 .cuadroMensaje {
 			width:18px;
@@ -102,11 +106,30 @@
 			padding-top: 42px;
 			
 		}
+		.txtform1{
+			background:silver; 
+			margin-left:200px;
+			padding-left: 26px;
+			font-weight: bold;
+			position: relative;
+			top: 100px;
+		}
+		.txtform2{
+			background:silver; 
+			margin-left:200px;
+			padding-left: 26px;
+			font-weight: bold;
+			position: relative;
+			top: 100px;
+		}
 		.tablaForm{
 			float: left;
 			font-weight: bold;
-			margin-left: 177px;
-			padding-top: 19px;
+			/*margin-left: 177px;*/
+			/*padding-top: 19px;*/
+			margin-left: 190px;
+			position: relative;
+			top: 170px;
 		}
 		.textInput{
 			color: #000;

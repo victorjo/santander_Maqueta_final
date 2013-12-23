@@ -220,3 +220,15 @@ float:right;
 .txtbtn_3{
 	margin-left: 17px;
 }
+
+/* Misestilos agregados a otras cuentas */
+
+.boldred {
+	font-family:Arial;
+	font-size:11px;
+	font-weight:bold;
+	color:red;
+	font-size:11px;
+	width:650px;
+	margin-bottom: 19px;
+}

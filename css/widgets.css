@@ -1072,7 +1072,8 @@ font-size: 11px;
 .vtaimg{
 	background-image:url('../img/fake/7.jpg');
 	width:245px;
-	height:283px;
+	/*height:283px;*/
+	height: 285px;
 	background-color:white;
 	float:left;
 }

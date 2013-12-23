@@ -1,4 +1,4 @@
-var msjAlert = ["","Txt1qsqsqsq.","Txt2zzzzzz.","Txt3."];
+var msjAlert = ["","Txt1.","Txt2.","Txt3."];
 
 
 $(document).ready(function(){
