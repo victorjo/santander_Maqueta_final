@@ -181,6 +181,18 @@ var widgets = [
 					order:11,
 					contentMin:'',
 					contentMax:''
+				},{
+					id:14,
+					type:2,
+					order:12,
+					contentMin:'Saldos y Movimientos',
+					contentMax:''
+				},{
+					id:15,
+					type:2,
+					order:13,
+					contentMin:'Pago de Servicios',
+					contentMax:''
 				}
 
 			];
