@@ -20,8 +20,12 @@ h2{
 	
 	
 #widampliado {
+<<<<<<< HEAD
+	/*background-color:white;*/
+=======
 	/*background-image: url('../../../../img/grid.png');*/
 	background-color:white;
+>>>>>>> c354867b58330b5c141495feacebb7ebeed0b8a3
     border: 1px solid #BBBBBB ;
     height: 578px;
     
@@ -234,8 +238,13 @@ line-height: 19px;
 	font-weight: bold;
 }
 
+<<<<<<< HEAD
+#widampliado > div:nth-of-type(5) > .botonera{
+	/*position:relative;*/
+=======
 /*#widampliado > div:nth-of-type(5) > .botonera{
 	position:relative;
+>>>>>>> c354867b58330b5c141495feacebb7ebeed0b8a3
 	margin-top:10px;
 }*/
 
@@ -562,4 +571,3 @@ float: none !important;
     margin-left:10px;          
   	display:none;
 }
-
