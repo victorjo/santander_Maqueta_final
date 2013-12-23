@@ -232,7 +232,7 @@ function posWidgets(qwerty){
 					});
 			newWidget.attr("data-max","true");
 
-	}
+		}
 		else{
 			$.ajax({
 				url:'widgets/min/w_'+v.id+'/index.html',
