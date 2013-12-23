@@ -185,13 +185,7 @@ var widgets = [
 					id:14,
 					type:2,
 					order:12,
-					contentMin:'<h1>Saldos y Movimientos</h1>',
-					contentMax:''
-				},{
-					id:15,
-					type:2,
-					order:13,
-					contentMin:'<h1>Pago de Servicios</h1>',
+					contentMin:'<h1 class="btnaceptar_wr">Saldos y Movimientos</h1>',
 					contentMax:''
 				}
 
@@ -230,7 +224,15 @@ function posWidgets(qwerty){
 		var newWidget = $('<div>');
 		var c = fillStyles(v.type);
 		newWidget.attr("class",c);
-		if(v.id==null || v.contentMin!=""){ newWidget.html(v.contentMin);/*hardcode*/ newWidget.attr("data-max","true");}
+		if(v.id==null || v.contentMin!=""){ newWidget.html(v.contentMin);
+			/*hardcode*/ 
+					$("div > div:first,.btnaceptar_wr,img",newWidget).click(function(){
+						if(typeof $(this).attr("src") != 'undefined' && $(this).attr("src").indexOf("fake")==-1)  return false;
+							getInstance(newWidget);
+					});
+			newWidget.attr("data-max","true");
+
+	}
 		else{
 			$.ajax({
 				url:'widgets/min/w_'+v.id+'/index.html',
@@ -238,7 +240,7 @@ function posWidgets(qwerty){
 		        dataType:'html',
 		        success: function(res){
 		        	newWidget.html(res);
-		        	$("div > div:first,.btnaceptar_wr,img,h1",newWidget).click(function(){
+		        	$("div > div:first,.btnaceptar_wr,img",newWidget).click(function(){
 						if(typeof $(this).attr("src") != 'undefined' && $(this).attr("src").indexOf("fake")==-1)  return false;
 							getInstance(newWidget);
 					});
@@ -475,7 +477,7 @@ function newWidgetInstance(obj)
 									forA.children().fadeIn('slow',function(){
 									});
 									$("[data-id='"+id+"']").click();
-									$("div > div:first,.btnaceptar_wr,img,h1",io).click(function(){
+									$("div > div:first,.btnaceptar_wr,img",io).click(function(){
 										getInstance(io);
 									});
 								}
