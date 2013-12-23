@@ -20,7 +20,12 @@ h2{
 	
 	
 #widampliado {
+<<<<<<< HEAD
 	/*background-color:white;*/
+=======
+	/*background-image: url('../../../../img/grid.png');*/
+	background-color:white;
+>>>>>>> c354867b58330b5c141495feacebb7ebeed0b8a3
     border: 1px solid #BBBBBB ;
     height: 578px;
     
@@ -155,7 +160,7 @@ left: 10px;
 /*---Fin Navegador---*/
 
 
-
+/*Causaba conflicto con el div de botonera*/
 /*Contenido*/
 /*#widampliado > div:nth-of-type(4){
 	
@@ -170,13 +175,13 @@ left: 10px;
 	font-weight: bold;
 }*/
 
-#widampliado > div:nth-of-type(4) > div {
+/*#widampliado > div:nth-of-type(4) > div {
 width: 206px;
 float: left;
 margin:10px 0 0 10px;
 line-height: 19px;
 
-}
+}*/
 
 #widampliado > div:nth-of-type(4) > h2{
 	margin-left: 10px;
@@ -191,6 +196,7 @@ line-height: 19px;
 	width:50px;
 	float:right;
 }
+
 
 /*---Venta Cruzada---*/
 /*#widampliado > div:nth-of-type(5){
@@ -232,10 +238,15 @@ line-height: 19px;
 	font-weight: bold;
 }
 
+<<<<<<< HEAD
 #widampliado > div:nth-of-type(5) > .botonera{
 	/*position:relative;*/
+=======
+/*#widampliado > div:nth-of-type(5) > .botonera{
+	position:relative;
+>>>>>>> c354867b58330b5c141495feacebb7ebeed0b8a3
 	margin-top:10px;
-}
+}*/
 
 #widampliado > div:nth-of-type(5) > h4{
 	margin:10px 0 10px 0 ;

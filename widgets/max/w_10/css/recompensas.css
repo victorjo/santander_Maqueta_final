@@ -1,4 +1,4 @@
-/*Estilos propios del paso1*/
+﻿/*Estilos propios del paso1*/
 /*----Tipos de cuadros / Texto en cuadros----*/
 .cuadro{
 	float: left;
@@ -33,7 +33,7 @@
 
 /*----Fin Tipos de cuadros / Texto en cuadros----*/
 
-/*---- Alineación de datos ----*/
+/*---- AlineaciÃ³n de datos ----*/
 .datos{
 	margin: 18px 0 0 70px;
 }
@@ -42,7 +42,7 @@
 	position: absolute;
 	margin: 28px 0 0 -2px;
 }
-/*---- Fin Alineación de datos ----*/
+/*---- Fin AlineaciÃ³n de datos ----*/
 
 /*----Estilo de dropdown----*/
 #myDropdown{
@@ -669,5 +669,28 @@ input[type=text]
 }
 
 .rightarrow{
-	position:absolute; border: 1px solid #efefef;cursor: pointer; top: 75px;padding: 62px 5px
+	position:absolute; 
+	border: 1px solid #efefef;
+	cursor: pointer; 
+	top: 75px;
+	padding: 62px 5px
+}
+
+.leftarrow{
+	position:absolute; 
+	border: 1px solid #efefef;
+	cursor: pointer; 
+	top: 75px;
+	padding: 62px 5px
+}
+
+.slider{
+	height:165px;
+	width:1500px;
+	position:absolute;
+	left:-600px;
+}
+
+.divT1 :hover{
+	box-shadow:2px 2px 5px #4573ec;
 }
