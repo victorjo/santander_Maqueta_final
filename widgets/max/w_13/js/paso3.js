@@ -1,4 +1,7 @@
 ﻿$(document).ready(function() {
+  
+  ocultaSteps(3);
+
 	$(".navegador > ul > li").click(function(){
 		var scope = $(this),red = '<div class="minired"><div class="red"></div></div>';
 		$(".navegador > ul > li").removeClass("liActive").addClass("liShadow");
@@ -66,7 +69,7 @@
   //datepicker
   $( "#dia" ).datepicker();
   $( "#diaT" ).datepicker();
-  //lista omniBox
+  //lista omniBox : checar su funcionalidad..
   omniBox("autocompleteQ",cards);
   omniBox("autocompleteQ1",cards);
 
@@ -76,6 +79,8 @@
 
   /*--- Fin Funcionalidad A otras tarjetas ---*/
 
+  //Funcionalidad: boton cerrar
+  $(".fin").click(function(){closeAction()});
 
 });
 
@@ -103,3 +108,15 @@ function dot(){
 
 
   /*--- Fin Elementos: A otras tarjetas ---*/
+
+
+  /*--- Funcionalidad para menu lateral izquierdo ----*/
+  function ocultaSteps(num_Step){
+    for(var i=2;i<=num_Step; i++){
+      $('.m'+i).hide();
+    }
+  }
+  
+
+
+  /*--- Fin Funcionalidad para menu lateral izquierdo ----*/

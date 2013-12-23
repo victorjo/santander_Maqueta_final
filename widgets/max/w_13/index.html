@@ -5,6 +5,7 @@
 	<title>Pago de tarjeta de crédito</title>
 	<!--<script src="widgets/max/w_13/js/jquery10.2.min.js"></script>-->
 	<script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="js/componentes.js"></script>
 	<script src="widgets/max/w_13/js/ddSlick.js"></script>
 	<script src="widgets/max/w_13/js/paso3.js"></script>
 	<link rel="stylesheet" href="widgets/max/w_13/css/paso3.css" />
@@ -204,16 +205,16 @@
 	<div id="widampliado">
 		<div>
 			<p>PAGO TARJETA DE CRÉDITO</p>
-			<div></div>
+			<div class="fin"></div>
 			<div></div>
 		</div>
 		<div>
 			<img src="widgets/max/w_13/img/paso_1.png" class="steps"/>			
 		</div>
 		
-		<div class="navegador">
+		<!--<div class="navegador">
 			<ul>
-				<li>
+				<li class="liActive">
  					<p onclick="$('.m1').fadeIn();$('.m3').hide();$('.m2').hide();">Mis TDC Santander</p>
 				</li>
 				<li>
@@ -223,9 +224,23 @@
 					<p onclick="$('.m1').hide();$('.m3').fadeIn();" style="width:100px;">Consulta de tarjetas/Alta/Baja</p>
 				</li>
 			</ul>
+		</div>-->
+
+		<div class="navegador">
+			<ul>
+				<li class="liActive">
+ 					<p onClick="cambiaFlujo('.m1');">Mis TDC Santander</p>
+				</li>
+				<li>
+					<p  onClick="cambiaFlujo('.m2');">A otras tarjetas</p>
+				</li>
+				<li style="height:35px; padding-bottom:7px;">
+					<p  onClick="cambiaFlujo('.m3');">Consulta de tarjetas/Alta/Baja</p>
+				</li>
+			</ul>
 		</div>
 	
-		<div class="m3">
+		<div class="m3 pasos">
 			<div id="titulo" style="color:red">Seleccione la(s) tarjeta(s) que desea pagar.</div>
 			
 			<div class="mk" style="border:solid 1px silver; margin-top:15px; margin-left:40px; width:79%; text-align:left; height:25px; font-size:12px;">
@@ -233,7 +248,7 @@
 				<div class="btnaction"></div>
 			</div>
 			
-			<div  id="treg" style="margin-top:20px; margin-left:48px; width:79%; font-size: 11px; font-family: Arial, sans-serif, Helvetica;">Tarjetas registradas <a href="../docs/pantalla" title="Exportar"><div id="exportar"></div></a></div>
+			<div  id="treg" style="margin-top:20px; margin-left:48px; width:79%; font-size: 11px; font-family: Arial, sans-serif, Helvetica;">Tarjetas registradas <!--<a href="../docs/pantalla" title="Exportar">--><a href="#" title="Exportar"><div id="exportar"></div></a></div>
 
 			<div class"cons"  id="consultas" style="border:solid 1px silver; margin-top:10px; margin-left:40px; width:79%; height:176px; text-align:left;">
 				<div class="cols main" id="c1">
@@ -371,7 +386,7 @@
 			<div class="btnaceptar">Continuar</div>
 		</div>
 		</div>
-		<div class="m1" style="display:none">
+		<div class="m1 pasos">
 					<span class="textoH2">Seleccione la(s) tarjeta(s) registradas que desee pagar.</span>
 		<!-- div exportar -->
 			<div class="exportar"></div>
@@ -564,15 +579,15 @@
 			
 		</div>
 
-		<div class="botonera">
-			<div class="btn calendario">Calendario de pago</div>
-			<div class="btn">Agregar otro pago</div>
-			<div class="btnaceptar">Continuar</div>
+		<div class="botonera_ln">
+			<div class="btn_ln calendario">Calendario de pago</div>
+			<div class="btn_ln">Agregar otro pago</div>
+			<div class="btn_ln btnaceptar">Continuar</div>
 		</div>
 		</div>
 
 		<!-- m2 -->
-		<div class="m2" style="display:none">
+		<div class="m2 pasos" >
 			<h2>Seleccione la(s) tarjeta(s) que desee pagar.</h2>
 	
 					<div id="pagoTDC">
