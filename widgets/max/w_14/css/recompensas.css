@@ -534,8 +534,8 @@ padding-top: 25px;
 }
 
 .wra_Select{
-	float:right;
-	box-shadow: 1px 1px 2px #E1E1E1;
+	float:left;
+	
 
 }
 
@@ -693,4 +693,106 @@ input[type=text]
 
 .divT1 :hover{
 	box-shadow:2px 2px 5px #4573ec;
+}
+
+
+
+
+
+/* Misestilos agregados a otras cuentas */
+
+.boldred {
+	font-family:Arial;
+	font-size:11px;
+	font-weight:bold;
+	color:red;
+	font-size:11px;
+	width:650px;
+	margin-bottom: 19px;
+}
+
+input[type=text]
+{
+	margin-left: 16px;
+}
+	
+.wra_Select b{
+margin-left: 17px;
+}
+
+.wra_Select {
+
+	width: 265px;
+}
+
+.tbl_info {
+
+width:95%;
+float:left;
+margin-left:10px;
+margin-top: 10px;
+}
+
+
+
+
+
+
+
+/*ajuste de botones tamaño paso 3 : copia de wr_btnNav */
+
+#btn_paso3{
+	width: 244px;
+	overflow: hidden;
+	margin-top:50px;
+	position:absolute;
+	margin-top: 291px;
+	/*margin: auto;*/
+	border-left: 1px solid #b9b9b9;
+	border-right: 1px solid #b9b9b9;
+	border-top: 1px solid #b9b9b9;
+	height:93px;
+
+}
+ 
+#btn_paso3 > ul > li:first
+{
+	font-weight:bolder;
+}
+
+#btn_paso3 ul {
+	list-style: none;
+	/*background: #efefef;*/
+	background: #fff;
+	width: 100%;
+	margin: auto;
+	padding: 0 0 0 0;
+	font-size: 12px;			
+}
+
+#btn_paso3 ul li{
+	/*background: url(../img/menuLateral/btn_menu.png);*/
+	width: 100%;
+	height: 20px;
+	padding: 10px 10px 0;
+	border-bottom: 1px solid #bbbbbb;
+	cursor: pointer; 
+	font-size: 9px;
+	text-transform: uppercase;
+	text-align:left;
+}
+
+#btn_paso3 ul li:hover{
+	/*background: #e3e3e3;*/
+	color:#ff0000;
+}
+
+#btn_paso3 ul li > img{
+	float: left;
+	margin-left: 5px;
+	margin-top: -5px
+}
+
+.txtbtn_3{
+	margin-left: 17px;
 }
