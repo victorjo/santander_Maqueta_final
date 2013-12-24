@@ -1,0 +1,97 @@
+<!--<script src="../../../js/jquery10.2.min.js"></script>
+<script src="../../../js/ddSlick.js"></script>
+-->
+<link rel="stylesheet" href="../../../css/general.css"/>
+<link rel="stylesheet" href="../../../css/token.css"/>
+<link rel="stylesheet" href="widgets/max/w_14/css/recompensas.css"/>
+<link rel="stylesheet" href="widgets/max/w_14/css/r_paso2.css"/>
+<link rel="stylesheet" href="widgets/max/w_14/css/r_paso3.css"/>
+<script src="widgets/max/w_14/js/recomptdc.js"></script>
+<script>
+	
+	$('#Dropdown').ddslick({
+		onSelected: function(selectedData){
+		//callback function: do something with selectedData;
+		
+		}
+		});
+	$(document).ready(function(){
+		init();
+	});
+	function init(){
+		$(".fin").click(function(){closeAction()});
+		$(".stepWrapp").hide();
+		$("#step1").show();
+		$(".btnaceptar").click(function(){
+			$(".steps").replaceWith("<img src='img/paso_2.png' class='steps'>");
+			$("#step1").hide();
+			$("#step2").show();
+			$(".btn").click(function(){
+				$(".btnaceptar").off("click");
+				$(".btn").off("click");
+				$(".fin").off("click");
+				init();
+			});
+			$(".btnaceptar").click(function(){
+				creaOverlay("#fff","#widampliado",1);
+				creaToken("modalOver",null,"javascript: $('#step2').hide();$('#step3').show();$('#modalOver').fadeOut();",null,function(){$(".steps").replaceWith("<img src='img/paso_3.png' class='steps'>");});
+			});
+		});
+
+
+	}
+</script>
+<div id="widampliado">
+	<div>
+		<p>RECOMPENSAS DE TARJETA DE CRÉDITO</p>
+		<div class="fin"></div>
+		<div></div>
+	</div>
+	<div>
+		<img src="img/paso_1.png" class="steps"/>
+	</div>
+	
+	<div>
+		<ul>
+			<li class="liActive">
+				<p>Historial de puntos ganados</p>
+			</li>
+			<li>
+				<p>Inscribir tarjetas</p>
+			</li>
+		</ul>
+	</div>
+	
+	<!--<h2>Por favor confirme que la información desplegada a continuación es correcta:</h2>-->
+	
+	<div id="step1" class="stepWrapp" style="display:none">
+		
+		<div class="botonera">
+			<div class="btnaceptar">Inscribir tarjeta</div>
+		</div>
+		
+	</div>
+	<div id="step2" class="stepWrapp" style="display:none">
+		
+		
+		<div class="botonera">
+			<div class="btn">Regresar</div>
+			<div class="btnaceptar">Confirmar</div>
+		</div>
+		<div class="bloqueo" id="contenido"></div>
+		<!--- div con los datos de correo y numero de celular -->
+		<!--- Fin div con los datos de correo y numero de celular -->
+	</div>
+	<div id="step3" class="stepWrapp" >
+				<div class="botonera">
+				<div class="btn">Imprimir</div>
+				<div class="btnaceptar fin">Finalizar</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<script>
+	
+		
+</script>
