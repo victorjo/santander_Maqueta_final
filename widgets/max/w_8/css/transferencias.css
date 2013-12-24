@@ -220,3 +220,488 @@ float:right;
 .txtbtn_3{
 	margin-left: 17px;
 }
+
+/**************************NUEVO ESTILO AGREGADO***********************************/
+
+#titre{
+	
+	font-size: 11px;
+	font-family: 'ArialBlack';
+	color: red;
+	text-align:left;
+	position: relative;
+	top: 10px;
+	left: 2px;
+	
+}
+
+#exportar{
+	width: 80px;
+	height: 22px;
+	background: url(../img/exportar.png);
+	float: right;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+#consult{
+	background: red;
+}
+.cols{
+	width: 15%;
+	float: left;
+	text-align: center;
+	font-size: 10px;
+	font-family: Arial;
+	margin-top: 10px;
+}
+.cols2{
+	float: left;
+	
+}
+.cols2 ul{
+	list-style: none;
+	font-family: Arial, sans-serif, Helvetica;
+	font-size: 11px;
+	margin-left: -40px;	
+	margin-right: 15px;
+	margin-top: 10px;
+	
+}
+
+.iconos ul{
+	
+	width: 40%;
+
+}
+/*.cols2 ul li input{
+	width: 232px;
+}*/
+.camptext{
+	width: 17%;
+	float: left;
+	text-align: center;
+	font-size: 10px;
+	font-family: Arial;
+	background: red;
+}
+.camptext ul{
+
+}
+.cols ul{
+	list-style:none; 
+	margin-left:-31px;
+}
+.cols ul li{
+	margin-top: 12px;
+}
+
+.cols ul > li:nth-of-type(1){
+	font-weight: bolder;
+	margin-top: -6px;
+}
+.cols ul > li:nth-of-type(2){
+	font-weight: bolder;
+	margin-top: 16px;
+	
+}
+.iconos ul > li:nth-of-type(2){
+	font-weight: bolder;
+	margin-top: 3px;
+	
+}
+.cols.iconos{
+	width: 7%;
+	margin-left: 5px;
+}
+span{
+	font-family: arial;
+	font-weight: bolder;
+	font-size: 11px;
+	left:8px;
+}
+.btnaction{
+	width: 15px;
+	height: 15px;
+	background: url("../../../../img/iconos/quitar.png");
+	float: right;
+	margin-right: 10px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+.btnaction2{
+	width: 15px;
+	height: 15px;
+	background: url("../../../../img/iconos/agregar.png");
+	float: right;
+	margin-right: 10px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.btnactionx{
+	width: 15px;
+	height: 15px;
+	background: url("../../../../img/iconos/quitar.png");
+	float: right;
+	margin-right: 10px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+#altas{
+	display: none;
+	border:none;
+}
+.rad{
+	width: 11px;
+	height: 11px;
+	border-radius: 100%;
+	box-shadow: 0px 0px 0px 1px grey;
+	margin: 0 auto;
+	cursor: pointer;
+	/*background: url(../img/indicador.png) no-repeat;*/
+	background-position: center;
+	background-size: 6px;
+	margin-left: 9px;
+}
+.radselect{
+	width: 11px;
+	height: 11px;
+	border-radius: 100%;
+	box-shadow: 0px 0px 0px 1px grey;
+	margin: 0 auto;
+	cursor: pointer;
+	background: url(../img/indicador.png) no-repeat;
+	background-position: center;
+	background-size: 6px;
+	margin-left: 9px;
+}
+
+#infotext1{
+
+	width: 96px;
+	height: 46px;
+	position: absolute;
+	right: 75px;
+	top: 100px;
+	background: url("../../../../img/iconos/globito.png");
+	display: none;
+
+}
+#infotext1 .deletetext{
+	font-size: 10px;
+	position: relative;
+	top: 10px;
+	left: 0px;
+}
+#infotext2{
+
+	width: 96px;
+	height: 46px;
+	position: absolute;
+	right: 130px;
+	top: 100px;
+	background: url("../../../../img/iconos/globito.png");
+	display: none;
+
+}
+#infotext2 .deletetext{
+	font-size: 10px;
+	position: relative;
+	top: 10px;
+	left: 0px;
+}
+#infotext3{
+
+	width: 96px;
+	height: 46px;
+	position: absolute;
+	right: 100px;
+	top: 122px;
+	background: url("../../../../img/iconos/globito.png");
+	display: none;
+
+}
+#infotext3 .deletetext{
+	font-size: 10px;
+	position: relative;
+	top: 10px;
+	left: 0px;
+}
+#infotext4{
+
+	width: 96px;
+	height: 46px;
+	position: absolute;
+	right: 20px;
+	top: 100px;
+	background: url("../../../../img/iconos/globito.png");
+	display: none;
+
+}
+#infotext4 .deletetext{
+	font-size: 10px;
+	position: relative;
+	top: 10px;
+	left: 0px;
+}
+.iconos ul > li:nth-of-type(4),.iconos ul > li:nth-of-type(5){
+	
+}
+.main ul > li:nth-of-type(6),.main ul > li:nth-of-type(5){
+
+}
+
+.main ul > li:nth-of-type(5){
+	
+}
+#confel{
+	width: 230%;
+	height: 10px;
+	display: none;
+	position: relative;
+	left: -46px;
+}
+#confel input{
+	width: 130%;
+	border-radius: 10px;
+	height: 270%;
+	background:#cdd7d9;
+	color: red;
+	font-size: 11px;
+	font-family: 'ArialBlack';
+	outline: none;
+}
+#save{
+	width: 230%;
+	height: 10px;
+	display: none;
+	position: relative;
+	left: -46px;
+}
+#save input{
+	width: 130%;
+	border-radius: 10px;
+	height: 270%;
+	background:#cdd7d9;
+	color: red;
+	font-size: 11px;
+	font-family: 'ArialBlack';
+	outline: none;
+}
+.textedit{
+	display: none;
+}
+.textedit input{
+	font-size: 11px;
+	font-family: 'ArialBlack';
+}
+input[type=text]{
+	width: 214px;
+}
+input[type=text] {
+height: 28px;
+font-family: 'ArialBlack';
+color: #a4a4a4;
+font-size: 11px;
+text-align: center;
+margin-top: 8px;
+background-color: #e8e8e8;
+box-shadow: inset 1px 1px 5px #c6c6c6;
+border: 1px #a6a6a6 solid;
+width: 211px;
+}
+
+
+.sexycombo {
+margin-top: 12px;
+margin-left: 0px;
+width: 546px;
+height: 54px;
+text-align: left;
+}
+
+.ftext1{
+	width:;
+	float: left;
+	margin-left: 30px;
+	font-size: 12px;
+	margin-right: 10px;
+	color: grey;
+}
+.ftext2{
+	width:;
+	float: left;
+	
+}
+.titre{
+	
+	font-size: 11px;
+	font-family: 'ArialBlack';
+	color: red;
+	text-align:left;
+	position: relative;
+	top: -5px;
+	left: 0px;
+}
+.tittext{
+	/*margin-left: 200px;*/
+	margin-top: 20px;
+	font-family: Arial, Sans-serif, Helvetica;
+	font-size: 12px;
+	color: grey;
+	font-weight: bold;
+	
+
+	
+}
+.inputtext{
+	/*margin-left: 200px;*/
+	margin-top: 10px;
+	
+}
+
+
+
+
+
+
+#progfecha{
+	font-family: Arial, Sans-serif, Helvetica;
+	margin-top: 127px;
+	margin-left: 255px;
+	width:32%;
+	font-size: 12px;
+	color: grey;
+	font-weight: bold;
+	
+}
+#calendar{
+	border:solid 1px silver;
+	width: 79px;
+	height: 30px;
+	margin-top: 5px;
+	float: left;
+	border-radius: 10px;
+}
+#imgcal{
+	width: 30px;
+	height:30px;
+	border: solid 1px silver;
+	margin-left: 10px;
+	margin-top: 5px;
+	float: left;
+	background: url(../../../../img/iconos/calendario.png);
+}
+#textcal{
+	
+	width: 85px;
+	height: 30px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+#textcal input{
+	width: 85px;
+	margin-top: 0px;
+}
+#minisexycombo{
+	width: 225px;
+	height: 30px;
+	margin-left: 0px;
+	margin-top: 20px;
+	/*display: none;*/
+}
+
+/***switch**/
+
+
+
+.switchCont{
+	width:430px;
+	height:40px;
+	margin-right:-340px;
+	float:right;
+	margin-top:0px;
+}
+
+.switchCont p{
+	color:#282828;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	float:left;
+	font-weight:bold;
+	margin-left:10px;
+	margin-top:5px;
+}
+
+#switchBox{
+	border:1px #a6a6a6 solid;
+	width:78px;
+	height:28px;
+	margin:0 0 0 10px;
+	float:left;
+	position:relative;
+	overflow:hidden;
+}
+
+.switchSlide{
+	float:left;
+	width:120px;
+	position:absolute;
+	left:-39px;
+}
+
+.switchIndicador{
+	width:37px;
+	height:26px;
+	float:left;
+	background-color:#ff0000;
+	border:1px #c9c9c9 solid;
+	border-radius:5px;
+}
+
+.switchLabel{
+	width:39px;
+	height:28px;
+	float:left;
+	background-color:#ffffff;
+	cursor:pointer;
+}
+
+.switchLabelR{
+	width:39px;
+	height:28px;
+	float:left;
+	background-color:#ffffff;
+	cursor:pointer;
+}
+
+.switchs{
+	float: left;
+	margin-top: 10px;
+	margin-left: 11px;
+}
+.marcotriangulo {
+width: 25px;
+height: 17px;
+border: 1px solid gray;
+margin: -1px;
+padding-top: 10px;
+background-color: #E6E6E5;
+margin-top: 5px;
+margin-left: -8px;
+}
+.triangulo_inf {
+width: 0;
+height: 0;
+border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+border-top: 8px solid #666665;
+margin-left: 8px;
+}
+.ui-datepicker {  
+    width: 216px;
+    height: 230px;
+    top: -100px;
+}
