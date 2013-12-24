@@ -947,3 +947,11 @@ margin-left: 8px;
 	margin-top: 20px;
 	display: none;
 }
+
+
+.dropcontainer{
+	height: 100px;
+	width:715px;
+	float:left;
+	overflow:auto;
+}

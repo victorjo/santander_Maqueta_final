@@ -9,7 +9,10 @@
 			
 	});
 	
-	
+	$('.link').click(function(){
+		creaOverlay("#fff","#widampliado",1);
+		creaTelCel('modalOver',"destruyeOver();",'','');
+	});
 		
 	
 	$(".rightarrow").click(function(){
@@ -23,8 +26,8 @@
 
 $(".switchLabel").click(function(){
 			$(".switchSlide").animate({"left":"-=39px"},"fast");
-			$('.input3').attr('disabled','disabled');
-			$('.input3').removeClass('activo');
+			$('.dropdown').attr('disabled','disabled');
+			$('.dropdown').removeClass('activo');
 			$('#ico').removeClass('calico');
 			$('#ico').addClass('calicoNo');});
 			$(".switchLabelR").click(function(){
@@ -34,6 +37,7 @@ $(".switchLabel").click(function(){
 			$('#ico').removeClass('calicoNo');
 			$('#ico').addClass('calico');
 		  	});
+
 
 
 });
