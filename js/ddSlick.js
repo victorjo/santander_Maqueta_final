@@ -1,4 +1,3 @@
-var tSlide="down";
 (function (a) {
     function g(a, b) {
         var c = a.data("ddslick");
@@ -28,7 +27,7 @@ var tSlide="down";
         }
     }
 
-    function h(b) {
+    function h(b,objeto) {
         var c = b.find(".dd-select"),
             d = c.siblings(".dd-options"),
             e = c.find(".dd-pointer"),
@@ -39,10 +38,11 @@ var tSlide="down";
             d.fadeOut("fast");
             e.removeClass("dd-pointer-up")
         } else {
-
-        	if(tipoSlide=="up"){
+        	if(objeto.tSlide =="up"){
         		d.css({"top":"-"+d.height()+"px"});
         	}
+
+
 
             d.fadeIn("fast");
             e.addClass("dd-pointer-up")
@@ -96,7 +96,7 @@ var tSlide="down";
             imagePosition: "left",
             showSelectedHTML: true,
             clickOffToClose: true,
-            tipoSlide:tSlide,
+            tSlide:"down",
             onSelected: function () {}
         }, d = '<div class="dd-select"><input class="dd-selected-value" type="hidden" /><a class="dd-selected"></a><span class="dd-pointer dd-pointer-down"></span></div>',
         e = '<ul class="dd-options"></ul>',
@@ -165,7 +165,7 @@ var tSlide="down";
                     g(c, o)
                 }
                 c.find(".dd-select").on("click.ddslick", function () {
-                    h(c)
+                    h(c,b)
                 });
                 c.find(".dd-option").on("click.ddslick", function () {
                     g(c, a(this).closest("li").index())
