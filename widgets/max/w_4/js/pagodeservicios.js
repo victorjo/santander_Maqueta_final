@@ -3,28 +3,14 @@
 $(document).ready(function(){
 	$('#confirmar_token').click(function(){
 		creaOverlay("#fff","#widampliado",1);
-		creaToken("modalOver","javascript:$('#modalOver').fadeOut();","javascript: $('#step3').hide();$('#step4').show();$('#modalOver').fadeOut();",null,function(){$(".steps").replaceWith("<img src='img/paso_3.png' class='steps'>");});
+		creaToken("modalOver","javascript:destruyeOver();","javascript: $('#step3').hide();$('#step4').show();$('#modalOver').fadeOut();",null,function(){$(".steps").replaceWith("<img src='img/paso_3.png' class='steps'>");});
+	});
+
+	$('.link').click(function(){
+		creaOverlay("#fff","#widampliado",1);
+		creaTelCel('modalOver',"destruyeOver();",'','');
 	});
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*Funhcion switch (label de mas de dos digitos)--- Flujo: Domiciliaciones Ã³ mas */
@@ -179,10 +165,11 @@ function cambiaFlujo(step){
 
 }
 
-function avanzar(stepActual,stepFinal){
+function avanzar(stepActual,stepFinal,num){
 	$("#step"+stepActual).fadeOut("slow",function(){
 			$("#step"+stepFinal).fadeIn("slow");				
 			});
+	$(".steps").replaceWith("<img src='img/paso_"+num+".png' class='steps'>");
 }
        
             	 

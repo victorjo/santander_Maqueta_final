@@ -149,6 +149,31 @@ $("#"+contenedor).html(tokenHTML);
 
 }
 
+/*Funcion que muestra el bloqueo del correo y numero celular*/
+function creaTelCel(contenedor,cbTokenCanc,cbTokenAcep,moreData){
+
+  tokenHTML=  '<div id="datosTelCorreo">';
+  tokenHTML+= '<p><b>A continuación puede actualizar su correo electrónico y número celular para recibir notificaciones.</b></p>';
+  tokenHTML+= '<p><b>Correo registrado para notificación: veronica.pimentel@gmail.com</b></p>';
+  tokenHTML+= '<p><b>Celular registrado para notificación: 5555555555</b></p>';
+  tokenHTML+= '<div>';
+  tokenHTML+= '<img  src="../img/interfaz/paginador_encendido.png" width="12" height="12"><span><b>Correo que quedará registrado para notificación:</b></span><br>';
+  tokenHTML+= '<input type="text" class="input1"  placeholder="Correo@correo.com">';
+  tokenHTML+= '</div>';
+  tokenHTML+= '<div>';
+  tokenHTML+= '<img  src="../img/interfaz/paginador_apagado.png" width="12" height="12">';
+  tokenHTML+= '<span><b>Celular que quedará registrado para notificación:</b></span><br>';
+  tokenHTML+= '<input type="text" class="input1"  placeholder="5555555555">';
+  tokenHTML+= '</div>';
+  tokenHTML+= '<span><b>*Este medio cambiará para todas las operaciones de supernet. ¿esta seguro que desea realizar la acción?</b></span>';
+  tokenHTML+= '<table class="btnTabla"><tr><td><div class="btn" onclick="'+cbTokenAcep+'" '+moreData+'>Guardar cambios</div></td>';
+  tokenHTML+= '</tr><tr><td><div class="btn" onclick="'+cbTokenCanc+'">Cancelar</div></td>';
+  tokenHTML+= '</tr></table>';  
+  tokenHTML+= '</div>';
+
+  $("#"+contenedor).html(tokenHTML);
+
+}
 
   function avatarFade(){
     $("#avatarNavPrin").hover(function(){
