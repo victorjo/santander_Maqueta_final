@@ -1,5 +1,17 @@
 ﻿var msjAlert = ["","En pago de servicios usted puedes realizar busquedas avanzadas.","Es importante que verifique los datos antes de confirmar.","Para finalizar puede guardar una copia de su servicio efectuado."];
 
+$(document).ready(function(){
+	$('#confirmar_token').click(function(){
+		creaOverlay("#fff","#widampliado",1);
+		creaToken("modalOver","javascript:destruyeOver();","javascript: $('#step3').hide();$('#step4').show();$('#modalOver').fadeOut();",null,function(){$(".steps").replaceWith("<img src='img/paso_3.png' class='steps'>");});
+	});
+
+	$('.link').click(function(){
+		creaOverlay("#fff","#widampliado",1);
+		creaTelCel('modalOver',"destruyeOver();",'','');
+	});
+});
+
 
 /*Funhcion switch (label de mas de dos digitos)--- Flujo: Domiciliaciones Ã³ mas */
 
@@ -27,6 +39,9 @@ var switchO = '<div style="position:relative;width:230px;">';
     },"fast");
   });
   
+  };
+
+
   //dropdown
   $("#infobtn").click(function(){
 		$("#info").fadeToggle("slow");
@@ -116,22 +131,22 @@ var switchO = '<div style="position:relative;width:230px;">';
 
 
 	
-	//Transicion entre operaciones
-	$("#navegador > ul > :nth-child(1)").click(function(){
-		cambiaFlujo("#step1");
-	});
+//Transicion entre operaciones
+$("#navegador > ul > :nth-child(1)").click(function(){
+	cambiaFlujo("#step1");
+});
 
-	
-	$("#navegador > ul > :nth-child(2)").click(function(){
-		cambiaFlujo("#step4");
-	});
-	
-	$("#navegador > ul > :nth-child(3)").click(function(){
-		cambiaFlujo("#step7");
-	});
+
+$("#navegador > ul > :nth-child(2)").click(function(){
+	cambiaFlujo("#step4");
+});
+
+$("#navegador > ul > :nth-child(3)").click(function(){
+	cambiaFlujo("#step7");
+});
 
 		
-}
+
 
 
 function cambiaFlujo(step){
@@ -150,10 +165,11 @@ function cambiaFlujo(step){
 
 }
 
-function avanzar(stepActual,stepFinal){
+function avanzar(stepActual,stepFinal,num){
 	$("#step"+stepActual).fadeOut("slow",function(){
 			$("#step"+stepFinal).fadeIn("slow");				
 			});
+	$(".steps").replaceWith("<img src='img/paso_"+num+".png' class='steps'>");
 }
        
             	 

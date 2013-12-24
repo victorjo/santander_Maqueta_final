@@ -3,8 +3,10 @@
 -->
 <!-- estilo general Victor -->
 <link rel="stylesheet" href="../../../css/general.css"/>
+<link rel="stylesheet" href="../../../css/token.css"/>
 <script src="../../../js/ddSlick.js"></script>
 <script src="../../../js/balanceTransfer.js"></script>
+<script src="js/componentes.js"></script>
 <script src="widgets/max/w_4/js/pagodeservicios.js"></script>
 <script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
 <link rel="stylesheet" href="widgets/max/w_4/css/pagodeservicios.css"/>
@@ -82,9 +84,9 @@ function cambiaPaso3(){
 			</li>
 		</ul>
 	</div>
-	<!-- Flujo Pago de Servicios -->
+	<!-- Flujo Pago de Servicios -->anthem
 	<div>
-		<div id="step1">
+		<div id="step1">	
 			<h2>Seleccione de su lista de servicios registrados el que desee pagar.</h2>
 			<div class="table_pagoServ">
 			<div class="scroll_pagoServ">
@@ -201,7 +203,7 @@ function cambiaPaso3(){
 				<p>Si el servicio que desea pagar no se encuentra en su lista de clic<span class="sub">Aquí</span></p>	
 			</div>
 			<div class="botonera">
-				<div class="btnaceptar" onClick="avanzar('1','2')">Continuar</div>
+				<div class="btnaceptar" onClick="avanzar('1','2','1')">Continuar</div>
 			</div>	
 		</div>
 		
@@ -313,65 +315,168 @@ function cambiaPaso3(){
 							</div>
 						</div>
 						<div class="botonera">
-							<div class="btnaceptar" onClick="avanzar('2','3')">Continuar</div>
+							<div class="btnaceptar" onClick="avanzar('2','3','2')">Continuar</div>
 						</div>
 				
 			</div>
 		</div>
 
 		<div id="step3">
-			<h4 style="color:red">La operación se realizará con la siguiente información:</h4>
-			
-			<table class="tbl_info">
-				<tr>
-					<td style="width:200px;">Cuenta cargo:</td>
-					<td class="gris">1234****5678</td>
-				</tr>
-				<tr>
-					<td>Cuenta destino:</td>
-					<td class="gris">1234****5678</td>
-				</tr>
-				<tr>
-					<td>Concepto:</td>
-					<td class="gris">123456789123456789123456789 <br> 123456789123456789
-					</td>
-				</tr>
-				<tr>
-					<td>Importe:</td>
-					<td class="gris">123456789123456789</td>
-				</tr>
-				<tr>
-					<td>Fecha de transferencia:</td>
-					<td class="gris">13/11/2013</td>
-				</tr>
-				<tr>
-					<td>Fecha programada de transferencia:</td>
-					<td class="gris">16/11/2013</td>
-				</tr>
-				<tr>
-					<td>Notificación previa al pago:</td>
-					<td class="gris">3 días</td>
-				</tr>
-				<tr>
-					<td>Comisión por transferencia:</td>
-					<td class="gris">0.00 (MXP)</td>
-				</tr>
-				<tr>
-					<td>I.V.A. por comisión de transferencia:</td>
-					<td class="gris">0.00 (MXP)</td>
-				</tr>
-				<tr>
-					<td>Correo para notificacion:</td>
-					<td class="gris">veronica.pimentel@gmail.com (<a href="#">editar</a>)</td>
-				</tr>
-				<tr>
-					<td>Celular para notificacion:</td>
-					<td class="gris">5555555555 (<a href="#">editar</a>)</td>
-				</tr>
+			<h2>Por favor confirme que la información desplegada a continuación es correcta:</h2>
+		
+		<div class="descripcion">
+			<div>
+				<div class="bold">Datos del Cliente:</div>
+				<div>Titular</div>
+				<div>Cuenta de depósito:</div>
+				<div class="bold">Datos del Crédito:</div>
+				<div>Monto del crédito</div>
+				<div>Monto a disponer:</div>
+				<div>Capacidad de pago:</div>
+				<div>Pago Mensual:</div>
+				<div>Plazo</div>
+				<div>Meses de gracia:</div>
+				<div>Tasa de interés anual:</div>
+				<div>Comisión por disposición:</div>
+				<div>Esquema de aseguramiento:</div>
+				<div>Fecha de pago</div>
+				<div>Fecha de Solicitud</div>
+				<div>Correo para notificación</div>
+				<div>Celular para notificación</div>
+				<div>Tabla de amortización</div>
+			</div>
+			<div class="bold">
+				<div>&nbsp;</div>	
+				<div>María Peralta Ramírez</div>			
+				<div>1234****5678</div>
+				<div>&nbsp;</div>
+				<div>9,999,999.99</div>
+				<div>9,999,999.99</div>
+				<div>9,999,999.99</div>	
+				<div>9,999,999.99</div>					
+				<div>18</div>					
+				<div>Ninguno</div>					
+				<div>00.00%</div>					
+				<div>9,999,999.99</div>					
+				<div>Lorem</div>					
+				<div>dd/mm/aaaa</div>					
+				<div>dd/mm/aaaa</div>					
+				<div>correo@correo.com</div>								
+				<div>5555555555</div>
+				<div class="link">Descargar</div>
+			</div>
+			<div>
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
+				<div>&nbsp;</div>
+				<div class="link">(Editar)</div>
+				<div class="link">(Editar)</div>
+				<div>&nbsp;</div>	
+			</div>
 				
-			</table>
+		</div>
+				
+		<div class="botonera">
+			<div class="btn" onClick="avanzar('3','2');">regresar</div>
+			<div id="confirmar_token" class="btnaceptar">confirmar</div>
+		</div>
+		</div>
+	
+	<div id="step4">
+		<div class="paso3">
+			<h2>Por favor confirme que la información desplegada es correcta:</h2>
+			<div>
+				<div class="bold">Nombre del servicio:</div>
+				<div>Alias</div>
+				<div>Referencia 1:</div>
+				<div>Referencia 2:</div>
+				<div>Cuenta o tarjeta de cargo:</div>
+				<div>Categoría:</div>
+				<div>Razón social:</div>
+				<div>Número de convenio:</div>
+				<div>Importe:</div>
+				<div>Importe pronto pago:</div>
+				<div>Intereses moratorios:</div>
+				<div>Total a pagar:</div>
+				<div>Plazo:</div>
+				<div>Pago mensual:</div>
+				<div>Comisión por pago de servicio:</div>
+				<div>I.V.A por comisión de pago de servicio:</div>
+				<div>Fecha y hora de operación:</div>
+				<div>Correo para notificación:</div>
+				<div>Celular para notificación:</div>
+				<div>Folio superNet:</div>
+			</div>
+			<div class="bold">
+				<div>Lorem Ipsum</div>	
+				<div>María Peralta Ramírez</div>			
+				<div>1234****5678</div>
+				<div>&nbsp;</div>
+				<div>9,999,999.99</div>
+				<div>9,999,999.99</div>
+				<div>9,999,999.99</div>	
+				<div>9,999,999.99</div>					
+				<div>18</div>					
+				<div>Ninguno</div>					
+				<div>00.00%</div>					
+				<div>9,999,999.99</div>					
+				<div>Lorem</div>					
+				<div>dd/mm/aaaa</div>					
+				<div>dd/mm/aaaa</div>
+				<div>dd/mm/aaaa    24:00 hrs</div>					
+				<div>correo@correo.com<div class="link">(Editar)</div></div>			
+				<div>5555555555<div class="link">(Editar)</div></div>
+				<div>1234567890123456789</div>
+			</div>			
 		</div>
 
+		<div class="venta">
+			<h2>AUTOCOMPARA SANTANDER</h2>
+			<p>Verónica Pimentel<br />
+				tenemos para ti<br />
+				un Crédito Pre Aprobado<br />
+				de $9,999,999.99 MXN
+			</p>
+			<h3>Cotiza gratis y ahorra en tu seguro<br />
+				de auto con las mejores aseguradoras.
+			</h3>
+
+			<div class="botonera botonera_vta">
+				<div class="btnaceptar">Aceptar</div>
+			</div>
+			
+			<h4>Quizá le interese:</h4>
+
+			<ul class="vtaCruzadaMenu">
+				<li>
+					TRANSFERENCIA DE SALDOS
+				</li>
+				<li>
+					PAGO DE SERVICIOS
+				</li>
+				<li>
+					RECOMPENSAS
+				</li>
+			</ul>
+		</div>
+				
+		<div class="botonera">
+			<div class="btn">Imprimir Documentación</div>
+			<div class="btnaceptar fin">Finalizar</div>
+		</div>
+	</div>
 
 
 
