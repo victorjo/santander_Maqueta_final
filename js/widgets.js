@@ -422,8 +422,8 @@ function moveScroll(obj,math){
 function getInstance(obj){
 	var thisW = $(obj);
 	if(typeof thisW.data("instanced") == 'undefined' || thisW.data("instanced") == 'undefined'){
-		thisW.data("instanced",new newWidgetInstance(thisW));
 		$(".loader").show();
+		thisW.data("instanced",new newWidgetInstance(thisW));
 	}
 }
 
@@ -438,7 +438,7 @@ function newWidgetInstance(obj)
 	this.height = this.obj.height();
 	this.chPost = function () {
 			var forA = this.obj;
-			if(this.obj.attr("data-max")=="false" || this.obj.is(":animated"))return false;
+			if(this.obj.attr("data-max")=="false" || this.obj.is(":animated")){$(".loader").hide();return false;}
 			//console.log(parseInt(this.obj.attr("data-pos"))-1);
 			$(this.obj[0].outerHTML).appendTo("#wrappWidgets").insertAfter( $("[data-pos='"+(parseInt(forA.attr("data-pos"))-1)+"']")).attr("clone","true");
 			this.obj.css({"box-shadow":"none","border":"none"});
