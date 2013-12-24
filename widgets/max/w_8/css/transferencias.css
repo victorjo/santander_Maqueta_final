@@ -222,8 +222,12 @@ float:right;
 }
 
 <<<<<<< HEAD
+
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 49f418902a4d6009eeb10a9ccbecd362be4a3d9c
 /**************************NUEVO ESTILO AGREGADO***********************************/
 
 #titre{
@@ -374,7 +378,7 @@ span{
 	box-shadow: 0px 0px 0px 1px grey;
 	margin: 0 auto;
 	cursor: pointer;
-	background: url(../img/indicador.png) no-repeat;
+	background: url("../../../../img/iconos/indicador.png") no-repeat;
 	background-position: center;
 	background-size: 6px;
 	margin-left: 9px;
@@ -537,6 +541,11 @@ text-align: left;
 	float: left;
 	
 }
+.ftext3{
+	width:;
+	margin-top: 200px;
+	
+}
 .titre{
 	
 	font-size: 11px;
@@ -648,7 +657,7 @@ text-align: left;
 	overflow:hidden;
 }
 
-.switchSlide{
+.switchSlide,.switchSlide2{
 	float:left;
 	width:120px;
 	position:absolute;
@@ -664,7 +673,7 @@ text-align: left;
 	border-radius:5px;
 }
 
-.switchLabel{
+.switchLabel,.switchLabel2{
 	width:39px;
 	height:28px;
 	float:left;
@@ -672,7 +681,7 @@ text-align: left;
 	cursor:pointer;
 }
 
-.switchLabelR{
+.switchLabelR,.switchLabelR2{
 	width:39px;
 	height:28px;
 	float:left;
@@ -720,4 +729,7 @@ margin-left: 8px;
 	margin-bottom: 19px;
 
 }
+<<<<<<< HEAD
+=======
 >>>>>>> c852e4732414f883d242cfd8853818c82dcdc3f6
+>>>>>>> 49f418902a4d6009eeb10a9ccbecd362be4a3d9c

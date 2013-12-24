@@ -70,7 +70,7 @@ $(document).ready(function(){
 
 
 
-			$(".btnaction2").click(function(){
+			/*$(".btnaction2").click(function(){
 
 				if ($(this).hasClass("btnactionx")) {
 					$(this).removeClass("btnactionx");
@@ -82,7 +82,7 @@ $(document).ready(function(){
 				$("#consultas, #treg").slideUp("slow");
 				$(".btnaction").addClass("btnaction2");
 
-			});
+			});*/
 
 						
 			$("#r1").click(function(){
@@ -240,8 +240,27 @@ $(document).ready(function(){
 			$('#ico').removeClass('calicoNo');
 			$('#ico').addClass('calico');
 		  	});
+
+		  	$(".switchLabel2").click(function(){
+			$(".switchSlide2").animate({"left":"-=39px"},"fast");
+			$('.input3').attr('disabled','disabled');
+			$('.input3').removeClass('activo');
+			$('#ico').removeClass('calico');
+			$('#ico').addClass('calicoNo');});
+			$(".switchLabelR2").click(function(){
+			$(".switchSlide2").animate({"left":"+=39px"},"fast");
+			$('.input3').removeAttr('disabled');
+			$('.input3').addClass('activo');
+			$('#ico').removeClass('calicoNo');
+			$('#ico').addClass('calico');
+		  	});
+			
 			
 			$(".wra_Select2 select").ddslick({
+                    width:"225"
+            });
+
+			$(".wra_Select3 select").ddslick({
                     width:"225"
             });
 
@@ -260,10 +279,14 @@ $(document).ready(function(){
 			});	
 	
 			}
+			
 
-			openClose(".btnaction2","btnactionx","#minisexycombo","");
+			openClose(".btnaction2","btnactionx","#minisexycombo,.progfecha,#altas",".hidde,#consultas,#treg");
 				
 				$("#dia").datepicker();
+				$("#dia2").datepicker();
+				$("#dia3").datepicker();
+
 
 				omniBox("autocompleteQ",cards);
 
