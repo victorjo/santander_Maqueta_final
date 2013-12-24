@@ -6,7 +6,7 @@
 		var scope = $(this),red = '<div class="minired"><div class="red"></div></div>';
 		$(".navegador > ul > li").removeClass("liActive").addClass("liShadow");
 		$(".minired").remove();
-		$(red).prependTo(this).show();
+		//$(red).prependTo(this).show();
 		scope.removeClass("liShadow").addClass("liActive");
 		dot();
 	});

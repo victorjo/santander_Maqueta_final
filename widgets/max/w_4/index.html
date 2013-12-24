@@ -1,7 +1,8 @@
 ﻿<!--<script src="../../../js/jquery10.2.min.js"></script>
 <script src="../../../js/componentes.js"></script>
 -->
-
+<!-- estilo general Victor -->
+<link rel="stylesheet" href="../../../css/general.css"/>
 <script src="../../../js/ddSlick.js"></script>
 <script src="../../../js/balanceTransfer.js"></script>
 <script src="widgets/max/w_4/js/pagodeservicios.js"></script>
@@ -56,691 +57,351 @@ function cambiaPaso3(){
 }
 </style>
 
+<div id="widampliado">
+	<div>
+		<p>PAGO DE SERVICIOS</p>
+		<div class="fin"></div>
+		<div></div>
+	</div>
+	<div>
+		<img src="img/paso_1.png" class="steps"/>
+	</div>
+	<div>
+		<ul>
+			<li class="liActive">
+				<p>Pago de servicios</p>
+			</li>
+			<li>
+				<p>Alta de servicios</p>
+			</li>
+			<li>
+				<p>Consulta/baja de servicios</p>
+			</li>
+			<li style="height: 43px;">
+				<p>Consulta de pagos<br /> realizados/programados</p>
+			</li>
+		</ul>
+	</div>
+	<!-- Flujo Pago de Servicios -->
+	<div>
+		<div id="step1">
+			<h2>Seleccione de su lista de servicios registrados el que desee pagar.</h2>
+			<div class="table_pagoServ">
+			<div class="scroll_pagoServ">
+				<table class="tbl_pagoServ">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Nombre del Servicio</th>
+							<th>Alias</th>
+							<th>Convenio</th>
+							<th>Fecha de pago</th>
+							<th>Importe (MXP)</th>
+							<th>Referencia</th>
+							<!--<td style="background-color:gray;color:white;cursor:pointer">Ver lista<br />completa</td>-->
+							</tr>
+					</thead>			
+					<tbody>
 	
-<div id="widget" class="widget">
-
-		<!--<div id="titulo">
-			<p class="f_titleWid">
-				PAGO <br/>
-				DE SERVICIOS</p>
-		</div>-->
-		<div id="header">
-			<p class="f_titleWid">
-				PAGO DE SERVICIOS
-				</p>
-
-			<div class="btnHeader">
-				<img src="../img/botones/btn_cerrar.png"/>
+						<tr>
+							<td><div class="radioP"></div></td>
+							<td><div class='cuadro'></div>Lorem Ipsum</td>
+							<td>Lorem Ipsum</td>
+							<td>1234</td>
+							<td>dd/mm/aaaa</td>
+							<td>999,999,999.00</td>
+							<td colspan="2">1456789009876</td>
+						</tr>
+						<tr>
+							<td><div class="radioP"></div></td>
+							<td><div class='cuadro'></div>Lorem Ipsum</td>
+							<td>Lorem Ipsum</td>
+							<td>1234</td>
+							<td>dd/mm/aaaa</td>
+							<td>999,999,999.00</td>
+							<td colspan="2">1456789009876</td>
+						</tr>
+						<tr>
+							<td><div class="radioP"></div></td>
+							<td><div class='cuadro'></div>Lorem Ipsum</td>
+							<td>Lorem Ipsum</td>
+							<td>1234</td>
+							<td>dd/mm/aaaa</td>
+							<td>999,999,999.00</td>
+							<td colspan="2">1456789009876</td>
+						</tr>
+						<tr>
+							<td><div class="radioP"></div></td>
+							<td><div class='cuadro'></div>Lorem Ipsum</td>
+							<td>Lorem Ipsum</td>
+							<td>1234</td>
+							<td>dd/mm/aaaa</td>
+							<td>999,999,999.00</td>
+							<td colspan="2">1456789009876</td>
+						</tr>
+						<tr>
+							<td><div class="radioP"></div></td>
+							<td><div class='cuadro'></div>Lorem Ipsum</td>
+							<td>Lorem Ipsum</td>
+							<td>1234</td>
+							<td>dd/mm/aaaa</td>
+							<td>999,999,999.00</td>
+							<td colspan="2">1456789009876</td>
+						</tr>
+						<tr>
+							<td><div class="radioP"></div></td>
+							<td><div class='cuadro'></div>Lorem Ipsum</td>
+							<td>Lorem Ipsum</td>
+							<td>1234</td>
+							<td>dd/mm/aaaa</td>
+							<td>999,999,999.00</td>
+							<td colspan="2">1456789009876</td>
+						</tr>
+						<tr>
+							<td><div class="radioP"></div></td>
+							<td><div class='cuadro'></div>Lorem Ipsum</td>
+							<td>Lorem Ipsum</td>
+							<td>1234</td>
+							<td>dd/mm/aaaa</td>
+							<td>999,999,999.00</td>
+							<td colspan="2">1456789009876</td>
+						</tr>
+						<tr>
+							<td><div class="radioP"></div></td>
+							<td><div class='cuadro'></div>Lorem Ipsum</td>
+							<td>Lorem Ipsum</td>
+							<td>1234</td>
+							<td>dd/mm/aaaa</td>
+							<td>999,999,999.00</td>
+							<td colspan="2">1456789009876</td>
+						</tr>
+						<tr>
+							<td><div class="radioP"></div></td>
+							<td><div class='cuadro'></div>Lorem Ipsum</td>
+							<td>Lorem Ipsum</td>
+							<td>1234</td>
+							<td>dd/mm/aaaa</td>
+							<td>999,999,999.00</td>
+							<td colspan="2">1456789009876</td>
+						</tr>
+						<tr>
+							<td><div class="radioP"></div></td>
+							<td><div class='cuadro'></div>Lorem Ipsum</td>
+							<td>Lorem Ipsum</td>
+							<td>1234</td>
+							<td>dd/mm/aaaa</td>
+							<td>999,999,999.00</td>
+							<td colspan="2">1456789009876</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
-			<div class="btnHeader">
-				<img src="../img/botones/info_.png"/>
 			</div>
+			<div class="txt1">
+				<p>Si el servicio que desea pagar no se encuentra en su lista de clic<span class="sub">Aquí</span></p>	
+			</div>
+			<div class="botonera">
+				<div class="btnaceptar" onClick="avanzar('1','2')">Continuar</div>
+			</div>	
 		</div>
-		<div id="stepbar">
-				<img src="../img/fake/pasos/paso1.png"/>
-		</div>
-			<div id="contenido">
-			<div><!--Inicio Pago de Servicios-->
-				<div id="step1" class="pasos">
-					<h4>Seleccione de su lista de servicios registradros el servicio que desea pagar</h4>
-						<table class="tbl_consulta">
-							<tr>
-								<td colspan="2">Nombre del Servicio</td>
-								<td>Convenio</td>
-								<td>Último pago</td>
-								<td>Importe (MXP)</td>
-								<td>Referencia</td>
-								<td style="background-color:gray;color:white;cursor:pointer">Ver lista<br />completa</td>
+		
+		<div id="step2">
+			<div class="consulta_pagoServ">
+				<table class="tbl_pagoServ">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Nombre del Servicio</th>
+							<th>Alias</th>
+							<th>Convenio</th>
+							<th>Fecha de pago</th>
+							<th>Importe (MXP)</th>
+							<th>Referencia</th>
+							<!--<td style="background-color:gray;color:white;cursor:pointer">Ver lista<br />completa</td>-->
 							</tr>
-							<tr>
-								<td><div > <img src="../img/servicios/estable_cfe.png"></div></td>
-								<td>CFE</td>
-								<td>1234</td>
-								<td>18/03/2012</td>
-								<td>$ 548,145,199.00</td>
-								<td colspan="2">1456789009876</td>
-							</tr>
+					</thead>
+					<tr>
+						<td><div class="radioP"></div></td>
+						<td><div class='cuadro'></div>Lorem Ipsum</td>
+						<td>Lorem Ipsum</td>
+						<td>1234</td>
+						<td>dd/mm/aaaa</td>
+						<td>999,999,999.00</td>
+						<td colspan="2">1456789009876</td>
+					</tr>
+				</table>
+				<span><b>Introduzca el nombre, alias o los cuatro dí­gitos de la cuenta o tarjeta de cargo o seleccionela de la lista:</b></span>
+						<!-- Lista provisional -->
+						<table>
+							<tr><td>						
+								<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias    548,145,199.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;margin-left: 6px;"> 
+							</td><td>
+
+							<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+
+									<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span></div></div></td>
+							</td></tr>
 						</table>
-					
-					<p><b>Introduzca el nombre, alias o los cuatro dí­gitos de la cuenta o tarjeta de cargo o seleccionela de la lista:</b></p>
-							<!-- Lista provisional -->
-							<table>
-								<tr><td>						
-									<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias    548,145,199.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
-								</td><td>
-
-								<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-
-										<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span></div></div></td>
-								</td></tr>
-							</table>
-					<div style="float:left;width:715px;">
-						<div class="input" style="margin-left:0px; float:left; width:286px">
-							<p>Importe:</p> 
-							<input class="txtbox" type="text" value=" 548,145,199.00" name="Text1" style="width:250px; margin-left:0px"/>
-						</div>
-						<div class="input" style="margin-left:10px; float:left; width:289px">
-							<p>Concepto:</p>
-							<input class="txtbox" type="text" value="13516384351351465463878431515" name="Text1" style="width:250px; margin-left:0px"/>
-						</div>
-						
-						
-					</div>
-					<div class="input" style="margin-left:0px; float:left; width:277px">
-							<p>Referencia de pago:</p>
-							<input class="txtbox" type="text" value="13516384351351465463878431515" name="Text1" style="width:244px; margin-left:0px"/>
-							<div id="infobtn"><img src="../img/botones/info_.png"/></div>
-					
-					<div id="info"><img src="../img/infoimg.png"/></div>
-						</div>
-					
-					<div class="centradoSwitch">
+						<div style="float:left;width:715px;">
+							<div class="input" style="margin-left:0px; float:left; width:286px">
+								<p>Concepto:</p> 
+								<input class="input1" type="text" value=" 548,145,199.00" name="Text1" />
+							</div>
+							<div class="input" style="margin-left:10px; float:left; width:289px">
+								<p>Alias:</p>
+								<input class="input2" type="text" value="13516384351351465463878431515" name="Text1" />
+							</div>
 							
 							
+						</div>
+						<div class="input" style="margin-left:0px; float:left; width:277px">
+								<p>Referencia de pago:</p>
+								<input class="input1" type="text" value="13516384351351465463878431515" name="Text1" />
+								<div id="infobtn"><img src="../img/botones/info_.png"/></div>
+						
+						<div id="info"><img src="../img/infoimg.png"/></div>
+						</div>
+						
+						<div class="centradoSwitch">
+								
+								
 
-						<h5>Programar fecha:</h5>
-						<div id="switchbox" class="switchDom">
-					</div>
-					
-					<div id="calico"><img src="../img/iconos/img_calendario.png"/></div>
-					
-					<input class="txtbox" onmouseover="$(this).datepicker();" onkeyup="$(this).val(getMask(this.value,event));" placeholder="17/03/2012"/>
-									
-					</div> 
-					
-					<div class="dropcontainer">
-						<div class="dropdown">
-							<img id="downico1"src="../img/iconos/dropdown.png"/>
-							<img id="upico1"src="../img/iconos/dropup.png"/>
-							<h6>Quiero notificación previa de mi pago</h6>
+							<h5>Programar fecha:</h5>
+							<div id="switchbox" class="switchDom">
 						</div>
 						
-						<div id="select1" class="wra_Select4">
-							<select name="" id="" >  
-								<option value="">3 días</option>
-			                    <option value="">Opcion1</option>
-			                    <option value="">Opcion1</option>
-			                    <option value="">Opcion1</option>
-			                    <option value="">Opcion1</option>
-				           	</select>
-						</div>
+						<div id="calico"><img src="../img/iconos/img_calendario.png"/></div>
 						
-						<div class="dropdown">
-							<img id="downico2" src="../img/iconos/dropdown.png"/>
-							<img id="upico2" src="../img/iconos/dropup.png"/>
-							<h6>Quiero transferir el importe a meses sin intereses</h6>
-						</div>
-									
-						<div id="select2" class="wra_Select4">
-							<select name="" id="" style="width:100%">
-			                            
-			                            <option value="">Opcion1</option>
-			                            <option value="">Opcion1</option>
-			                            <option value="">Opcion1</option>
-			                            <option value="">Opcion1</option>
-			                            <option value="">Opcion1</option>
-			                           
-			            	</select>
+						<input class="txtbox" onmouseover="$(this).datepicker();" onkeyup="$(this).val(getMask(this.value,event));" placeholder="17/03/2012"/>
+										
+						</div> 
 						
-						</div>
-					</div>
-					<div class="botonera"> 
+						<div class="dropcontainer">
+							<div class="dropdown">
+								<img id="downico1"src="../img/iconos/dropdown.png"/>
+								<img id="upico1"src="../img/iconos/dropup.png"/>
+								<h6>Quiero notificación previa de mi pago</h6>
+							</div>
 							
-							<div id="siguiente"><div class="btnaceptar" onclick="cambiaPasoImg();changeComment(2)" style="float:right; margin-right:224px;margin-top:-8px">Continuar</div></div>
-
-						</div>			
-					
-				</div> <!--fin step1-->
-
-
-
+							<div id="select1" class="wra_Select4">
+								<select name="" id="" >  
+									<option value="">3 días</option>
+				                    <option value="">Opcion1</option>
+				                    <option value="">Opcion1</option>
+				                    <option value="">Opcion1</option>
+				                    <option value="">Opcion1</option>
+					           	</select>
+							</div>
+							
+							<div class="dropdown">
+								<img id="downico2" src="../img/iconos/dropdown.png"/>
+								<img id="upico2" src="../img/iconos/dropup.png"/>
+								<h6>Quiero transferir el importe a meses sin intereses</h6>
+							</div>
+										
+							<div id="select2" class="wra_Select4">
+								<select name="" id="" style="width:100%">
+				                            
+				                            <option value="">Opcion1</option>
+				                            <option value="">Opcion1</option>
+				                            <option value="">Opcion1</option>
+				                            <option value="">Opcion1</option>
+				                            <option value="">Opcion1</option>
+				                           
+				            	</select>
+							
+							</div>
+						</div>
+						<div class="botonera">
+							<div class="btnaceptar" onClick="avanzar('2','3')">Continuar</div>
+						</div>
 				
-				<div id="step2" class="pasos">
-					<h4>El pago de servicio seleccionado se efectuará con la siguiente información:</h4>
-						<table class="tbl_info" style="width:100%;float:left;">
+			</div>
+		</div>
 
-				<tr>
-					<td style="width:200px;">Nombre del servicio:</td>
-					<td style="color:#CCCCCC">Francisco Palencia</td>
-				</tr>
-				<tr>
-					<td>Razón social:</td>
-					<td style="color:#CCCCCC">Planet media S.A. de C.V.</td>
-				</tr>
-				<tr>
-					<td>Convenio:</td>
-					<td style="color:#CCCCCC">123456789123456789</td>
-				</tr>
-				<tr>
-					<td>Referencia:</td>
-					<td style="color:#CCCCCC">123456789123456789</td>
-				</tr>
-
-				<tr>
-					<td>Cuenta de cargo:</td>
-					<td style="color:#CCCCCC">1234****5678</td>
-				</tr>
-
-				<tr>
-					<td>Concepto</td>
-					<td style="color:#CCCCCC">123456789123456789123456789<br> 123456789123456789</td>
-				</tr>
-				<tr>
-					<td>Importe:</td>
-					<td style="color:#CCCCCC">548,145,199.00 (MXP)</td>
-				</tr>
-				<tr>
-					<td>Comisión por pago de servicio:</td>
-					<td style="color:#CCCCCC">0.00 (MXP)</td>
-				</tr>
-				<tr>
-					<td>I.V.A. por comisión de pago de servicio:</td>
-					<td style="color:#CCCCCC">0.00 (MXP)</td>
-				</tr>
-				<tr>
-					<td>Fecha de operación:</td>
-					<td style="color:#CCCCCC">21/07/2012</td>
-				</tr>
-				<tr>
-					<td>Fecha programada de pago:</td>
-					<td style="color:#CCCCCC">11/12/2013</td>
-				</tr>
-				<tr>
-					<td>Notificación previa del pago:</td>
-					<td style="color:#CCCCCC">3 días</td>
-				</tr>
-				
-			</table>
-				<div class="botonera3">
-					<div class="btn" id="regresar" onclick="backPasoImg();changeComment(1)">Regresar</div>
-					
-					<div id="siguiente2"><div class="btnaceptar" onclick="cambiaPaso3();changeComment(3)">Confirmar</div></div>
-				</div>
-
-			</div> <!--fin step2-->
+		<div id="step3">
+			<h4 style="color:red">La operación se realizará con la siguiente información:</h4>
 			
-			<div id="step3" class="pasos">
-			
-				<div id="vtacruzada"> 
-			
-						<div class="vtaimg">
-						</div>
-						
-						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
-						
-						<!--<div class="vtapanel">
-							<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-							<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-							<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-						</div>-->
-						<div id="btn_paso3">
-		                     <ul>
-		                    	<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
-		                        <li class="btnNav"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">Pagar Servicios</span></li>
-		                        <li class="btnNav"><img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">Realizar una Domiciliación</span></li>
-		                      </ul>
-		                </div>
-						
-					</div>
-		
-				<h4 style="width:35%">Comprobante de pago de servicio.</h4>
-			
-			
-			
-					<table class="tbl_info" style="width:60%;float:left;">
-		
-						<tr>
-							<td>Nombre del servicio:</td>
-							<td style="color:#CCCCCC">Creditos bancarios</td>
-						</tr>
-						<tr>
-							<td>Razón social:</td>
-							<td style="color:#CCCCCC">Ferreteria la hormiga S.A. de C.V.</td>
-						</tr>
-						
-						<tr>
-					<td>Convenio:</td>
-					<td style="color:#CCCCCC">123456789123456789</td>
-				</tr>	
+			<table class="tbl_info">
 				<tr>
-					<td>Referencia:</td>
-					<td style="color:#CCCCCC">123456789123456789</td>
+					<td style="width:200px;">Cuenta cargo:</td>
+					<td class="gris">1234****5678</td>
 				</tr>
 				<tr>
-					<td>Cuenta de cargo:</td>
-					<td style="color:#CCCCCC">1234****5678</td>
+					<td>Cuenta destino:</td>
+					<td class="gris">1234****5678</td>
 				</tr>
 				<tr>
 					<td>Concepto:</td>
-					<td style="color:#CCCCCC">123456789123456789123456789<br> 123456789123456789</td>
+					<td class="gris">123456789123456789123456789 <br> 123456789123456789
+					</td>
 				</tr>
-
 				<tr>
 					<td>Importe:</td>
-					<td style="color:#CCCCCC">212,236,419.00 (MXP)</td>
+					<td class="gris">123456789123456789</td>
 				</tr>
 				<tr>
-					<td>Comisión por pago de servicio:</td>
-					<td style="color:#CCCCCC">0.00 (MXP)</td>
+					<td>Fecha de transferencia:</td>
+					<td class="gris">13/11/2013</td>
 				</tr>
 				<tr>
-					<td>I.V.A. por comisión de pago de servicio:</td>
-					<td style="color:#CCCCCC">0.00 (MXP)</td>
+					<td>Fecha programada de transferencia:</td>
+					<td class="gris">16/11/2013</td>
 				</tr>
 				<tr>
-					<td>Fecha de pago:</td>
-					<td style="color:#CCCCCC">11/12/2013</td>
+					<td>Notificación previa al pago:</td>
+					<td class="gris">3 días</td>
 				</tr>
+				<tr>
+					<td>Comisión por transferencia:</td>
+					<td class="gris">0.00 (MXP)</td>
+				</tr>
+				<tr>
+					<td>I.V.A. por comisión de transferencia:</td>
+					<td class="gris">0.00 (MXP)</td>
+				</tr>
+				<tr>
+					<td>Correo para notificacion:</td>
+					<td class="gris">veronica.pimentel@gmail.com (<a href="#">editar</a>)</td>
+				</tr>
+				<tr>
+					<td>Celular para notificacion:</td>
+					<td class="gris">5555555555 (<a href="#">editar</a>)</td>
+				</tr>
+				
+			</table>
+		</div>
 
 
-						<tr>
-							<td>Folio SuperNet:</td>
-							<td style="color:#CCCCCC">12345678912345</td>
-						</tr>
-		
-						<tr>
-							<td colspan="5" ><div id="btnreturn" onclick="backPasoImg()">Deseo hacer otro<br />pago de servicio</div></td>
-							
-						</tr>
-						
-		
-						
-					</table>
-			
-				<div class="botonera2" style="margin-right:-11px;width:100%" >
-					<div class="btnaceptar" style="float:right;margin-top:7px;" onclick="backPasoImg(); cierraWidget()">Finalizar</div>
-					<div class="btn" style="float:right;margin-top:7px">
-						<img src="../img/iconos/img_impresora.png" class="btnico"/>
-						<p class="btntxt" style="margin-top:0px">Imprimir</p>
-					</div>
-				</div>
 
-			
-			</div><!--fin step3-->
-			
-			</div><!--Fin Pago de servicios-->
-			
-		<div><!--Inicio Alta de servicios-->
-			<div id="step4" class="pasos">
-				<h4>Para realizar la búsqueda del servicio a dar de alta, ingrese la siguiente
-					información de manera individual o en conjunto.</h4>	
-				<div class="cont1">
-					<div class="notepodiaacomodar">
-						<h7>Nombre de la empresa o razón social</h7>
-						<input name="Text1" type="text" value=" Empresa" class="txtbox2"/>
-					</div>
-					<div class="notepodiaacomodar">
-						<h7>Convenio</h7>
-						<input name="Text1" type="text" value=" 1234" class="txtbox2"/>
-					</div>
 
-					
-					
-					
-					
-					<div class="input" style="margin-left:10px">
-					
-						<p>Categoría</p>
-						<div class="wra_Select2" style="margin-top:5px">
-							<select name="" id="" >
-	                            <option value="">Opcion1</option>
-	                            <option value="">Opcion1</option>
-	                            <option value="">Opcion1</option>
-	                            <option value="">Opcion1</option>
-	                            <option value="">Opcion1</option>
-	                    	</select>
-						</div>
-					</div>
-				
-					<div class="input" >
-						
-						<p>Categoría</p>
-						<div class="wra_Select2" style="margin-top:5px">
-							<select name="" id="">
-	                            <option value="">Opcion1</option>
-	                            <option value="">Opcion1</option>
-	                            <option value="">Opcion1</option>
-	                            <option value="">Opcion1</option>
-	                            <option value="">Opcion1</option>
-	            			</select>
-				
-						</div>
-					</div>
-					
-					<h6>Listado de los 20 servicios de (Categoría) más utilizados en el D.F. </h6>
-				
-					<div id="slider">
-						<div style="width:680px;overflow: hidden;height:85px">
-							<div style="width:910px;overflow: hidden">
-								<div class="servslide"></div>
-								<div class="servslide"></div>
-								<div class="servslide"></div>
-								<div class="servslide"></div>
-								<div class="servslide"></div>
-								<div class="servslide"></div>
-								<div class="servslide"></div>
-								<div class="servslide"></div>
-								<div class="servslide"></div>
-								<div class="servslide"></div>
-								<div class="servslide"></div>
-								<div class="servslide"></div>
-								<div class="servslide"></div>
-								<div class="servslide"></div>
-							</div>
-						</div>	
-						<div id="rightarrow"><img src="../img/botones/flecha_lado_dropdown_largo.png"/></div>
-					</div>
-				
-				</div> <!--Cont1-->
-			
-				<div class="cont" style="margin-top:10px; height:90px">
-				
-					<table style="margin:10px 0 0 10px; width:100%">
-						<tr>
-							<td style="width:50%"><h7>Servicio seleccionado:</h7></td>
-							<td rowspan="2" style="width:50%"><img src="../img/servicio.png" /></td>
-						</tr>
-						<tr>
-							<td><input name="Text1" type="text" value="Cuentas de cheques" class="txtbox2"/></td>
-							
-						</tr>
-					</table>
-				
-				</div>
-				
-				<div class="botonera4">
-				
-					<div id="siguiente3"><div class="btnaceptar" onclick="cambiaPasoImg();changeComment(2)" style="float:right;margin-right:-10px">Dar de alta</div></div>	
-				</div>
-			</div><!--step4-->
-			
-			<div id="step5" class="pasos">
-				<h4>El servicio seleccionado se dará de altacon la siguiente información:</h4>
-				<table class="tbl_info" style="width:100%;float:left;">
-						<tr>
-							<td colspan="3">Nombre comercial o razón social del servicio</td>
-							<td style="color:#CCCCCC">Credito hipotecario</td>
-							<td rowspan="4"><img src="../img/servicio.png"/></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td colspan="3" >Número de Convenio:</td>
-							<td style="color:#CCCCCC">12345</td>
-						</tr>
-						<tr>
-							<td colspan="3" ></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td colspan="3" ></td>
-							<td></td>
-						</tr>
-					</table>
-			
-			<div class="botonera3" style="margin-bottom:95px;margin-right:-0px;position:absolute">
-				<div class="btn" id="regresar2" onclick="backPasoImg();changeComment(1)">Regresar</div>
-				
-				<div id="siguiente4"><div class="btnaceptar" onclick="cambiaPaso3();changeComment(3)">Confirmar</div></div>
-			</div>
 
-			</div><!--fin step5-->
-			
-			<div id="step6" class="pasos"><!--step6-->
-				<div id="vtacruzada"> 
-			
-						<div class="vtaimg">
-						</div>
-						
-						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
-						
-						<!--<div class="vtapanel">
-							<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-							<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-							<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-						</div>-->
-						<div id="btn_paso3">
-		                     <ul>
-		                    	<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
-		                        <li class="btnNav"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">Pagar Servicios</span></li>
-		                        <li class="btnNav"><img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">Realizar una Domiciliación</span></li>
-		                      </ul>
-		                </div>
-						
-					</div>
-
-						<h4 style="color:red;">Comprobante de transferencia entre mis cuentas Santander</h4>
-
-									
-							<table class="tbl_info" style="width:473px;float:left;">
-<tr>
-								<td style="width:200px;">Nombre de la empresa o razón social:</td>
-								<td style="color:#CCCCCC">Apple computers</td>
-							</tr>
-							<tr>
-								<td>Número de convenio:</td>
-								<td style="color:#CCCCCC">1234</td>
-							</tr>
-							<tr>
-								<td>Fecha y hora de alta:</td>
-								<td style="color:#CCCCCC">12/12/213 00:00
-								</td>
-							</tr>
-							<tr>
-								<td>Fecha y hora de activación:</td>
-								<td style="color:#CCCCCC">15/12/2013 00:00</td>
-							</tr>
-							<tr>
-								<td>Folio SuperNet:</td>
-								<td style="color:#CCCCCC">1234567892345</td>
-							</tr>
-							
-							<tr>
-								<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo hacer<br />otra transferencia</div></td>
-								
-							</tr>
-						</table>
-
-						<table style="	float: left; margin-left: -22px; margin-top:61px;">
-							<tr>
-								<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
-								<td><div class="btn" >Guardar en operaciones favoritas</div></td>
-								<td><div class="btn btnaceptar" onclick="cierraWidget();">Finalizar</div></td>
-							</tr>
-						</table>
-			</div>
-			
-		</div><!--Fin Alta de servicios-->
-		
-		<div><!--inicio consulta de Servicios-->
-			<div id="step7" class="pasos">
-			<h4>Seleccione de la lista el servicio que desea eliminar:</h4>
-				<table class="tbl_consulta" style="width:100%;float:left;">
-					<tr>
-						<td>Eliminar</td>
-						<td>Nombre del Servicio</td>
-						<td>Fecha de <br />alta</td>
-						<td>Convenio</td>
-						<td>Referencia</td>
-						<td>Último pago</td>
-						<td>Importe (MXP)</td>
-						<td>Estatus</td>
-					</tr>
-					<tr>
-						<td><input type="radio"  name="balance" value="$0.00" placeholder=""></td>  
-						<td><div style="width:18px; height:18px; background-color:gray;float:left;"></div>Dinero ilimitado</td>
-						<td>10/02/2002</td>
-						<td>1234</td>
-						<td>1456789009876</td>
-						<td>11/10/2013</td>
-						<td>212,236,419.00</td>
-						<td>Activo</td>
-	
-					</tr>
-					<tr>
-						<td><input type="radio"  name="balance" value="$0.00" placeholder=""></td>
-						<td><div style="width:18px; height:18px; background-color:gray;float:left;"></div>Promocion del año</td>
-						<td>25/05/2011</td>
-						<td>1234</td>
-						<td>1456789009876</td>
-						<td>15/25/2013</td>
-						<td>212,236,419.00</td>
-						<td>Activo</td>
-	
-					</tr>
-					<tr>
-						<td><input type="radio"  name="balance" value="$0.00" placeholder=""></td>
-						<td><div style="width:18px; height:18px; background-color:gray;float:left;"></div>Abonos de oferta</td>
-						<td>24/02/2010</td>
-						<td>1234</td>
-						<td>1456789009876</td>
-						<td>22/08/2013</td>
-						<td>152,541,145.00</td>
-						<td>Activo</td>
-	
-					</tr>
-					<tr>
-						<td><input type="radio" name="balance" value="$0.00" placeholder=""></td>
-						<td><div style="width:18px; height:18px; background-color:gray;float:left;"></div>Pay per view</td>
-						<td>25/05/2012</td>
-						<td>1234</td>
-						<td>1456789009876</td>
-						<td>14/27/2013</td>
-						<td>152,784,173.00</td>
-						<td>Activo</td>
-	
-					</tr>
-					<tr>
-						<td><input type="radio"  name="balance" value="$0.00" placeholder=""></div></td>
-						<td><div style="width:18px; height:18px; background-color:gray;float:left;"></div>Tu banco en linea</td>
-						<td>30/04/2011</td>
-						<td>1234</td>
-						<td>1456789009876</td>
-						<td>13/12/2013</td>
-						<td>147,144,852.00</td>
-						<td>Activo</td>
-					</tr>
-				</table>
-				<div class="botonera6">
-					
-					
-					<div id="siguiente5"><div class="btnaceptar" onclick="cambiaPasoImg();changeComment(2)" style="float: right;margin-right: -11px;margin-top: 12px">Dar de baja</div></div>
-				</div>
-				
-				</div><!--fin step7-->
-				
-				<div id="step8" class="pasos">
-				
-					<h4>El servicio seleccionado se dará de baja con la siguiente información:</h4>
-					<table class="tbl_info" style="width:100%;float:left;">
-						<tr>
-							<td colspan="3">Nombre comercial o razón social del servicio</td>
-							<td style="color:#CCCCCC">Computadoras del sur</td>
-							<td rowspan="4"><img src="../img/servicio.png"/></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td colspan="3" >Número de Convenio:</td>
-							<td style="color:#CCCCCC">12345</td>
-						</tr>
-						<tr>
-							<td colspan="3" ></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td colspan="3" ></td>
-							<td></td>
-						</tr>
-					</table>
-					<div class="botonera7">
-						<div class="btn" id="regresar3" onclick="backPasoImg();changeComment(1)">Regresar</div>
-						
-						<div id="siguiente6"><div class="btnaceptar" onclick="cambiaPaso3();changeComment(3)">Confirmar</div></div>
-					</div>		
-				</div><!--fin step8-->
-				
-			<div id="step9" class="pasos">
-				<div id="vtacruzada"> 
-			
-						<div class="vtaimg">
-						</div>
-						
-						<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
-						
-						
-						<div id="btn_paso3">
-		                     <ul>
-		                    	<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
-		                        <li class="btnNav"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">Pagar Servicios</span></li>
-		                        <li class="btnNav"><img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">Realizar una Domiciliación</span></li>
-		                      </ul>
-		                </div>
-						
-					</div>
-
-						<h4 style="color:red;">Comprobante de transferencia entre mis cuentas Santander</h4>
-
-									
-							<table class="tbl_info" style="width:473px;float:left;">
-<tr>
-								<td style="width:200px;">Nombre de la empresa o razón social:</td>
-								<td style="color:#CCCCCC">Google inc</td>
-							</tr>
-							<tr>
-								<td>Número de convenio:</td>
-								<td style="color:#CCCCCC">1234</td>
-							</tr>
-							<tr>
-								<td>Fecha y hora de baja:</td>
-								<td style="color:#CCCCCC">19/03/2013 00:00
-								</td>
-							</tr>
-							
-							<tr>
-								<td>Folio SuperNet:</td>
-								<td style="color:#CCCCCC">1234567892345</td>
-							</tr>
-							
-							<tr>
-								<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo hacer<br />otra transferencia</div></td>
-								
-							</tr>
-						</table>
-
-						<table style="	float: left; margin-left: -22px; margin-top:61px;">
-							<tr>
-								<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
-								<td><div class="btn" >Guardar en operaciones favoritas</div></td>
-								<td><div class="btn btnaceptar" onclick="cierraWidget();">Finalizar</div></td>
-							</tr>
-						</table>		
-		</div><!--Fin step 9-->
-		
-		</div><!--fin consulta de Servicios-->
-
-	</div><!--cierre contenido-->
-		
-				
-				
-				
-	<div id="navegador">
-		<ul>
-			<li class="active" onclick="backPasoImg();changeComment(1)">Pago de Servicios</li>
-			<li onclick="backPasoImg();changeComment(1)">Alta de Servicios</li>
-			<li onclick="backPasoImg();changeComment(1)">Consulta de Servicios</li>
-		</ul>
-		<div class="aviso">
-	<div id="msg-alert" style="width: 133px;height: 52px;background:#fff;position: absolute;top: 2px;left: 10px;font-weight: bold;font-size: 10px;text-align: left;padding-top: 15px;">Recuerde que puede realizar sus pagos de servicio y consultarlos.</div>
-	<img src="../../img/iconos/img_msj.png"/>
-</div>
 
 
 	</div>
+	<!-- Fin flujo Pago de Servicios -->
+
+	<!-- Flujo Alta de Servicios -->
+	<div>
 		
+	</div>
+	<!-- Fin flujo Alta de Servicios -->
+
+	<!-- Flujo Consulta/baja de Servicios -->
+	<div>
 		
-	
+	</div>
+	<!-- Fin flujo Consulta/baja de Servicios -->
+
+	<!-- Flujo Consulta de pagos realizados/programados -->
+	<div>
 		
+	</div>
+	<!-- Fin flujo Consulta de pagos realizados/programados -->
 </div>
+<script>
+	$(document).ready(function(){
+		$(".fin").click(function(){closeAction()});
+		$(".stepWrapp").hide();
+	});
+</script>
