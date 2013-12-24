@@ -1,5 +1,5 @@
 @import url('../../../../css/widgets.css');
-@import url('../../../../css/componentes.css')
+@import url('../../../../css/componentes.css');
 
 #contenido{
 	background-color:white;
@@ -221,7 +221,13 @@ float:right;
 	margin-left: 17px;
 }
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 49f418902a4d6009eeb10a9ccbecd362be4a3d9c
 /**************************NUEVO ESTILO AGREGADO***********************************/
 
 #titre{
@@ -723,3 +729,7 @@ margin-left: 8px;
 	margin-bottom: 19px;
 
 }
+<<<<<<< HEAD
+=======
+>>>>>>> c852e4732414f883d242cfd8853818c82dcdc3f6
+>>>>>>> 49f418902a4d6009eeb10a9ccbecd362be4a3d9c
