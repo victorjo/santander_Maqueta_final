@@ -1,3 +1,4 @@
+<script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
 <script src="../../../js/jquery10.2.min.js"></script>
 <script src="../../../js/ddSlick.js"></script>
 
@@ -17,6 +18,9 @@
 		}
 		});
 	$(document).ready(function(){
+
+		openClose(".btnaction2","btnactionx","#minisexycombo","");
+		$("#dia").datepicker();
 		init();
 	});
 	function init(){
@@ -51,20 +55,22 @@
 	<div>
 		<img src="img/paso_1.png" class="steps"/>
 	</div>
-	
-	<div>
-		<ul>
-			<li>
-				<p>Consulta de Saldos y movimientos</p>
-			</li>
-			<li>
-				<p>Traspaso a Meses con intereses</p>
-			</li>
-			<li class="liActive">
-				<p>Disposición de tarjeta de crédito a cheques</p>
-			</li>
-		</ul>
-	</div>
+
+
+<div id="navegador">
+			<ul>
+				<li onclick="changeComment(1);">Consulta de saldos y movimientos</li>
+				<li class="active" onclick="changeComment(1);">Traspaso a meses con intereses</li>
+				<li onclick="changeComment(1);">Disposición de tarjeta de crédito a cheques</li>
+			
+			</ul>
+			<div class="aviso">
+				<div id="msg-alert" style="width: 133px;height: 52px;background:#fff;position: absolute;top: 2px;left: 10px;font-weight: bold;font-size: 10px;text-align: left;padding-top: 15px;">Realice sus transferencias entre sus cuentas Santander desde aqu&iacute;.</div>
+				<img src="../../img/iconos/img_msj.png"/>
+			</div>
+		</div>
+
+
 	
 	<!--inicia step1 -->
 
@@ -103,23 +109,42 @@
 	<input type="text"  placeholder="123456789123456789123456789123456789123456789" / style="height:25px; width:366px;">
 </div>
 
-<div style="width:100px; height:20px; margin-top:80px;"><p><b>Programar fecha:</b> </p></div>
-	
-	<div style="float:right;margin:10px 0 0 ; width:49%; border:solid 1px silver;height:58px;position:relative; margin-top:10px;border-radius: 5px; right:98px">
+
+<div id="progfecha">
+				<div>Programar fecha:</div>
+				<div id="calendar">
 					
-					<div class="centradoSwitch">
-						<div id="switchbox" onclick="$(this).parent().next().toggle();$('.dropcontainer').toggle();" class="switch" style="margin-top:13px; margin-left:10px;">  </div>
+
+				<div class="switchCont">
+						<div id="switchBox">
+							<div class="switchSlide">					
+									<div class="switchLabel"><span class="switchs">Si</span></div>
+									<div class="switchIndicador"></div>
+									<div class="switchLabelR"><span span class="switchs">No</span></div>				
+							</div>
+						</div>		
 					</div>
-					<div style="display:none">
-					<img src="../../../img/iconos/img_calendario.png" style="margin-top:20px; margin-left:10px;">
-					
-					<input type="text" id="date" placeholder="dd/mm/aaaa" style="margin-left:10px;height:25px;margin-top:14px;position:fixed">
+
+				</div>
+				<div id="imgcal"></div>
+				<div id="textcal">
+					<div class="divFlotante">
+						<div class="imagen"></div>
+						<div id="ico" class="calicoNo"></div>
+						<input class="input3"  id="dia" value="01/01/2013" disabled='disabled' type="text"/>
 					</div>
 				</div>
-				<div class="dropcontainer" style="display:none;max-height: 200px; height: 200px; overflow: visible;">
-		
-		</div>
+			</div>
+
+
+
 </div>
+
+
+
+
+
+
 		<div class="botonera">
 			<div class="btnaceptar">Continuar</div>
 		</div>
@@ -262,12 +287,7 @@
 			
 		</div>
 	</div>
-	<div class="aviso">
-				<div id="msg-alert" style="width: 133px;height: 52px;background:#fff;position: absolute;top: 2px;left: 10px;font-weight: bold;font-size: 10px;text-align: left;padding-top: 15px;">Realice sus transferencias entre sus cuentas Santander desde aqu&iacute;.</div>
-				<img src="../../img/iconos/img_msj.png"/>
-			</div>
-</div>
-<script>
 	
-		
-</script>
+
+
+</div>
