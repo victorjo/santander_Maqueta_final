@@ -488,3 +488,139 @@ position: relative;
 	border:1px #a6a6a6 solid;
 	width: 223px;
 }
+
+.descripcion{
+	float: left;
+	margin: 10px 0 0 10px;
+	border: 1px #bcbcbc solid;
+	width: 730px;
+	height: 370px;
+	font-family: Arial;
+	font-size: 11px;
+	color: #626262;
+	font-weight: bold;
+}
+
+.descripcion > div{
+	width: 206px;
+	height: 20px;
+	float: left;
+	margin: 10px 0 0 10px;
+	line-height: 19px;
+}
+
+.paso3{
+	border: 1px solid #BCBCBC;
+    color: #626262;
+    float: left;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+    height: auto;
+    margin: 10px 0 0 10px;
+    width: 480px;
+}
+
+.paso3 > div{
+	float: left;
+    line-height: 19px;
+    margin: 10px 0 0 10px;
+    width: 206px;
+}
+
+.venta{
+	 border: 1px solid #BCBCBC;
+    color: #626262;
+    float: left;
+    font-family: Arial;
+    font-size: 11px;
+    height: 283px;
+    margin: 10px 0 0 10px;
+    width: 243px;
+}
+
+.venta p{
+	color: #272727;
+    float: left;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 25px;
+    margin: 19px 0 0 15px;
+}
+
+.venta h4{
+	margin: 28px 0 10px 0;
+	float: left;
+	color: #ff0000;
+	font-family: 'ArialBlack';
+	font-size: 11px;
+}
+
+.venta h3{
+	color: #272727;
+    float: left;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 19px 0 0 15px;
+}
+
+.venta > .botonera{
+	margin-top: 10px;
+    position: relative;
+}
+
+.botonera_vta{
+	bottom: 10px;
+	float: right;
+	position: absolute;
+	right: 8px;
+}
+
+.vtaCruzadaMenu {
+    padding: 0;
+}
+
+.vtaCruzadaMenu li{
+	background-color: #F7F7F7;
+    border: 1px solid #BCBCBC;
+    color: #272727;
+    float: left;
+    font-family: 'ArialBlack';
+    height: 22px;
+    list-style: none outside none;
+    padding: 6px 0 0 15px;
+    width: 228px;
+}
+
+.vtaCruzadaMenu li:hover {
+    border: 1px solid #FF0000;
+    cursor: pointer;
+}
+
+/*.paso3{
+	color: #626262;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.paso3 > div{
+	float: left;
+    line-height: 19px;
+    margin: 10px 0 0 10px;
+    width: 206px;
+}
+
+.venta{
+	border: 1px solid #BCBCBC;
+    color: #626262;
+    float: left;
+    font-family: Arial;
+    font-size: 11px;
+    height: 283px;
+    margin: 10px 0 0 10px;
+    width: 243px;
+}*/
