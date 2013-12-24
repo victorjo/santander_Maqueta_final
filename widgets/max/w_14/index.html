@@ -19,8 +19,7 @@
 		});
 	$(document).ready(function(){
 
-		openClose(".btnaction2","btnactionx","#minisexycombo","");
-		$("#dia").datepicker();
+	
 		init();
 	});
 	function init(){
@@ -41,8 +40,14 @@
 				creaOverlay("#fff","#widampliado",1);
 				creaToken("modalOver",null,"javascript: $('#step2').hide();$('#step3').show();$('#modalOver').fadeOut();",null,function(){$(".steps").replaceWith("<img src='img/paso_3.png' class='steps'>");});
 			});
+
+					openClose(".btnaction2","btnactionx","#minisexycombo","");
+
 		});
 
+		openClose(".btnaction2","btnactionx","#minisexycombo","");
+				
+				$("#dia").datepicker();
 
 	}
 </script>
@@ -136,7 +141,23 @@
 				</div>
 			</div>
 
+		<div class="dropcontainer" style="max-height: 200px; height: 200px; overflow: visible;">
 
+<div class="dropdown">
+					<img class="downI" src="../../../img/iconos/dropdown.png" style="display: block;">
+						<img class="upI" src="../../../img/iconos/dropup.png" style="display: none;">
+							<h6>Quiero notificación previa de mi pago</h6>
+				</div>
+
+				<select name="" id="" >
+                	<option value="">Pago m&iacute;nimo</option>
+					<option value="">Opcion1</option>
+					<option value="">Opcion1</option>
+					<option value="">Opcion1</option>
+					<option value="">Opcion1</option>
+				</select>
+	</div>				
+				
 
 </div>
 
@@ -192,7 +213,7 @@
 				</tr>
 				<tr>
 					<td>Correo para notificacion:</td>
-					<td class="gris">correo@correo.com (<a href="#">editar</a>)</td>
+					<td class="gris">correo@correo.com <div class="link">(editar)</div></td>
 				</tr>
 				<tr>
 					<td>Celular para notificacion:</td>
@@ -227,6 +248,7 @@
 				</div>
 				
 			</div>
+
 			<h2>Comprobante de disposición de tarjeta de crédito a cuentas de cheques </h2>
 			
 			<table class="tbl_info" style="width:60%;float:left;">
