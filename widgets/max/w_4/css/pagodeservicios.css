@@ -489,6 +489,20 @@ position: relative;
 	width: 223px;
 }
 
+.input3{
+	height:28px;
+	font-family:'ArialBlack';
+	color: #a4a4a4;
+	font-size:11px;
+	text-align:center;
+	margin-top:22px;
+	margin-left: -39px;
+	background-color:#e8e8e8;
+	box-shadow:inset 1px 1px 5px #c6c6c6;
+	border:1px #a6a6a6 solid;
+	width: 223px;
+}
+
 .descripcion{
 	float: left;
 	margin: 10px 0 0 10px;
@@ -643,17 +657,50 @@ position: relative;
 	margin-top: 17px;
 }
 
-.input1{
-	height:28px;
-	font-family:'ArialBlack';
-	color: #a4a4a4;
-	font-size:11px;
-	text-align:center;
-	margin-top:8px;
-	background-color:#e8e8e8;
-	box-shadow:inset 1px 1px 5px #c6c6c6;
-	border:1px #a6a6a6 solid;
-	width: 397px;
+/*----Estilo de pantalla de bloqueo correo y telefono----*/
+
+/*---- Botonera en linea ( 3 botones ) ----*/
+
+.botonera_ln{
+	bottom: 0;
+	float: right;
+	margin-bottom: 10px;
+	margin-right: 0;
+	position: absolute;
+	right: 0;
+	width: 100%;
 }
 
-/*----Estilo de pantalla de bloqueo correo y telefono----*/
+
+.btn_ln{
+
+	width: 223px;
+	height: 23px;
+	padding-top: 7px;
+	border-radius: 15px 15px 15px 15px;
+	border: thin #F3F3F3 solid;
+	background-color: #FFFFFF;
+	color: black;
+	text-align: center;
+	float: right;
+	margin-top: 5px;
+	margin-left: 12px;
+	margin-right: 15px;
+	font-size: 11px;
+	font-weight: bold;
+	border: solid 1px #A9A9A9;
+}
+/*---- Fin Botonera en linea ( 3 botones ) ----*/
+
+.info{
+	margin-top: 25px;
+	margin-left: 10px;
+}
+
+.cuadrop{
+	float: left;
+	margin-left: 10px;
+	border: 1px solid red;
+	width: 400px;
+	height: 86px;
+}

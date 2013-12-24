@@ -84,7 +84,7 @@ function cambiaPaso3(){
 			</li>
 		</ul>
 	</div>
-	<!-- Flujo Pago de Servicios -->anthem
+	<!-- Flujo Pago de Servicios -->
 	<div>
 		<div id="step1">	
 			<h2>Seleccione de su lista de servicios registrados el que desee pagar.</h2>
@@ -244,41 +244,68 @@ function cambiaPaso3(){
 									<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span></div></div></td>
 							</td></tr>
 						</table>
-						<div style="float:left;width:715px;">
-							<div class="input" style="margin-left:0px; float:left; width:286px">
-								<p>Concepto:</p> 
-								<input class="input1" type="text" value=" 548,145,199.00" name="Text1" />
-							</div>
-							<div class="input" style="margin-left:10px; float:left; width:289px">
-								<p>Alias:</p>
-								<input class="input2" type="text" value="13516384351351465463878431515" name="Text1" />
-							</div>
-							
-							
-						</div>
-						<div class="input" style="margin-left:0px; float:left; width:277px">
-								<p>Referencia de pago:</p>
-								<input class="input1" type="text" value="13516384351351465463878431515" name="Text1" />
-								<div id="infobtn"><img src="../img/botones/info_.png"/></div>
-						
-						<div id="info"><img src="../img/infoimg.png"/></div>
-						</div>
-						
-						<div class="centradoSwitch">
-								
-								
 
-							<h5>Programar fecha:</h5>
-							<div id="switchbox" class="switchDom">
-						</div>
-						
-						<div id="calico"><img src="../img/iconos/img_calendario.png"/></div>
-						
-						<input class="txtbox" onmouseover="$(this).datepicker();" onkeyup="$(this).val(getMask(this.value,event));" placeholder="17/03/2012"/>
+						<div class="cuadrop">
+							<table>
+								<tr>
+									<td>
+										<div>
+											<p>Concepto:</p> 
+											<input class="input1" type="text" value=" 548,145,199.00" name="Text1" />
+										</div>
+									</td>
+									<td>
+										<div>
+											<p>Concepto:</p> 
+											<input class="input1" type="text" value=" 548,145,199.00" name="Text1" />
+										</div>
+									</td>
+									<td>
+										<div class="info"><img src="../img/info.png"/></div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div>
+											<p>Concepto:</p> 
+											<input class="input1" type="text" value=" 548,145,199.00" name="Text1" />
+										</div>
+									</td>
+									<td>
+										<div>
+											<p>Concepto:</p> 
+											<input class="input1" type="text" value=" 548,145,199.00" name="Text1" />
+										</div>
 										
-						</div> 
+									</td>
+									<td>
+										<div class="info"><img src="../img/info.png"/></div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div>
+											<p>Concepto:</p> 
+											<input class="input1" type="text" value=" 548,145,199.00" name="Text1" />
+										</div>
+									</td>
+									<td>
+										<div>
+											<p>Concepto:</p> 
+											<input class="input1" type="text" value=" 548,145,199.00" name="Text1" />
+										</div>
+										
+									</td>
+									<td>
+										<div class="info"><img src="../img/info.png"/></div>
+									</td>
+								</tr>
+							</table>
+						</div>	
+							
+
 						
-						<div class="dropcontainer">
+						<!--<div class="dropcontainer">
 							<div class="dropdown">
 								<img id="downico1"src="../img/iconos/dropdown.png"/>
 								<img id="upico1"src="../img/iconos/dropup.png"/>
@@ -313,7 +340,7 @@ function cambiaPaso3(){
 				            	</select>
 							
 							</div>
-						</div>
+						</div>-->
 						<div class="botonera">
 							<div class="btnaceptar" onClick="avanzar('2','3','2')">Continuar</div>
 						</div>
@@ -361,31 +388,10 @@ function cambiaPaso3(){
 				<div>Lorem</div>					
 				<div>dd/mm/aaaa</div>					
 				<div>dd/mm/aaaa</div>					
-				<div>correo@correo.com</div>								
-				<div>5555555555</div>
+				<div>correo@correo.com&nbsp;<span class="link">(Editar)</span></div>								
+				<div>5555555555&nbsp;<span class="link">(Editar)</span></div>
 				<div class="link">Descargar</div>
-			</div>
-			<div>
-				<div>&nbsp;</div>
-				<div>&nbsp;</div>
-				<div>&nbsp;</div>
-				<div>&nbsp;</div>
-				<div>&nbsp;</div>
-				<div>&nbsp;</div>
-				<div>&nbsp;</div>
-				<div>&nbsp;</div>
-				<div>&nbsp;</div>
-				<div>&nbsp;</div>
-				<div>&nbsp;</div>
-				<div>&nbsp;</div>
-				<div>&nbsp;</div>
-				<div>&nbsp;</div>
-				<div>&nbsp;</div>
-				<div class="link">(Editar)</div>
-				<div class="link">(Editar)</div>
-				<div>&nbsp;</div>	
-			</div>
-				
+			</div>				
 		</div>
 				
 		<div class="botonera">
@@ -436,8 +442,8 @@ function cambiaPaso3(){
 				<div>dd/mm/aaaa</div>					
 				<div>dd/mm/aaaa</div>
 				<div>dd/mm/aaaa    24:00 hrs</div>					
-				<div>correo@correo.com<div class="link">(Editar)</div></div>			
-				<div>5555555555<div class="link">(Editar)</div></div>
+				<div>correo@correo.com&nbsp;<span class="link">(Editar)</span></div>								
+				<div>5555555555&nbsp;<span class="link">(Editar)</span></div>
 				<div>1234567890123456789</div>
 			</div>			
 		</div>
