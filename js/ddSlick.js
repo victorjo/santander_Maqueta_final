@@ -38,7 +38,7 @@
             d.fadeOut("fast");
             e.removeClass("dd-pointer-up")
         } else {
-        	if(objeto.tSlide =="up"){
+        	if(objeto.direccionSlide =="up"){
         		d.css({"top":"-"+d.height()+"px"});
         	}
 
@@ -96,7 +96,7 @@
             imagePosition: "left",
             showSelectedHTML: true,
             clickOffToClose: true,
-            tSlide:"down",
+            direccionSlide:"down",
             onSelected: function () {}
         }, d = '<div class="dd-select"><input class="dd-selected-value" type="hidden" /><a class="dd-selected"></a><span class="dd-pointer dd-pointer-down"></span></div>',
         e = '<ul class="dd-options"></ul>',
