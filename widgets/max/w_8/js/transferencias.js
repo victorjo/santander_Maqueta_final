@@ -253,8 +253,10 @@ $(document).ready(function(){
 			$('.input3').removeClass('activo');
 			$('#ico').removeClass('calico');
 			$('#ico').addClass('calicoNo');
+
 			$('#textFiscal').fadeOut();
 			});
+
 
 			$(".switchLabelR2").click(function(){
 			$(".switchSlide2").animate({"left":"+=39px"},"fast");
