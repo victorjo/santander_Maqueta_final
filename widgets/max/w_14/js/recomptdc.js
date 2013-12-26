@@ -55,9 +55,15 @@ $(".switchLabel").click(function(){
 			$('#ico').removeClass('calicoNo');
 			$('.dropcontainer').slideToggle("slow");
 
+
 			
 
 		  	});
+		  	$('.downI').click(function(){
+		  		$(".wra_Select2").slideToggle("fast");
+		  	});
+
+		  	
 
 
 });
