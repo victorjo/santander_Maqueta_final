@@ -246,7 +246,9 @@ $(document).ready(function(){
 			$('.input3').attr('disabled','disabled');
 			$('.input3').removeClass('activo');
 			$('#ico').removeClass('calico');
-			$('#ico').addClass('calicoNo');});
+			$('#ico').addClass('calicoNo');
+		});
+		  	
 			$(".switchLabelR2").click(function(){
 			$(".switchSlide2").animate({"left":"+=39px"},"fast");
 			$('.input3').removeAttr('disabled');
