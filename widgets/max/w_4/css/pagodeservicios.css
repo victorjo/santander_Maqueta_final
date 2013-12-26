@@ -26,6 +26,573 @@ h7 {
 	width: 250px;
 }
 
+#widampliado {
+	background-image:url('../../../../img/grid.png');
+}
+/*---- Estilo Flujo: Pago de servicios ----*/
+
+.radiobtnPago {
+	width:18px;
+	height:18px;
+	border:1px #ff0000 solid;
+	float:left;
+	border-radius:10px;
+	cursor:pointer;
+	margin-left: 8px;
+	top:6px;
+}
+
+.radiobtnPago_select{
+	background-image: url(../img/Indicador.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	width:18px;
+	height:18px;
+	border:1px #ff0000 solid;
+	float:left;
+	border-radius:10px;
+}
+
+.servicio{
+	margin-left:10px;
+	float:left;
+}
+
+.consulta td:nth-of-type(1){
+	float: left;
+	margin-left: 36px;
+	color:#282828;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+
+}
+
+.consulta td:nth-of-type(2){
+	float: left;
+	margin-left: 65px;
+	color:#282828;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+
+} 
+
+.consulta td:nth-of-type(3){
+	float: left;
+	margin-left: 72px;
+	color:#282828;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+
+}
+
+.consulta td:nth-of-type(4){
+	float: left;
+	margin-left: 48px;
+	color:#282828;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+
+}
+
+.consulta td:nth-of-type(5){
+	float: left;
+	margin-left: 24px;
+	color:#282828;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+
+} 
+
+.consulta td:nth-of-type(6){
+	float: left;
+	margin-left: 24px;
+	color:#282828;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+
+}  
+
+.cardList {
+	color: #626262;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	width: 730px;
+	height: auto;
+	border-left: 1px #c7c7c7 solid;
+	border-top: none;
+	border-collapse: collapse;
+	float:left;
+}
+
+.cardList th{
+	color:#282828;
+	height:20px;
+	text-align:left;
+	padding-left:10px;
+	padding-top:5px;
+	border-left:1px #c7c7c7 dashed;
+
+}
+
+.cardList th:nth-of-type(2){
+	border-left:none;
+}
+
+.cardList td{
+	height:50px;
+}
+
+.deshabilitado{
+	opacity:0.5;
+}
+
+.cardList td:nth-of-type(2){
+	width:210px;
+}
+
+.cardList td:nth-of-type(3){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+	width:105px;
+}
+
+.cardList td:nth-of-type(4){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+	width:105px;
+}
+
+.cardList td:nth-of-type(5){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+	width:103px;
+}
+
+.cardList td:nth-of-type(6){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+	width:103px;
+}
+
+.cardList td:nth-of-type(6) p{
+	width:60px;
+}
+
+.cardList td:nth-of-type(7){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+	width:103px;
+}
+
+.cardList td:nth-of-type(7) p{
+	width:20px;
+}
+
+#pagoServicio p{
+	color:#282828;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	margin:10px 0 0 15px;
+	float:left;
+	font-weight:bold;
+}
+
+/*-----*/
+.dd1{
+	float:left;
+	margin:5px 0 0 15px;
+}
+
+.dd2{
+	float:left;
+	margin:5px 0 0 10px;
+}
+.dd3{
+	float:left;
+	margin:5px 0 0 10px;
+
+}
+
+
+.cardListC {
+	color: #626262;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	width: 730px;
+	height: auto;
+	border: 1px #c7c7c7 solid;
+	margin-left: 15px;
+	border-collapse: collapse;
+	margin-top:10px;
+	float:left;
+}
+
+.cardListC th{
+	color:#282828;
+	height:20px;
+	text-align:left;
+	padding-left:10px;
+	padding-top:5px;
+	border-left:1px #c7c7c7 dashed;
+
+}
+
+.cardListC th:nth-of-type(2){
+	border-left:none;
+}
+
+.cardListC td{
+	height:50px;
+}
+
+.cardListC tr:nth-of-type(5){
+	opacity:.5
+}
+.cardListC td:nth-of-type(2){
+	width:210px;
+}
+
+.cardListC td:nth-of-type(3){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+	width:105px;
+}
+
+.cardListC td:nth-of-type(4){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+	width:105px;
+}
+
+.cardListC td:nth-of-type(5){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+	width:103px;
+}
+
+.cardListC td:nth-of-type(6){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+	width:103px;
+}
+
+.cardListC td:nth-of-type(6) p{
+	width:60px;
+}
+
+.cardListC td:nth-of-type(7){
+	border-left:1px #c7c7c7 dashed;
+	padding-left:10px;
+	width:103px;
+}
+
+.cardListC td:nth-of-type(7) p{
+	width:20px;
+}
+
+#pagoServicioC{
+	float:left;
+	width:81%;
+}
+
+.inputs{
+	margin-left:5px;
+	float:left;
+}
+
+.inputs h2{
+	width:100%;
+}
+
+.inputs p{
+	color:#282828;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	float:left;
+	font-weight:bold;
+	margin-left:10px;
+	margin-top:5px;
+}
+
+.inputs div{
+	float:left;
+	width: 370px;
+}
+
+.input{
+	background-color: #E8E8E8;
+	border: 1px solid #A4A4A4;
+	box-shadow: 1px 1px 5px #C6C6C6 inset;
+	color: #A4A4A4;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	height: 27px;
+	margin-top: 8px;
+	text-align: center;
+	width: 318px;
+	margin: 5px 0 0 10px;
+	float:left;
+}
+
+.input2{
+	background-color: #E8E8E8;
+	border: 1px solid #A4A4A4;
+	box-shadow: 1px 1px 5px #C6C6C6 inset;
+	color: #A4A4A4;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	height: 27px;
+	margin-top: 8px;
+	text-align: center;
+	width: 153px;
+	margin: 5px 0 0 10px;
+	float:left;
+}
+
+.info{
+	background-image: url("../../../../img/info.png");
+    background-size: 100% 100%;
+    float: left;
+    height: 20px !important;
+    width: 20px !important;
+    margin:10px 0 0 10px;
+    cursor:pointer;
+}
+
+.inputs div:nth-of-type(6) p{
+	width:150px;
+}
+
+.inputs div:nth-of-type(8) p{
+	width:350px;
+}
+
+#programar p{
+	float:left !important;
+	color:#626262 !important;
+	font-family:Arial, Helvetica, sans-serif !important;
+	font-size:11px !important;
+	font-weight:bold !important;
+	width:100% !important;
+}
+
+.input5 {
+	width: 83px;
+	height: 25px;
+	border: 1px solid #A4A4A4;
+	box-shadow: 1px 1px 5px #C6C6C6 inset;
+	color: #626262;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	float: left;
+	margin-left: 10px;
+}
+
+.switchCont{
+	width:430px !important;
+	height:40px !important;
+	margin-left:135px !important;
+	float:left !important;
+	margin-top:15px !important;
+}
+
+.switchCont p{
+	color:#282828 !important;
+	font-family:Arial, Helvetica, sans-serif !important;
+	font-size:11px !important;
+	float:left !important;
+	font-weight:bold !important;
+	margin-left:10px !important;
+	margin-top:5px !important;
+}
+
+#switchBox{
+	border:1px #a6a6a6 solid !important;
+	width:78px !important;
+	height:28px !important;
+	margin:5px 0 0 10px; !important;
+	float:left !important;	
+	position:relative !important;
+	overflow:hidden !important;
+	font-family:Arial, Helvetica, sans-serif !important;
+	font-size:11px !important;
+	font-weight:bold !important;
+	text-align:center !important;
+	
+}
+
+.switchSlide{
+	float:left !important;
+	width:120px !important;
+	position:absolute !important;
+	left:0px;
+}
+
+.switchIndicador{
+	width:37px !important;
+	height:26px !important;
+	float:left !important;
+	background-color:#ff0000 !important;
+	border:1px #c9c9c9 solid !important;
+	border-radius:5px !important;
+}
+
+.switchLabel{
+	width:39px !important;
+	height:21px !important;
+	float:left !important;
+	background-color:#ffffff !important;
+	cursor:pointer !important;
+	color:#626262 !important;
+	padding-top:7px !important;
+}
+
+.switchLabelR{
+	width:39px !important;
+	height:21px !important;
+	float:left !important;
+	background-color:#ffffff !important;
+	cursor:pointer !important;
+	color:#626262 !important;
+	padding-top:7px !important;
+}
+
+.dateInput{
+	float:left !important;
+	width:auto !important;
+	margin-top:6px;
+}
+
+.dateInputInactive{
+	opacity:.3;
+}
+
+
+.dateInput div{
+	float:left !important;
+	margin-left:10px !important;
+	width:30px !important;
+	height:30px !important;
+	background-image:url('../../../../img/iconos/calendario.png') !important;
+	background-size:100% 100% !important;
+	cursor:pointer !important;
+}
+
+.smackdown2{
+	display:none;
+}
+
+
+.smackdown2 div{
+	position:absolute;
+	left:8px;
+	bottom:0px;
+}
+
+.smackdown2 h3{
+	color:#282828;
+	font-family:'ArialBlack';
+	font-size:11px;
+	position:absolute;
+	left:17px;
+	bottom:231px;	
+}
+
+.smackdown2 p{
+	color:#282828;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	position:absolute;
+	left:17px;
+	bottom:166px;
+	font-weight:bold;
+}
+
+.smackdown div{
+	position:absolute;
+	left:8px;
+	bottom:0px;
+}
+
+.smackdown h3{
+	color:#282828;
+	font-family:'ArialBlack';
+	font-size:11px;
+	position:absolute;
+	left:17px;
+	bottom:231px;	
+}
+
+.smackdown p{
+	color:#282828;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	position:absolute;
+	left:17px;
+	bottom:166px;
+	font-weight:bold;
+}
+
+.smackdown{
+	display:none;
+}
+/*---- Fin Estilo Flujo: Pago de servicios ----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .tbl_pagoServ{
 	width:723px;
 	float:left;
@@ -194,10 +761,12 @@ position: relative;
 
 
 .dropdown{
-	width:100%;float:left;
-	background-color:#EBEDEE;
-	margin-top:10px;
-	height:22px;
+	width: 700px;
+	float: left;
+	background-color: #EBEDEE;
+	margin-top: 19px;
+	margin-left: 10px;
+	height: 22px;
 }
 /* Dropdown*/
 #downico1{
@@ -226,10 +795,10 @@ position: relative;
 }
 
 .dropcontainer{
-	height:100px;
+	height:435px;
 	width:715px;
 	float:left;
-	overflow:auto;
+	/*overflow:auto;*/
 }
 /*end Dropdown*/
 
@@ -692,15 +1261,64 @@ position: relative;
 }
 /*---- Fin Botonera en linea ( 3 botones ) ----*/
 
-.info{
-	margin-top: 25px;
-	margin-left: 10px;
-}
-
 .cuadrop{
 	float: left;
 	margin-left: 10px;
 	border: 1px solid red;
 	width: 400px;
 	height: 86px;
+}
+
+
+
+/*---- Slider ---*/
+.contenedor{
+	width: 76px;
+	float: left;
+}
+
+.textoSim{
+	margin-top: 5px;
+	float: left;
+	margin-left: 23px;
+}
+
+#slider {
+     background-color: #E6E8E8;
+     float: left;
+     height: 237px;
+     margin: 10px 0;
+     overflow: hidden;
+     width: 574px;
+     margin-left: 76px;
+}
+
+.serv_in{
+        height:55px;
+        width:55px;
+        margin:15px 0 0 10px;
+        float:left;
+        border-radius: 5px;
+}
+
+.serv_in:hover{
+        cursor:pointer;
+        border:1px red solid;
+
+}
+
+.rightarrow{
+	float: right;
+	height: 55px;
+	width: 15px;
+	margin-right: 6px;
+	margin-top: -117px;
+}
+
+.leftarrow{
+	float: left;
+	height: 55px;
+	width: 15px;
+	margin-left: 6px;
+	margin-top: -117px;
 }
