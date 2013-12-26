@@ -1,4 +1,4 @@
-﻿<!--<script src="../../../js/jquery10.2.min.js"></script>
+<!--<script src="../../../js/jquery10.2.min.js"></script>
 <script src="../../../js/componentes.js"></script>
 -->
 <!-- estilo general Victor -->
@@ -68,7 +68,7 @@ function cambiaPaso3(){
 	<div>
 		<img src="img/paso_1.png" class="steps"/>
 	</div>
-	<div>
+	<div id="navegador">
 		<ul>
 			<li class="liActive">
 				<p>Pago de servicios</p>
@@ -86,269 +86,203 @@ function cambiaPaso3(){
 	</div>
 	<!-- Flujo Pago de Servicios -->
 	<div>
-		<div id="step1">	
-			<h2>Seleccione de su lista de servicios registrados el que desee pagar.</h2>
-			<div class="table_pagoServ">
-			<div class="scroll_pagoServ">
-				<table class="tbl_pagoServ">
-					<thead>
-						<tr>
-							<th></th>
-							<th>Nombre del Servicio</th>
-							<th>Alias</th>
-							<th>Convenio</th>
-							<th>Fecha de pago</th>
-							<th>Importe (MXP)</th>
-							<th>Referencia</th>
-							<!--<td style="background-color:gray;color:white;cursor:pointer">Ver lista<br />completa</td>-->
-							</tr>
-					</thead>			
-					<tbody>
-	
-						<tr>
-							<td><div class="radioP"></div></td>
-							<td><div class='cuadro'></div>Lorem Ipsum</td>
-							<td>Lorem Ipsum</td>
-							<td>1234</td>
-							<td>dd/mm/aaaa</td>
-							<td>999,999,999.00</td>
-							<td colspan="2">1456789009876</td>
-						</tr>
-						<tr>
-							<td><div class="radioP"></div></td>
-							<td><div class='cuadro'></div>Lorem Ipsum</td>
-							<td>Lorem Ipsum</td>
-							<td>1234</td>
-							<td>dd/mm/aaaa</td>
-							<td>999,999,999.00</td>
-							<td colspan="2">1456789009876</td>
-						</tr>
-						<tr>
-							<td><div class="radioP"></div></td>
-							<td><div class='cuadro'></div>Lorem Ipsum</td>
-							<td>Lorem Ipsum</td>
-							<td>1234</td>
-							<td>dd/mm/aaaa</td>
-							<td>999,999,999.00</td>
-							<td colspan="2">1456789009876</td>
-						</tr>
-						<tr>
-							<td><div class="radioP"></div></td>
-							<td><div class='cuadro'></div>Lorem Ipsum</td>
-							<td>Lorem Ipsum</td>
-							<td>1234</td>
-							<td>dd/mm/aaaa</td>
-							<td>999,999,999.00</td>
-							<td colspan="2">1456789009876</td>
-						</tr>
-						<tr>
-							<td><div class="radioP"></div></td>
-							<td><div class='cuadro'></div>Lorem Ipsum</td>
-							<td>Lorem Ipsum</td>
-							<td>1234</td>
-							<td>dd/mm/aaaa</td>
-							<td>999,999,999.00</td>
-							<td colspan="2">1456789009876</td>
-						</tr>
-						<tr>
-							<td><div class="radioP"></div></td>
-							<td><div class='cuadro'></div>Lorem Ipsum</td>
-							<td>Lorem Ipsum</td>
-							<td>1234</td>
-							<td>dd/mm/aaaa</td>
-							<td>999,999,999.00</td>
-							<td colspan="2">1456789009876</td>
-						</tr>
-						<tr>
-							<td><div class="radioP"></div></td>
-							<td><div class='cuadro'></div>Lorem Ipsum</td>
-							<td>Lorem Ipsum</td>
-							<td>1234</td>
-							<td>dd/mm/aaaa</td>
-							<td>999,999,999.00</td>
-							<td colspan="2">1456789009876</td>
-						</tr>
-						<tr>
-							<td><div class="radioP"></div></td>
-							<td><div class='cuadro'></div>Lorem Ipsum</td>
-							<td>Lorem Ipsum</td>
-							<td>1234</td>
-							<td>dd/mm/aaaa</td>
-							<td>999,999,999.00</td>
-							<td colspan="2">1456789009876</td>
-						</tr>
-						<tr>
-							<td><div class="radioP"></div></td>
-							<td><div class='cuadro'></div>Lorem Ipsum</td>
-							<td>Lorem Ipsum</td>
-							<td>1234</td>
-							<td>dd/mm/aaaa</td>
-							<td>999,999,999.00</td>
-							<td colspan="2">1456789009876</td>
-						</tr>
-						<tr>
-							<td><div class="radioP"></div></td>
-							<td><div class='cuadro'></div>Lorem Ipsum</td>
-							<td>Lorem Ipsum</td>
-							<td>1234</td>
-							<td>dd/mm/aaaa</td>
-							<td>999,999,999.00</td>
-							<td colspan="2">1456789009876</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			</div>
-			<div class="txt1">
-				<p>Si el servicio que desea pagar no se encuentra en su lista de clic<span class="sub">Aquí</span></p>	
-			</div>
-			<div class="botonera">
-				<div class="btnaceptar" onClick="avanzar('1','2','1')">Continuar</div>
-			</div>	
+		<div id="step1" class="pasos">	
+			<h2>Seleccione de su lista de servicios registrados el que desea pagar</h2>
+		
+		<div id="pagoServicio">
+		
+
+		<table class="consulta" style="width:725px;float:left;text-align: justify;border:1px #c7c7c7 solid;;margin-left: 16px;">
+			<tr>
+				<td>Nombre del Servicio</td>
+				<td>Alias</td>
+				<td>Convenio</td>
+				<td>Fecha de pago</td>
+				<td>Importe (MXP)</td>
+				<td>Referencia</td>
+				
+			</tr>
+		</table>
+		<div  id="cuadroTarjeta" style="width:725px;height:190px; overflow:scroll; overflow-x: hidden;float: left;margin-left: 16px;border-bottom: 1px #c7c7c7 solid;">
+			<table class="cardList">
+				<tr>
+					<td><div class="radiobtnPago"></div></td>
+					<td><img src="../../../../img/servicios/ico_servicios/axtel.png" class="servicio"/><p class="servicio">Axtel</p></td>
+					<td>Lorem Ipsum</td>
+					<td>12345</td>
+					<td>dd/mm/aaaa</td>
+					<td >9,999,999.99</td>
+					<td >1456789098765</td>
+				</tr>
+				<tr>
+					<td><div class="radiobtnPago"></div></td>
+					<td><img src="../../../../img/servicios/ico_servicios/telcel.png" class="servicio"/><p class="servicio">Telcel</p></td>
+					<td>Lorem Ipsum</td>
+					<td>12345</td>
+					<td>dd/mm/aaaa</td>
+					<td >9,999,999.99</td>
+					<td >1456789098765</td>
+				</tr>
+				<tr>
+					<td><div class="radiobtnPago"></div></td>
+					<td><img src="../../../../img/servicios/ico_servicios/seguro.png" class="servicio"/><p class="servicio">G.N.P. Seguros</p></td>
+					<td>Lorem Ipsum</td>
+					<td>12345</td>
+					<td>dd/mm/aaaa</td>
+					<td >9,999,999.99</td>
+					<td >1456789098765</td>
+				</tr>
+				<tr class="deshabilitado">
+					<td><div class="radiobtnPago"></div></td>
+					<td><img src="../../../../img/servicios/ico_servicios/telmex.png" class="servicio"/><p class="servicio">Telmex</p></td>
+					<td>Lorem Ipsum</td>
+					<td>12345</td>
+					<td>dd/mm/aaaa</td>
+					<td >9,999,999.99</td>
+					<td >1456789098765</td>
+				</tr>
+			</table>
+		</div>	
+			<p>Si el servicio que desea pagar no se encuentra en su lista de clic <a href="#">Aquí</a></p>
+		</div>
+		<div class="botonera">
+			<div class="btnaceptar" onClick="avanzar('1','2','1');">Continuar</div>
+		</div>
+		<div class="smackdown">
+			<div><img src="../../../../img/mrsmackdown.png"/></div>
+			<h3>Tiempo de Activación</h3>
+			<p>El servicio "Telmex"<br/>
+				quedará activo el <br/>
+				dd/mm/aaaa a las<br/>
+				12:00 hrs.</p>
+		</div>
+		
+		<div class="smackdown2">
+			<div><img src="../../../../img/mrsmackdown.png"/></div>
+			<h3>Lorem Ipsum</h3>
+			<p>Lorem Ipsum dolor<br/>
+				sit amet, consectetur<br/>
+				adipisicing elit, sed<br/>
+				do eiusmod tempor.<br/>
+			</p>
+		</div>	
 		</div>
 		
 		<div id="step2">
-			<div class="consulta_pagoServ">
-				<table class="tbl_pagoServ">
-					<thead>
-						<tr>
-							<th></th>
-							<th>Nombre del Servicio</th>
-							<th>Alias</th>
-							<th>Convenio</th>
-							<th>Fecha de pago</th>
-							<th>Importe (MXP)</th>
-							<th>Referencia</th>
-							<!--<td style="background-color:gray;color:white;cursor:pointer">Ver lista<br />completa</td>-->
-							</tr>
-					</thead>
-					<tr>
-						<td><div class="radioP"></div></td>
-						<td><div class='cuadro'></div>Lorem Ipsum</td>
-						<td>Lorem Ipsum</td>
-						<td>1234</td>
-						<td>dd/mm/aaaa</td>
-						<td>999,999,999.00</td>
-						<td colspan="2">1456789009876</td>
-					</tr>
-				</table>
-				<span><b>Introduzca el nombre, alias o los cuatro dí­gitos de la cuenta o tarjeta de cargo o seleccionela de la lista:</b></span>
-						<!-- Lista provisional -->
-						<table>
-							<tr><td>						
-								<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias    548,145,199.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;margin-left: 6px;"> 
-							</td><td>
-
-							<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-
-									<div class="botonestrella-on"></div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marcotriangulo"><div class="triangulo_inf"></span></div></div></td>
-							</td></tr>
-						</table>
-
-						<div class="cuadrop">
-							<table>
-								<tr>
-									<td>
-										<div>
-											<p>Concepto:</p> 
-											<input class="input1" type="text" value=" 548,145,199.00" name="Text1" />
-										</div>
-									</td>
-									<td>
-										<div>
-											<p>Concepto:</p> 
-											<input class="input1" type="text" value=" 548,145,199.00" name="Text1" />
-										</div>
-									</td>
-									<td>
-										<div class="info"><img src="../img/info.png"/></div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div>
-											<p>Concepto:</p> 
-											<input class="input1" type="text" value=" 548,145,199.00" name="Text1" />
-										</div>
-									</td>
-									<td>
-										<div>
-											<p>Concepto:</p> 
-											<input class="input1" type="text" value=" 548,145,199.00" name="Text1" />
-										</div>
-										
-									</td>
-									<td>
-										<div class="info"><img src="../img/info.png"/></div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div>
-											<p>Concepto:</p> 
-											<input class="input1" type="text" value=" 548,145,199.00" name="Text1" />
-										</div>
-									</td>
-									<td>
-										<div>
-											<p>Concepto:</p> 
-											<input class="input1" type="text" value=" 548,145,199.00" name="Text1" />
-										</div>
-										
-									</td>
-									<td>
-										<div class="info"><img src="../img/info.png"/></div>
-									</td>
-								</tr>
-							</table>
-						</div>	
-							
-
-						
-						<!--<div class="dropcontainer">
-							<div class="dropdown">
-								<img id="downico1"src="../img/iconos/dropdown.png"/>
-								<img id="upico1"src="../img/iconos/dropup.png"/>
-								<h6>Quiero notificación previa de mi pago</h6>
-							</div>
-							
-							<div id="select1" class="wra_Select4">
-								<select name="" id="" >  
-									<option value="">3 días</option>
-				                    <option value="">Opcion1</option>
-				                    <option value="">Opcion1</option>
-				                    <option value="">Opcion1</option>
-				                    <option value="">Opcion1</option>
-					           	</select>
-							</div>
-							
-							<div class="dropdown">
-								<img id="downico2" src="../img/iconos/dropdown.png"/>
-								<img id="upico2" src="../img/iconos/dropup.png"/>
-								<h6>Quiero transferir el importe a meses sin intereses</h6>
-							</div>
-										
-							<div id="select2" class="wra_Select4">
-								<select name="" id="" style="width:100%">
-				                            
-				                            <option value="">Opcion1</option>
-				                            <option value="">Opcion1</option>
-				                            <option value="">Opcion1</option>
-				                            <option value="">Opcion1</option>
-				                            <option value="">Opcion1</option>
-				                           
-				            	</select>
-							
-							</div>
-						</div>-->
-						<div class="botonera">
-							<div class="btnaceptar" onClick="avanzar('2','3','2')">Continuar</div>
-						</div>
+			<div id="pagoServicioC">
+				<table class="cardListC">
+				<tr>
+					<th></th>
+					<th>Nombre del Servicio</th>
+					<th>Alias</th>
+					<th>Convenio</th>
+					<th>Fecha de pago</th>
+					<th>Importe (MXN)</th>
+					<th>Referencia</th>
+				</tr>
+				<tr>
+					<td><div class="radiobtnPago"></div></td>
+					<td><img src="../../../../img/servicios/ico_servicios/axtel.png" class="servicio"/><p class="servicio">Axtel</p></td>
+					<td>Lorem Ipsum</td>
+					<td>12345</td>
+					<td>dd/mm/aaaa</td>
+					<td >9,999,999.99</td>
+					<td >1456789098765</td>
+				</tr>
+			</table>
+			<h2>Introduzca el nombre, alias o los cuatro dígitos de la cuenta de destino o seleccionela de la lista:</h2>
 				
+				<div class="dd1">
+					<select name="" id="" value="1" > 
+			    	</select>
+				</div>
+				<div class="inputs">
+					<div>
+						<p>Concepto</p>
+						<input class="input" type="text"/>
+					</div>
+					<div>
+						<p>Alias de Tarjeta</p>
+						<input class="input" type="text"/>
+						<div class="info"></div>					
+					</div>
+					<div>
+						<p>Referencia 1</p>
+						<input class="input" type="text"/>
+						<div class="info"></div>					
+					</div>
+					<div>
+						<p>Referencia 2</p>
+						<input class="input" type="text"/>
+						<div class="info"></div>					
+					</div>
+					<div>
+						<p>Importe</p>
+						<input class="input" type="text"/>
+						<div class="info"></div>					
+					</div>
+					<div>
+						<p>Pronto Pago</p>
+						<p>Intereses Moratorios</p>
+						<input class="input2" type="text"/>
+						<input class="input2" type="text"/>
+						<div class="info"></div>
+					</div>
+					<div>
+						<p>Transferir el importe a meses sin intereses:</p>
+						<div class="dd2">
+						<select name="" id="" value="1" > 
+		    			</select>
+						</div>
+					</div>
+					<div id="programar">
+						<p>Programar fecha:</p>
+						<div id="switchBox">
+							<div class="switchSlide">					
+								<div class="switchLabel">si</div>
+								<div class="switchIndicador"></div>
+								<div class="switchLabelR">no</div>				
+							</div>
+						</div>
+						<div class="dateInput">
+							<div></div>
+							<input class="input5" type="text" value="dd/mm/aaaa"/>
+						</div>					
+					</div>
+					<div class="notificacion">
+					<p>Quiero notificación previa de mi pago:</p>
+					<div class="dd3">
+						<select name="" id="" value="1" > 
+		    			</select>
+						</div>	
+					</div>
+			</div>
+			<div class="botonera">
+				<div class="btnaceptar" onClick="avanzar('2','3','2');">Continuar</div>
 			</div>
 		</div>
+		<div class="smackdown">
+			<div><img src="../../../../img/mrsmackdown.png"/></div>
+			<h3>Tiempo de Activación</h3>
+			<p>El servicio "Telmex"<br/>
+				quedará activo el <br/>
+				dd/mm/aaaa a las<br/>
+				12:00 hrs.</p>
+		</div>
+		
+		<div class="smackdown2">
+			<div><img src="../../../../img/mrsmackdown.png"/></div>
+			<h3>Lorem Ipsum</h3>
+			<p>Lorem Ipsum dolor<br/>
+				sit amet, consectetur<br/>
+				adipisicing elit, sed<br/>
+				do eiusmod tempor.<br/>
+			</p>
+		</div>
+		</div>
 
-		<div id="step3">
+
+		<div id="step3" class="pasos">	
 			<h2>Por favor confirme que la información desplegada a continuación es correcta:</h2>
 		
 		<div class="descripcion">
@@ -395,7 +329,7 @@ function cambiaPaso3(){
 		</div>
 				
 		<div class="botonera">
-			<div class="btn" onClick="avanzar('3','2');">regresar</div>
+			<div class="btn" onClick="avanzar('3','2','1');">regresar</div>
 			<div id="confirmar_token" class="btnaceptar">confirmar</div>
 		</div>
 		</div>
@@ -483,17 +417,122 @@ function cambiaPaso3(){
 			<div class="btnaceptar fin">Finalizar</div>
 		</div>
 	</div>
-
-
-
-
-
-
 	</div>
 	<!-- Fin flujo Pago de Servicios -->
 
 	<!-- Flujo Alta de Servicios -->
 	<div>
+		<div id="step5" class="pasos">
+					
+							
+
+			<!--<div class="dropdown">
+				<img class="downI" src="../img/iconos/dropdown.png" style="display: block;">
+					<img class="upI" src="../img/iconos/dropup.png" style="display: none;">
+						<h6>Datos para domiciliar la tarjeta de crédito.</h6>
+			</div>-->
+			<div class="dropcontainer">
+				<div class="dropdown">
+					<img class="downI" src="../img/iconos/dropdown.png"/>
+					<img class="upI" src="../img/iconos/dropup.png"/>
+					<h6>Listado de servicios</h6>
+				</div>
+				
+				<div id="select1" class="wra_Select4">
+					<div id="slider">
+						<div style="width:559px;overflow: hidden;height:216px">
+							<div style="width:549px; height:215px; overflow: hidden; margin-left:20px;">
+								<div class="contenedor">
+									<div class="servslide"></div>
+									<div class="textoSim">Lorem<br />ipsum</div>
+								</div>
+								<div class="contenedor">
+									<div class="servslide"></div>
+									<div class="textoSim">Lorem<br />ipsum</div>
+								</div>
+								<div class="contenedor">
+									<div class="servslide"></div>
+									<div class="textoSim">Lorem<br />ipsum</div>
+								</div>
+								<div class="contenedor">
+									<div class="servslide"></div>
+									<div class="textoSim">Lorem<br />ipsum</div>
+								</div>
+								<div class="contenedor">
+									<div class="servslide"></div>
+									<div class="textoSim">Lorem<br />ipsum</div>
+								</div>
+								<div class="contenedor">
+									<div class="servslide"></div>
+									<div class="textoSim">Lorem<br />ipsum</div>
+								</div>
+								<div class="contenedor">
+									<div class="servslide"></div>
+									<div class="textoSim">Lorem<br />ipsum</div>
+								</div>
+
+								<div class="contenedor">
+									<div class="servslide"></div>
+									<div class="textoSim">Lorem<br />ipsum</div>
+								</div>
+								<div class="contenedor">
+									<div class="servslide"></div>
+									<div class="textoSim">Lorem<br />ipsum</div>
+								</div>
+								<div class="contenedor">
+									<div class="servslide"></div>
+									<div class="textoSim">Lorem<br />ipsum</div>
+								</div>
+								<div class="contenedor">
+									<div class="servslide"></div>
+									<div class="textoSim">Lorem<br />ipsum</div>
+								</div>
+								<div class="contenedor">
+									<div class="servslide"></div>
+									<div class="textoSim">Lorem<br />ipsum</div>
+								</div>
+								<div class="contenedor">
+									<div class="servslide"></div>
+									<div class="textoSim">Lorem<br />ipsum</div>
+								</div>
+								<div class="contenedor">
+									<div class="servslide"></div>
+									<div class="textoSim">Lorem<br />ipsum</div>
+								</div>
+							</div>
+							<!--<div>
+
+							</div> Funcionalidad2-->
+						</div>
+						<div class="leftarrow"><img src="../img/botones/flecha_lado_dropdown_largo - izquierda.png"/></div>	
+						<div class="rightarrow"><img src="../img/botones/flecha_lado_dropdown_largo.png"/></div>
+						<div id="radbtnsTarjetas">
+							<div class="rdselect"  id="rdbtn1">1</div> 
+							<div id="rdbtn2" >2</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="dropdown">
+					<img id="downico2" src="../img/iconos/dropdown.png"/>
+					<img id="upico2" src="../img/iconos/dropup.png"/>
+					<h6>Busqueda avanzada</h6>
+				</div>
+							
+				<div id="select2" class="wra_Select4">
+					<select name="" id="" style="width:100%">
+	                            
+	                            <option value="">Opcion1</option>
+	                            <option value="">Opcion1</option>
+	                            <option value="">Opcion1</option>
+	                            <option value="">Opcion1</option>
+	                            <option value="">Opcion1</option>
+	                           
+	            	</select>
+				
+				</div>
+			</div>
+		</div>
 		
 	</div>
 	<!-- Fin flujo Alta de Servicios -->
