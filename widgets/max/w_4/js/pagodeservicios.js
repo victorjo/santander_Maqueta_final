@@ -76,7 +76,7 @@ $(function(){
 $(document).ready(function(){
 
 	
-
+	ocultaSteps(5);
 	$('#confirmar_token').click(function(){
 		creaOverlay("#fff","#widampliado",1);
 		creaToken("modalOver","javascript:destruyeOver();","javascript: $('#step3').hide();$('#step4').show();$('#modalOver').fadeOut();",null,function(){$(".steps").replaceWith("<img src='img/paso_3.png' class='steps'>");});
