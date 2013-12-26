@@ -90,6 +90,7 @@ var widgets = [
 					id:11,
 					type:3,
 					order:-1,
+					group:1,
 					contentMin:'',
 					contentMax:''
 				},
@@ -97,6 +98,7 @@ var widgets = [
 					id:1,
 					type:2,
 					order:5,
+					group:1,
 					contentMin:'',
 					contentMax:''
 				},
@@ -104,12 +106,14 @@ var widgets = [
 					id:5,
 					type:2,
 					order:9,
+					group:1,
 					contentMin:'',
 					contentMax:''
 				},{
 					id:8,
 					type:2,
 					order:0,
+					group:1,
 					contentMin:'',
 					contentMax:''
 				},
@@ -117,6 +121,7 @@ var widgets = [
 					id:6,
 					type:3,
 					order:10,
+					group:3,
 					contentMin:'',
 					contentMax:''
 				},
@@ -124,6 +129,7 @@ var widgets = [
 					id:2,
 					type:1,
 					order:7,
+					group:1,
 					contentMin:'',
 					contentMax:''
 				},
@@ -131,6 +137,7 @@ var widgets = [
 					id:7,
 					type:2,
 					order:4,
+					group:3,
 					contentMin:'',
 					contentMax:''
 				},
@@ -138,6 +145,7 @@ var widgets = [
 					id:4,
 					type:1,
 					order:3,
+					group:4,
 					contentMin:'',
 					contentMax:''
 				},
@@ -145,6 +153,7 @@ var widgets = [
 					id:9,
 					type:3,
 					order:6,
+					group:3,
 					contentMin:'',
 					contentMax:''
 				},
@@ -153,6 +162,7 @@ var widgets = [
 					id:10,
 					type:1,
 					order:8,
+					group:1,
 					contentMin:'',
 					contentMax:''
 				},
@@ -160,6 +170,7 @@ var widgets = [
 					id:null,
 					type:1,
 					order:8,
+					group:2,
 					contentMin:'<img style="height:579px" src="img/fake/bannerVertical.jpg" />',
 					contentMax:''
 				},				
@@ -167,20 +178,29 @@ var widgets = [
 					id:13,
 					type:2,
 					order:11,
+					group:2,
 					contentMin:'',
 					contentMax:''
 				},{
 					id:14,
 					type:2,
 					order:12,
+					group:2,
 					contentMin:'<h1 class="btnaceptar_wr">Saldos y Movimientos</h1>',
 					contentMax:''
 				}
 
 			];
 
-function posWidgets(qwerty){
-	console.log("entro y calculo");
+function groupBy(groupBy){
+	var wm = $(".widget-min");
+	wm.css('position','relative');
+	//wm.animate({'top':'+=2000px','opacity':0.0},1500);
+	wm.fadeOut('slow');
+	setTimeout(function(){wm.remove();posWidgets(2,groupBy);},1501);
+}
+
+function posWidgets(qwerty,groupBy){
 	var absoluteW = $("#absoluteWrapper");
 	if(qwerty==1) $("#loginWrapper").hide();
 	if(qwerty==0) absoluteW.css({'position':'absolute','left':$(window).width(),'display':'none'});
@@ -202,9 +222,10 @@ function posWidgets(qwerty){
 				};
 
 	var parser = 0;
-    if(qwerty==0){
+    if(qwerty==0 || qwerty==2){
     wids = sortByKey(widgets, 'order');
 	$.each(wids,function(i,v){
+		if(typeof groupBy != "undefined" && v.group!=groupBy) return;
 		var newWidget = $('<div>');
 		var c = fillStyles(v.type);
 		newWidget.attr("class",c);
@@ -250,7 +271,7 @@ function posWidgets(qwerty){
 		var posWra = wrapper.offset()
 		var a = posWid.top-posWra.top; 
 		var b = posWid.left-posWra.left;
-		newWidget.css({'top': a+"px",'left':b+"px"});
+		if(qwerty!=2) newWidget.css({'top': a+"px",'left':b+"px"});
 		
 		parser++;
 	});
@@ -269,9 +290,9 @@ function posWidgets(qwerty){
 		});
 		return attrClass;
 	}
-
+	
 	(function (wrapper){
-
+		//if(qwerty==2) return false;
 		$("[data-pos='7']").css('float','left');
 		if($(window).width()>1490 || !spDisplay ) 
 		{
@@ -280,8 +301,9 @@ function posWidgets(qwerty){
 			$("[data-pos='10']").insertAfter('[data-pos="9"]');
 			$("[data-pos='11']").insertAfter('[data-pos="10"]');
 			$("[data-pos='9']").hide();
+
 			$("#wrappWidgets").css("width","1022px");
-				$("#cierraSB").fadeOut("fast");
+			$("#cierraSB").fadeOut("fast");
 			//$("[data-pos='3']").after('<div class="widget-min col1 alto2"  data-max="false" data-pos="codom"><img src="img/fake/carrito.jpg" height="275"/></div>');
 			var alen = 1030;
 		}else{
@@ -290,7 +312,7 @@ function posWidgets(qwerty){
 			$("#cierraSB").fadeIn("fast");
 		}
 
-		
+
 		var obj = $("#navContent");
 		var posLeft = wrapper.offset().left;
 		posLeft += alen || 790;
@@ -303,7 +325,6 @@ function posWidgets(qwerty){
 		dirScroll=false;
 		
 		wrapper.scroll(function(e){
-
 			if(globalVarOfVal>0) return false;
 			var thisS = $(this);
 			altoScrollTop = $("#wrappWidgets").height()+ thisS.scrollTop();
@@ -313,30 +334,23 @@ function posWidgets(qwerty){
 					dirScroll = true;
 			}
 			posScroll = thisS.scrollTop();
-
-
 			if(altoScrollTop >= altosScroll[(banPosSelect+1)] && dirScroll){
 				if(banPosSelect>3){
 					banPosSelect=2;
-					
 				}else{
 					banPosSelect++;
 				}
-
 			}else if((altoScrollTop-($("#wrappWidgets").height()/2))  <= altosScroll[(banPosSelect-1)] && !dirScroll)
 			{
-
 				if(banPosSelect<=1){
 					banPosSelect = 1 ;
 				}else{
 					banPosSelect--;
 				}
 			}
-
 				if(banPosSelect==0){
 					banPosSelect=1;
 				}
-
 				activaBtn($('#navContent > div:nth-child('+banPosSelect+')'));
 		});
 		wrapper.animate({'opacity':'1'});
