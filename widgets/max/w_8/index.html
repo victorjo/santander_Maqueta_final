@@ -125,7 +125,7 @@ a:hover {
 .inputtext{
 	margin-top: 0px;
 }
-#progfecha{
+#progfecha,#progfecha2{
 	margin-top:95px;
 }
 </style>
@@ -196,7 +196,7 @@ a:hover {
 					</div>
 
 				</div>
-				<div id="imgcal"></div>
+				<div class="imgcal"></div>
 				<div id="textcal">
 					<div class="divFlotante">
 						<div class="imagen"></div>
@@ -205,19 +205,21 @@ a:hover {
 					</div>
 				</div>
 			</div>
-			<div class="mk" style="border:solid 1px silver; margin-top:60px; margin-left:0px; width:100%; text-align:left; height:25px; font-size:12px;">
-			<span style="position:relative; top:5px;">Mis cuentas registradas</span>
-			<div class="btnaction2"></div>
-			</div>
-			<div id="minisexycombo">
-				<div class="wra_Select2" style="margin-top:0px;">
-					<select name="" id="" >
-						<option value="">Opcion1</option>
-						<option value="">Opcion1</option>
-						<option value="">Opcion1</option>
-						<option value="">Opcion1</option>
-						<option value="">Opcion1</option>
-					</select>
+			<div class="contentSlider">
+				<div class="mk" style="border:solid 1px silver; margin-top:60px; margin-left:0px; width:100%; text-align:left; height:25px; font-size:12px;">
+				<span style="position:relative; top:5px;">Notificación previa de mi transferencia</span>
+				<div class="btnaction2"></div>
+				</div>
+				<div id="minisexycombo">
+					<div class="wra_Select2" style="margin-top:0px;">
+						<select name="" id="" >
+							<option value="">Opcion1</option>
+							<option value="">Opcion1</option>
+							<option value="">Opcion1</option>
+							<option value="">Opcion1</option>
+							<option value="">Opcion1</option>
+						</select>
+					</div>
 				</div>
 			</div>
 			<div class="botonera" style="margin-right:12px;">
@@ -279,7 +281,7 @@ a:hover {
 						<div class="inputtext"><input type="text"></div>
 					</div>
 				</div>
-				<div id="progfecha">
+				<div id="progfecha2">
 					<div>Programar fecha:</div>
 					<div id="calendar">
 						<div class="switchCont">
@@ -293,7 +295,7 @@ a:hover {
 						</div>
 
 					</div>
-					<div id="imgcal"></div>
+					<div class="imgcal"></div>
 					<div id="textcal">
 						<div class="divFlotante">
 							<div class="imagen"></div>
@@ -302,44 +304,70 @@ a:hover {
 						</div>
 					</div>
 				</div>
-				<div class="mk" style="border:solid 1px silver; margin-top:60px; margin-left:0px; width:100%; text-align:left; height:25px; font-size:12px;">
-				<span style="position:relative; top:5px;">Mis cuentas registradas</span>
-				<div class="btnaction2"></div>
-				</div>
-				<div id="minisexycombo" style="margin-top:10px;">
-					<div class="wra_Select2 
-					" style="margin-top:0px;">
-						<select name="" id="" >
-							<option value="">Opcion1</option>
-							<option value="">Opcion1</option>
-							<option value="">Opcion1</option>
-							<option value="">Opcion1</option>
-							<option value="">Opcion1</option>
-						</select>
-					</div>
-				</div>
-				<div id="progfecha" class="progfecha" style="margin-top:10px;margin-left:0px; display:none">
-					<div>Programar fecha:</div>
-					<div id="calendar">
-						<div class="switchCont">
-							<div id="switchBox">
-								<div class="switchSlide2">					
-										<div class="switchLabel2"><span class="switchs">Si</span></div>
-										<div class="switchIndicador"></div>
-										<div class="switchLabelR2"><span span class="switchs">No</span></div>				
-								</div>
-							</div>		
-						</div>
 
-					</div>
-						<div id="imgcal"></div>
-						<div id="textcal">
-							<div class="divFlotante">
-								<div class="imagen"></div>
-								<div id="ico" class="calicoNo"></div>
-								<input class="input3"  id="dia3" value="01/01/2013" disabled='disabled' type="text"/>
+				<div id="progfecha3" class="" style="margin-top:30px;margin-left:0px;width:100%;float:left;">
+						<div>¿Requiere comprobante fuscal?</div>
+						<div id="calendar">
+							<div class="switchCont">
+								<div id="switchBox">
+									<div class="switchSlide2">					
+											<div class="switchLabel2"><span class="switchs">Si</span></div>
+											<div class="switchIndicador"></div>
+											<div class="switchLabelR2"><span span class="switchs">No</span></div>
+									</div>
+								</div>		
 							</div>
 						</div>
+						<div id="textFiscal" style="float:left;margin-left:80px; display:none;">
+							<div style="float:left; margin-left:20px;">Ingrese RFC: <input type="text" style="width:120px;"></div>
+							<div style="float:left; margin-left:20px;">IVA (16%): <input type="text" style="width:120px;"> MXP</div>
+						</div>
+						
+				</div>
+			
+
+
+
+				<div class="contentSlider">
+					<div class="mk" style="border:solid 1px silver; margin-top:60px; margin-left:0px; width:100%; text-align:left; height:25px; font-size:12px;">
+					<span style="position:relative; top:5px;">Notificación previa de mi transferencia</span>
+					<div class="btnaction2"></div>
+					</div>
+					<div id="minisexycombo" style="margin-top:10px;">
+						<div class="wra_Select2 
+						" style="margin-top:0px;">
+							<select name="" id="" >
+								<option value="">Opcion1</option>
+								<option value="">Opcion1</option>
+								<option value="">Opcion1</option>
+								<option value="">Opcion1</option>
+								<option value="">Opcion1</option>
+							</select>
+						</div>
+					</div>
+					<div id="progfecha4" class="progfecha" style="margin-top:10px;margin-left:0px; display:none">
+						<div>Programar fecha:</div>
+						<div id="calendar">
+							<div class="switchCont">
+								<div id="switchBox">
+									<div class="switchSlide2">					
+											<div class="switchLabel2"><span class="switchs">Si</span></div>
+											<div class="switchIndicador"></div>
+											<div class="switchLabelR2"><span span class="switchs">No</span></div>				
+									</div>
+								</div>		
+							</div>
+
+						</div>
+							<div class="imgcal"></div>
+							<div id="textcal">
+								<div class="divFlotante">
+									<div class="imagen"></div>
+									<div id="ico" class="calicoNo"></div>
+									<input class="input3"  id="dia3" value="01/01/2013" disabled='disabled' type="text"/>
+								</div>
+							</div>
+					</div>
 				</div>
 				<div class="botonera" style="margin-right:12px;">
 					<div class="btnaceptar">Continuar</div>
