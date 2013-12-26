@@ -1,5 +1,10 @@
-﻿/*Estilos propios del paso1*/
+﻿@import url('../../../../css/widgets.css');
+@import url('../../../../css/componentes.css');
+
+/*Estilos propios del paso1*/
 /*----Tipos de cuadros / Texto en cuadros----*/
+
+
 .cuadro{
 	float: left;
 	margin: 33px 0 0 53px;
@@ -534,8 +539,8 @@ padding-top: 25px;
 }
 
 .wra_Select{
-	float:right;
-	box-shadow: 1px 1px 2px #E1E1E1;
+	float:left;
+	
 
 }
 
@@ -645,7 +650,7 @@ input[type=text]
 	background-color:#e8e8e8;
 	box-shadow:inset 1px 1px 5px #c6c6c6;
 	border:1px #a6a6a6 solid;
-	width:223px;
+	width:250px;
 	}
 	
 .red{ 
@@ -693,4 +698,260 @@ input[type=text]
 
 .divT1 :hover{
 	box-shadow:2px 2px 5px #4573ec;
+}
+
+
+
+
+
+/* Misestilos agregados a otras cuentas */
+
+.boldred {
+	font-family:Arial;
+	font-size:11px;
+	font-weight:bold;
+	color:red;
+	font-size:11px;
+	width:650px;
+	margin-bottom: 19px;
+}
+
+input[type=text]
+{
+	margin-left: 16px;
+}
+	
+.wra_Select b{
+margin-left: 17px;
+}
+
+.wra_Select {
+
+	width: 265px;
+}
+
+.tbl_info {
+
+width:95%;
+float:left;
+margin-left:10px;
+margin-top: 10px;
+}
+
+
+
+
+
+
+
+/*ajuste de botones tamaño paso 3 : copia de wr_btnNav */
+
+#btn_paso3{
+	width: 244px;
+	overflow: hidden;
+	margin-top:50px;
+	position:absolute;
+	margin-top: 291px;
+	/*margin: auto;*/
+	border-left: 1px solid #b9b9b9;
+	border-right: 1px solid #b9b9b9;
+	border-top: 1px solid #b9b9b9;
+	height:93px;
+
+}
+ 
+#btn_paso3 > ul > li:first
+{
+	font-weight:bolder;
+}
+
+#btn_paso3 ul {
+	list-style: none;
+	/*background: #efefef;*/
+	background: #fff;
+	width: 100%;
+	margin: auto;
+	padding: 0 0 0 0;
+	font-size: 12px;			
+}
+
+#btn_paso3 ul li{
+	/*background: url(../img/menuLateral/btn_menu.png);*/
+	width: 100%;
+	height: 20px;
+	padding: 10px 10px 0;
+	border-bottom: 1px solid #bbbbbb;
+	cursor: pointer; 
+	font-size: 9px;
+	text-transform: uppercase;
+	text-align:left;
+}
+
+#btn_paso3 ul li:hover{
+	/*background: #e3e3e3;*/
+	color:#ff0000;
+}
+
+#btn_paso3 ul li > img{
+	float: left;
+	margin-left: 5px;
+	margin-top: -5px
+}
+
+.txtbtn_3{
+	margin-left: 17px;
+}
+
+
+/***switch**/
+
+
+
+.switchCont{
+	width:430px;
+	height:40px;
+	margin-right:-340px;
+	float:right;
+	margin-top:0px;
+}
+
+.switchCont p{
+	color:#282828;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	float:left;
+	font-weight:bold;
+	margin-left:10px;
+	margin-top:5px;
+}
+
+#switchBox{
+	border:1px #a6a6a6 solid;
+	width:78px;
+	height:28px;
+	margin:0 0 0 10px;
+	float:left;
+	position:relative;
+	overflow:hidden;
+}
+
+.switchSlide{
+	float:left;
+	width:120px;
+	position:absolute;
+	left:-39px;
+}
+
+.switchIndicador{
+	width:37px;
+	height:26px;
+	float:left;
+	background-color:#ff0000;
+	border:1px #c9c9c9 solid;
+	border-radius:5px;
+}
+
+.switchLabel{
+	width:39px;
+	height:28px;
+	float:left;
+	background-color:#ffffff;
+	cursor:pointer;
+}
+
+.switchLabelR{
+	width:39px;
+	height:28px;
+	float:left;
+	background-color:#ffffff;
+	cursor:pointer;
+}
+
+.switchs{
+	float: left;
+	margin-top: 10px;
+	margin-left: 11px;
+}
+.marcotriangulo {
+width: 25px;
+height: 17px;
+border: 1px solid gray;
+margin: -1px;
+padding-top: 10px;
+background-color: #E6E6E5;
+margin-top: 5px;
+margin-left: -8px;
+}
+.triangulo_inf {
+width: 0;
+height: 0;
+border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+border-top: 8px solid #666665;
+margin-left: 8px;
+}
+.ui-datepicker {  
+    width: 216px;
+    height: 230px;
+    top: -100px;
+}
+/* Misestilos agregados a otras cuentas */
+
+
+
+#progfecha{
+	font-family: Arial, Sans-serif, Helvetica;
+	margin-top: 91px;
+	margin-left: 288px;
+	width:48%;
+	font-size: 12px;
+	color: grey;
+	font-weight: bold;
+	
+}
+
+#calendar{
+	border:solid 1px silver;
+	width: 79px;
+	height: 30px;
+	margin-top: 5px;
+	float: left;
+	border-radius: 10px;
+}
+
+#imgcal{
+	width: 30px;
+	height:30px;
+	border: solid 1px silver;
+	margin-left: 10px;
+	margin-top: 5px;
+	float: left;
+	background: url(../../../../img/iconos/calendario.png);
+}
+#textcal{
+	
+	width: 85px;
+	height: 30px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+#textcal input{
+	width: 85px;
+	margin-top: 0px;
+}
+#minisexycombo{
+	width: 225px;
+	height: 30px;
+	margin-left: 0px;
+	margin-top: 20px;
+	display: none;
+}
+
+
+.dropcontainer{
+	height: 100px;
+	width:715px;
+	float:left;
+	overflow:auto;
 }

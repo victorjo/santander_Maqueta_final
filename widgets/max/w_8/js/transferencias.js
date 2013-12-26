@@ -47,6 +47,253 @@ $(document).ready(function(){
 			 
 			 $('.dias').html("&nbsp;en&nbsp;"+$(this).text());
 		});
+
+/****************************************************************************************************************************/
+
+
+
+
+			
+			$(".btnaction").click(function(){
+
+				if ($(this).hasClass("btnaction2")) {
+					$(this).removeClass("btnaction2");
+				}else{
+					$(this).addClass("btnaction2");
+				}
+				$("#consultas, #treg").slideToggle("slow");
+				$("#altas").slideUp("slow");
+				$(".hidde").slideToggle("slow");
+
+
+			});
+
+
+
+			/*$(".btnaction2").click(function(){
+
+				if ($(this).hasClass("btnactionx")) {
+					$(this).removeClass("btnactionx");
+				}else{
+					$(this).addClass("btnactionx");
+				}
+				$("#altas").slideToggle("slow");
+				$(".hidde").slideUp("slow");
+				$("#consultas, #treg").slideUp("slow");
+				$(".btnaction").addClass("btnaction2");
+
+			});*/
+
+						
+			$("#r1").click(function(){
+				$("#confel").slideToggle("slow");
+				$(".iconos ul > li:nth-of-type(3),.iconos ul > li:nth-of-type(4),.iconos ul > li:nth-of-type(5)").slideToggle("slow");
+				$(".main ul > li:nth-of-type(3),.main ul > li:nth-of-type(4)").slideToggle("slow");
+				if ($(this).hasClass("radselect")) {
+					$(this).removeClass("radselect");
+				}else{
+					$(this).addClass("radselect");
+				}
+				
+			});
+			$("#r2").click(function(){
+				$("#confel").slideToggle("slow");
+				$(".iconos ul > li:nth-of-type(4),.iconos ul > li:nth-of-type(5)").slideToggle("slow");
+				$(".main ul > li:nth-of-type(4)").slideToggle("slow");
+				if ($(this).hasClass("radselect")) {
+					$(this).removeClass("radselect");
+				}else{
+					$(this).addClass("radselect");
+				}
+
+
+			});
+				$("#r3").click(function(){
+				$("#confel").slideToggle("slow");
+				if ($(this).hasClass("radselect")) {
+					$(this).removeClass("radselect");
+				}else{
+					$(this).addClass("radselect");
+				}
+			
+			});
+
+			////////////////////////////////////////////////
+
+			$("#r5").click(function(){
+				
+				$("#save").slideToggle("slow");
+				$(".textedit").slideToggle("slow");
+				$(".textedit #text1").attr("placeholder","1234****5678");
+				$(".textedit #text2").attr("placeholder","Adrian Moráles");
+				$(".textedit #text3").attr("placeholder","Adrian Moráles");
+				$(".textedit #text4").attr("placeholder","Banamex");
+				//alert(pl);
+				//$(".main ul > li:nth-of-type(5)").slideToggle("slow");
+				$(".iconos ul > li:nth-of-type(3),.iconos ul > li:nth-of-type(4),.iconos ul > li:nth-of-type(5)").slideToggle("slow");
+				$(".main ul > li:nth-of-type(3),.main ul > li:nth-of-type(4)").slideToggle("slow");
+				if ($(this).hasClass("radselect")) {
+					$(this).removeClass("radselect");
+				}else{
+					$(this).addClass("radselect");
+				}
+				
+			});
+			$("#r6").click(function(){
+				$("#save").slideToggle("slow");
+				$(".textedit").slideToggle("slow");
+				$(".textedit #text1").attr("placeholder","1234****5678");
+				$(".textedit #text2").attr("placeholder","Efrain Juarez");
+				$(".textedit #text3").attr("placeholder","Efrain Juarez");
+				$(".textedit #text4").attr("placeholder","Banorte");
+				//$(".main ul > li:nth-of-type(5)").slideToggle("slow");
+				$(".iconos ul > li:nth-of-type(4),.iconos ul > li:nth-of-type(5)").slideToggle("slow");
+				$(".main ul > li:nth-of-type(4)").slideToggle("slow");
+				if ($(this).hasClass("radselect")) {
+					$(this).removeClass("radselect");
+				}else{
+					$(this).addClass("radselect");
+				}
+
+
+			});
+			$("#r7").click(function(){
+				$("#save").slideToggle("slow");
+				$(".textedit").slideToggle("slow");
+				$(".textedit #text1").attr("placeholder","1234****5678");
+				$(".textedit #text2").attr("placeholder","Elba Solis");
+				$(".textedit #text3").attr("placeholder","Elba Solis");
+				$(".textedit #text4").attr("placeholder","HSBC");
+				//$(".main ul > li:nth-of-type(7)").slideToggle("slow");
+				//$(".main ul > li:nth-of-type(5)").slideToggle("slow");
+				$(".iconos ul > li:nth-of-type(5)").slideToggle("slow");
+				$(".main ul > li:nth-of-type(6)").slideToggle("slow");
+				if ($(this).hasClass("radselect")) {
+					$(this).removeClass("radselect");
+				}else{
+					$(this).addClass("radselect");
+				}
+			
+			});
+			$("#r8").click(function(){
+				$(".textedit").slideToggle("slow");
+				//$(".main ul > li:nth-of-type(5)").slideToggle("slow");
+				$("#save").slideToggle("slow");
+				$(".textedit #text1").attr("placeholder","1234****5678");
+				$(".textedit #text2").attr("placeholder","Esteban García");
+				$(".textedit #text3").attr("placeholder","Esteban García");
+				$(".textedit #text4").attr("placeholder","Bancomer");
+				if ($(this).hasClass("radselect")) {
+					$(this).removeClass("radselect");
+				}else{
+					$(this).addClass("radselect");
+				}
+			
+			});
+
+			////////////////////////////////////////////////////////////////////
+
+
+
+			$("#imagen1").mouseover(function(){
+				$("#infotext1").css("display","inline");
+			});
+			$("#imagen1").mouseout(function(){
+				$("#infotext1").css("display","none");
+			});
+
+			
+			$("#imagen2").mouseover(function(){
+				$("#infotext2").css("display","inline");
+			});
+			$("#imagen2").mouseout(function(){
+				$("#infotext2").css("display","none");
+			});
+
+			$("#imagen3").mouseover(function(){
+				$("#infotext3").css("display","inline");
+			});
+			$("#imagen3").mouseout(function(){
+				$("#infotext3").css("display","none");
+			});
+
+
+			$("#imagen4").mouseover(function(){
+				$("#infotext4").css("display","inline");
+			});
+			$("#imagen4").mouseout(function(){
+				$("#infotext4").css("display","none");
+			});
+
+			
+
+			$(".switchLabel").click(function(){
+			$(".switchSlide").animate({"left":"-=39px"},"fast");
+			$('.input3').attr('disabled','disabled');
+			$('.input3').removeClass('activo');
+			$('#ico').removeClass('calico');
+			$('#ico').addClass('calicoNo');});
+			$(".switchLabelR").click(function(){
+			$(".switchSlide").animate({"left":"+=39px"},"fast");
+			$('.input3').removeAttr('disabled');
+			$('.input3').addClass('activo');
+			$('#ico').removeClass('calicoNo');
+			$('#ico').addClass('calico');
+		  	});
+
+		  	$(".switchLabel2").click(function(){
+			$(".switchSlide2").animate({"left":"-=39px"},"fast");
+			$('.input3').attr('disabled','disabled');
+			$('.input3').removeClass('activo');
+			$('#ico').removeClass('calico');
+			$('#ico').addClass('calicoNo');});
+			$(".switchLabelR2").click(function(){
+			$(".switchSlide2").animate({"left":"+=39px"},"fast");
+			$('.input3').removeAttr('disabled');
+			$('.input3').addClass('activo');
+			$('#ico').removeClass('calicoNo');
+			$('#ico').addClass('calico');
+		  	});
+			
+			
+			$(".wra_Select2 select").ddslick({
+                    width:"225"
+            });
+
+			$(".wra_Select3 select").ddslick({
+                    width:"225"
+            });
+
+            function openClose(estado1,estado2,slidetoggle,slideup){
+
+			$(estado1).click(function(){
+				if ($(this).hasClass(estado2)) {
+					$(this).removeClass(estado2);
+				}else{
+				$(this).addClass(estado2);
+				}
+
+				$(slidetoggle).slideToggle("slow");
+				$(slideup).slideUp("slow");
+
+			});	
+	
+			}
+			
+
+			openClose(".btnaction2","btnactionx","#minisexycombo,.progfecha,#altas",".hidde,#consultas,#treg");
+				
+				$("#dia").datepicker();
+				$("#dia2").datepicker();
+				$("#dia3").datepicker();
+
+
+				omniBox("autocompleteQ",cards);
+
+
+
+
+/***************************************************************************************************************************/
 });
 
 function cambiaPasoImg(){

@@ -30,6 +30,7 @@ $(document).ready(function(){
 		$(".switchSlide").animate({
 			"left":"-=39px"
 			},"fast");
+		
 		$('.input3').attr('disabled','disabled');
 		$('.input3').removeClass('activo');
 		$('#ico').removeClass('calico');
