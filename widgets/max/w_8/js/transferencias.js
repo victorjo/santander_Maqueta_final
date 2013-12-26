@@ -232,13 +232,19 @@ $(document).ready(function(){
 			$('.input3').attr('disabled','disabled');
 			$('.input3').removeClass('activo');
 			$('#ico').removeClass('calico');
-			$('#ico').addClass('calicoNo');});
+			$('#ico').addClass('calicoNo');
+			$('.contentSlider').fadeOut("fast");
+			$('#progfecha3').fadeIn("slow");
+			});
+
 			$(".switchLabelR").click(function(){
 			$(".switchSlide").animate({"left":"+=39px"},"fast");
 			$('.input3').removeAttr('disabled');
 			$('.input3').addClass('activo');
 			$('#ico').removeClass('calicoNo');
 			$('#ico').addClass('calico');
+			$('.contentSlider').fadeIn("slow");
+			$('#progfecha3').fadeOut("fast");
 		  	});
 
 		  	$(".switchLabel2").click(function(){
@@ -246,13 +252,17 @@ $(document).ready(function(){
 			$('.input3').attr('disabled','disabled');
 			$('.input3').removeClass('activo');
 			$('#ico').removeClass('calico');
-			$('#ico').addClass('calicoNo');});
+			$('#ico').addClass('calicoNo');
+			$('#textFiscal').fadeOut();
+			});
+
 			$(".switchLabelR2").click(function(){
 			$(".switchSlide2").animate({"left":"+=39px"},"fast");
 			$('.input3').removeAttr('disabled');
 			$('.input3').addClass('activo');
 			$('#ico').removeClass('calicoNo');
 			$('#ico').addClass('calico');
+			$('#textFiscal').fadeIn();
 		  	});
 			
 			
@@ -290,7 +300,12 @@ $(document).ready(function(){
 
 				omniBox("autocompleteQ",cards);
 
-
+			function ramon(algo){
+			$(algo).click(function(){
+				alert("Hola");
+			});
+			}
+			ramon("contentSlider");
 
 
 /***************************************************************************************************************************/
