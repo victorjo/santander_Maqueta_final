@@ -121,13 +121,13 @@ var switchO = '<div style="position:relative;width:230px;">';
     });
     
     $(".activo").click(function(){
-      $(".activo").hide("fast");
-      $(".inactivo").show("fast");
+      $(this).hide("fast");
+      $(this).next(".inactivo").show("fast");
     });
 
     $(".inactivo").click(function(){
-      $(".activo").show("fast");
-      $(".inactivo").hide("fast");
+      $(this).prev(".activo").show("fast");
+      $(this).hide("fast");
     });
   }
 
