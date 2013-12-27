@@ -76,7 +76,7 @@ $(function(){
 $(document).ready(function(){
 
 	
-	ocultaSteps(5);
+	ocultaSteps(6);
 	$('#confirmar_token').click(function(){
 		creaOverlay("#fff","#widampliado",1);
 		creaToken("modalOver","javascript:destruyeOver();","javascript: $('#step3').hide();$('#step4').show();$('#modalOver').fadeOut();",null,function(){$(".steps").replaceWith("<img src='img/paso_3.png' class='steps'>");});
@@ -105,7 +105,7 @@ $(document).ready(function(){
 	});
 
 	$("#navegador > ul > :nth-child(3)").click(function(){
-		cambiaFlujo("#step7");
+		cambiaFlujo("#step6");
 		ocultaSteps(5);
 	});
 
@@ -117,6 +117,12 @@ $(document).ready(function(){
 
 	});
 
+	$(".radiobtnBaja").click(function(){
+        $(".radiobtnBaja").removeClass("radiobtn_select");
+        $(this).addClass("radiobtn_select");
+
+	});
+	
 	$(".switchLabel").click(function(){
 		$(".switchSlide").animate({
 			"left":"-=39px"
