@@ -1,70 +1,163 @@
-﻿var msjAlert = ["","En pago de servicios usted puedes realizar busquedas avanzadas.","Es importante que verifique los datos antes de confirmar.","Para finalizar puede guardar una copia de su servicio efectuado."];
+var msjAlert = ["","En pago de servicios usted puedes realizar busquedas avanzadas.","Es importante que verifique los datos antes de confirmar.","Para finalizar puede guardar una copia de su servicio efectuado."];
+var ddData = [
+    {
+        text: "Seleccionar",
+        value: 1,
+        selected: false,
+    },
+    {
+        text: "Seleccionar",
+        value: 2,
+        selected: false,
+        
+    },
+    {
+        text: "Seleccionar",
+        value: 3,
+        selected: false,
+    },
+    {
+        text: "Seleccionar",
+        value: 4,
+        selected: false,
+    }
+];
+
+$(function(){	
+
+      $("#prueba").ddslick({
+		 data: ddData,
+		 width: 418,
+		 background: "#f7f7f7",
+		imagePosition: "left",
+		selectText: "Seleccionar",
+		onSelected: function (data) {
+		console.log(data);
+		}
+	});
+
+	 $(".dd1 select").ddslick({
+		 data: ddData,
+		 width: 418,
+		 background: "#f7f7f7",
+		imagePosition: "left",
+		selectText: "Seleccionar",
+		onSelected: function (data) {
+		console.log(data);
+		}
+	});
+    
+     $(".dd2 select").ddslick({
+   		 data: ddData,
+   		 width: 318,
+   		 background: "#f7f7f7",
+    	imagePosition: "left",
+    	selectText: "Seleccionar",
+   		 onSelected: function (data) {
+        console.log(data);
+    	}
+    	});	
+    	
+     $(".dd3 select").ddslick({
+   		 data: ddData,
+   		 width: 318,
+   		 background: "#f7f7f7",
+    	imagePosition: "left",
+    	selectText: "Seleccionar",
+   		 onSelected: function (data) {
+        console.log(data);
+    	}
+	});
+
+
+});
+
 
 $(document).ready(function(){
+
+	
+	ocultaSteps(5);
 	$('#confirmar_token').click(function(){
 		creaOverlay("#fff","#widampliado",1);
 		creaToken("modalOver","javascript:destruyeOver();","javascript: $('#step3').hide();$('#step4').show();$('#modalOver').fadeOut();",null,function(){$(".steps").replaceWith("<img src='img/paso_3.png' class='steps'>");});
 	});
 
-	
-
-	$('#confirmar_token').click(function(){
-		creaToken("modalOver","javascript:destruyeOver();","javascript: $('#step3').hide();$('#step4').show();$('#modalOver').fadeOut();",null,function(){$(".steps").replaceWith("<img src='img/paso_3.png' class='steps'>");});
-	});
-
-});
-
-$('.link').click(function(){
-		alert('...');
+	$('.link').click(function(){
 		creaOverlay("#fff","#widampliado",1);
 		creaTelCel('modalOver',"destruyeOver();",'conf_token();','');
 	});
-/*Funhcion switch (label de mas de dos digitos)--- Flujo: Domiciliaciones Ã³ mas */
-
-function switchFuncDomMas(object,descripcion1,descripcion2,tipoModulo){
-
-var switchO = '<div style="position:relative;width:230px;">';
-         switchO += '<div class="on'+tipoModulo+'">'+descripcion1+'</div>';
-         switchO += '<div class="tope'+tipoModulo+'"></div>';
-         switchO += '<div class="off'+tipoModulo+'">'+descripcion2+'</div>';
-         switchO += '</div>';
-
-  var container = $("#"+object);
-
-  container.html(switchO); 
-  
-  container.children("div:first").find(".on"+tipoModulo).click(function(){
-    container.children("div").animate({
-    left:"-=80"
-    },"fast");
-  });
-
-  container.children("div:first").find(".off"+tipoModulo).click(function(){
-    container.children("div").animate({
-    left:"+=80"
-    },"fast");
-  });
-  
-  };
 
 
-	
-//Transicion entre operaciones
-$("#navegador > ul > :nth-child(1)").click(function(){
-	cambiaFlujo("#step1");
-});
+	$('#confirmar_token').click(function(){
+		creaToken("modalOver","javascript:destruyeOver();","javascript: $('#step3').hide();$('#step4').show();$('#modalOver').fadeOut();",null,function(){$(".steps").replaceWith("<img src='img/paso_3.png' class='steps'>");});
+	});
+
+	//Transicion entre operaciones
+	$("#navegador > ul > :nth-child(1)").click(function(){
+		cambiaFlujo("#step1");
+		ocultaSteps(5);
+	});
 
 
-$("#navegador > ul > :nth-child(2)").click(function(){
-	cambiaFlujo("#step4");
-});
+	$("#navegador > ul > :nth-child(2)").click(function(){
+		cambiaFlujo("#step5");
+		ocultaSteps(5);
+	});
 
-$("#navegador > ul > :nth-child(3)").click(function(){
-	cambiaFlujo("#step7");
-});
+	$("#navegador > ul > :nth-child(3)").click(function(){
+		cambiaFlujo("#step7");
+		ocultaSteps(5);
+	});
 
+	/*--- Funcionalidad flujo: Pago de servicios ----*/
+
+	$(".radiobtnPago").click(function(){
+        $(".radiobtnPago").removeClass("radiobtn_select");
+        $(this).addClass("radiobtn_select");
+
+	});
+
+	$(".switchLabel").click(function(){
+		$(".switchSlide").animate({
+			"left":"-=39px"
+			},"fast");
+		$(".dateInput").addClass("dateInputInactive");
+		$(".notificacion").hide();
 		
+	});
+	
+	$(".switchLabelR").click(function(){
+		$(".switchSlide").animate({
+			"left":"+=39px"
+			},"fast");
+		$(".dateInput").removeClass("dateInputInactive");
+		$(".notificacion").show();
+	});
+	/*--- Fin Funcionalidad flujo: Pago de servicios ----*/
 
+	$(".info").click(function(){
+		$(this).mouseleave(function(){
+			$(".smackdown2").fadeOut("fast");
+			});
+		$(".smackdown2").fadeToggle("fast");
+		
+		});
+	$(".deshabilitado").mouseenter(function(){
+		$(".smackdown").fadeIn("fast");
+		});
+	$(".deshabilitado").mouseleave(function(){
+		$(".smackdown").fadeOut("fast");
+		});
+
+});
+
+
+function avanzar(stepActual,stepFinal,num){
+	$("#step"+stepActual).fadeOut("slow",function(){
+			$("#step"+stepFinal).fadeIn("slow");				
+			});
+	$(".steps").replaceWith("<img src='img/paso_"+num+".png' class='steps'>");
+}
 
 
 function cambiaFlujo(step){
@@ -83,11 +176,10 @@ function cambiaFlujo(step){
 
 }
 
-function avanzar(stepActual,stepFinal,num){
-	$("#step"+stepActual).fadeOut("slow",function(){
-			$("#step"+stepFinal).fadeIn("slow");				
-			});
-	$(".steps").replaceWith("<img src='img/paso_"+num+".png' class='steps'>");
+function ocultaSteps(num_Step){
+	for(var i=2;i<=num_Step; i++){
+		$('#step'+i).hide();
+	}
 }
        
 function conf_token(){

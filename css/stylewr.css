@@ -260,74 +260,7 @@ right: 8px;
 
 }
 
-.dd-select{
-	height:28px;
-	border-radius:0;
-	border-color:#a6a6a6;
-	background-color:#f7f7f7;
-	font-family:'ArialBlack';
-	font-size:10px;
-	color:#4573ec;
-	padding-top:0px;
-	max-width: 210px;/************Se cambio el tamaño del ancho 13/12/2013***************/
-	
-}
 
-.dd-selected{
-	font-size:11px;
-	text-align: center;
-	font-family:'ArialBlack';
-	font-size:10px;
-	color:#4573ec;
-}
-
-.dd-option{
-	height:23px;
-	padding:5px 0 0 10px;
-	font-family:'ArialBlack';
-	font-size:10px;
-	color:#4573ec;
-	text-align: center;
-
-}
-
-
-.dd-pointer-up {
-    -moz-border-bottom-colors: none !important;
-    -moz-border-left-colors: none !important;
-    -moz-border-right-colors: none !important;
-    -moz-border-top-colors: none !important;
-    border-image: url('') none !important;
-    border-left-style: solid !important;
-	border-left-color: rgba(0, 0, 0, 0) !important;
-	border-left-width: 2px !important;
-	border-right-style: solid !important;
-	border-right-color: rgba(0, 0, 0, 0) !important;
-	border-right-width: 2px !important;
-	border-top-style: solid !important;
-	border-top-color: rgba(0, 0, 0, 0) !important;
-	border-top-width: 2px !important;
-	border-bottom-style: solid !important;
-	border-bottom-color: #626262 !important;
-	border-bottom-width: 2px !important;
-}
-
-.dd-pointer-down {
-    border-left: 2px solid rgba(0, 0, 0, 0);
-	border-top: 2px solid #626262;
-	border-bottom: 2px solid rgba(0, 0, 0, 0);
-	-moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    border-image: url('') none;
-    border-right: 2px solid rgba(0, 0, 0, 0);
-    }
-
-.dd-option:hover{
-	border-color:#ff0000;
-	color:#ff0000
-}
 /*Fin Creditos Personales*/
 
 /*Balance Transfer*/

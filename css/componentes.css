@@ -52,7 +52,9 @@ margin-left: 0;
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
 right: 0px;
 }
-
+.inactivo{
+	display:none;
+}
 /* PENDIENTE : SWITCH PARA 3 TAMAÃ‘OS - small , medium y large;
 /*Switch button -- palabras cortas (Normal)*/
 .switch{
