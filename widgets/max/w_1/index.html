@@ -1,5 +1,4 @@
 <script src="../../../js/ddSlick.js"></script>
-<script src="../../../js/balanceTransfer.js"></script>
 <script src="../../../js/componentes.js"></script>
 <script src="widgets/max/w_1/js/balance.js"></script>
 <!--<script src="../../../js/utiles.js"></script>-->
@@ -322,21 +321,16 @@ a:hover {
 			*Calculado al 08 Noviembre del 2013. Considera una línea de crédito de $132,546,130.00, a un plazo de 3 años de amortización del crédito y cubriendo el porcentaje del pago mínimo.
 			</p>
 		</div>
-		<div  id="continuar1" class='btn Fright marginOne btnaceptar' style="margin-top:0px;float: right;" onclick="changeComment(2)">Continuar</div>
-		</div><!-- Fin step1 -->
+		<div class="botonera">
+			<div  id="continuar1" class='btn Fright marginOne btnaceptar' style="margin-top:0px;float: right;" onclick="changeComment(2)">Continuar</div>
+			</div>
+		</div>
+		<!-- Fin step1 -->
 		<div id="step2" class="pasos"><!-- step2 -->
 		<!-- bloqueo -->
 		<div id="contenido2">
 			
-<<<<<<< HEAD
 				
-=======
-
->>>>>>> c354867b58330b5c141495feacebb7ebeed0b8a3
-				<div id="widreducido"><div id="headerWidget"><p>TOKEN</p><div id="btninfo"></div></div><div id="subtitulo"><p>Para realizar su operación es necesario<br/>ingresar el código del TOKEN:</p></div><div id="token"><img src="img/token.png"/></div><div id="input"><input class="input" type="text" placeholder="Ingresar TOKEN" /></div><div class="botoneraWidget"><div class="btn" onclick="destruyeOver();">Cancelar</div><div class="btnaceptar" onclick="overlay2();">Aceptar</div></div></div>
-	
-
-
 
 			
 		</div>
@@ -452,9 +446,8 @@ a:hover {
 			*Calculado al 08 Noviembre del 2013. Considera una línea de crédito de $140,203,301.00, a un plazo de 3 años de amortización del crédito y cubriendo el porcentaje del pago mínimo.
 			</p>
 		</div>
-		<div class="botonera" style="float:right; margin-right:-265px; margin-top:135px;">
+		<div class="botonera">
 			<div class="btn regresar" onclick="changeComment(1)">Regresar</div>
-			
 			<div id="btn1" class=" btnaceptar continuar2" >Confirmar</div>
 		</div>
 		</div><!-- Fin step2 -->
@@ -538,13 +531,15 @@ a:hover {
 				
 			</tr>
 		</table>
-		<table style="	float: left; margin-left: -22px; margin-top:25px;">
+		<div class="botonera">
+		<table style="">
 			<tr>
 				<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
 				<td><div class="btn" >Guardar en operaciones favoritas</div></td>
 				<td><div class="btn btnaceptar" onclick="cierraWidget();">Finalizar</div></td>
 			</tr>
 		</table>
+		</div>
 		</div><!-- Fin step3 -->
 	</div>
 	<!-- FIN Funcionalidad: Solicitar -->
@@ -552,7 +547,23 @@ a:hover {
 	<div id="step4" class="pasos">
 		
 		<div id="calendario">
-			<div id="widreducido"><div id="headerWidget"><p>Intervalo de fechas personalizado</p><div id="btninfo"></div></div><div id="subtitulo" style="padding-left: 12px;"><p>Desde</p></div><div><input class="input"onmouseover="$(this).datepicker();" id="d1" type="text" placeholder="dd/mm/aaaa" /></div><div id="subtitulo" style="padding-left: 12px;"><p>Hasta</p></div><div id="dia2"><input class="input" type="text" placeholder="dd/mm/aaaa" /></div><div class="botoneraWidget"><div class="btn" style="margin-top:51px;" onclick="destruyeOver();">Consultar</div></div></div>
+			<div id="widreducido">
+				<div id="headerWidget">
+					<p>Intervalo de fechas personalizado</p>
+					<div id="btninfo"></div>
+				</div>
+				<div id="subtitulo" style="padding-left: 12px;">
+					<p>Desde</p>
+				</div>
+				<div>
+					<input class="input"onmouseover="$(this).datepicker();" id="d1" type="text" placeholder="dd/mm/aaaa" /></div><div id="subtitulo" style="padding-left: 12px;">
+					<p>Hasta</p>
+				</div>
+				<div id="dia2">
+					<input class="input" type="text" placeholder="dd/mm/aaaa" />
+				</div>
+
+			<div class="botoneraWidget"><div class="btn" style="margin-top:51px;" onclick="destruyeOver();">Consultar</div></div></div>
 		</div>
 
 		<p style="color:red;font-size:10px"><b>A continuación puede consultar las transferencias que ha realizado a sus tarjetas Santander.</b></p>

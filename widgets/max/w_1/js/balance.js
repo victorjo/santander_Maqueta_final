@@ -3,9 +3,6 @@ var msjAlert = ["Desde aquí puede consultar el estado de todas sus Transferenci
 var estatusTranf = 0;
 $(document).ready(function(){
 
-
-
-
 	ocultaSteps(15);
 	//funcionalidad de botones
 	$('#1').click(function(){
@@ -69,6 +66,10 @@ $(document).ready(function(){
 		creaOverlay("#fff","#widget",1);
 		insertHTML($("#datosTelCorreo").html(),"modalOver");
 	});
+
+
+
+	creaToken('contenido2','destruyeOver()','overlay2()','');
 
 });
 

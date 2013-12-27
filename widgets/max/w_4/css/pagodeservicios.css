@@ -966,3 +966,16 @@ h7 {
 /*---- Fin Botonera en linea ( 3 botones ) ----*/
 
 /*---- Fin Estilo Flujo: Pago de servicios ----*/
+
+/*---- Estilo Consulta/baja de servicios----*/
+.radiobtnBaja {
+	width:18px;
+	height:18px;
+	border:1px #ff0000 solid;
+	float:left;
+	border-radius:10px;
+	cursor:pointer;
+	margin-left: 8px;
+	top:6px;
+}
+/*---- Fin Estilo Consulta/baja de servicios----*/

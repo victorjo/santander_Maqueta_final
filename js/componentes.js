@@ -145,8 +145,10 @@ function creaToken(contenedor,cbTokenCanc,cbTokenAcep,moreData,fn){
 if(typeof fn !="undefined" || fn != null || fn != undefined) fn();
 tokenHTML = '<div id="widreducido"><div id="headerWidget"><p>TOKEN</p><div id="btninfo"></div></div><div id="subtitulo">';
 tokenHTML += '<p>Para realizar su operación es necesario<br/>ingresar el código del TOKEN:</p></div><div id="token">';
-tokenHTML += '<img src="img/token.png"/></div><div id="input"><input class="input" type="text" placeholder="Ingresar TOKEN" />';
-tokenHTML += '</div><div class="botoneraWidget"><div class="btn" onclick="'+cbTokenCanc+'">Cancelar</div><div class="btnaceptar" onclick="'+cbTokenAcep+'" '+moreData+'>Aceptar</div></div></div>';
+tokenHTML += '<img src="img/token.png"/></div><div id="input"><input class="input" type="text" placeholder="Ingresar TOKEN" /></div>';
+tokenHTML += '<div class="botoneraToken">';
+tokenHTML += '<div class="btn" onclick="'+cbTokenCanc+'">Cancelar</div><div class="btn btnaceptar" onclick="'+cbTokenAcep+'" '+moreData+'>Aceptar</div>';
+tokenHTML += '</div></div>';
 
 $("#"+contenedor).html(tokenHTML);
 
@@ -155,26 +157,26 @@ $("#"+contenedor).html(tokenHTML);
 /*Funcion que muestra el bloqueo del correo y numero celular*/
 function creaTelCel(contenedor,cbTokenCanc,cbTokenAcep,moreData){
 
-  tokenHTML=  '<div id="datosTelCorreo">';
-  tokenHTML+= '<p><b>A continuación puede actualizar su correo electrónico y número celular para recibir notificaciones.</b></p>';
-  tokenHTML+= '<p><b>Correo registrado para notificación: veronica.pimentel@gmail.com</b></p>';
-  tokenHTML+= '<p><b>Celular registrado para notificación: 5555555555</b></p>';
-  tokenHTML+= '<div>';
-  tokenHTML+= '<img  src="../img/interfaz/paginador_encendido.png" width="12" height="12"><span><b>Correo que quedará registrado para notificación:</b></span><br>';
-  tokenHTML+= '<input type="text" class="input1"  placeholder="Correo@correo.com">';
-  tokenHTML+= '</div>';
-  tokenHTML+= '<div>';
-  tokenHTML+= '<img  src="../img/interfaz/paginador_apagado.png" width="12" height="12">';
-  tokenHTML+= '<span><b>Celular que quedará registrado para notificación:</b></span><br>';
-  tokenHTML+= '<input type="text" class="input1"  placeholder="5555555555">';
-  tokenHTML+= '</div>';
-  tokenHTML+= '<span><b>*Este medio cambiará para todas las operaciones de supernet. ¿esta seguro que desea realizar la acción?</b></span>';
-  tokenHTML+= '<table class="btnTabla"><tr><td><div class="btn" onclick="'+cbTokenAcep+'" '+moreData+'>Guardar cambios</div></td>';
-  tokenHTML+= '</tr><tr><td><div class="btn" onclick="'+cbTokenCanc+'">Cancelar</div></td>';
-  tokenHTML+= '</tr></table>';  
-  tokenHTML+= '</div>';
+  telcelHTML=  '<div id="datosTelCorreo">';
+  telcelHTML+= '<p><b>A continuación puede actualizar su correo electrónico y número celular para recibir notificaciones.</b></p>';
+  telcelHTML+= '<p><b>Correo registrado para notificación: veronica.pimentel@gmail.com</b></p>';
+  telcelHTML+= '<p><b>Celular registrado para notificación: 5555555555</b></p>';
+  telcelHTML+= '<div>';
+  telcelHTML+= '<img  src="../img/interfaz/paginador_encendido.png" width="12" height="12"><span><b>Correo que quedará registrado para notificación:</b></span><br>';
+  telcelHTML+= '<input type="text" class="input1"  placeholder="Correo@correo.com">';
+  telcelHTML+= '</div>';
+  telcelHTML+= '<div>';
+  telcelHTML+= '<img  src="../img/interfaz/paginador_apagado.png" width="12" height="12">';
+  telcelHTML+= '<span><b>Celular que quedará registrado para notificación:</b></span><br>';
+  telcelHTML+= '<input type="text" class="input1"  placeholder="5555555555">';
+  telcelHTML+= '</div>';
+  telcelHTML+= '<span><b>*Este medio cambiará para todas las operaciones de supernet. ¿esta seguro que desea realizar la acción?</b></span>';
+  telcelHTML+= '<table class="btnTabla"><tr><td><div class="btn" onclick="'+cbTokenAcep+'" '+moreData+'>Guardar cambios</div></td>';
+  telcelHTML+= '</tr><tr><td><div class="btn" onclick="'+cbTokenCanc+'">Cancelar</div></td>';
+  telcelHTML+= '</tr></table>';  
+  telcelHTML+= '</div>';
 
-  $("#"+contenedor).html(tokenHTML);
+  $("#"+contenedor).html(telcelHTML);
 
 }
 
@@ -292,6 +294,35 @@ function getMask(str,event){
 	if((str.length>1 && str.length < 3) || (str.length==5 && str.length > 3) ) return str += "/";
 	return str;
 }
+
+
+/****** MOTOR PARA CAMBIAR DE PASOS Y FLUJOS **////
+
+var flujoActivo="";
+
+      function escondeElemento(elemento){
+        e=(elemento=='f')?".flujo":'.step';
+        $(e).each(function(){
+          $(this).fadeOut(0);
+        });
+      };
+
+      function cambiaFlujo(flujo){
+        if($(".flujo").is(":animated")) return false;
+        escondeElemento('s');
+        escondeElemento('f');
+        flujoActivo = flujo;
+        $(flujoActivo).find(".step").first().css("display","block");
+        $(flujoActivo).fadeIn("slow");
+      }
+
+      function cambiaPaso(paso){
+        flujoActivo = $(flujoActivo);
+        escondeElemento("s");
+        flujoActivo.find(".step"+paso).fadeIn("slow");
+      }
+
+/****** FIN DE MOTOR PARA CAMBIAR DE PASOS Y FLUJOS **////
 
 
 

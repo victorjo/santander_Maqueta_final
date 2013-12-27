@@ -67,26 +67,6 @@
 
 
 
-.botonera {
-    bottom: 13px;
-    float: right;
-    position: absolute;
-    right: 8px;
-}
-
-.botoneraWidget div{
-	margin: 10px;
-	margin-top: 5px;
-}
-
-
-.botoneraWidget div:first-child{
-	margin: 10px;
-}
-
-
-
-
 #terminosCond{
 	width: 252px;
     height: 296px;
@@ -105,4 +85,11 @@
 }
 #terminosCond p{
     margin-top: 20px;
+}
+
+.botoneraToken{
+    overflow: hidden;
+    padding: 12px;
+    clear: both;
+    width: 220px;
 }
