@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<title></title>
+			<link rel="stylesheet" href="">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+			<script>
+
+			var flujoActivo="";
+
+			function escondeElemento(elemento){
+				e=(elemento=='f')?".flujo":'.step';
+				$(e).each(function(){
+					$(this).fadeOut(0);
+				});
+			};
+
+			function cambiaFlujo(flujo){
+				if($(".flujo").is(":animated")) return false;
+				escondeElemento('s');
+				escondeElemento('f');
+				flujoActivo = flujo;
+				$(flujoActivo).find(".step").first().css("display","block");
+				$(flujoActivo).fadeIn("slow");
+			}
+
+			function cambiaPaso(paso){
+				flujoActivo = $(flujoActivo);
+				escondeElemento("s");
+				flujoActivo.find(".step"+paso).fadeIn("slow");
+			}
+			
+
+			</script>
+			<style>
+
+			*{
+				margin: 0;
+			}
+
+
+			#contenedor{
+				background: red;
+				padding: 50px;
+			}
+
+			.flujo1{
+				padding: 30px;
+				background: yellow;
+			}
+
+			.flujo2{
+				padding: 30px;
+				background: green;
+				display:none;
+
+			}
+
+			.flujo3{
+				padding: 30px;
+				background: grey;
+				display:none;
+
+			}
+			
+			.step{
+				display: none;
+				color: white;
+			}
+
+			.step1{ background: red;}
+			.step2{background: blue;}
+			.step3{background: purple;}
+			</style>
+	</head>
+	<body>
+		<button onclick="cambiaFlujo('.flujo1')">Flujo1</button>
+		<button onclick="cambiaFlujo('.flujo2')">Flujo2</button>
+		<button onclick="cambiaFlujo('.flujo3')">Flujo3</button>
+
+		<button onclick="cambiaPaso(1)">Step1</button>
+		<button onclick="cambiaPaso(2)">Step2</button>
+		<button onclick="cambiaPaso(3)">Step3</button>
+		
+		<div id="contenedor">
+			<div class="flujo flujo1">
+				<h1>FLUJO1</h1>
+				<div class="step step1">FLUJO1::STEP1</div>
+				<div class="step step2">FLUJO1::STEP2</div>
+				<div class="step step3">FLUJO1::STEP3</div>
+			</div>
+			<div class="flujo flujo2">
+				<h1>FLUJO2</h1>
+				<div class="step step1">FLUJO2::STEP1</div>
+				<div class="step step2">FLUJO2::STEP2</div>
+				<div class="step step3">FLUJO2::STEP3</div>
+			</div>
+			<div class="flujo flujo3">
+				<h1>FLUJO3</h1>
+				<div class="step step1">FLUJO3::STEP1</div>
+				<div class="step step2">FLUJO3::STEP2</div>
+				<div class="step step3">FLUJO3::STEP3</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
