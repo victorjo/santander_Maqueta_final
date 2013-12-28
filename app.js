@@ -23,8 +23,8 @@
 				posWidgets(0);
 					genFooterHeight();
 					ajustaBannerHeight();
-					setInterval(function(){ /*motorSuperbanner()*/ },15000);
 
+					setInterval(function(){ /*motorSuperbanner()*/ },15000);
 					//
 						//valToForm();
 						//outaLogin();

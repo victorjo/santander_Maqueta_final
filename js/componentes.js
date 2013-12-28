@@ -1,7 +1,6 @@
 var msjAlert = ["Desde aquí puede consultar el estado de todas sus Transferencias de Saldo","Balance Transfer le permite transferir a sus tarjetas Santander la deuda de sus otras tarjetas de otros bancos.","Por favor compuebe que la información es correcta antes de confirmar.","La operación se ha realizado correctamente."];
 $(document).ready(function(){
 
-
 $("#widreducido").css("position","fixed");
 
   dropIsra();
@@ -104,6 +103,13 @@ var switchO = '<div style="position:relative;width:230px;">';
    }
                
   ////************ Component for blackhorsebox
+  /*
+  <div class="sexycombo">
+        <input type="text" id="autocompleteQ" placeholder="00" style="width:517px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;margin-top:0px; margin-left:0px;margin-bottom:15px;"> 
+        <span style="font-weight:bold;margin-left:0px;position: relative;top: 3px;left: -27px;"><img class="activo" src="img/iconos/favorito_of.png"><img class="inactivo" src="img/iconos/favorito_on.png"></span>
+        <div class="marcotriangulo" style="margin-top: -44px; margin-left: 518px;"><div class="triangulo_inf"></div></div>
+      </div>
+  */
   function omniBox(selector,objectCards){
     var auto = $("#"+selector);
     auto.autocomplete({
@@ -113,9 +119,8 @@ var switchO = '<div style="position:relative;width:230px;">';
         $(".ui-autocomplete").css({"max-height":"201px","overflow-y":"scroll","font-size":"13px","width":"480px"})
       }
     });
-    $("#"+selector).parent().next().next().find("span").on("click",function(){
-      console.log("se creo el evento");
-      auto.autocomplete( "search","");
+    $("#"+selector).parent().on("click",function(){
+      auto.autocomplete("search","");
     });
     
     $(".activo").click(function(){
