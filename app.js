@@ -23,8 +23,16 @@
 				posWidgets(0);
 					genFooterHeight();
 					ajustaBannerHeight();
+<<<<<<< HEAD
 
 					setInterval(function(){ /*motorSuperbanner()*/ },15000);
+=======
+//<<<<<<< HEAD
+					setInterval(function(){ /*motorSuperbanner()*/ },15000);
+//=======
+					//setInterval(function(){ /*motorSuperbanner();*/ },15000);
+//>>>>>>> bc03d9ac1779f34a14b67051ca53f348b06865bf
+>>>>>>> 56522e3045e7723f2a2844e4aa2013ed537c67f5
 					//
 						//valToForm();
 						//outaLogin();
