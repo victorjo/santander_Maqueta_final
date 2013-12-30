@@ -192,6 +192,8 @@ h2{
     width: 725px;
 }
 
+
+
 #WA_contenedorFlujos{
     overflow: hidden;
     padding: 10px;
@@ -217,6 +219,41 @@ float: left;
 margin:10px 0 0 10px;
 line-height: 19px;
 }
+
+.contenidoFlujo .col{
+
+	border: 1px solid red;
+	height: 425px;
+	margin-left: 10px;
+	float: left;
+
+
+}
+
+
+
+.contenidoFlujo .col1{
+	width: 233px;
+}
+
+.contenidoFlujo .col2{
+	width: 477px;
+}
+
+.contenidoFlujo .col2{
+	width: 477px;
+}
+
+.contenidoFlujo .colFull{
+	width: 723px;
+	margin-left: 0px;
+}
+
+.resetMargen{
+		margin: 0 !important;
+}
+
+
 
 .bold{
 	color:#242424;
