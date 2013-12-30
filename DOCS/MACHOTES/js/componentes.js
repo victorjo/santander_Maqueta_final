@@ -277,7 +277,7 @@ var flujoActivo="";
 
         }
 
-        $("#WA_pasos img").css("margin-top",pasoPos);
+        $("#WA_pasos > img").css("margin-top",pasoPos);
 
 
       }

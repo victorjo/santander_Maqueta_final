@@ -5,7 +5,55 @@
 		[
 			[
 				"border",
-				"border-left"
+				"border"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"fi",
+				"first-of-type  (pseudo-class)"
+			],
+			[
+				"font-",
+				"font-size:   (property)"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"fo",
+				"font-family"
+			],
+			[
+				"flujo",
+				"flujoActivo"
+			],
+			[
+				"fade",
+				"fadeIn	.fadeIn()"
+			],
+			[
+				"anima",
+				"animate	animate"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"boto",
+				"botonera"
 			],
 			[
 				"tex",
@@ -18,14 +66,6 @@
 			[
 				"wi",
 				"width"
-			],
-			[
-				"padd",
-				"padding-left"
-			],
-			[
-				"font",
-				"font-size"
 			],
 			[
 				"MAR",
@@ -50,10 +90,6 @@
 			[
 				"widrt",
 				"width:   (property)"
-			],
-			[
-				"fade",
-				"fadeOut  (function)"
 			],
 			[
 				"he",
@@ -82,10 +118,6 @@
 			[
 				"sma",
 				"smallTxt"
-			],
-			[
-				"margin",
-				"margin-top:   (property)"
 			],
 			[
 				"v",
@@ -260,10 +292,6 @@
 				"contBanner"
 			],
 			[
-				"font-",
-				"font-family"
-			],
-			[
 				"backgro",
 				"background"
 			],
@@ -391,9 +419,13 @@
 	"build_system": "Packages/JSLint/JSLint.sublime-build",
 	"command_palette":
 	{
-		"height": 267.0,
+		"height": 107.0,
 		"selected_items":
 		[
+			[
+				"jquery",
+				"Snippet: Google AJAX Libraries: jQuery"
+			],
 			[
 				"insta",
 				"Package Control: Install Package"
@@ -421,10 +453,6 @@
 			[
 				"html",
 				"Snippet: htmlboiler"
-			],
-			[
-				"jquery",
-				"Snippet: Google AJAX Libraries: jQuery"
 			],
 			[
 				"install ",
@@ -464,29 +492,46 @@
 	},
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/DOCS/MACHOTES/widreducido2/Paso 2/js/paso2.js",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/DOCS/MACHOTES/widreducido2/Paso 2/js/componentes.js",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/DOCS/MACHOTES/widreducido2/Paso 2/js/utiles.js",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/DOCS/MACHOTES/paso1-2.html",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/DOCS/MACHOTES/widreducido2/Paso 2/paso1-2.html",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/app.js",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/DOCS/MACHOTES/css/general.css",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/DOCS/MACHOTES/widreducido2/Paso 2/css/general.css",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/DOCS/MACHOTES/widreducido2/Paso 2/css/paso2.css",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/DOCS/MACHOTES/widreducido2/Paso 2/paso2.html",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/css/widgets.css",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/widgets/max/w_1/js/balanceTransfer.js",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/widgets/max/w_1/index.html",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/widgets/max/w_1/js/balance.js",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/css/token.css",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/js/componentes.js",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/widgets/max/w_8/index.html",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/DOCS/prueba/index.html",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/js/balanceTransfer.js",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/js/require.js",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/master.html",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/js/ddSlick.js",
+		"/Volumes/NO NAME/Front/widreducido/css/stylewr.css",
+		"/Volumes/NO NAME/Front/widreducido/Transferencias Ampliado/css/transfamp.css",
+		"/Applications/MAMP/htdocs/santander_Maqueta_final/widgets/max/w_6/index.html",
 		"/Applications/MAMP/htdocs/santander_Maqueta_final/index.html",
 		"/Applications/MAMP/htdocs/santander_Maqueta_final/css/master.css",
-		"/Applications/MAMP/htdocs/santander_Maqueta_final/master.html",
 		"/Users/yomero/Documents/Proyectos1/DESEAZO/trunk/eldeseazo/css/responsive4.css",
 		"/Users/yomero/Documents/Proyectos1/DESEAZO/trunk/eldeseazo/css/responsive2.css",
 		"/Users/yomero/Documents/Proyectos1/DESEAZO/trunk/eldeseazo/deseo.html",
-		"/Applications/MAMP/htdocs/santander_Maqueta_final/widgets/max/w_1/js/balanceTransfer.js",
-		"/Applications/MAMP/htdocs/santander_Maqueta_final/widgets/max/w_1/js/balance.js",
-		"/Applications/MAMP/htdocs/santander_Maqueta_final/widgets/max/w_1/index.html",
 		"/Applications/MAMP/htdocs/santander_Maqueta_final/widgets/max/w_2/js/domiciliacion.js",
 		"/Applications/MAMP/htdocs/santander_Maqueta_final/widgets/max/w_2/index.html",
 		"/Applications/MAMP/htdocs/santander_Maqueta_final/widgets/max/w_8/js/transferencias.js",
-		"/Applications/MAMP/htdocs/santander_Maqueta_final/css/widgets.css",
-		"/Applications/MAMP/htdocs/santander_Maqueta_final/widgets/max/w_8/index.html",
 		"/Volumes/DISK2S1/w_8/index.html",
 		"/Users/yomero/Library/Caches/TemporaryItems/2-widgets.js",
 		"/Applications/MAMP/htdocs/santander_Maqueta_final/js/widgets.js",
 		"/Users/yomero/Library/Caches/TemporaryItems/3-widgets.js",
 		"/Applications/MAMP/htdocs/santander_Maqueta_final/widgets/max/w_5/index.html",
 		"/Applications/MAMP/htdocs/santander_Maqueta_final/js/jquery10.2.min.js",
-		"/Applications/MAMP/htdocs/santander_Maqueta_final/js/componentes.js",
 		"/Applications/MAMP/htdocs/santander_Maqueta_final/js/utiles.js",
-		"/Applications/MAMP/htdocs/santander_Maqueta_final/widgets/max/w_6/index.html",
 		"/Applications/MAMP/htdocs/santander_Maqueta_final/widgets/min/w_3/index.html.html",
 		"/Applications/MAMP/htdocs/santander_Maqueta_final/widgets/min/w_6/index.html",
 		"/Applications/MAMP/htdocs/santander_Maqueta_final/css/website.css",
@@ -503,8 +548,6 @@
 		"/Applications/MAMP/htdocs/santander_Maqueta_final/js/master.js",
 		"/Applications/MAMP/htdocs/santander_Maqueta_final/css/widgets.OLD.css",
 		"/Applications/MAMP/htdocs/santander_Maqueta_final/css/componentes.css",
-		"/Applications/MAMP/htdocs/santander_Maqueta_final/js/balanceTransfer.js",
-		"/Applications/MAMP/htdocs/santander_Maqueta_final/js/ddSlick.js",
 		"/Users/yomero/Sites/santander_Maqueta_final/balance_maquetas/informativo3.html",
 		"/Applications/MAMP/htdocs/santander_Maqueta_final/alerts/datos.html",
 		"/Applications/MAMP/htdocs/santander_Maqueta_final/balance_maquetas/contenidos/datos.html",
@@ -591,6 +634,36 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"minired",
+			"#WA_pasos",
+			"tit",
+			"img",
+			"tit",
+			"icon",
+			"#E2DFDF",
+			"</td><td>",
+			"d>",
+			"</div>",
+			"<div>",
+			"div",
+			"continuar2",
+			"contenido2",
+			"#contenido",
+			"creaToken",
+			"btn1",
+			"CONFIRMAR",
+			"confirmar",
+			"botoneraWidget",
+			"btn",
+			"botonera",
+			"btn",
+			"botonera",
+			"btn",
+			"alert(",
+			"h",
+			"tipoSlide",
+			"data",
+			"h",
 			"footer",
 			"btn_aceptarwr",
 			"cuadro",
@@ -688,37 +761,7 @@
 			"tabla",
 			"Monto",
 			"Mil",
-			"Vigencia",
-			"Creditos",
-			"300px",
-			"wr_SuperBanner",
-			"Finalizar",
-			"step11",
-			"botonera",
-			"A",
-			"50px",
-			"step",
-			"Balance",
-			"wr_SuperBanner",
-			"none",
-			"motorSuper",
-			"active",
-			"Balance",
-			"txt",
-			"myCanvas",
-			"console.log()",
-			"console.log(",
-			"L",
-			"circun",
-			"Calculo",
-			"CALCULO",
-			"calculo",
-			"L",
-			"i",
-			"down",
-			"Down",
-			"gotoSlide",
-			"img"
+			"Vigencia"
 		],
 		"highlight": true,
 		"in_selection": false,
