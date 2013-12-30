@@ -10,6 +10,28 @@ $(document).ready(function(){
     $(".minired").remove();
     scope.addClass("liActive");
   });
+  
+  /*--- Funcionalidad Switch ---*/
+
+ $(".switchLabel").click(function(){
+        $(".switchSlide").animate({
+            "left":"-=78px"
+            },"fast");
+        $(".dateInput").addClass("dateInputInactive");
+        $(".notificacion").hide();
+        
+    });
+    
+    $(".switchLabelR").click(function(){
+        $(".switchSlide").animate({
+            "left":"+=78px"
+            },"fast");
+        $(".dateInput").removeClass("dateInputInactive");
+        $(".notificacion").show();
+    });
+
+
+/*--- Fin Funcionalidad Switch ---*/    
 
 
 });

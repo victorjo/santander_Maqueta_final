@@ -188,6 +188,13 @@ var widgets = [
 					group:2,
 					contentMin:'<h1 class="btnaceptar_wr">Saldos y Movimientos</h1>',
 					contentMax:''
+				},{
+					id:15,
+					type:2,
+					order:13,
+					group:2,
+					contentMin:'<h1 class="btnaceptar_wr">MACHOTE</h1>',
+					contentMax:''
 				}
 
 			];
