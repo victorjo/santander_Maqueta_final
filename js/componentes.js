@@ -1,28 +1,56 @@
-var msjAlert = ["Desde aquí puede consultar el estado de todas sus Transferencias de Saldo","Balance Transfer le permite transferir a sus tarjetas Santander la deuda de sus otras tarjetas de otros bancos.","Por favor compuebe que la información es correcta antes de confirmar.","La operación se ha realizado correctamente."];
 $(document).ready(function(){
-
-$("#widreducido").css("position","fixed");
-
   dropIsra();
   avatarFade(); 
-  $(".widget-min").hover(function(){
-    $(this).css({"box-shadow":"0 0 3px #757575"});
-  
-  },function(){
-    $(this).css({"box-shadow":"none","border":"none"});
+  border();
+
+  $("#WA_nav li").click(function(){
+    if($(this).attr("class")=="menu") return false;
+    var scope = $(this);
+    $("li").removeClass("liActive");
+    $(".minired").remove();
+    scope.addClass("liActive");
   });
 
-}); 
 
+});
+
+function border(obj){
+	$("#wrappWidgets").hide().show();
+	var ojec = obj || ".widget-min";
+	$(ojec).hover(function(){
+    if(typeof $(this).attr("instanced") == "undefined" && $(this).attr("instanced")!="true"){ 
+	 $(this).css({"box-shadow":"0 0 3px #757575","border":"1px solid #FF0000"});
+	 $(this).css({"margin-top":"-=2px","margin-right":"-=3px"});
+	}
+  },function(){
+	if(typeof $(this).attr("instanced") == "undefined" && $(this).attr("instanced")!="true"){ 
+		$(this).css({"box-shadow":"none","border":"none"});
+		$(this).css({"margin-top":"+=2px","margin-right":"+=3px"});
+	}
+  }
+
+  );
+}
 
 var cards = [
-
-        {label:'123456789012 SUPER CUENTA UNIVERSITARIA Principal 1,345.67 MXP',value:'1234****5678  Producto Santander'},
-        {label:'123456789012 SUPER NOMINA Nómina  11,000.00 MXP',value:'1234****5678  Producto Santander'},
-        {label:'123456789012 SUPER CUENTA Cuenta2 1,000.00 MXP',value:'1234****5678  Producto Santander'},
-        {label:'123456789012 CUENTA FREE Mama ¡130.60 MXP',value:'1234****5678  Producto Santander'},
-        
-        ];
+        {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+        {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+        {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+        {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+        {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+        {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+        {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+        {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+        {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+        {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+        {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+        {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+        {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+        {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+        {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+        {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+        {label:'1234****5678  Producto Santander  Alias   999,999,999.00',value:'1234****5678  Producto Santander'},
+  ];
 
 
 /*Funcion switch (Normal de label dos digitos)- instanciado mediante clases*/
@@ -51,7 +79,7 @@ var switchO = '<div style="position:relative;width:230px;">';
   });
 }
 
-/*Funhcion switch (label de mas de dos digitos)--- Flujo: Domiciliaciones Ã³ mas */
+/*Funhcion switch (label de mas de dos digitos)--- Flujo: Domiciliaciones ó mas */
 function switchFuncDomMas(object,descripcion1,descripcion2,tipoModulo){
 
 var switchO = '<div style="position:relative;width:230px;">';
@@ -82,7 +110,7 @@ var switchO = '<div style="position:relative;width:230px;">';
 <div class="dropdown">
   <img class="downI" src="../img/iconos/dropdown.png" style="display: block;">
   <img class="upI" src="../img/iconos/dropup.png" style="display: none;">
-  <h6>Quiero notificaciÃ³n previa de mi pago</h6>
+  <h6>Quiero notificación previa de mi pago</h6>
 </div>
 ******* *   * * * * * **    
 
@@ -103,196 +131,84 @@ var switchO = '<div style="position:relative;width:230px;">';
    }
                
   ////************ Component for blackhorsebox
-  /*
-  <div class="sexycombo">
-        <input type="text" id="autocompleteQ" placeholder="00" style="width:517px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;margin-top:0px; margin-left:0px;margin-bottom:15px;"> 
-        <span style="font-weight:bold;margin-left:0px;position: relative;top: 3px;left: -27px;"><img class="activo" src="img/iconos/favorito_of.png"><img class="inactivo" src="img/iconos/favorito_on.png"></span>
-        <div class="marcotriangulo" style="margin-top: -44px; margin-left: 518px;"><div class="triangulo_inf"></div></div>
-      </div>
-  */
   function omniBox(selector,objectCards){
     var auto = $("#"+selector);
     auto.autocomplete({
       source:objectCards || cards,
       minLength:0,
       open: function(){
-        $(".ui-autocomplete").css({"max-height":"201px","overflow-y":"scroll","font-size":"13px","width":"480px"})
+      	$(".ui-autocomplete").css({"max-height":"201px","overflow-y":"scroll","font-size":"13px","width":"480px"})
       }
     });
-    $("#"+selector).parent().on("click",function(){
-      auto.autocomplete("search","");
+    $("#"+selector).parent().next().next().find("span").on("click",function(){
+      console.log("se creo el evento");
+      auto.autocomplete( "search","");
     });
     
     $(".activo").click(function(){
-      $(this).hide("fast");
-      $(this).next(".inactivo").show("fast");
+      $(".activo").hide("fast");
+      $(".inactivo").show("fast");
     });
 
     $(".inactivo").click(function(){
-      $(this).prev(".activo").show("fast");
-      $(this).hide("fast");
+      $(".activo").show("fast");
+      $(".inactivo").hide("fast");
     });
   }
 
-/*Mostrara el step 1, mientras que ocultara los demÃ¡s steps apartir del 2*/
+/*Mostrara el step 1, mientras que ocultara los demás steps apartir del 2*/
 function ocultaSteps(num_Step){
   for(var i=2;i<=num_Step; i++){
     $('#step'+i).hide();
   }
 }
 
-function creaToken(contenedor,cbTokenCanc,cbTokenAcep,moreData,fn){
-if(typeof fn !="undefined" || fn != null || fn != undefined) fn();
-tokenHTML = '<div id="widreducido"><div id="headerWidget"><p>TOKEN</p><div id="btninfo"></div></div><div id="subtitulo">';
-tokenHTML += '<p>Para realizar su operación es necesario<br/>ingresar el código del TOKEN:</p></div><div id="token">';
-tokenHTML += '<img src="img/token.png"/></div><div id="input"><input class="input" type="text" placeholder="Ingresar TOKEN" /></div>';
-tokenHTML += '<div class="botoneraToken">';
-tokenHTML += '<div class="btn" onclick="'+cbTokenCanc+'">Cancelar</div><div class="btn btnaceptar" onclick="'+cbTokenAcep+'" '+moreData+'>Aceptar</div>';
-tokenHTML += '</div></div>';
+/** funcionalidad de botones Continuar y atras**/
+  /*********  INICIO Transiciones de flujo: Domiciliación de servicios **********/
+  $("#siguiente").click(function(){
+    $("#step1").fadeOut("slow",function(){
+      $("#step2").fadeIn("slow");       
+      });
+  });
 
-$("#"+contenedor).html(tokenHTML);
+  $("#siguiente2").click(function(){
+    $("#step2").fadeOut("slow",function(){
+      $("#step3").fadeIn("slow");       
+      });
+  });
 
-}
+  $("#siguiente3").click(function(){
+    $("#step3").fadeOut("slow",function(){
+      $("#step4").fadeIn("slow");       
+      });
+  });
+  
 
-/*Funcion que muestra el bloqueo del correo y numero celular*/
-function creaTelCel(contenedor,cbTokenCanc,cbTokenAcep,moreData){
+  /*Transiciones de flujo (atras): Domiciliación de servicios*/
+  $("#regresar").click(function(){
+    $("#step2").fadeOut("slow",function(){
+      $("#step1").fadeIn("slow");       
+      });
+  });
 
-  telcelHTML=  '<div id="datosTelCorreo">';
-  telcelHTML+= '<p><b>A continuación puede actualizar su correo electrónico y número celular para recibir notificaciones.</b></p>';
-  telcelHTML+= '<p><b>Correo registrado para notificación: veronica.pimentel@gmail.com</b></p>';
-  telcelHTML+= '<p><b>Celular registrado para notificación: 5555555555</b></p>';
-  telcelHTML+= '<div>';
-  telcelHTML+= '<img  src="../img/interfaz/paginador_encendido.png" width="12" height="12"><span><b>Correo que quedará registrado para notificación:</b></span><br>';
-  telcelHTML+= '<input type="text" class="input1"  placeholder="Correo@correo.com">';
-  telcelHTML+= '</div>';
-  telcelHTML+= '<div>';
-  telcelHTML+= '<img  src="../img/interfaz/paginador_apagado.png" width="12" height="12">';
-  telcelHTML+= '<span><b>Celular que quedará registrado para notificación:</b></span><br>';
-  telcelHTML+= '<input type="text" class="input1"  placeholder="5555555555">';
-  telcelHTML+= '</div>';
-  telcelHTML+= '<span><b>*Este medio cambiará para todas las operaciones de supernet. ¿esta seguro que desea realizar la acción?</b></span>';
-  telcelHTML+= '<table class="btnTabla"><tr><td><div class="btn" onclick="'+cbTokenAcep+'" '+moreData+'>Guardar cambios</div></td>';
-  telcelHTML+= '</tr><tr><td><div class="btn" onclick="'+cbTokenCanc+'">Cancelar</div></td>';
-  telcelHTML+= '</tr></table>';  
-  telcelHTML+= '</div>';
 
-  $("#"+contenedor).html(telcelHTML);
-
-}
 
   function avatarFade(){
     $("#avatarNavPrin").hover(function(){
-      if($("#fadeAvatar").is(":animated")){
-        return false
-      }else{
-         $("#fadeAvatar").fadeToggle("slow");
-      }
+        $("#fadeAvatar").fadeToggle("slow");
 
-       
+
     });
   }
 
 
-  /*********  FIN Transiciones de flujo(1): DomiciliaciÃ³n de servicios **********/
+  /*********  FIN Transiciones de flujo(1): Domiciliación de servicios **********/
 
-/*Mostrara el step 1, mientras que ocultara los demÃ¡s steps apartir del 2*/
+/*Mostrara el step 1, mientras que ocultara los demás steps apartir del 2*/
 function ocultaSteps(num_Step){
-  for(var i=2;i<=num_Step; i++){
-    $('#step'+i).hide();
-  }
-}
-
-
-/*Funciones de bloqueo (Overlay)*/
-
-function creaOverlay(color,contenedor,tipo,call){
-
-  pos = (tipo==1)?'absolute':'fixed';
-  zposition = (tipo==1)?'1000':'';
-  var divOverlay =  $("<div>");
-  var c = $(contenedor);
-  c.css("position","relative");
-
-  if(tipo == 1){
-    divOverlay.attr({"id":"modalOver","class":"modal"});
-  }else{
-    divOverlay.attr({"id":"banOverlay","class":"modal"});
-  }
-  altoTotal = c.height();
-  anchoTotal = c.width();
-  divOverlay.css({"position":pos,"top":"0","left":"0","width":(anchoTotal*1.20)+"px","background":color,"opacity":".9","height":"100%",'display':'none',"z-index":zposition});
-  c.append(divOverlay);
-  divOverlay.fadeIn("slow",call);
-  return $("body").attr("data-banpop","true");
-}
-
-function creaModal(contenedor,tipo,contenido){ 
-  pos = (tipo==1)?'absolute':'fixed';
-  var c = $(contenedor);
-  divContent = $("<div>");
-  divCerrar = $("<div>");
-  divCerrar.attr({"id":"cerrarBtn","class":"modal"});
-  divCerrar.css({"position":"absolute","top":"0","right":"0","background":"url(../img/botones/cerrar.png) center","width":"30px","height":"30px","cursor":"pointer"});
-  divCerrar.click(destruyeOverlay);
-
-  divContent.attr({"id":"contentOverlay","class":"modal"});
-  divContent.css({"position":pos,"top":"0","left":"50%","width":(anchoTotal-140)+"px","padding":"40px","height":(altoTotal/2)+"px","border":"1px solid black","display":"block","z-index":"1000","box-shadow":"0 0 5px #ccc","overflow":"auto","background":"white","margin-left":"-","margin-top":"10%"});
-  divContent.css({"margin-left":"-"+((divContent.width()/2)+40)+"px"})
-  divContent.fadeIn("slow");
-  c.append(divContent);
-  divContent.load(contenido,function(){
-    divContent.append(divCerrar);
-    // divContent.append("");
-  });
-
-}
-
-
-function destruyeOver(){
-  $("#modalOver").fadeOut("slow",function(){
-    $("#modalOver").remove();
-  });
-  $("#contentOverlay").fadeOut("slow",function(){
-    $("#contentOverlay").remove();
-  });
-}
-
-
-
-function destruyeOverlay(){ 
-  if($("body").attr("data-banpop")=="true"){
-    $(".modal").each(function(){
-      $(this).fadeOut("slow",function(){
-        $(this).remove();
-      })
-    });
-
-    return false;
-
-  }
-}
-
-/*Transicion de pasos*/
-function cambiaFlujo(step){
-  var npasos = $(".pasos").size();
-    $(".pasos").each(function(index){
-      if((++index) == npasos){
-        $(this).fadeOut("slow",function(){
-          $(step).delay(1000).fadeIn();
-        });
-  
-      }else{
-        $(this).fadeOut("slow");
-      }
-    })
-
-}
-
-function getMask(str,event){
-	console.log(event);
-	if(str.length>9) return str.substring(10,-1);
-	if((str.length>1 && str.length < 3) || (str.length==5 && str.length > 3) ) return str += "/";
-	return str;
+	for(var i=2;i<=num_Step; i++){
+		$('#step'+i).hide();
+	}
 }
 
 
@@ -320,9 +236,35 @@ var flujoActivo="";
         flujoActivo = $(flujoActivo);
         escondeElemento("s");
         flujoActivo.find(".step"+paso).fadeIn("slow");
+        pasoPos = "-2px";
+        switch(paso) {
+          case 1:
+              pasoPos = "-2px"
+            break;
+          case 2:
+              pasoPos = "-26px"
+            break;
+
+          case 3:
+              pasoPos = "-50px"
+            break;
+
+          default:
+              alert("el paso seleccionado no se encuentra registrado");
+            break;  
+
+        }
+
+        $("#WA_pasos img").css("margin-top",pasoPos);
+
+
       }
 
 /****** FIN DE MOTOR PARA CAMBIAR DE PASOS Y FLUJOS **////
+
+
+
+
 
 
 
