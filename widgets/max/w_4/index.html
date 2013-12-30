@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
@@ -28,11 +28,17 @@
 						<p>
 						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
 					</li>
-					<li>
-						<p>Disposición de Créditos</p>
+					<li onclick="cambiaFlujo('.wra_flu1')">
+						<p>Pago de servicios</p>
 					</li>
-					<li>
-						<p>Consulta de créditos</p>
+					<li onclick="cambiaFlujo('.wra_flu2')">
+						<p>Alta de servicios</p>
+					</li>
+					<li onclick="cambiaFlujo(3)">
+						<p>Consulta de servicios</p>
+					</li>
+					<li onclick="cambiaFlujo(4)">
+						<p>Consulta de pagos <br/> realizados/programados</p>
 					</li>
 				</ul>
 			</div>
@@ -45,13 +51,28 @@
 					<p class="subtitulo"></p>
 				</div>
 				<div class="contenidoFlujo">
-					
+					<div class="flujo wra_flu1">
+						<div class="step step1">
+							1
+						</div>
+						<div class="step step2">
+							2
+						</div>
+						<div class="step step3">
+							3
+						</div>					
+					</div>
+					<div class="flujo wra_flu2">
+						
+					</div>
+					<div class="flujo wra_flu3">
+						
+					</div>	
 				</div>
 				<div class="botonera">
-					<div class="btn" onclick="cambiaPaso(2)">Regresar</div>
-					<div class="btnaceptar">Ver Detalle</div>
-				</div>
-				
+					<div class="btn" >Regresar</div>
+					<div class="btnaceptar" onclick="cambiaPaso(2)">Ver Detalle</div>
+				</div>	
 			</div>
 		</div>
 		
