@@ -340,7 +340,7 @@ function construyeSwitch(object){
       switchO +='<div class="switchLabelR">no</div>';        
       switchO +='</div>';
 
-  var container = $("#"+object);
+  var container = $("#"+object).length? $("#"+object):$("."+object);
 
   container.html(switchO);
 

@@ -291,6 +291,18 @@ h6{
 	text-align:center !important;
 	
 }
+.switchBox{
+	border:1px #a6a6a6 solid !important;
+	width:158px !important;
+	height:28px !important;
+	position:relative !important;
+	overflow:hidden !important;
+	font-family:Arial, Helvetica, sans-serif !important;
+	font-size:11px !important;
+	font-weight:bold !important;
+	text-align:center !important;
+	margin:3px auto;
+}
 
 .switchSlide{
 	float:left !important;

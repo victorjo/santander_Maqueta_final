@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	//remplazaTxt('Pago de servicios','Seleccione de su lista de servicios registrados el que desee pagar:');
-
+	 construyeSwitch('switchBox');
 });
 
 //funcion para cambiar texto.
