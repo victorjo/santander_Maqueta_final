@@ -1,533 +1,59 @@
-<!--<script src="../../../js/jquery10.2.min.js"></script>
-<script src="../../../js/componentes.js"></script>
--->
-<!-- estilo general Victor -->
-<link rel="stylesheet" href="../../../css/general.css"/>
-<link rel="stylesheet" href="../../../css/token.css"/>
-<script src="../../../js/ddSlick.js"></script>
-<script src="../../../js/balanceTransfer.js"></script>
-<script src="js/componentes.js"></script>
-<script src="widgets/max/w_4/js/pagodeservicios.js"></script>
-<script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
-<link rel="stylesheet" href="widgets/max/w_4/css/pagodeservicios.css"/>
-
-<script>
-	$(document).ready(function(){
- 			switchFuncDomMas("switchbox","Si","No","Dom");
- 		});
- function cambiaPasoImg(){
-	$("#stepbar img").attr("src","../img/fake/pasos/paso2.png");
-}
-
-function backPasoImg(){
-	$("#stepbar img").attr("src","../img/fake/pasos/paso1.png");
-}
-function cambiaPaso3(){
-	$("#stepbar img").attr("src","../img/fake/pasos/paso3.png");
-}
-</script>
-<style>
-
-.btnHeaderTable{
-	height: 24px;
-    margin: -10px;
-    padding-top: 10px;
-    width: 110px;
-}
-
-.titTabla{
-	margin-bottom:0px;
-	padding:10px 10px 5px 30px;
-	border:1px solid black;
-	border-bottom:0;
-	float:left;
-	width:678px;
-	background:#F4F4F4;
-	margin-top:20px;
-	height:20px;
-	font-weight:bold
-}
-
-.titTabla p{
-	float:left;
-}
-
-.titTabla img{
-	float:right;
-	margin-top:-7px;
-	cursor: pointer;
-}
-</style>
-
-<div id="widampliado">
-	<div>
-		<p>PAGO DE SERVICIOS</p>
-		<div class="fin"></div>
-		<div></div>
-	</div>
-	<div>
-		<img src="img/paso_1.png" class="steps"/>
-	</div>
-	<div id="navegador">
-		<ul>
-			<li class="liActive">
-				<p>Pago de servicios</p>
-			</li>
-			<li>
-				<p>Alta de servicios</p>
-			</li>
-			<li>
-				<p>Consulta/baja de servicios</p>
-			</li>
-			<li style="height: 43px;">
-				<p>Consulta de pagos<br /> realizados/programados</p>
-			</li>
-		</ul>
-	</div>
-	<!-- Flujo Pago de Servicios -->
-	<div>
-		<div id="step1" class="pasos">	
-			<h2>Seleccione de su lista de servicios registrados el que desea pagar</h2>
-		
-		<div id="pagoServicio">
-		
-
-		<table class="consulta" style="width:725px;float:left;text-align: justify;border:1px #c7c7c7 solid;;margin-left: 16px;">
-			<tr>
-				<td>Nombre del Servicio</td>
-				<td>Alias</td>
-				<td>Convenio</td>
-				<td>Fecha de pago</td>
-				<td>Importe (MXP)</td>
-				<td>Referencia</td>
-				
-			</tr>
-		</table>
-		<div  id="cuadroTarjeta" style="width:725px;height:190px; overflow:scroll; overflow-x: hidden;float: left;margin-left: 16px;border-bottom: 1px #c7c7c7 solid;">
-			<table class="cardList">
-				<tr>
-					<td><div class="radiobtnPago"></div></td>
-					<td><img src="../../../../img/servicios/ico_servicios/axtel.png" class="servicio"/><p class="servicio">Axtel</p></td>
-					<td>Lorem Ipsum</td>
-					<td>12345</td>
-					<td>dd/mm/aaaa</td>
-					<td >9,999,999.99</td>
-					<td >1456789098765</td>
-				</tr>
-				<tr>
-					<td><div class="radiobtnPago"></div></td>
-					<td><img src="../../../../img/servicios/ico_servicios/telcel.png" class="servicio"/><p class="servicio">Telcel</p></td>
-					<td>Lorem Ipsum</td>
-					<td>12345</td>
-					<td>dd/mm/aaaa</td>
-					<td >9,999,999.99</td>
-					<td >1456789098765</td>
-				</tr>
-				<tr>
-					<td><div class="radiobtnPago"></div></td>
-					<td><img src="../../../../img/servicios/ico_servicios/seguro.png" class="servicio"/><p class="servicio">G.N.P. Seguros</p></td>
-					<td>Lorem Ipsum</td>
-					<td>12345</td>
-					<td>dd/mm/aaaa</td>
-					<td >9,999,999.99</td>
-					<td >1456789098765</td>
-				</tr>
-				<tr class="deshabilitado">
-					<td><div class="radiobtnPago"></div></td>
-					<td><img src="../../../../img/servicios/ico_servicios/telmex.png" class="servicio"/><p class="servicio">Telmex</p></td>
-					<td>Lorem Ipsum</td>
-					<td>12345</td>
-					<td>dd/mm/aaaa</td>
-					<td >9,999,999.99</td>
-					<td >1456789098765</td>
-				</tr>
-			</table>
-		</div>	
-			<p>Si el servicio que desea pagar no se encuentra en su lista de clic <a href="#">Aquí</a></p>
-		</div>
-		<div class="botonera">
-			<div class="btnaceptar" onClick="avanzar('1','2','1');">Continuar</div>
-		</div>
-		<div class="smackdown">
-			<div><img src="../../../../img/mrsmackdown.png"/></div>
-			<h3>Tiempo de Activación</h3>
-			<p>El servicio "Telmex"<br/>
-				quedará activo el <br/>
-				dd/mm/aaaa a las<br/>
-				12:00 hrs.</p>
-		</div>
-		
-		<div class="smackdown2">
-			<div><img src="../../../../img/mrsmackdown.png"/></div>
-			<h3>Lorem Ipsum</h3>
-			<p>Lorem Ipsum dolor<br/>
-				sit amet, consectetur<br/>
-				adipisicing elit, sed<br/>
-				do eiusmod tempor.<br/>
-			</p>
-		</div>	
-		</div>
-		
-		<div id="step2">
-			<div id="pagoServicioC">
-				<table class="cardListC">
-				<tr>
-					<th></th>
-					<th>Nombre del Servicio</th>
-					<th>Alias</th>
-					<th>Convenio</th>
-					<th>Fecha de pago</th>
-					<th>Importe (MXN)</th>
-					<th>Referencia</th>
-				</tr>
-				<tr>
-					<td><div class="radiobtnPago"></div></td>
-					<td><img src="../../../../img/servicios/ico_servicios/axtel.png" class="servicio"/><p class="servicio">Axtel</p></td>
-					<td>Lorem Ipsum</td>
-					<td>12345</td>
-					<td>dd/mm/aaaa</td>
-					<td >9,999,999.99</td>
-					<td >1456789098765</td>
-				</tr>
-			</table>
-			<h2>Introduzca el nombre, alias o los cuatro dígitos de la cuenta de destino o seleccionela de la lista:</h2>
-				
-				<div class="dd1">
-					<select name="" id="" value="1" > 
-			    	</select>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<title>Paso2</title>
+		<script src="../../../js/jquery10.2.min.js"></script>
+		<script src="../../../js/components.js"></script>
+		<script src="../../../js/ddSlick.js"></script>
+		<link rel="stylesheet" href="../../../css/generally.css" />
+	</head>
+	<body>
+		<div id="widampliado">
+			<div id="WA_pasos">
+				<img src="../../../img/assets/pasos.png"/>
+				<div class="btnHeader info">
+					<img src="../../../img/assets/ico_info.png"  />
 				</div>
-				<div class="inputs">
-					<div>
-						<p>Concepto</p>
-						<input class="input" type="text"/>
-					</div>
-					<div>
-						<p>Alias de Tarjeta</p>
-						<input class="input" type="text"/>
-						<div class="info"></div>					
-					</div>
-					<div>
-						<p>Referencia 1</p>
-						<input class="input" type="text"/>
-						<div class="info"></div>					
-					</div>
-					<div>
-						<p>Referencia 2</p>
-						<input class="input" type="text"/>
-						<div class="info"></div>					
-					</div>
-					<div>
-						<p>Importe</p>
-						<input class="input" type="text"/>
-						<div class="info"></div>					
-					</div>
-					<div>
-						<p>Pronto Pago</p>
-						<p>Intereses Moratorios</p>
-						<input class="input2" type="text"/>
-						<input class="input2" type="text"/>
-						<div class="info"></div>
-					</div>
-					<div>
-						<p>Transferir el importe a meses sin intereses:</p>
-						<div class="dd2">
-						<select name="" id="" value="1" > 
-		    			</select>
-						</div>
-					</div>
-					<div id="programar">
-						<p>Programar fecha:</p>
-						<div id="switchBox">
-							<div class="switchSlide">					
-								<div class="switchLabel">si</div>
-								<div class="switchIndicador"></div>
-								<div class="switchLabelR">no</div>				
-							</div>
-						</div>
-						<div class="dateInput">
-							<div></div>
-							<input class="input5" type="text" value="dd/mm/aaaa"/>
-						</div>					
-					</div>
-					<div class="notificacion">
-					<p>Quiero notificación previa de mi pago:</p>
-					<div class="dd3">
-						<select name="" id="" value="1" > 
-		    			</select>
-						</div>	
-					</div>
-			</div>
-			<div class="botonera">
-				<div class="btnaceptar" onClick="avanzar('2','3','2');">Continuar</div>
-			</div>
-		</div>
-		<div class="smackdown">
-			<div><img src="../../../../img/mrsmackdown.png"/></div>
-			<h3>Tiempo de Activación</h3>
-			<p>El servicio "Telmex"<br/>
-				quedará activo el <br/>
-				dd/mm/aaaa a las<br/>
-				12:00 hrs.</p>
-		</div>
-		
-		<div class="smackdown2">
-			<div><img src="../../../../img/mrsmackdown.png"/></div>
-			<h3>Lorem Ipsum</h3>
-			<p>Lorem Ipsum dolor<br/>
-				sit amet, consectetur<br/>
-				adipisicing elit, sed<br/>
-				do eiusmod tempor.<br/>
-			</p>
-		</div>
-		</div>
-
-
-		<div id="step3" class="pasos">	
-			<h2>Por favor confirme que la información desplegada a continuación es correcta:</h2>
-		
-		<div class="descripcion">
-			<div>
-				<div class="bold">Datos del Cliente:</div>
-				<div>Titular</div>
-				<div>Cuenta de depósito:</div>
-				<div class="bold">Datos del Crédito:</div>
-				<div>Monto del crédito</div>
-				<div>Monto a disponer:</div>
-				<div>Capacidad de pago:</div>
-				<div>Pago Mensual:</div>
-				<div>Plazo</div>
-				<div>Meses de gracia:</div>
-				<div>Tasa de interés anual:</div>
-				<div>Comisión por disposición:</div>
-				<div>Esquema de aseguramiento:</div>
-				<div>Fecha de pago</div>
-				<div>Fecha de Solicitud</div>
-				<div>Correo para notificación</div>
-				<div>Celular para notificación</div>
-				<div>Tabla de amortización</div>
-			</div>
-			<div class="bold">
-				<div>&nbsp;</div>	
-				<div>María Peralta Ramírez</div>			
-				<div>1234****5678</div>
-				<div>&nbsp;</div>
-				<div>9,999,999.99</div>
-				<div>9,999,999.99</div>
-				<div>9,999,999.99</div>	
-				<div>9,999,999.99</div>					
-				<div>18</div>					
-				<div>Ninguno</div>					
-				<div>00.00%</div>					
-				<div>9,999,999.99</div>					
-				<div>Lorem</div>					
-				<div>dd/mm/aaaa</div>					
-				<div>dd/mm/aaaa</div>					
-				<div>correo@correo.com&nbsp;<span class="link">(Editar)</span></div>								
-				<div>5555555555&nbsp;<span class="link">(Editar)</span></div>
-				<div class="link">Descargar</div>
-			</div>				
-		</div>
-				
-		<div class="botonera">
-			<div class="btn" onClick="avanzar('3','2','1');">regresar</div>
-			<div id="confirmar_token" class="btnaceptar">confirmar</div>
-		</div>
-		</div>
-	
-	<div id="step4">
-		<div class="paso3">
-			<h2>Por favor confirme que la información desplegada es correcta:</h2>
-			<div>
-				<div class="bold">Nombre del servicio:</div>
-				<div>Alias</div>
-				<div>Referencia 1:</div>
-				<div>Referencia 2:</div>
-				<div>Cuenta o tarjeta de cargo:</div>
-				<div>Categoría:</div>
-				<div>Razón social:</div>
-				<div>Número de convenio:</div>
-				<div>Importe:</div>
-				<div>Importe pronto pago:</div>
-				<div>Intereses moratorios:</div>
-				<div>Total a pagar:</div>
-				<div>Plazo:</div>
-				<div>Pago mensual:</div>
-				<div>Comisión por pago de servicio:</div>
-				<div>I.V.A por comisión de pago de servicio:</div>
-				<div>Fecha y hora de operación:</div>
-				<div>Correo para notificación:</div>
-				<div>Celular para notificación:</div>
-				<div>Folio superNet:</div>
-			</div>
-			<div class="bold">
-				<div>Lorem Ipsum</div>	
-				<div>María Peralta Ramírez</div>			
-				<div>1234****5678</div>
-				<div>&nbsp;</div>
-				<div>9,999,999.99</div>
-				<div>9,999,999.99</div>
-				<div>9,999,999.99</div>	
-				<div>9,999,999.99</div>					
-				<div>18</div>					
-				<div>Ninguno</div>					
-				<div>00.00%</div>					
-				<div>9,999,999.99</div>					
-				<div>Lorem</div>					
-				<div>dd/mm/aaaa</div>					
-				<div>dd/mm/aaaa</div>
-				<div>dd/mm/aaaa    24:00 hrs</div>					
-				<div>correo@correo.com&nbsp;<span class="link">(Editar)</span></div>								
-				<div>5555555555&nbsp;<span class="link">(Editar)</span></div>
-				<div>1234567890123456789</div>
-			</div>			
-		</div>
-
-		<div class="venta">
-			<h2>AUTOCOMPARA SANTANDER</h2>
-			<p>Verónica Pimentel<br />
-				tenemos para ti<br />
-				un Crédito Pre Aprobado<br />
-				de $9,999,999.99 MXN
-			</p>
-			<h3>Cotiza gratis y ahorra en tu seguro<br />
-				de auto con las mejores aseguradoras.
-			</h3>
-
-			<div class="botonera botonera_vta">
-				<div class="btnaceptar">Aceptar</div>
+				<div class="btnHeader cerrar">
+					<img src="../../../img/assets/ico_cerrar_widget.png"  />
+				</div>
 			</div>
 			
-			<h4>Quizá le interese:</h4>
+			<div id="WA_nav">
+				<ul>
+					<li class="menu">
+						<p>
+						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
+					</li>
+					<li>
+						<p>Disposición de Créditos</p>
+					</li>
+					<li>
+						<p>Consulta de créditos</p>
+					</li>
+				</ul>
+			</div>
+			<div id="WA_contenedorFlujos">
+				<div class="titFlujo">
+					<div class="iconFlujo">
+						<img src="../../../img/assets/ico_cuentas_propias.png"/>
+					</div>
+					<p class="titulo">Entre cuentas propias Santander</p>
+					<p class="subtitulo">Instroduzca nombre alias o cuentas bla bla bla...</p>
+				</div>
+				<div class="contenidoFlujo">
 
-			<ul class="vtaCruzadaMenu">
-				<li>
-					TRANSFERENCIA DE SALDOS
-				</li>
-				<li>
-					PAGO DE SERVICIOS
-				</li>
-				<li>
-					RECOMPENSAS
-				</li>
-			</ul>
-		</div>
+
+				</div>
+				<div class="botonera">
+					<div class="btn" onclick="cambiaPaso(2)">Regresar</div>
+					<div class="btnaceptar">Ver Detalle</div>
+				</div>
 				
-		<div class="botonera">
-			<div class="btn">Imprimir Documentación</div>
-			<div class="btnaceptar fin">Finalizar</div>
-		</div>
-	</div>
-	</div>
-	<!-- Fin flujo Pago de Servicios -->
-
-	<!-- Flujo Alta de Servicios -->
-	<div>
-		<div id="step5" class="pasos">
-					
-			
-		</div>
-		
-	</div>
-	<!-- Fin flujo Alta de Servicios -->
-
-	<!-- Flujo Consulta/baja de Servicios -->
-	<div>
-		<div id="step6" class="pasos">
-			<h2>A continuación usted podrá consultar los servicios que tiene dados de alta.</h2>
-			<div id="pagoServicio">
-				<table class="consulta" style="width:725px;float:left;text-align: justify;border:1px #c7c7c7 solid;;margin-left: 16px;">
-					<tr>
-						<td>Nombre del Servicio</td>
-						<td>Alias</td>
-						<td>Convenio</td>
-						<td>Fecha de pago</td>
-						<td>Importe (MXP)</td>
-						<td>Referencia</td>
-						
-					</tr>
-				</table>
-				<div  id="cuadroTarjeta" style="width:725px;height:190px; overflow:scroll; overflow-x: hidden;float: left;margin-left: 16px;border-bottom: 1px #c7c7c7 solid;">
-					<table class="cardList">
-						<tr>
-							<td><div class="radiobtnBaja"></div></td>
-							<td><img src="../../../../img/servicios/ico_servicios/axtel.png" class="servicio"/><p class="servicio">Axtel</p></td>
-							<td>Lorem Ipsum</td>
-							<td>12345</td>
-							<td>dd/mm/aaaa</td>
-							<td >9,999,999.99</td>
-							<td >1456789098765</td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td><div class="btn">Dar de baja</div></td>
-						</tr>
-						<tr>
-							<td><div class="radiobtnBaja"></div></td>
-							<td><img src="../../../../img/servicios/ico_servicios/telcel.png" class="servicio"/><p class="servicio">Telcel</p></td>
-							<td>Lorem Ipsum</td>
-							<td>12345</td>
-							<td>dd/mm/aaaa</td>
-							<td >9,999,999.99</td>
-							<td >1456789098765</td>
-						</tr>
-						<tr>
-							<td><div class="radiobtnBaja"></div></td>
-							<td><img src="../../../../img/servicios/ico_servicios/seguro.png" class="servicio"/><p class="servicio">G.N.P. Seguros</p></td>
-							<td>Lorem Ipsum</td>
-							<td>12345</td>
-							<td>dd/mm/aaaa</td>
-							<td >9,999,999.99</td>
-							<td >1456789098765</td>
-						</tr>
-						<tr class="deshabilitado">
-							<td><div class="radiobtnBaja"></div></td>
-							<td><img src="../../../../img/servicios/ico_servicios/telmex.png" class="servicio"/><p class="servicio">Telmex</p></td>
-							<td>Lorem Ipsum</td>
-							<td>12345</td>
-							<td>dd/mm/aaaa</td>
-							<td >9,999,999.99</td>
-							<td >1456789098765</td>
-						</tr>
-					</table>
-				</div>	
 			</div>
-			<div class="smackdown">
-				<div><img src="../../../../img/mrsmackdown.png"/></div>
-				<h3>Tiempo de Activación</h3>
-				<p>El servicio "Telmex"<br/>
-					quedará activo el <br/>
-					dd/mm/aaaa a las<br/>
-					12:00 hrs.</p>
-			</div>
-		
-			<div class="smackdown2">
-				<div><img src="../../../../img/mrsmackdown.png"/></div>
-				<h3>Lorem Ipsum</h3>
-				<p>Lorem Ipsum dolor<br/>
-					sit amet, consectetur<br/>
-					adipisicing elit, sed<br/>
-					do eiusmod tempor.<br/>
-				</p>
-			</div>	
 		</div>
 		
-	</div>
-	<!-- Fin flujo Consulta/baja de Servicios -->
-
-	<!-- Flujo Consulta de pagos realizados/programados -->
-	<div>
 		
-	</div>
-	<!-- Fin flujo Consulta de pagos realizados/programados -->
-</div>
-<script>
-	$(document).ready(function(){
-		$(".fin").click(function(){closeAction()});
-		$(".stepWrapp").hide();
-	});
-</script>
+	</body>
+</html>
