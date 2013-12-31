@@ -10,6 +10,11 @@
 	</head>
 	<body>
 		<div id="widampliado">
+			
+			<div id="bloqueoWidget" class="bloqueoElement"></div>
+			<div id="elementBloqueo" class="bloqueoElement">
+				
+			</div>
 			<div id="WA_pasos">
 				<img src="img/assets/pasos.png"0/>
 				<div class="btnHeader info">
@@ -35,40 +40,103 @@
 				</ul>
 			</div>
 			<div id="WA_contenedorFlujos">
-				<div class="titFlujo">
-					<div class="iconFlujo">
-						<img src="img/assets/ico_cuentas_propias.png"/>
-					</div>
-					<p class="titulo">Entre cuentas propias Santander</p>
-					<p class="subtitulo">Instroduzca nombre alias o cuentas bla bla bla...</p>
-				</div>
+				
 				<div class="contenidoFlujo">
 					
 					<div class="flujo wra_flu1">
+						
 						<div class="step step3">
-							<div class="col col2 resetMargen"></div>
-							<div class="col col1 "></div>
+							<div class="col col2 resetMargen">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_cuentas_propias.png"/>
+									</div>
+									<p class="titulo">Entre cuentas propias Santander</p>
+									<p class="subtitulo">Instroduzca nombre alias o cuentas bla bla bla...</p>
+								</div>
+								
+								<table class="tableStep3">
+									<tr>
+										<td>Cuenta destino:</td>
+										<td>1234****56789</td>
+									</tr>
+									<tr>
+										<td>Cuenta cargo:</td>
+										<td>1234****56789</td>
+									</tr>
+									<tr>
+										<td>Importe:</td>
+										<td>999,999,999.00 (MXP)</td>
+									</tr>
+									<tr>
+										<td>Concepto:</td>
+										<td>12345678901234567890</td>
+									</tr>
+									<tr>
+										<td>Fecha y hora de operaci&oacute;n:</td>
+										<td>dd/mm/aaaa 12:00 hrs</td>
+									</tr>
+									<tr>
+										<td>Fecha programada de transferencia:</td>
+										<td>dd/mm/aaaa</td>
+									</tr>
+									<tr>
+										<td>Notificaci&oacute;n de transferencia:</td>
+										<td>3 d&iacute;as</td>
+									</tr>
+									<tr>
+										<td>Comisi&oacute;n de transferencia:</td>
+										<td>0.00(MXP)</td>
+									</tr>
+									<tr>
+										<td>I.V.A por comisi&oacute;n de transferencia:</td>
+										<td>0.00(MXP)</td>
+									</tr>
+									<tr>
+										<td>Correo para notificaci&oacute;n:</td>
+										<td>correo@correo.com</td>
+									</tr>
+									<tr>
+										<td>Celular para notificaci&oacute;n:</td>
+										<td>555555555</td>
+									</tr>
+									<tr>
+										<td>F&oacute;lio SuperNET:</td>
+										<td>1234567890</td>
+									</tr>
+								</table>
+								
+							</div>
+							<div class="col col1 ">
+								<img src="img/assets/step3/anuncio.png" width="233" />
+								<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+								<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+								<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+								<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+							</div>
 						</div>
 						
 					</div>
-
-
 					<!--<div class="paso3Divs paso3Div1"></div>
 					<div class="paso3Divs paso3Div2"></div> -->
-
-
-
-
+					<div class="col resetMargen" id="notificaCorreo">
+						Correo para notificaci&oacute;n (beneficiario): <b>cuenta@gmail.com</b>
+					</div>
 				</div>
-
 				<div class="botonera">
-					<div class="btn" onclick="cambiaPaso(2)">Regresar</div>
-					<div class="btnaceptar">Ver Detalle</div>
+					<div class="btn btnaceptar" onclick="cambiaPaso(2)">Otra transferencia</div>
+					<div class="btn btnaceptar" onclick="cambiaPaso(2)">Imprimir</div>
+					<!-- ejemplo para llamar al token
+					PARAMETRO 1 = "funcion al presionar el boton de cancelar originalmente cierra el modal"
+					PARAMETRO 2 = "funcion al presionar el boton de aceptar"
+					PARAMETRO 3 = "callback"
+					<div class="btnaceptar" onclick="cargaToken('switchModal()','alert(\'acepto\')',alert('funcion'))">Ver Detalle</div>
+					-->
+					<div class="btnaceptar" onclick="cargaToken('switchModal()','alert(\'acepto\')',alert('funcion'))">Finalizar</div>
 				</div>
 				
 			</div>
 		</div>
-		
 		
 	</body>
 </html>
