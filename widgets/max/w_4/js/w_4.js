@@ -58,6 +58,29 @@ $(function(){
         console.log(data);
         }
     });
+
+     $(".wra_Select4 select").ddslick({
+         data: ddData,
+         width: 263,
+         background: "#f7f7f7",
+        imagePosition: "left",
+        selectText: "Seleccionar",
+         onSelected: function (data) {
+        console.log(data);
+        }
+     });
+
+     $(".wra_Select3 select").ddslick({
+         data: ddData,
+         width: 263,
+         background: "#f7f7f7",
+        imagePosition: "left",
+        selectText: "Seleccionar",
+         onSelected: function (data) {
+        console.log(data);
+        }
+     });
+
      construyeSwitch('switchBox');
 
      $("#infobtn").click(function(){
@@ -83,6 +106,18 @@ $(document).ready(function(){
 
 	 omniBox("autocompleteQ",cards);
 
+     $(".w4_AS_btnaction2").click(function(){
+
+            if ($(this).hasClass("w4_AS_btnaction2")) {
+                $(this).removeClass("w4_AS_btnaction2");
+                $(this).addClass("w4_AS_btnaction");
+            }else{
+                $(this).removeClass("w4_AS_btnaction");
+                $(this).addClass("w4_AS_btnaction2");
+            }
+            
+            $(this).parent().next().slideToggle("slow");
+        });
 });
 
 //funcion para cambiar texto.
