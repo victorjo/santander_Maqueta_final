@@ -133,84 +133,9 @@
 	margin-left: 27px;
 	color:#282828;
 	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
 	font-weight:bold;
 	margin-top: 4px;
-}
-
-
-
-
-
-
-
-/*Alta de servicios*/
-.wra_flu2{
-	margin-left:0px;
-	width:100%;
-}
-.contenidoFlujo{
-	border:none;	
-}
-
-.w4_AS_slideHeader{
-	width:99%;
-	height:22px;
-	padding:6px 0 0 10px;
-	background-image:url('../img/chkbkgnd.png');
-	background-size:100% 100%;
-	color:#282828;
-	font-family:Arial, Helvetica, sans-serif;
-	font-weight:bold;
-	font-size:11px;
-	float:left;
-	margin:10px 0 0 0;
-	border:1px #c9c9c9 solid;
-	position:relative
-}
-
-.w4_AS_btnaction2{
-	width: 15px;
-	height: 15px;
-	background: url("../img/agregar.png");
-	cursor: pointer;
-	position:absolute;
-	top:7px;
-	right:10px;
-}
-
-.w4_AS_listado{
-	position:relative;
-	float:left;	
-	height:212px;
-	display:none;
-}
-
-.w4_AS_listado > div:first-of-type{
-	width:713px;
-	height:133;
-	border:1px #c9c9c9 solid;
-	float:left;
-	margin:10px 0 0 15px;
-}
-
-.w4_AS_listado > div > p:first-of-type{
-	width:100%
-}
-
-.w4_AS_leftArrow{
-	float:left;	
-	padding-top:25px;
-	margin-left:8px;
-	cursor:pointer;
-	width:23px;
-	height:61px;
-}
-
-.w4_AS_rightArrow{
-	float:left;	
-	padding-top:25px;
-	cursor:pointer;
-	margin-left:2px;
 }
 
 .w4_PS_cuadroTarjeta{
@@ -466,4 +391,202 @@
 .w4_PS_tablaInfo {
 	position: absolute;
 	margin-top: 38px;
+}
+
+
+/*Alta de servicios*/
+.wra_flu2{
+	margin-left:0px;
+	width:100%;
+}
+
+.wra_Select4, .wra_Select3{
+	float:left;
+	margin:5px 0 0 10px;
+}
+
+
+.contenidoFlujo{
+	border:none;	
+}
+
+.w4_AS_slideHeader{
+	width:99%;
+	height:22px;
+	padding:6px 0 0 10px;
+	background-image:url('../img/chkbkgnd.png');
+	background-size:100% 100%;
+	color:#282828;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:11px;
+	float:left;
+	margin:10px 0 0 0;
+	border:1px #c9c9c9 solid;
+	position:relative
+}
+
+.w4_AS_btnaction2{
+	width: 13px;
+	height: 15px;
+	background: url("../../../../img/botones/red_arrow_side.png");
+	background-size: 100% 100%;
+	cursor: pointer;
+	position:absolute;
+	top:7px;
+	right:10px;
+}
+
+.w4_AS_btnaction{
+	width: 17px;
+	height: 10px;
+	background: url("../../../../img/botones/red_arrow_up.png");
+	background-size: 100% 100%;
+	cursor: pointer;
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+
+.w4_AS_listado{
+	position:relative;
+	float:left;	
+	height:212px;
+	display:none;
+}
+
+.w4_AS_listado > div:first-of-type{
+	width:713px;
+	height:133px;
+	border:1px #c9c9c9 solid;
+	background-color: #efefef;
+	float:left;
+}
+
+.w4_AS_listado > div > p:first-of-type{
+	font-family: 'ArialBlack';
+	font-size: 11px;
+	margin: 10px 0 0 10px;
+	width:100%
+}
+
+.w4_AS_leftArrow{
+	float:left;	
+	padding-top:25px;
+	margin-left:8px;
+	cursor:pointer;
+	width:23px;
+	height:61px;
+}
+
+.w4_AS_rightArrow{
+	float:left;	
+	padding-top:25px;
+	cursor:pointer;
+	margin-left:2px;
+}
+
+.w4_AS_servContainer{	
+	width:650px;
+	height:110px;
+	float:left;
+	overflow:hidden;
+	margin: 28px 0 0 10px;
+}
+
+.w4_AS_servicio {
+    cursor: pointer;
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    width: 55px;
+}
+
+.w4_AS_servicio > img{
+	border:1px #c7c7c7 solid;
+	width:53px;
+	height:53px;
+	margin:10px 0 0 0px;
+}
+
+.w4_AS_servicio > img:hover{
+	border: 1px #ff0000 solid;
+}
+
+.w4_AS_servicio p{
+	font-family: 'ArialBlack';
+	font-size: 11px;
+	margin-left:auto !important;
+	margin-right:auto !important;
+	text-align:center !important;
+	color:#626262 !important;
+	float:left;
+	width:55px;
+}
+
+.w4_AS_servSlider{
+	position:absolute;	
+	width:auto;
+	height:110px;
+	width:1960px;
+}
+
+.w4_AS_avanzada{
+	display:none;
+}
+
+.w4_AS_inputsAlta{
+	margin-left:5px;
+	float:left;
+	border:1px #c7c7c7 solid;
+	margin:5px 0 0 1px;
+	width:713px;
+	position:relative;
+	height:130px;
+}
+
+.w4_AS_inputsAlta p{
+	color:#282828;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	float:left;
+	font-weight:bold;
+	margin-left:10px;
+	margin-top:5px;
+}
+
+.w4_AS_inputsAlta>div:first-of-type{
+	float:left;
+	width: 570px;
+}
+
+.w4_AS_inputsAlta>div{
+	width:275px;
+	float:left;
+}
+
+.w4_AS_inputsAlta .botonera{
+	float:left;
+	margin: 0 0 10px;
+}
+
+.w4_AS_inputsAlta .btnaceptar{
+	width:143px;
+	float:right;
+}
+
+.w4_AS_input{
+	background-color: #E8E8E8;
+	border: 1px solid #A4A4A4;
+	box-shadow: 1px 1px 5px #C6C6C6 inset;
+	color: #A4A4A4;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	height: 27px;
+	margin-top: 8px;
+	text-align: center;
+	width: 318px;
+	margin: 5px 0 0 10px;
+	float:left;
 }
