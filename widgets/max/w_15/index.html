@@ -36,6 +36,12 @@
 			color:#ff0d37;
 			font-weight:bold;
 		}
+		.dd-select {
+			width: 174px !important;
+		}
+		.dd-container {
+			width: 174px !important;
+		}
 		</style>
 	
 		<div id="widampliado">
@@ -129,13 +135,7 @@
 							<tr>
 								<td>
 									<p class="p_OC">Notificar previamente:</p>
-									<select class="textbox_OC" name="" id="">
-										<option value="3">3 dias</option>
-										<option value=""></option>
-										<option value=""></option>
-										<option value=""></option>
-										<option value=""></option>
-									</select>
+									<div class="textbox_OC select_OC"></div>
 								</td>
 							</tr>
 						</table>
@@ -151,6 +151,20 @@
 		<script>
 			(function(){
 				construyeSwitch("switch_OC");
+				var js = [{
+			        text: "Elemento 0",
+			        value: 1,
+			        selected: false			    
+			    }];
+
+				$(".select_OC").ddslick({
+			    data:js,
+			    width:300,
+			    imagePosition:"left",
+			    onSelected: function(selectedData){
+			       
+			    }   
+		    });
 			})();
 		</script>
 		
