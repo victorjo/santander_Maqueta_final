@@ -286,6 +286,37 @@
 	float:left;
 }
 
+/*--- Clase imagenes ---*/
+
+.w4_PS_servicioImg_1{
+	width: 40px;
+	height: 40px;
+	background-image: url('../img/servicios/Servicio_1.png');
+	background-size:100% 100% !important;
+
+}
+.w4_PS_servicioImg_2{
+	width: 40px;
+	height: 40px;
+	background-image: url('../img/servicios/Servicio_4.png');
+	background-size:100% 100% !important;
+
+}
+.w4_PS_servicioImg_3{
+	width: 40px;
+	height: 40px;
+	background-image: url('../img/servicios/Servicio_8.png');
+	background-size:100% 100% !important;
+
+}
+.w4_PS_servicioImg_4{
+	width: 40px;
+	height: 40px;
+	background-image: url('../img/servicios/Servicio_5.png');
+	background-size:100% 100% !important;
+
+}	
+
 .w4_PS_servicioPago p{ 
 	float: left;
 	margin-left: 10px;
