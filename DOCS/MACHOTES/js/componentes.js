@@ -286,6 +286,113 @@ var flujoActivo="";
 
 
 
+  var configFlujo = { steps:
+                    [
+                      {
+                        paso:1,
+                        config:{
+                          icono:"",
+                          titulo:"Comprobante de pago de servicios",
+                          subtitulo:"",
+                          botones:[
+                            {
+                              tipo:"",
+                              texto:"",
+                              evento:""
+                            },
+                            {
+                              tipo:"",
+                              texto:"",
+                              evento:""
+                            }
+                            ],
+                        comentario:""
+                        }
+                      },
+                      {
+                        paso:2,
+                        config:{
+                          icono:"",
+                          titulo:"Comprobante dos",
+                          subtitulo:"",
+                          botones:[
+                            {
+                              tipo:"",
+                              texto:"",
+                              evento:""
+                            },
+                            {
+                              tipo:"",
+                              texto:"",
+                              evento:""
+                            }
+                            ],
+                        comentario:""
+                        }
+                      }
+
+                  ]
+                      };
+
+
+function getPaso(paso){
+  paso = configFlujo.steps[paso-1].paso;
+  alert(paso);
+}
+
+function getIcono(paso){
+  icono = configFlujo.steps[paso-1].icono;
+  return icono;
+}
+
+function getTitulo(paso){
+  titulo = configFlujo.steps[paso-1].titulo;
+  return titulo;
+}
+
+function getSubtitulo(paso){
+  subtitulo = configFlujo.steps[paso-1].subtitulo;
+  return subtitulo;
+}
+
+function getBoton(paso){
+  boton = configFlujo.steps[paso-1].boton;
+  return subtitulo;
+}
+
+function getBotontitulo(paso){
+
+  titBoton = configFlujo.steps[paso-1].boton.texto;
+  return titBoton;
+
+}
+
+function getBotontipo(paso){
+
+  tipoBoton = configFlujo.steps[paso-1].boton.tipo;
+  return tipoBoton;
+
+}
+
+function getBotontitulo(paso){
+
+  titBoton = configFlujo.steps[paso-1].boton.texto;
+  return titBoton;
+
+}
+
+function getBotontitulo(paso){
+
+  eventoBoton = configFlujo.steps[paso-1].boton.evento;
+  return eventoBoton;
+
+}
+
+
+
+$(function(){
+    obtienePaso();
+});
 
 
 
