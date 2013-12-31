@@ -457,16 +457,17 @@
 
 .w4_AS_listado > div:first-of-type{
 	width:713px;
-	height:133px;
+	height: 169px;
 	border:1px #c9c9c9 solid;
 	background-color: #efefef;
 	float:left;
+	margin-top: 10px;
 }
 
 .w4_AS_listado > div > p:first-of-type{
 	font-family: 'ArialBlack';
 	font-size: 11px;
-	margin: 10px 0 0 10px;
+	margin: 10px 0 0 20px;
 	width:100%
 }
 
@@ -491,7 +492,6 @@
 	height:110px;
 	float:left;
 	overflow:hidden;
-	margin: 28px 0 0 10px;
 }
 
 .w4_AS_servicio {
@@ -589,4 +589,23 @@
 	width: 318px;
 	margin: 5px 0 0 10px;
 	float:left;
+}
+
+.w4_AS_prueba{
+	width: 57px;
+	height: 20px;
+	background-color: red;
+	float:left;
+	margin-top: -15px;
+	margin-left: 329px;
+}
+
+.tres{
+	background-image: url("../../img/boton1.png");
+    background-size: cover;
+	width: 10px;
+	height: 10px;
+	background-color: blue;
+	display: inline-flex;
+	margin-left: 5px;
 }
