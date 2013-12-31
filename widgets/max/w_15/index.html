@@ -1,14 +1,43 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-		<title>Paso2</title>
-		<script src="../../../js/jquery10.2.min.js"></script>
+﻿		<script src="../../../js/jquery10.2.min.js"></script>		
 		<script src="../../../js/components.js"></script>
 		<script src="../../../js/ddSlick.js"></script>
 		<link rel="stylesheet" href="../../../css/generally.css" />
-	</head>
-	<body>
+		<link rel="stylesheet" href="../../../css/componentes.css" />
+		<style>
+		.col1_OC {
+			float: left;
+			height: 336px;
+			margin-right: 10px;
+			width: 532px;
+		}
+		.col2_OC {
+			float: left;
+			width: 180px;
+		}
+		.p_OC {
+			color:#232323;
+			font-weight:bold;
+			font-size:13px;
+		}
+		.textbox_OC {
+			width:100% !important;
+		}
+		.middletd_OC {
+			text-align:center;
+			width:50%;
+		}
+		.table_OC {
+			width:100%;
+		}
+		.span_OC {
+			font-size:11px;
+		}
+		.a_OC {
+			color:#ff0d37;
+			font-weight:bold;
+		}
+		</style>
+	
 		<div id="widampliado">
 			<div id="WA_pasos">
 				<img src="../../../img/assets/pasos.png"/>
@@ -39,12 +68,78 @@
 					<div class="iconFlujo">
 						<img src="../../../img/assets/ico_cuentas_propias.png"/>
 					</div>
-					<p class="titulo">Entre cuentas propias Santander</p>
-					<p class="subtitulo">Instroduzca nombre alias o cuentas bla bla bla...</p>
+					<p class="titulo">A otras cuentas</p>
+					<p class="subtitulo">Instroduzca nombre alias</p>
 				</div>
 				<div class="contenidoFlujo">
-
-
+					<div class="col1_OC">
+						<p class="p_OC">Cuenta destino:</p>
+						<input class="textbox_OC" type="text" />
+						<span class="span_OC">Si la cuenta a la que desea realizar la transferencia no se encuentra en la lista puede registrarla <a class="a_OC" href="#">Aqui</a></span>
+						<p class="p_OC">Cuenta de cargo:</p>
+						<input class="textbox_OC" type="text" />
+						<table class="table_OC">
+							<tr>
+								<td class="middletd_OC">
+									<p class="p_OC">Importe:</p>
+									<input class="textbox_OC" placeholder="Escribir importe (MXP)" type="text" />
+								</td>
+								<td class="middletd_OC">
+									<p class="p_OC">Concepto:</p>
+									<input class="textbox_OC" placeholder="Escribir concepto" type="text" />
+								</td>
+							</tr>
+							<tr>
+	
+								<td class="middletd_OC">
+									<p class="p_OC">Referencia:</p>
+									<input class="textbox_OC" placeholder="Escribir el numero de referencia" type="text" /><img src="">
+								</td>
+								<td class="middletd_OC">
+									<p class="p_OC">Requiere de comprobante fiscal?</p>
+									<div class="switch_OC switchBox"></div>
+								</td>
+							</tr>
+							<tr>
+								<td class="middletd_OC">
+									<p class="p_OC">*Dato de R.F.C</p>
+									<input class="textbox_OC" placeholder="Escribir R.F.C" type="text" />
+								</td>
+								<td class="middletd_OC">
+									<p class="p_OC">*I.V.A (16%)</p>
+									<input class="textbox_OC" placeholder="$ 999,999,999.00 (MXP)" disabled type="text" />
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="col2_OC">
+						<table class="table_OC">
+							<tr>
+								<td>
+									<p class="p_OC">Programar transferencia:</p>
+									<div class="switch_OC switchBox"></div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="p_OC">Fecha:</p>
+									<input class="textbox_OC" type="text" placeholder="dd/mm/aaaa" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="p_OC">Notificar previamente:</p>
+									<select class="textbox_OC" name="" id="">
+										<option value="3">3 dias</option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+									</select>
+								</td>
+							</tr>
+						</table>
+					</div>
 				</div>
 				<div class="botonera">
 					<div class="btn" onclick="cambiaPaso(2)">Regresar</div>
@@ -53,7 +148,9 @@
 				
 			</div>
 		</div>
+		<script>
+			(function(){
+				construyeSwitch("switch_OC");
+			})();
+		</script>
 		
-		
-	</body>
-</html>

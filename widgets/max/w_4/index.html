@@ -3,10 +3,13 @@
 	<head>
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 		<title>Paso2</title>
+
 		<script src="../../../js/jquery10.2.min.js"></script>
-		<script src="../../../js/components.js"></script>
+		<script src="../../../js/ui/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="../../../js/componentes.js"></script>
 		<script src="../../../js/ddSlick.js"></script>
 		<link rel="stylesheet" href="../../../css/generally.css" />
+		<link rel="stylesheet" href="../../../css/componentes.css" />
 		<script src="widgets/max/w_4/js/w_4.js"></script>
 		<link rel="stylesheet" href="widgets/max/w_4/css/w_4.css" />
 	</head>
@@ -54,10 +57,246 @@
 
 					<div class="flujo wra_flu1">
 						<div class="step step1">
-							1
+							<table class="w4_PS_consulta">
+								<tr>
+									<td>Nombre del Servicio</td>
+									<td>Alias</td>
+									<td>Convenio</td>
+									<td>Fecha de pago</td>
+									<td>Importe (MXP)</td>
+									<td>Referencia</td>
+								</tr>
+							</table>
+							<div  class="w4_PS_cuadroTarjeta">
+								<table class="w4_PS_cardList">
+									<tr>
+										<td></td>
+										<td><img src="img/servicios/ico_servicios/axtel.png" class="w4_PS_servicioImg"/><p class="w4_PS_servicio">Axtel</p></td>
+										<td>Lorem Ipsum</td>
+										<td>12345</td>
+										<td>dd/mm/aaaa</td>
+										<td >9,999,999.99</td>
+										<td >1456789098765</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td><img src="img/servicios/ico_servicios/telcel.png" class="w4_PS_servicioImg"/><p class="w4_PS_servicio">Telcel</p></td>
+										<td>Lorem Ipsum</td>
+										<td>12345</td>
+										<td>dd/mm/aaaa</td>
+										<td >9,999,999.99</td>
+										<td >1456789098765</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td><img src="img/servicios/ico_servicios/seguro.png" class="w4_PS_servicioImg"/><p class="w4_PS_servicio">G.N.P. Seguros</p></td>
+										<td>Lorem Ipsum</td>
+										<td>12345</td>
+										<td>dd/mm/aaaa</td>
+										<td >9,999,999.99</td>
+										<td >1456789098765</td>
+									</tr>
+									<tr class="w4_PS_deshabilitado">
+										<td></td>
+										<td><img src="img/servicios/ico_servicios/telmex.png" class="w4_PS_servicioImg"/><p class="w4_PS_servicio">Telmex</p></td>
+										<td>Lorem Ipsum</td>
+										<td>12345</td>
+										<td>dd/mm/aaaa</td>
+										<td >9,999,999.99</td>
+										<td >1456789098765</td>
+									</tr>
+									<tr class="w4_PS_deshabilitado">
+										<td></td>
+										<td><img src="img/servicios/ico_servicios/telmex.png" class="w4_PS_servicioImg"/><p class="w4_PS_servicio">Telmex</p></td>
+										<td>Lorem Ipsum</td>
+										<td>12345</td>
+										<td>dd/mm/aaaa</td>
+										<td >9,999,999.99</td>
+										<td >1456789098765</td>
+									</tr>
+									<tr class="w4_PS_deshabilitado">
+										<td></td>
+										<td><img src="img/servicios/ico_servicios/telmex.png" class="w4_PS_servicioImg"/><p class="w4_PS_servicio">Telmex</p></td>
+										<td>Lorem Ipsum</td>
+										<td>12345</td>
+										<td>dd/mm/aaaa</td>
+										<td >9,999,999.99</td>
+										<td >1456789098765</td>
+									</tr>
+									<tr class="w4_PS_deshabilitado">
+										<td></td>
+										<td><img src="img/servicios/ico_servicios/telmex.png" class="w4_PS_servicioImg"/><p class="w4_PS_servicio">Telmex</p></td>
+										<td>Lorem Ipsum</td>
+										<td>12345</td>
+										<td>dd/mm/aaaa</td>
+										<td >9,999,999.99</td>
+										<td >1456789098765</td>
+									</tr>
+
+								</table>
+							</div>
+							<div class="w4_PS_servicioPago">
+								<p>Si el servicio que desea pagar no se encuentra en su lista de clic <a href="#">Aquí</a></p>
+							</div>
+							<div class="botonera">
+								<div class="btn" >Regresar</div>
+								<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(2);">Ver Detalle</div>
+							</div>
 						</div>
 						<div class="step step2">
-							2
+							<table class="w4_PS_consulta">
+								<tr>
+									<td>Nombre del Servicio</td>
+									<td>Alias</td>
+									<td>Convenio</td>
+									<td>Fecha de pago</td>
+									<td>Importe (MXP)</td>
+									<td>Referencia</td>
+								</tr>
+							</table>
+							<div  class="w4_PS_consultaPS">
+								<table class="w4_PS_consulta_tabla">
+									<tr>
+										<td></td>
+										<td><img src="img/servicios/ico_servicios/axtel.png" class="w4_PS_servicioImg"/><p class="w4_PS_servicio">Axtel</p></td>
+										<td>Lorem Ipsum</td>
+										<td>12345</td>
+										<td>dd/mm/aaaa</td>
+										<td >9,999,999.99</td>
+										<td >1456789098765</td>
+									</tr>
+								</table>
+							</div>
+							<div class="w4_PS_verLista"></div>
+							<p>Introduzca el nombre, alias o los cuatro dígitos de la cuenta de destino o seleccionela de la lista:</p>
+							<div class="w4_PS_dd1">
+								<table >
+									<tr>
+										
+										<td>						
+											<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="	width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+										</td>
+										<td>
+										<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+											<div class="botonestrella-on"> 
+												<img class="activo" style="display:block;" src="../img/iconos/favorito_on.png"/> 
+												<img class="inactivo" style="display:none;" src="../img/iconos/favorito_of.png"> 
+											</div>
+											<td> 
+												<span style="font-weight:bold;margin-left:0px"> 
+												<div class="marcotriangulo">
+												<div class="triangulo_inf">
+												</span> 
+											</td>
+										</td>
+									</tr>
+
+								</table>
+							</div>
+							<table class="w4_PS_tablaInfo">
+								<tr>
+									<td>
+										<div class="w4_PS_inputsIzq">
+											<p>Concepto</p>
+											<input class="w4_PS_input" type="text"/>
+										</div>
+									</td>
+									<td>
+										<div class="w4_PS_inputsDer">
+											<p>Alias de Tarjeta</p>
+											<input class="w4_PS_input" type="text"/>
+											<div class="info"></div>							
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="w4_PS_inputsIzq">
+											<p>Referencia 1</p>
+											<input class="w4_PS_input" type="text"/>
+											<div id="infobtn" class="info"></div>
+											<div class="infoChart"><img src="../../../../img/assets/info_img.png"/></div>					
+										</div>
+									</td>
+									<td>
+										<div class="w4_PS_inputsDer">
+											<p>Referencia 2</p>
+											<input class="w4_PS_input" type="text"/>
+											<div class="info"></div>
+																
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="w4_PS_inputsIzq">
+											<p>Importe</p>
+											<input class="w4_PS_input" type="text"/>
+											<div class="info"></div>
+															
+										</div>
+									</td>
+									<td>
+										<table>
+											<tr>
+												<td>
+													<p>Pronto Pago:</p>
+													<input class="w4_PS_input2" type="text"/>
+												</td>
+												<td style="width: 195px;">
+													<p>Intereses moratorios:</p>
+													<input class="w4_PS_input2" type="text"/>
+													<div class="info"></div>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p>Transferir el importe a meses sin intereses:</p>
+										<div class="w4_PS_dd2">
+											<select name="" id="" value="1" > 
+							    			</select>
+										</div>
+									</td>
+									<td>
+										<table>
+											<tr>
+												<td>
+													<div id="w4_PS_programar">
+														<p>Programar fecha:</p>
+														<div id="switchBox"></div>					
+													</div>
+												</td>
+												<td style="width: 195px;">
+													<p>Fecha:</p>
+													<div class="dateInput">
+														<input class="w4_PS_input5" type="text" value="dd/mm/aaaa" id="date"/>
+														<div class="w4_PS_contCal"><div class="w4_PS_cal"></div></div>
+													</div>	
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p>Quiero notificación previa de mi pago:</p>
+										<div class="w4_PS_dd3">
+											<select name="" id="" value="1" > 
+							    			</select>
+											</div>	
+										</div>
+									</td>
+									<td></td>
+								</tr>
+												
+							</table>
+							<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);">Regresar</div>
+								<div class="btnaceptar">Ver Detalle</div>
+							</div>
 						</div>
 						<div class="step step3">
 							3
@@ -250,13 +489,11 @@
 					</div>	
 
 				</div>
-				<div class="botonera">
+				<!--<div class="botonera">
 					<div class="btn" >Regresar</div>
 					<div class="btnaceptar" onclick="cambiaPaso(2)">Ver Detalle</div>
-				</div>	
+				</div>-->	
 			</div>
 		</div>
-		
-		
 	</body>
 </html>

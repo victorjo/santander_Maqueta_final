@@ -324,5 +324,43 @@ var flujoActivo="";
 
 /****** FIN DE MOTOR PARA CAMBIAR DE PASOS Y FLUJOS **////
 
+/*--- Funcion para construir el Switch
 
+NOTA: Como parametro solo se recibira el id del div.
+ej. HTML
+<div id="switchBox"></div>
+ej. Js ( se llama la funcion al inicializar el js correspondiente.)
+ construyeSwitch('switchBox');
+---*/
+function construyeSwitch(object){
+
+  var switchO ='<div class="switchSlide">';          
+      switchO +='<div class="switchLabel">si</div>';
+      switchO +='<div class="switchIndicador"><div class="franjaSwitch"></div></div>';
+      switchO +='<div class="switchLabelR">no</div>';        
+      switchO +='</div>';
+
+  var container = $("#"+object).length? $("#"+object):$("."+object);
+
+  container.html(switchO);
+
+   container.children("div:first").find(".switchLabel").click(function(){
+          $(".switchSlide").animate({
+              "left":"-=78px"
+              },"fast");
+          $(".dateInput").addClass("dateInputInactive");
+          $(".notificacion").hide();
+          
+      });
+      
+      container.children("div:first").find(".switchLabelR").click(function(){
+          $(".switchSlide").animate({
+              "left":"+=78px"
+              },"fast");
+          $(".dateInput").removeClass("dateInputInactive");
+          $(".notificacion").show();
+      });
+}
+
+/*--- Fin de Funcion para construir el Switch ---*/
 
