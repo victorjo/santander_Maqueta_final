@@ -81,6 +81,8 @@ $(document).ready(function(){
 	
 	$('#date').datepicker();
 
+	 omniBox("autocompleteQ",cards);
+
 });
 
 //funcion para cambiar texto.
