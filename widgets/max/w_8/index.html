@@ -3,6 +3,8 @@
 		<script src="../../../js/ddSlick.js"></script>
 		<link rel="stylesheet" href="../../../css/generally.css" />
 		<link rel="stylesheet" href="../../../css/componentes.css" />
+		<script src="widgets/max/w_8/js/w_8.js"></script>
+		<link rel="stylesheet" href="widgets/max/w_8/css/w_8.css" />
 		
 		<!--<input type="button" value="GRID" onclick="Gridius($('.contenidoFlujo'));">-->
 		<div id="widampliado">
@@ -22,10 +24,10 @@
 						<p>
 						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
 					</li>
-					<li>
+					<li onclick="cambiaFlujo('.wra_flu1')">
 						<p>Disposición de Créditos</p>
 					</li>
-					<li>
+					<li onclick="cambiaFlujo('.wra_flu2')">
 						<p>Consulta de créditos</p>
 					</li>
 				</ul>
@@ -39,12 +41,38 @@
 					<p class="subtitulo">Instroduzca nombre alias</p>
 				</div>
 				<div class="contenidoFlujo">
-					
+					<div class="flujo wra_flu1">
+						<div class="step step1">
+							1
+							<div class="botonera">
+								<div class="btn">Ver Detalle</div>
+								<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(2);">Continuar</div>
+							</div>
+						</div>
+						<div class="step step2">
+							2
+							<div class="botonera">
+								<div class="btn" onclick="cambiaPaso(1);">Regresar</div>
+								<div class="btnaceptar" onclick="cambiaPaso(3);">Continuar</div>
+							</div>
+						</div>
+						<div class="step step3">
+							3
+							<div class="botonera">
+								<div class="btn">Ver Detalle</div>
+								<div class="btnaceptar">Continuar</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="flujo wra_flu2">
+						
+
+					</div>
+					<div class="flujo wra_flu3"></div>
+					<div class="flujo wra_flu4"></div>
 				</div>
-				<div class="botonera">
-					<div class="btn" onclick="cambiaPaso(2)">Regresar</div>
-					<div class="btnaceptar">Ver Detalle</div>
-				</div>
+				
 				
 			</div>
 		</div>
