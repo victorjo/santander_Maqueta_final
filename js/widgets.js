@@ -195,7 +195,15 @@ var widgets = [
 					group:2,
 					contentMin:'<h1 class="btnaceptar_wr">MACHOTE</h1>',
 					contentMax:''
+				},{
+					id:16,
+					type:2,
+					order:13,
+					group:2,
+					contentMin:'<h1 class="btnaceptar_wr">TRANSFERENCIAS_I</h1>',
+					contentMax:''
 				}
+
 
 			];
 
