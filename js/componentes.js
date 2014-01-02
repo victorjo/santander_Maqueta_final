@@ -324,6 +324,39 @@ var flujoActivo="";
 
 /****** FIN DE MOTOR PARA CAMBIAR DE PASOS Y FLUJOS **////
 
+/*Funcion realizada por victor: Cambio de pasos*/
+function cambiaPaso(paso){
+        flujoActivo = $(flujoActivo);
+        escondeElemento("s");
+        flujoActivo.find(".step"+paso).fadeIn("slow");
+        pasoPos = "-2px";
+        switch(paso) {
+          case 0:
+               pasoPos = "-2px"
+            break;
+          case 1:
+              pasoPos = "-2px"
+            break;
+          case 2:
+              pasoPos = "-26px"
+            break;
+
+          case 3:
+              pasoPos = "-50px"
+            break;
+
+          default:
+              alert("el paso seleccionado no se encuentra registrado");
+            break;  
+
+        }
+
+        $("#WA_pasos > img").css("margin-top",pasoPos);
+
+
+      }
+/*Fin de Funcion realizada por victor: Cambio de pasos*/
+
 /*--- Funcion para construir el Switch
 
 NOTA: Como parametro solo se recibira el id del div.
