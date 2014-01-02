@@ -397,3 +397,76 @@ function construyeSwitch(object){
 
 /*--- Fin de Funcion para construir el Switch ---*/
 
+
+
+/* GRID DINAMICO */
+
+function Gridius(object,data){
+
+        $.when($.ajax("componentes/grid.html")).then(function(res){
+
+        object.html(res);
+
+        var element = '<td>Lorem Ipsum<input data-edit="false" class="editGrid" type="text"></td>';
+          element += '<td>Lorem Ipsum<input data-edit="false" class="editGrid" type="text"></td>';
+          element += '<td>Lorem<input data-edit="false" class="editGrid" type="text"></td>';
+          element += '<td>1234<input data-edit="false" class="editGrid" type="text"></td>';
+          element += '<td>1234567890<input data-edit="false" class="editGrid" type="text"></td>';
+          element += '<td>dd/mm/aaaa<input data-edit="false" class="editGrid" type="text"></td>';
+          element += '<td>999,999,999.00<input data-edit="false" class="editGrid" type="text"></td>';
+          element += '<td>Exitosa<input data-edit="false" class="editGrid" type="text"></td>';
+          element += '<td><div class="addGrid"></div><div class="delGrid"></div></td>';
+
+        $(".gridAdd").click(function(){
+          var obj = $('<tr data-id="'+ ($(".wrapGrid").find("tr").size()) +'"></tr>');
+          $(".wrapGrid > table").append(obj);
+          $('[data-id="'+ (($(".wrapGrid").find("tr").size())-1) +'"]').html(element);
+          listenerGrid( $('[data-id="'+ ($(".wrapGrid").find("tr").size()) +'"]').find('.editGrid').parent() );
+        });
+
+        $(".editGrid").parent().on("click",function(){
+          listenerGrid($(this));
+        });
+
+        $(".addGrid").click(function(){
+          var self = $(this);
+          self.next(".delGrid").toggle();
+          showGridTools(self);
+          self.toggle();
+        });
+        
+        $(".delGrid").click(function(){
+          var self = $(this);
+          self.prev(".addGrid").toggle();
+          showGridTools(self);
+          self.toggle();
+        });
+
+      });
+      }
+
+      function listenerGrid(obj){
+        $(".editGrid").each(function(i,v){
+          v = $(v);
+          if(v.val()!="") v.parent().html(v.val()+'<input data-edit="false" class="editGrid" type="text">');
+        });
+        var self = obj,txt = self.text(),adq = self.children(".editGrid"),edit = adq.attr("data-edit");
+        $(".editGrid").parent();
+        if(edit=="true") return false;
+        else adq.attr("data-edit","true");
+        self.html(adq);
+        adq.val(txt).show();
+
+      }
+      function showGridTools(obj){
+        var parentObj = obj.parent().parent();
+        $(".toolsGrid").fadeOut("slow").remove();
+        if( parentObj.attr('data-active') == 'true' ){
+          parentObj.attr('data-active',false); 
+          return false;
+        }
+        parentObj.attr('data-active',true);
+        var tools = $('<div class="toolsGrid"><ul><li></li><li></li><li></li></ul></div>');
+        $('body').append(tools);
+        tools.css({top:obj.offset().top-56,left:(50+obj.offset().left+obj.width())}).attr('data-relid',parentObj.attr('data-id'));
+      }
