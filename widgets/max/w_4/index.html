@@ -3,11 +3,14 @@
 	<head>
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 		<title>Paso2</title>
+
 		<script src="../../../js/jquery10.2.min.js"></script>
+		<script src="../../../js/ui/jquery-ui-1.10.3.custom.min.js"></script>
 		<script src="../../../js/componentes.js"></script>
 		<script src="../../../js/ddSlick.js"></script>
 		<link rel="stylesheet" href="../../../css/generally.css" />
 		<link rel="stylesheet" href="../../../css/componentes.css" />
+		<link rel="stylesheet" href="../../../css/steps.css" />
 		<script src="widgets/max/w_4/js/w_4.js"></script>
 		<link rel="stylesheet" href="widgets/max/w_4/css/w_4.css" />
 	</head>
@@ -43,7 +46,7 @@
 					</li>
 				</ul>
 			</div>
-			<div id="WA_contenedorFlujos">
+			<div id="WA_contenedorFlujos" style="height: 528px;">
 				<div class="titFlujo">
 					<div class="iconFlujo">
 						<img src="../../../img/assets/ico_cuentas_propias.png"/>
@@ -51,9 +54,11 @@
 					<p class="titulo"></p>
 					<p class="subtitulo"></p>
 				</div>
-				<div class="contenidoFlujo">
+				<div class="contenidoFlujo" style="height: 488px;">
+
 					<div class="flujo wra_flu1">
-						<div class="step step1">
+
+						<div class="step step0">
 							<table class="w4_PS_consulta">
 								<tr>
 									<td>Nombre del Servicio</td>
@@ -68,7 +73,7 @@
 								<table class="w4_PS_cardList">
 									<tr>
 										<td></td>
-										<td><img src="img/servicios/ico_servicios/axtel.png" class="w4_PS_servicioImg"/><p class="w4_PS_servicio">Axtel</p></td>
+										<td><div class="w4_PS_servicioImg w4_PS_servicioImg_1"></div><p class="w4_PS_servicio">Axtel</p></td>
 										<td>Lorem Ipsum</td>
 										<td>12345</td>
 										<td>dd/mm/aaaa</td>
@@ -77,7 +82,7 @@
 									</tr>
 									<tr>
 										<td></td>
-										<td><img src="img/servicios/ico_servicios/telcel.png" class="w4_PS_servicioImg"/><p class="w4_PS_servicio">Telcel</p></td>
+										<td><div class="w4_PS_servicioImg w4_PS_servicioImg_2"></div><p class="w4_PS_servicio">Telcel</p></td>
 										<td>Lorem Ipsum</td>
 										<td>12345</td>
 										<td>dd/mm/aaaa</td>
@@ -86,7 +91,7 @@
 									</tr>
 									<tr>
 										<td></td>
-										<td><img src="img/servicios/ico_servicios/seguro.png" class="w4_PS_servicioImg"/><p class="w4_PS_servicio">G.N.P. Seguros</p></td>
+										<td><div class="w4_PS_servicioImg w4_PS_servicioImg_3"></div><p class="w4_PS_servicio">G.N.P. Seguros</p></td>
 										<td>Lorem Ipsum</td>
 										<td>12345</td>
 										<td>dd/mm/aaaa</td>
@@ -95,7 +100,7 @@
 									</tr>
 									<tr class="w4_PS_deshabilitado">
 										<td></td>
-										<td><img src="img/servicios/ico_servicios/telmex.png" class="w4_PS_servicioImg"/><p class="w4_PS_servicio">Telmex</p></td>
+										<td><div class="w4_PS_servicioImg w4_PS_servicioImg_4"></div><p class="w4_PS_servicio">Telmex</p></td>
 										<td>Lorem Ipsum</td>
 										<td>12345</td>
 										<td>dd/mm/aaaa</td>
@@ -104,7 +109,7 @@
 									</tr>
 									<tr class="w4_PS_deshabilitado">
 										<td></td>
-										<td><img src="img/servicios/ico_servicios/telmex.png" class="w4_PS_servicioImg"/><p class="w4_PS_servicio">Telmex</p></td>
+										<td><div class="w4_PS_servicioImg w4_PS_servicioImg_4"></div><p class="w4_PS_servicio">Telmex</p></td>
 										<td>Lorem Ipsum</td>
 										<td>12345</td>
 										<td>dd/mm/aaaa</td>
@@ -113,7 +118,7 @@
 									</tr>
 									<tr class="w4_PS_deshabilitado">
 										<td></td>
-										<td><img src="img/servicios/ico_servicios/telmex.png" class="w4_PS_servicioImg"/><p class="w4_PS_servicio">Telmex</p></td>
+										<td><div class="w4_PS_servicioImg w4_PS_servicioImg_4"></div><p class="w4_PS_servicio">Telmex</p></td>
 										<td>Lorem Ipsum</td>
 										<td>12345</td>
 										<td>dd/mm/aaaa</td>
@@ -122,7 +127,7 @@
 									</tr>
 									<tr class="w4_PS_deshabilitado">
 										<td></td>
-										<td><img src="img/servicios/ico_servicios/telmex.png" class="w4_PS_servicioImg"/><p class="w4_PS_servicio">Telmex</p></td>
+										<td><div class="w4_PS_servicioImg w4_PS_servicioImg_4"></div><p class="w4_PS_servicio">Telmex</p></td>
 										<td>Lorem Ipsum</td>
 										<td>12345</td>
 										<td>dd/mm/aaaa</td>
@@ -137,10 +142,12 @@
 							</div>
 							<div class="botonera">
 								<div class="btn" >Regresar</div>
-								<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(2);">Ver Detalle</div>
+								<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);">Ver Detalle</div>
 							</div>
 						</div>
-						<div class="step step2">
+
+						
+						<div class="step step1">
 							<table class="w4_PS_consulta">
 								<tr>
 									<td>Nombre del Servicio</td>
@@ -165,18 +172,463 @@
 								</table>
 							</div>
 							<div class="w4_PS_verLista"></div>
-							<div id="switchBox"></div>
+							<p>Introduzca el nombre, alias o los cuatro dígitos de la cuenta de destino o seleccionela de la lista:</p>
+							<div class="w4_PS_dd1">
+								<table >
+									<tr>
+										
+										<td>						
+											<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="	width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
+										</td>
+										<td>
+										<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
+											<div class="botonestrella-on"> 
+												<img class="activo" style="display:block;" src="../img/iconos/favorito_on.png"/> 
+												<img class="inactivo" style="display:none;" src="../img/iconos/favorito_of.png"> 
+											</div>
+											<td> 
+												<span style="font-weight:bold;margin-left:0px"> 
+												<div class="marcotriangulo">
+												<div class="triangulo_inf">
+												</span> 
+											</td>
+										</td>
+									</tr>
+
+								</table>
+							</div>
+							<table class="w4_PS_tablaInfo">
+								<tr>
+									<td>
+										<div class="w4_PS_inputsIzq">
+											<p>Concepto</p>
+											<input class="w4_PS_input" type="text"/>
+										</div>
+									</td>
+									<td>
+										<div class="w4_PS_inputsDer">
+											<p>Alias de Tarjeta</p>
+											<input class="w4_PS_input" type="text"/>
+											<div class="info"></div>							
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="w4_PS_inputsIzq">
+											<p>Referencia 1</p>
+											<input class="w4_PS_input" type="text"/>
+											<div id="infobtn" class="info"></div>
+											<div class="infoChart"><img src="../../../../img/assets/info_img.png"/></div>					
+										</div>
+									</td>
+									<td>
+										<div class="w4_PS_inputsDer">
+											<p>Referencia 2</p>
+											<input class="w4_PS_input" type="text"/>
+											<div class="info"></div>
+																
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="w4_PS_inputsIzq">
+											<p>Importe</p>
+											<input class="w4_PS_input" type="text"/>
+											<div class="info"></div>
+															
+										</div>
+									</td>
+									<td>
+										<table>
+											<tr>
+												<td>
+													<p>Pronto Pago:</p>
+													<input class="w4_PS_input2" type="text"/>
+												</td>
+												<td style="width: 195px;">
+													<p>Intereses moratorios:</p>
+													<input class="w4_PS_input2" type="text"/>
+													<div class="info"></div>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p>Transferir el importe a meses sin intereses:</p>
+										<div class="w4_PS_dd2">
+											<select name="" id="" value="1" > 
+							    			</select>
+										</div>
+									</td>
+									<td>
+										<table>
+											<tr>
+												<td>
+													<div id="w4_PS_programar">
+														<p>Programar fecha:</p>
+														<div id="switchBox"></div>					
+													</div>
+												</td>
+												<td style="width: 195px;">
+													<p>Fecha:</p>
+													<div class="dateInput">
+														<input class="w4_PS_input5" type="text" value="dd/mm/aaaa" id="date"/>
+														<div class="w4_PS_contCal"><div class="w4_PS_cal"></div></div>
+													</div>	
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p>Quiero notificación previa de mi pago:</p>
+										<div class="w4_PS_dd3">
+											<select name="" id="" value="1" > 
+							    			</select>
+											</div>	
+										</div>
+									</td>
+									<td></td>
+								</tr>
+												
+							</table>
+							<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);">Regresar</div>
+								<div class="btnaceptar" onclick="cambiaPaso(2);">Ver Detalle</div>
+							</div>
 						</div>
-						<div class="step step3">
-							3
-						</div>					
-					</div>
-					<div class="flujo wra_flu2">
+
+						<div class="step step2">
+
+							<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Regresar</div>
+								<div class="btnaceptar" onclick="cambiaPaso(3);$('.titFlujo').hide();">Confirmar</div>
+							</div>
+						</div>
 						
+						<div class="step step3">	
+							<div class="col col2 resetMargen">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="img/assets/ico_cuentas_propias.png"/>
+										</div>
+									</div>
+									
+									<table class="tableStep3">
+										<tr>
+											<td>Cuenta destino:</td>
+											<td>1234****56789</td>
+										</tr>
+										<tr>
+											<td>Cuenta cargo:</td>
+											<td>1234****56789</td>
+										</tr>
+										<tr>
+											<td>Importe:</td>
+											<td>999,999,999.00 (MXP)</td>
+										</tr>
+										<tr>
+											<td>Concepto:</td>
+											<td>12345678901234567890</td>
+										</tr>
+										<tr>
+											<td>Fecha y hora de operaci&oacute;n:</td>
+											<td>dd/mm/aaaa 12:00 hrs</td>
+										</tr>
+										<tr>
+											<td>Fecha programada de transferencia:</td>
+											<td>dd/mm/aaaa</td>
+										</tr>
+										<tr>
+											<td>Notificaci&oacute;n de transferencia:</td>
+											<td>3 d&iacute;as</td>
+										</tr>
+										<tr>
+											<td>Comisi&oacute;n de transferencia:</td>
+											<td>0.00(MXP)</td>
+										</tr>
+										<tr>
+											<td>I.V.A por comisi&oacute;n de transferencia:</td>
+											<td>0.00(MXP)</td>
+										</tr>
+										<tr>
+											<td>Correo para notificaci&oacute;n:</td>
+											<td>correo@correo.com</td>
+										</tr>
+										<tr>
+											<td>Celular para notificaci&oacute;n:</td>
+											<td>555555555</td>
+										</tr>
+										<tr>
+											<td>F&oacute;lio SuperNET:</td>
+											<td>1234567890</td>
+										</tr>
+									</table>
+									
+								</div>
+								<div class="col col1 ">
+									<img src="img/assets/step3/anuncio.png" width="233" />
+									<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+									<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+									<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+									<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+								</div>
+								<div class="botonera">
+									<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(2);">Regresar</div>
+									<div class="btnaceptar" onclick="">Ver Detalle</div>
+								</div>
+							</div>						
 					</div>
+
+					<div class="flujo wra_flu2">
+						<div class="w4_AS_slideHeader">Listado de Servicios
+							<div class="w4_AS_btnaction2"></div>
+						</div>
+						<div class="w4_AS_listado OFF">
+							<div>
+								<h2>Seleccione la empresa que desea dar de alta:</h2><br />
+								<p>Nombre del Servicio</p>
+								<div class="w4_AS_servContainer">
+									<div class="w4_AS_servSlider">
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_1.png"/>
+											<p>Axtel</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_2.png"/>
+											<p>Sky</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_3.png"/>
+											<p>CFE</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_4.png"/>
+											<p>Telcel</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_5.png"/>
+											<p>Telmex</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_6.png"/>
+											<p>Iusacell</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_7.png"/>
+											<p>Dish</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_8.png"/>
+											<p>G. N. P.<br/>Seguros</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_9.png"/>
+											<p>Movistar</p>
+										</div>
+										<div class="w4_AS_servicio espacio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_10.png"/>
+											<p>Tesorería</p>
+										</div>
+										<!-- segundo lote -->
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_1.png"/>
+											<p>Axtel</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_2.png"/>
+											<p>Sky</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_3.png"/>
+											<p>CFE</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_4.png"/>
+											<p>Telcel</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_5.png"/>
+											<p>Telmex</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_6.png"/>
+											<p>Iusacell</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_7.png"/>
+											<p>Dish</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_8.png"/>
+											<p>G. N. P.<br/>Seguros</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_9.png"/>
+											<p>Movistar</p>
+										</div>
+										<div class="w4_AS_servicio espacio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_10.png"/>
+											<p>Tesorería</p>
+										</div>
+										<!-- tercer lote -->
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_1.png"/>
+											<p>Axtel</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_2.png"/>
+											<p>Sky</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_3.png"/>
+											<p>CFE</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_4.png"/>
+											<p>Telcel</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_5.png"/>
+											<p>Telmex</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_6.png"/>
+											<p>Iusacell</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_7.png"/>
+											<p>Dish</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_8.png"/>
+											<p>G. N. P.<br/>Seguros</p>
+										</div>
+										<div class="w4_AS_servicio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_9.png"/>
+											<p>Movistar</p>
+										</div>
+										<div class="w4_AS_servicio espacio">
+											<img src="widgets/max/w_4/img/servicios/Servicio_10.png"/>
+											<p>Tesorería</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="w4_AS_prueba">
+									<div class="tres 1" id="1"></div>
+									<div class="tres 2" id="2"></div>
+									<div class="tres 3"></div>
+								</div>
+							<div class="botonera">
+								<div class="btnaceptar">Dar de alta</div>
+							</div>
+						</div>
+						
+						<div class="w4_AS_slideHeader">Búsqueda Avanzada
+							<div class="w4_AS_btnaction2"></div>
+						</div>
+						
+						<div class="w4_AS_avanzada">
+							<h2>Para realizar la búsqueda del servicio a dar de alta, ingrese cualquiera de los siguientes dados:</h2>
+							<div class="w4_AS_inputsAlta OFF">
+								<div>
+									<p>Cuenta de cargo:</p><br />
+									<input class="w4_AS_input" type="text"/>
+								</div>
+								
+								<div>
+									<p>Categoría:</p>
+									<div class="wra_Select4">
+										<select name="" id="" value="1" > 
+						    			</select>
+									</div>	
+								</div>				
+							
+								<div>
+									<p>Ubicación:</p>
+									<div class="wra_Select3">
+										<select name="" id="" value="1" > 
+						    			</select>
+									</div>	
+								</div>
+								<div>
+									<div class="botonera">
+										<div class="btnaceptar w4_AS_buscar">Buscar</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="w4_AS_busqueda">
+								<h2>Seleccione el servicio que desea pagar:</h2>
+								<div class="w4_AS_contenedor">
+										<div class="w4_AS_ContenedorImg">
+											<img src="widgets/max/w_4/img/servicios/Servicio_4.png"/>
+										</div>
+										<div class="w4_AS_ContenedorImg">
+											<img src="widgets/max/w_4/img/servicios/Servicio_5.png"/>
+										</div>
+										<div class="w4_AS_ContenedorImg">
+											<img src="widgets/max/w_4/img/servicios/Servicio_6.png"/>
+										</div>
+										<div class="w4_AS_ContenedorImg">
+											<img src="widgets/max/w_4/img/servicios/Servicio_7.png"/>
+										</div>
+										<div class="w4_AS_ContenedorImg">
+											<img src="widgets/max/w_4/img/servicios/Servicio_4.png"/>
+										</div>
+										<div class="w4_AS_ContenedorImg">
+											<img src="widgets/max/w_4/img/servicios/Servicio_5.png"/>
+										</div>
+										<div class="w4_AS_ContenedorImg">
+											<img src="widgets/max/w_4/img/servicios/Servicio_6.png"/>
+										</div>
+										<div class="w4_AS_ContenedorImg">
+											<img src="widgets/max/w_4/img/servicios/Servicio_7.png"/>
+										</div>
+										<div class="w4_AS_ContenedorImg">
+											<img src="widgets/max/w_4/img/servicios/Servicio_5.png"/>
+										</div>
+										<div class="w4_AS_ContenedorImg">
+											<img src="widgets/max/w_4/img/servicios/Servicio_6.png"/>
+										</div>
+										<div class="w4_AS_ContenedorImg">
+											<img src="widgets/max/w_4/img/servicios/Servicio_7.png"/>
+										</div>
+										<div class="w4_AS_rightArrow"><img src="../../../../img/botones/red_arrow_side.png"/></div>
+								</div>
+								<div class="w4_AS_servicioSel">
+									<div class="w4_AS_imagenSer"></div>
+									<div>
+										<p><b>Servicio seleccionado:</b></p>
+										<p><b>Concepto:</b></p><br />
+										<input class="w4_PS_input3" type="text" value="Escribir concepto"/>
+									</div>
+									<br />
+									<ul>
+										<li><p><b>Categoria:Lorem ipsum Elit</b></p></li>
+										<li><p><b>Ubicación:Lorem ipsum Elit</b></p></li>
+									</ul>
+								</div>
+							</div>
+								
+						</div>
+						<div class="botonera">
+							<div class="btnaceptar">Dar de alta</div>
+						</div>
+
+					</div>
+
 					<div class="flujo wra_flu3">
 						
 					</div>	
+
 				</div>
 				<!--<div class="botonera">
 					<div class="btn" >Regresar</div>

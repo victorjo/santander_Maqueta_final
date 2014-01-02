@@ -280,6 +280,7 @@ h6{
 
 #switchBox{
 	border:1px #a6a6a6 solid !important;
+	border-radius: 5px;
 	width:158px !important;
 	height:28px !important;
 	float:left !important;	
@@ -293,6 +294,7 @@ h6{
 }
 .switchBox{
 	border:1px #a6a6a6 solid !important;
+	border-radius: 5px;
 	width:158px !important;
 	height:28px !important;
 	position:relative !important;
@@ -301,7 +303,7 @@ h6{
 	font-size:11px !important;
 	font-weight:bold !important;
 	text-align:center !important;
-	margin:3px auto;
+	margin:6px auto;
 }
 
 .switchSlide{
@@ -325,7 +327,7 @@ h6{
 	width: 78px !important;
 	height:21px !important;
 	float:left !important;
-	background-color:#ffffff !important;
+	background-color:#e0dede !important;
 	cursor:pointer !important;
 	color:#626262 !important;
 	padding-top:7px !important;
@@ -335,7 +337,7 @@ h6{
 	width: 78px !important;
 	height:21px !important;
 	float:left !important;
-	background-color:#ffffff !important;
+	background-color:#e0dede !important;
 	cursor:pointer !important;
 	color:#626262 !important;
 	padding-top:7px !important;
@@ -351,3 +353,101 @@ h6{
 	background-size: 100% 100%;
 }
 /*---Fin Estilo Final para switch ---*/
+
+
+/* ESTILOS GRID*/
+
+.wrapGrid {
+			background:#e0dede;
+			height:295px;
+			width:720px;
+			overflow-y: scroll;
+			overflow-x: hidden;
+		}
+		.wrapGrid>table {
+			border-spacing: 0px 10px;
+			border-collapse: separate;
+			font-size:12px;
+			text-align:center;
+			width:100%;
+		}
+
+		.wrapGrid>table>tbody>tr {
+			cursor:pointer;
+			height:17px;
+		}
+
+		.wrapGrid>table>tbody>tr>td:hover {
+			background-color:#cccccc;
+		} 
+
+		.wrapGrid>table>tbody>tr td {
+			text-align:center;
+		} 
+		.wrapGrid>table>tbody>tr:not(:first-child) {
+			background-color:#ffffff;
+			height:30px;
+		}
+		.editGrid {
+			display:none;
+		}
+		.delGrid {
+			display:none;
+		}
+		.toolsGrid {
+			position:absolute;
+			z-index:5000;
+		}
+		.toolsGrid>ul {
+			list-style:none;
+			margin:0px;
+			padding:0px;
+		}
+		.toolsGrid>ul>li {
+			background:#ffffff;
+			border:1px solid #ffffff;
+			height:30px;
+			margin:0px 0px 2px 0px;
+			width:30px;
+		}
+		.toolsGrid:before {
+			width: 0px;
+			height: 0px;
+			border-left: 17px solid transparent;
+			border-right: 0px solid transparent;
+			border-bottom: 13px solid #ffffff;
+			font-size: 0px;
+			line-height: 0px;
+			top: 41px;
+			left: -17px;
+			position: relative;
+			content: ' ';
+		}
+		.toolsGrid:after {
+			width: 0px;
+			height: 0px;
+			border-left: 17px solid transparent;
+			border-right: 0px solid transparent;
+			border-top: 13px solid #ffffff;
+			font-size: 0px;
+			line-height: 0px;
+			top: -54px;
+			left: -17px;
+			position: relative;
+			content: ' ';
+		}
+		.addGrid {
+			background: url(../img/iconos/afil.png);
+			height:20px;
+			margin:0 auto;
+			width:20px;
+		}
+
+		.delGrid {
+			background: url(../img/iconos/cfil.png);
+			height:20px;
+			margin:0 auto;
+			width:20px;
+		}
+
+/* FIN ESTILOS GRID */

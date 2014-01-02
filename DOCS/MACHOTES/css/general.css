@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿@font-face
 {
 font-family: 'ArialBlack';
@@ -706,3 +707,569 @@ line-height: 19px;
 	background-size: 100% 100%;
 }
 /*--- Estilo de Switch ---*/
+=======
+﻿@import url("bloqueo.css");
+@import url("steps.css");
+	
+	@font-face
+	{ font-family: 'ArialBlack'; font-weight: bold; src: url(../fonts/ArialBlack.ttf); }
+	* { font-family: Arial,sans-serif; }
+	
+	body { background-color: #e8e8e8; }
+	
+	h2 {
+		font-family: 'ArialBlack';
+		color: #ff0000;
+		float: left;
+		font-size: 11px;
+		margin: 10px 0 0 20px;
+	}
+		
+		
+	#widampliado {
+		background-color: #E2DFDF;
+		border: 1px solid #BBBBBB ;
+		height: 578px;
+		margin: 10px;
+		overflow: hidden;
+		position: relative;
+		width: 923px;
+	}
+	
+	
+	/*---Fin de Header---*/
+	
+	.btnHeader {
+		height: 20px;
+		cursor: pointer;
+		position: absolute;
+		top: 7px;
+		width: 20px;
+	}
+	
+	#WA_pasos .info { right: 35px; }
+	#WA_pasos .cerrar { right: 10px; }
+	
+	
+	/*---Indicador de Paso Actual---*/
+	#WA_pasos {
+		border-bottom: 0 solid #BBBBBB;
+		float: right;
+		height: 20px;
+		margin: 2px 0 0 0;
+		overflow: hidden;
+		padding: 4px 0;
+		position: relative;
+		text-align: center;
+		width: 755px;
+	}
+	
+	#WA_pasos img { margin-top: -2px; }
+	
+	.steps {
+			;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 3px;
+		width: 261px;
+	}
+	/*---Fin de indicador de Pasos---*/
+	
+	/*---Navegador---*/
+	#WA_nav {
+		background-color: #232323;
+		border-right: 0px solid #BBBBBB;
+		color: #FFFFFF;
+		float: left;
+		font-family: Arial,Helvetica,sans-serif;
+		font-size: 11px;
+		font-weight: bold;
+		height: 578px;
+		width: 168px;
+	}
+	
+	#WA_nav ul { padding: 0px; margin: 0px; }
+	
+	#WA_nav ul li {
+		font-family: Arial;
+		background: url(../img/assets/btn_lateral.png) bottom;
+		cursor: pointer;
+		font-size: 11px;
+		font-weight: bold;
+		height: 50px;
+		list-style: none;
+		padding: 0;
+		text-decoration: none;
+		text-indent: none;
+		width: 168px;
+	}
+	
+	.liActive {
+		background-color: #E4E1E1;
+		background-position: top !important;
+		border-bottom: 1px solid #ff0000 !important;
+		color: black;
+		width: 169px;
+	}
+	
+	
+	
+	#WA_nav > ul > li > p {
+		left: 30px;
+		margin: 0;
+		position: relative;
+		top: 11px;
+		width: 130px;
+	}
+	
+	#WA_nav >ul >li:first-of-type {
+		background: none !important;
+		color: white !important;
+		height: 18px;
+		padding: 10px 0;
+	}
+	
+	#WA_nav >ul >li:first-of-type p {
+		font-size: 15px;
+		font-weight: normal;
+		left: 11px !important;
+		top: 0 !important;
+	}
+	
+	#WA_nav >ul >li:first-of-type img { margin-right: 5px; }
+	
+	
+	
+	/*---Fin Navegador---*/
+	
+	
+	
+	/*Contenido WA_contenedorFlujos*/
+	
+	.titFlujo {
+		background: #FFFFFF;
+		float: left;
+		height: 30px;
+		overflow: hidden;
+		padding: 5px;
+		width: 725px;
+	}
+	
+	.titFlujo > .iconFlujo {
+		float: left;
+		height: 30px;
+		margin-right: 10px;
+		width: 30px;
+	}
+	
+	.titFlujo p { margin: 0; }
+	
+	.titFlujo .titulo { font-size: 12px; font-weight: bold; }
+	
+	.titFlujo .subtitulo { font-size: 10px; }
+	
+	
+	.contenidoFlujo {
+		border: 1px solid red;
+		float: left;
+		overflow: hidden;
+		padding: 5px;
+		width: 725px;
+		/*height  425px*/
+	}
+	
+	
+	
+	#WA_contenedorFlujos { overflow: hidden; height: 475px; padding: 10px; }
+	
+	#WA_contenedorFlujos .paso1_2 {
+		float: left;
+		border: 1px #bcbcbc solid;
+		color: #626262;
+		font-family: Arial;
+		font-size: 11px;
+		font-weight: bold;
+		height: auto;
+		margin: 5px 0 0 10px;
+		width: 730px;
+	}
+	
+	#WA_contenedorFlujos .paso1_2 > div {
+		width: 206px;
+		float: left;
+		line-height: 19px;
+		margin: 10px 0 0 10px;
+	}
+	
+	.contenidoFlujo .col {
+		border: 1px solid red;
+		float: left;
+		height: 425px;
+		margin-left: 10px;
+	}
+	
+	
+	
+	.contenidoFlujo .col1 { width: 233px; }
+	
+	.contenidoFlujo .col2 { width: 477px; }
+	
+	.contenidoFlujo .col2 { width: 477px; }
+	
+	.contenidoFlujo .colFull { width: 723px; margin-left: 0px; }
+	
+	.resetMargen { margin: 0 !important; }
+	
+	
+	
+	.bold { color: #242424; }
+	
+	.link { color: #2c6ef6; }
+	
+	
+	
+	.paso3Divs { float: left; border: 1px solid red; height: 430px; }
+	.paso3Div1 { background: white; margin-right: 10px; width: 470px; }
+	
+	.paso3Div2 { width: 240px; }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	#cont_reducido {
+		width: 478px;
+		float: left;
+		height: 39px;
+		margin: 10px 0 0 10px;
+	}
+	
+	#tarjeta { width: 50px; float: left; height: 40px; }
+	
+	#cont_reducido p {
+		text-align: left;
+		color: #626262;
+		float: left;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 11px;
+		font-weight: bold;
+		line-height: 85%;
+		margin-left: 10px;
+		margin-top: 0px;
+	}
+	
+	#infotbl {
+		width: 498px;
+		border-bottom: 1px #bbbbbb solid;
+		border-collapse: collapse;
+		border-top: 1px #bbbbbb solid;
+		float: left;
+		height: 88px;
+		margin-left: 0px;
+		overflow: hidden;
+	}
+	
+	#infotbl p:nth-child(1) { color: #282828; }
+	
+	#infotbl td {
+		text-align: left;
+		color: #626262;
+		float: left;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 11px;
+		font-size: 11px;
+		font-weight: bold;
+		height: 88px;
+		line-height: 9px;
+		padding-left: 15px;
+		width: 108px;
+	}
+	
+	#infotbl p { line-height: 9px; }
+	
+	#infotbl td:nth-child(2) { border-left: 1px #bbbbbb solid; padding-left: 10px; width: 114px; }
+	
+	#infotbl td:nth-child(3) {
+		border-left: 1px #bbbbbb solid;
+		border-right: 1px #bbbbbb solid;
+		padding-left: 10px;
+		width: 113px;
+	}
+	
+	#infotbl td:nth-child(4) { width: 110px; padding-left: 10px; }
+	
+	#infocredito p:nth-child(3) { color: #282828; }
+	
+	#infocredito { float: left; line-height: 9px; }
+	#infocredito p {
+		font-family: Arial, Helvetica, sans-serif;
+		color: #626262;
+		font-size: 11px;
+		font-weight: bold;
+		margin-left: 15px;
+	}
+	
+	
+	/** INICIO DE BOTONERA **/
+	/** BOTONERA //*/
+	
+	.botonera {
+		bottom: 10px;
+		float: right;
+		position: absolute;
+		right: 8px;
+	}
+	
+	.btn {
+		background-color: #FFFFFF;
+		border: 1px #A6A6A6 solid;
+		border-radius: 5px;
+		box-shadow: 1px 1px 2px #E1E1E1;
+		color: #626262;
+		cursor: pointer;
+		float: left;
+		font-family: 'ArialBlack';
+		font-size: 11px;
+		font-weight: bold;
+		height: 23px;
+		margin-right: 10px;
+		margin-top: 10px;
+		padding-top: 7px;
+		text-align: center;
+		width: 223px;
+	}
+	
+	.btnaceptar {
+		background-color: #FFFFFF;
+		border: 1px #A6A6A6 solid;
+		border-radius: 5px;
+		box-shadow: 1px 1px 2px #E1E1E1;
+		color: #FF0000;
+		cursor: pointer;
+		float: left;
+		font-family: 'ArialBlack';
+		font-size: 11px;
+		font-weight: bold;
+		height: 23px;
+		margin-top: 10px;
+		padding-top: 7px;
+		text-align: center;
+		width: 223px;
+	}
+	.btnaceptar:hover { border: 1px red solid; }
+	
+	.btn:hover { border: 1px red solid; }
+	/** FIN DE BOTONERA //*/
+	
+	
+	.wra_Select { float: right; box-shadow: 1px 1px 2px #E1E1E1; }
+	
+	.dd-select {
+		height: 28px;
+		background-color: #f7f7f7;
+		border-color: #a6a6a6;
+		border-radius: 0;
+		color: #4573ec;
+		font-family: 'ArialBlack';
+		font-size: 10px;
+		padding-top: 0px;
+	}
+	
+	.dd-selected {
+		font-size: 11px;
+		color: #4573ec;
+		font-family: 'ArialBlack';
+		font-size: 10px;
+		text-align: center;
+	}
+	
+	
+	.dd-option {
+		height: 23px;
+		color: #4573ec;
+		font-family: 'ArialBlack';
+		font-size: 10px;
+		padding: 5px 0 0 10px;
+		text-align: center;
+	}
+	
+	.dd-pointer-up {
+		-moz-border-top-colors: none !important;
+		-moz-border-right-colors: none !important;
+		-moz-border-left-colors: none !important;
+		-moz-border-bottom-colors: none !important;
+		border-bottom-color: #626262 !important;
+		border-bottom-style: solid !important;
+		border-bottom-width: 2px !important;
+		border-image: url('') none !important;
+		border-left-color: rgba(0, 0, 0, 0) !important;
+		border-left-style: solid !important;
+		border-left-width: 2px !important;
+		border-right-color: rgba(0, 0, 0, 0) !important;
+		border-right-style: solid !important;
+		border-right-width: 2px !important;
+		border-top-color: rgba(0, 0, 0, 0) !important;
+		border-top-style: solid !important;
+		border-top-width: 2px !important;
+	}
+	
+	.dd-pointer-down {
+		-moz-border-top-colors: none;
+		-moz-border-right-colors: none;
+		-moz-border-left-colors: none;
+		-moz-border-bottom-colors: none;
+		border-left: 2px solid rgba(0, 0, 0, 0);
+		border-bottom: 2px solid rgba(0, 0, 0, 0);
+		border-image: url('') none;
+		border-right: 2px solid rgba(0, 0, 0, 0);
+		border-top: 2px solid #626262;
+	}
+	
+	.dd-option:hover { border-color: #ff0000; color: #ff0000; }
+	
+	/*---Balance Transfer---*/
+	#subtitulo { line-height: 15px; }
+	
+	#subtitulo p {
+		margin: 10px 0 0 15px;
+		color: #626262;
+		font-family: Arial;
+		font-size: 11px;
+		font-weight: bold;
+		width: 233px;
+	}
+	
+	#token { float: left; height: 65px; margin: 10px 0 0 60px; }
+	
+	#input { margin-left: 10px; float: left; }
+	
+	input[type=text]
+	{
+		height: 28px;
+		background-color: #e8e8e8;
+		border: 1px #a6a6a6 solid;
+		box-shadow: inset 1px 1px 5px #c6c6c6;
+		color: #a4a4a4;
+		font-family: 'ArialBlack';
+		font-size: 11px;
+		margin-top: 8px;
+		text-align: center;
+		width: 223px;
+	}
+		
+	.red {
+		width: 5px;
+		background-image: url('../../Creditos Personales/img/dot.png');
+		background-size: 100% 100%;
+		height: 5px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.minired {
+		width: 5px;
+		background: red;
+		border-radius: 5px;
+		display: none;
+		float: left;
+		height: 5px;
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+	
+	/*--- Estilo de Switch ---*/
+	.switchCont {
+		width: 430px !important;
+		float: left !important;
+		height: 40px !important;
+		margin-left: 135px !important;
+		margin-top: 15px !important;
+	}
+	
+	.switchCont p {
+		color: #282828 !important;
+		float: left !important;
+		font-family: Arial, Helvetica, sans-serif !important;
+		font-size: 11px !important;
+		font-weight: bold !important;
+		margin-left: 10px !important;
+		margin-top: 5px !important;
+	}
+	
+	#switchBox {
+			position: relative !important;
+		border: 1px #a6a6a6 solid !important;
+		float: left !important;
+		font-family: Arial, Helvetica, sans-serif !important;
+		font-size: 11px !important;
+		font-weight: bold !important;
+		height: 28px !important;
+		overflow: hidden !important;
+		text-align: center !important;
+		width: 158px !important;
+	}
+	
+	.switchSlide {
+		float: left !important;
+		left: 0px;
+		position: absolute !important;
+		width: 237px !important;
+	}
+	
+	.switchIndicador {
+		width: 78px !important;
+		background-image: url('../img/componentes/switch_bckgnd.png');
+		border: 1px #c9c9c9 solid !important;
+		border-radius: 5px !important;
+		float: left !important;
+		height: 26px !important;
+		/*background-color #767676 !important*/
+	}
+	
+	.switchLabel {
+		width: 78px !important;
+		background-color: #ffffff !important;
+		color: #626262 !important;
+		cursor: pointer !important;
+		float: left !important;
+		height: 21px !important;
+		padding-top: 7px !important;
+	}
+	
+	.switchLabelR {
+		width: 78px !important;
+		background-color: #ffffff !important;
+		color: #626262 !important;
+		cursor: pointer !important;
+		float: left !important;
+		height: 21px !important;
+		padding-top: 7px !important;
+	}
+	
+	.franjaSwitch {
+		width: 10px;
+		background-image: url('../img/componentes/switch_franja.png');
+		background-size: 100% 100%;
+		float: left;
+		height: 20px;
+		margin-left: 35px;
+		margin-top: 3px;
+	}
+	/*--- Estilo de Switch ---*/
+>>>>>>> b12972b5e653235e07ea896183a88480cc1a31d2

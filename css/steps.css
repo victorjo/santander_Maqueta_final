@@ -1,0 +1,46 @@
+.tableStep3 {
+	font-size: 12px;
+	height: 340px;
+	margin-left: 44px;
+	margin-top: 55px;
+	width: 411px;
+}
+
+.step3 .col2 { background: white; overflow: hidden; }
+
+#notificaCorreo {
+	background: #FFFFFF;
+	font-size: 12px;
+	height: 13px;
+	margin-top: 10px !important;
+	padding: 10px;
+	width: 458px;
+}
+
+
+.btnsLateralStep3 {
+	background-color: #F6F6F6;
+	background-position: 5px;
+	background-repeat: no-repeat;
+	border: 1px solid #A6A6A6;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px #999;
+	box-shadow: 1px 1px 2px #E1E1E1;
+	color: #626262;
+	cursor: pointer;
+	float: left;
+	font-family: 'ArialBlack';
+	font-size: 11px;
+	font-weight: bold;
+	height: 23px;
+	margin-right: 10px;
+	margin-top: 7px;
+	padding-left: 40px;
+	padding-top: 7px;
+	width: 190px;
+}
+
+.ico1Step3 { background-image: url(../../../../img/assets/step3/ico1.png); }
+
+.ico2Step3 { background-image: url(../../../../img/assets/step3/ico2.png); }
+.ico3Step3 { background-image: url(../../../../img/assets/step3/ico3.png); }
