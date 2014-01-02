@@ -401,7 +401,7 @@ function construyeSwitch(object){
 
 /* GRID DINAMICO */
 
-function Gridius(object){
+function Gridius(object,data){
 
         $.when($.ajax("componentes/grid.html")).then(function(res){
 
@@ -468,5 +468,5 @@ function Gridius(object){
         parentObj.attr('data-active',true);
         var tools = $('<div class="toolsGrid"><ul><li></li><li></li><li></li></ul></div>');
         $('body').append(tools);
-        tools.css({top:obj.offset().top-36,left:(50+obj.offset().left+obj.width())}).attr('data-relid',parentObj.attr('data-id'));
+        tools.css({top:obj.offset().top-56,left:(50+obj.offset().left+obj.width())}).attr('data-relid',parentObj.attr('data-id'));
       }

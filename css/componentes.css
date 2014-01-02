@@ -396,6 +396,7 @@ h6{
 		}
 		.toolsGrid {
 			position:absolute;
+			z-index:5000;
 		}
 		.toolsGrid>ul {
 			list-style:none;
@@ -414,10 +415,10 @@ h6{
 			height: 0px;
 			border-left: 17px solid transparent;
 			border-right: 0px solid transparent;
-			border-bottom: 13px solid #e0dede;
+			border-bottom: 13px solid #ffffff;
 			font-size: 0px;
 			line-height: 0px;
-			top: 36px;
+			top: 41px;
 			left: -17px;
 			position: relative;
 			content: ' ';
@@ -427,23 +428,23 @@ h6{
 			height: 0px;
 			border-left: 17px solid transparent;
 			border-right: 0px solid transparent;
-			border-top: 13px solid #e0dede;
+			border-top: 13px solid #ffffff;
 			font-size: 0px;
 			line-height: 0px;
-			top: -40px;
+			top: -54px;
 			left: -17px;
 			position: relative;
 			content: ' ';
 		}
 		.addGrid {
-			background: url(afil.png);
+			background: url(../img/iconos/afil.png);
 			height:20px;
 			margin:0 auto;
 			width:20px;
 		}
 
 		.delGrid {
-			background: url(cfil.png);
+			background: url(../img/iconos/cfil.png);
 			height:20px;
 			margin:0 auto;
 			width:20px;
