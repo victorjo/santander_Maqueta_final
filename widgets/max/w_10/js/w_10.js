@@ -33,6 +33,17 @@ $(function(){
         console.log(data);
     	}
 		});
+
+         $(".w10_HPG_wra_Select2 select").ddslick({
+         data: ddData,
+         width: 160,
+         background: "#f7f7f7",
+        imagePosition: "left",
+        selectText: "Seleccionar",
+         onSelected: function (data) {
+        console.log(data);
+        }
+        });
 });
 
 

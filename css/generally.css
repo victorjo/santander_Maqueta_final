@@ -219,6 +219,35 @@ margin:10px 0 0 10px;
 line-height: 19px;
 }
 
+/*--- Estilos propios Css ---*/
+
+.contenidoFlujo .col {
+		
+/*border: 1px solid red;*/
+		float: left;
+		height: 425px;
+		margin-left: 10px;
+	}
+	
+	
+	
+	.contenidoFlujo .col1 { 
+width: 233px; }
+	
+	.contenidoFlujo .col2 { 
+width: 477px; }
+	
+	.contenidoFlujo .col2 { 
+width: 477px; }
+	
+	.contenidoFlujo .colFull { 
+width: 723px; margin-left: 0px; }
+	
+	.resetMargen { 
+margin: 0 !important; }
+
+/*--- Fin EStilos propios Css---*/
+
 .bold{
 	color:#242424;
 }

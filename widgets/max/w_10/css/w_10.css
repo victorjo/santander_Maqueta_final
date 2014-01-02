@@ -1,5 +1,6 @@
 ﻿.contenidoFlujo{
 	border:none !important;
+	width:735px !important;
 }
 .w10_HPG_seleccionTarjeta{
 	width:100%;
@@ -294,7 +295,93 @@
 	bottom: 185px;
 }
 
+.w10_IT_inscribirTarjetas{
+	color: #6b6b6b;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	border-collapse: collapse;
+}
+
+.w10_IT_inscribirTarjetas td{
+	border-top:1px #6b6b6b dashed;
+	height:105px;
+}
+
+.w10_IT_inscribirTarjetas td:nth-of-type(2){
+	width:125px;
+}
+
+.w10_IT_inscribirTarjetas td:nth-of-type(3){
+	width:120px;
+}
+
+.w10_IT_inscribirTarjetas td:nth-of-type(4){
+	width:180px;
+}
+
+.w10_IT_inscribirTarjetas tr{
+	background-color: #efefef;
+}
+
+.w10_IT_inscribirTarjetas tr:hover{
+	background-color: #E2DFDF;
+	cursor:pointer;
+}
+
+.w10_IT_inscribirTarjetas td:first-of-type{
+	width:30px;
+	border-top:none;
+}
+
+.w10_IT_inscribirTarjetas td:nth-of-type(5){
+	width:35px;
+	border-top:none;
+}
 .flujo{
 	display:none;
 }
 
+.w10_IT_wraLeft{
+	width:480px;
+	float:left;
+}
+
+.w10_IT_wraRight{
+	width:230px;
+	height:370px;
+	float:left;
+	margin-left:10px;
+	background-image: url("../img/wra_Right.png");
+	background-size: 100% 100%
+}
+
+.w10_IT_wraLeft>div:first-of-type{
+	width:100%;
+	float:left;
+	height:50px;
+	background-color: #efefef;
+}
+
+.w10_IT_wraLeft>div:first-of-type>img{
+	float:left;
+	margin:10px 0 0 10px;
+}
+
+.w10_IT_wraLeft>div:first-of-type>p{
+	float:left;
+	margin:15px 0 0 10px;
+	color:#272727;
+	font-family: 'ArialBlack';
+	font-size:11px;
+}
+
+.w10_IT_inscribirTarjetas .w10_HPG_wra_Select2{
+	margin-top: -35px;
+	margin-left:20px;
+	width:160px;
+}
+
+.wra_flu2>.btnaceptar {
+float: right;
+width: 160px;
+}
