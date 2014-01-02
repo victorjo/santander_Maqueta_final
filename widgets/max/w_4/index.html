@@ -47,7 +47,7 @@
 				</ul>
 			</div>
 			<div id="WA_contenedorFlujos" style="height: 528px;">
-				<div class="titFlujo">
+				<div class="w4_titFlujo">
 					<div class="iconFlujo">
 						<img src="../../../img/assets/ico_cuentas_propias.png"/>
 					</div>
@@ -141,8 +141,7 @@
 								<p>Si el servicio que desea pagar no se encuentra en su lista de clic <a href="#">Aquí</a></p>
 							</div>
 							<div class="botonera">
-								<div class="btn" >Regresar</div>
-								<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);">Ver Detalle</div>
+								<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);">Continuar</div>
 							</div>
 						</div>
 
@@ -298,16 +297,18 @@
 												
 							</table>
 							<div class="botonera">
-								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);">Regresar</div>
+								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Regresar</div>
 								<div class="btnaceptar" onclick="cambiaPaso(2);">Ver Detalle</div>
 							</div>
 						</div>
 
 						<div class="step step2">
-
+							<div class="col col1 resetMargen">
+								
+							</div>
 							<div class="botonera">
 								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Regresar</div>
-								<div class="btnaceptar" onclick="cambiaPaso(3);$('.titFlujo').hide();">Confirmar</div>
+								<div class="btnaceptar" onclick="cambiaPaso(3);$('.w4_titFlujo').hide();$('.tabla').load('../../../../tablas/w4_tblPaso3.html')">Confirmar</div>
 							</div>
 						</div>
 						
@@ -317,58 +318,10 @@
 										<div class="iconFlujo">
 											<img src="img/assets/ico_cuentas_propias.png"/>
 										</div>
+										<p class="titulo">Comprobante de pago de servicios</p>
 									</div>
 									
-									<table class="tableStep3">
-										<tr>
-											<td>Cuenta destino:</td>
-											<td>1234****56789</td>
-										</tr>
-										<tr>
-											<td>Cuenta cargo:</td>
-											<td>1234****56789</td>
-										</tr>
-										<tr>
-											<td>Importe:</td>
-											<td>999,999,999.00 (MXP)</td>
-										</tr>
-										<tr>
-											<td>Concepto:</td>
-											<td>12345678901234567890</td>
-										</tr>
-										<tr>
-											<td>Fecha y hora de operaci&oacute;n:</td>
-											<td>dd/mm/aaaa 12:00 hrs</td>
-										</tr>
-										<tr>
-											<td>Fecha programada de transferencia:</td>
-											<td>dd/mm/aaaa</td>
-										</tr>
-										<tr>
-											<td>Notificaci&oacute;n de transferencia:</td>
-											<td>3 d&iacute;as</td>
-										</tr>
-										<tr>
-											<td>Comisi&oacute;n de transferencia:</td>
-											<td>0.00(MXP)</td>
-										</tr>
-										<tr>
-											<td>I.V.A por comisi&oacute;n de transferencia:</td>
-											<td>0.00(MXP)</td>
-										</tr>
-										<tr>
-											<td>Correo para notificaci&oacute;n:</td>
-											<td>correo@correo.com</td>
-										</tr>
-										<tr>
-											<td>Celular para notificaci&oacute;n:</td>
-											<td>555555555</td>
-										</tr>
-										<tr>
-											<td>F&oacute;lio SuperNET:</td>
-											<td>1234567890</td>
-										</tr>
-									</table>
+									<div class="tabla"></div>
 									
 								</div>
 								<div class="col col1 ">
@@ -545,7 +498,7 @@
 								
 								<div>
 									<p>Categoría:</p>
-									<div class="wra_Select4">
+									<div class="wra_Select4">ca
 										<select name="" id="" value="1" > 
 						    			</select>
 									</div>	

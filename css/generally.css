@@ -223,7 +223,7 @@ line-height: 19px;
 
 .contenidoFlujo .col {
 		
-/*border: 1px solid red;*/
+		border: 1px solid red;
 		float: left;
 		height: 425px;
 		margin-left: 10px;
