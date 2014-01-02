@@ -851,10 +851,9 @@ function cargaToken(cbTokenCanc,cbTokenAcep,fn){
     $(this).find("#btnTokenCancelar").attr("onclick",cbTokenCanc);
     $(this).find("#btnTokenAceptar").attr("onclick",cbTokenAcep);
     switchModal();
-  });
-
-  
+  });  
 }
+
 
 
 $(function(){
