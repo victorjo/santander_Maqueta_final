@@ -353,3 +353,100 @@ h6{
 	background-size: 100% 100%;
 }
 /*---Fin Estilo Final para switch ---*/
+
+
+/* ESTILOS GRID*/
+
+.wrapGrid {
+			background:#e0dede;
+			height:295px;
+			width:720px;
+			overflow-y: scroll;
+			overflow-x: hidden;
+		}
+		.wrapGrid>table {
+			border-spacing: 0px 10px;
+			border-collapse: separate;
+			font-size:12px;
+			text-align:center;
+			width:100%;
+		}
+
+		.wrapGrid>table>tbody>tr {
+			cursor:pointer;
+			height:17px;
+		}
+
+		.wrapGrid>table>tbody>tr>td:hover {
+			background-color:#cccccc;
+		} 
+
+		.wrapGrid>table>tbody>tr td {
+			text-align:center;
+		} 
+		.wrapGrid>table>tbody>tr:not(:first-child) {
+			background-color:#ffffff;
+			height:30px;
+		}
+		.editGrid {
+			display:none;
+		}
+		.delGrid {
+			display:none;
+		}
+		.toolsGrid {
+			position:absolute;
+		}
+		.toolsGrid>ul {
+			list-style:none;
+			margin:0px;
+			padding:0px;
+		}
+		.toolsGrid>ul>li {
+			background:#ffffff;
+			border:1px solid #ffffff;
+			height:30px;
+			margin:0px 0px 2px 0px;
+			width:30px;
+		}
+		.toolsGrid:before {
+			width: 0px;
+			height: 0px;
+			border-left: 17px solid transparent;
+			border-right: 0px solid transparent;
+			border-bottom: 13px solid #e0dede;
+			font-size: 0px;
+			line-height: 0px;
+			top: 36px;
+			left: -17px;
+			position: relative;
+			content: ' ';
+		}
+		.toolsGrid:after {
+			width: 0px;
+			height: 0px;
+			border-left: 17px solid transparent;
+			border-right: 0px solid transparent;
+			border-top: 13px solid #e0dede;
+			font-size: 0px;
+			line-height: 0px;
+			top: -40px;
+			left: -17px;
+			position: relative;
+			content: ' ';
+		}
+		.addGrid {
+			background: url(afil.png);
+			height:20px;
+			margin:0 auto;
+			width:20px;
+		}
+
+		.delGrid {
+			background: url(cfil.png);
+			height:20px;
+			margin:0 auto;
+			width:20px;
+		}
+
+/* FIN ESTILOS GRID */
