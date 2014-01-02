@@ -605,20 +605,7 @@ line-height: 19px;
 	float:left;
 }
 
-input[type=text]
-{
-	height:28px;
-	font-family:'ArialBlack';
-	color: #a4a4a4;
-	font-size:11px;
-	text-align:center;
-	margin-top:8px;
-	background-color:#e8e8e8;
-	box-shadow:inset 1px 1px 5px #c6c6c6;
-	border:1px #a6a6a6 solid;
-	width:223px;
-	}
-	
+
 .red{ 
 	width:5px; 
     height:5px; 
