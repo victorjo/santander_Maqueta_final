@@ -1,4 +1,4 @@
-(function(document, window, require) {
+(function(document, window, require) {    
 
 	requirejs.config({
 		paths:{

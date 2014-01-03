@@ -8,7 +8,6 @@
 	  <script src="../js/components.js"></script>
 	  <script src="../js/ddSlick.js"></script>
 	  <link rel="stylesheet" href="widgets/max/w_16/css/w_16.css" />
-	  <link rel="stylesheet" href="../css/generally.css" />
 	</head>
 	<body>
 		<div id="widampliado">
@@ -48,7 +47,7 @@
 			<div id="WA_contenedorFlujos">
 				<div class="contenidoFlujo">
 					<div class="wra_flu1 flujo">
-						<div class="step step1">
+						<div class="step step0">
 							<div class="titFlujo">
 								<div class="iconFlujo">
 									<img src="widgets/max/w_16/img/tarjeta.png" />
@@ -119,11 +118,11 @@
 								</table>
 							</div>
 							<div class="botonera">
-								<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(2);">Agregar Tarjeta</div>
+								<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(1);">Agregar Tarjeta</div>
 							</div>
 						</div>
 
-						<div class="step step2">
+						<div class="step step1">
 							<div class="titFlujo">
 								<div class="iconFlujo">
 									<img src="widgets/max/w_16/img/tarjeta.png" />
@@ -136,40 +135,68 @@
 								<p>Ingrese los datos para dar de alta la(s) tarjetas:</p>
 								<div>
 									<p>Número de tarjeta</p>
-									<input class="w16_ABTT_input" type="text"/>
+									<input class="w16_ABTT_input" type="text" value="1234****5678"/>
 								</div>
 								<div>
 									<p>Banco</p>
-									<input class="w16_ABTT_input" type="text"/>
+									<input class="w16_ABTT_input" type="text" value="Nombre del banco"/>
 									<div class="info"></div>					
 								</div>
 								<div>
 									<p>Alias</p>
-									<input class="w16_ABTT_input" type="text"/>
+									<input class="w16_ABTT_input" type="text" value="Nombre alias"/>
 									<div class="info"></div>					
 								</div>
 								<div>
 									<p>Nombre del titular</p>
-									<input class="w16_ABTT_input" type="text"/>
+									<input class="w16_ABTT_input" type="text" value="Nombre"/>
 									<div class="info"></div>					
 								</div>
 								<div>
 									<p>Correo electrónico del titular:</p>
-									<input class="w16_ABTT_input" type="text"/>
+									<input class="w16_ABTT_input" type="text" value="correo@correo.com" />
 									<div class="info"></div>					
 								</div>
 								<div>
 									<p>RFC del titular de la tarjeta:</p>
-									<input class="w16_ABTT_input" type="text"/>
+									<input class="w16_ABTT_input" type="text" value="ROMA000000ME0"/>
 									<div class="info"></div>					
 								</div>	
 							</div>
 
 
 							<div class="botonera">
-								<div class="btnaceptar" onclick="cambiaPaso(2);">Continuar</div>
+								<div class="btnaceptar" onclick="cambiaPaso(2); cargaHtml('.w16_ABTT_tablaPaso2','../../../../tablas/w16/w16_ABTT_tblPaso2.html');">Continuar</div>
 							</div>
-						</div>						
+							<!--<div class="step step3">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="widgets/max/w_16/img/tarjeta.png" />
+									</div>
+									<p class="titulo">Alta/Baja de tarjetas de terceros</p>
+									<p class="subtitulo">En esta sección usted podrá consultar o dar de baja las tarjetas registradas</p>
+								</div>
+								<div class="w16_ABTT_tablaPaso2">
+									
+								</div>
+							</div>-->
+						</div>
+						<div class="step step2">
+							<div class="col colFull">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_cuentas_propias.png"/>
+									</div>
+									<p class="titulo">Datos de pago de servicios</p>
+									<p class="subtitulo">11</p>
+								</div>
+								<div class="w16_ABTT_tablaPaso2"></div>
+							</div>
+							<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Regresar</div>
+								<div class="btnaceptar" onclick="cambiaPaso(3);$('.tabla3').load('../../../../tablas/w4_tblPaso3.html')">Confirmar</div>
+							</div>
+						</div>							
 					</div><!--Fin Historial de puntos ganados-->
 
 					<div class="flujo wra_flu2">
