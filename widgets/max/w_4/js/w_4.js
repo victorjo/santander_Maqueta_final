@@ -142,13 +142,6 @@ $(document).ready(function(){
             //alert($(this).parent().next().attr('class'));
     });
 
-    
-
-
-
-
-
-
      //inicializacion posicion 1
      $('.1').addClass('seleccionador');
       $('#1').click(function(){
@@ -209,7 +202,9 @@ function slider(){//Pendiente
 
 }
 
-
+function cargaHtml(componente,url){
+    $(componente).load(url);
+}
 //funcion para cambiar texto.
 /*function remplazaTxt(txt1,txt2){
 	$('.titulo').html(txt1);

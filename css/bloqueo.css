@@ -12,7 +12,7 @@
 	left: 25%;
 	overflow: hidden;
 	padding: 10px;
-	width: 350px;
+	width: auto;
 }
 #elementBloqueo .btnaceptar { width: 155px; }
 #elementBloqueo .btnaceptar:last-child { margin-left: 15px; }
@@ -35,3 +35,33 @@
 #tokenInput input[type="text"] { background: white; border: 1px solid #ccc; height: 25px; }
 /* FIN BLOQUEO DE TOKEN*/
 
+.bold{
+	font-weight: bold;
+}
+
+/*BLOQUEO DE CORREO Y TELEFONO*/
+.imgEditar{
+	background-image: url('../img/assets/correo.png');
+	background-size: 100% 100%;
+	width: 395px;
+	height: 65px;
+}
+
+.datosCorreo{
+	font-size: 11px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 68px;
+}
+
+.datosEdicion{
+	background-color: blue;
+	float:left;
+	width: 375px;
+	height: 130px;
+}
+
+
+
+
+/*FIN BLOQUEO DE CORREO Y TELEFONO*/

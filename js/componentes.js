@@ -357,6 +357,47 @@ function cambiaPaso(paso){
       }
 /*Fin de Funcion realizada por victor: Cambio de pasos*/
 
+/*--- Token Victor---*/
+
+/*function cargaToken(cbTokenCanc,cbTokenAcep,fn){
+  if(typeof fn !="undefined" || fn != null || fn != undefined) fn();
+  $("#elementBloqueo").load("../modales/token.html",function(){
+    $(this).find("#btnTokenCancelar").attr("onclick",cbTokenCanc);
+    $(this).find("#btnTokenAceptar").attr("onclick",cbTokenAcep);
+    switchModal();
+  });  
+}*/
+
+//Pendiente para aprobacion
+function cargaToken(cbTokenCanc,cbTokenAcep,fn,modal){
+  var mod = modal || 'token';
+  if(typeof fn !="undefined" || fn != null || fn != undefined) fn();
+  $("#elementBloqueo").load("../modales/"+mod+".html",function(){
+    $(this).find("#btnTokenCancelar").attr("onclick",cbTokenCanc);
+    $(this).find("#btnTokenAceptar").attr("onclick",cbTokenAcep);
+    switchModal();
+  });  
+}
+
+
+/*--- Fin Token Victor ---*/
+
+function centraModal(){
+  w = $("#widampliado")
+  t = $("#elementBloqueo")
+  wh = w.height();
+  th = t.height();
+  tth = wh - th;
+  ww = w.width();
+  tw = t.width();
+  ttw = ww - tw;
+  $("#elementBloqueo").css({"top":(tth/3.5)+"px",left:(ttw/2)+"px"});
+}
+
+function switchModal(){
+  centraModal();
+  $(".bloqueoElement").fadeToggle("slow;");
+}
 /*--- Funcion para construir el Switch
 
 NOTA: Como parametro solo se recibira el id del div.
