@@ -6,7 +6,25 @@
 	width: 411px;
 }
 
+.tableStepBold{
+	font-weight: bold;
+}
+
+/*--- Estilo para paso 2 - columna ---*/
+.tableStep2{
+	font-size: 12px;
+	height: 340px;
+	width: 411px;
+}
+
+.tableStep2_2{
+	font-size: 12px;
+	width: 411px;
+}
+/*--- Fin Estilo para paso 2 - columna ---*/
+
 .step3 .col2 { background: white; overflow: hidden; }
+.step2 .colFull{ background: white; overflow: hidden; }
 
 #notificaCorreo {
 	background: #FFFFFF;

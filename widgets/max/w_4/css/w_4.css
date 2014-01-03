@@ -713,3 +713,43 @@
 	float: left;
 	margin-left: -15px;
 }
+
+.w4_PS_tabla2{
+	float: left;
+	height: 385px;
+	width: 380px;
+	margin-left: 181px;
+	margin-top: 15px;
+}
+
+.w4_PS_tabla2 tr :nth-child(even){
+	font-weight: bold;
+}
+
+.w4_AS_tabla{
+	margin-top: 10px;
+	margin-left: 40px;
+	float: left;
+	width: 500px;
+	height: 135px;
+}
+
+.w4_AS_paso2Img{
+	width: 91px;
+	height: 91px;
+	border: 1px solid #A4A4A4;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	background-size: 100% 100%;
+	background-image: url('../img/servicios/Servicio_1.png');
+}
+
+.w4_AS_paso2{
+	float: left;
+	width: 376px;
+	height: 115px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+

@@ -157,9 +157,8 @@ h2{
     float: left;
     height: 30px;
     overflow: hidden;
-    margin-left: 5px;
     padding: 5px;
-    width: 725px;
+    width: 713px;
 }
 
 .titFlujo > .iconFlujo{
@@ -222,10 +221,8 @@ line-height: 19px;
 /*--- Estilos propios Css ---*/
 
 .contenidoFlujo .col {
-		
-		border: 1px solid red;
 		float: left;
-		height: 425px;
+		height: 460px;
 		margin-left: 10px;
 	}
 	
@@ -245,6 +242,7 @@ width: 723px; margin-left: 0px; }
 	
 	.resetMargen { 
 margin: 0 !important; }
+
 
 /*--- Fin EStilos propios Css---*/
 
