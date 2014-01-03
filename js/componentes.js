@@ -400,14 +400,22 @@ function construyeSwitch(object){
 
 
 /* GRID DINAMICO */
+/*
 
+  BODY OF JSON DATA
+  {colums:[1,2,3,4,5],rowsValues:[1,2,3,4,5],numRows:30}
+
+*/
 function Gridius(object,data){
-
         $.when($.ajax("componentes/grid.html")).then(function(res){
 
         object.html(res);
 
-        var element = '<td>Lorem Ipsum<input data-edit="false" class="editGrid" type="text"></td>';
+        var element;
+
+        if(typeof data == "undefined"){
+
+          element = '<td>Lorem Ipsum<input data-edit="false" class="editGrid" type="text"></td>';
           element += '<td>Lorem Ipsum<input data-edit="false" class="editGrid" type="text"></td>';
           element += '<td>Lorem<input data-edit="false" class="editGrid" type="text"></td>';
           element += '<td>1234<input data-edit="false" class="editGrid" type="text"></td>';
@@ -417,6 +425,27 @@ function Gridius(object,data){
           element += '<td>Exitosa<input data-edit="false" class="editGrid" type="text"></td>';
           element += '<td><div class="addGrid"></div><div class="delGrid"></div></td>';
 
+        }else{
+          var thead;
+          $.each(data.colums,function(i,v){
+            thead += "<th>"+ v +"</th>"; 
+          });
+
+          var totalElem = data.numRows || 10;
+
+          for(i=0;i<=totalElem;i++){
+            element += "<tr data-id='"+ i +"'>";
+            for(u=0;u<data.rowsValues.length;u++){
+              element += "<td>"+ data.rowsValues[u] +"</td>";
+            }
+            element += "<td><div class='addGrid'></div><div class='delGrid'></div></td></tr>";
+          }
+
+          $(".wrapGrid > table").html("<tr>"+thead+"</tr>");
+          $(".wrapGrid > table").append(element);
+
+        }
+          
         $(".gridAdd").click(function(){
           var obj = $('<tr data-id="'+ ($(".wrapGrid").find("tr").size()) +'"></tr>');
           $(".wrapGrid > table").append(obj);
