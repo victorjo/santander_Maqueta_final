@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	  <title>Administración Tarjeta de Crédito</title>
+	  <script src="../js/jquery10.2.min.js"></script>
+	  <script src="widgets/max/w_16/js/w_16.js"></script>
+	  <script src="../js/components.js"></script>
+	  <script src="../js/ddSlick.js"></script>
+	  <link rel="stylesheet" href="widgets/max/w_16/css/w_16.css" />
+	  <link rel="stylesheet" href="../css/generally.css" />
+	</head>
+	<body>
+		<div id="widampliado">
+			<div id="WA_pasos">
+				<img src="../img/assets/pasos.png"/>
+				<div class="btnHeader info">
+					<img src="../img/assets/ico_info.png"  />
+				</div>
+				<div class="btnHeader cerrar">
+					<img src="../img/assets/ico_cerrar_widget.png"  />
+				</div>
+			</div>
+			
+			<div id="WA_nav">
+				<ul>
+					<li class="menu">
+						<p>
+						<img src="../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
+					</li>
+					<li onclick="cambiaFlujo('.wra_flu1')">
+						<p>Alta/baja de<br/>Tarjetas de Terceros</p>
+					</li>
+					<li onclick="cambiaFlujo('.wra_flu2')">
+						<p>Inscribir tarjetas</p>
+					</li>
+					<li onclick="cambiaFlujo('.wra_flu3')">
+						<p>Inscribir tarjetas</p>
+					</li>
+					<li onclick="cambiaFlujo('.wra_flu4')">
+						<p>Inscribir tarjetas</p>
+					</li>
+					<li onclick="cambiaFlujo('.wra_flu5')">
+						<p>Inscribir tarjetas</p>
+					</li>
+				</ul>
+			</div>
+			<div id="WA_contenedorFlujos">
+				<div class="contenidoFlujo">
+					<div class="wra_flu1 flujo">
+						<div class="step step1">
+							<div class="titFlujo">
+								<div class="iconFlujo">
+									<img src="widgets/max/w_16/img/tarjeta.png" />
+								</div>
+								<p class="titulo">Alta/Baja de tarjetas de terceros</p>
+								<p class="subtitulo">En esta sección usted podrá registrar las tarjetas de terceros (Santander u otros bancos).</p>
+							</div>
+							<table class="w16_PS_headerTabla">
+								<tr>
+									<td>Número de tarjeta</td>
+									<td>Banco</td>
+									<td>Titular de la tarjeta</td>
+									<td>Alias</td>
+									<td>Correo del titular</td>
+									<td>Dar de baja</td>
+								</tr>
+							</table>
+							<div  class="w16_PS_listadoTarjeta">
+								<table class="w16_PS_cardList">
+									<tr>
+										<td>1234****5678</td>
+										<td>Nombre Banco</td>
+										<td>Nombre titular</td>
+										<td>Alias de cuenta</td>
+										<td>Correo@correo.com</td>
+										<td><div style="width:10px;height:10px;background-color:red;border-radius:5px;margin-left:5px;color:white;font-weight:bold;text-align:center">x</div></td>
+									</tr>
+									<tr>
+										<td>1234****5678</td>
+										<td>Nombre Banco</td>
+										<td>Nombre titular</td>
+										<td>Alias de cuenta</td>
+										<td>Correo@correo.com</td>
+										<td><div style="width:10px;height:10px;background-color:red;border-radius:5px;margin-left:5px;color:white;font-weight:bold;text-align:center">x</div></td>
+									</tr>
+									<tr>
+										<td>1234****5678</td>
+										<td>Nombre Banco</td>
+										<td>Nombre titular</td>
+										<td>Alias de cuenta</td>
+										<td>Correo@correo.com</td>
+										<td><div style="width:10px;height:10px;background-color:red;border-radius:5px;margin-left:5px;color:white;font-weight:bold;text-align:center">x</div></td>
+									</tr>
+									<tr>
+										<td>1234****5678</td>
+										<td>Nombre Banco</td>
+										<td>Nombre titular</td>
+										<td>Alias de cuenta</td>
+										<td>Correo@correo.com</td>
+										<td><div style="width:10px;height:10px;background-color:red;border-radius:5px;margin-left:5px;color:white;font-weight:bold;text-align:center">x</div></td>
+									</tr>
+									<tr>
+										<td>1234****5678</td>
+										<td>Nombre Banco</td>
+										<td>Nombre titular</td>
+										<td>Alias de cuenta</td>
+										<td>Correo@correo.com</td>
+										<td><div style="width:10px;height:10px;background-color:red;border-radius:5px;margin-left:5px;color:white;font-weight:bold;text-align:center">x</div></td>
+									</tr>
+									<tr>
+										<td>1234****5678</td>
+										<td>Nombre Banco</td>
+										<td>Nombre titular</td>
+										<td>Alias de cuenta</td>
+										<td>Correo@correo.com</td>
+										<td><div style="width:10px;height:10px;background-color:red;border-radius:5px;margin-left:5px;color:white;font-weight:bold;text-align:center">x</div></td>
+									</tr>
+								</table>
+							</div>
+							<div class="botonera">
+								<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(2);">Agregar Tarjeta</div>
+							</div>
+						</div>
+
+						<div class="step step2">
+							<div class="titFlujo">
+								<div class="iconFlujo">
+									<img src="widgets/max/w_16/img/tarjeta.png" />
+								</div>
+								<p class="titulo">Alta/Baja de tarjetas de terceros</p>
+								<p class="subtitulo">En esta sección usted podrá consultar o dar de baja las tarjetas registradas</p>
+							</div>
+
+							<div class="w16_ABTT_wraFormulario">
+								<p>Ingrese los datos para dar de alta la(s) tarjetas:</p>
+								<div>
+									<p>Número de tarjeta</p>
+									<input class="w16_ABTT_input" type="text"/>
+								</div>
+								<div>
+									<p>Banco</p>
+									<input class="w16_ABTT_input" type="text"/>
+									<div class="info"></div>					
+								</div>
+								<div>
+									<p>Alias</p>
+									<input class="w16_ABTT_input" type="text"/>
+									<div class="info"></div>					
+								</div>
+								<div>
+									<p>Nombre del titular</p>
+									<input class="w16_ABTT_input" type="text"/>
+									<div class="info"></div>					
+								</div>
+								<div>
+									<p>Correo electrónico del titular:</p>
+									<input class="w16_ABTT_input" type="text"/>
+									<div class="info"></div>					
+								</div>
+								<div>
+									<p>RFC del titular de la tarjeta:</p>
+									<input class="w16_ABTT_input" type="text"/>
+									<div class="info"></div>					
+								</div>	
+							</div>
+
+
+							<div class="botonera">
+								<div class="btnaceptar" onclick="cambiaPaso(2);">Continuar</div>
+							</div>
+						</div>						
+					</div><!--Fin Historial de puntos ganados-->
+
+					<div class="flujo wra_flu2">
+						<div class="step step1"><!--paso 1-->
+							<div class="w10_IT_wraLeft">
+								<div>
+									<img src="widgets/max/w_10/img/titulo_recompensas.png" />
+									<p>Mis tarjetas seleccionadas:<p>
+								</div>
+								<table class="w10_IT_inscribirTarjetas">
+									<tr>
+										<td></td>
+										<td>
+											<img src="widgets/max/w_10/img/card_1.png"/>
+										</td>
+										<td>
+											<p><strong>Producto Santander</strong></p>
+											<p>1234****5678</p>
+											<p>Alias</p>
+										</td>
+										<td>
+											<div class="w10_HPG_wra_Select2">
+												<select name="" id="" value="Recompensas Santander" ></select>
+											</div>
+										</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>
+											<img src="widgets/max/w_10/img/card_2.png"/>
+										</td>
+										<td>
+											<p><strong>Producto Santander</strong></p>
+											<p>1234****5678</p>
+											<p>Alias</p>
+										</td>
+										<td>
+											<div class="w10_HPG_wra_Select2">
+												<select name="" id="" value="1" ></select>
+											</div>
+										</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>
+											<img src="widgets/max/w_10/img/card_3.png"/>
+										</td>
+										<td>
+											<p><strong>Producto Santander</strong></p>
+											<p>1234****5678</p>
+											<p>Alias</p>
+										</td>
+										<td>
+											<div class="w10_HPG_wra_Select2">
+												<select name="" id="" value="1" ></select>
+											</div>
+										</td>
+										<td></td>
+									</tr>
+								</table>
+							</div>
+							<div class="w10_IT_wraRight">
+								
+							</div>	
+						</div><!--Fin paso 1-->
+						<div class="step step2">
+							afsdfasdf
+						</div>
+					</div>
+				</div>
+				
+				
+
+				
+				
+			</div>
+			<div class="w10_HPG_ayuda wra_flu1 flujo">
+				<p>El costo mensual del<br/>
+					programa de recompensas<br/>
+					varia de acuerdo al<br/>
+					producto a suscribir</p>
+				<img src="../img/mrsmackdown.png"/>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>
