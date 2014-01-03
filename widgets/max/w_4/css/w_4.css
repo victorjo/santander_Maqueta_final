@@ -713,3 +713,15 @@
 	float: left;
 	margin-left: -15px;
 }
+
+.w4_PS_tabla2{
+	float: left;
+	height: 385px;
+	width: 380px;
+	margin-left: 181px;
+	margin-top: 15px;
+}
+
+.w4_PS_tabla2 tr :nth-child(even){
+	font-weight: bold;
+}

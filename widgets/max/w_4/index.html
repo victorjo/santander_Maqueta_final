@@ -47,18 +47,18 @@
 				</ul>
 			</div>
 			<div id="WA_contenedorFlujos" style="height: 528px;">
-				<div class="w4_titFlujo">
-					<div class="iconFlujo">
-						<img src="../../../img/assets/ico_cuentas_propias.png"/>
-					</div>
-					<p class="titulo"></p>
-					<p class="subtitulo"></p>
-				</div>
 				<div class="contenidoFlujo" style="height: 488px;">
 
 					<div class="flujo wra_flu1">
 
 						<div class="step step0">
+							<div class="w4_titFlujo">
+								<div class="iconFlujo">
+									<img src="../../../img/assets/ico_cuentas_propias.png"/>
+								</div>
+								<p class="titulo"></p>
+								<p class="subtitulo"></p>
+							</div>
 							<table class="w4_PS_consulta">
 								<tr>
 									<td>Nombre del Servicio</td>
@@ -298,17 +298,24 @@
 							</table>
 							<div class="botonera">
 								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Regresar</div>
-								<div class="btnaceptar" onclick="cambiaPaso(2);">Ver Detalle</div>
+								<div class="btnaceptar" onclick="cambiaPaso(2); $('.w4_PS_tabla2').load('../../../../tablas/w4_tblPaso2.html')">Ver Detalle</div>
 							</div>
 						</div>
 
 						<div class="step step2">
-							<div class="col col1 resetMargen">
-								
+							<div class="col colFull">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_cuentas_propias.png"/>
+									</div>
+									<p class="titulo">Datos de pago de servicios</p>
+									<p class="subtitulo">11</p>
+								</div>
+								<div class="w4_PS_tabla2"></div>
 							</div>
 							<div class="botonera">
 								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Regresar</div>
-								<div class="btnaceptar" onclick="cambiaPaso(3);$('.w4_titFlujo').hide();$('.tabla').load('../../../../tablas/w4_tblPaso3.html')">Confirmar</div>
+								<div class="btnaceptar" onclick="cambiaPaso(3);$('.tabla3').load('../../../../tablas/w4_tblPaso3.html')">Confirmar</div>
 							</div>
 						</div>
 						
@@ -321,7 +328,7 @@
 										<p class="titulo">Comprobante de pago de servicios</p>
 									</div>
 									
-									<div class="tabla"></div>
+									<div class="tabla3"></div>
 									
 								</div>
 								<div class="col col1 ">
