@@ -167,6 +167,10 @@ $(document).ready(function(){
      $('.w4_AS_buscar').click(function(){
         $('.w4_AS_busqueda').slideToggle();
      });
+
+     $('.link').click(function(){
+        alert('....');
+     });
 });
 
 function slider(){//Pendiente

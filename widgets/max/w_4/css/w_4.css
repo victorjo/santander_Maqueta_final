@@ -27,6 +27,9 @@
 	color:#272727;
 }
 
+.txtRed{
+	color:#ff0000;
+}
 /*---- Estilos flujo 1 ----*/
 .w4_PS_consulta{
 	width:725px;
@@ -719,14 +722,6 @@
 	margin-left: -15px;
 }
 
-.w4_PS_tabla2{
-	float: left;
-	height: 385px;
-	width: 380px;
-	margin-left: 181px;
-	margin-top: 15px;
-}
-
 .w4_PS_tabla2 tr :nth-child(even){
 	font-weight: bold;
 }
@@ -756,5 +751,9 @@
 	height: 115px;
 	margin-top: 10px;
 	margin-left: 10px;
+}
+
+.w4_PS_tabla2 table{
+	width: 416px;
 }
 
