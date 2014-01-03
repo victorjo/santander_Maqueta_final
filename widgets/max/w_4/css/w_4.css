@@ -1,9 +1,14 @@
-﻿/*--- Ocultamiento de steps ---*/
+﻿@import url("../../../../css/bloqueo.css");
+@import url("../../../../css/steps.css");
+@import url("../../../../css/generally.css");
+@import url("../../../../css/componentes.css");
+
+
+/*--- Ocultamiento de steps ---*/
 
 .wra_flu1 > .step1{
 	display:none;
 }
-
 
 .wra_flu1 > .step3{
 	display:none;

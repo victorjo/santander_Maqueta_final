@@ -8,14 +8,16 @@
 		<script src="../../../js/ui/jquery-ui-1.10.3.custom.min.js"></script>
 		<script src="../../../js/componentes.js"></script>
 		<script src="../../../js/ddSlick.js"></script>
-		<link rel="stylesheet" href="../../../css/generally.css" />
-		<link rel="stylesheet" href="../../../css/componentes.css" />
-		<link rel="stylesheet" href="../../../css/steps.css" />
 		<script src="widgets/max/w_4/js/w_4.js"></script>
 		<link rel="stylesheet" href="widgets/max/w_4/css/w_4.css" />
 	</head>
 	<body>
 		<div id="widampliado">
+			<!-- Bloqueo -->
+			<div id="bloqueoWidget" class="bloqueoElement"></div>
+			<div id="elementBloqueo" class="bloqueoElement">
+				
+			</div>
 			<div id="WA_pasos">
 				<img src="../../../img/assets/pasos.png"/>
 				<div class="btnHeader info">
@@ -141,7 +143,7 @@
 								<p>Si el servicio que desea pagar no se encuentra en su lista de clic <a href="#">Aquí</a></p>
 							</div>
 							<div class="botonera">
-								<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);">Continuar</div>
+								<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(1); ">Continuar</div>
 							</div>
 						</div>
 
@@ -314,8 +316,8 @@
 								<div class="w4_PS_tabla2"></div>
 							</div>
 							<div class="botonera">
-								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Regresar</div>
-								<div class="btnaceptar" onclick="cambiaPaso(3);$('.tabla3').load('../../../../tablas/w4_tblPaso3.html')">Confirmar</div>
+								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);">Regresar</div>
+								<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w4_tblPaso3.html'),'correo');">Confirmar</div>
 							</div>
 						</div>
 						
@@ -602,7 +604,7 @@
 							</div>
 							<div class="botonera">
 								<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(1);">Regresar</div>
-								<div class="btnaceptar" onclick="cambiaPaso(3);$('.tabla3').load('../../../../tablas/w4_tblPaso3.html')">Confirmar</div>
+								<div class="btnaceptar" onclick="cargaToken('switchModal()','alert(\'acepto\')',alert('funcion'));">Confirmar</div>
 							</div>
 						</div>
 						<div class="step step3">	
