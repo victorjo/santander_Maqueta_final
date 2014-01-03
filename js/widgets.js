@@ -198,13 +198,18 @@ var widgets = [
 				},{
 					id:16,
 					type:2,
-					order:13,
+					order:14,
 					group:2,
 					contentMin:'<h1 class="btnaceptar_wr">TRANSFERENCIAS_I</h1>',
 					contentMax:''
+				},{
+					id:17,
+					type:2,
+					order:15,
+					group:2,
+					contentMin:'<h1 class="btnaceptar_wr">TARJETA DE CREDITO</h1>',
+					contentMax:''
 				}
-
-
 			];
 
 function groupBy(groupBy){
