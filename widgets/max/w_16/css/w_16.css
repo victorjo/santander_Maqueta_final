@@ -378,26 +378,26 @@ width: 160px;
 }
 
 .w16_ABTT_input{
-	background-color: #E8E8E8;
-	border: 1px solid #A4A4A4;
+	background-color: #FCFCFC;
+	border: 1px solid #C8C8C8;
 	box-shadow: 1px 1px 5px #C6C6C6 inset;
-	color: #A4A4A4;
+	color: #C8C8C8;
 	font-family: Arial,Helvetica,sans-serif;
 	font-size: 11px;
 	font-weight: bold;
+	font-style: italic;
 	height: 21px;
-	margin-top: 8px;
+	margin: 8px 0 0 5px;
 	text-align: center;
 	width: 218px;
 	float:left;
-	margin-left:5px;
-	padding-left: 10px;
-	padding-top:6px;
+	padding:6px 0 0 10px;
+	border-radius: 5px;
 }
 
 .w16_ABTT_wraFormulario>p {
 	width: 100%;
-	margin: 5px 0 10px 10px;
+	margin:5px 0 10px 10px;
 	font-weight: normal !important;
 }
 
