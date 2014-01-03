@@ -1,0 +1,280 @@
+@import url('../../../../css/widgets.css');
+@import url('../../../../css/componentes.css');
+
+.smallTxt{
+	font-size: 10px;
+	line-height: 13px;
+	width: 374px;
+	text-align: justify;
+}
+
+.smallTxtMod{
+	font-size: 10px;
+	line-height: 13px;
+	width: 520px;
+	text-align: justify;
+	float: left;
+	margin-top: 20px;
+	margin-left: 42px;
+}
+
+.textoPrincipal{
+	/*Texto rojo pendiente*/
+}
+/*Modal bloqueo*/
+#contenido2, #contraTel, #formTerminos , #calendario, #datosTelCorreo{
+	display: none;
+
+}
+#datosTelCorreo{
+	background: red;
+
+}
+
+.cuadroMensaje {
+			width:18px;
+			height:18px;
+			background-color:white;
+			float:left;
+			border:2px solid red;
+			margin-top:50px;
+
+		}
+
+		.textoMensaje {
+		font-size:10px;
+		margin-top:45px;
+		margin-left:8px;
+		float:left;
+		font-family:Arial, Helvetica, sans-serif;
+	}
+
+
+	/*#contenido2{
+>>>>>>> 9d79245f87b0cdab5c0794a93b3a93eed6b61e24
+			display: none;
+		}*/
+		
+		#img{
+			width: 180px;
+			height: 243px;
+			background:url("../../../../img/iconos/nip.png");
+			margin: 0 auto;
+			margin-left: 35%;
+		}
+		/*#text{
+			width: 30%;
+			margin: 0 auto;
+			text-align: center;
+			padding-bottom: 20px;
+			margin-top: 20px;
+			color: #fff;
+			font-weight: bold;
+		}*/
+		#text{
+			width: 30%;
+			margin-left: 28%;
+			/*margin: 0 auto;*/
+			text-align: center;
+			padding-bottom: 20px;
+			margin-top: 70px;
+			color: #fff;
+			font-weight: bold;
+		}
+		.text2{
+			width: 63%;
+			margin-left: 14%;
+			/*margin: 0 auto;*/
+			text-align: center;
+			padding-bottom: 20px;
+			margin-top: 70px;
+			color: #000;
+			font-weight: bold;
+		}
+		.textNorm{;
+			color: #000;
+			font-weight: bold;
+			float: left;
+			margin-top: 71px;
+			margin-left: 21px;
+		}
+		.txtform{
+			color: #000;
+			font-weight: bold;
+			float: left;
+			padding-left: 26px;
+			padding-top: 42px;
+			
+		}
+		.txtform1{
+			background:silver; 
+			margin-left:200px;
+			padding-left: 26px;
+			font-weight: bold;
+			position: relative;
+			top: 100px;
+		}
+		.txtform2{
+			background:silver; 
+			margin-left:200px;
+			padding-left: 26px;
+			font-weight: bold;
+			position: relative;
+			top: 100px;
+		}
+		.tablaForm{
+			float: left;
+			font-weight: bold;
+			/*margin-left: 177px;*/
+			/*padding-top: 19px;*/
+			margin-left: 190px;
+			position: relative;
+			top: 170px;
+		}
+		.textInput{
+			color: #000;
+			font-weight: bold;
+			float: left;
+			margin-top: 70px;
+			position: inherit;
+			margin-left: 117px;
+		}
+		.tablaTerm{
+			font-size: 13px;
+			border: 1px #fff solid;
+			margin-top: 62px;
+			position: absolute;
+			/*margin-left: 236px;*/
+			margin-left: 355px;
+			width: 254px;
+			height: 28px;
+			color: #fff;
+			background: #fff;
+		}
+		#form{
+			width: 50%;
+			margin: 0 auto;
+			padding-top: 15px;
+		}
+		/*#form input{
+			margin: 0 auto;
+		}*/
+		#form input{
+			margin: 0 auto;
+			margin-left: 95px;
+		}
+		#form #token{
+			display:block;
+			width: 210px;
+			height: 25px;
+		}
+		/*#form #buttons{
+			padding-top: 10px;
+			width: 250px;
+			margin: 0 auto;
+			margin-left: 170px;
+			
+		}*/
+		#form #buttons{
+			padding-top: 10px;
+			width: 320px;
+			margin: 0 auto;
+			margin-left: 40px;
+			display:inline-block;
+			
+		}
+		#form #can, #con{
+			margin: 0 auto;
+			width: 110px;
+			height: 30px;
+			border-radius: 8px;
+		}
+
+/*ajuste de botones tamaño paso 3 : copia de wr_btnNav */
+
+#btn_paso3{
+	width: 244px;
+	overflow: hidden;
+	margin-top:50px;
+	position:absolute;
+	margin-top: 291px;
+	/*margin: auto;*/
+	border-left: 1px solid #b9b9b9;
+	border-right: 1px solid #b9b9b9;
+	border-top: 1px solid #b9b9b9;
+	height:93px;
+
+}
+
+#btn_paso3 > ul > li:first
+{
+	font-weight:bolder;
+}
+
+#btn_paso3 ul {
+	list-style: none;
+	/*background: #efefef;*/
+	background: #fff;
+	width: 100%;
+	margin: auto;
+	padding: 0 0 0 0;
+	font-size: 12px;			
+}
+
+#btn_paso3 ul li{
+	/*background: url(../img/menuLateral/btn_menu.png);*/
+	width: 100%;
+	height: 20px;
+	padding: 10px 10px 0;
+	border-bottom: 1px solid #bbbbbb;
+	cursor: pointer; 
+	font-size: 9px;
+	text-transform: uppercase;
+	text-align:left;
+}
+
+#btn_paso3 ul li:hover{
+	/*background: #e3e3e3;*/
+	color:#ff0000;
+}
+
+#btn_paso3 ul li > img{
+	float: left;
+	margin-left: 5px;
+	margin-top: -5px
+}
+.txtbtn_3{
+	margin-left: 17px;
+}
+
+/*titulo de la tabla*/
+.tabletitleTransf{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+font-weight: bold;
+background-image: url('../lineagrafica/widamphdr.png');
+float: left;
+width: 712px;
+height: 23px;
+border: 1px #a7a7a7 solid;
+background-size: 100% 100%;
+padding: 7px 0 0 15px;
+border-collapse: collapse;
+margin-top: 28px;
+}
+
+#cuadroTarjeta .al{
+	cursor:pointer;
+}
+.activaciona1,.activaciona2,.activaciona3,.activaciona4,.activaciona5{
+	display: none;
+}
+
+.tablaDay{
+	position: relative;
+	background-color: red;
+	margin-top: 138px;
+	margin-left: 44px;
+	width: 73%;
+	height: 50%;
+}

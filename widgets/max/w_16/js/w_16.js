@@ -46,7 +46,9 @@ $(function(){
         });
 });
 
-
+function cargaHtml(componente,url){
+    $(componente).load(url);
+}
 
 
 

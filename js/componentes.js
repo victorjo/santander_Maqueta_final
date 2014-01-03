@@ -357,6 +357,47 @@ function cambiaPaso(paso){
       }
 /*Fin de Funcion realizada por victor: Cambio de pasos*/
 
+/*--- Token Victor---*/
+
+/*function cargaToken(cbTokenCanc,cbTokenAcep,fn){
+  if(typeof fn !="undefined" || fn != null || fn != undefined) fn();
+  $("#elementBloqueo").load("../modales/token.html",function(){
+    $(this).find("#btnTokenCancelar").attr("onclick",cbTokenCanc);
+    $(this).find("#btnTokenAceptar").attr("onclick",cbTokenAcep);
+    switchModal();
+  });  
+}*/
+
+//Pendiente para aprobacion
+function cargaToken(cbTokenCanc,cbTokenAcep,fn,modal){
+  var mod = modal || 'token';
+  if(typeof fn !="undefined" || fn != null || fn != undefined) fn();
+  $("#elementBloqueo").load("../modales/"+mod+".html",function(){
+    $(this).find("#btnTokenCancelar").attr("onclick",cbTokenCanc);
+    $(this).find("#btnTokenAceptar").attr("onclick",cbTokenAcep);
+    switchModal();
+  });  
+}
+
+
+/*--- Fin Token Victor ---*/
+
+function centraModal(){
+  w = $("#widampliado")
+  t = $("#elementBloqueo")
+  wh = w.height();
+  th = t.height();
+  tth = wh - th;
+  ww = w.width();
+  tw = t.width();
+  ttw = ww - tw;
+  $("#elementBloqueo").css({"top":(tth/3.5)+"px",left:(ttw/2)+"px"});
+}
+
+function switchModal(){
+  centraModal();
+  $(".bloqueoElement").fadeToggle("slow;");
+}
 /*--- Funcion para construir el Switch
 
 NOTA: Como parametro solo se recibira el id del div.
@@ -400,14 +441,22 @@ function construyeSwitch(object){
 
 
 /* GRID DINAMICO */
+/*
 
+  BODY OF JSON DATA
+  {colums:[1,2,3,4,5],rowsValues:[1,2,3,4,5],numRows:30}
+
+*/
 function Gridius(object,data){
-
         $.when($.ajax("componentes/grid.html")).then(function(res){
 
         object.html(res);
 
-        var element = '<td>Lorem Ipsum<input data-edit="false" class="editGrid" type="text"></td>';
+        var element;
+
+        if(typeof data == "undefined"){
+
+          element = '<td>Lorem Ipsum<input data-edit="false" class="editGrid" type="text"></td>';
           element += '<td>Lorem Ipsum<input data-edit="false" class="editGrid" type="text"></td>';
           element += '<td>Lorem<input data-edit="false" class="editGrid" type="text"></td>';
           element += '<td>1234<input data-edit="false" class="editGrid" type="text"></td>';
@@ -417,6 +466,27 @@ function Gridius(object,data){
           element += '<td>Exitosa<input data-edit="false" class="editGrid" type="text"></td>';
           element += '<td><div class="addGrid"></div><div class="delGrid"></div></td>';
 
+        }else{
+          var thead;
+          $.each(data.colums,function(i,v){
+            thead += "<th>"+ v +"</th>"; 
+          });
+
+          var totalElem = data.numRows || 10;
+
+          for(i=0;i<=totalElem;i++){
+            element += "<tr data-id='"+ i +"'>";
+            for(u=0;u<data.rowsValues.length;u++){
+              element += "<td>"+ data.rowsValues[u] +"</td>";
+            }
+            element += "<td><div class='addGrid'></div><div class='delGrid'></div></td></tr>";
+          }
+
+          $(".wrapGrid > table").html("<tr>"+thead+"</tr>");
+          $(".wrapGrid > table").append(element);
+
+        }
+          
         $(".gridAdd").click(function(){
           var obj = $('<tr data-id="'+ ($(".wrapGrid").find("tr").size()) +'"></tr>');
           $(".wrapGrid > table").append(obj);
