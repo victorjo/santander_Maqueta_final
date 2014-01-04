@@ -444,7 +444,7 @@ function construyeSwitch(object){
 /*
 
   BODY OF JSON DATA
-  {colums:[Fecha,Descripción,Referencia,Cuenta de cargo,Cuenta destino,Importe,Estatus],rowsValues:[dd/mm/aaaa,123456789123,123456789123,1234****7890,1234****7890,999,999,999.00,Exitosa],numRows:30}
+  {colums:[1,2,3,4,5],rowsValues:[1,2,3,4,5],numRows:30}
 
 */
 function Gridius(object,data){
