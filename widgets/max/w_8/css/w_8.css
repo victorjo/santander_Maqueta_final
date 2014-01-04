@@ -82,32 +82,46 @@ margin-left: 5px;
 margin-top: 10px;
 }
 .tabletext  {
-	width: 480px;
+	width: 540px;
 	height: 50px;
 	margin-top: -15px;
 }
+
 .textboxdos  {
-	float:left;
-	margin-left:-47px;
-	margin-top:31px;
+	position: absolute;
+	margin-top: 27px;
 	height: 25px;
-	width: 224px;
+	width: 252px;
+	left: 198px;
+	border: 1px solid #989898;
+	border-radius: 4px 4px 4px 4px;
+	}
+.textboxdos2  {
+position: absolute;
+margin-top: -8px;
+height: 25px;
+width: 252px;
+left: 463px;
+border: 1px solid #989898;
+border-radius: 4px 4px 4px 4px;
 }
 #concept {
  	float: left;
- 	margin-right: -8px;
- 	margin-top: 8px;
+ 	margin-left: 274px;
+ 	margin-top: -27px;
  }
+
  .w8_EC_contenidodatos2 {
 background: #efefef;
 float: left;
 margin-left: 10px;
-width: 174px;
+width: 164px;
 height: 190px;
+padding-left: 9px;
 }
 .w8_EC_contenidodatos2 p:nth-of-type(1) {
 	float: left;
-	margin-left: 10px;
+	
 	font-family:Arial, Helvetica, sans-serif;
 	color:#000000;
 	font-size:11px;
@@ -118,7 +132,7 @@ height: 190px;
 
 .w8_EC_contenidodatos2 p:nth-of-type(2) {
 float: left;
-margin-left: 10px;
+
 font-family:Arial, Helvetica, sans-serif;
 color:#000000;
 font-size:11px;
@@ -129,7 +143,7 @@ margin-top: 5px;
 
 	.w8_EC_contenidodatos2 p:nth-of-type(3) {
 	float: left;
-	margin-left: 10px;
+	
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:11px;
 	font-weight:bold;
@@ -167,10 +181,10 @@ margin-top: 5px;
 	border-radius:5px;
 }
 .w8_EC_marcocalendar {
-margin-top: -32px;
-margin-left: 140px;
+margin-top: -29px;
+margin-left: 134px;
 float: left;
-height: 30px;
+height: 27px;
 width: 24px;
 border-left: 0px;
 border-right: solid 1px #989898;
@@ -179,9 +193,17 @@ border-top: solid 1px #989898;
 border-radius: 0 4px 4px 0;
 }
 .w8_EC_marcocalendar img{
-	margin-top: 8px;
+	margin-top: 6px;
 	margin-left: 4px;
 	}
+.textboxdecalendar {
+width:132px;
+
+border-radius: 4px 0px 0px 4px;
+margin-top:6px;
+height:25px;
+border: 1px solid #989898;
+}
 
 /*segunda funcionalidad */
 .table_OC {
@@ -203,3 +225,87 @@ font-weight:bold;
 	left: 10px;
 	}
 
+.textboxtres  {
+float: left;
+margin-left: 10px;
+margin-top: 5px;
+height: 25px;
+width: 250px;
+border-radius: 4px 4px 4px 4px;
+border: 1px solid #989898;
+}
+.textboxreferen{
+float: left;
+margin-left: 10px;
+margin-top: 30px;
+height: 25px;
+width: 250px;
+border-radius: 4px 4px 4px 4px;
+border: 1px solid #989898;
+}
+.numDta_p3 {
+	width: 312px;
+	height: 84px;
+	}
+.numDta_p3 p {
+float: left;
+margin-left: 10px;
+font-family:Arial, Helvetica, sans-serif;
+color:#000000;
+font-size:11px;
+margin-bottom: 0px;
+margin-top: 5px;
+}
+
+.subtitulo2F4 {
+float: left;
+position: relative;
+left: 40px;
+top: 7px;
+font-family: Arial, Helvetica, sans-serif;
+color: red;
+font-size: 11px;
+font-weight: bold;
+}
+.p_OC {
+float: left;
+margin-left: 10px;
+font-family:Arial, Helvetica, sans-serif;
+color:#000000;
+font-size:11px;
+font-weight:bold;
+margin-bottom: 0px;
+margin-top: 5px;
+	}
+.textbox_OC {
+float: left;
+margin-left: 10px;
+margin-top: 5px;
+height: 25px;
+width: 250px;
+border-radius: 4px 4px 4px 4px;
+border: 1px solid #989898;
+}
+.middletd_OC img{
+	float: left;
+	margin-left: 236px;
+	margin-top: -25px;
+}
+.textboxDias {
+float: left;
+
+margin-top: 5px;
+height: 29px;
+width:157px;
+border-radius: 4px 4px 4px 4px;
+border: 1px solid #989898;
+}
+.textbox_OCLarge{
+	float: left;
+margin-left: -66px;
+margin-top: 27px;
+height: 25px;
+width: 220px;
+border-radius: 4px 4px 4px 4px;
+border: 1px solid #989898;
+}
