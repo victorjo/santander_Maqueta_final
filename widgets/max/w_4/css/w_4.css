@@ -27,9 +27,11 @@
 	color:#272727;
 }
 
-.txtRed{
+.linkEditar{
 	color:#ff0000;
+	text-decoration: none;
 }
+
 /*---- Estilos flujo 1 ----*/
 .w4_PS_consulta{
 	width:725px;
@@ -757,3 +759,13 @@
 	width: 416px;
 }
 
+.tabla3 table{
+	width: 400px;
+	height: 200px;
+}
+
+.w4_btn_paso3{
+	width: 170px !important;
+	height: 45px !important;
+	margin-left: 47px;
+}
