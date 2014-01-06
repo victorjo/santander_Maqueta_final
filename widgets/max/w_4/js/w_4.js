@@ -81,6 +81,50 @@ $(function(){
         }
      });
 
+     $(".w4_select_1 select").ddslick({
+         data: ddData,
+         width: 140,
+         background: "#f7f7f7",
+        imagePosition: "left",
+        selectText: "Búsqueda histórica",
+         onSelected: function (data) {
+        console.log(data);
+        }
+     });
+     
+     $(".w4_select_2 select").ddslick({
+         data: ddData,
+         width: 140,
+         background: "#f7f7f7",
+        imagePosition: "left",
+        selectText: "Rango de fecha",
+         onSelected: function (data) {
+        console.log(data);
+        }
+     });
+
+     $(".w4_select_3 select").ddslick({
+         data: ddData,
+         width: 140,
+         background: "#f7f7f7",
+        imagePosition: "left",
+        selectText: "Rango de importe",
+         onSelected: function (data) {
+        console.log(data);
+        }
+     });
+
+     $(".w4_select_4 select").ddslick({
+         data: ddData,
+         width: 80,
+         background: "#f7f7f7",
+        imagePosition: "left",
+        selectText: "Estatus",
+         onSelected: function (data) {
+        console.log(data);
+        }
+     });
+
      construyeSwitch('switchBox');
 
      $("#infobtn").click(function(){
@@ -167,6 +211,17 @@ $(document).ready(function(){
      $('.w4_AS_buscar').click(function(){
         $('.w4_AS_busqueda').slideToggle();
      });
+
+      //Carga de datos (Tabla dinamica)
+     var data = {
+        colums:['Fecha','Descripción','Referencia','Cuenta de cargo','Cuenta destino','Importe','Estatus'],
+        rowsValues:['dd/mm/aaaa','123456789123','123456789123','1234****7890','1234****7890','999,999,999.00','Exitosa'],
+        numRows:30
+    }
+
+
+    Gridius($('.tablaDinamica'),data);
+
 });
 
 
