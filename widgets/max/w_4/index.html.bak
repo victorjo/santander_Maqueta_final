@@ -41,8 +41,8 @@
 					<li onclick="cambiaFlujo('.wra_flu2')">
 						<p>Alta de servicios</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu3')">
-						<p>Consulta / baja de servicios</p>
+					<li onclick="cambiaFlujo(3)">
+						<p>Consulta de servicios</p>
 					</li>
 					<li onclick="cambiaFlujo(4)">
 						<p>Consulta de pagos <br/> realizados/programados</p>
@@ -50,7 +50,7 @@
 				</ul>
 			</div>
 			<div id="WA_contenedorFlujos" style="height: 528px;">
-				<div class="contenidoFlujo" style="height: 519px;">
+				<div class="contenidoFlujo" style="height: 488px;">
 
 					<div class="flujo wra_flu1">
 
@@ -642,94 +642,6 @@
 					</div>
 
 					<div class="flujo wra_flu3">
-						<div class="step step1">
-							<div class="titFlujo w4_CB_titTam">
-								<div class="iconFlujo">
-									<img src="../../../img/assets/picGraf.png"/>
-								</div>
-								<p class="titulo w4_top">Consulta / baja de servicios</p>
-								<p class="subtitulo w4_espacio w4_top">A continuación usted podrá consultar los servicios que tiene dados de alta.</p>
-								<p class="subtitulo2F4 linkEditar w4_espacio w4_top"> Para obtener más información de la solicitud, haga clic en el estatus.</p>
-							</div>
-						<div class="w4_CB_buscador">
-							<div class="w4_select_1 w4_selects ">
-								<select name="" id="" value="1" > 
-				    			</select>
-							</div>
-
-							<div class="w4_select_2 w4_selects ">
-								<select name="" id="" value="1" > 
-				    			</select>
-							</div>
-							<div class="w4_select_3 w4_selects">
-								<select name="" id="" value="1" > 
-				    			</select>
-							</div>
-							<div class="w4_select_4 w4_selects">
-								<select name="" id="" value="1" > 
-				    			</select>
-							</div>
-							<div class="prueba">
-								<div class="btnaceptar prueba_btn">Limpiar Búsqueda</div>
-							</div>	
-						</div>	
-
-
-
-						<div class="tablaDinamica"></div>
-						<div class="btnExportar w4_btn_exportar"><img src="../../../img/assets/Exportar.png"><img src="../../../img/assets/CalendariOperaciones.png" onclick="cambiaFlujo('.wra_flu3');cambiaPaso(2);$('.w4_AS_paso2').load('../../../../tablas/w4_CB_tblPaso2.html')"></div>
-						</div>
-
-						<div class="step step2">
-							<div class="col colFull">
-								<div class="titFlujo">
-									<div class="iconFlujo">
-										<img src="img/assets/ico_comprobante.png"/>
-									</div>
-									<p class="titulo">Datos de  alta de servicios</p>
-									<p class="subtitulo">El servicio seleccionado se dará de alta con la siguiente información</p>
-								</div>
-								<!-- tabla para paso 2 (Bis) -->
-								<div class="w4_AS_tabla">
-									<div class="w4_AS_paso2Img"></div>
-									<div class="w4_AS_paso2"></div>
-								</div>
-							</div>
-							<div class="botonera">
-								<div class="btn" onclick="cambiaFlujo('.wra_flu3');cambiaPaso(1);">Regresar</div>
-								<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w4/w4_CB_tblPaso3.html'),'');">Confirmar</div>
-							</div>
-						</div>
-						<div class="step step3">	
-							<div class="col col2 resetMargen">
-									<div class="titFlujo">
-										<div class="iconFlujo">
-											<img src="img/assets/ico_comprobante.png"/>
-										</div>
-										<p class="titulo">Comprobante de pago de servicios</p>
-									</div>
-									
-									<div class="tabla3"></div>
-									
-							</div>
-							<div class="col col1 ">
-								<img src="img/assets/step3/anuncio.png" width="233" />
-								<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
-								<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
-								<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
-								<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
-							</div>
-							<div class="botonera">
-								<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(2);">Regresar</div>
-								<div class="btnaceptar" onclick="">Ver Detalle</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="flujo wra_flu4">
-						<div class="step step1">
-							
-						</div>
 						
 					</div>	
 
