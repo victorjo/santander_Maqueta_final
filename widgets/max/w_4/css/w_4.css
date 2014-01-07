@@ -1,7 +1,5 @@
 ﻿@import url("../../../../css/bloqueo.css");
 @import url("../../../../css/steps.css");
-@import url("../../../../css/generally.css");
-@import url("../../../../css/componentes.css");
 
 
 /*--- Ocultamiento de steps ---*/
@@ -413,7 +411,7 @@
 	opacity:.3;
 }
 
-.info{
+.w4_info{
 	background-image: url("../../../../img/assets/info.png");
     background-size: 100% 100%;
     float: left;
