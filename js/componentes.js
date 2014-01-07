@@ -396,7 +396,7 @@ function centraModal(){
 
 function switchModal(){
   centraModal();
-  $(".bloqueoElement").fadeToggle("slow;");
+  $(".bloqueoElement").fadeToggle("slow");
 }
 /*--- Funcion para construir el Switch
 

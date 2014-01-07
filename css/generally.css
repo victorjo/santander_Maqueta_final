@@ -503,26 +503,22 @@ margin: 0 !important; }
 
 .dd-select{
 	height:28px;
-	border-radius:0;
+	border-radius: 5px;
 	border-color:#a6a6a6;
 	background-color:#f7f7f7;
-	font-family:'ArialBlack';
+	font-family:'Arial';
 	font-size:10px;
 	color:#4573ec;
-	padding-top:0px;
 	
 }
 
 .dd-selected{
+	text-align: left;
+	font-family:'Arial';
 	font-size:11px;
-	text-align: center;
-	font-family:'ArialBlack';
-	font-size:10px;
 	color: #8f8f8f;
 	font-style: italic;
-
-	
-	
+	padding: 7px;
 }
 
 
