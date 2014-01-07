@@ -1,7 +1,36 @@
 				<div class="imgEditar"></div>
-				<div class="datosCorreo">
+				<div class="datosCorreo centradoTxt">
 					<p>Correo registrado para notificaci&oacute;n:<span class="bold">correo@correo</span></p>
 					<p>Celular registrado para notificaci&oacute;n:<span class="bold">5555555555</span></p>
 				</div>
-				<br>
-				<div class="datosEdicion"></div>
+				<br><div class="datosEdicion">
+					<table>
+						<tr>
+							<td><div class="correoRadio"></div></td>
+							<td><p class="bold">Correo que quedará registrado para notificación:</p>
+								<input type="text" value="Ingresar nuevo número de celular">
+							</td>
+						</tr>
+						<tr>
+							<td><div class="correoRadio"></div></td>
+							<td><p class="bold">Celular que quedará registrado para notificación:</p>
+								<input type="text" value="Ingresar nuevo número de celular">
+							</td>
+						</tr>
+					</table>
+				</div><br>
+				<div class="datosCorreo">
+					<p><span class="bold">*Este medio cambiará para todas las operaciones de supernet.</span></p>
+					<p><span class="bold">¿esta seguro que desea realizar la acci&oacute;n?</span></p>
+				</div><br>
+				<div class="btnaceptar centradoBtn" id="btnTokenCancelar">Cancelar</div>
+				<div class="btnaceptar" id="btnTokenAceptar">Continuar</div>
+				
+				<script>
+					$(document).ready(function(){
+						$('.correoRadio').click(function(){	
+							$('.correoRadio').removeClass('correoRadio_select');
+							$(this).addClass('correoRadio_select');
+						});	
+					});
+				</script>
