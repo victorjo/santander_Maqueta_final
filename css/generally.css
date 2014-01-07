@@ -525,10 +525,11 @@ margin: 0 !important; }
 .dd-option{
 	height:23px;
 	padding:5px 0 0 10px;
-	font-family:'ArialBlack';
-	font-size:10px;
-	color:#4573ec;
-	text-align: center;
+	font-family:'Arial';
+	font-size:11px;
+	color:#8f8f8f;
+	text-align: left;
+	font-style: italic;
 }
 
 .dd-pointer-up {

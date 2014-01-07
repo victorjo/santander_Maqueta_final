@@ -30,6 +30,7 @@
 	font-family:'Arial';
 	font-size:11px;
 	color:#272727;
+	margin-top: 5px;
 }
 
 .w4_top{
@@ -430,7 +431,6 @@
 
 .w4_PS_tablaInfo {
 	position: absolute;
-	margin-top: 38px;
 }
 
 
@@ -864,3 +864,7 @@
 	width: 397px;
 }
 /*--- Fin Estilos flujo4 ---*/
+
+.w4_dropList{
+	margin-top: 10px;
+}
