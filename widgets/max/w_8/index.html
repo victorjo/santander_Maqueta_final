@@ -1,4 +1,7 @@
-		
+		<link rel="stylesheet" href="../../../css/generally.css" />
+		<link rel="stylesheet" href="../../../css/componentes.css" />
+		<script src="../../../js/ddSlick.js"></script>
+		<script src="../../../js/components.js"></script>
 		<script src="widgets/max/w_8/js/w_8.js"></script>
 		<script src="../../../js/ui/jquery-ui-1.10.3.custom.min.js"></script>
 		<link rel="stylesheet" href="widgets/max/w_8/css/w_8.css" />
@@ -26,7 +29,7 @@
 						<p>
 						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu1')">
+					<li onclick="cambiaFlujo('.wra_flu1')" class="liActive">
 						<p>Disposición de Créditos</p>
 					</li>
 					<li onclick="cambiaFlujo('.wra_flu2')">
@@ -53,23 +56,17 @@
 								<p class="titulo">Alta de cuentas</p>
 								<p class="subtitulo">Favor de ingresar la siguiente información para dar de alta una nueva cuenta o tarjeta de débito.</p>
 							</div>
-								<div class="w8_EC_contenidodatos1">
+								<!--<div class="w8_EC_contenidodatos1">-->
 							<p>Cuenta destino:</p>
-
-							<div class="w8_EC_sexycombo">
-								<input type="text" id="w8_EC_autocompleteQ"  placeholder="1234****5678        Producto Santander        Alias     $999,999,999.00" >
-								<div class="w8_EC_marcotriangulo" >
-									<div class="triangulo_inf"></div>
-								</div>
-							</div>
-
+								<div class="w4_dropList">
+										<select name="" id="" value="1" > 
+									    </select>
+									</div>
 							<p>Cuenta de cargo:</p>
 
-									<div class="w8_EC_sexycombo">
-										<input type="text" id="w8_EC_autocompleteQ"  placeholder="1234****5678        Producto Santander        Alias     $999,999,999.00" >
-										<div class="w8_EC_marcotriangulo" >
-										<div class="triangulo_inf"></div>
-										</div>
+									<div class="w4_dropList">
+										<select name="" id="" value="1" > 
+									    </select>
 									</div>
 
 								<div class="tabletext">
@@ -81,7 +78,7 @@
 										<input class="textboxdos2" placeholder="Escribir concepto" type="text"/>
 								</div>
 					
-						</div>
+						<!--</div>-->
 
 							<div class="w8_EC_contenidodatos2">
 								<p class="p_OC">Programar transferencia:</p>

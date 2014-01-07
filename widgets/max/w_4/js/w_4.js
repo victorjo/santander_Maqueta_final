@@ -157,6 +157,7 @@ $(function() {
 
 });
 
+
 $(document).ready(function() {
     $('.w4_AS_busqueda').hide();
     //remplazaTxt('Pago de servicios','Seleccione de su lista de servicios registrados el que desee pagar:');
