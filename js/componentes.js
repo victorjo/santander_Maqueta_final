@@ -477,7 +477,12 @@ function Gridius(object,data){
           for(i=0;i<=totalElem;i++){
             element += "<tr data-id='"+ i +"'>";
             for(u=0;u<data.rowsValues.length;u++){
-              element += "<td>"+ data.rowsValues[u] +"</td>";
+              var adta;
+              if(data.rowsValues[u] == 'estatus' && u==6){
+                adta = "class='proved'";
+                data.rowsValues[u] = "Exitosa";
+              }
+              element += "<td "+ adta +">"+ data.rowsValues[u] +"<input data-edit='false' class='editGrid' type='text'></td>";
             }
             element += "<td><div class='addGrid'></div><div class='delGrid'></div></td></tr>";
           }
@@ -536,7 +541,7 @@ function Gridius(object,data){
           return false;
         }
         parentObj.attr('data-active',true);
-        var tools = $('<div class="toolsGrid"><ul><li></li><li></li><li></li></ul></div>');
+        var tools = $('<div class="toolsGrid"><ul><li>D</li><li>E</li><li>P</li></ul></div>');
         $('body').append(tools);
-        tools.css({top:obj.offset().top-56,left:(50+obj.offset().left+obj.width())}).attr('data-relid',parentObj.attr('data-id'));
+        tools.css({top:obj.offset().top-56,left:($('[instanced="true"]').offset().left+$('[instanced="true"]').width()+20)}).attr('data-relid',parentObj.attr('data-id'));
       }

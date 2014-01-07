@@ -1,328 +1,223 @@
-<script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
-<script src="../../../js/jquery10.2.min.js"></script>
-<script src="../../../js/ddSlick.js"></script>
-
-<link rel="stylesheet" href="../../../css/general.css"/>
-<link rel="stylesheet" href="../../../css/token.css"/>
-<link rel="stylesheet" href="widgets/max/w_14/css/recompensas.css"/>
-<link rel="stylesheet" href="widgets/max/w_14/css/r_paso2.css"/>
-<link rel="stylesheet" href="widgets/max/w_14/css/r_paso3.css"/>
-<link rel="stylesheet" href="../../../css/componentes.css"/>
-<script src="widgets/max/w_14/js/recomptdc.js"></script>
-<script>
-	
-	$('#Dropdown').ddslick({
-		onSelected: function(selectedData){
-		//callback function: do something with selectedData;
-		
+﻿	<!--	<script src="../../../js/jquery10.2.min.js"></script>		-->
+		<script src="../../../js/components.js"></script>
+		<!--<script src="../../../js/ddSlick.js"></script>-->
+		<link rel="stylesheet" href="../../../css/generally.css" />
+		<link rel="stylesheet" href="../../../css/componentes.css" />
+		<style>
+		.col1_OC {
+			float: left;
+			height: 336px;
+			margin-right: 10px;
+			width: 532px;
 		}
-		});
-	$(document).ready(function(){
-		init();
-	});
-	function init(){
-		$(".fin").click(function(){closeAction()});
-		$(".stepWrapp").hide();
-		$("#step1").show();
-		$(".btnaceptar").click(function(){
-			$(".steps").replaceWith("<img src='img/paso_2.png' class='steps'>");
-			$("#step1").hide();
-			$("#step2").show();
-			$(".btn").click(function(){
-				$(".btnaceptar").off("click");
-				$(".btn").off("click");
-				$(".fin").off("click");
-				init();
-			});
-			$(".btnaceptar").click(function(){
-				creaOverlay("#fff","#widampliado",1);
-				creaToken("modalOver",null,"javascript: $('#step2').hide();$('#step3').show();$('#modalOver').fadeOut();",null,function(){$(".steps").replaceWith("<img src='img/paso_3.png' class='steps'>");});
-			});
-		});
+		.col2_OC {
+			float: left;
+			width: 180px;
+		}
+		.p_OC {
+			color:#232323;
+			font-weight:bold;
+			font-size:13px;
+		}
+		.textbox_OC {
+			width:100% !important;
+		}
+		.middletd_OC {
+			text-align:center;
+			width:50%;
+		}
+		.table_OC {
+			width:100%;
+		}
+		.span_OC {
+			font-size:11px;
+		}
+		.a_OC {
+			color:#ff0d37;
+			font-weight:bold;
+		}
+		.dd-select {
+			width: 160px !important;
+		}
+		.dd-container {
+			width: 174px !important;
+			margin-right:11px;
+		}
 
+		.tableHG {
+			background:#efefef;
+			width:100%;
+		}
 
-	}
-</script>
-<div id="widampliado">
-	<div>
-		<p>TARTEJAS DE CRÉDITO SALDOS Y MOVIMIENTOS</p>
-		<div class="fin"></div>
-		<div></div>
-	</div>
-	<div>
-		<img src="img/paso_1.png" class="steps"/>
-	</div>
-
-
-<!-- <div id="navegador">
-			<ul>
-				<li onclick="changeComment(1);">Consulta de saldos y movimientos</li>
-				<li class="active" onclick="changeComment(1);">Traspaso a meses con intereses</li>
-				<li onclick="changeComment(1);">Disposición de tarjeta de crédito a cheques</li>
-			
-			</ul>
-			<div class="aviso">
-				<div id="msg-alert" style="width: 133px;height: 52px;background:#fff;position: absolute;top: 2px;left: 10px;font-weight: bold;font-size: 10px;text-align: left;padding-top: 15px;">Realice sus transferencias entre sus cuentas Santander desde aqu&iacute;.</div>
-				<img src="../../img/iconos/img_msj.png"/>
-			</div>
-		</div>     -->
-
-
-	<div>
-		<ul> 
-			<li>
-				<p>Consulta de saldos y movimientos</p>
-			</li>
-
-			<li class="liActive">
-				<p>Traspaso a meses con intereses</p>
-			</li>
-			<li>
-				<p>Disposición de tarjeta de crédito a cheques</p>
-			</li>
-		</ul>
-	</div>
-
-
-	
-	<!--inicia step1 -->
-
-	<div id="step1" class="stepWrapp" style="display:none">
+		.tableHG p{
+			color: #272727;
+			font-size:12px;
+			font-weight:bold;
+		}
 		
-		<h2>Introduzca el nombre, alias o los cuatro dígitos de la cuenta destino o seleccionela de la lista:</h2>
-	 
-			<table>
-			  <tr><td>
-					<input type="text" id="autocompleteQ2" placeholder="1234****5678        Producto Santander       Alias     123,147,369.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;">
-					</td><td>
-					<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-					<div class="btnstar botonestrella-on">   </div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marctri marcotriangulo"><div class="triangulo_inf"></span> </td>
-				  </td>
-			  </tr>
-			</table>
+		.tableHG span{
+			font-size:11px;
+			font-weight:bold;
+			color:#e0dede;
 
-	<h2>Introduzca el nombre, alias o los cuatro dígitos de la cuenta destino o seleccionela de la lista:</h2>
+		}
 
-			<table>
-			  <tr><td>
-					<input type="text" id="autocompleteQ2" placeholder="1234****5678        Producto Santander       Alias     123,147,369.00" style="width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;">
-					</td><td>
-					<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-					<div class="btnstar botonestrella-on">   </div><td> <span style="font-weight:bold;margin-left:0px"> <div class="marctri marcotriangulo"><div class="triangulo_inf"></span> </td>
-				  </td>
-			  </tr>
-			</table>
+		.fullCon {
+			height:auto;
+			margin-bottom:20px;
+			width:100%;
+		}
 
-<div class="wra_Select">
-	<p><b>Importe</b></p>
-	<input type="text"  placeholder="  999,999,999.00" / style="height:25px;width:200px"> (MXP)
-</div>
+		.tableHG select {
+			width:100%;
+		}
+		
+		.dd-container {
+			float:left;
+		}
+		
+		.dd-select {
+			border-radius: 5px;
+		}
+		</style>
+		<script>
+			$(document).ready(function(){
+				Gridius($('.containerG'),{colums:['Fecha','Descripcion','RFC','Moneda Extranjera (MXP)','Tipo de cambio (MXP)','Cantidad (MXP)','Estatus'],rowsValues:['dd/mm/aaaa','Lorem Ipsum','ABC12345678','999,999,999.00','999,999,999.00','0.00%','estatus'],numRows:10});
+			});
+		</script>
+		<!--<input type="button" value="GRID" onclick="Gridius($('.contenidoFlujo'),{colums:[13,23,33,43,53],rowsValues:[1,2,3,4,5],numRows:10});">-->
+		<div id="widampliado">
+			<div id="WA_pasos">
+				<img src="../../../img/assets/pasos.png"/>
+				<div class="btnHeader info">
+					<img src="../../../img/assets/ico_info.png"  />
+				</div>
+				<div class="btnHeader cerrar">
+					<img src="../../../img/assets/ico_cerrar_widget.png"  />
+				</div>
+			</div>
+			
+			<div id="WA_nav">
+				<ul>
+					<li class="menu">
+						<p>
+						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
+					</li>
+					<li>
+						<p>Consulta de saldos y movimientos</p>
+					</li>
+					<li>
+						<p>Traspaso a meses con interes</p>
+					</li>
 
-<div class="wra_Select">
-	<p><b>Concepto</b></p>
-	<input type="text"  placeholder="123456789123456789123456789123456789123456789" / style="height:25px; width:366px;">
-</div>
-
-
-<div id="progfecha">
-				<div>Programar fecha:</div>
-				<div id="calendar">
+					<li>
+						<p>Disposicion de tarjeta de credito a cheques</p>
+					</li>
+				</ul>
+			</div>
+			<div id="WA_contenedorFlujos">
+				<div class="titFlujo" style="height:60px">
+					<div class="iconFlujo">
+						<img src="../../../img/assets/ico_cuentas_propias.png"/>
+					</div>
+					<p class="titulo">Consultas de saldos y moviminentos</p>
+					<p class="subtitulo">Seleccione el periodo de busqueda que desea consultar, asi como el tipo de movimiento y/o rango de importe para una busqueda mas especifica</p>
+				</div>
+				<div class="contenidoFlujo" style="border:0px solid black;">
 					
-
-				<div class="switchCont">
-						<div id="switchBox">
-							<div class="switchSlide">					
-									<div class="switchLabel"><span class="switchs">Si</span></div>
-									<div class="switchIndicador"></div>
-									<div class="switchLabelR"><span span class="switchs">No</span></div>				
-							</div>
-						</div>		
+					<div class="tableHG fullCon">
+						<table>
+							<tr>
+								<td rowspan="2">
+									<img src="img/iconos/card.png" alt="">
+								</td>
+								<td rowspan="2">
+									<p>Seleccione tarjeta:</p>
+									<select name="" id=""></select>
+								</td>
+								<td>
+									<p>Alias</p>
+									<span>Mi alias</span>
+								</td>
+								<td>
+									<p>Limite de credito</p>
+									<span>999,999,999.00</span>
+								</td>
+								<td>
+									<p>Saldo actual</p>
+									<span>999,999,999.00</span>
+								</td>
+								<td>
+									<p>Tasa de interes</p>
+									<span>0.00 %</span>
+								</td>
+								<td>
+									<p>Fecha de corte</p>
+									<span>dd/mm/aaaa</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>Fecha limite de pago</p>
+									<span>dd/mm/aaaa</span>
+								</td>
+								<td>
+									<p>Pago para no generar intereses</p>
+									<span>999,999,999.00</span>
+								</td>
+								<td>
+									<p>Limite de credito linea express</p>
+									<span>0.00%</span>
+								</td>
+								<td>
+									<p>Saldo global en linea express</p>
+									<span>dd/mm/aaaa</span>
+								</td>
+								<td>
+									<p>Pago minimo</p>
+									<span>999,999,999.00</span>
+								</td>
+							</tr>
+						</table>
 					</div>
 
-				</div>
-				<div id="imgcal"></div>
-				<div id="textcal">
-					<div class="divFlotante">
-						<div class="imagen"></div>
-						<div id="ico" class="calicoNo"></div>
-						<input class="input3"  id="dia" value="01/01/2013" disabled='disabled' type="text"/>
+					<div class="fullCon">
+						<div class="select_OC"></div>
+						<div class="select_OC"></div>
+						<div class="select_OC"></div>
+						<a href="#" style="float:right;float: right;font-size: 12px;color: #db1539;">Nueva busqueda</a>
 					</div>
-				</div>
-			</div>
-
-		<div class="dropcontainer" style="max-height: 200px; height: 200px;display:none; ">
-
-			<div class="dropdown">
-				<img class="downI" src="../../../img/iconos/dropdown.png" style="display: block;">
-				<img class="upI" src="../../../img/iconos/dropup.png" style="display: none;">
-				<h6>Quiero notificación previa de mi pago</h6>
-			
-
-				<div class="wra_Select2" style="margin-top:5px;display:none;">
-					<select name="" id="" >
-	                    <option value="">3 días</option>
-	                    <option value="">5 días</option>
-	                    <option value="">5 días</option>
-	                    <option value="">5 días</option>
-	                    <option value="">5 días</option>
-	            	</select>
-				</div>
-
-			</div>
-		</div>				
-	
-
-</div>
-
-
-		<div class="botonera">
-			<div class="btnaceptar">Continuar</div>
-		</div>
-
-	<!-- Fin de step1  -->
-				
-				
-				
-	<div id="step2" class="stepWrapp" style="display:none">
-		<h2>La operación se realizará con la siguiente información:</h2>
-	 
-
-	 		<table class="tbl_info">
-				<tr>
-					<td style="width:200px;">Titular:</td>
-					<td class="gris">Lorem Ipsum</td>
-				</tr>
-				<tr>
-					<td>Cuenta destino:</td>
-					<td class="gris">1234****5678</td>
-				</tr>
-				<tr>
-					<td>Tarjeta de cargo:</td>
-					<td class="gris">1234****5678</td>
-				</tr>
-				<tr>
-					<td>Importe:</td>
-					<td class="gris">999,999,999.00 MXP</td>
-				</tr>
-				<tr>
-					<td>Concepto:</td>
-					<td class="gris">1234567890’098765432123456789</td>
-				</tr>
-				<tr>
-					<td>Fecha y hora de disposición:</td>
-					<td class="gris">dd/mm/aaaa 00:00 hrs</td>
-				</tr>
-				<tr>
-					<td>Comisión por disposición:</td>
-					<td class="gris">999,999,999.00 MXP</td>
-				</tr>
-				<tr>
-					<td>IVA por comisión:</td>
-					<td class="gris">999,999,999.00 MXP</td>
-				</tr>
-				<tr>
-					<td>Correo para notificacion:</td>
-					<td class="gris">correo@correo.com <div class="link">(editar)</div></td>
-				</tr>
-				<tr>
-					<td>Celular para notificacion:</td>
-					<td class="gris">5555555555 (<a href="#">editar</a>)</td>
-				</tr>
-				
-			</table>
-		
-		<div class="botonera">
-			<div class="btn">Regresar</div>
-			<div class="btnaceptar">Confirmar</div>
-		</div>
-		<div class="bloqueo" id="contenido"></div>
-		<!--- div con los datos de correo y numero de celular -->
-		<!--- Fin div con los datos de correo y numero de celular -->
-	</div>
-
-	<div id="step3" class="stepWrapp" >
-
-		<div id="vtacruzada">
-				
-				<div class="vtaimg">
-				</div>
-				
-				<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
-				<div id="btn_paso3">
-					<ul>
-						<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
-						<li class="btnNav"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">Pagar Servicios</span></li>
-						<li class="btnNav"><img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">Realizar una Domiciliación</span></li>
-					</ul>
-				</div>
-				
-			</div>
-
-			<h2>Comprobante de disposición de tarjeta de crédito a cuentas de cheques </h2>
-			
-			<table class="tbl_info" style="width:60%;float:left;">
-				<tr>
-					<td style="width:200px;">Titular:</td>
-					<td class="gris">Lorem Ipsum</td>
-				</tr>
-				<tr>
-					<td>Cuenta destino:</td>
-					<td class="gris">1234****5678</td>
-				</tr>
-				<tr>
-					<td>Tarjeta de cargo:</td>
-					<td class="gris">1234****5678</td>
-				</tr>
-				<tr>
-					<td>Importe:</td>
-					<td class="gris">999,999,999.00 MXP</td>
-				</tr>
-				<tr>
-					<td>Concepto:</td>
-					<td class="gris">1234567890’098765432123456789</td>
-				</tr>
-				<tr>
-					<td>Fecha y hora de disposición:</td>
-					<td class="gris">dd/mm/aaaa 00:00 hrs</td>
-				</tr>
-				<tr>
-					<td>Comisión por disposición:</td>
-					<td class="gris">999,999,999.00 MXP</td>
-				</tr>
-				<tr>
-					<td>IVA por comisión:</td>
-					<td class="gris">999,999,999.00 MXP</td>
-				</tr>
-				<tr>
-					<td>Correo para notificacion:</td>
-					<td class="gris">correo@correo.com (<a href="#">editar</a>)</td>
-				</tr>
-				<tr>
-					<td>Celular para notificacion:</td>
-					<td class="gris">5555555555 (<a href="#">editar</a>)</td>
-				</tr>
-				<tr>
-					<td>Folio SuperNET:</td>
-					<td class="gris">123456789</td>
-				</tr>
-				<tr>
-					<td><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo realizar<br />otra disposición</div></td>
 					
-				</tr>
-			</table>
-			
+					<div class="fullCon">
+						<p style="width: 260px;float: left;margin-bottom: 3px;margin-top:5px;font-size: 12px;font-weight: bold;">Mis movimientos de la tarjeta</p> <div style="float:right"><img src="0" alt=""><img src="1" alt=""><img src="2" alt=""></div>
+					</div>
+					<div class="containerG"></div>
+				</div>
 				<div class="botonera">
-				<div class="btn"><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt">Imprimir</div>
-				<div class="btnaceptar fin">Finalizar</div>
+					<div class="btn" onclick="cambiaPaso(2)">Consultar estado de cuenta</div>
+					<div class="btn" onclick="cambiaPaso(2)">Calendario de operaciones</div>
+					<div class="btnaceptar">Diferir cargos</div>
+				</div>
+				
 			</div>
-			
 		</div>
-	</div>
-	
+		<script>
+			(function(){
+				construyeSwitch("switch_OC");
+				var js = [{
+			        text: "Elemento 0",
+			        value: 1,
+			        selected: false			    
+			    }];
 
-</div>
-
-<script>
-	
+				$(".select_OC").ddslick({
+			    data:js,
+			    width:300,
+			    imagePosition:"left",
+			    onSelected: function(selectedData){
+			       
+			    }   
+		    });
+			})();
+		</script>
 		
-</script>
