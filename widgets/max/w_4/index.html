@@ -1,20 +1,13 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-		<title>Paso2</title>
 
-		<script src="../../../js/jquery10.2.min.js"></script>
-		<script src="../../../js/ui/jquery-ui-1.10.3.custom.min.js"></script>
-		<script src="../../../js/componentes.js"></script>
-		<script src="../../../js/components.js"></script>
+		<link rel="stylesheet" href="../../../css/generally.css" />
+		<link rel="stylesheet" href="../../../css/componentes.css" />
 		<script src="../../../js/ddSlick.js"></script>
+		<script src="../../../js/components.js"></script>
 		<script src="widgets/max/w_4/js/w_4.js"></script>
 		<link rel="stylesheet" href="widgets/max/w_4/css/w_4.css" />
-	</head>
-	<body>
+
+
 		<div id="widampliado">
-			<!-- Bloqueo -->
 			<div id="bloqueoWidget" class="bloqueoElement"></div>
 			<div id="elementBloqueo" class="bloqueoElement">
 				
@@ -35,127 +28,32 @@
 						<p>
 						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu1')">
+					<li onclick="cambiaFlujo('.wra_flu1'); muestraServicios();" class=" w4_flu1_activo liActive">
 						<p>Pago de servicios</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu2')">
+					<li onclick="cambiaFlujo('.wra_flu2')" class="w4_flu2_activo">
 						<p>Alta de servicios</p>
 					</li>
-					<li onclick="cambiaFlujo(3)">
-						<p>Consulta de servicios</p>
+					<li onclick="cambiaFlujo('.wra_flu3'); Gridius($('.tablaDinamica'),data);">
+						<p>Consulta / baja de servicios</p>
 					</li>
-					<li onclick="cambiaFlujo(4)">
+					<li onclick="cambiaFlujo('.wra_flu4'); Gridius($('.Tbl2'),dataTbl2);">
 						<p>Consulta de pagos <br/> realizados/programados</p>
 					</li>
 				</ul>
 			</div>
 			<div id="WA_contenedorFlujos" style="height: 528px;">
-				<div class="contenidoFlujo" style="height: 488px;">
+				<div class="contenidoFlujo" style="height: 519px;">
 
 					<div class="flujo wra_flu1">
 
-						<div class="step step0">
-							<div class="titFlujo">
-									<div class="iconFlujo">
-										<img src="img/assets/ico_cuentas_propias.png"/>
-									</div>
-									<p class="titulo">Pago de servicios</p>
-									<p class="subtitulo">Seleccione de su lista de servicios registrados el que desee pagar</p>
-							</div>
-							<table class="w4_PS_consulta">
-								<tr>
-									<td>Nombre del Servicio</td>
-									<td>Alias</td>
-									<td>Convenio</td>
-									<td>Fecha de pago</td>
-									<td>Importe (MXP)</td>
-									<td>Referencia</td>
-								</tr>
-							</table>
-							<div  class="w4_PS_cuadroTarjeta">
-								<table class="w4_PS_cardList">
-									<tr>
-										<td></td>
-										<td><div class="w4_PS_servicioImg w4_PS_servicioImg_1"></div><p class="w4_PS_servicio">Axtel</p></td>
-										<td>Lorem Ipsum</td>
-										<td>12345</td>
-										<td>dd/mm/aaaa</td>
-										<td >9,999,999.99</td>
-										<td >1456789098765</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td><div class="w4_PS_servicioImg w4_PS_servicioImg_2"></div><p class="w4_PS_servicio">Telcel</p></td>
-										<td>Lorem Ipsum</td>
-										<td>12345</td>
-										<td>dd/mm/aaaa</td>
-										<td >9,999,999.99</td>
-										<td >1456789098765</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td><div class="w4_PS_servicioImg w4_PS_servicioImg_3"></div><p class="w4_PS_servicio">G.N.P. Seguros</p></td>
-										<td>Lorem Ipsum</td>
-										<td>12345</td>
-										<td>dd/mm/aaaa</td>
-										<td >9,999,999.99</td>
-										<td >1456789098765</td>
-									</tr>
-									<tr class="w4_PS_deshabilitado">
-										<td></td>
-										<td><div class="w4_PS_servicioImg w4_PS_servicioImg_4"></div><p class="w4_PS_servicio">Telmex</p></td>
-										<td>Lorem Ipsum</td>
-										<td>12345</td>
-										<td>dd/mm/aaaa</td>
-										<td >9,999,999.99</td>
-										<td >1456789098765</td>
-									</tr>
-									<tr class="w4_PS_deshabilitado">
-										<td></td>
-										<td><div class="w4_PS_servicioImg w4_PS_servicioImg_4"></div><p class="w4_PS_servicio">Telmex</p></td>
-										<td>Lorem Ipsum</td>
-										<td>12345</td>
-										<td>dd/mm/aaaa</td>
-										<td >9,999,999.99</td>
-										<td >1456789098765</td>
-									</tr>
-									<tr class="w4_PS_deshabilitado">
-										<td></td>
-										<td><div class="w4_PS_servicioImg w4_PS_servicioImg_4"></div><p class="w4_PS_servicio">Telmex</p></td>
-										<td>Lorem Ipsum</td>
-										<td>12345</td>
-										<td>dd/mm/aaaa</td>
-										<td >9,999,999.99</td>
-										<td >1456789098765</td>
-									</tr>
-									<tr class="w4_PS_deshabilitado">
-										<td></td>
-										<td><div class="w4_PS_servicioImg w4_PS_servicioImg_4"></div><p class="w4_PS_servicio">Telmex</p></td>
-										<td>Lorem Ipsum</td>
-										<td>12345</td>
-										<td>dd/mm/aaaa</td>
-										<td >9,999,999.99</td>
-										<td >1456789098765</td>
-									</tr>
-
-								</table>
-							</div>
-							<div class="w4_PS_servicioPago">
-								<p>Si el servicio que desea pagar no se encuentra en su lista de clic <a href="#">Aquí</a></p>
-							</div>
-							<div class="botonera">
-								<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(1); ">Continuar</div>
-							</div>
-						</div>
-
-						
 						<div class="step step1">
 							<div class="titFlujo">
-									<div class="iconFlujo">
-										<img src="img/assets/ico_cuentas_propias.png"/>
-									</div>
-									<p class="titulo">Pago de servicios</p>
-									<p class="subtitulo">Seleccione de su lista de servicios registrados el que desee pagar</p>
+								<div class="iconFlujo">
+									<img src="img/assets/ico_cuentas_propias.png"/>
+								</div>
+								<p class="titulo">Pago de servicios</p>
+								<p class="subtitulo">Seleccione de su lista de servicios registrados el que desee pagar</p>
 							</div>
 							<table class="w4_PS_consulta">
 								<tr>
@@ -167,148 +65,202 @@
 									<td>Referencia</td>
 								</tr>
 							</table>
-							<div  class="w4_PS_consultaPS">
-								<table class="w4_PS_consulta_tabla">
-									<tr>
-										<td></td>
-										<td><img src="img/servicios/ico_servicios/axtel.png" class="w4_PS_servicioImg"/><p class="w4_PS_servicio">Axtel</p></td>
-										<td>Lorem Ipsum</td>
-										<td>12345</td>
-										<td>dd/mm/aaaa</td>
-										<td >9,999,999.99</td>
-										<td >1456789098765</td>
-									</tr>
-								</table>
-							</div>
-							<div class="w4_PS_verLista"></div>
-							<p>Introduzca el nombre, alias o los cuatro dígitos de la cuenta de destino o seleccionela de la lista:</p>
-							<div class="w4_PS_dd1">
-								<table >
-									<tr>
-										
-										<td>						
-											<input type="text" id="autocompleteQ" placeholder="1234****5678        Producto Santander       Alias     999,999,999.00" style="	width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;"> 
-										</td>
-										<td>
-										<!-- LA ESTRELLA DE FAVORITOS Y EL TRIANGULO  -->
-											<div class="botonestrella-on"> 
-												<img class="activo" style="display:block;" src="../img/iconos/favorito_on.png"/> 
-												<img class="inactivo" style="display:none;" src="../img/iconos/favorito_of.png"> 
-											</div>
-											<td> 
-												<span style="font-weight:bold;margin-left:0px"> 
-												<div class="marcotriangulo">
-												<div class="triangulo_inf">
-												</span> 
+								
+								<div  class="w4_PS_cuadroTarjeta">
+									<table class="w4_PS_cardList">
+										<tr class="servicioClic" id="Axtel">
+											<td></td>
+											<td><div class="w4_PS_servicioImg w4_PS_servicioImg_1"></div><p class="w4_PS_servicio">Axtel</p></td>
+											<td>Lorem Ipsum</td>
+											<td>12345</td>
+											<td>dd/mm/aaaa</td>
+											<td >9,999,999.99</td>
+											<td >1456789098765</td>
+										</tr>
+										<tr class="servicioClic" id="Telcel">
+											<td></td>
+											<td><div class="w4_PS_servicioImg w4_PS_servicioImg_2"></div><p class="w4_PS_servicio">Telcel</p></td>
+											<td>Lorem Ipsum</td>
+											<td>12345</td>
+											<td>dd/mm/aaaa</td>
+											<td >9,999,999.99</td>
+											<td >1456789098765</td>
+										</tr>
+										<tr class="servicioClic" id="G.N.P. Seguros">
+											<td></td>
+											<td><div class="w4_PS_servicioImg w4_PS_servicioImg_3"></div><p class="w4_PS_servicio">G.N.P. Seguros</p></td>
+											<td>Lorem Ipsum</td>
+											<td>12345</td>
+											<td>dd/mm/aaaa</td>
+											<td >9,999,999.99</td>
+											<td >1456789098765</td>
+										</tr>
+										<tr class="w4_PS_deshabilitado servicioClic" id="Telmex">
+											<td></td>
+											<td><div class="w4_PS_servicioImg w4_PS_servicioImg_4"></div><p class="w4_PS_servicio">Telmex</p></td>
+											<td>Lorem Ipsum</td>
+											<td>12345</td>
+											<td>dd/mm/aaaa</td>
+											<td >9,999,999.99</td>
+											<td >1456789098765</td>
+										</tr>
+										<tr class="w4_PS_deshabilitado servicioClic" id="Telmex">
+											<td></td>
+											<td><div class="w4_PS_servicioImg w4_PS_servicioImg_4"></div><p class="w4_PS_servicio">Telmex</p></td>
+											<td>Lorem Ipsum</td>
+											<td>12345</td>
+											<td>dd/mm/aaaa</td>
+											<td >9,999,999.99</td>
+											<td >1456789098765</td>
+										</tr>
+										<tr class="w4_PS_deshabilitado servicioClic" id="Telmex">
+											<td></td>
+											<td><div class="w4_PS_servicioImg w4_PS_servicioImg_4"></div><p class="w4_PS_servicio">Telmex</p></td>
+											<td>Lorem Ipsum</td>
+											<td>12345</td>
+											<td>dd/mm/aaaa</td>
+											<td >9,999,999.99</td>
+											<td >1456789098765</td>
+										</tr>
+										<tr class="w4_PS_deshabilitado servicioClic" id="Telmex">
+											<td></td>
+											<td><div class="w4_PS_servicioImg w4_PS_servicioImg_4"></div><p class="w4_PS_servicio">Telmex</p></td>
+											<td>Lorem Ipsum</td>
+											<td>12345</td>
+											<td>dd/mm/aaaa</td>
+											<td >9,999,999.99</td>
+											<td >1456789098765</td>
+										</tr>
+									</table>
+								</div>
+								<div class="w4_PS_servicioPago">
+									<p>Si el servicio que desea pagar no se encuentra en su lista de clic <a href="javascript:void(0)" onclick="activacion()">Aquí</a></p>
+								</div>
+								<div  class="w4_PS_consultaPS">
+									<table class="w4_PS_consulta_tabla">
+										<tr>
+											<td></td>
+											<td><div class="w4_PS_servicioImg w4_PS_Img"></div><p class="w4_PS_servicio w4_PS_seleccionado"></p></td>
+											<td>Lorem Ipsum</td>
+											<td>12345</td>
+											<td>dd/mm/aaaa</td>
+											<td >9,999,999.99</td>
+											<td >1456789098765</td>
+										</tr>
+									</table>
+								</div>
+								<div class="visor">
+									<div class="w4_PS_verLista" onclick="muestraServicios()"></div>
+									<p>Introduzca el nombre, alias o los cuatro dígitos de la cuenta de destino o seleccionela de la lista:</p>
+									<!--Omnibox -->
+									<div class="w4_dropList">
+										<select name="" id="" value="1" > 
+									    </select>
+									</div>
+									<table class="w4_PS_tablaInfo">
+										<tr>
+											<td>
+												<div class="w4_PS_inputsIzq">
+													<p>Concepto</p>
+													<input class="w4_PS_input" type="text"/>
+												</div>
 											</td>
-										</td>
-									</tr>
-
-								</table>
-							</div>
-							<table class="w4_PS_tablaInfo">
-								<tr>
-									<td>
-										<div class="w4_PS_inputsIzq">
-											<p>Concepto</p>
-											<input class="w4_PS_input" type="text"/>
-										</div>
-									</td>
-									<td>
-										<div class="w4_PS_inputsDer">
-											<p>Alias de Tarjeta</p>
-											<input class="w4_PS_input" type="text"/>
-											<div class="info"></div>							
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="w4_PS_inputsIzq">
-											<p>Referencia 1</p>
-											<input class="w4_PS_input" type="text"/>
-											<div id="infobtn" class="info"></div>
-											<div class="infoChart"><img src="../../../../img/assets/info_img.png"/></div>
-										</div>
-									</td>
-									<td>
-										<div class="w4_PS_inputsDer">
-											<p>Referencia 2</p>
-											<input class="w4_PS_input" type="text"/>
-											<div class="info"></div>
-																
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="w4_PS_inputsIzq">
-											<p>Importe</p>
-											<input class="w4_PS_input" type="text"/>
-											<div class="info"></div>
-															
-										</div>
-									</td>
-									<td>
-										<table>
-											<tr>
-												<td>
-													<p>Pronto Pago:</p>
-													<input class="w4_PS_input2" type="text"/>
-												</td>
-												<td style="width: 195px;">
-													<p>Intereses moratorios:</p>
-													<input class="w4_PS_input2" type="text"/>
+											<td>
+												<div class="w4_PS_inputsDer">
+													<p>Alias de Tarjeta</p>
+													<input class="w4_PS_input" type="text"/>
+													<div class="info"></div>							
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="w4_PS_inputsIzq">
+													<p>Referencia 1</p>
+													<input class="w4_PS_input" type="text"/>
+													<div id="infobtn" class="info"></div>
+													<div class="infoChart"><img src="../../../../img/assets/info_img.png"/></div>
+												</div>
+											</td>
+											<td>
+												<div class="w4_PS_inputsDer">
+													<p>Referencia 2</p>
+													<input class="w4_PS_input" type="text"/>
 													<div class="info"></div>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<p>Transferir el importe a meses sin intereses:</p>
-										<div class="w4_PS_dd2">
-											<select name="" id="" value="1" > 
-							    			</select>
-										</div>
-									</td>
-									<td>
-										<table>
-											<tr>
-												<td>
-													<div id="w4_PS_programar">
-														<p>Programar fecha:</p>
-														<div id="switchBox"></div>					
-													</div>
-												</td>
-												<td style="width: 195px;">
-													<p>Fecha:</p>
-													<div class="dateInput">
-														<input class="w4_PS_input5" type="text" value="dd/mm/aaaa" id="date"/>
-														<div class="w4_PS_contCal"><div class="w4_PS_cal"></div></div>
+																		
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="w4_PS_inputsIzq">
+													<p>Importe</p>
+													<input class="w4_PS_input" type="text"/>
+													<div class="info"></div>
+																	
+												</div>
+											</td>
+											<td>
+												<table>
+													<tr>
+														<td>
+															<p>Pronto Pago:</p>
+															<input class="w4_PS_input2" type="text"/>
+														</td>
+														<td style="width: 195px;">
+															<p>Intereses moratorios:</p>
+															<input class="w4_PS_input2" type="text"/>
+															<div class="info"></div>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>Transferir el importe a meses sin intereses:</p>
+												<div class="w4_PS_dd2">
+													<select name="" id="" value="1" > 
+									    			</select>
+												</div>
+											</td>
+											<td>
+												<table>
+													<tr>
+														<td>
+															<div id="w4_PS_programar">
+																<p>Programar fecha:</p>
+																<div id="switchBox"></div>					
+															</div>
+														</td>
+														<td style="width: 195px;">
+															<p>Fecha:</p>
+															<div class="dateInput">
+																<input class="w4_PS_input5" type="text" value="dd/mm/aaaa" id="date"/>
+																<div class="w4_PS_contCal"><div class="w4_PS_cal"></div></div>
+															</div>	
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>Quiero notificación previa de mi pago:</p>
+												<div class="w4_PS_dd3">
+													<select name="" id="" value="1" > 
+									    			</select>
 													</div>	
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<p>Quiero notificación previa de mi pago:</p>
-										<div class="w4_PS_dd3">
-											<select name="" id="" value="1" > 
-							    			</select>
-											</div>	
-										</div>
-									</td>
-									<td></td>
-								</tr>
-												
-							</table>
-							<div class="botonera">
-								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Regresar</div>
-								<div class="btnaceptar" onclick="cambiaPaso(2); $('.w4_PS_tabla2').load('../../../../tablas/w4_tblPaso2.html')">Ver Detalle</div>
+												</div>
+											</td>
+											<td></td>
+										</tr>
+														
+									</table>
+								</div>
+								<div class="botonera">
+									<div class="btnaceptar" id="btn_continuar">Continuar
+								</div>
 							</div>
 						</div>
 
@@ -319,12 +271,12 @@
 										<img src="img/assets/ico_cuentas_propias.png"/>
 									</div>
 									<p class="titulo">Datos de pago de servicios</p>
-									<p class="subtitulo">11</p>
+									<p class="subtitulo">El pago  de servicio seleccionado se efectuará con la siguiente información:</p>
 								</div>
 								<div class="w4_PS_tabla2"></div>
 							</div>
 							<div class="botonera">
-								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);">Regresar</div>
+								<div class="btn" onclick="cambiaFlujo('.wra_flu1'); muestraServicios();">Regresar</div>
 								<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w4_tblPaso3.html'),'');">Confirmar</div>
 							</div>
 						</div>
@@ -341,18 +293,17 @@
 									<div class="tabla3"></div>
 									
 								</div>
-								<div class="col col1 ">
-									<img src="img/assets/step3/anuncio.png" width="233" />
-									<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
-									<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
-									<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
-									<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
-								</div>
-								<div class="botonera">
-									<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(2);">Regresar</div>
-									<div class="btnaceptar" onclick="">Ver Detalle</div>
-								</div>
-							</div>						
+							<div class="col col1 ">
+								<img src="img/assets/step3/anuncio.png" width="233" />
+								<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+								<div class="btnsLateralStep3  ico1Step3">Pago de servicios</div>
+								<div class="btnsLateralStep3 ico2Step3" >Opci&oacute;n 2</div>
+								<div class="btnsLateralStep3 ico3Step3" >Opci&oacute;n 3</div>
+							</div>
+							<div class="botonera">
+								<div class="btnaceptar" onclick="closeAction()">Finalizar</div>
+							</div>
+						</div>						
 					</div>
 
 					<div class="flujo wra_flu2">
@@ -506,38 +457,42 @@
 								<div class="w4_AS_btnaction2"></div>
 							</div>
 							
-							<div class="w4_AS_avanzada">
-								<h2>Para realizar la búsqueda del servicio a dar de alta, ingrese cualquiera de los siguientes dados:</h2>
-								<div class="w4_AS_inputsAlta OFF">
-									<div>
-										<p>Cuenta de cargo:</p><br />
-										<input class="w4_AS_input" type="text"/>
-									</div>
-									
-									<div>
-										<p>Categoría:</p>
-										<div class="wra_Select4">
-											<select name="" id="" value="1" > 
-							    			</select>
-										</div>	
-									</div>				
+							<!--<div class="w4_AS_avanzada">-->
 								
-									<div>
-										<p>Ubicación:</p>
-										<div class="wra_Select3">
-											<select name="" id="" value="1" > 
-							    			</select>
-										</div>	
-									</div>
-									<div>
-										<div class="botonera">
-											<div class="btnaceptar w4_AS_buscar">Buscar</div>
+								<div class="w4_AS_inputsAlta OFF">
+									<span>Para realizar la búsqueda del servicio a dar de alta, ingrese cualquiera de los siguientes dados:</span>
+									<div class="taran">
+										<div>
+											<p>Cuenta de cargo:</p><br />
+											<div class="w4_PS_dd1">
+												<input class="w4_AS_input" type="text"/>
+											</div>
+										</div>
+										
+										<div>
+											<p>Categoría:</p>
+											<div class="wra_Select4">
+												<select name="" id="" value="1" > 
+								    			</select>
+											</div>	
+										</div>				
+									
+										<div>
+											<p>Ubicación:</p>
+											<div class="wra_Select3">
+												<select name="" id="" value="1" > 
+								    			</select>
+											</div>	
+										</div>
+										<div>
+											<div class="botonera">
+												<div class="btnaceptar w4_AS_buscar">Buscar</div>
+											</div>
 										</div>
 									</div>
-									
 								</div>
 								<div class="w4_AS_busqueda">
-									<h2>Seleccione el servicio que desea pagar:</h2>
+									<span>Seleccione el servicio que desea pagar:</span>
 									<div class="w4_AS_contenedor">
 											<div class="w4_AS_ContenedorImg">
 												<img src="widgets/max/w_4/img/servicios/Servicio_4.png"/>
@@ -587,7 +542,7 @@
 											<li><p><b>Ubicación:Lorem ipsum Elit</b></p></li>
 										</ul>
 									</div>
-								</div>
+								<!--</div>-->
 									
 							</div>
 							<div class="botonera">
@@ -612,7 +567,7 @@
 							</div>
 							<div class="botonera">
 								<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(1);">Regresar</div>
-								<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w4/w4_AS_tblPaso3.html'),'');">Confirmar</div>
+								<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();',cargaHtml('.tabla3','../../../../tablas/w4/w4_AS_tblPaso3.html'),'');">Confirmar</div>
 							</div>
 						</div>
 						<div class="step step3">	
@@ -642,6 +597,172 @@
 					</div>
 
 					<div class="flujo wra_flu3">
+						<div class="step step1">
+							<div class="titFlujo w4_CB_titTam">
+								<div class="iconFlujo">
+									<img src="../../../img/assets/picGraf.png"/>
+								</div>
+								<p class="titulo w4_top">Consulta / baja de servicios</p>
+								<p class="subtitulo w4_espacio w4_top">A continuación usted podrá consultar los servicios que tiene dados de alta.</p>
+								<p class="subtitulo2F4 linkEditar w4_espacio w4_top"> Para obtener más información de la solicitud, haga clic en el estatus.</p>
+							</div>
+						<div class="w4_CB_buscador">
+							<div class="w4_select_1 w4_selects ">
+								<select name="" id="" value="1" > 
+				    			</select>
+							</div>
+
+							<div class="w4_select_2 w4_selects ">
+								<select name="" id="" value="1" > 
+				    			</select>
+							</div>
+							<div class="w4_select_3 w4_selects">
+								<select name="" id="" value="1" > 
+				    			</select>
+							</div>
+							<div class="w4_select_4 w4_selects">
+								<select name="" id="" value="1" > 
+				    			</select>
+							</div>
+							<div class="prueba">
+								<div class="btnaceptar prueba_btn">Limpiar Búsqueda</div>
+							</div>	
+						</div>	
+
+
+
+						<div class="tablaDinamica"></div>
+						<div class="btnExportar w4_btn_exportar"><img src="../../../img/assets/Exportar.png"><img src="../../../img/assets/CalendariOperaciones.png" onclick="cambiaFlujo('.wra_flu3');cambiaPaso(2);$('.w4_AS_paso2').load('../../../../tablas/w4_CB_tblPaso2.html')"></div>
+						</div>
+
+						<div class="step step2">
+							<div class="col colFull">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+									</div>
+									<p class="titulo">Datos de  alta de servicios</p>
+									<p class="subtitulo">El servicio seleccionado se dará de alta con la siguiente información</p>
+								</div>
+								<!-- tabla para paso 2 (Bis) -->
+								<div class="w4_AS_tabla">
+									<div class="w4_AS_paso2Img"></div>
+									<div class="w4_AS_paso2"></div>
+								</div>
+							</div>
+							<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu3');cambiaPaso(1);">Regresar</div>
+								<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w4/w4_CB_tblPaso3.html'),'');">Confirmar</div>
+							</div>
+						</div>
+						<div class="step step3">	
+							<div class="col col2 resetMargen">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Comprobante de pago de servicios</p>
+									</div>
+									
+									<div class="tabla3"></div>
+									
+							</div>
+							<div class="col col1 ">
+								<img src="img/assets/step3/anuncio.png" width="233" />
+								<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+								<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+								<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+								<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+							</div>
+							<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(2);">Regresar</div>
+								<div class="btnaceptar" onclick="">Ver Detalle</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="flujo wra_flu4">
+						<div class="step step1">
+							<div class="titFlujo w4_CB_titTam">
+								<div class="iconFlujo">
+									<img src="../../../img/assets/picGraf.png"/>
+								</div>
+								<p class="titulo w4_top">Consulta de pagos realizados / baja de servicios</p>
+								<p class="subtitulo w4_espacio w4_top">Seleccione el estatus del pago de servicios que desea consultar o modificar, así como el periodo de busqueda y/o rango de importe </p>
+								<p class="subtitulo w4_espacio w4_top">para realizar una busqueda mas especifica.</p>
+								<p class="subtitulo2F4 linkEditar w4_espacio w4_top"><b>Para obtener más información del servicio, haga clic en el estatus.</b></p>
+							</div>
+							<div class="w4_CB_buscador">
+								<div class="w4_select_1 w4_selects ">
+									<select name="" id="" value="1" > 
+					    			</select>
+								</div>
+
+								<div class="w4_select_2 w4_selects ">
+									<select name="" id="" value="1" > 
+					    			</select>
+								</div>
+								<div class="w4_select_3 w4_selects">
+									<select name="" id="" value="1" > 
+					    			</select>
+								</div>
+								<div class="w4_select_4 w4_selects">
+									<select name="" id="" value="1" > 
+					    			</select>
+								</div>
+								<div class="prueba">
+									<div class="btnaceptar prueba_btn">Limpiar Búsqueda</div>
+								</div>	
+							</div>
+							<div class="Tbl2"></div>
+							<div class="btnExportar w4_btn_exportar"><img src="../../../img/assets/Exportar.png"><img src="../../../img/assets/CalendariOperaciones.png" onclick="cambiaFlujo('.wra_flu4');cambiaPaso(2);$('.w4_AS_paso2').load('../../../../tablas/w4_CP_tblPaso2.html')"></div>
+						</div>
+
+						<div class="step step2">
+							<div class="col colFull">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+									</div>
+									<p class="titulo">Datos de alta de servicios</p>
+									<p class="subtitulo">El pago programado seleccionado se eliminará:</p>
+								</div>
+								<!-- tabla para paso 2 (Bis) -->
+								<div class="w4_AS_tabla">
+									<div class="w4_AS_paso2Img"></div>
+									<div class="w4_AS_paso2"></div>
+								</div>
+							</div>
+							<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu3');cambiaPaso(1);">Regresar</div>
+								<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w4/w4_CP_tblPaso3.html'),'');">Confirmar</div>
+							</div>
+						</div>
+
+						<div class="step step3">	
+							<div class="col col2 resetMargen">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Comprobante de eliminación de pago programado.</p>
+									</div>
+									
+									<div class="tabla3"></div>
+									
+							</div>
+							<div class="col col1 ">
+								<img src="img/assets/step3/anuncio.png" width="233" />
+								<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+								<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+								<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+								<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+							</div>
+							<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(2);">Regresar</div>
+								<div class="btnaceptar" onclick="">Ver Detalle</div>
+							</div>
+						</div>
 						
 					</div>	
 
@@ -652,6 +773,3 @@
 				</div>-->	
 			</div>
 		</div>
-		
-	</body>
-</html>

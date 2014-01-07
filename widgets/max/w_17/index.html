@@ -4,20 +4,24 @@
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 		<title>Solicitud de tarjeta de crédito</title>
 		<script src="../../../js/jquery10.2.min.js"></script>
+		<script src="../../../js/componentes.js"></script>
 		<script src="../../../js/components.js"></script>
 		<script src="../../../js/ddSlick.js"></script>
-		<script type="text/javascript" src="widgets/max/w_17/js/funciones.js"></script>
-		<script type="text/javascript" src="widgets/max/w_17/js/jquery.easing.1.3.js"></script>
-		<link rel="stylesheet" href="../../../css/generally.css" />
-		<link rel="stylesheet" type="text/css" href="widgets/max/w_17/css/estilo.css">
-		<!--<link rel="stylesheet" type="text/css" href="../../../css/estilo.css">-->	
+		<script src="widgets/max/w_17/js/funciones.js"></script>
+		<!--<script src="js/funciones.js"></script>-->
+		<script src="widgets/max/w_17/js/jquery.easing.1.3.js"></script>
+		<!--<script src="js/jquery.easing.1.3.js"></script>-->
+		<link rel="stylesheet" href="widgets/max/w_17/css/estilo.css">
+		<link rel="stylesheet" href="css/estilo.css">
 	</head>
 	<body>
 		<div id="widampliado">
+			<div id="bloqueoWidget" class="bloqueoElement" ></div>
+			<div id="elementBloqueo" class="bloqueoElement" ></div>
 			<div id="WA_pasos">
 				<img src="../../../img/assets/pasos.png"/>
 				<div class="btnHeader info">
-					<img src="../../../img/assets/ico_info.png"  />
+					<img src="../../../img/assets/ico_info.png"/>
 				</div>
 				<div class="btnHeader cerrar" onclick="closeAction();">
 					<img src="../../../img/assets/ico_cerrar_widget.png"  />
@@ -30,16 +34,16 @@
 						<p>
 						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
 					</li>
-					<li>
+					<li onclick="cambiaFlujo('.wra_flu1')">
 						<p>Solicitar tarjeta de credito</p>
 					</li>
-					<li>
+					<li onclick="cambiaFlujo('.wra_flu2')">
 						<p>Solicitar tarjeta adicional</p>
 					</li>
-					<li>
+					<li onclick="cambiaFlujo('.wra_flu3')">
 						<p>Aumentar linea de crédito</p>
 					</li>
-					<li>
+					<li onclick="cambiaFlujo('.wra_flu4')">
 						<p>consulta de solicitudes</p>
 					</li>
 				</ul>
@@ -49,16 +53,14 @@
 					<div class="iconFlujo">
 						<img src="../../../img/assets/ico_cuentas_propias.png"/>
 					</div>
-					<p class="titulo">Entre cuentas propias Santander</p>
-					<p class="subtitulo">Instroduzca nombre alias o cuentas bla bla bla...</p>
+					<p class="titulo">Solicitar tarjeta</p>
+					<p class="subtitulo">Seleccione la tarjeta de su interés, o proporcione los datos para obtener la tarjeta ideal para usted</p>
 				</div>
 				<div class="contenidoFlujo">
 
 					<div class="flujo wra_flu1">
-						<div class="step step1">
-							
-
-							<div id="content">
+						<div class="step step0">
+							<div class="content">
 								<div class="mkstc" style="border:solid 1px silver; margin-top:0px; margin-left:0px;margin:0 auto; width:720px; text-align:left; height:25px; font-size:12px;">
 									<span style="position:relative; top:5px;">Seleccionar tarjeta</span>
 									<div class="btnaction"></div>
@@ -196,23 +198,24 @@
 											<!--<div id="cardselectstc2"></div>-->
 										</div>
 									</div>
-									<div class="submits substc" style="height:20px; margin-top:320px; width:22%;
-									margin-left:560px;">
-										<input type="button" value="Solicitar tarjeta" id="contstc" onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(2)">
-									</div>
+									
 								</div>
+								<div class="submits substc" id="submits" style="height:33px; margin-top:17px; width:22%;
+									margin-left:570px;">
+										<input type="button" value="Solicitar tarjeta" id="contstc"onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(1)">
+									</div>
 								
 								<div class="mkstc" style="border:solid 1px silver; margin-top:0px; margin-left:0px;margin:0 auto; width:720px; text-align:left; height:25px; font-size:12px;">
 									<span style="position:relative; top:5px;">Recomendaciones del simulador</span>
 									<div class="btnaction2" id="mm"></div>
 								</div>
 								<div class="selcardstc2">
-									<div id="tarrecstc">
+									<div class="tarrecstc">
 										<span>Tarjetas Recomendadas</span>
 										
-										<div id="tarrecstccards">
-											<a href="#" id="beftarscts"><img src="widgets/max/w_17/imagenes/before.png" title="Anterior"></a>
-											<div id="concardstarrec">
+										<div class="tarrecstccards">
+											<a href="#" class="beftarscts"><img src="widgets/max/w_17/imagenes/before.png" title="Anterior"></a>
+											<div class="concardstarrec">
 												<ul>	
 													<li><div class="pr" style="background:silver;"><img src="widgets/max/w_17/imagenes/card2.png" width="169" height="80"></div></li>
 													<li><div class="pr" style="background:gold;"><img src="widgets/max/w_17/imagenes/card3.png" width="169" height="80"></div></li>
@@ -220,7 +223,7 @@
 													<li><div class="pr" style="background:black;">Falta ingresar tarjeta</div></li>
 												</ul>
 											</div>
-											<a href="#" id="nextarscts"><img src="widgets/max/w_17/imagenes/next.png" title="Siguiente"></a>
+											<a href="#" class="nextarscts"><img src="widgets/max/w_17/imagenes/next.png" title="Siguiente"></a>
 										</div>
 										<div class="iconostc .othericonstc" id="iconostc"></div>
 										<div id="tarrecstctext">
@@ -255,9 +258,9 @@
 											</form>
 										</div>
 									</div>
-									<div class="submits substc" style="height:20px; margin-top:320px; width:22%;
+									<div class="submits substc" style="height:20px; margin-top:280px; width:22%;
 									margin-left:560px; ">
-										<input type="button" value="Solicitar tarjeta" id="contstc" onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(2)">
+										<input type="button" value="Solicitar tarjeta" id="contstc" onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(1)">
 									</div>
 								</div>
 							</div>
@@ -265,9 +268,9 @@
 
 						
 
-						<div class="step step2">
+						<div class="step step1">
 							
-							<div id="content">
+							<div class="content">
 								<div class="titstc">
 									<span class="tstc">Tiene una tarjeta preautorizada por 100,000,000 (MXP)</span><br>
 									<span>Elija la tarjeta que mas se ajuste a sus necesidades.</span>
@@ -277,7 +280,7 @@
 										<div class="frcts partyrew">
 											<div class="iconostc rew"></div><span>Fiesta Rewards</span>
 											<div class="cardselectstc prea"></div>
-											<input type="button" value="Solicitar tarjeta" onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(3)">
+											<input type="button" value="Solicitar tarjeta" onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(2)">
 											<div class="descriptionstc textpreaut"><span>Con fiesta rewards usted podra tener los mejores servicios en nuestros establecimientos, sin duda una experiencia inolvidable.</span></div>
 										</div>
 									</div>
@@ -285,7 +288,7 @@
 										<div class="frcts partyrew">
 											<div class="iconostc rew"></div><span>Fiesta Rewards</span>
 											<div class="cardselectstc prea"></div>
-											<input type="button" value="Solicitar tarjeta" onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(3)">
+											<input type="button" value="Solicitar tarjeta" onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(2)">
 											<div class="descriptionstc textpreaut"><span>Con fiesta rewards usted podra tener los mejores servicios en nuestros establecimientos, sin duda una experiencia inolvidable.</span></div>
 										</div>
 									</div>
@@ -293,7 +296,7 @@
 										<div class="frcts partyrew">
 											<div class="iconostc rew"></div><span>Fiesta Rewards</span>
 											<div class="cardselectstc prea"></div>
-											<input type="button" value="Solicitar tarjeta" onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(3)">
+											<input type="button" value="Solicitar tarjeta" onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(2)">
 											<div class="descriptionstc textpreaut"><span>Con fiesta rewards usted podra tener los mejores servicios en nuestros establecimientos, sin duda una experiencia inolvidable.</span></div>
 										</div>
 									</div>
@@ -302,11 +305,11 @@
 
 						</div>
 
-						
-						<div class="step step3">
+					
+						<div class="step step2" style="display:none;">
 
 
-							<div id="content">
+							<div class="content">
 								<div id="selformentrega">
 									<form>
 										<label for="stc">Seleccione la forma de entregar</label>
@@ -326,32 +329,370 @@
 									<span>Por favor revise el clausulado de la solicitud de tarjeta de crédito</span><br>
 									<input type="checkbox" name="revstc" id="revstc"><span>He leido y acepto los terminos y condiciones<p><a href="javascript:void(0);">Leer terminos y condiciones</a></p></span>
 								</div>
-								<div class="modalstc">
-									<div class="flecha"></div>
-									<div class="barrastc"></div>
-									<div class="textostc">Tarjeta de cédito aprobada</div>
-								</div>
-								<div class="submits">
+								
+								<!--<div class="submits">
 									<input type="button" value="Personalizar tarjeta" id="perstc">
 									<input type="button" value="Continuar" id="contstc">
-								</div>
+								</div>-->
 
+								<div class="botonera">
+									<div class="btn" onclick="cambiaPaso(1)">Personalizar tarjeta</div>
+									<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.w17_stc_tabla2','../../../../tablas/w17_tblPaso2.html'),'flecha');">Continuar</div>
+								</div>
 								<!--<div class="botonera">
 									<div class="btn" onclick="cambiaPaso(1)">Personalizar tarjeta</div>
-									<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(2)">Continuar</div>
+									<div class="btnaceptar" onclick="cargaTokentime('cargaHtml(),'flecha');">Continuar</div>
 								</div>-->
+
 							</div>
 						</div>
-
+						
+							
+								<div class="step step3" style="display:none;">
+									<div class="content">
+										<div class="col colFull">
+											<div class="w17_stc_tabla2"></div>
+										</div>
+										<div class="botonera">
+											<div class="btn" onclick="cambiaPaso(1)">Personalizar tarjeta</div>
+											<div class="btnaceptar" onclick="cambiaPaso(4); $('.w17_stc_tabla2').load('../../../../tablas/w17_tblPaso3.html')">Continuar</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="step step4" style="display:none;">
+									<div class="col col2 resetMargen"  style="background:#fff;">
+										<div class="w17_stc_tabla2"></div>
+									</div>
+									<div class="col col1">
+										<img src="img/assets/step3/anuncio.png" width="233" />
+										<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+										<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+										<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+										<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+									</div>
+									<div class="botonera">
+										<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(2);">Deseo solicitar otra tarjeta</div>
+										<div class="btnaceptar" onclick="">Imprimir</div>
+										<div class="btnaceptar" onclick="cambiaPaso(0)">Finalizar</div>
+									</div>
+								</div>
+															
+							
 					
 					</div>
 
+					<div class="flujo wra_flu2">
+						<div class="step step0" style="display:none">
+							<div class="content">
+								<div class="selcardstc2" style="display:block">
+									<div class="tarrecstc adi">
+																			
+										<div class="tarrecstccards cardsadi" >
+											<a href="#" class="beftarscts"><img src="widgets/max/w_17/imagenes/before.png" title="Anterior"></a>
+											<div class="concardstarrec secondsl">
+												<ul>	
+													<li><div class="pr" style="background:silver;"><img src="widgets/max/w_17/imagenes/card2.png" width="169" height="80"></div></li>
+													<li><div class="pr" style="background:gold;"><img src="widgets/max/w_17/imagenes/card3.png" width="169" height="80"></div></li>
+													<li><div class="pr" style="background:white;"><img src="widgets/max/w_17/imagenes/card1.png" width="169" height="80"></div></li>
+													<li><div class="pr" style="background:black;">Falta ingresar tarjeta</div></li>
+												</ul>
+											</div>
+											<a href="#" class="nextarscts"><img src="widgets/max/w_17/imagenes/next.png" title="Siguiente"></a>
+										</div>
+										<div class="frewardsstca">
+											<div class="contfre">
+												<div class="friconstc"></div>
+												<span>Fiesta Rewards</span>
+											</div>
+											
+											<div class="txtad">
+												Número de tarjeat: 1234 56789 4321<br/>
+												Vigencia: dd/mm/aaaa
+											</div>
+
+										</div>	
+										<div class="mistdcad"> 
+											<span>Mis tarjetas adicionales:</span>
+											<div class="tdcad"></div>
+											<div class="tdcad"></div>
+											<div class="tdcad"></div>
+											<div class="tdcad"></div>
+										</div>
+																		
+									</div>
+									<div class="tdcadform">
+										<form>
+											<label for="nombre">Nombre completo del beneficiario:</label>
+											<input type="text" name="nombre" placeholder="Isabel Cristina Carrillo" style="width:99%; height:25px;">
+											<div style="float:left;">
+												<label for="nombre">RFC:</label>
+												<input type="text" name="nombre" placeholder="ICAI9003091R9" style="height:25px;">
+												<label for="nombre"> Correo para notificación:</label>
+												<input type="text" name="nombre" placeholder="Escribir importe (MXP)" style="height:25px;">
+											</div>
+											<div style="float:left; margin-left:120px;">
+												<label for="nombre">Parentesco:</label>
+												<input type="text" name="nombre" placeholder="Hermana" style="height:25px;">
+												<label for="nombre">Celular para notificación:</label>
+												<input type="text" name="nombre" placeholder="Escribir concepto" style="height:25px;">
+											</div>
+										</form>
+									</div>
+									<div class="ldctdcad">
+										<div class="cardad">
+
+										</div>
+										<div class="lcdstcad"><span>Linea de crédito solicitada para tarjeta adicional</span></div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="botonera">
+								<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(1);">Continuar</div>
+							</div>
+						</div>
+						
+
+
+						<div class="step step1" style="display:none">
+							<div class="content">
+								<div id="selformentrega">
+									<form>
+										<label for="stc">Seleccione la forma de entregar</label>
+										<input type="text" id="stc" name="stc">
+
+									</form>
+									<div id="infostc">
+										<span>La entrega de su tarjeta se realizará en el domicilio registrado en SuperNET.</span>
+										<span>
+											<p>Calle 00, colonia Lomas de chapultepec</p>
+											<p>C.P.30940</p>
+											<p>Delegacion Miguel Hidalgo</p>
+										</span>
+									</div>
+								</div>
+								<div id="terminostc">
+									<span>Por favor revise el clausulado de la solicitud de tarjeta de crédito</span><br>
+									<input type="checkbox" name="revstc" id="revstc"><span>He leido y acepto los terminos y condiciones<p><a href="javascript:void(0);">Leer terminos y condiciones</a></p></span>
+								</div>
+								<div class="botonera">
+									<div class="btn" onclick="cambiaPaso(1)">Personalizar tarjeta</div>
+									<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(2);',cargaHtml('.w17_stc_tabla3','../../../../tablas/w17_tblPaso3.html'),'');">Continuar</div>
+									<!--onclick="cambiaPaso(4); $('.w17_stc_tabla2').load('../../../../tablas/w17_tblPaso3.html')"-->
+								</div>
+							</div>
+						</div>
+
+						<div class="step step2" style="display:none;">
+							<div class="content">
+								<div class="col col2 resetMargen"  style="background:#fff;">
+									<div class="w17_stc_tabla3"></div>
+								</div>
+								<div class="col col1">
+									<img src="img/assets/step3/anuncio.png" width="233" />
+									<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+									<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+									<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+									<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+								</div>
+								<div class="botonera">
+									<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(2);">Deseo solicitar otra tarjeta
+									</div>
+									<div class="btnaceptar" onclick="">Imprimir</div>
+									<div class="btnaceptar" onclick="cambiaPaso(0)">Finalizar</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+
+					<div class="flujo wra_flu3">
+						<div class="step step0" style="display:none;">
+							<div class="content">
+								<div class="selcardstc2" style="display:block">
+									<div class="tarrecstc adi">
+																			
+										<div class="tarrecstccards cardsadi" >
+											<a href="#" class="beftarscts"><img src="widgets/max/w_17/imagenes/before.png" title="Anterior"></a>
+											<div class="concardstarrec">
+												<ul>	
+													<li><div class="pr" style="background:silver;"><img src="widgets/max/w_17/imagenes/card2.png" width="169" height="80"></div></li>
+													<li><div class="pr" style="background:gold;"><img src="widgets/max/w_17/imagenes/card3.png" width="169" height="80"></div></li>
+													<li><div class="pr" style="background:white;"><img src="widgets/max/w_17/imagenes/card1.png" width="169" height="80"></div></li>
+													<li><div class="pr" style="background:black;">Falta ingresar tarjeta</div></li>
+												</ul>
+											</div>
+											<a href="#" class="nextarscts"><img src="widgets/max/w_17/imagenes/next.png" title="Siguiente"></a>
+										</div>
+										<div class="frewardsstca">
+											<div class="contfre">
+												<div class="friconstc"></div>
+												<span>Fiesta Rewards</span>
+											</div>
+											
+											<div class="txtad">
+												Número de tarjeat: 1234 56789 4321<br/>
+												Vigencia: dd/mm/aaaa
+											</div>
+
+										</div>
+										<div class="rangealc">
+											<div><span>Mueva el controlador del simulador para obtener la linea de crédito que mas convenga</span></div>
+											<!--<input type="range" class="range">-->
+											<div class="progress"> 
+												<span style="position:relative;left:55px;">Actual</span><progress value="3534602" max="4603807">33%</progress> <span>Maximo</span>
+											</div>
+											<div class="formalc">
+												<label>Crédito deseado</label>
+												<input type="text" placeholder="100,000,000 MXP" style="width:204px; height:30px;">
+											</div>
+
+										</div>
+										<div class="rangealc tips" style="margin-top:10px; height:160px;">
+											<span>Tips para disminuir su nivel de riesgo</span>
+											<div class="text1alc">
+
+													<p>Lorem ipsum dolor sit ament.
+													consectetur adpiscing elit sed do
+													eiusmod tempor incididunt tempor incidiunt
+													ut labore et dolore manga aliqua.</p>
+													<p>Lorem ipsum dolor sit ament.
+													consectetur adpiscing elit sed do
+													eiusmod tempor incididunt tempor incidiunt
+													ut labore et dolore manga aliqua.</p>	
+											</div>
+											<div class="text1alc">
+
+													<p>Lorem ipsum dolor sit ament.
+													consectetur adpiscing elit sed do
+													eiusmod tempor incididunt tempor incidiunt
+													ut labore et dolore manga aliqua.</p>
+													<p>Lorem ipsum dolor sit ament.
+													consectetur adpiscing elit sed do
+													eiusmod tempor incididunt tempor incidiunt
+													ut labore et dolore manga aliqua.</p>	
+											</div>
+										</div>	
+									</div>
+																		
+								</div>
+							</div>
+							
+							<div class="botonera">
+								<div class="btnaceptar" onclick="cambiaPaso(1); $('.w17_stc_tabla2').load('../../../../tablas/w17_tblPaso3.html')">Continuar</div>
+							</div>
+						</div>
+
+						<div class="step step1" style="display:none;">
+							<div class="content">
+								<div class="col colFull">
+									<div class="w17_stc_tabla2"></div>
+								</div>
+								<div class="botonera">
+									<div class="btn" onclick="cambiaPaso(1)">Personalizar tarjeta</div>
+									<div class="btnaceptar" onclick="cambiaPaso(2); $('.w17_stc_tabla3').load('../../../../tablas/w17_tblPaso3.html')">Continuar</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="step step2" style="display:none;">
+							<div class="content">
+								<div class="col col2 resetMargen"  style="background:#fff;">
+									<div class="w17_stc_tabla3"></div>
+								</div>
+								<div class="col col1">
+									<img src="img/assets/step3/anuncio.png" width="233" />
+									<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+									<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+									<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+									<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+								</div>
+								<div class="botonera">
+									<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(2);">Deseo solicitar otra tarjeta
+									</div>
+									<div class="btnaceptar" onclick="">Imprimir</div>
+									<div class="btnaceptar" onclick="cambiaPaso(0)">Finalizar</div>
+								</div>
+								
+							</div>
+
+						</div>
+
+					</div>
+					<div class="flujo wra_flu4">
+						<div class="step step0">
+							<div class="content">
+								<table cellspacing="0" cellspadding="5" class="tabstc">
+									<tr class="cabeceratdc">
+										<td>Folio Supernet</td>
+										<td>Fecha de solicitud</td>
+										<td>Tipo de solicitud</td>
+										<td>Forma de entrega</td>
+										<td>Status</td>
+									</tr>
+									<tr>
+										<td>123456789123</td>
+										<td>dd/mm/aaaa</td>
+										<td>Tarjeta de crédito</td>
+										<td>Domicilio</td>
+										<td style="color:green;">Programada</td>
+									</tr>
+									<tr>
+										<td>123456789123</td>
+										<td>dd/mm/aaaa</td>
+										<td>Tarjeta de crédito</td>
+										<td>Express</td>
+										<td>Exitosa</td>
+									</tr>
+									<tr class="colortab">
+										<td>123456789123</td>
+										<td>dd/mm/aaaa</td>
+										<td>Limite de crédito</td>
+										<td></td>
+										<td style="color:red;">No Exitosa</td>
+									</tr>
+									<tr>
+										<td>123456789123</td>
+										<td>dd/mm/aaaa</td>
+										<td>Tarjeta de crédito</td>
+										<td>Domicilio</td>
+										<td>Exitosa</td>
+									</tr>
+									<tr>
+										<td>123456789123</td>
+										<td>dd/mm/aaaa</td>
+										<td>Tarjeta de crédito</td>
+										<td></td>
+										<td>Exitosa</td>
+									</tr>
+									<tr>
+										<td>123456789123</td>
+										<td>dd/mm/aaaa</td>
+										<td>Tarjeta de crédito</td>
+										<td></td>
+										<td>Exitosa</td>
+									</tr>
+									<tr>
+										<td>123456789123</td>
+										<td>dd/mm/aaaa</td>
+										<td>Tarjeta de crédito</td>
+										<td>Domicilio</td>
+										<td>Exitosa</td>
+									</tr>
+
+
+								</table>
+								<div class="xlsexporttdc">
+									<div>Exportar .XLS</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
 				</div>
-				<!--<div class="botonera">
-					<div class="btn" onclick="cambiaPaso(1)">Regresar</div>
-					<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(2)">Ver Detalle</div>
-				</div>-->
-				
+							
 			</div>
 		</div>
 		

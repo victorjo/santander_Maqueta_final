@@ -68,12 +68,12 @@ $(document).on("ready",function(){
 
 			}
 
-			slidernext("#nextarscts","#concardstarrec ul li:first","#concardstarrec ul:first");
-			sliderbefore("#beftarscts","#concardstarrec ul li:last","#concardstarrec ul:first");
+			slidernext(".nextarscts",".concardstarrec ul li:first, .secondsl ul li:first",".concardstarrec ul:first, .secondsl ul:first");
+			sliderbefore(".beftarscts",".concardstarrec ul li:last, .secondsl ul li:last",".concardstarrec ul:first,.secondsl ul:first");
 			slidernext("#cardsstc a","#slidestc li:first","#slidestc:first");
 			sliderbefore("#befscts a","#slidestc li:last","#slidestc:first");
-			openClose(".btnaction","btnaction2",".selcardstc",".selcardstc2");
-			openClose2(".btnaction2","btnactionx",".selcardstc2",".selcardstc");
+			openClose(".btnaction","btnaction2",".selcardstc,#submits",".selcardstc2");
+			openClose2(".btnaction2","btnactionx",".selcardstc2",".selcardstc,#submits");
 			
 		
 			$("#concardstc ul li").click(function(){
