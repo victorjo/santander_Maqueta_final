@@ -344,7 +344,12 @@ function cambiaPaso(paso){
           case 3:
               pasoPos = "-50px"
             break;
-
+          case 4:
+              pasoPos = "-50px"
+            break;
+          case 5:
+              pasoPos = "-50px"
+            break;
           default:
               alert("el paso seleccionado no se encuentra registrado");
             break;  
@@ -379,7 +384,12 @@ function cargaToken(cbTokenCanc,cbTokenAcep,fn,modal){
   });  
 }
 
-
+function cargaTokentime(fn,modal){
+  var mod = modal || 'token';
+  if(typeof fn !="undefined" || fn != null || fn != undefined) fn();
+  $("#elementBloqueo").load("../modales/"+mod+".html"); 
+  switchModal(); 
+}
 /*--- Fin Token Victor ---*/
 
 function centraModal(){
@@ -397,6 +407,13 @@ function centraModal(){
 function switchModal(){
   centraModal();
   $(".bloqueoElement").fadeToggle("slow;");
+}
+
+function timeModal(){
+  setTimeout(function(){
+    centraModal();
+    $(".bloqueoElement").fadeOut("slow;");
+  },2000);
 }
 /*--- Funcion para construir el Switch
 
@@ -540,3 +557,6 @@ function Gridius(object,data){
         $('body').append(tools);
         tools.css({top:obj.offset().top-56,left:(50+obj.offset().left+obj.width())}).attr('data-relid',parentObj.attr('data-id'));
       }
+function cargaHtml(componente,url){
+    $(componente).load(url);
+}

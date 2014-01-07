@@ -270,7 +270,9 @@ var flujoActivo="";
           case 3:
               pasoPos = "-50px"
             break;
-
+          case 4:
+              pasoPos = "-50px"
+            break;
           default:
               alert("el paso seleccionado no se encuentra registrado");
             break;  
