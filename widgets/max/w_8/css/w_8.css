@@ -1,3 +1,8 @@
+@import url("../../../../css/bloqueo.css");
+@import url("../../../../css/steps.css");
+
+
+
 .wra_flu1 > .step2{
 	display:none;
 }
@@ -10,6 +15,10 @@
 	display:none;
 }
 
+.linkEditar{
+	color:#ff0000 !important;
+	text-decoration: none;
+}
 
 .w8_EC_contenidodatos1 {
 background: #efefef;
@@ -309,6 +318,7 @@ width: 220px;
 border-radius: 4px 4px 4px 4px;
 border: 1px solid #989898;
 }
+
 .btnExportar{
 	width: 225px;
 	height: 50px;
@@ -319,3 +329,99 @@ border: 1px solid #989898;
 	padding-right: 2px;	
 	padding-top: 5px;
 }
+.w8_EC_tabla2 table{
+	width: 416px;
+}
+.w8_AC_tabla{
+	margin-top: 10px;
+	margin-left: 40px;
+	float: left;
+	width: 500px;
+	height: 135px;
+}
+.w8_CAB_tabla{
+	margin-top: 10px;
+	margin-left: 40px;
+	float: left;
+	width: 500px;
+	height: 135px;
+}
+.w8_AC_paso2{
+	float: left;
+	width: 376px;
+	height: 115px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.contDerecho {
+	width: 163px;
+	height: 110px;
+	/*background-color: #efefef;*/
+	float: left;
+	margin-left: 10px;
+}
+.contDerecho p:nth-of-type(1)  {
+	float: left;
+	margin-left: 8px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000000;
+	font-size:11px;
+	font-weight:bold;
+	margin-bottom: 7px;
+	margin-top: 7px;
+	}
+.contDerecho p:nth-of-type(2) {
+	float: left;
+	margin-left: 8px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000000;
+	font-size:11px;
+	font-weight:bold;
+	margin-bottom: 7px;
+	margin-top: -3px;
+	}
+.contDerecho input {
+height: 25px;
+width: 145px;
+margin-left: 8px;
+border: 1px solid #989898;
+border-radius: 4px 4px 4px 4px;
+font-size:11px;
+	}
+.contDerecho p:nth-of-type(3) {
+	float: left;
+	margin-left: 8px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#ff0000;
+	font-size:12px;
+	font-weight:bold;
+	margin-bottom: 7px;
+	margin-top: 7px;
+	} 
+	.correocontacto{
+		position:absolute;
+		width: 477px;
+		height: 30px;
+		background-color: #ffffff;
+		margin-top: 55px;
+	}
+	.correocontacto p:nth-of-type(1){
+	float: left;
+	margin-left: 8px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000000;
+	font-size:11px;
+	margin-top: 8px;
+
+	}
+	.correocontacto p:nth-of-type(2){
+	float: left;
+	margin-left: 8px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000000;
+	font-size:11px;
+	font-weight:bold;
+	margin-top: 8px;
+
+	}
+

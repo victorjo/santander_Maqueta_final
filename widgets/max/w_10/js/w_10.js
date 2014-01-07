@@ -1,25 +1,16 @@
 var ddData = [
     {
-        text: "Seleccionar",
+        text: "9876****5432",
         value: 1,
         selected: false,
     },
     {
-        text: "Seleccionar",
+        text: "1234****5678",
         value: 2,
         selected: false,
         
     },
-    {
-        text: "Seleccionar",
-        value: 3,
-        selected: false,
-    },
-    {
-        text: "Seleccionar",
-        value: 4,
-        selected: false,
-    }
+   
 ];
 
 $(function(){		
@@ -28,9 +19,11 @@ $(function(){
    		 width: 140,
    		 background: "#f7f7f7",
     	imagePosition: "left",
-    	selectText: "Seleccionar",
+    	selectText: "1234****5678",
    		 onSelected: function (data) {
         console.log(data);
+        //alert(data.selectedIndex);
+        cardChange(data.selectedIndex);
     	}
 		});
 
@@ -39,13 +32,60 @@ $(function(){
          width: 160,
          background: "#f7f7f7",
         imagePosition: "left",
-        selectText: "Seleccionar",
+        selectText: "1234****5678",
          onSelected: function (data) {
         console.log(data);
         }
         });
+        
+        $(".w10_IT_inscribirTarjetas tr").click(function(){
+			$(".w10_IT_inscribirTarjetas tr").removeClass("w10_IT_inscribirTarjetas_seleccionada");
+			$(this).addClass("w10_IT_inscribirTarjetas_seleccionada");
+		});
 });
 
+function cargaHtml(componente,url){
+    $(componente).load(url);
+}
+
+function exportar(){
+    alert("El archivo se ha exportado correctamente.");
+}
+
+function ocultaAsset(){
+    $("#WA_pasos>img").fadeOut(1);
+}
+
+function muestraAsset(){
+    $("#WA_pasos>img").fadeIn(1);
+}
+
+function cardChange(index){
+
+     if(index==0){
+        $(".w10_HPG_tarjeta").css({"background-image":"url('../img/iconos/card_4.png')"});
+        $(".w10_HPG_infoPuntos").fadeOut("fast",function(){
+        	 $(".w10_HPG_infoPuntos").fadeIn("fast");
+        	 });
+     }
+     
+     else if(index==1){
+     	$(".w10_HPG_tarjeta").css({"background-image":"url('../img/iconos/card_1.png')"});
+        $(".w10_HPG_infoPuntos").fadeOut("fast",function(){
+        	 $(".w10_HPG_infoPuntos").fadeIn("fast");
+        	 });
+     }    
+    //$(".w10_HPG_tarjeta img:first").fadeToggle("slow");
+    
+    //$(".w10_HPG_infoPuntos").fadeOut("slow",function(){
+     //$(this).fadeIn("slow");
+    //});
+}
+
+
+	
+
+		
 
 
 
