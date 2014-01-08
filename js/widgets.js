@@ -207,7 +207,7 @@ var widgets = [
 					type:2,
 					order:15,
 					group:2,
-					contentMin:'<h1 class="btnaceptar_wr">TARJETA DE CREDITO</h1>',
+					contentMin:'<h1 class="btnaceptar_wr">SOLICITUD TARJETA DE CREDITO</h1>',
 					contentMax:''
 				}
 			];

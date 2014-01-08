@@ -36,7 +36,7 @@
 					<li onclick="cambiaFlujo('.wra_flu2')">
 						<p>A otras cuentas</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu3'); Gridius($('.tablaDinamica2'), datados);">
+					<li onclick="cambiaFlujo('.wra_flu3'); Gridius($('.tablaDinamica'), data);">
 						<p>Cuentas registradas Alta / Baja</p>
 					</li>
 					<li onclick="cambiaFlujo('.wra_flu4');  Gridius($('.tablaDinamica'), data);">
@@ -134,7 +134,7 @@
 								<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
 							</div>
 							<div class="botonera">
-								<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(2);">Otra transferencia</div>
+								<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(2);">Deseo hacer otra transferencia</div>
 								<div class="btn" onclick="">Imprimir</div>
 
 								<div class="btnaceptar" onclick="closeAction()">Finalizar</div>
@@ -272,7 +272,7 @@
 									<div class="iconFlujo">
 										<img src="img/assets/ico_comprobante.png"/>
 									</div>
-									<p class="titulo">Datos de pago de servicios</p>
+									<p class="titulo">Datos de transferencia</p>
 									<p class="subtitulo">La operación se realizará con la siguiente información:</p>
 								</div>
 									
@@ -309,7 +309,7 @@
 								<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
 							</div>
 							<div class="botonera">
-								<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(1);">Otra transferencia</div>
+								<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(1);">Deseo hacer otra transferencia</div>
 								<div class="btn" onclick="">Imprimir</div>
 
 								<div class="btnaceptar" onclick="closeAction()">Finalizar</div>
@@ -320,26 +320,72 @@
 			<div class="flujo wra_flu3">
 
 				<div class="step step0">
-				<div class="titFlujo CAB">
-								<div class="iconFlujo">
-									<img src="../../../img/assets/User-card.png"/>
+					<div class="titFlujo CAB">
+						<div class="iconFlujo">
+							<img src="../../../img/assets/User-card.png"/>
+						</div>
+						<p class="titulo">Cuentas registradas Alta / Baja</p>
+						<p class="subtitulo">A continuación usted podrá consultar las cuentas que tiene registradas, si lo desea podrá modificarlas o darlas de baja. 
+						Si la cuenta a la que desea transferir no se encuentra en la lista, usted podrá darla de alta.</p>
+					</div>
+
+					<div class="w8_CRAB_dropHdr1">
+						<p>Consulta</p>
+						<div class=" btnaction toggle"></div>						
+					</div>					
+					<div class="tablaDinamica"></div>
+
+					<div class="w8_CRAB_dropHdr2">
+						<p>Dar de alta</p>
+						<div class="btnaction2 toggle"></div>						
+					</div>	
+
+					<div class="w8_CRAB_wraFormulario">
+								<p>Favor de ingresar la siguiente información para dar de alta una nueva cuenta o tarjeta de débito</p>
+								<div>
+									<p>Número de buenta o tarjeta</p>
+									<input class="w8_CRAB_input" type="text" value="1234****5678"/>
 								</div>
-								<p class="titulo">Cuentas registradas Alta / Baja</p>
-								<p class="subtitulo">A continuación usted podrá consultar las cuentas que tiene registradas, si lo desea podrá modificarlas o darlas de baja. 
-								Si la cuenta a la que desea transferir no se encuentra en la lista, usted podrá darla de alta.</p>
+								<div>
+									<p>Banco</p>
+									<input class="w8_CRAB_inputBloqueado" type="text" value="Nombre del banco" disabled/>
+									<div class="info"></div>					
+								</div>
+								<div>
+									<p>Alias</p>
+									<input class="w8_CRAB_input" type="text" value="Nombre alias"/>
+									<div class="info"></div>					
+								</div>
+								<div>
+									<p>Nombre del titular</p>
+									<input class="w8_CRAB_input" type="text" value="Nombre"/>
+									<div class="info"></div>					
+								</div>
+								<div>
+									<p>Correo electrónico del titular:</p>
+									<input class="w8_CRAB_input" type="text" value="correo@correo.com" />
+									<div class="info"></div>					
+								</div>
+								<div>
+									<p>RFC del titular de la tarjeta:</p>
+									<input class="w8_CRAB_input" type="text" value="ROMA000000ME0"/>
+									<div class="info"></div>					
+								</div>
+								<div class="botonera">
+									<div class="btnaceptar">Continuar</div>
+									<div class="btn">Calendario de Operaciones</div>
+									
+								</div>	
 							</div>
-							<div class="tablaDinamica2"></div>
-
-							<div class="botonera">
-								<div class="btnaceptar"  onclick="cambiaFlujo('.wra_flu3');cambiaPaso(1)">Dar de alta</div>
-
-							</div>
-
-						
+					
+					<div class="botonera">
+						<div class="btnaceptar"  onclick="cambiaFlujo('.wra_flu3');cambiaPaso(1)">Dar de alta</div>
+					</div>
 				</div>
+
 					<div class="step step1" >
 						
-						<div class="titFlujo">
+						<div class="titFlujo" style="height:45px;">
 							<div class="iconFlujo">
 								<img src="../../../img/assets/User-card.png"/>
 							</div>
@@ -349,22 +395,46 @@
 							</div>
 							
 									
-							<div class="w8_EC_contenidodatos1">
+							<div class="w8_EC_contenidodatos1 large">
 							<p>Favor de ingresar la siguiente información para dar de alta una nueva cuenta o tarjeta de débito</p>
 
 						<div class="contenedorf2">
 							
 
-							<p>Cuenta de cargo:</p>
+							<p>Número de cuenta o tarjeta</p>
 
+												<p class="importeCab" style="margin-left:88px; margin-top:7px;">Banco:</p>
 							<div class="tabletextcambiotable">
-										<p >Importe:</p>
-										<input class="textboxdos" placeholder="Escribir importe (MXP)" type="text"/>
+										<input style="width:225px;"class="textboxdos" placeholder="1234****5678" type="text"/>
 								</div>
 								<div class="tabletextcambiotable">
-								<p id="concept dus">Concepto:</p>
-										<input class="textboxdos2 du" placeholder="Escribir concepto" type="text"/>
+								<p id="concept dus" style="margin-left:512px;position:absolute;top:130px;">Nombre del titular de la cuenta:</p>
+										<input class="textboxdos2 du" placeholder="Santander" type="text"/>
 								</div>	
+								<div class="tabletextcambiotable">
+										
+										<input class="textboxtresf3" placeholder="Pablo Hdz" type="text"/>
+								</div>
+
+						</div>
+					<div class="contenedorf2">
+							
+
+							<p>Alias de la cuenta</p>
+
+												<p class="importeCab" style="margin-left:141px; margin-top:7px;">Correo electrónico del titular:</p>
+							<div class="tabletextcambiotable">
+										<input style="width:225px;"class="textboxdos" placeholder="sobrino" type="text"/>
+								</div>
+								<div class="tabletextcambiotable">
+								<p id="concept dus" style="margin-left:510px;position:absolute;top:207px;">5.R.F.C. del titular:</p>
+										<input class="textboxdos2 du" placeholder="pablo_hdz@gmail.com" type="text"/>
+								</div>	
+								<div class="tabletextcambiotable">
+										
+										<input class="textboxtresf3" placeholder="ABCD123456EF7" type="text"/>
+								</div>
+
 										
 						</div>
 
@@ -421,7 +491,7 @@
 								<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
 							</div>
 							<div class="botonera">
-								<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(2);">Otra transferencia</div>
+								<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(2);">Deseo hacer otra transferencia</div>
 								<div class="btn" onclick="">Imprimir</div>
 								<div class="btnaceptar" onclick="closeAction()">Finalizar</div>
 							</div>

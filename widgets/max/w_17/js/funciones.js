@@ -6,10 +6,7 @@
 			function muestraAsset(){
 			    $("#WA_pasos>img").fadeIn(1);
 			}
-			function closeAction(od,id){
-				$("[instanced='true']").data('instanced').routerAction(od,id);
-				globalFlah++;
-			}
+			
 			function openClose(objetoEvento,clasemenos,ocultaobjeto,slideup){
 				$(objetoEvento).click(function(){ 
 					if ($(this).hasClass(clasemenos)) {
@@ -41,29 +38,7 @@
 				});
 
 			}
-			function recorrer(){
-				var card1 = "<img src='widgets/max/w_16/imagenes/card1.png'>";
-				var card2 = "<img src='widgets/max/w_16/imagenes/iconos/card2.png'>";
-				var card3 = "<img src='widgets/max/w_16/imagenes/iconos/card3.png'>";
-				var targets = new Array(card1, card2, card3);
-				
-				for(i=0;i<6;i++){
-				$("#concardstc ul").append("<li></li>");
-				}
-				
-				for(i=0;i<targets.length;i++){
-					$(this).css(".cardstc:before");
-						
-						$("#concardstc ul" ).append("<li>"+targets[i]+"</li>");
-						
-					if (targets.length>3) {
-						$("#concardstc").css("overflow","auto");
-						$(".colcardstc").css("margin-left","20px");
-					}
-				
-				}
-
-			}
+			
 			function slidernext(evento,parametro1,parametro2){
 
 				$(evento).click(function(){
@@ -185,8 +160,16 @@
 					$("#rx2").css("background","#000");
 					$("#rx1").css("background","transparent");
 				});
+
 				$(function() {
-				    $( "#ransstc" ).slider();
-				  });
+				    $( "#ransstc" ).slider({
+				    	range:"min",
+				    	value:70,
+				    	max:100
+				    	//slide: function(event,ui);
+				    });
+				    //var value = $("#ransstc").slider("value");
+				    //$("#valuestc").html(value);
+				});
 								
 	
