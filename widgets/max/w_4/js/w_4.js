@@ -29,7 +29,7 @@ var data = {
 
 var dataTbl2 = {
     colums: ['Nombre de servicio', 'Categoría', 'Alias', 'Convenio', 'Referencia', 'Fecha de pago', 'Importe', 'Estatus'],
-    rowsValues: ['Lorem Ipsum', 'Lorem Ipsum', 'Lorem', '1234', '1234567890', 'dd/mm/aaaa', '999,999,999.00', 'Exitosa'],
+    rowsValues: ['Axtel', 'Telefonía', 'Ax_02', '1234', '1234567890', 'dd/mm/aaaa', '999,999,999.00', 'Exitosa'],
     numRows: 30
 }
 
@@ -149,12 +149,6 @@ var identificador = 0;
 var data = {
     colums: ['Fecha', 'Descripción', 'Referencia', 'Cuenta de cargo', 'Cuenta destino', 'Importe', 'Estatus'],
     rowsValues: ['dd/mm/aaaa', '123456789123', '123456789123', '1234****7890', '1234****7890', '999,999,999.00', 'Exitosa'],
-    numRows: 30
-}
-
-var dataTbl2 = {
-    colums: ['Nombre de servicio', 'Categoría', 'Alias', 'Convenio', 'Referencia', 'Fecha de pago', 'Importe', 'Estatus'],
-    rowsValues: ['Lorem Ipsum', 'Lorem Ipsum', 'Lorem', '1234', '1234567890', 'dd/mm/aaaa', '999,999,999.00', 'Exitosa'],
     numRows: 30
 }
 
