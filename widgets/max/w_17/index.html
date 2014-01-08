@@ -31,7 +31,7 @@
 						<p>
 						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu1'); elf()" class=" w4_flu1_activo liActive">
+					<li onclick="cambiaFlujo('.wra_flu1');elf();" class=" w4_flu1_activo liActive">
 						<p>Solicitar tarjeta de credito</p>
 					</li>
 					<li onclick="cambiaFlujo('.wra_flu2');muestraAsset();elf();">
@@ -229,7 +229,7 @@
 										<div class="tarrecstccards">
 											<a href="#" class="beftarscts"><img src="widgets/max/w_17/imagenes/before.png" title="Anterior"></a>
 											<div class="concardstarrec">
-												<ul>	
+												<ul>
 													<li><div class="pr" style="background:silver;"><img src="widgets/max/w_17/imagenes/tarjeta169_2.png" width="169" height="80"></div></li>
 													<li><div class="pr" style="background:gold;"><img src="widgets/max/w_17/imagenes/tarjeta169_3.png" width="169" height="80"></div></li>
 													<li><div class="pr" style="background:white;"><img src="widgets/max/w_17/imagenes/tarjeta169_4.png" width="169" height="80"></div></li>
@@ -364,7 +364,7 @@
 
 								<div class="botonera">
 									<div class="btn" onclick="cargaToken('switchModal()','switchModal()',cargaHtml(),'personaliza');">Personalizar tarjeta</div>
-									<div class="btnaceptar" onclick="cambiaPaso(2); $('.w17_stc_tabla2').load('../../../../tablas/w17_tblPaso2.html'); el();">Continuar</div>
+									<div class="btnaceptar" onclick="cambiaPaso(2);  $('.w17_stc_tabla2').load('../../../../tablas/w17_tblPaso2.html');el();">Continuar</div>
 								</div>
 								<!--onclick="cambiaPaso(2); $('.w17_stc_tabla2').load('../../../../tablas/w17_tblPaso2.html')"
 								<div class="botonera">
@@ -745,9 +745,9 @@
 									<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
 								</div>
 								<div class="botonera">
-									<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Deseo solicitar otra tarjeta
+									<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Deseo solicitar otra tarjeta
 									</div>
-									<div class="btnaceptar" onclick="">Imprimir</div>
+									<div class="btn" onclick="">Imprimir</div>
 									<div class="btnaceptar" onclick="closeAction()">Finalizar</div>
 								</div>
 								

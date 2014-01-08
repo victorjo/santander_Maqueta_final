@@ -181,14 +181,13 @@ input[type=button]{
 	width: 710px;
 	/*height: 315px;*/
 	height: 100%;
-	/*border:solid 1px silver;*/
+	border:solid 1px silver;
 	margin: 0 auto;
 	/*margin-top: 10px;*/
 	margin-top: 0px;
 	margin-bottom: 10px;
 	display: none;
 	/*background:silver;*/
-	z-index: 10;
 }
 
 .btnaction{
