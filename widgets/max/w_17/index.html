@@ -1,24 +1,24 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-		<title>Solicitud de tarjeta de crédito</title>
-		<script src="../../../js/componentes.js"></script>
+
+		
+		<!--<script src="../../../js/componentes.js"></script>-->
+		<!--<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>-->
 		<script src="../../../js/components.js"></script>
 		<script src="../../../js/ddSlick.js"></script>
 		<script src="widgets/max/w_17/js/funciones.js"></script>
 		<link rel="stylesheet" href="widgets/max/w_17/css/estilo.css">
-	</head>
-	<body>
+	
 		<div id="widampliado">
 			<div id="bloqueoWidget" class="bloqueoElement" ></div>
-			<div id="elementBloqueo" class="bloqueoElement" ></div>
+			<div id="elementBloqueo" class="bloqueoElement" >
+
+			</div>
 			<div id="WA_pasos">
 				<img src="../../../img/assets/pasos.png"/>
 				<div class="btnHeader info">
 					<img src="../../../img/assets/ico_info.png"/>
 				</div>
-				<div class="btnHeader cerrar closeAction();">
+				<div class="btnHeader cerrar" onclick="closeAction();">
 					<img src="../../../img/assets/ico_cerrar_widget.png"  />
 				</div>
 			</div>
@@ -29,13 +29,13 @@
 						<p>
 						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu1')">
+					<li onclick="cambiaFlujo('.wra_flu1') " class=" w4_flu1_activo liActive">
 						<p>Solicitar tarjeta de credito</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu2')">
+					<li onclick="cambiaFlujo('.wra_flu2');muestraAsset();">
 						<p>Solicitar tarjeta adicional</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu3')">
+					<li onclick="cambiaFlujo('.wra_flu3');muestraAsset();">
 						<p>Aumentar linea de crédito</p>
 					</li>
 					<li onclick="cambiaFlujo('.wra_flu4');cambiaPaso(1);ocultaAsset();"> 
@@ -419,7 +419,7 @@
 									<div class="botonera">
 										<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Deseo solicitar otra tarjeta</div>
 										<div class="btn" onclick="">Imprimir</div>
-										<div class="btnaceptar" onclick="closeAction()">Finalizar</div>
+										<div class="btnaceptar" onclick="closeAction();">Finalizar</div>
 									</div>
 								</div>
 															
@@ -460,10 +460,10 @@
 										</div>	
 										<div class="mistdcad"> 
 											<span>Mis tarjetas adicionales:</span>
-											<div class="tdcad" id="tdcad1"><img src="widgets/max/w_17/imagenes/card1.png"></div>
-											<div class="tdcad" id="tdcad2"><img src="widgets/max/w_17/imagenes/card2.png"></div>
-											<div class="tdcad" id="tdcad3"><img src="widgets/max/w_17/imagenes/card3.png"></div>
-											<div class="tdcad" id="tdcad4"><img src="widgets/max/w_17/imagenes/card1.png"></div>
+											<div class="tdcad" id="tdcad1"><img src="widgets/max/w_17/imagenes/tarjeta73_7.png"></div>
+											<div class="tdcad" id="tdcad2"><img src="widgets/max/w_17/imagenes/tarjeta73_6.png"></div>
+											<div class="tdcad" id="tdcad3"><img src="widgets/max/w_17/imagenes/tarjeta73_5.png"></div>
+											<div class="tdcad" id="tdcad4"><img src="widgets/max/w_17/imagenes/tarjeta73_3.png"></div>
 										</div>
 																		
 									</div>
@@ -625,9 +625,13 @@
 											<div class="progress"> 
 												<!--<span style="position:relative;left:55px;">Actual</span><progress value="3534602" max="4603807">33%</progress> <span>Maximo</span>-->
 												<div style="float:left; width: 316px; margin-left: 20px; margin-right:19px;"> 
-													<div style="position:relative; top:41px;">Actua</div>
-													<div id="ransstc" style="width: 220px; background: red; margin-top: 27px; margin-left: 46px;"></div>
-													<div style="position: relative;float: right;right: -7px; bottom: 16px;">Maximo</div>
+													<div style="position:relative; top:40px;">Actual</div>
+													<div class="rangehtm" style="margin-left:80px; margin-top:20px;">
+														<input type="range">
+													</div>
+													
+													<!--<div id="ransstc" style="width: 220px; background: red; margin-top: 27px; margin-left: 46px;"></div>-->
+													<div style="position: relative;float: right;right: 20px; bottom: 20px;">Maximo</div>
 												</div>
 											</div>
 											<div class="formalc">
@@ -804,5 +808,3 @@
 		</div>
 		
 		
-	</body>
-</html>

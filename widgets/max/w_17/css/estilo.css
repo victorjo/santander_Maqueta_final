@@ -821,7 +821,7 @@ margin-top: -30px;
 
 }
 .cardad{
-	background: url(../imagenes/card1.png);
+	background: url(../imagenes/tarjeta73_4.png);
 	background-size: 60px;
 	width: 60px;
 	height: 35px;
@@ -853,11 +853,12 @@ margin-top: -30px;
 	float: left;
 }
 .range, progress{
-	/* -webkit-appearance: none !important;*/
+	/*-webkit-appearance: none !important;
 	width: 200px;
 	margin-left: 60px;
 	margin-top: 25px;
-	height: 20px;
+	height: 20px;*/
+
 }
 .formalc{
 	float: left;
@@ -987,6 +988,17 @@ input[type=file]{
 	height:10px; 
 	border:solid 1px; 
 	border-radius:50%;;
+}
+.rangehtml{
+border: solid;
+width: 128px;
+margin-top: 16px;
+margin-left: 80px;
+height: 20px;
+background: firebrick;
+border: none;
+border-radius: 5px;
+
 }
 
 /***********************************************************************/
