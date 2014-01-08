@@ -16,7 +16,20 @@ var ddData = [{
     value: 4,
     selected: false,
 }];
-(function() {
+
+var data = {
+    colums: ['Fecha', 'Descripción', 'Referencia', 'Cuenta de cargo', 'Cuenta destino', 'Importe', 'Estatus'],
+    rowsValues: ['dd/mm/aaaa', '123456789123', '123456789123', '1234****7890', '1234****7890', '999,999,999.00', 'Exitosa'],
+    numRows: 30
+}
+
+var datados = {
+    colums: ['Titular de la cuenta', 'Número de cuenta', 'Alias', 'Banco', 'Correo del titular'],
+    rowsValues: ['Nombre', '1234****5678', 'Alias de cuenta', 'Nombre Banco', 'correo@correo.com'],
+    numRows: 2
+}
+
+$(function() {
 
     //DropList falso (Pendiente a realizacion)
     $(".w4_dropList select").ddslick({
@@ -48,16 +61,10 @@ var ddData = [{
     });
     cambiaFlujo('.wra_flu1');
 
-    var data = {
-        colums: ['Fecha', 'Descripción', 'Referencia', 'Cuenta de cargo', 'Cuenta destino', 'Importe', 'Estatus'],
-        rowsValues: ['dd/mm/aaaa', '123456789123', '123456789123', '1234****7890', '1234****7890', '999,999,999.00', 'Exitosa'],
-        numRows: 30
-    }
 
-
-    Gridius($('.tablaDinamica'), data);
 
 })();
+
 
 function cargaHtml(componente, url) {
     $(componente).load(url);
