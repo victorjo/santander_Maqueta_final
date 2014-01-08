@@ -1,4 +1,4 @@
-(function(document, window, require) {
+(function(document, window, require) {    
 
 	requirejs.config({
 		paths:{
@@ -23,7 +23,7 @@
 				posWidgets(0);
 					genFooterHeight();
 					ajustaBannerHeight();
-					setInterval(function(){ /*motorSuperbanner()*/ },15000);
+
 					//
 						//valToForm();
 						//outaLogin();

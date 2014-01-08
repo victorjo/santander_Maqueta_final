@@ -1,1007 +1,452 @@
-<script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
-<script src="../../../js/ddSlick.js"></script>
-<script src="../../../js/componentes.js"></script>
-<script src="widgets/max/w_8/js/transferencias.js"></script>
-<!--<script src="../../../js/utiles.js"></script>-->
-<link rel="stylesheet" href="widgets/max/w_8/css/transferencias.css"/>
-<link rel="stylesheet" href="../../../css/componentes.css"/>
-<link rel="stylesheet" href="../../../css/token.css"/>
-<script type="text/javascript">
-	$(document).ready(function(){	 
-	  $(".dd-select").css("max-width","500px");
-	});
-</script>
-<!-- nothong -->
-<style>
-.btnHeaderTable{
-	height: 24px;
-margin: -10px;
-padding-top: 10px;
-width: 110px;
-}
-.titTabla{
-	margin-bottom:0px;
-	padding:10px 10px 5px 30px;
-	border:1px solid black;
-	border-bottom:0;
-	width:678px;
-	background:#F4F4F4;
-	margin-top:20px;
-	height:20px;
-	font-weight:bold
-}
-.titTabla p{
-	float:left;
-}
-.titTabla img{
-	float:right;
-	margin-top:-7px;
-	cursor: pointer;
-}
-.espacioTxt{
-	margin-left: 30px;
-}
-/*MENU*/
-#menu {
-	float:left;
-	position: absolute;
-	margin-left: -42px;
-	margin-left: -36px;
-	margin-top: -4px;
-}
-#menu a {
-	display: block;
-	width: 140px;
-	height: 12px;
-	text-align: justify;
-	padding: 6px;
-}
-#menu ul {
-	list-style-type: none;
-	padding-top: 5px;
-}
-#menu li {
-	float: left;
-	position: relative;
-	padding: 3px 0;
-	text-align: center;
-	background-color:#F0F0F0;
-	background-image: url('../../lineagrafica/widamphdr.png');
-	border: 1px #a7a7a7;
-}
-#menu ul.sub-menu {
-	display: none;
-	position: absolute;
-	padding: 0px;
-	z-index: 90;
-}
-#menu ul.sub-menu li {
-	text-align: left;
-}
-#menu li:hover ul.sub-menu {
-	display: block;
-	border: 1px solid #ececec;
-}
-.texto1{
-	float: left;
-	margin-top: 52px;
-}
-.texto2{
-	float: right;
-	margin-top: 52px;
-	text-decoration: underline;
-}
-a {
-	text-decoration: none;
-	color: #838383;
-}
-a:hover {
-	color: black;
-	background-color: #E3E3E3;
-	font-weight: bold;
-}
-.inputTabla{
-	width:450px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;
-}
-.fechaLabel{
-	width:100px; height:20px; margin-top:80px;
-}
-.interes{
-	margin:10px 0 0 0;float:left;font-weight:bold;
-}
-.dropcontainer{
-	max-height: 200px; height: 200px; overflow: visible;
-}
-.tablaBtn{
-	float: right; margin-right:-13px; margin-top:59px;clear:both;
-}
-.activo2{
-	display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png
-}
-.inputtext{
-	margin-top: 0px;
-}
-#progfecha,#progfecha2{
-	margin-top:95px;
-}
-</style>
-<div id="osc">
-	<div id="widget" class="widget">
+		<link rel="stylesheet" href="../../../css/generally.css" />
+		<link rel="stylesheet" href="../../../css/componentes.css" />
+		<script src="../../../js/ddSlick.js"></script>
+		<script src="../../../js/components.js"></script>
+		<script src="widgets/max/w_8/js/w_8.js"></script>
+		<script src="../../../js/ui/jquery-ui-1.10.3.custom.min.js"></script>
+		<link rel="stylesheet" href="widgets/max/w_8/css/w_8.css" />
 		
-		<div id="header">
-			<p class="f_titleWid">TRANSFERENCIAS(ENVÍO DE DINERO)</p>
-			<div class="btnHeader">
-				<img src="../../../img/botones/btn_cerrar.png"/>
-			</div>
-			<div class="btnHeader">
-				<img src="../../../img/botones/info_.png"/>
-			</div>
-		</div>
-		<!--<div id="header">
-				<p class="f_titleWid">TRANSFERENCIAS(ENVÍO DE DINERO)</p>
-					<div class="btnHeader">
-							<img src="../../../img/botones/btn_cerrar.png"/>
-					</div>
-					<div class="btnHeader">
-							<img src="../../../img/botones/info_.png"/>
-					</div>
-		</div>-->
-		<div id="stepbar">
-			<img src="../../../img/fake/pasos/paso1.png"/>
-		</div>
-		<div id="contenido">
-			<div><!-- Funcionalidad: Entre cuentas santander-->
-			<div id="step1" class="pasos">
-				<div class="titre" style="color:red">1. Introduzca el nombre, alias o los cuatro digitos de la cuenta destino o seleccionela de la lista.</div>
-
-			<div class="sexycombo">
-				<input type="text" id="autocompleteQ" placeholder="1234****5678        Elite Rewards Platino       Alias     654,124,321.00" style="width:517px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;margin-top:0px; margin-left:0px;margin-bottom:15px;"> 
-				<span style="font-weight:bold;margin-left:0px;position: relative;top: 3px;left: -27px;"><img class="activo" src="img/iconos/favorito_of.png"><img class="inactivo" src="img/iconos/favorito_on.png"></span>
-				<div class="marcotriangulo" style="margin-top: -44px; margin-left: 518px;"><div class="triangulo_inf"></div></div>
-			</div>
-			<div class="titre" style="color:red">1. Introduzca el nombre, alias o los cuatro digitos de la cuenta de cargo o seleccionela de la lista.</div>
-			<div class="sexycombo">
-				<input type="text" id="autocompleteQ" placeholder="1234****5678        Elite Rewards Platino       Alias     654,124,321.00" style="width:517px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;margin-top:0px; margin-left:0px;margin-bottom:15px;"> 
-				<span style="font-weight:bold;margin-left:0px;position: relative;top: 3px;left: -27px;"><img class="activo" src="img/iconos/favorito_of.png"><img class="inactivo" src="img/iconos/favorito_on.png"></span>
-				<div class="marcotriangulo" style="margin-top: -44px; margin-left: 518px;"><div class="triangulo_inf"></div></div>
-			</div>
-			<div id="fields" style="margin-top:-25px;margin-left:-30px;">
-				<div class="ftext1">
-					<div class="tittext">Importe:</div>
-					<div class="inputtext"><input type="text"></div>
-				</div>
-				<div class="ftext2">
-					<div class="tittext">Concepto:</div>
-					<div class="inputtext"><input type="text"></div>
-				</div>
-			</div>
-
-			<div id="progfecha" style="margin-top:110px;">
-				<div>Programar fecha:</div>
-				<div id="calendar">
-					
-
-				<div class="switchCont">
-						<div id="switchBox">
-							<div class="switchSlide">					
-									<div class="switchLabel"><span class="switchs">Si</span></div>
-									<div class="switchIndicador"></div>
-									<div class="switchLabelR"><span span class="switchs">No</span></div>				
-							</div>
-						</div>		
-					</div>
-
-				</div>
-				<div class="imgcal"></div>
-				<div id="textcal">
-					<div class="divFlotante">
-						<div class="imagen"></div>
-						<div id="ico" class="calicoNo"></div>
-						<input class="input3"  id="dia" value="01/01/2013" disabled='disabled' type="text"/>
-					</div>
-				</div>
-			</div>
-			<div class="contentSlider">
-				<div class="mk" style="border:solid 1px silver; margin-top:60px; margin-left:0px; width:100%; text-align:left; height:25px; font-size:12px;">
-				<span style="position:relative; top:5px;">Notificación previa de mi transferencia</span>
-				<div class="btnaction2"></div>
-				</div>
-				<div id="minisexycombo">
-					<div class="wra_Select2" style="margin-top:0px;">
-						<select name="" id="" >
-							<option value="">Opcion1</option>
-							<option value="">Opcion1</option>
-							<option value="">Opcion1</option>
-							<option value="">Opcion1</option>
-							<option value="">Opcion1</option>
-						</select>
-					</div>
-				</div>
-			</div>
-			<div class="botonera" style="margin-right:12px;">
-				<div class="btnaceptar">Continuar</div>
-			</div>
-
-
-
-
-
-
-
-
-
-			</div> <!--fin step1-->
-		
-			<div id="step2" class="pasos">
-			
-			</div><!--fin step2-->
-			<div id="step3" class="pasos"><!-- step3 -->
-			
-			</div><!-- Fin step3 -->
-
-			</div><!--Fin funcionalidad: entre cuentas santander-->
-			
-			<div><!--Funcionalidad 2 : A otras Cuentas-->
-			
-			<div id="step4" class="pasos">
+		<!--<input type="button" value="GRID" onclick="Gridius($('.contenidoFlujo'));">-->
+		<div id="widampliado">
+			<!-- Bloqueo -->
+			<div id="bloqueoWidget" class="bloqueoElement"></div>
+			<div id="elementBloqueo" class="bloqueoElement">
 				
-				<div class="boldred">1. Introduzca el nombre, alias o los cuatro dígitos de la cuenta destino o seleccionela de la lista</div>
+			</div>
+			<div id="WA_pasos">
+				<img src="../../../img/assets/pasos.png"/>
+				<div class="btnHeader info">
+					<img src="../../../img/assets/ico_info.png"  />
+				</div>
+				<div class="btnHeader cerrar">
+					<img src="../../../img/assets/ico_cerrar_widget.png"  />
+				</div>
+			</div>
+			
+			<div id="WA_nav">
+				<ul>
+					<li class="menu">
+						<p>
+						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
+					</li>
+					<li onclick="cambiaFlujo('.wra_flu1')" class="liActive">
+						<p>Disposición de Créditos</p>
+					</li>
+					<li onclick="cambiaFlujo('.wra_flu2')">
+						<p>Consulta de créditos</p>
+					</li>
+					<li onclick="cambiaFlujo('.wra_flu3')">
+						<p>Cuentas registradas Alta / Baja</p>
+					</li>
+					<li onclick="cambiaFlujo('.wra_flu4')">
+						<p>Consulta de transferencia</p>
+					</li>
+				</ul>
+			</div>
+			<div id="WA_contenedorFlujos">
 				
-				<div class="sexycombo">
-					<input type="text" id="autocompleteQ" placeholder="1234****5678        Elite Rewards Platino       Alias     654,124,321.00" style="width:517px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;margin-top:0px; margin-left:0px;margin-bottom:15px;"> 
-					<span style="font-weight:bold;margin-left:0px"></span>
-					<div class="marcotriangulo" style="margin-top: -44px; margin-left: 518px;"><div class="triangulo_inf"></div></div>
-				</div>
-				<div class="bold" style="margin-top:-10px;">Si la cuenta a la que desea realizar la transferencia no se encuentra en la lista, lo invitamos a registrarla aquí. <img style="float:right;margin-right:165px"src="../img/iconos/reprod.png"> </div> 
-				<div class="boldred" style="margin-top:15px">2. Introduzca el nombre, alias o los cuatro dígitos de la cuenta de cargo o seleccionela de la lista</div>
+				<div class="contenidoFlujo">
+				<div class="flujo wra_flu1">
 
-				<div class="sexycombo">
-					<input type="text" id="autocompleteQ" placeholder="1234****5678        Elite Rewards Platino       Alias     654,124,321.00" style="width:517px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;margin-top:0px; margin-left:0px;margin-bottom:15px;"> 
-					<span style="font-weight:bold;margin-left:0px"></span>
-					<div class="marcotriangulo" style="margin-top: -44px; margin-left: 518px;"><div class="triangulo_inf"></div></div>
-				</div>
-				<div id="fields" style="margin-top:-25px;margin-left:-30px;">
-					<div class="ftext1">
-						<div class="tittext">Importe:</div>
-						<div class="inputtext"><input type="text"></div>
-					</div>
-					<div class="ftext2">
-						<div class="tittext">Concepto:</div>
-						<div class="inputtext"><input type="text"></div>
-					</div>
-
-				</div>
-				<div id="fields2" style="margin-top:75px;margin-left:-30px;">
-					<div class="ftext1">
-						<div class="tittext">Referencia:</div>
-						<div class="inputtext"><input type="text"></div>
-					</div>
-				</div>
-				<div id="progfecha2">
-					<div>Programar fecha:</div>
-					<div id="calendar">
-						<div class="switchCont">
-							<div id="switchBox">
-								<div class="switchSlide">					
-										<div class="switchLabel"><span class="switchs">Si</span></div>
-										<div class="switchIndicador"></div>
-										<div class="switchLabelR"><span span class="switchs">No</span></div>				
+						<div class="step step1">
+							<div class="titFlujo">
+								<div class="iconFlujo">
+									<img src="../../../img/assets/ico_cuentas_propias.png"/>
 								</div>
-							</div>		
-						</div>
-
-					</div>
-					<div class="imgcal"></div>
-					<div id="textcal">
-						<div class="divFlotante">
-							<div class="imagen"></div>
-							<div id="ico" class="calicoNo"></div>
-							<input class="input3"  id="dia2" value="01/01/2013" disabled='disabled' type="text"/>
-						</div>
-					</div>
-				</div>
-
-				<div id="progfecha3" class="" style="margin-top:30px;margin-left:0px;width:100%;float:left;">
-						<div>¿Requiere comprobante fuscal?</div>
-						<div id="calendar">
-							<div class="switchCont">
-								<div id="switchBox">
-									<div class="switchSlide2">					
-											<div class="switchLabel2"><span class="switchs">Si</span></div>
-											<div class="switchIndicador"></div>
-											<div class="switchLabelR2"><span span class="switchs">No</span></div>
-									</div>
-								</div>		
+								<p class="titulo">Alta de cuentas</p>
+								<p class="subtitulo">Favor de ingresar la siguiente información para dar de alta una nueva cuenta o tarjeta de débito.</p>
 							</div>
-						</div>
-						<div id="textFiscal" style="float:left;margin-left:80px; display:none;">
-							<div style="float:left; margin-left:20px;">Ingrese RFC: <input type="text" style="width:120px;"></div>
-							<div style="float:left; margin-left:20px;">IVA (16%): <input type="text" style="width:120px;"> MXP</div>
-						</div>
+								<!--<div class="w8_EC_contenidodatos1">-->
+							<p>Cuenta destino:</p>
+								<div class="w4_dropList">
+										<select name="" id="" value="1" > 
+									    </select>
+									</div>
+							<p>Cuenta de cargo:</p>
+
+									<div class="w4_dropList">
+										<select name="" id="" value="1" > 
+									    </select>
+									</div>
+
+								<div class="tabletext">
+										<p >Importe:</p>
+										<input class="textboxdos" placeholder="Escribir importe (MXP)" type="text"/>
+								</div>
+								<div class="tabletext">
+								<p id="concept">Concepto:</p>
+										<input class="textboxdos2" placeholder="Escribir concepto" type="text"/>
+								</div>
+					
+						<!--</div>-->
+
+							<div class="w8_EC_contenidodatos2">
+								<p class="p_OC">Programar transferencia:</p>
+										
+								<div id="switchBox">
+									<div class="switchSlide"><div class="switchLabel">si</div>
+									<div class="switchIndicador"><div class="franjaSwitch"></div></div><div class="switchLabelR">no</div>
+									</div>
+								</div>
+										<p class="p_OC">Fecha:</p>
+										<input class="textboxdecalendar" type="text" placeholder="dd/mm/aaaa" />
+											
+										<div class="w8_EC_marcocalendar" >
+										<img src="../../../img/assets/Calendarmin.png"  />
+										 </div>
 						
-				</div>
-			
-
-
-
-				<div class="contentSlider">
-					<div class="mk" style="border:solid 1px silver; margin-top:60px; margin-left:0px; width:100%; text-align:left; height:25px; font-size:12px;">
-					<span style="position:relative; top:5px;">Notificación previa de mi transferencia</span>
-					<div class="btnaction2"></div>
-					</div>
-					<div id="minisexycombo" style="margin-top:10px;">
-						<div class="wra_Select2 
-						" style="margin-top:0px;">
-							<select name="" id="" >
-								<option value="">Opcion1</option>
-								<option value="">Opcion1</option>
-								<option value="">Opcion1</option>
-								<option value="">Opcion1</option>
-								<option value="">Opcion1</option>
-							</select>
+											<p class="p_OC"> Notificar previamente: </p>
+										<select class="textboxDias" name="" id="">
+											<option value="3">3 dias</option>
+											<option value=""></option>
+											<option value=""></option>
+											<option value=""></option>
+											<option value=""></option>
+										</select>
+							</div> 
+									<div class="botonera">
+								<div class="btnaceptar" onclick="cambiaPaso(2); $('.w8_EC_tabla2').load('../../../../tablas/w8/w8_tblPaso2.html')">Continuar</div>
+							</div>
 						</div>
-					</div>
-					<div id="progfecha4" class="progfecha" style="margin-top:10px;margin-left:0px; display:none">
-						<div>Programar fecha:</div>
-						<div id="calendar">
-							<div class="switchCont">
-								<div id="switchBox">
-									<div class="switchSlide2">					
-											<div class="switchLabel2"><span class="switchs">Si</span></div>
-											<div class="switchIndicador"></div>
-											<div class="switchLabelR2"><span span class="switchs">No</span></div>				
+							<div class="step step2">
+
+								<div class="col colFull">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
 									</div>
-								</div>		
+									<p class="titulo">Datos de pago de servicios</p>
+									<p class="subtitulo">La operación se realizará con la siguiente información:</p>
+								</div>
+									<div class="w8_EC_tabla2"></div>
+							</div>
+							
+								<!-- <div class="col colFull">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+									</div>
+									<p class="titulo">Datos de pago de servicios</p>
+									<p class="subtitulo">La operación se realizará con la siguiente información:</p>
+								</div>
+									<div class="w8_EC_tabla2"></div>
+							</div>  -->
+							<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);">Regresar</div>
+								<div class="btnaceptar"  onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w8/w8_EC_tblPaso3.html'),'');">Confirmar</div>
 							</div>
 
+							</div>
+						<div class="step step3">
+								<div class="col col2 resetMargen">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+									</div>
+									<p class="titulo">Comprobante de transferencia entre mis cuentas Santander</p>
+								</div>
+								
+								<div class="tabla3"></div>
+								
+							</div>
+							<div class="col col1 ">
+								<img src="img/assets/step3/anuncio.png" width="233" />
+								<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+								<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+								<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+								<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+							</div>
+							<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(2);">Otra transferencia</div>
+								<div class="btn" onclick="">Imprimir</div>
+
+								<div class="btnaceptar" onclick="">Finalizar</div>
+							</div>
 						</div>
-							<div class="imgcal"></div>
-							<div id="textcal">
-								<div class="divFlotante">
-									<div class="imagen"></div>
-									<div id="ico" class="calicoNo"></div>
-									<input class="input3"  id="dia3" value="01/01/2013" disabled='disabled' type="text"/>
+					</div>
+
+
+
+			<div class="flujo wra_flu2">
+					<div class="step step1">
+						<div class="titFlujo">
+							<div class="iconFlujo">
+								<img src="../../../img/assets/ico_otras_cuentas.png"/>
+							</div>
+							<p class="titulo">A otras cuentas</p>
+							<p class="subtitulo">Introduzca el nombre, alias o los cuatro dígitos de la cuenta destino / cuenta de cargo o seleccionela de la lista</p>
+							</div>
+						 <div class="w8_EC_contenidodatos1">
+							<p>Cuenta destino:</p>
+
+							<div class="w8_EC_sexycombo">
+							<input type="text" id="w8_EC_autocompleteQ"  placeholder="1234****5678        Producto 0       Alias" >
+
+								<div class="w8_EC_marcotriangulo" >
+								<div class="triangulo_inf"></div>
 								</div>
 							</div>
-					</div>
-				</div>
-				<div class="botonera" style="margin-right:12px;">
-					<div class="btnaceptar">Continuar</div>
-				</div>
+							<span class="span_OC">Si la cuenta a la que desea realizar la transferencia no se encuentra en la lista puede registrarla <a class="a_OC" href="#">Aqui</a></span>
+							<p>Cuenta de cargo:</p>
 
+									<div class="w8_EC_sexycombo">
+										<input type="text" id="w8_EC_autocompleteQ"  placeholder="1234****5678        Producto Santander       Alias     $999,999,999.00" >
+										<div class="w8_EC_marcotriangulo" >
+										<div class="triangulo_inf"></div>
+										</div>
+									</div>
 
-			</div>
-			<!--<div id="step4" class="pasos">step4 
-			<p style="color:red"><b>Seleccione de las últimas transferencias por titular
-			de la cuenta o ingrese la información correspondiente
-			para realizar la transferencia</b></p>
-			<div class="transfWrap" style="width:725px;height:115px; overflow:scroll;border:2px #a1a1a1 solid;">
-				<table class="transf">
-					<tr onclick="achiquer(this)">
-						<td>Nombre del Titular</td>
-						<td>Fecha</td>
-						<td>Importe (MXP)</td>
-					</tr>
-					<tr onclick="achiquer(this)" class="lista">
-						<td>David Castro</td>
-						<td>24/11/2013</td>
-						<td>10,000.00 MXP</td>
-					</tr>
-					<tr onclick="achiquer(this)" class="lista">
-						<td>Carlos Aguirre</td>
-						<td>22/11/2013</td>
-						<td>25,000.00 MXP</td>
-					</tr>
-					<tr onclick="achiquer(this)" class="lista">
-						<td>Juan G&oacute;mez</td>
-						<td>20/11/2013</td>
-						<td>7,000.00 MXP</td>
-					</tr>
-					<tr onclick="achiquer(this)" class="lista">
-						<td>Jes&uacute;s L&oacute;pez</td>
-						<td>14/11/2013</td>
-						<td>5,000.00 MXP</td>
-					</tr>
-					<tr onclick="achiquer(this)" class="lista">
-						<td>Jorge L&oacute;pez</td>
-						<td>02/11/2013</td>
-						<td>9,000.00 MXP</td>
-					</tr>
-				</table>
-			</div>
-			
-			<p style="margin-top:10px; float:left;"><b>Introduzca el nombre, alias o los cautro dígitos de la cuenta destino o seleccionela de la lista</b></p>
-			
-			<div class="wra_Select3" style="margin-top:0px; color:#828282">
-				<select name="" id="" >
-					<option value="">A1234****5678     Producto Santander     Alias     789,365,963.00      *</option>
-					<option value="">B1234****5678     Producto Santander     Alias     526,123,124.00      *</option>
-					<option value="">C1234****5678     Producto Santander     Alias   	789,147,999.00      *</option>
-					<option value="">D1234****5678     Producto Santander     Alias     152,784,173.00      *</option>
-					<option value="">E1234****5678     Producto Santander     Alias     123,147,369.00      *</option>
-				</select>
-			</div>
-			<p style="margin-top:5px; float:left;"><b>Si la cuenta o tarjeta no se encuentra registarda de clic AQUI</b></p>
-			<p style="margin-top:10px; float:left;"><b>Introduzca el nombre, alias o los cuatro dígitos de la cuenta de cargo o seleccionela de la lista:</b></p>
-			
-			<div class="wra_Select3" style="margin-top:0px; color:#828282">
-				<select name="" id="" >
-					<option value="">A1234****5678     Producto Santander     Alias     129,125,147.00      *</option>
-					<option value="">B1234****5678     Producto Santander     Alias     912,147,123.00      *</option>
-					<option value="">C1234****5678     Producto Santander     Alias     155,741,654.00      *</option>
-					<option value="">D1234****5678     Producto Santander     Alias     987,145,789.00     *</option>
-					<option value="">E1234****5678     Producto Santander     Alias     123,245,456.00      *</option>
-				</select>
-			</div>
-			
-			<div class="input" style="margin-left:0px">
-				<p>Importe:</p>
-				<input class="txtbox" type="text" value=" 155,741,654.00 " name="Text1" style="width:100%; margin-left:0px"/>
-			</div>
-			
-			<div class="input" style="margin-left:150px">
-				<p>Concepto:</p>
-				<input class="txtbox" type="text" value="123456789123456789123456789123456789123456789" name="Text1" style="width:100%; margin-left:0px"/>
-			</div>
-			
-			<div style="width:100px; height:20px; margin-top:80px;"><p><b>Programar fecha:</b> </p></div>
-			
-			<div style="float:left;margin:10px 0 0 ; width:55%; border:solid 1px silver;height:58px;position:relative; margin-top:24px;border-radius: 5px;">
-				
-				<div class="centradoSwitch">
-					<div id="switchbox1" class="switch" style="margin-top:13px; margin-left:10px;">  </div>
-				</div>
-				<img src="../../../img/iconos/img_calendario.png" style="margin-top:20px; margin-left:10px;">
-				
-				<input type="text" id="date" placeholder="25/05/2013" style="margin-left:10px;height:25px;margin-top:14px;position:fixed">
-			</div>
-			
-			<table style="float: right; margin-right:-13px; margin-top:87px;">
-				<tr>
-					<td></td>
-					<td><div style="margin-top:-16px;" class="btn btnaceptar" id="siguiente3" onclick="cambiaPasoImg();changeComment(3)">Confirmar</div></td>
-				</tr>
-			</table>
-			</div>step4 -->
-			<!--<div id="step5" class="pasos">step5
-			<p style="color:red"><b>Seleccione de las últimas transferencias por titular
-			de la cuenta o ingrese la información correspondiente
-			para realizar la transferencia</b></p>
-			
-			<table class="tbl_consulta" style="width:100%; float:left;" cellspacing="0">
-				<tr>
-					<td style="border:none"></td>
-					<td style="border:none">Nombre del titular</td>
-					<td style="border:none"></td>
-					
-					<td style="border:none">Fecha</td>
-					<td style="border:none">Importe(MXP)</td>
-					<td style="border:none"><div style="width:70px; height:30px; background:#000; float:right; color:#fff; cursor:pointer;">Ver lista completa</div></td>
-					<td style="border:none"></td>
-				</tr>
-				<tr style="border-collapse:collapse; ">
-					<td style="border:none;background:#A9BCF5;"></td>
-					<td style="border:none;background:#A9BCF5;"><input type="checkbox" name="option1">&nbsp;Elton Jhon</td>
-					<td style="border:none; background:#A9BCF5;"></td>
-					
-					<td style="border:none;background:#A9BCF5;">dd/mm/aaaa</td>
-					<td style="border:none;background:#A9BCF5;">155,741,654.00 </td>
-					<td style="border:none;background:#A9BCF5;"></td>
-					
-				</tr>
-			</table>
-				
-				<p style="margin-top:10px; float:left;"><b>Introduzca el nombre, alias o los cautro dígitos de la cuenta
-				destino o seleccionela de la lista</b></p>
-				
-				<div class="wra_Select3" style="margin-top:0px; color:#828282">
-					<select name="" id="" >
-						<option value="">A1234****5678     Producto Santander     Alias     152,784,173.00      *</option>
-						<option value="">B1234****5678     Producto Santander     Alias     123,147,369.00      *</option>
-						<option value="">C1234****5678     Producto Santander     Alias     789,365,963.00      *</option>
-						<option value="">D1234****5678     Producto Santander     Alias     123,456,258.00      *</option>
-						<option value="">E1234****5678     Producto Santander     Alias     147,144,852.00      *</option>
-					</select>
-				</div>
-				<p style="margin-top:5px; float:left;"><b>Si la cuenta o tarjeta no se encuentra registarda de clic AQUI</b></p>
-				<p style="margin-top:10px; float:left;"><b>Introduzca el nombre, alias o los cuatro dígitos de la cuenta de cargo o seleccionela de la lista:</b></p>
-				
-				<div class="wra_Select3" style="margin-top:0px; color:#828282">
-					<select name="" id="" >
-						<option value="">A1234****5678     Producto Santander     Alias     152,784,173.00      *</option>
-						<option value="">B1234****5678     Producto Santander     Alias     123,147,369.00      *</option>
-						<option value="">C1234****5678     Producto Santander     Alias     789,365,963.00      *</option>
-						<option value="">D1234****5678     Producto Santander     Alias     123,456,258.00      *</option>
-						<option value="">E1234****5678     Producto Santander     Alias     147,144,852.00      *</option>
-					</select>
-				</div>
-				
-				<div class="input" style="margin-left:0px">
-					<p>Importe:</p>
-					<input class="txtbox" type="text" placeholder=" 123,147,369.00" name="Text1" style="width:100%; margin-left:0px"/>
-				</div>
-				
-				<div class="input" style="margin-left:150px">
-					<p>Concepto:</p>
-					<input class="txtbox" type="text" placeholder="123456789123456789" name="Text1" style="width:100%; margin-left:0px"/>
-				</div>
-				
-				<div style="width:100px; height:20px; margin-top:80px;"><p><b>Programar fecha:</b> </p></div>
-				
-				<div style="float:left;margin:10px 0 0 ; width:50%; border:solid 1px silver;height:58px;position:relative; margin-top:24px;border-radius: 5px;">
-					
-					<div class="centradoSwitch">
-						<div id="switchbox2" class="switch" style="margin-top:13px; margin-left:10px;">  </div>
-					</div>
-					<img src="../../../img/iconos/img_calendario.png" style="margin-top:20px; margin-left:10px;">
-					
-					<input type="text" id="date" placeholder="dd/mm/aaaa" style="margin-left:10px;height:25px;margin-top:14px;position:fixed">
-				</div>
-				
-				<table class="tablaBtn">
-					<tr>
-						<td></td>
-						<td><div class="btn btnaceptar" id="siguiente4" onclick="cambiaPasoImg();">Continuar</div></td>
-					</tr>
-				</table>
-				</div>Fin step5 -->
-				
-				<!--<div id="step6" class="pasos">step6
-				<div id="contenido2">
-					<div id="modalContenido2"></div>
+								<div class="tabletext">
+										<p >Importe:</p>
+										<input class="textboxdos" placeholder="Escribir importe (MXP)" type="text"/>
+								</div>
 
-					comnetado-><div id="text">Para realizar operación es necesario ingresar el código que muestra su TOKEN:</div>
-					<div id="img"></div>
-					<div id="form">
-							<input type="text" id="token" name="token" Placeholder="Número de TOKEN" required>
-							<div id="buttons">
-								<input type="submit" value="Cancelar" id="can" onclick="destruyeOver();">
-								<input type="submit" value="Continuar" id="con" onclick="cambiaPasoImg3();changeComment(3);follow();" data-onclicio="follow();cambiaPasoImg3();">
-							</div>
-					</div>comentado->
+								<div class="tabletext">
+								<p id="concept">Concepto:</p>
+										<input class="textboxdos2" placeholder="Escribir concepto" type="text"/>
+								</div>
+						</div>
 
-				</div>
-				
-				<p style="color:red"><b>La operación se realizará con la siguiente información:</b></p>
-				<table  class="tbl_info" style="width:100%">
-					<tr>
-						<td style="width:200px;">Cuenta cargo:</td>
-						<td class="gris">1234****5678</td>
-					</tr>
-					<tr>
-						<td>Cuenta destino:</td>
-						<td class="gris">1234****5678</td>
-					</tr>
-					<tr>
-						<td>Concepto:</td>
-						<td class="gris">123456789123456789123456789 <br> 123456789123456789
-						</td>
-					</tr>
-					<tr>
-						<td>Importe:</td>
-						<td class="gris">5,000.00 (MXP)</td>
-					</tr>
-					
-					<tr>
-						<td>Fecha de transferencia:</td>
-						<td class="gris">13/11/2013</td>
-					</tr>
-					<tr>
-						<td>Fecha programada de transferencia:</td>
-						<td class="gris">16/11/2013</td>
-					</tr>
-					<tr>
-						<td>Notificación previa al pago:</td>
-						<td class="gris">3 días</td>
-					</tr>
-					<tr>
-						<td>Comisión por transferencia:</td>
-						<td class="gris">0.00 (MXP)</td>
-					</tr>
-					<tr>
-						<td>I.V.A. por comisión de transferencia:</td>
-						<td class="gris">0.00 (MXP)</td>
-					</tr>
-				</table>
-				
-				<div class="dropcontainer" style="max-height: 200px; height: 200px; overflow: visible;">
-					<div class="dropdown">
-						<img class="downI" src="../../../img/iconos/dropdown.png" style="display: block;">
-						<img class="upI" src="../../../img/iconos/dropup.png" style="display: none;">
-						<h6>Quiero notificar al beneficiario</h6>
-					</div>
-					<div id="select1" class="wra_Select4" style="display:none">
+							<div class="w8_EC_contenidodatos2">
+								<p class="p_OC">Programar transferencia:</p>
+										 
+								<div id="switchBox">
+									<div class="switchSlide2"><div class="switchLabel">si</div>
+									<div class="switchIndicador"><div class="franjaSwitch"></div></div><div class="switchLabelR">no</div>
+									</div>
+								</div>
+										<p class="p_OC">Fecha:</p>
+										<input class="textboxdecalendar" type="text" placeholder="dd/mm/aaaa" />
+											
+										<div class="w8_EC_marcocalendar" >
+										<img src="../../../img/assets/Calendarmin.png"  />
+										 </div>
 						
-						<table>
+											<p class="p_OC"> Notificar previamente: </p>
+										<select class="textboxDias" name="" id="">
+											<option value="3">3 dias</option>
+											<option value=""></option>
+											<option value=""></option>
+											<option value=""></option>
+											<option value=""></option>
+										</select>
+							</div> 
+
+
+						 <table class="table_OC">
+							
 							<tr>
-								<td><span>Correo electrónico para notificación:</span></td>
-								<td><input type="text" style="height:25px;width:324px" placeholder="cuentadecorreoelectronico@gmail.com.mx"></td>
-								<td><span style='text-decoration:underline;'>Ver aviso de privacidad</span></td>
+								<td class="middletd_OC">
+									<p class="p_OC">Referencia:</p>
+									<input class="textbox_OCLarge" placeholder="Escribir el numero de referencia" type="text" /><img src="../../../img/assets/ico_info.png">
+								</td>
+								<td class="middletd_OC">
+									<p class="p_OC">Requiere de comprobante fiscal?</p>
+									<div class="switch_OC switchBox"></div>
+								</td>
 							</tr>
-						</table>
-					</div>
-				</div>
-				<table style="	float: right; margin-left: -23px; margin-top:-32px;">
-					<tr>
-						<td><div class="btn" id="regresar2" onclick="backPasoImg();">Regresar</div></td>
-						<td></td>
-						<td><div class="btn btnaceptar" id="btn1" onclick="changeComment(3)">Confirmar</div></td>
-					</tr>
-				</table>
-				</div>Fin step6 -->
-				<div id="step7" class="pasos"><!-- step7-->
-				<div id="vtacruzada">
-					
-					<div class="vtaimg">
-					</div>
-					
-					<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
-					
-					<!--<div class="vtapanel">
-							<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-							<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-							<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-					</div>-->
-					<div id="btn_paso3">
-						<ul>
-							<li class="btnNav"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
-							<li class="btnNav"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><span class="txtbtn_3">Pagar Servicios</span></li>
-							<li class="btnNav"><img src="../../img/iconos/img_icono.png" class="vtaico" /><span class="txtbtn_3">Realizar una Domiciliación</span></li>
-						</ul>
-					</div>
-					R
-				</div>
-				<h4 style="color:red;">Comprobante de transferencia a otras cuentas</h4>
-				
-				<table class="tbl_info" style="width:60%;float:left;">
-					<tr>
-						<td colspan="3">Cuenta cargo</td>
-						<td class="gris">1234****5678</td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td colspan="3" >Cuenta destino (beneficiario)</td>
-						<td class="gris">1234****5678</td>
-					</tr>
-					<tr>
-						<td colspan="3" >Concepto:</td>
-						<td class="gris">123456789123456789123456789 <br>123456789123456789
-						</td>
-					</tr>
-					<tr>
-						<td colspan="3" >Importe:</td>
-						<td class="gris">9123,147,369.00 (MXP)</td>
-					</tr>
-					<tr>
-						<td colspan="3" >Fecha de operación:</td>
-						<td class="gris">01/11/2013</td>
-					</tr>
-					<tr>
-						<td colspan="3" >Fecha de transferencia:</td>
-						<td class="gris">02/11/2013</td>
-					</tr>
-					<tr>
-						<td colspan="3" >Comisión por transferencia:</td>
-						<td class="gris">0.00 (MXP)</td>
-					</tr>
-					<tr>
-						<td colspan="3" >I.V.A. por comisión de transferencia</td>
-						<td class="gris">0.00 (MXP)</td>
-					</tr>
-					<tr>
-						<td colspan="3" >Correo electrónico para notificación:</td>
-						<td class="gris">cuentadecorreoelectronico@gmail.com.mx</td>
-					</tr>
-					<tr>
-						<td colspan="3" >Folio SuperNET:</td>
-						<td class="gris">12345678910123456789</td>
-					</tr>
-					<tr>
-						<td colspan="4" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo hacer<br />otra transferencia</div></td>
-						
-					</tr>
-				</table>
-				<table style="	float: left; margin-left: -24px; margin-top:52px;">
-					<tr>
-						<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
-						<td><div class="btn" >Guardar en opciones favoritas</div></td>
-						<td><div class="btn btnaceptar" onclick="cierraWidget();">Finalizar</div></td>
-					</tr>
-				</table>
-				
-				</div><!-- Fin step7 -->
-				
-				</div><!--Fin Funcionalidad 2 : A otras Cuentas -->
-				
-				<div><!--inicio funcionalidad 3 Cuentas Registradas /Alta / Baja-->
-					<div id="step8" class="pasos"><!-- step8-->
-						
+							<tr>
+								<td class="middletd_OC">
+									<p class="p_OC">*Dato de R.F.C</p>
+									<input class="textbox_OC" placeholder="Escribir R.F.C" type="text" />
+								</td>
+								<td class="middletd_OC">
+									<p class="p_OC">*I.V.A (16%)</p>
+									<input class="textbox_OC" placeholder="$ 999,999,999.00 (MXP)" disabled type="text" />
+								</td>
+							</tr>
+						</table>    
 
+								<div class="botonera">
+								<div class="btnaceptar"  onclick="cambiaFlujo('.wra_flu2');cambiaPaso(2);$('.w8_AC_tabla').load('../../../../tablas/w8/w8_tblPaso2_2.html')">Continuar</div>
+							</div>
 
-
-						<div id="titre" style="color:red">1. A continuación usted podrá consultar las cuentas que tiene registradas, si lo desea podra modificarlas<br> o darlas de baja.</div>
-						<div style="font-size: 11px; font-family: Arial, sans-serif, Helvetica; margin-top:19px; position:relative; left:10px;">Favor de ingresar la siguiente información para dar de alta una nueva tarjeta.</div>
-						<div class="mk" style="border:solid 1px silver; margin-top:15px; margin-left:-10px; width:102%; text-align:left; height:25px; font-size:12px;">
-							<span id="spn" style="position:relative; top:5px;">Mis cuentas registradas</span>
-							<div class="btnaction"></div>
-						</div>
-						<div class"cons"  id="consultas" style="border:solid 1px silver; margin-top:10px; margin-left:-10px; width:102%; height:130px; text-align:left;">
-							<div class="cols main" id="c1">
-								<ul>
-									<li>Nombre del titular</li>
-									<li>Adrian Moráles </li>
-									<li>Efrain Juarez</li>
-									<li>Elba Solis</li>
-								</ul>
-								<div class="textedit"><input type="" id="text1" style="width:80px;" placeholder="xx"></div>
-							</div>
-							<div class="cols main" id="c2">
-								<ul>
-									<li>Número de cuenta</li>
-									<li>1234****5678</li>
-									<li>1234****5678</li>
-									<li>1234****5678</li>
-								
-								</ul>
-								<div class="textedit"><input type="" id="text2"style="width:80px;" placeholder="xx"></div>
-							</div>
-							<div class="cols main" id="c3">
-								<ul>
-									<li>Alias</li>
-									<li>Adrian Moráles </li>
-									<li>Efrain Juarez</li>
-									<li>Elba Solis</li>
-								
-								</ul>
-								<div class="textedit"><input type="" id="text3" style="width:80px;" placeholder="xx"></div>
-							</div>
-							<div class="cols main" id="c4">
-								<ul>
-									<li>Banco</li>
-									<li>Banamex</li>
-									<li>Banorte</li>
-									<li>HSBC</li>
-							
-								</ul>
-								<div class="textedit"><input type="" id="text4" style="width:80px;" placeholder="xx"></div>
-							</div>
-							<div class="cols main" id="c4">
-								<ul>
-									<li>Correo del titular</li>
-									<li>morales@webmail.com</li>
-									<li>juarez@webmail.com</li>
-									<li>elbas@webmail.com</li>
-							
-								</ul>
-								<div class="textedit"><input type="" id="text5" style="width:80px;" placeholder="xx"></div>
-							</div>
-						
-							<div style="width:14px;height:100px; float:left;"></div>
-							<div class="cols iconos">
-								<ul>
-									<li><div id="infotext2"><div class="deletetext" >Editar tarjeta</div></div><img id="imagen2" src="img/iconos/EDITAR.png"  style=""></li>
-									<li><div class="rad" id="r5"></div></li>
-									<li><div class="rad" id="r6"></div></li>
-									<li><div class="rad" id="r7"></div></li>
-								</ul>
-							</div>
-							<div class="cols iconos">
-								<ul>
-									<li><div id="infotext1"><div class="deletetext" >Eliminar tarjeta</div></div><img id="imagen1" src="img/iconos/elipse.png" style=""></li>
-									<li><div class="rad" id="r1"></div></li>
-									<li><div class="rad" id="r2"></div></li>
-									<li><div class="rad" id="r3"></div></li>
-									
-								</ul>
-								<div id="save"><input type="submit" value="Guardar"></div>
-								<div id="confel"><input type="submit" value="Confirmar eliminar"></div>
-							</div>
-							<div class="cols iconos">
-								<ul>
-									<li><div id="infotext4"><div class="deletetext" >Agregar a favorito</div></div><img id="imagen4" src="img/iconos/FAVORITO.png"  style=""></li>
-									<li><div class="rad" id="r13"></div></li>
-									<li><div class="rad" id="r14"></div></li>
-									<li><div class="rad" id="r15"></div></li>
-									
-								</ul>
-							</div>
-						</div>
-
-						<div class="botonera hidde" style="position:relative; bottom:10px; left:-12px;">
-							<div class="btnaceptar">Calendario de operaciones</div>
-						</div>
-						<div style="border:solid 1px silver; margin-top:55px; margin-left:-10px; width:102%; text-align:left; height:25px; font-size:12px;">
-							<span style="position:relative; top:5px;">Dar de alta</span>
-							<div id="btnaction" class="btnaction2"></div>
-						</div>
-						<div id="altas" style="margin-top:10px; margin-left:-10px; width:102%; height:180px; text-align:left;">
-							<div style="font-size: 11px; font-family: Arial, sans-serif, Helvetica;">Favor de ingresar la siguiente información para dar de alta una nueva tarjeta.</div>
-							<div class="cols2">
-								<ul>
-									<li>Número de cuenta o tarjeta</li>
-									<li><input type="text" value="1234****5678"></li>
-								</ul>
-							</div>
-							<div style="width:20px; height:2px; margin-top:40px; margin-right:14px;float:left;"></div>
-							<div class="cols2">
-								<ul>
-									<li>Banco</li>
-									<li><input type="text" placeholder="Skotiabank Inverlat"></li>
-								</ul>
-							</div>
-							<div class="cols2">
-								<ul>
-									<li>Nombre del titular de la cuenta</li>
-									<li><input type="text" placeholder="Arturo Carmona"></li>
-								</ul>
-							</div>
-							<div class="cols2">
-								<ul>
-									<li>Alias de la tarjeta</li>
-									<li><input type="text" placeholder="Artur89"></li>
-								</ul>
-
-							</div>
-							<div style="width:20px; height:20px; margin-top:40px; margin-right:14px;background:url('img/info.png'); float:left;"></div>
-							<div class="cols2">
-								<ul>
-									<li>Correo electrónico del titular</li>
-									<li><input type="text" placeholder="artur89@webmail.com"></li>
-								</ul>
-							</div>
-							
-							<div class="cols2">
-								<ul>
-									<li>R.F.C. del titular</li>
-									<li><input type="text" placeholder="CEST850421LMH"></li>
-								</ul>
-							</div>
-						</div>
-						<div class="botonera" style="right:28px">
-							<div class="btnaceptar">Continuar</div>
-						</div>
-						
-
-
-
-
-
-					</div><!-- fin de step8-->
-					<!-- Inicio Flujo Dar Alta-->
-					<div id="step9" class="pasos"><!-- Inicio de step9-->
-					
-					</div><!-- Fin de step9-->
-					<div id="step10" class="pasos"><!-- Inicio de step10-->
-				
-					</div><!-- Fin de step10-->
-					
-					<div id="step11" class="pasos"><!-- Inicio de step 11 -->
-					
-					</div><!-- Fin de step11 -->
-					<!-- Fin Flujo Dar Alta-->
-					
-					<!-- Inicio Flujo Dar Baja-->
-					<div id="step12" class="pasos"> <!-- Inicio de step12 -->
-					
-					</div> <!-- Fin de step12 -->
-					<div id="step13" class="pasos"> <!-- Inicio de step13 -->
-					
-					</div>	<!-- Fin de step13 -->
-
-					<!-- Fin Flujo Dar Baja-->
-					
-				</div><!--Fin funcionalidad 4 Consulta de Transferencias -->
-				<div id="step14" class="pasos"> <!-- Fin de step13 -->
-				
-				<p style="color:red">
-				<b>Seleccione el estatus de las transferencias que desea
-				consultar, así como el periodo de búsqueda y/o rango de
-				importe para realizar una búsqueda más específica</b></p>
-				<div id="menu">
-					<ul>
-						<li><a href="#"><div id="circulo"><img  class="imagen" src="../../img/interfaz/paginador_apagado.png" style="width:12px; height: 12px; margin-left: 10px;"/><span style="margin-left: 10px;">Estatus</span></div></a>
-						<ul class="sub-menu">
-							<li><a href="#" class="seleccionado" id="prog"><img  id="ok1" src='../../img/iconos/ok.png' style='width:12px; height: 12px; margin-left: 10px; display:none;'/>Programadas</a></li>
-							<li><a href="#" id="rel"><img  id="ok2" src='../../img/iconos/ok.png' style='width:12px; height: 12px; margin-left: 10px; display:none;'/>Realizadas</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Periodo de búsqueda</a>
-						<ul class="sub-menu">
-							<li><a href="#" id="3d">3 días</a></li>
-							<li><a href="#" id="7d">7 días</a></li>
-							<li><a href="#" id="1m">1 mes</a></li>
-							<li><a href="#" id="3m">3 meses</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Rango de importe</a></li>
-				</li>
-			</ul>
-		</div>
-		
-		<div>
-			<!--<span class="texto1"><p><b>Mis últimas 5 transferencias realizadas<span class="dias"></span></p></b></span>
-			<span class="texto2"><p><b>Calendario de transferencias</b></p></span>-->
-		</div>
-		
-		<div class="tabla">
-			<div class="tabletitle"><p style="float:left">Mis transferencias</p>
-				<img src="../../img/botones/exportar.png" style="float:right;margin-right:10px"/>
-				<p style="float:right;margin-right:10px">Exportar</p>
 			</div>
-			<table class="tbl_consulta" style="width:100%;float:left;">
-				<tr>
-					<td>Fecha</td>
-					<td>Descripción de la operación</td>
-					<td>Cuenta destino<br/>(Destinatario)</td>
-					<td>Cuenta de cargo</td>
-					<td>Importe (MXP)</td>
-					<td>Estatus</td>
-					<td>Favorita</td>
-				</tr>
-				<tr>
-					<td>24/11/2013</td>
-					<td>123456789123456789123456789<br />123456789123456789123456789</td>
-					<td>1234****5678<br /> (Ram&oacute;n Gonz&aacute;lez)</td>
 
-					<td>1234****5678</td>
-					<td>5,000.00</td>
-					<td><span class="cambio">Realizada</span></td>
-					<td><img class="activo2"/></td>
-				</tr>
-				<tr>
-					<td>24/11/2013</td>
-					<td>123456789123456789123456789<br />123456789123456789123456789</td>
-					<td>1234****5678<br /> (Juan P&eacute;rez)</td>
+				<div class="step step2">
+					<div class="col colFull">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+									</div>
+									<p class="titulo">Datos de pago de servicios</p>
+									<p class="subtitulo">La operación se realizará con la siguiente información:</p>
+								</div>
+									
+							<div class="w8_AC_tabla"></div>		<div class="contDerecho"><p>Notificar al beneficiario</p> <p>Correo:</p> 
+				<input  placeholder="Escribir dirección de e-mail" type="text">
+				<p>Ver aviso de privacidad</p>
+						</div>
+					</div> 
 
-					<td>1234****5678</td>
-					<td>40,000.00</td>
-					<td><span class="cambio">Realizada</span></td>
-					<td><img class="activo2"/></td>
-				</tr>
-				<tr>
-					<td>24/11/2013</td>
-					<td>123456789123456789123456789<br />123456789123456789123456789</td>
-					<td>1234****5678<br /> (Lorena Solis)</td>
-					<td>1234****5678</td>
-					<td>25,000.00</td>
-					<td><span class="cambio">Realizada</span></td>
-					<td><img class="activo2"/></td>
-				</tr>
-				<tr>
-					<td>24/11/2013</td>
-					<td>123456789123456789123456789<br />123456789123456789123456789</td>
-					<td>1234****5678<br /> (Ernesto Alonso)</td>
-					<td>1234****5678</td>
-					<td>3,000.00</td>
-					<td><span class="cambio">Realizada</span></td>
-					<td><img class="activo2"/></td>
-				</tr>
-				<tr>
-					<td>24/11/2013</td>
-					<td>123456789123456789123456789<br />123456789123456789123456789</td>
-					<td>1234****5678<br /> (David Castro)</td>
-					<td>1234****5678</td>
-					<td>15,000.00</td>
-					<td><span class="cambio">Realizada</span></td>
-					<td><img class="activo2" /></td>
-				</tr>
-			</table>
-		</div>
-		</div><!-- fin step 14 -->
-		</div><!--cierre contenido-->
-		
-		<div id="navegador">
-			<ul>
-				<li class="active" onclick="changeComment(1);">Entre cuentas Santander</li>
-				<li onclick="changeComment(1);">A otras cuentas</li>
-				<li onclick="changeComment(1);">Cuentas registradas alta/baja</li>
-				<li  onclick="cambiaEstado('4')">Consulta de transferencias</li>
-			</ul>
-			<div class="aviso">
-				<div id="msg-alert" style="width: 133px;height: 52px;background:#fff;position: absolute;top: 2px;left: 10px;font-weight: bold;font-size: 10px;text-align: left;padding-top: 15px;">Realice sus transferencias entre sus cuentas Santander desde aqu&iacute;.</div>
-				<img src="../../img/iconos/img_msj.png"/>
+						<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(1);">Regresar</div>
+								<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w8/w8_AC_tblPaso3_2.html'),'');">Confirmar</div>
+							</div>  
+					
+				</div>
+					<div class="step step3">
+								<div class="col col2 resetMargen">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+									</div>
+									<p class="titulo">Comprobante de transferencia a otras cuentas</p>
+								</div>
+								
+								<div class="tabla3"></div>
+								<div class="correocontacto"><p>Correo para notificación (beneficiario):</p><p>  cuentadecorreoelectronico@gmail.com.mx</p> </div>
+								
+							</div>
+							<div class="col col1 ">
+								<img src="img/assets/step3/anuncio.png" width="233" />
+								<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+								<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+								<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+								<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+							</div>
+							<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(1);">Otra transferencia</div>
+								<div class="btn" onclick="">Imprimir</div>
+
+								<div class="btnaceptar" onclick="">Finalizar</div>
+							</div>
+						</div>
+			</div>
+		<div class="flujo wra_flu3">
+					<div class="step step1">
+						<div class="titFlujo">
+							<div class="iconFlujo">
+								<img src="../../../img/assets/User-card.png"/>
+							</div>
+							<p class="titulo">Alta de cuentas</p>
+							<p class="subtitulo">Favor de ingresar la siguiente información para dar de alta una nueva cuenta o tarjeta de débito.</p>
+							</div>
+							
+									
+							<div class="w8_EC_contenidodatos1">
+							<p>Número de cuenta o tarjeta</p>
+
+							<div class="numDta_p3">
+										
+										<input class="textboxtres" placeholder="1234****5678" type="text"/>
+								</div>
+
+							<p>Cuenta de cargo:</p>
+
+									<div class="w8_EC_sexycombo">
+										<input type="text" id="w8_EC_autocompleteQ"  placeholder="1234****5678        Producto Santander        Alias     $999,999,999.00" >
+										<div class="w8_EC_marcotriangulo" >
+										<div class="triangulo_inf"></div>
+										</div>
+									</div>
+
+								<div class="tabletext">
+										<p >Importe:</p>
+										<input class="textboxdos" placeholder="Escribir importe (MXP)" type="text"/>
+								</div>
+								<div class="tabletext">
+								<p id="concept">Concepto:</p>
+										<input class="textboxdos2" placeholder="Escribir concepto" type="text"/>
+								</div>	
+							</div>
+
+							<div class="w8_EC_contenidodatos2">
+								<p class="p_OC">Programar transferencia:</p>
+										 
+								<div id="switchBox">
+									<div class="switchSlide2"><div class="switchLabel">si</div>
+									<div class="switchIndicador"><div class="franjaSwitch"></div></div><div class="switchLabelR">no</div>
+									</div>
+								</div>
+										<p class="p_OC">Fecha:</p>
+										<input class="textboxdecalendar" type="text" placeholder="dd/mm/aaaa" />
+											
+										<div class="w8_EC_marcocalendar" >
+										<img src="../../../img/assets/Calendarmin.png"  />
+										 </div>
+						
+											<p class="p_OC"> Notificar previamente: </p>
+										<select class="textboxDias" name="" id="">
+											<option value="3">3 dias</option>
+											<option value=""></option>
+											<option value=""></option>
+											<option value=""></option>
+											<option value=""></option>
+										</select>
+
+								<div class="botonera">
+								<div class="btnaceptar"  onclick="cambiaFlujo('.wra_flu3');cambiaPaso(2);$('.w8_CAB_tabla').load('../../../../tablas/w8/w8_tblPaso2CAB.html')">Continuar</div>
+							</div>
+				</div> 	
+				</div>
+			<div class="step step2">
+					<div class="col colFull">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+									</div>
+									<p class="titulo">Datos de transferencia</p>
+									<p class="subtitulo">La operación se realizará con la siguiente información:</p>
+								</div>
+								<div class="w8_CAB_tabla"></div>	
+
+								<div class="contDerecho"><p>Notificar al beneficiario</p> <p>Correo:</p> 
+				<input  placeholder="Escribir dirección de e-mail" type="text">
+				<p>Ver aviso de privacidad</p>
+						</div>
+							</div> 
+
+						<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu3');cambiaPaso(1);">Regresar</div>
+								<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w8/w8_CAB_tblPaso3.html'),'');">Confirmar</div>
+							</div>  
+					
+				</div>	
+		<div class="step step3">
+					<div class="col col2 resetMargen">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+									</div>
+									<p class="titulo">Comprobante de transferencia a otras cuentas</p>
+								</div>
+								
+								<div class="tabla3"></div>
+								<div class="correocontacto"><p>Correo para notificación (beneficiario):</p><p>  cuentadecorreoelectronico@gmail.com.mx</p> </div>
+								
+							</div>
+							<div class="col col1 ">
+								<img src="img/assets/step3/anuncio.png" width="233" />
+								<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+								<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+								<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+								<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+							</div>
+							<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(2);">Otra transferencia</div>
+								<div class="btn" onclick="">Imprimir</div>
+
+								<div class="btnaceptar" onclick="">Finalizar</div>
+							</div>
+		</div>				
+			</div>
+		<div class="flujo wra_flu4">
+				<div class="titFlujo" style="height:90px">
+								
+								<p class="titulo">Consulta de transferencia</p>
+								<p class="subtitulo">Seleccione el estatus de las transferencias que desea consultar, así como el 
+									periodo de busqueda y/o el rango de importe para realizar una busqueda mas especifica.</p>
+								<p class="subtitulo2F4"> Para obtener más información de la solicitud, haga clic en el estatus.</p>
+							</div>
+						<div class="tablaDinamica"></div>
+						<div class="btnExportar"><img src="../../../img/assets/Exportar.png"><img src="../../../img/assets/CalendariOperaciones.png"></div>
+					</div>
+
+				
+				
+				
 			</div>
 		</div>
-	</div>
+		
+		

@@ -1,202 +1,276 @@
-<!--<script src="../../../js/jquery10.2.min.js"></script>
-<script src="../../../js/ddSlick.js"></script>
--->
-<link rel="stylesheet" href="../../../css/general.css"/>
-<link rel="stylesheet" href="../../../css/token.css"/>
-<script src="js/componentes.js"></script>
-<link rel="stylesheet" href="widgets/max/w_10/css/recompensas.css"/>
-<link rel="stylesheet" href="widgets/max/w_10/css/r_paso2.css"/>
-<link rel="stylesheet" href="widgets/max/w_10/css/r_paso3.css"/>
-<script src="widgets/max/w_10/js/recomptdc.js"></script>
-<script>
-	
-	$('#Dropdown').ddslick({
-		onSelected: function(selectedData){
-		//callback function: do something with selectedData;
-		
-		}
-		});
-	$(document).ready(function(){
-		init();
-	});
-	function init(){
-		$(".fin").click(function(){closeAction()});
-		$(".stepWrapp").hide();
-		$("#step1").show();
-		$(".btnaceptar").click(function(){
-			$(".steps").replaceWith("<img src='img/paso_2.png' class='steps'>");
-			$("#step1").hide();
-			$("#step2").show();
-			$(".btn").click(function(){
-				$(".btnaceptar").off("click");
-				$(".btn").off("click");
-				$(".fin").off("click");
-				init();
-			});
-			$(".btnaceptar").click(function(){
-				creaOverlay("#fff","#widampliado",1);
-				creaToken("modalOver",null,"javascript: $('#step2').hide();$('#step3').show();$('#modalOver').fadeOut();",null,function(){$(".steps").replaceWith("<img src='img/paso_3.png' class='steps'>");});
-			});
-		});
+﻿
+	  <script src="widgets/max/w_10/js/w_10.js"></script>
+	  <script src="../js/components.js"></script>
+	  <script src="../js/ddSlick.js"></script>
+	  <link rel="stylesheet" href="widgets/max/w_10/css/w_10.css" />
+	  <link rel="stylesheet" href="../css/generally.css" />
+	<script>
+		ocultaAsset();
+	</script>
+		<div id="widampliado">
+			<!-- Bloqueo -->
+			<div id="bloqueoWidget" class="bloqueoElement">
+			</div>
+			
+			<div id="elementBloqueo" class="bloqueoElement">	
+			</div>
 
-
-	}
-</script>
-<div id="widampliado">
-	<div>
-		<p>RECOMPENSAS DE TARJETA DE CRÉDITO</p>
-		<div class="fin"></div>
-		<div></div>
-	</div>
-	<div>
-		<img src="img/paso_1.png" class="steps"/>
-	</div>
-	
-	<div>
-		<ul>
-			<li class="liActive">
-				<p>Historial de puntos ganados</p>
-			</li>
-			<li>
-				<p>Inscribir tarjetas</p>
-			</li>
-		</ul>
-	</div>
-	
-	<!--<h2>Por favor confirme que la información desplegada a continuación es correcta:</h2>-->
-	
-	<div id="step1" class="stepWrapp" style="display:none">
-		<div class="cuadro">
-			<h2>Mis tarjetas</h2><br />
-			<p>Por 35 pesos mensuales* puedes integrar tu tarjeta al programa de recompensas</p>
-			
-			<div class="leftarrow" style="left:0;"><img src="../../../img/botones/flecha_lado_dropdown_largo - izquierda.png" /></div>
-			
-			<div class="contenedorTarjetas">
-				<div class="slider">
-					<div class="divT1"style="margin-right:10px"><img class="img" src="img/recompensas/card2x.png" /></div>
-					<div class="divT1"style="margin-right:10px"><img class="img" src="img/recompensas/card_2.png" /></div>
-					<div class="divT1"style="margin-right:10px"><img class="img" src="img/recompensas/card_3.png" /></div>
-					<div class="divT1"style="margin-right:10px"><img class="img" src="img/recompensas/card2x.png" /></div>
-					<div class="divT1"style="margin-right:10px"><img class="img" src="img/recompensas/card_2.png" /></div>
-					<div class="divT1"style="margin-right:10px"><img class="img" src="img/recompensas/card_3.png" /></div>
-					<div class="divT1"style="margin-right:10px"><img class="img" src="img/recompensas/card2x.png" /></div>
-					<div class="divT1"style="margin-right:10px"><img class="img" src="img/recompensas/card_2.png" /></div>
-					<div class="divT1"style="margin-right:10px"><img class="img" src="img/recompensas/card_3.png" /></div>
+			<div id="WA_pasos">
+				<img src="../img/assets/pasos.png"/>
+				<div class="btnHeader info" onclick="closeAction();">
+					<img src="../img/assets/ico_info.png"  />
 				</div>
-			</div>
-			<div class="rightarrow" style="right:0;">
-				<img src="../img/botones/flecha_lado_dropdown_largo.png" />
+				<div class="btnHeader cerrar">
+					<img src="../img/assets/ico_cerrar_widget.png"  />
+				</div>
 			</div>
 			
-		</div>
-		<div class="cuadroInferior">
-			<p class="datos"><span class="espacio">********5678</span><span class="espacio">Producto santander</span></p>
-		</div>
-		<div class="espacio3">Selecciona el programa disponible para tu tarjeta:</div>
-		<div id="Dropdown">
-			<select name="" id="" >
-				<option value="">Recompensas santander</option>
-				<option value="">Recompensas santander</option>
-				<option value="">Recompensas santander</option>
-			</select>
-		</div>
-		<div class="termino">*Terminos y condiciones</div>
-		
-		<div class="botonera">
-			<div class="btnaceptar">Inscribir tarjeta</div>
-		</div>
-		
-	</div>
-	<div id="step2" class="stepWrapp" style="display:none">
-		
-		<h2>Comprobante de inscripción de tarjeta a programar de Recompensas Santander</h2>
-		<div class="prinContent">
-			<div>
-				<img class="img" src="img/recompensas/card2x.png" />
-			</div>
-			<div class="bold">
-				<div>Producto:</div>
-				<div>No. de tarjeta:</div>
-				<div>Programa de recompensas:</div>
-				<div>Fecha de inscripción:</div>
-				<div>Correo para notificación:</div>
-				<div>Celular para notificación:</div>
-			</div>
-			<div>
-				<div>Lorem ipsum</div>
-				<div>1234567892345</div>
-				<div>Recompensas Santander</div>
-				<div>dd/mm/aaaa 00:00 hrs</div>
-				<div>correo@correo.com&nbsp;<span class="link">(Editar)</span></div>
-				<div>5555555555&nbsp;<span class="link">(Editar)</span></div>
-			</div>
-		</div>
-		<div class="botonera">
-			<div class="btn">Regresar</div>
-			<div class="btnaceptar">Confirmar</div>
-		</div>
-		<div class="bloqueo" id="contenido"></div>
-		<!--- div con los datos de correo y numero de celular -->
-		<!--- Fin div con los datos de correo y numero de celular -->
-	</div>
-	<div id="step3" class="stepWrapp" >
-		<div class="prinContent">
-			<div class="div1">
-				<h2>Comprobande de inscripción de tarjeta a programa de Recompensas Santander</h2>
-				<div style="width:133px;">
-					<img class="img" src="img/recompensas/card2x.png" />
-				</div>
-				<div class="bold">
-					<div>Producto:</div>
-					<div>No. de tarjeta:</div>
-					<div>Programa de recompensas:</div>
-					<div>Fecha de inscripción:</div>
-					<div>Correo para notificación:</div>
-					<div>Celular para notificación:</div>
-				</div>
-				<div>
-					<div>Lorem ipsum</div>
-					<div>1234567892345</div>
-					<div>Recompensas Santander</div>
-					<div>dd/mm/aaaa 00:00 hrs</div>
-					<div>correo@correo.com&nbsp;<span class="link">(Editar)</span></div>
-					<div>5555555555&nbsp;<span class="link">(Editar)</span></div>
-				</div>
-			</div>
-			<div class="div2">
-				<h2>AUTOCOMPARA SANTANDER</h2>
-				<p>Verónica Pimentel<br />
-				tenemos para ti<br />
-				un CrÃ©dito Pre Aprobado<br />
-				de $9,999,999.99 MXN
-				</p>
-				<h3>Cotiza gratis y ahorra en tu seguro<br />
-				de auto con las mejores aseguradoras.
-				</h3>
-				<div class="botonera">
-					<div class="btnaceptar">Aceptar</div>
-				</div>
-				
-				<h4>QuizÃ¡ le interese:</h4>
-				<ul class="vtaCruzadaMenu">
-					<li>
-						TRANSFERENCIA DE SALDOS
+			<div id="WA_nav">
+				<ul>
+					<li class="menu">
+						<p>
+						<img src="../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
 					</li>
-					<li>
-						PAGO DE SERVICIOS
+					<li onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);ocultaAsset();">
+						<p>Historial de puntos<br/>ganados</p>
 					</li>
-					<li>
-						RECOMPENSAS
+					<li onclick="cambiaFlujo('.wra_flu2');cambiaPaso(1);muestraAsset();">
+						<p>Inscribir tarjetas</p>
 					</li>
 				</ul>
 			</div>
 			
-			<div class="botonera">
-				<div class="btn">Imprimir</div>
-				<div class="btnaceptar fin">Finalizar</div>
+			<div id="WA_contenedorFlujos">
+				<div class="contenidoFlujo">
+					<div class="wra_flu1 flujo">
+						<div class="step step1">
+							<div class="titFlujo">
+								<div class="iconFlujo">
+									<img src="widgets/max/w_10/img/titulo_recompensas.png" />
+								</div>
+								<p class="titulo">Entre cuentas propias Santander</p>
+								<p class="subtitulo">Instroduzca nombre alias o cuentas bla bla bla...</p>
+							</div>
+							<div class="w10_HPG_seleccionTarjeta">
+								<p>Seleccionar tarjeta:</p>
+								<div class="w10_HPG_tarjeta">
+								</div>
+								<div class="w10_HPG_wra_Select">
+									<select name="" id="" value="1" ></select>
+								</div>
+								<table class="w10_HPG_infoPuntos">
+									<tr>
+										<td>Alias</td>
+										<td>Puntos disponibles</td>
+										<td>Puntos por vencer</td>
+										<td>Fecha de vencimiento</td>
+									</tr>
+									<tr>
+										<td>Mamá</td>
+										<td>35,000</td>
+										<td>2,480</td>
+										<td>31/12/2013</td>
+									</tr>
+								</table>
+							</div>
+							<div class="w10_HPG_personalizarIntervalo">
+								Intervalo personalizado
+								<div>
+									<img src="../../img/iconos/img_calendario.png"/>
+								</div>
+							</div>
+							<div class="w10_HPG_limpiar">
+								<div class="btnaceptar">Limpiar Búsqueda</div>
+							</div>
+					
+							<table class="w10_PS_consulta">
+								<tr>
+									<td>Fecha de transacción</td>
+									<td>Descripción</td>
+									<td>Cantidad</td>
+									<td>Puntos base</td>
+									<td>Puntos promoción</td>
+									<td>Puntos totales</td>
+								</tr>
+							</table>
+							<div  class="w10_PS_cuadroTarjeta">
+								<table class="w10_PS_cardList">
+									<tr>
+										<td>dd/mm/aaaa</td>
+										<td>Compra</td>
+										<td>123456789123</td>
+										<td>123456789123</td>
+										<td>123456789123</td>
+										<td>123456789123</td>
+									</tr>
+									<tr>
+										<td>dd/mm/aaaa</td>
+										<td>Compra</td>
+										<td>123456789123</td>
+										<td>123456789123</td>
+										<td>123456789123</td>
+										<td>123456789123</td>
+									</tr>
+									<tr>
+										<td>dd/mm/aaaa</td>
+										<td>Compra</td>
+										<td>123456789123</td>
+										<td>123456789123</td>
+										<td>123456789123</td>
+										<td>123456789123</td>
+									</tr>
+									<tr>
+										<td>dd/mm/aaaa</td>
+										<td>Compra</td>
+										<td>123456789123</td>
+										<td>123456789123</td>
+										<td>123456789123</td>
+										<td>123456789123</td>
+									</tr>
+									<tr>
+										<td>dd/mm/aaaa</td>
+										<td>Compra</td>
+										<td>123456789123</td>
+										<td>123456789123</td>
+										<td>123456789123</td>
+										<td>123456789123</td>
+									</tr>
+								</table>
+							</div>
+							<div class="w10_HPG_btnExportar" onclick="exportar();">
+								<img src="widgets/max/w_10/img/exportar.png"/>
+								<p>Exportar<br/>XLS</p>	
+							</div>
+						</div>
+						<div class="botonera">
+							<div class="btnaceptar" onclick="closeAction();">Utilice sus puntos</div>
+						</div>						
+					</div><!--Fin Historial de puntos ganados-->
+
+					<div class="flujo wra_flu2">
+						<div class="step step1"><!--paso 1-->
+							<div class="w10_IT_wraLeft">
+								<div>
+									<img src="widgets/max/w_10/img/titulo_recompensas.png" />
+									<p>Mis tarjetas seleccionadas:</p>
+								</div>
+								<table class="w10_IT_inscribirTarjetas">
+									<tr>
+										<td></td>
+										<td>
+											<img src="widgets/max/w_10/img/card_1.png"/>
+										</td>
+										<td>
+											<p><strong>Producto Santander</strong></p>
+											<p>1234****5678</p>
+											<p>Alias</p>
+										</td>
+										<td>
+											<div class="w10_HPG_wra_Select2">
+												<select name="" id="" value="Recompensas Santander" ></select>
+											</div>
+										</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>
+											<img src="widgets/max/w_10/img/card_2.png"/>
+										</td>
+										<td>
+											<p><strong>Producto Santander</strong></p>
+											<p>1234****5678</p>
+											<p>Alias</p>
+										</td>
+										<td>
+											<div class="w10_HPG_wra_Select2">
+												<select name="" id="" value="1" ></select>
+											</div>
+										</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>
+											<img src="widgets/max/w_10/img/card_3.png"/>
+										</td>
+										<td>
+											<p><strong>Producto Santander</strong></p>
+											<p>1234****5678</p>
+											<p>Alias</p>
+										</td>
+										<td>
+											<div class="w10_HPG_wra_Select2">
+												<select name="" id="" value="1" ></select>
+											</div>
+										</td>
+										<td></td>
+									</tr>
+								</table>
+							</div>
+							<div class="w10_IT_wraRight">
+								
+							</div>
+							<div class="botonera">
+								<div class="btnaceptar" onclick="cambiaPaso(2);cargaHtml('.w10_HPG_tablaPaso2','../../../../tablas/w10/w10_HPG_tblPaso2.html');">Inscribir tarjeta</div>
+							</div>
+								
+						</div><!--Fin paso 1-->
+						<div class="step step2">
+							<div class="col colFull">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="widgets/max/w_10/img/titulo_recompensas.png" />
+									</div>
+									<p class="titulo">Datos de transferencia</p>
+									<p class="subtitulo">Por favor confirme la inscripción de las tarjetas a los programas</p>
+								</div>								
+								<div class="w10_HPG_tablaPaso2"></div>
+								<div class="botonera">
+									<div class="btn" onclick="cambiaPaso(1)">Regresar</div>
+									<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.w10_HPG_tablaPaso3','../../../../tablas/w10/w10_HPG_tblPaso3.html'),'');">Confirmar</div>
+								</div>
+
+							</div>		
+						</div>
+						<div class="step step3">
+							<div class="col col2 resetMargen">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="widgets/max/w_10/img/titulo_recompensas.png" />
+									</div>
+									<p class="titulo">Comprobante de inscripción de tarjeta(s) a programa de recompensas</p>
+									<p class="subtitulo"></p>
+								</div>
+								<div class="w10_HPG_tablaPaso3">
+									
+								</div>
+							</div>
+							<div class="col col1 ">
+								<img src="img/assets/step3/anuncio.png" width="233" />
+								<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+								<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+								<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+								<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+							</div>
+							<div class="botonera">
+									<div class="btn" onclick="cambiaPaso(1);">Imprimir</div>
+									<div class="btnaceptar" onclick="closeAction();">Finalizar</div>
+								</div>
+
+						</div>
+					</div>
+
+				
+				
 			</div>
-			
+			<div class="w10_HPG_ayuda wra_flu1 flujo">
+				<p>El costo mensual del<br/>
+					programa de recompensas<br/>
+					varia de acuerdo al<br/>
+					producto a suscribir</p>
+				<img src="../img/mrsmackdown.png"/>
+			</div>
 		</div>
-	</div>
-</div>
+		
+		

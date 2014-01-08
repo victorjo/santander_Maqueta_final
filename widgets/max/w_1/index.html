@@ -1,692 +1,225 @@
-<script src="../../../js/ddSlick.js"></script>
-<script src="../../../js/componentes.js"></script>
-<script src="widgets/max/w_1/js/balance.js"></script>
-<!--<script src="../../../js/utiles.js"></script>-->
-<link rel="stylesheet" href="widgets/max/w_1/css/balance.css"/>
-<link rel="stylesheet" href="../../../css/componentes.css"/>
-<link rel="stylesheet" href="../../../css/token.css"/>
-<script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
-<script>
-	function escondePasos(tipo){
-		if(!tipo) $("#stepbar img").fadeOut("slow")
-		else $("#stepbar img").fadeIn("slow")
-	}
-</script>
-<!-- nothong -->
-<style>
-.btnHeaderTable{
-	height: 24px;
-margin: -10px;
-padding-top: 10px;
-width: 110px;
-}
-.titTabla{
-	margin-bottom:0px;
-	padding:10px 10px 5px 30px;
-	border:1px solid black;
-	border-bottom:0;
-	width:678px;
-	background:#F4F4F4;
-	margin-top:20px;
-	height:20px;
-	font-weight:bold
-}
-.titTabla p{
-	float:left;
-}
-.titTabla img{
-	float:right;
-	margin-top:-7px;
-	cursor: pointer;
-}
-.espacioTxt{
-	margin-left: 30px;
-}
-/*MENU*/
-#menu {
-	float:left;
-	position: absolute;
-	margin-left: -42px;
-	margin-top: 22px;
-}
-#menu a {
-	display: block;
-	width: 184px;
-	height: 12px;
-	text-align: justify;
-	padding: 6px;
-}
-#menu ul {
-	list-style-type: none;
-	padding-top: 5px;
-}
-#menu li {
-	float: left;
-	position: relative;
-	padding: 3px 0;
-	text-align: center;
-	background-color:#F0F0F0;
-	background-image: url('../../lineagrafica/widamphdr.png');
-	border: 1px #a7a7a7;
-}
-#menu ul.sub-menu {
-	display: none;
-	position: absolute;
-	padding: 0px;
-	z-index: 90;
-}
-#menu ul.sub-menu li {
-	text-align: left;
-}
-#menu li:hover ul.sub-menu {
-	display: block;
-	border: 1px solid #ececec;
-}
-.texto1{
-	float: left;
-	margin-top: 0px;
-}
-.texto2 {
-	float: right;
-	margin-top: 28px;
-	background-color:#F0F0F0;
-	width: 131px;
-	height: 12px;
-	padding: 8px 0;
-	text-align: center;
-}
-a {
-	text-decoration: none;
-	color: #838383;
-}
-a:hover {
-	color: black;
-	background-color: #F0F0F0;
-	font-weight: bold;
-}
-.inpTxt{
-	background: #efefef;
-	border: 1px solid #999;
-	width:200px;
-	text-align: center;
-}
+	<!--	<script src="../../../js/jquery10.2.min.js"></script>		-->
+		<script src="../../../js/components.js"></script>
+		<!--<script src="../../../js/ddSlick.js"></script>-->
+		<link rel="stylesheet" href="../../../css/generally.css" />
+		<link rel="stylesheet" href="../../../css/componentes.css" />
+		<style>
+		.col1_OC {
+			float: left;
+			height: 336px;
+			margin-right: 10px;
+			width: 532px;
+		}
+		.col2_OC {
+			float: left;
+			width: 180px;
+		}
+		.p_OC {
+			color:#232323;
+			font-weight:bold;
+			font-size:13px;
+		}
+		.textbox_OC {
+			width:100% !important;
+		}
+		.middletd_OC {
+			text-align:center;
+			width:50%;
+		}
+		.table_OC {
+			width:100%;
+		}
+		.span_OC {
+			font-size:11px;
+		}
+		.a_OC {
+			color:#ff0d37;
+			font-weight:bold;
+		}
+		.dd-select {
+			width: 160px !important;
+		}
+		.dd-container {
+			width: 174px !important;
+			margin-right:11px;
+		}
 
+		.tableHG {
+			background:#efefef;
+			width:100%;
+		}
 
-
-</style>
-<script>
-	//$('#diaform').datepicker();
-	
-</script>
-
-<div id="widget">
-	<div id="header">
-		<p class="f_titleWid">TRANSFERENCIA DE SALDOS</p>
-		<div class="btnHeader">
-			<img src="../../../img/botones/btn_cerrar.png"/>
-		</div>
-		<div class="btnHeader">
-			<img src="../../../img/botones/info_.png"/>
-		</div>
-	</div>
-	<div id="stepbar">
-		<img src="../../../img/fake/pasos/paso1.png"/>
-	</div>
-	<div id="contenido">
-		<div><!-- Funcionalidad:  Solicitar -->
-		<div id="step1" class="pasos"><!-- step1 -->
+		.tableHG p{
+			color: #272727;
+			font-size:12px;
+			font-weight:bold;
+		}
 		
-		<!-- bloqueo de cambio de contraseña y correo -->
+		.tableHG span{
+			font-size:11px;
+			font-weight:bold;
+			color:#e0dede;
+
+		}
+
+		.fullCon {
+			height:auto;
+			margin-bottom:20px;
+			width:100%;
+		}
+
+		.tableHG select {
+			width:100%;
+		}
 		
-		<p style="color:red"><b>Introduzca los datos de la tarjeta de cr&eacute;dito o comercial de la que desea transferir su saldo:</b></p>
-		<div id="envolvente1" style="overflow:hidden;border:1px solid #ccc;padding:4px;">
-			
-			<div class="wra_Select">
-				<p><b>N&uacute;mero de tarjeta</b></p>
-				<input type="text" class="inpTxt" id="diaform" placeholder="Seleccionar" />
+		.dd-container {
+			float:left;
+		}
+		
+		.dd-select {
+			border-radius: 5px;
+		}
+		</style>
+		<script>
+			$(document).ready(function(){
+				//Gridius($('.containerG'),{colums:['Fecha','Descripcion','RFC','Moneda Extranjera (MXP)','Tipo de cambio (MXP)','Cantidad (MXP)','Estatus'],rowsValues:['dd/mm/aaaa','Lorem Ipsum','ABC12345678','999,999,999.00','999,999,999.00','0.00%','estatus'],numRows:10});
+				construyeSwitch("sw1");
+			});
+		</script>
+		<!--<input type="button" value="GRID" onclick="Gridius($('.contenidoFlujo'),{colums:[13,23,33,43,53],rowsValues:[1,2,3,4,5],numRows:10});">-->
+		<div id="widampliado">
+			<div id="WA_pasos">
+				<img src="../../../img/assets/pasos.png"/>
+				<div class="btnHeader info">
+					<img src="../../../img/assets/ico_info.png"  />
+				</div>
+				<div class="btnHeader cerrar">
+					<img src="../../../img/assets/ico_cerrar_widget.png"  />
+				</div>
 			</div>
 			
-			<div class="wra_Select">
-				<p><b>Instituci&oacute;n bancaria o comercial</b></p>
-				<input id="txtB" type="text" class="inpTxt"   placeholder="" disabled/>
-				
-			</div>
-			<div class="wra_Select" style="width:220px !important">
-				<p><b>Ingrese el monto que desea transferir</b></p>
-				<input type="text" class="inpTxt" placeholder="$0.00" value="$0.00" />
-				
-			</div>
-		</div>
-		
-		<div style="float: left; margin-top: 25px;">
-			
-			<p>A continuaci&oacute;n, seleccione la(s) tarjeta(s) a la(s) que quiere tranferir el saldo:</p>
-			
-		</div>
-		
-		<table class="tbl_consulta" style="width:725px;float:left;text-align: justify;border-bottom:1px solid #ccc;">
-			<tr>
-				<td>Tarjeta de cr&eacute;dito</td>
-				<td>Saldo disponible(MXP)</td>
-				<td>Saldo a transferir(MXP)</td>
-				<td>Pago mensual(MXP)</td>
-				<td>Tasa</td>
-				
-			</tr>
-		</table>
-		<div  id="cuadroTarjeta" style="width:725px;height:190px; overflow:scroll; overflow-x: hidden; border-bottom:1px solid black">
-			
-			<table class="tbl_consulta" style="width:100%;float:left;text-align: justify;">
-				<tr>
-					<td>
-						
-					</td>
-					<td>
-					</td>
-					<td>
-					</td>
-					<td class="activaciona1">
-					</td>
-					<td class="activaciona1">
-					</td>
-					
-				</tr>
-				<tr>
-					<td>
-						<img class="al" id="a1" src="../../../img/interfaz/paginador_apagado.png" alt="">
-						<img src="../../../img/balanceTransfer/tarjetaBT.png" alt="">
-					</td>
-					<td>
-						<p></p>
-						<p>415,125,785.00</p>
-					</td>
-					<td class="activaciona1">
-						<input type="text" class="inpTxt" placeholder="256,578,145.00" value="455,123,479.00" />
-					</td>
-					<td class="activaciona1">
-						<p>102,125,789.00 (MXP)</p>
-					</td>
-					<td class="activaciona1">
-						<p> 00.0%</p>
-					</td>
-					
-				</tr>
-				<tr>
-					<td>
-						<img class="al" id="a2" src="../../../img/interfaz/paginador_apagado.png" alt="">
-						<img src="../../../img/balanceTransfer/tarjetaBT.png" alt="">
-					</td>
-					<td>
-						<p></p>
-						<p>456,102,452.00</p>
-					</td>
-					<td class="activaciona2">
-						<input class="inpTxt" type="text" placeholder="256,578,145.00" value="455,123,479.00" />
-					</td>
-					<td class="activaciona2">
-						<p>451,105,412.00 (MXP)</p>
-					</td>
-					<td class="activaciona2">
-						<p> 00.0%</p>
-					</td>
-					
-				</tr>
-				<tr>
-					<td>
-						<img class="al" id="a3" src="../../../img/interfaz/paginador_apagado.png" alt="">
-						<img src="../../../img/balanceTransfer/tarjetaBT.png" alt="">
-					</td>
-					<td>
-						<p></p>
-						<p>256,145,410.00</p>
-					</td>
-					<td class="activaciona3">
-						<input type="text" class="inpTxt" placeholder="256,578,145.00" value="455,123,479.00"  />
-					</td>
-					<td class="activaciona3">
-						<p>201,456,412.00 (MXP)</p>
-					</td>
-					<td class="activaciona3">
-						<p> 00.0%</p>
-					</td>
-					
-				</tr>
-				<tr>
-					<td>
-						<img class="al" id="a4" src="../../../img/interfaz/paginador_apagado.png" alt="">
-						<img src="../../../img/balanceTransfer/tarjetaBT.png" alt="">
-					</td>
-					<td>
-						<p></p>
-						<p>451,784,369.00</p>
-					</td>
-					<td class="activaciona4">
-						<input type="text" class="inpTxt" placeholder="256,578,145.00" value="455,123,479.00"/>
-					</td>
-					<td class="activaciona4">
-						<p>147,258,369.00 (MXP)</p>
-					</td>
-					<td class="activaciona4">
-						<p> 00.0%</p>
-					</td>
-					
-				</tr>
-				<tr>
-					<td>
-						<img class="al" id="a5" src="../../../img/interfaz/paginador_apagado.png" alt="">
-						<img src="../../../img/balanceTransfer/tarjetaBT.png" alt="">
-					</td>
-					<td>
-						<p></p>
-						<p>741,852,963.00</p>
-					</td>
-					<td class="activaciona5">
-						<input type="text" class="inpTxt" placeholder="256,578,145.00" value="455,123,479.00" />
-					</td>
-					<td class="activaciona5">
-						<p>789,987,456.00 (MXP)</p>
-					</td>
-					<td class="activaciona5">
-						<p> 00.0%</p>
-					</td>
-					
-				</tr>
-				<tr>
-					<td>
-						<img class="al" id="a6" src="../../../img/interfaz/paginador_apagado.png" alt="">
-						<img src="../../../img/balanceTransfer/tarjetaBT.png" alt="">
-					</td>
-					<td>
-						<p></p>
-						<p>321,654,987.00</p>
-					</td>
-					<td class="activaciona6">
-						<input type="text" class="inpTxt" placeholder="256,578,145.00" value="455,123,479.00"  />
-					</td>
-					<td class="activaciona6">
-						<p>951,246,254.00 (MXP)</p>
-					</td>
-					<td class="activaciona6">
-						<p> 00.0%</p>
-					</td>
-					
-				</tr>
-				
-			</table>
-		</div>
-		
-		<div style="float: left;margin:10px 0;">
-			<p class="smallTxt" style="width: 100%;">
-			*Calculado al 08 Noviembre del 2013. Considera una línea de crédito de $132,546,130.00, a un plazo de 3 años de amortización del crédito y cubriendo el porcentaje del pago mínimo.
-			</p>
-		</div>
-		<div class="botonera">
-			<div  id="continuar1" class='btn Fright marginOne btnaceptar' style="margin-top:0px;float: right;" onclick="changeComment(2)">Continuar</div>
-			</div>
-		</div>
-		<!-- Fin step1 -->
-		<div id="step2" class="pasos"><!-- step2 -->
-		<!-- bloqueo -->
-		<div id="contenido2">
-			
-				
-
-			
-		</div>
-		<div id="formTerminos">
-			<div class="tablaTerm"><span style="margin-top:6px;position:absolute;margin-left: 50px;color: black; font-weight:bold;">Términos y condiciones</span></div>
-			<div  id="terminosCond">
-				
-					<p>
-					 Aceptación de estos términos y condiciones. Al entregarnos los documentos y/o paquetes indicados en el anverso, Usted acepta expresamente que ha revisado y encuentra que la información de envío que Usted nos ha proporcionado para el llenado de esta guía, es la correcta y está de acuerdo con la misma.
-					 <p>
-					 
-					 Los términos y condiciones de servicio son parte del contrato de envío de UPS y contienen los términos y condiciones generales bajo los cuales UPS se compromete en cuanto al transporte de paquetes en su propio territorio y através de sus afiliados.
-
-					 </p>
-					 <br>
-					 <a href="https://servicios.santander.com.mx//tarjetas/imagenes/guias/terminos_condiciones_recompensas_basico.pdf" target="_blank"
-					 style="color:blue; border-botom:1px solid blue; margin-top:20px;">Leer completo</a>
-					 ||
-					 <a href="DOCS/terminos_condiciones_recompensas_basico.pdf" target="_blank" style="color:blue; border-botom:1px solid blue; margin-top:20px;">Descargar</a>
-					<br><br>
-					<input type="checkbox" name="" value="">
-					<span style="font-size:10px;">He leído y acepto los términos y condiciones</span>
-					<br>
-					<br><br>
-					</p>
-			
-			</div>
-
-			<div id="datosTelCorreo" style="border:solid;">
-
-	    		<span class="txtform1" style="">A continuación puede actualizar su correo electrónico y número celular para recibir notificaciones.</span>
-	    		<br><br>
-	    		<span class="txtform2">Correo registrado para notificación: veronica.pimentel@gmail.com <br><br>
-				Celular registrado para notificación: 55-14256548
-	    		</span>
-	    		<table class="tablaForm">
-	    			<tr>
-	    				<td><img  src="../../../img/interfaz/paginador_encendido.png" width="12" height="12">
-	    					<span>Correo que quedará registrado para notificación:</span><br>
-	    					<input type="text" size="52" placeholder="Correo@correo.com">
-	    				</td>
-	    			</tr>
-	    			<tr>
-	    				<td><img  src="../../../img/interfaz/paginador_apagado.png" width="12" height="12">
-	    					<span>Celular que quedará registrado para notificación:</span><br>
-	    					<input type="text" size="52" placeholder="55-14256548">
-	    				</td>
-	    			</tr>
-	    		</table>
-				<span class="smallTxtMod">*Este medio cambiará para todas las operacivones de supernet. ¿esta seguro que desea realizar la acción?</span>
-
-				<table style="float:left; margin-left:-71px;margin-top:264px;">
-					<tr>
-						<td><div class='btn' onclick="destruyeOver();">Guardar cambios</div></td>
-					</tr>
-					<tr>
-						<td><div class='btn' onclick="destruyeOver();">Cancelar</div></td>
-					</tr>
-				</table>
-            		
-            </div>
-
-			<table style="position: relative; margin-left:210px;/*margin-left: 101px;*/padding-top: 17px;">
-				<tr>
-					<td><div class='btn' onclick="destruyeOver();">Cancelar</div></td>
-					<td><div class='btnaceptar' onclick="destruyeOver();cambiaEstados('3',2,3);changeComment(3)">Continuar</div></td>
-				</tr>
-			</table>
-		</div>
-		<p style="color:red;"><b>La operación se realizará con la siguiente información:</b></p>
-		<table class="tbl_info" style="width:100%;float:left;">
-			<tr>
-				<td style="color:#999999">Tarjeta destino</td>
-				<td >1234****5678</td>
-			</tr>
-			<tr>
-				<td style="color:#999999">Tarjeta cargo</td>
-				<td >1234****5678</td>
-			</tr>
-			<tr>
-				<td style="color:#999999">Institución:</td>
-				<td >Banamex</td>
-			</tr>
-			<tr>
-				<td style="color:#999999">Saldo a transferir:</td>
-				<td >4,000.00(MXP)</td>
-			</tr>
-			<tr>
-				<td style="color:#999999">Pago mensual:</td>
-				<td >2,000.00 (MXP)</td>
-			</tr>
-			<tr>
-				<td style="color:#999999">Tasa:</td>
-				<td >21.08%</td>
-			</tr>
-			<tr>
-				<td style="color:#999999">Correo para notificación</td>
-				<td >veronica.pimentel@gmail.com</td>
-				<td> <a id="editaCorreo" style="color:#1974F0; cursor:pointer;">(Editar)</a></td>
-			</tr>
-			<tr>
-				<td style="color:#999999">Celular para notificación</td>
-				<td>55 55 55 55 55</td>
-				<td> <a id="editaCel"  style="color:#1974F0; cursor:pointer;">(Editar)</a></td>
-			</tr>
-			<tr>
-				<td style="color:#999999">Fecha de operación:</td>
-				<td>11/12/2013 13:30 hrs.</td>
-			</tr>
-		</table>
-		<div style="float: left;margin:10px 0 ;">
-			<p class="smallTxt" style="width: 100%;">
-			*Calculado al 08 Noviembre del 2013. Considera una línea de crédito de $140,203,301.00, a un plazo de 3 años de amortización del crédito y cubriendo el porcentaje del pago mínimo.
-			</p>
-		</div>
-		<div class="botonera">
-			<div class="btn regresar" onclick="changeComment(1)">Regresar</div>
-			<div id="btn1" class=" btnaceptar continuar2" >Confirmar</div>
-		</div>
-		</div><!-- Fin step2 -->
-		
-		<div id="step3" class="pasos"><!-- step3 -->
-		<div id="vtacruzada">
-			
-			<div class="vtaimg">
-			</div>
-			
-			<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
-			
-			<!--<div class="vtapanel">
-						<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-						<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-						<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-			</div>-->
-			<div id="btn_paso3">
+			<div id="WA_nav">
 				<ul>
-					<li class="btnNav"><!--<img src="../../img/iconos/tarjeta_.png" class="vtaico" />--><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
-					<li class="btnNav"><!--<img src="../../img/iconos/img_enviar.png" class="vtaico" />--><span class="txtbtn_3">Pagar Servicios</span></li>
-					<li class="btnNav"><!--<img src="../../img/iconos/img_icono.png" class="vtaico" />--><span class="txtbtn_3">Realizar una Domiciliación</span></li>
+					<li class="menu">
+						<p>
+						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
+					</li>
+					<li>
+						<p>Consulta de saldos y movimientos</p>
+					</li>
+					<li>
+						<p>Traspaso a meses con interes</p>
+					</li>
+
+					<li>
+						<p>Disposicion de tarjeta de credito a cheques</p>
+					</li>
 				</ul>
 			</div>
-			
-		</div>
-		<h4 style="color:red;">Comprobante de transferencia entre mis cuentas Santander</h4>
-		
-		<table class="tbl_info" style="width:60%;float:left;">
-			<tr>
-				<td style="width:200px;">Cuenta cargo:</td>
-				<td style="color:#CCCCCC">1234****5678</td>
-			</tr>
-			<tr>
-				<td>Cuenta destino:</td>
-				<td style="color:#CCCCCC">1234****5678</td>
-			</tr>
-			<tr>
-				<td>Concepto:</td>
-				<td style="color:#CCCCCC">123456789123456789123456789 <br> 123456789123456789
-				</td>
-			</tr>
-			<tr>
-				<td>Importe:</td>
-				<td style="color:#CCCCCC">123456789123456789</td>
-			</tr>
-			<tr>
-				<td>Fecha de transferencia:</td>
-				<td style="color:#CCCCCC">13/11/2013</td>
-			</tr>
-			<tr>
-				<td>Fecha programada de transferencia:</td>
-				<td style="color:#CCCCCC">16/11/2013</td>
-			</tr>
-			<tr>
-				<td>Notificación previa al pago:</td>
-				<td style="color:#CCCCCC">3 días</td>
-			</tr>
-			<tr>
-				<td>Comisión por transferencia:</td>
-				<td style="color:#CCCCCC">0.00 (MXP)</td>
-			</tr>
-			<tr>
-				<td>I.V.A. por comisión de transferencia:</td>
-				<td style="color:#CCCCCC">0.00 (MXP)</td>
-			</tr>
-			<tr>
-				<td>Correo para notificacion:</td>
-				<td style="color:#CCCCCC">veronica.pimentel@gmail.com</td>
-			</tr>
-			<tr>
-				<td>Celular para notificacion:</td>
-				<td style="color:#CCCCCC">55-45892374</td>
-			</tr>
-			<tr>
-				<td>Folio SuperNET:</td>
-				<td style="color:#CCCCCC">65675868979798</td>
-			</tr>
-			<tr>
-				<td colspan="5" ><div class="btn" style="margin:0 0 10px 0; padding:0;height:30px">Deseo hacer<br />otra transferencia</div></td>
+			<div id="WA_contenedorFlujos">
+				<div class="titFlujo" style="height:60px">
+					<div class="iconFlujo">
+						<img src="../../../img/assets/ico_cuentas_propias.png"/>
+					</div>
+					<p class="titulo">Solicitar transferencia de datos</p>
+					<p class="subtitulo">Seleccione la operacion que desea realizar</p>
+					<div> <span>Transferencia de saldos de otras tarjetas de credito</span><div class="sw1"></div><span>Disposicion de tarjeta a cuenta de cheques</span> </div>
+				</div>
+				<div class="contenidoFlujo" style="border:0px solid black;">
+					
+					<div class="tableHG fullCon">
+						<table>
+							<tr>
+								<td rowspan="2">
+									<img src="img/iconos/card.png" alt="">
+								</td>
+								<td rowspan="2">
+									<p>Seleccione tarjeta:</p>
+									<select name="" id=""></select>
+								</td>
+								<td>
+									<p>Alias</p>
+									<span>Mi alias</span>
+								</td>
+								<td>
+									<p>Limite de credito</p>
+									<span>999,999,999.00</span>
+								</td>
+								<td>
+									<p>Saldo actual</p>
+									<span>999,999,999.00</span>
+								</td>
+								<td>
+									<p>Tasa de interes</p>
+									<span>0.00 %</span>
+								</td>
+								<td>
+									<p>Fecha de corte</p>
+									<span>dd/mm/aaaa</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>Fecha limite de pago</p>
+									<span>dd/mm/aaaa</span>
+								</td>
+								<td>
+									<p>Pago para no generar intereses</p>
+									<span>999,999,999.00</span>
+								</td>
+								<td>
+									<p>Limite de credito linea express</p>
+									<span>0.00%</span>
+								</td>
+								<td>
+									<p>Saldo global en linea express</p>
+									<span>dd/mm/aaaa</span>
+								</td>
+								<td>
+									<p>Pago minimo</p>
+									<span>999,999,999.00</span>
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="fullCon">
+						<div class="select_OC"></div>
+						<div class="select_OC"></div>
+						<div class="select_OC"></div>
+						<a href="#" style="float:right;float: right;font-size: 12px;color: #db1539;">Nueva busqueda</a>
+					</div>
+					
+					<div class="fullCon">
+						<p style="width: 260px;float: left;margin-bottom: 3px;margin-top:5px;font-size: 12px;font-weight: bold;">Mis movimientos de la tarjeta</p> <div style="float:right"><img src="0" alt=""><img src="1" alt=""><img src="2" alt=""></div>
+					</div>
+					<div class="containerG"></div>
+				</div>
+				<div class="botonera">
+					<div class="btn" onclick="cambiaPaso(2)">Consultar estado de cuenta</div>
+					<div class="btn" onclick="cambiaPaso(2)">Calendario de operaciones</div>
+					<div class="btnaceptar">Diferir cargos</div>
+				</div>
 				
-			</tr>
-		</table>
-		<div class="botonera">
-		<table style="">
-			<tr>
-				<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
-				<td><div class="btn" >Guardar en operaciones favoritas</div></td>
-				<td><div class="btn btnaceptar" onclick="cierraWidget();">Finalizar</div></td>
-			</tr>
-		</table>
+			</div>
 		</div>
-		</div><!-- Fin step3 -->
-	</div>
-	<!-- FIN Funcionalidad: Solicitar -->
-	<div><!-- Flujo de  consulta -->
-	<div id="step4" class="pasos">
+		<script>
+			(function(){
+				construyeSwitch("switch_OC");
+				var js = [{
+			        text: "Elemento 0",
+			        value: 1,
+			        selected: false			    
+			    }];
+
+				$(".select_OC").ddslick({
+			    data:js,
+			    width:300,
+			    imagePosition:"left",
+			    onSelected: function(selectedData){
+			       
+			    }   
+		    });
+			})();
+		</script>
 		
-		<div id="calendario">
-			<div id="widreducido">
-				<div id="headerWidget">
-					<p>Intervalo de fechas personalizado</p>
-					<div id="btninfo"></div>
-				</div>
-				<div id="subtitulo" style="padding-left: 12px;">
-					<p>Desde</p>
-				</div>
-				<div>
-					<input class="input"onmouseover="$(this).datepicker();" id="d1" type="text" placeholder="dd/mm/aaaa" /></div><div id="subtitulo" style="padding-left: 12px;">
-					<p>Hasta</p>
-				</div>
-				<div id="dia2">
-					<input class="input" type="text" placeholder="dd/mm/aaaa" />
-				</div>
-
-			<div class="botoneraWidget"><div class="btn" style="margin-top:51px;" onclick="destruyeOver();">Consultar</div></div></div>
-		</div>
-
-		<p style="color:red;font-size:10px"><b>A continuación puede consultar las transferencias que ha realizado a sus tarjetas Santander.</b></p>
-
-
-		<p style="color:red;font-size:10px"><b> Seleccione el estatus de las transferencias de saldo que desea consultar, así como el período de búsqueda y/o rango de saldo transferido para realizar una búsqueda más específica. </b></p>
-
-
-		<div id="menu">
-			<ul>
-				<li><a href="#"><div id="circulo"><span style="margin-left: 10px;">Periodo de búsqueda</span></div></a>
-				<ul class="sub-menu">
-					<li><a href="#" class="seleccionado" id="1"><img  id="ok1" src='../../img/iconos/ok.png' style='width:12px; height: 12px; margin-left: 10px; display:none;'/>Periodo actual</a></li>
-					<li><a href="#" id="2"><img  id="ok2" src='../../img/iconos/ok.png' style='width:12px; height: 12px; margin-left: 10px; display:none;'/>Periodo anterior</a></li>
-					<li><a href="#" id="3"><img  id="ok3" src='../../img/iconos/ok.png' style='width:12px; height: 12px; margin-left: 10px; display:none;'/>2 anteriores</a></li>
-					<li><a href="#" id="4"><img  id="ok4" src='../../img/iconos/ok.png' style='width:12px; height: 12px; margin-left: 10px; display:none;'/>Intervalo personalizado</a></li>
-				</ul>
-			</li>
-			<li><a href="#">Tarjeta de origen</a></li>
-			<li><a href="#">Rango de importe</a></li>
-		</li>
-	</ul>
-</div>
-<div>
-	<span class="texto1"><p><b>Criterios de búsqueda:<span class="dias"></span></p></b></span>
-	<span class="texto2"><a href="">Nueva búsqueda</a></span>
-</div>
-<div class="tabla">
-	<div class="tabletitleTransf"><p style="float:left">Mis transferencias de saldos</p>
-		<img src="../../img/botones/exportar.png" style="float:right;margin-right:10px"/>
-		<p style="float:right;margin-right:10px">Exportar</p>
-	</div>
-	<div style="width:725px;height:185px; overflow:scroll; overflow-x: hidden; border:2px #a1a1a1 solid;">
-		<table class="tbl_consulta" style="width:100%;float:left;">
-			<tr>
-				<td>Fecha</td>
-				<td>Tarjeta destino</td>
-				<td>Tarjeta origen</td>
-				<td>Saldo transferido</td>
-				<td>Pago mensual</td>
-				<td>Tasa</td>
-				<td>Estatus</td>
-			</tr>
-			<tr>
-				<td>23/11/2013</td>
-				<td>123456789123</td>
-				<td>123456789123</td>
-				<td>2,000.00 MXP</td>
-				<td>1,500.00 MXP</td>
-				<td>23.54%</td>
-				<td><u>Exitosa</u></td>
-			</tr>
-			<tr>
-				<td>22/11/2013</td>
-				<td>123456789123</td>
-				<td>123456789123</td>
-				<td>5,000.00 MXP</td>
-				<td>1,500.00 MXP</td>
-				<td>27.67%</td>
-				<td><u>Exitosa</u></td>
-			</tr>
-			<tr>
-				<td>15/11/2013</td>
-				<td>123456789123</td>
-				<td>123456789123</td>
-				<td>3,000.00 MXP</td>
-				<td>1,500.00 MXP</td>
-				<td>24.64%</td>
-				<td><u>Exitosa</u></td>
-			</tr>
-			<tr>
-				<td>11/11/2013</td>
-				<td>123456789123</td>
-				<td>123456789123</td>
-				<td>4,000.00 MXP</td>
-				<td>1,500.00 MXP</td>
-				<td>23.54%</td>
-				<td><u>Exitosa</u></td>
-			</tr>
-			<tr>
-				<td>09/11/2013</td>
-				<td>123456789123</td>
-				<td>123456789123</td>
-				<td>3,000.00 MXP</td>
-				<td>1,500.00 MXP</td>
-				<td>23.54%</td>
-				<td><u>Exitosa</u></td>
-			</tr>
-			<tr>
-				<td>02/11/2013</td>
-				<td>123456789123</td>
-				<td>123456789123</td>
-				<td>2,000.00 MXP</td>
-				<td>1,500.00 MXP</td>
-				<td>27.34%</td>
-				<td><u>Exitosa</u></td>
-			</tr>
-			<tr>
-				<td>28/10/2013</td>
-				<td>123456789123</td>
-				<td>123456789123</td>
-				<td>5,000.00 MXP</td>
-				<td>1,500.00 MXP</td>
-				<td>27.34%</td>
-				<td><u>Exitosa</u></td>
-			</tr>
-		</table>
-	</div>
-</div>
-</div>
-</div><!-- FIN flujo consulta -->
-</div><!--cierre contenido-->
-<div id="navegador">
-<ul>
-	<li class="active" onclick="changeComment(1);escondePasos(true);">SOLICITAR</li>
-	<li onclick="changeComment(0);escondePasos(false);">CONSULTAR</li>
-</ul>
-<div class="aviso">
-	<div id="msg-alert" style="width: 133px;height: 61px;background:#fff;position: absolute;top:8px;left: 10px;font-weight: bold;font-size: 10px;text-align: left;padding-top:0px;">
-		Balance Transfer le permite transferir a sus tarjetas Santander la deuda de sus otras tarjetas de otros bancos.
-	</div>
-	<img src="../../img/iconos/img_msj.png"/>
-</div>
-
-</div>
-</div>

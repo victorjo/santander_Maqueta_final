@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<title>Paso2</title>
+		<script src="../../../js/jquery10.2.min.js"></script>
+		<script src="../../../js/components.js"></script>
+		<script src="../../../js/ddSlick.js"></script>
+		<link rel="stylesheet" href="../../../css/generally.css" />
+		<link rel="stylesheet" href="../../../css/componentes.css" />
+		<link rel="stylesheet" href="widgets/max/w_8/css/w_8.css" />
+	</head>
+	<body>
+		<div id="widampliado">
+			<div id="WA_pasos">
+				<img src="../../../img/assets/pasos.png"/>
+				<div class="btnHeader info">
+					<img src="../../../img/assets/ico_info.png"  />
+				</div>
+				<div class="btnHeader cerrar">
+					<img src="../../../img/assets/ico_cerrar_widget.png"  />
+				</div>
+			</div>
+			
+			<div id="WA_nav">
+				<ul>
+					<li class="menu">
+						<p>
+						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
+					</li>
+					<li>
+						<p>Disposición de Créditos</p>
+					</li>
+					<li>
+						<p>Consulta de créditos</p>
+					</li>
+				</ul>
+			</div>
+			<div id="WA_contenedorFlujos">
+				<div class="titFlujo">
+					<div class="iconFlujo">
+						<img src="../../../img/assets/ico_cuentas_propias.png"/>
+					</div>
+					<p class="titulo">Entre cuentas propias Santander</p>
+					<p class="subtitulo">Instroduzca nombre alias o cuentas bla bla bla...</p>
+				</div>
+				<div class="contenidoFlujo">
+
+
+				<div class="flujo wra_flu1">
+						<div class="step step1">
+
+							
+			<div class="w8_EC_contenidodatos1">
+						<p>Cuenta destino:</p>
+
+						<div class="w8_EC_sexycombo">
+							<input type="text" id="w8_EC_autocompleteQ"  placeholder="1234****5678        Elite Rewards Platino       Alias     654,124,321.00" >
+
+							<span><img class="activo" src="img/iconos/favorito_of.png"><img class="inactivo" src="img/iconos/favorito_on.png"></span>
+
+								<div class="w8_EC_marcotriangulo" >
+									<div class="triangulo_inf"></div>
+								</div>
+						</div>
+
+						<p>Cuenta de cargo:</p>
+
+								<div class="w8_EC_sexycombo">
+									<input type="text" id="w8_EC_autocompleteQ"  placeholder="1234****5678        Elite Rewards Platino       Alias     654,124,321.00" >
+
+									<span><img class="activo" src="img/iconos/favorito_of.png"><img class="inactivo" src="img/iconos/favorito_on.png"></span>
+
+										<div class="w8_EC_marcotriangulo" >
+											<div class="triangulo_inf"></div>
+										</div>
+								</div>
+					</div>
+
+					<table class="table_OC">
+							<tr>
+								<td class="middletd_OC">
+									<p class="p_OC">Importe:</p>
+									<input class="textbox_OC" placeholder="Escribir importe (MXP)" type="text" />
+								</td>
+								<td class="middletd_OC">
+									<p class="p_OC">Concepto:</p>
+									<input class="textbox_OC" placeholder="Escribir concepto" type="text" />
+								</td>
+							</tr>
+						</table>
+
+
+					<div class="w8_EC_contenidodatos2">
+						<p class="p_OC">Programar transferencia:</p>
+									<div class="switch_OC switchBox"></div>
+
+									<p class="p_OC">Fecha:</p>
+									<input class="textbox_OC" type="text" placeholder="dd/mm/aaaa" />
+						
+					
+
+										<div class="w8_EC_inputtext2"><input type="text" style="width:148px"></div>
+
+										<div class="w8_EC_tittext"><p>Notificar previamente:</p></div>
+
+					</div> 
+		
+
+						<div class="step step2">
+						
+						</div>
+						<div class="step step3">
+							
+						</div>					
+					</div>
+					<div class="flujo wra_flu2">
+						
+					</div>
+					<div class="flujo wra_flu3">
+						
+					</div>	
+				</div>
+				<div class="botonera">
+					
+					<div class="btnaceptar" onclick="cambiaPaso(2)">Continuar</div>
+
+				</div>
+				
+			</div>
+		</div>
+		
+		
+<script>
+			(function(){
+				construyeSwitch("switch_OC");
+			})();
+		</script>
+
+	</body>
+</html>

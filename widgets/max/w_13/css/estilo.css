@@ -1,0 +1,71 @@
+@import url("widgets/max/w_13/css/w_8.css");
+@import url("../css/w_8.css");
+.infptc{
+	
+	height: 195px;
+	width: 720px;
+	font-size: 11px;
+	color: #272727;
+}
+.formptc{
+	border: 1px solid transparent;
+	height: 195px;
+	width: 535px;
+	background: #f4f4f4;
+	float: left;
+}
+.comboptc{
+	height: 31px;
+	width: 510px
+}
+.contendcomboptc{
+	height: 30px;
+	width: 251px;
+	border: 1px red;
+	float: left;
+	margin-top: 10px;
+}
+
+.comboptc2{
+	height: 31px;
+	width: 251px;
+}
+.concepto{
+	height: 25px;
+	width: 251px;
+	margin-top: 10px;
+
+}
+.cantidad{
+	height: 25px;
+	width: 251px;
+	margin-left: 10px;
+}
+.contendcomboptc {
+	margin-top: 10px;
+
+
+}
+.contendcomboptc label{
+	margin-top: 7px;
+	float: left;
+	display: block;
+}
+input, select{
+	margin-top: 10px;
+	float: left;
+	display: block;
+	border-radius: 5px;
+	border: solid 2px silver;
+}
+.switchandcalptc{
+	border: solid;
+	height: 195px;
+	width: 160px;
+	float: left;
+	position: relative;
+	bottom: 195px;
+}
+.w8_EC_contenidodatos2{
+	height: 195px;
+}
