@@ -177,7 +177,7 @@
 
 .w10_HPG_personalizarIntervalo{
 	float:left;
-	width:143px;
+	width:153px;
 	height:21px;
 	background-color:#FBFBFB;
 	border:1px #C2C0C0 solid;
@@ -467,4 +467,13 @@ width: 160px;
 
 .tableStep3{
 	height:auto;
+}
+
+.tableStep2 {
+	font-size: 12px;
+	float: left;
+	margin-left: 181px;
+	margin-top: 15px;
+	height: 140px;
+	width: 350px;
 }
