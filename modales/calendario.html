@@ -1,7 +1,7 @@
 
  
-<script src="../js/jquery10.2.min.js "></script>
-<script src="../js/ui/jquery-ui-1.10.3.custom.min.js"></script>
+<!--<script src="../js/jquery10.2.min.js "></script>
+<script src="../js/ui/jquery-ui-1.10.3.custom.min.js"></script>-->
 <link rel="stylesheet" href="calendario.css" />
 <div id="calendario">
 	<div class="cal_ico_cerrar"></div>
@@ -12,9 +12,9 @@
 					<div class="cal_contenedor">
 						<p>Rango de fechas personalizado:</p>
 						<p>Desde:</p>
-						<input class="cal_input" type="text"/>
+						<input class="cal_input" type="text" value="08/04/2013" disabled/>
 						<p>Hasta:</p>
-						<input class="cal_input" type="text"/>
+						<input class="cal_input" type="text" value="09/04/2013" disabled/>
 					</div>
 					<div class="btnaceptar" id="btnCalendarioAceptar">Consultar</div>	
 				</td>
@@ -26,6 +26,15 @@
 	
 </div>
 <script>
+$(document).ready(function(){
+	$('.cal_ico_cerrar').click(function(){
+				//$('#elementBloqueo').empty();
+				//$('#ui-datepicker-div').remove();
+				switchModal();
+			});
+});
+</script>
+<!--<script>
 	
 		/* Inicialización en español para la extensión 'UI date picker' para jQuery. */
 		jQuery(function($){
@@ -69,4 +78,4 @@
 		
 		
 
-</script>
+</script>-->

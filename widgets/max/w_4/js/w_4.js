@@ -34,42 +34,115 @@ var dataTbl2 = {
 }
 
 var data1 = [{
-    text: "......",
+    text: "1 mes sin interes",
     value: 1,
     selected: false,
 }, {
-    text: "......",
+    text: "2 meses sin intereses",
     value: 2,
     selected: false,
 
 }, {
-    text: "......",
+    text: "3 meses sin intereses",
     value: 3,
-    selected: false,
-}, {
-    text: "......",
-    value: 4,
     selected: false,
 }];
 
 var data2 = [{
-    text: "......",
+    text: "3 dias",
     value: 1,
     selected: false,
 }, {
-    text: "......",
+    text: "4 dias",
     value: 2,
     selected: false,
 
 }, {
-    text: "......",
+    text: "1 día",
     value: 3,
     selected: false,
+}];
+
+var datacat = [{
+    text: "Telefonía",
+    value: 1,
+    selected: false,
 }, {
-    text: "......",
-    value: 4,
+    text: "Transporte",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "colegio",
+    value: 3,
     selected: false,
 }];
+
+var dataubic = [{
+    text: "Distrito Federal",
+    value: 1,
+    selected: false,
+}, {
+    text: "Guadalajara",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "Michoacán",
+    value: 3,
+    selected: false,
+}];
+
+var databusqueda = [{
+    text: "Últimos 5 pagos",
+    value: 1,
+    selected: false,
+}, {
+    text: "Último mes",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "Últimos 3 meses",
+    value: 3,
+    selected: false,
+}];
+
+var dataEstatus = [{
+    text: "Programados",
+    value: 1,
+    selected: false,
+}, {
+    text: "Exitosos",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "No exitoso",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "Todos",
+    value: 3,
+    selected: false,
+}];
+
+var datoRango = [{
+    text: "999,999,999,00(MXP)",
+    value: 1,
+    selected: false,
+}, {
+    text: "999,999,999,00(MXP)",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "999,999,999,00(MXP)",
+    value: 3,
+    selected: false,
+}];
+
 var identificador = 0;
 
 //Carga de datos (Tabla dinamica)
@@ -122,7 +195,7 @@ $(function() {
     });
 
     $(".wra_Select4 select").ddslick({
-        data: ddData,
+        data: datacat,
         width: 263,
         background: "#f7f7f7",
         imagePosition: "left",
@@ -133,7 +206,7 @@ $(function() {
     });
 
     $(".wra_Select3 select").ddslick({
-        data: ddData,
+        data: dataubic,
         width: 263,
         background: "#f7f7f7",
         imagePosition: "left",
@@ -144,7 +217,7 @@ $(function() {
     });
 
     $(".w4_select_1 select").ddslick({
-        data: ddData,
+        data: databusqueda,
         width: 140,
         background: "#f7f7f7",
         imagePosition: "left",
@@ -166,7 +239,7 @@ $(function() {
     });
 
     $(".w4_select_3 select").ddslick({
-        data: ddData,
+        data: datoRango,
         width: 140,
         background: "#f7f7f7",
         imagePosition: "left",
@@ -177,7 +250,7 @@ $(function() {
     });
 
     $(".w4_select_4 select").ddslick({
-        data: ddData,
+        data: dataEstatus,
         width: 80,
         background: "#f7f7f7",
         imagePosition: "left",
@@ -210,6 +283,12 @@ $(function() {
     $('.w4_HPG_personalizarIntervalo').click(function() {
         cargaCalendario('switchModal()', 'calendario');
     });
+
+    $(".w4_exportar").click(function() {
+        window.open('data:application/vnd.ms-excel,' + encodeURIComponent($('.tablaDinamica').html()));
+
+    });
+
 });
 
 $(document).ready(function() {
@@ -279,6 +358,13 @@ $(document).ready(function() {
         var logo = $(this).attr('id');
         $('.w4_PS_Img').addClass(selecServicio(logo));
         $('.w4_PS_seleccionado').text(logo);
+        //textos
+        $('.Alias2').text($(this).children('td:nth-of-type(3)').text());
+        $('.numero2').text($(this).children('td:nth-of-type(4)').text());
+        $('.fecha2').text($(this).children('td:nth-of-type(5)').text());
+        $('.dinero2').text($(this).children('td:nth-of-type(6)').text());
+        $('.clave2').text($(this).children('td:nth-of-type(7)').text());
+
         $('.visor').fadeIn('slow');
     });
 
