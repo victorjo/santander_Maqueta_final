@@ -23,7 +23,7 @@ var textoServicio = '';
 //Carga de datos (Tabla dinamica)
 var data = {
     colums: ['Fecha', 'Descripción', 'Referencia', 'Cuenta de cargo', 'Cuenta destino', 'Importe', 'Estatus'],
-    rowsValues: ['dd/mm/aaaa', '123456789123', '123456789123', '1234****7890', '1234****7890', '999,999,999.00', 'Exitosa'],
+    rowsValues: ['08/01/2014', '123456789123', '123456789123', '1234****7890', '1234****7890', '999,999,999.00', 'Exitosa'],
     numRows: 30
 }
 
@@ -148,7 +148,7 @@ var identificador = 0;
 //Carga de datos (Tabla dinamica)
 var data = {
     colums: ['Fecha', 'Descripción', 'Referencia', 'Cuenta de cargo', 'Cuenta destino', 'Importe', 'Estatus'],
-    rowsValues: ['dd/mm/aaaa', '123456789123', '123456789123', '1234****7890', '1234****7890', '999,999,999.00', 'Exitosa'],
+    rowsValues: ['08/01/2014', '123456789123', '123456789123', '1234****7890', '1234****7890', '999,999,999.00', 'Exitosa'],
     numRows: 30
 }
 
@@ -377,13 +377,43 @@ $(document).ready(function() {
         textoServicio = $(this).find('p').text();
     });
 
-    $('#sube').click(function() {
-        $('.w4_AS_listado').slideUp();
+    $(".btnaction2").click(function() {
+
+        if ($(this).hasClass("btnaction2")) {
+            $(this).removeClass("btnaction2");
+            $(this).addClass("btnaction");
+        } else {
+            $(this).removeClass("btnaction");
+            $(this).addClass("btnaction2");
+        }
+
+        $(this).parent().next().slideToggle("slow");
     });
 
-    $('#baja').click(function() {
-        $('.w4_AS_listado').slideToggle();
+    $(".btnaction").click(function() {
+
+        if ($(this).hasClass("btnaction")) {
+            $(this).removeClass("btnaction");
+            $(this).addClass("btnaction2");
+        } else {
+            $(this).removeClass("btnaction2");
+            $(this).addClass("btnaction");
+        }
+
+        $(this).parent().next().slideToggle("slow");
     });
+
+    $(".w4_CRAB_dropHdr1").children(".toggle").click(function() {
+        $(".w4_AS_inputsAlta").slideUp("slow");
+        $('.w4_AS_busqueda').slideUp("slow");
+        $(".w4_CRAB_dropHdr2").children(".btnaction").removeClass("btnaction").addClass("btnaction2");
+    });
+
+    $(".w4_CRAB_dropHdr2").children(".toggle").click(function() {
+        $(".w4_AS_listado").slideUp("slow");
+        $('.w4_AS_busqueda').slideUp("slow");
+        $(".w4_CRAB_dropHdr1").children(".btnaction").removeClass("btnaction").addClass("btnaction2");
+    })
 });
 
 function visibilidad() {

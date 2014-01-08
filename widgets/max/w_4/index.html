@@ -13,7 +13,7 @@
 				
 			</div>
 			<div id="WA_pasos">
-				<img src="../../../img/assets/pasos.png"/>
+				<img class="ocultaPaso" src="../../../img/assets/pasos.png"/>
 				<div class="btnHeader info">
 					<img src="../../../img/assets/ico_info.png"  />
 				</div>
@@ -28,16 +28,16 @@
 						<p>
 						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu1'); muestraServicios(); $('#WA_pasos').show();" class=" w4_flu1_activo liActive">
+					<li onclick="cambiaFlujo('.wra_flu1'); muestraServicios(); $('.ocultaPaso').show();" class=" w4_flu1_activo liActive">
 						<p>Pago de servicios</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu2'); visibilidad(); $('#WA_pasos').show();" class="w4_flu2_activo">
+					<li onclick="cambiaFlujo('.wra_flu2'); visibilidad(); $('.ocultaPaso').show();" class="w4_flu2_activo">
 						<p>Alta de servicios</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu3'); Gridius($('.tablaDinamica'),data); $('#WA_pasos').hide();">
+					<li onclick="cambiaFlujo('.wra_flu3'); Gridius($('.tablaDinamica'),data); $('.ocultaPaso').hide();">
 						<p>Consulta / baja de servicios</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu4'); Gridius($('.Tbl2'),dataTbl2); $('#WA_pasos').hide(); ">
+					<li onclick="cambiaFlujo('.wra_flu4'); Gridius($('.Tbl2'),dataTbl2); $('.ocultaPaso').hide(); ">
 						<p>Consulta de pagos <br/> realizados/programados</p>
 					</li>
 				</ul>
@@ -313,8 +313,9 @@
 
 					<div class="flujo wra_flu2">
 						<div class="step step1">
-							<div class="w4_AS_slideHeader">Listado de Servicios
-							<div id="baja" class="w4_AS_btnaction2"></div>
+							<div class="w4_CRAB_dropHdr1">
+							<p>Listado de Servicios</p>
+							<div class=" btnaction toggle"></div>
 							</div>
 							<div class="w4_AS_listado OFF">
 								<div>
@@ -454,12 +455,13 @@
 										<div class="tres 3"></div>
 									</div>
 								<div class="botonera">
-									<div class="btnaceptar" onClick="encontrado()">Dar de alta</div>
+									<div class="btnaceptar"  onclick="cambiaFlujo('.wra_flu2');cambiaPaso(2);$('.w4_AS_paso2').load('../../../../tablas/w4/w4_AS_tblPaso2.html')">Dar de alta</div>
 								</div>
 							</div>
 							
-							<div class="w4_AS_slideHeader">Búsqueda Avanzada
-								<div id="sube" class="w4_AS_btnaction2"></div>
+							<div class="w4_CRAB_dropHdr2">
+								<p>Búsqueda Avanzada</p>
+								<div class="btnaction2 toggle"></div>
 							</div>
 							
 							<!--<div class="w4_AS_avanzada">-->
@@ -595,7 +597,7 @@
 									<div class="btnsLateralStep3 ico3Step3">Opci&oacute;n 3</div>
 								</div>
 								<div class="botonera">
-									<div class="btn" onclick="cambiaFlujo('.wra_flu2'); visibilidad();">Deseo dar de alta otro servicio</div>
+									<div class="btn" onclick="cambiaFlujo('.wra_flu2'); cambiaPaso(1); visibilidad();">Deseo dar de alta otro servicio</div>
 									<div class="btnaceptar" onclick="closeAction();">Finalizar</div>
 								</div>
 							</div>
@@ -603,13 +605,13 @@
 
 					<div class="flujo wra_flu3">
 						<div class="step step1">
-							<div class="titFlujo w4_CB_titTam">
+							<div class="titFlujo w4_CB_titTam" style="height: 78px !important;">
 								<div class="iconFlujo">
 									<img src="../../../img/assets/picGraf.png"/>
 								</div>
 								<p class="titulo w4_top">Consulta / baja de servicios</p>
 								<p class="subtitulo w4_espacio w4_top">A continuación usted podrá consultar los servicios que tiene dados de alta.</p>
-								<p class="subtitulo2F4 linkEditar w4_espacio w4_top"> Para obtener más información de la solicitud, haga clic en el estatus.</p>
+								<p class="subtitulo2F4 linkEditar w4_espacio w4_top"><b> Para obtener más información de la solicitud, haga clic en el estatus.</b></p>
 							</div>
 						<div class="w4_CB_buscador">
 							<div class="w4_select_1 w4_selects ">
@@ -695,8 +697,8 @@
 									<img src="../../../img/assets/picGraf.png"/>
 								</div>
 								<p class="titulo w4_top">Consulta de pagos realizados / baja de servicios</p>
-								<p class="subtitulo w4_espacio w4_top">Seleccione el estatus del pago de servicios que desea consultar o modificar, así como el periodo de busqueda y/o rango de importe </p>
-								<p class="subtitulo w4_espacio w4_top">para realizar una busqueda mas especifica.</p>
+								<p class="subtitulo w4_espacio w4_top">Seleccione el estatus del pago de servicios que desea consultar o modificar, así como el periodo de búsqueda y/o rango de importe </p>
+								<p class="subtitulo w4_espacio w4_top">para realizar una búsqueda mas específica.</p>
 								<p class="subtitulo2F4 linkEditar w4_espacio w4_top"><b>Para obtener más información del servicio, haga clic en el estatus.</b></p>
 							</div>
 							<div class="w4_CB_buscador">
