@@ -16,6 +16,60 @@ var ddData = [{
     value: 4,
     selected: false,
 }];
+
+var identificador = 0;
+var textoServicio = '';
+
+//Carga de datos (Tabla dinamica)
+var data = {
+    colums: ['Fecha', 'Descripción', 'Referencia', 'Cuenta de cargo', 'Cuenta destino', 'Importe', 'Estatus'],
+    rowsValues: ['dd/mm/aaaa', '123456789123', '123456789123', '1234****7890', '1234****7890', '999,999,999.00', 'Exitosa'],
+    numRows: 30
+}
+
+var dataTbl2 = {
+    colums: ['Nombre de servicio', 'Categoría', 'Alias', 'Convenio', 'Referencia', 'Fecha de pago', 'Importe', 'Estatus'],
+    rowsValues: ['Lorem Ipsum', 'Lorem Ipsum', 'Lorem', '1234', '1234567890', 'dd/mm/aaaa', '999,999,999.00', 'Exitosa'],
+    numRows: 30
+}
+
+var data1 = [{
+    text: "......",
+    value: 1,
+    selected: false,
+}, {
+    text: "......",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "......",
+    value: 3,
+    selected: false,
+}, {
+    text: "......",
+    value: 4,
+    selected: false,
+}];
+
+var data2 = [{
+    text: "......",
+    value: 1,
+    selected: false,
+}, {
+    text: "......",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "......",
+    value: 3,
+    selected: false,
+}, {
+    text: "......",
+    value: 4,
+    selected: false,
+}];
 var identificador = 0;
 
 //Carga de datos (Tabla dinamica)
@@ -33,8 +87,6 @@ var dataTbl2 = {
 
 
 $(function() {
-    //Datepicker
-    //$('#date').datepicker(); 
 
     $(".w4_PS_dd1 select").ddslick({
         data: ddData,
@@ -48,22 +100,22 @@ $(function() {
     });
 
     $(".w4_PS_dd2 select").ddslick({
-        data: ddData,
+        data: data1,
         width: 318,
         background: "#f7f7f7",
         imagePosition: "left",
-        selectText: "Seleccionar",
+        selectText: "3 meses sin intereses",
         onSelected: function(data) {
             console.log(data);
         }
     });
 
     $(".w4_PS_dd3 select").ddslick({
-        data: ddData,
+        data: data2,
         width: 318,
         background: "#f7f7f7",
         imagePosition: "left",
-        selectText: "Seleccionar",
+        selectText: "3 dias antes",
         onSelected: function(data) {
             console.log(data);
         }
@@ -155,8 +207,10 @@ $(function() {
     });
 
 
+    $('.w4_HPG_personalizarIntervalo').click(function() {
+        cargaCalendario('switchModal()', 'calendario');
+    });
 });
-
 
 $(document).ready(function() {
     $('.w4_AS_busqueda').hide();
@@ -235,7 +289,35 @@ $(document).ready(function() {
             $('.w4_PS_tabla2').load('../../../../tablas/w4/w4_PS_tblPaso2.html');
         }
     });
+
+    $('.w4_AS_servicio').click(function() {
+
+        $('.w4_AS_servicio').find('img').removeClass('w4_AS_seleccionado');
+        $(this).find('img').addClass('w4_AS_seleccionado');
+        textoServicio = $(this).find('p').text();
+    });
+
+
 });
+
+function visibilidad() {
+    $('.w4_AS_servicio').find('img').removeClass('w4_AS_seleccionado');
+    $('.w4_AS_listado').slideDown();
+    $('.w4_AS_inputsAlta').slideUp();
+    $('.w4_AS_busqueda').slideUp();
+}
+
+function encontrado() {
+    if (textoServicio == 'Axtel') {
+        $('.w4_AS_listado').slideUp();
+        $('.w4_AS_inputsAlta').slideDown();
+        $('.w4_AS_busqueda').slideDown();
+    } else {
+        $('.w4_AS_listado').slideUp();
+        $('.w4_AS_inputsAlta').slideDown();
+        $('.w4_AS_busqueda').slideUp();
+    }
+}
 
 function activacion() {
     $('.w4_flu1_activo').removeClass('liActive');

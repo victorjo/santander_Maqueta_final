@@ -4,6 +4,7 @@
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 		<title>Solicitud de tarjeta de crédito</title>
 		<script src="../../../js/jquery10.2.min.js"></script>
+		<script src="../../../js/jquery-ui-1.10.3.custom.min.js"></script>
 		<script src="../../../js/componentes.js"></script>
 		<script src="../../../js/components.js"></script>
 		<script src="../../../js/ddSlick.js"></script>
@@ -13,6 +14,21 @@
 		<!--<script src="js/jquery.easing.1.3.js"></script>-->
 		<link rel="stylesheet" href="widgets/max/w_17/css/estilo.css">
 		<link rel="stylesheet" href="css/estilo.css">
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#rx1").click(function(){
+					$("#rx1").css("background","#000");
+					$("#rx2").css("background","transparent");
+				});
+				$("#rx2").click(function(){
+					$("#rx2").css("background","#000");
+					$("#rx1").css("background","transparent");
+				});
+				$(function() {
+				    $( "#ransstc" ).slider();
+				  });
+			});
+		</script>
 	</head>
 	<body>
 		<div id="widampliado">
@@ -55,11 +71,15 @@
 					</div>
 					<p class="titulo">Solicitar tarjeta</p>
 					<p class="subtitulo">Seleccione la tarjeta de su interés, o proporcione los datos para obtener la tarjeta ideal para usted</p>
+
 				</div>
 				<div class="contenidoFlujo">
 
 					<div class="flujo wra_flu1">
 						<div class="step step0">
+
+
+
 							<div class="content">
 								<div class="mkstc" style="border:solid 1px silver; margin-top:0px; margin-left:0px;margin:0 auto; width:720px; text-align:left; height:25px; font-size:12px;">
 									<span style="position:relative; top:5px;">Seleccionar tarjeta</span>
@@ -202,7 +222,7 @@
 								</div>
 								<div class="submits substc" id="submits" style="height:33px; margin-top:17px; width:22%;
 									margin-left:570px;">
-										<input type="button" value="Solicitar tarjeta" id="contstc"onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(1)">
+										<input type="button" value="Solicitar tarjeta" id="contstc"onclick="cargaToken('switchModal()','switchModal();',cargaHtml(),'flecha');">
 									</div>
 								
 								<div class="mkstc" style="border:solid 1px silver; margin-top:0px; margin-left:0px;margin:0 auto; width:720px; text-align:left; height:25px; font-size:12px;">
@@ -238,17 +258,25 @@
 												<select>
 													<option>Soltero</option>
 													<option>Casado</option>
-													<option>Divorciado</option>
-													<option>Viudo</option>
+													
 												</select>
 												<span id="spacestc" style="height:15px;"></span>
 												<div style=" margin-top:0px;"></div>
 												<label>¿Has tenido otros créditos?</label>
-												<input type="radio" name="si" value="si">si
-												<span id="spacestc" style="width:10px; margin-left:80px;"></span>
-												<input type="radio" name="no" value="no">no
+												<div class="radset">
+													<div style="width:20px; height:20px; border-radius:50%; float:left;">si</div><div id="rx1"style="width:10px; height:10px; border:1px solid; border-radius:50%; float:left; cursor:pointer;"></div>
+													
+													<div style="width:20px; height:20px;border-radius:50%; float:right;">no</div>
+													
+													<div id="rx2" style="width:10px; height:10px; border:1px solid; border-radius:50%; float:right; cursor:pointer;"></div>
+												</div>
+												<!--<input type="radio" id="stcr1" name="si" value="si">si
+												<span id="spacestc"  style="width:10px; margin-left:80px;"></span>
+												<input type="radio" id="stcr2" name="no" value="no">no-->
+												<br>
 												<div style=" margin-top:0px;"></div>
-												<label for="stc">Ingreso mensual:</label>
+
+												<label for="stc" style="float:left">Ingreso mensual:</label>
 												<select>
 													<option>100,000,000 (MXP)</option>
 													<option>200,000,000 (MXP)</option>
@@ -260,7 +288,7 @@
 									</div>
 									<div class="submits substc" style="height:20px; margin-top:280px; width:22%;
 									margin-left:560px; ">
-										<input type="button" value="Solicitar tarjeta" id="contstc" onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(1)">
+										<input type="button" value="Solicitar tarjeta" id="contstc" onclick="cargaToken('switchModal()','switchModal();',cargaHtml(),'flecha');">
 									</div>
 								</div>
 							</div>
@@ -268,7 +296,7 @@
 
 						
 
-						<div class="step step1">
+						<!--<div class="step step1">
 							
 							<div class="content">
 								<div class="titstc">
@@ -303,17 +331,20 @@
 								</div>
 							</div>
 
-						</div>
+						</div>-->
 
 					
-						<div class="step step2" style="display:none;">
+						<div class="step step1" style="display:none;">
 
 
 							<div class="content">
 								<div id="selformentrega">
 									<form>
 										<label for="stc">Seleccione la forma de entregar</label>
-										<input type="text" id="stc" name="stc">
+										<!--<input type="text" id="stc" name="stc">-->
+										<select id="stc">
+											<option>Elija una opción</option>
+										</select>
 
 									</form>
 									<div id="infostc">
@@ -337,9 +368,10 @@
 
 								<div class="botonera">
 									<div class="btn" onclick="cambiaPaso(1)">Personalizar tarjeta</div>
-									<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.w17_stc_tabla2','../../../../tablas/w17_tblPaso2.html'),'flecha');">Continuar</div>
+									<div class="btnaceptar" onclick="cambiaPaso(2); $('.w17_stc_tabla2').load('../../../../tablas/w17_tblPaso2.html')">Continuar</div>
 								</div>
-								<!--<div class="botonera">
+								<!--onclick="cambiaPaso(2); $('.w17_stc_tabla2').load('../../../../tablas/w17_tblPaso2.html')"
+								<div class="botonera">
 									<div class="btn" onclick="cambiaPaso(1)">Personalizar tarjeta</div>
 									<div class="btnaceptar" onclick="cargaTokentime('cargaHtml(),'flecha');">Continuar</div>
 								</div>-->
@@ -348,21 +380,38 @@
 						</div>
 						
 							
-								<div class="step step3" style="display:none;">
+								<div class="step step2" style="display:none;">
 									<div class="content">
 										<div class="col colFull">
+											<div class="titFlujo">
+												<div class="iconFlujo">
+													<img src="img/assets/ico_comprobante.png"/>
+												</div>
+												<p class="titulo">Solicitar Tarjeta de crédito</p>
+												<p class="subtitulo">La operación se realizará con la siguiente información</p>
+											</div>
 											<div class="w17_stc_tabla2"></div>
 										</div>
 										<div class="botonera">
 											<div class="btn" onclick="cambiaPaso(1)">Personalizar tarjeta</div>
-											<div class="btnaceptar" onclick="cambiaPaso(4); $('.w17_stc_tabla2').load('../../../../tablas/w17_tblPaso3.html')">Continuar</div>
+											<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.w17_stc_tabla3','../../../../tablas/w17_tblPaso3.html'),'token');">Continuar</div>
+
+
+											<!--onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.w17_stc_tabla2','../../../../tablas/w17_tblPaso3.html'),'');"-->
 										</div>
 									</div>
 								</div>
 							
-								<div class="step step4" style="display:none;">
+								<div class="step step3" style="display:none;">
 									<div class="col col2 resetMargen"  style="background:#fff;">
-										<div class="w17_stc_tabla2"></div>
+										<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Comprobante de la solicitud de tarjeta de crédito</p>
+										<p class="subtitulo"></p>
+									</div>
+										<div class="w17_stc_tabla3"></div>
 									</div>
 									<div class="col col1">
 										<img src="img/assets/step3/anuncio.png" width="233" />
@@ -389,16 +438,16 @@
 									<div class="tarrecstc adi">
 																			
 										<div class="tarrecstccards cardsadi" >
-											<a href="#" class="beftarscts"><img src="widgets/max/w_17/imagenes/before.png" title="Anterior"></a>
-											<div class="concardstarrec secondsl">
-												<ul>	
+											<a href="#" class="beftarscts" id="bef"><img src="widgets/max/w_17/imagenes/before.png" title="Anterior"></a>
+											<div class="concardstarr" id="concardstarrec">
+												<ul id="sliderstc">	
 													<li><div class="pr" style="background:silver;"><img src="widgets/max/w_17/imagenes/card2.png" width="169" height="80"></div></li>
 													<li><div class="pr" style="background:gold;"><img src="widgets/max/w_17/imagenes/card3.png" width="169" height="80"></div></li>
 													<li><div class="pr" style="background:white;"><img src="widgets/max/w_17/imagenes/card1.png" width="169" height="80"></div></li>
 													<li><div class="pr" style="background:black;">Falta ingresar tarjeta</div></li>
 												</ul>
 											</div>
-											<a href="#" class="nextarscts"><img src="widgets/max/w_17/imagenes/next.png" title="Siguiente"></a>
+											<a href="#" class="nextarscts" id="next"><img src="widgets/max/w_17/imagenes/next.png" title="Siguiente"></a>
 										</div>
 										<div class="frewardsstca">
 											<div class="contfre">
@@ -414,10 +463,10 @@
 										</div>	
 										<div class="mistdcad"> 
 											<span>Mis tarjetas adicionales:</span>
-											<div class="tdcad"></div>
-											<div class="tdcad"></div>
-											<div class="tdcad"></div>
-											<div class="tdcad"></div>
+											<div class="tdcad"><img src="widgets/max/w_17/imagenes/card1.png"></div>
+											<div class="tdcad"><img src="widgets/max/w_17/imagenes/card2.png"></div>
+											<div class="tdcad"><img src="widgets/max/w_17/imagenes/card3.png"></div>
+											<div class="tdcad"><img src="widgets/max/w_17/imagenes/card1.png"></div>
 										</div>
 																		
 									</div>
@@ -443,7 +492,11 @@
 										<div class="cardad">
 
 										</div>
-										<div class="lcdstcad"><span>Linea de crédito solicitada para tarjeta adicional</span></div>
+										<div class="lcdstcad">
+											<span>Linea de crédito solicitada para tarjeta adicional</span>
+											<input type="text" placeholder="999,999,999(MXP)" style="float: right; margin-top: 10px;
+											margin-right: 2px; height: 20px;">
+										</div>
 									</div>
 									
 								</div>
@@ -460,7 +513,10 @@
 								<div id="selformentrega">
 									<form>
 										<label for="stc">Seleccione la forma de entregar</label>
-										<input type="text" id="stc" name="stc">
+										<select id="stc" style="">
+											<option>Elija una opción</option>
+										</select>
+										<!--<input type="text" id="stc" name="stc">-->
 
 									</form>
 									<div id="infostc">
@@ -478,7 +534,7 @@
 								</div>
 								<div class="botonera">
 									<div class="btn" onclick="cambiaPaso(1)">Personalizar tarjeta</div>
-									<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(2);',cargaHtml('.w17_stc_tabla3','../../../../tablas/w17_tblPaso3.html'),'');">Continuar</div>
+									<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(2);',cargaHtml('.w17_stc_tabla3','../../../../tablas/w17_tblPaso3.html'),'personaliza');">Continuar</div>
 									<!--onclick="cambiaPaso(4); $('.w17_stc_tabla2').load('../../../../tablas/w17_tblPaso3.html')"-->
 								</div>
 							</div>
@@ -487,6 +543,13 @@
 						<div class="step step2" style="display:none;">
 							<div class="content">
 								<div class="col col2 resetMargen"  style="background:#fff;">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Comprobante de la solicitud de tarjeta aicional</p>
+										<p class="subtitulo"></p>
+									</div>
 									<div class="w17_stc_tabla3"></div>
 								</div>
 								<div class="col col1">
@@ -514,8 +577,8 @@
 									<div class="tarrecstc adi">
 																			
 										<div class="tarrecstccards cardsadi" >
-											<a href="#" class="beftarscts"><img src="widgets/max/w_17/imagenes/before.png" title="Anterior"></a>
-											<div class="concardstarrec">
+											<a href="#" class="beftarscts" id="beftwo" ><img src="widgets/max/w_17/imagenes/before.png" title="Anterior"></a>
+											<div id="concardstarrectwo">
 												<ul>	
 													<li><div class="pr" style="background:silver;"><img src="widgets/max/w_17/imagenes/card2.png" width="169" height="80"></div></li>
 													<li><div class="pr" style="background:gold;"><img src="widgets/max/w_17/imagenes/card3.png" width="169" height="80"></div></li>
@@ -523,7 +586,7 @@
 													<li><div class="pr" style="background:black;">Falta ingresar tarjeta</div></li>
 												</ul>
 											</div>
-											<a href="#" class="nextarscts"><img src="widgets/max/w_17/imagenes/next.png" title="Siguiente"></a>
+											<a href="#" class="nextarscts" id="nexttwo"><img src="widgets/max/w_17/imagenes/next.png" title="Siguiente"></a>
 										</div>
 										<div class="frewardsstca">
 											<div class="contfre">
@@ -538,10 +601,15 @@
 
 										</div>
 										<div class="rangealc">
-											<div><span>Mueva el controlador del simulador para obtener la linea de crédito que mas convenga</span></div>
+											<div class="instrucrange"><span>Mueva el controlador del simulador para obtener la linea de crédito que mas convenga</span></div>
 											<!--<input type="range" class="range">-->
 											<div class="progress"> 
-												<span style="position:relative;left:55px;">Actual</span><progress value="3534602" max="4603807">33%</progress> <span>Maximo</span>
+												<!--<span style="position:relative;left:55px;">Actual</span><progress value="3534602" max="4603807">33%</progress> <span>Maximo</span>-->
+												<div style="float:left; width: 316px; margin-left: 20px; margin-right:19px;"> 
+													<div style="position:relative; top:41px;">Actua</div>
+													<div id="ransstc" style="width: 220px; background: red; margin-top: 27px; margin-left: 46px;"></div>
+													<div style="position: relative;float: right;right: -7px; bottom: 16px;">Maximo</div>
+												</div>
 											</div>
 											<div class="formalc">
 												<label>Crédito deseado</label>
@@ -550,7 +618,8 @@
 
 										</div>
 										<div class="rangealc tips" style="margin-top:10px; height:160px;">
-											<span>Tips para disminuir su nivel de riesgo</span>
+											<br/>
+											<p><b>Tips para disminuir su nivel de riesgo</b></p>
 											<div class="text1alc">
 
 													<p>Lorem ipsum dolor sit ament.
@@ -580,25 +649,40 @@
 							</div>
 							
 							<div class="botonera">
-								<div class="btnaceptar" onclick="cambiaPaso(1); $('.w17_stc_tabla2').load('../../../../tablas/w17_tblPaso3.html')">Continuar</div>
+								<div class="btnaceptar" onclick="cambiaPaso(1); $('.w17_alc_tabla2').load('../../../../tablas/w17_tblflu3Paso2.html')">Continuar</div>
 							</div>
 						</div>
 
 						<div class="step step1" style="display:none;">
 							<div class="content">
 								<div class="col colFull">
-									<div class="w17_stc_tabla2"></div>
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Solicitar tarjeta adicional</p>
+										<p class="subtitulo">La operación se realizará con la siguiente información</p>
+									</div>
+									<div class="w17_alc_tabla2"></div>
 								</div>
 								<div class="botonera">
 									<div class="btn" onclick="cambiaPaso(1)">Personalizar tarjeta</div>
-									<div class="btnaceptar" onclick="cambiaPaso(2); $('.w17_stc_tabla3').load('../../../../tablas/w17_tblPaso3.html')">Continuar</div>
+									<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(2);',cargaHtml('.w17_stc_tabla3','../../../../tablas/w17_tblflu3Paso2.html'),'token');">Continuar</div>
 								</div>
+								<!--onclick="cargaToken('switchModal()','switchModal();cambiaPaso(2);',cargaHtml('.w17_stc_tabla3','../../../../tablas/w17_tblflu3Paso2.html'),'token');"-->
 							</div>
 						</div>
 						
 						<div class="step step2" style="display:none;">
 							<div class="content">
 								<div class="col col2 resetMargen"  style="background:#fff;">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Comprobante de aumento de linea de crédito</p>
+										<p class="subtitulo"></p>
+									</div>
 									<div class="w17_stc_tabla3"></div>
 								</div>
 								<div class="col col1">
@@ -621,7 +705,7 @@
 
 					</div>
 					<div class="flujo wra_flu4">
-						<div class="step step0">
+						<div class="step step0" style="display:none;">
 							<div class="content">
 								<table cellspacing="0" cellspadding="5" class="tabstc">
 									<tr class="cabeceratdc">
@@ -684,7 +768,8 @@
 
 								</table>
 								<div class="xlsexporttdc">
-									<div>Exportar .XLS</div>
+									<div class="exxlsicon"></div>
+									<div class="txticon">Exportar .XLS</div>
 								</div>
 
 							</div>
