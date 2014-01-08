@@ -484,8 +484,26 @@ font-size:11px;
 	top:6px;
 }
 
-.contenedorflu2 {
+.contenedorf2 {
 	width: 538px;
 	height: 50px;
 	background-color: gray
+}
+.tabletextcambiotable{
+	width: 540px;
+	height: 50px;
+	margin-top: 29px;
+}
+.dus{
+	float: left;
+margin-left: 680px;
+	margin-top: -78px;
+}
+.du {
+	margin-top: -46px;
+}
+.tabletextcambiotable p {
+float: left;
+margin-left: 680px;
+	margin-top: -78px;
 }
