@@ -1,6 +1,7 @@
 @import url("../../../../css/bloqueo.css");
 @import url("../../../../css/steps.css");
 
+
 .contenidoFlujo {
 	border:none;
 }
@@ -483,3 +484,8 @@ font-size:11px;
 	top:6px;
 }
 
+.contenedorflu2 {
+	width: 538px;
+	height: 50px;
+	background-color: gray
+}
