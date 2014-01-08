@@ -188,9 +188,10 @@ input[type=button]{
 	height: 21px;
 	background: url("../imagenes/abierto.png");
 	float: right;
-	margin-right: 10px;
-	margin-top: -14px;
-	cursor: pointer;
+	cursor:pointer;
+	position:absolute;
+	top:3px;
+	right:10px;
 }
 
 .btnaction2{
@@ -201,6 +202,9 @@ input[type=button]{
 	margin-right: 10px;
 	margin-top: -14px;
 	cursor: pointer;
+	position:absolute;
+	top: 16px;
+	right: 10px
 }
 
 .btnactionx{
@@ -211,6 +215,9 @@ input[type=button]{
 	margin-right: 10px;
 	margin-top: -14px;
 	cursor: pointer;
+	position:absolute;
+	top: 16px;
+	right:10px;
 }
 #menuredstc{
 	/*width: 660px;*/
@@ -396,7 +403,7 @@ input[type=button]{
 	height: 70px;
 	margin-top: 2px;
 	margin-left: 56px;
-	background: url("../imagenes/infocard.png");
+	background: url("../imagenes/tarjeta130_1.png");
 }
 
 .iconostc{
@@ -518,6 +525,7 @@ input[type=button]{
 }
 .mkstc{
 	background-image: -webkit-linear-gradient(top,#fff,#e0dede);
+	position:relative;
 }
 .pr{
 	width: 169px;
@@ -527,7 +535,7 @@ input[type=button]{
 	font-size: 40px;
 	/*border:solid 1px #000;*/
 }
-.concardstarrec ul,#concardstarrectwo ul{
+.concardstarrec ul{
 	margin: 0;
 	padding: 0;
 	/*border:solid;*/
@@ -540,7 +548,13 @@ input[type=button]{
 	width: 1100px;
 
 }
-.concardstarrec ul li,#concardstarrectwo ul li{
+#concardstarrectwo ul{
+	margin: 0;
+	padding: 0;
+	/*border:solid;*/
+	width: 1100px;
+}
+.concardstarrec ul li{
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -554,6 +568,13 @@ input[type=button]{
 	float: left;
 	position: relative;
 
+}
+#concardstarrectwo ul li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	position: relative;
 }
 .colcardstc img{
 	cursor: pointer;
@@ -587,7 +608,7 @@ input[type=button]{
 }
 #cpcard ul li{
 	/*margin-top: 50px;*/
-	margin-top: 65px;
+	margin-top: 45px;
 }
 .sometextcardstc{
 	float:right;
@@ -870,6 +891,8 @@ margin-top: -30px;
 	width: 95px;
 	float: right;
 	margin-top: 150px;
+	cursor: pointer;
+	border-radius: 5px;
 }
 .exxlsicon{
 	background: #fff url(../imagenes/Exportar.png)no-repeat;

@@ -3,32 +3,11 @@
 	<head>
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 		<title>Solicitud de tarjeta de crédito</title>
-		<script src="../../../js/jquery10.2.min.js"></script>
-		<script src="../../../js/jquery-ui-1.10.3.custom.min.js"></script>
 		<script src="../../../js/componentes.js"></script>
 		<script src="../../../js/components.js"></script>
 		<script src="../../../js/ddSlick.js"></script>
 		<script src="widgets/max/w_17/js/funciones.js"></script>
-		<!--<script src="js/funciones.js"></script>-->
-		<script src="widgets/max/w_17/js/jquery.easing.1.3.js"></script>
-		<!--<script src="js/jquery.easing.1.3.js"></script>-->
 		<link rel="stylesheet" href="widgets/max/w_17/css/estilo.css">
-		<link rel="stylesheet" href="css/estilo.css">
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$("#rx1").click(function(){
-					$("#rx1").css("background","#000");
-					$("#rx2").css("background","transparent");
-				});
-				$("#rx2").click(function(){
-					$("#rx2").css("background","#000");
-					$("#rx1").css("background","transparent");
-				});
-				$(function() {
-				    $( "#ransstc" ).slider();
-				  });
-			});
-		</script>
 	</head>
 	<body>
 		<div id="widampliado">
@@ -39,7 +18,7 @@
 				<div class="btnHeader info">
 					<img src="../../../img/assets/ico_info.png"/>
 				</div>
-				<div class="btnHeader cerrar" onclick="closeAction();">
+				<div class="btnHeader cerrar closeAction();">
 					<img src="../../../img/assets/ico_cerrar_widget.png"  />
 				</div>
 			</div>
@@ -59,8 +38,8 @@
 					<li onclick="cambiaFlujo('.wra_flu3')">
 						<p>Aumentar linea de crédito</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu4')">
-						<p>consulta de solicitudes</p>
+					<li onclick="cambiaFlujo('.wra_flu4');cambiaPaso(1);ocultaAsset();"> 
+						<p>Consulta de solicitudes</p>
 					</li>
 				</ul>
 			</div>
@@ -85,7 +64,9 @@
 									<span style="position:relative; top:5px;">Seleccionar tarjeta</span>
 									<div class="btnaction"></div>
 								</div>
+
 								<div class="selcardstc">
+
 									<div id="menuredstc">
 										<div class="w17_STC_selectorInteres1 w17_STC_selectorInteres1select">
 										</div>
@@ -102,12 +83,13 @@
 										<area shape="rect" coords="0,0,150,150" alt="Sun" onclick="alert('En construccion :)');" href="javascript:void(0)"></area>
 										<area shape="rect" coords="0,0,208,150" alt="Sun" onclick="alert('En construccion :)');" href="javascript:void(0)"></area>
 									</map>-->
+
 									<div id="cardsstc">
 										<a href="#" id="befstc"><img src="widgets/max/w_17/imagenes/before.png" title="Anterior"></a>
 										<div id="concardstc">
 											<ul id="slidestc">
 												<li>
-													<img src="widgets/max/w_17/imagenes/card3.png">
+													<img src="widgets/max/w_17/imagenes/tarjeta73_1.png">
 													<div class="sometextcardstc">
 													<p><b>Fiesta rewards</b></p>
 													Lorem ipsum dolor sit ament.
@@ -116,7 +98,7 @@
 													</div>
 												</li>
 												<li>
-													<img src="widgets/max/w_17/imagenes/card1.png">
+													<img src="widgets/max/w_17/imagenes/tarjeta73_2.png">
 													<div class="sometextcardstc">
 													<p><b>Santander Unik</b></p>
 													Lorem ipsum dolor sit ament.
@@ -125,7 +107,7 @@
 													</div>
 												</li>
 												<li>
-													<img src="widgets/max/w_17/imagenes/card2.png">
+													<img src="widgets/max/w_17/imagenes/tarjeta73_3.png">
 													<div class="sometextcardstc">
 													<p><b>Santander Unik</b></p>
 													Lorem ipsum dolor sit ament.
@@ -133,7 +115,7 @@
 													</div>
 												</li>
 												<li>
-													<img src="widgets/max/w_17/imagenes/card1.png">
+													<img src="widgets/max/w_17/imagenes/tarjeta73_4.png">
 													<div class="sometextcardstc">
 													<p><b>Santander Premium</b></p>
 													Lorem ipsum dolor sit ament.
@@ -141,7 +123,7 @@
 													</div>
 												</li>
 												<li>
-													<img src="widgets/max/w_17/imagenes/card3.png">
+													<img src="widgets/max/w_17/imagenes/tarjeta73_5.png">
 													<div class="sometextcardstc">
 													<p><b>Santander Red</b></p>
 													Lorem ipsum dolor sit ament.
@@ -149,7 +131,7 @@
 													</div>
 												</li>
 												<li>
-													<img src="widgets/max/w_17/imagenes/card1.png">
+													<img src="widgets/max/w_17/imagenes/tarjeta73_6.png">
 													<div class="sometextcardstc">
 													<p><b>Santander Unik</b></p>
 													Lorem ipsum dolor sit ament.
@@ -157,7 +139,7 @@
 													</div>
 												</li>
 												<li>
-													<img src="widgets/max/w_17/imagenes/card2.png">
+													<img src="widgets/max/w_17/imagenes/tarjeta73_7.png">
 													<div class="sometextcardstc">
 													<p><b>Fiesta rewards</b></p>
 													Lorem ipsum dolor sit ament.
@@ -166,7 +148,7 @@
 													</div>
 												</li>
 												<li>
-													<img src="widgets/max/w_17/imagenes/card1.png">
+													<img src="widgets/max/w_17/imagenes/tarjeta73_8.png">
 													<div class="sometextcardstc">
 													<p><b>Fiesta Santander</b></p>
 													Lorem ipsum dolor sit ament.
@@ -175,7 +157,7 @@
 													</div>
 												</li>
 												<li>
-													<img src="widgets/max/w_17/imagenes/card3.png">
+													<img src="widgets/max/w_17/imagenes/tarjeta73_1.png">
 													<div class="sometextcardstc">
 													<p><b>Fiesta pagana</b></p>
 													Lorem ipsum dolor sit ament.
@@ -184,7 +166,7 @@
 													</div>
 												</li>
 												<li>
-													<img src="widgets/max/w_17/imagenes/card1.png">
+													<img src="widgets/max/w_17/imagenes/tarjeta73_1.png">
 													<div class="sometextcardstc">
 													<p><b>Fiesta en America</b></p>
 													Lorem ipsum dolor sit ament.
@@ -192,7 +174,7 @@
 													</div>
 												</li>
 												<li>
-													<img src="widgets/max/w_17/imagenes/card2.png">
+													<img src="widgets/max/w_17/imagenes/tarjeta73_1.png">
 													<div class="sometextcardstc">
 													<p><b>Party Hardcore</b></p>
 													Lorem ipsum dolor sit ament.
@@ -201,7 +183,7 @@
 													</div>
 												</li>
 												<li>
-													<img src="widgets/max/w_17/imagenes/card1.png">
+													<img src="widgets/max/w_17/imagenes/tarjeta73_1.png">
 													<div class="sometextcardstc">
 													<p><b>Santander promo</b></p>
 													Lorem ipsum dolor sit ament.
@@ -246,10 +228,10 @@
 											<a href="#" class="beftarscts"><img src="widgets/max/w_17/imagenes/before.png" title="Anterior"></a>
 											<div class="concardstarrec">
 												<ul>	
-													<li><div class="pr" style="background:silver;"><img src="widgets/max/w_17/imagenes/card2.png" width="169" height="80"></div></li>
-													<li><div class="pr" style="background:gold;"><img src="widgets/max/w_17/imagenes/card3.png" width="169" height="80"></div></li>
-													<li><div class="pr" style="background:white;"><img src="widgets/max/w_17/imagenes/card1.png" width="169" height="80"></div></li>
-													<li><div class="pr" style="background:black;">Falta ingresar tarjeta</div></li>
+													<li><div class="pr" style="background:silver;"><img src="widgets/max/w_17/imagenes/tarjeta169_2.png" width="169" height="80"></div></li>
+													<li><div class="pr" style="background:gold;"><img src="widgets/max/w_17/imagenes/tarjeta169_3.png" width="169" height="80"></div></li>
+													<li><div class="pr" style="background:white;"><img src="widgets/max/w_17/imagenes/tarjeta169_4.png" width="169" height="80"></div></li>
+													<li><div class="pr" style="background:white;"><img src="widgets/max/w_17/imagenes/tarjeta169_1.png" width="169" height="80"></div></li>
 												</ul>
 											</div>
 											<a href="#" class="nextarscts"><img src="widgets/max/w_17/imagenes/next.png" title="Siguiente"></a>
@@ -273,17 +255,22 @@
 												<div style=" margin-top:0px;"></div>
 												<label>¿Has tenido otros créditos?</label>
 												<div class="radset">
-													<div style="width:20px; height:20px; border-radius:50%; float:left;">si</div><div id="rx1"style="width:10px; height:10px; border:1px solid; border-radius:50%; float:left; cursor:pointer;"></div>
-													
-													<div style="width:20px; height:20px;border-radius:50%; float:right;">no</div>
-													
-													<div id="rx2" style="width:10px; height:10px; border:1px solid; border-radius:50%; float:right; cursor:pointer;"></div>
+													<table border="0" style="margin:0 auto;">
+														<tr>
+															<td><div id="rx1"style="width:10px; height:10px; border:1px solid; border-radius:50%; float:left; cursor:pointer;"></div></td>
+															<td>si</td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td>no</td>
+															<td><div id="rx2" style="width:10px; height:10px; border:1px solid; border-radius:50%; float:right; cursor:pointer;"></div></td>
+														</tr>
+													</table>
 												</div>
-												<!--<input type="radio" id="stcr1" name="si" value="si">si
-												<span id="spacestc"  style="width:10px; margin-left:80px;"></span>
-												<input type="radio" id="stcr2" name="no" value="no">no-->
-												<br>
-												<div style=" margin-top:0px;"></div>
+												
 
 												<label for="stc" style="float:left">Ingreso mensual:</label>
 												<select>
@@ -376,7 +363,7 @@
 								</div>-->
 
 								<div class="botonera">
-									<div class="btn" onclick="cambiaPaso(1)">Personalizar tarjeta</div>
+									<div class="btn" onclick="cargaToken('switchModal()','switchModal()',cargaHtml(),'personaliza');">Personalizar tarjeta</div>
 									<div class="btnaceptar" onclick="cambiaPaso(2); $('.w17_stc_tabla2').load('../../../../tablas/w17_tblPaso2.html')">Continuar</div>
 								</div>
 								<!--onclick="cambiaPaso(2); $('.w17_stc_tabla2').load('../../../../tablas/w17_tblPaso2.html')"
@@ -402,7 +389,7 @@
 											<div class="w17_stc_tabla2"></div>
 										</div>
 										<div class="botonera">
-											<div class="btn" onclick="cambiaPaso(1)">Personalizar tarjeta</div>
+											<div class="btn" onclick="cargaToken('switchModal()','switchModal()',cargaHtml(),'personaliza');">Personalizar tarjeta</div>
 											<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.w17_stc_tabla3','../../../../tablas/w17_tblPaso3.html'),'token');">Continuar</div>
 
 
@@ -430,9 +417,9 @@
 										<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
 									</div>
 									<div class="botonera">
-										<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(2);">Deseo solicitar otra tarjeta</div>
-										<div class="btnaceptar" onclick="">Imprimir</div>
-										<div class="btnaceptar" onclick="cambiaPaso(0)">Finalizar</div>
+										<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Deseo solicitar otra tarjeta</div>
+										<div class="btn" onclick="">Imprimir</div>
+										<div class="btnaceptar" onclick="closeAction()">Finalizar</div>
 									</div>
 								</div>
 															
@@ -450,10 +437,11 @@
 											<a href="#" class="beftarscts" id="bef"><img src="widgets/max/w_17/imagenes/before.png" title="Anterior"></a>
 											<div class="concardstarr" id="concardstarrec">
 												<ul id="sliderstc">	
-													<li><div class="pr" style="background:silver;"><img src="widgets/max/w_17/imagenes/card2.png" width="169" height="80"></div></li>
-													<li><div class="pr" style="background:gold;"><img src="widgets/max/w_17/imagenes/card3.png" width="169" height="80"></div></li>
-													<li><div class="pr" style="background:white;"><img src="widgets/max/w_17/imagenes/card1.png" width="169" height="80"></div></li>
-													<li><div class="pr" style="background:black;">Falta ingresar tarjeta</div></li>
+													<li><div class="pr" style="background:silver;"><img src="widgets/max/w_17/imagenes/tarjeta169_2.png" width="169" height="80"></div></li>
+													<li><div class="pr" style="background:gold;"><img src="widgets/max/w_17/imagenes/tarjeta169_1.png" width="169" height="80"></div></li>
+													<li>
+														<div class="pr" style="background:white;"><img src="widgets/max/w_17/imagenes/tarjeta169_2.png" width="169" height="80"></div></li>
+													<li><div class="pr" style="background:white;"><img src="widgets/max/w_17/imagenes/tarjeta169_1.png" width="169" height="80"></div></li>
 												</ul>
 											</div>
 											<a href="#" class="nextarscts" id="next"><img src="widgets/max/w_17/imagenes/next.png" title="Siguiente"></a>
@@ -472,14 +460,14 @@
 										</div>	
 										<div class="mistdcad"> 
 											<span>Mis tarjetas adicionales:</span>
-											<div class="tdcad"><img src="widgets/max/w_17/imagenes/card1.png"></div>
-											<div class="tdcad"><img src="widgets/max/w_17/imagenes/card2.png"></div>
-											<div class="tdcad"><img src="widgets/max/w_17/imagenes/card3.png"></div>
-											<div class="tdcad"><img src="widgets/max/w_17/imagenes/card1.png"></div>
+											<div class="tdcad" id="tdcad1"><img src="widgets/max/w_17/imagenes/card1.png"></div>
+											<div class="tdcad" id="tdcad2"><img src="widgets/max/w_17/imagenes/card2.png"></div>
+											<div class="tdcad" id="tdcad3"><img src="widgets/max/w_17/imagenes/card3.png"></div>
+											<div class="tdcad" id="tdcad4"><img src="widgets/max/w_17/imagenes/card1.png"></div>
 										</div>
 																		
 									</div>
-									<div class="tdcadform">
+									<div class="tdcadform" style="display:none">
 										<form>
 											<label for="nombre">Nombre completo del beneficiario:</label>
 											<input type="text" name="nombre" placeholder="Isabel Cristina Carrillo" style="width:99%; height:25px;">
@@ -497,6 +485,27 @@
 											</div>
 										</form>
 									</div>
+									<div class="tdcadform" >
+										<form>
+											<label for="nombre">Nombre completo del beneficiario:</label>
+											<input type="text" name="nombre" placeholder="" id="tdf1" style="width:99%; height:25px;">
+											<div style="float:left;">
+												<label for="nombre">RFC:</label>
+												<input type="text" name="nombre" placeholder="" id="tdf2" style="height:25px;">
+												<label for="nombre"> Correo para notificación:</label>
+												<input type="text" name="nombre" placeholder="" id="tdf3" style="height:25px;">
+											</div>
+											<div style="float:left; margin-left:120px;">
+												<label for="nombre">Parentesco:</label>
+												<input type="text" name="nombre" placeholder="" id="tdf4" style="height:25px;">
+												<label for="nombre">Celular para notificación:</label>
+												<input type="text" name="nombre" placeholder="" id="tdf5" style="height:25px;">
+											</div>
+										</form>
+									</div>
+
+
+
 									<div class="ldctdcad">
 										<div class="cardad">
 
@@ -542,8 +551,9 @@
 									<input type="checkbox" name="revstc" id="revstc"><span>He leido y acepto los terminos y condiciones<p><a href="javascript:void(0);">Leer terminos y condiciones</a></p></span>
 								</div>
 								<div class="botonera">
-									<div class="btn" onclick="cambiaPaso(1)">Personalizar tarjeta</div>
-									<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(2);',cargaHtml('.w17_stc_tabla3','../../../../tablas/w17_tblPaso3.html'),'personaliza');">Continuar</div>
+									<div class="btn" onclick="cargaToken('switchModal()','switchModal()',cargaHtml(),'personaliza');">Personalizar tarjeta</div>
+
+									<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(2);',cargaHtml('.w17_stc_tabla3','../../../../tablas/w17_tblPaso3.html'),'');">Continuar</div>
 									<!--onclick="cambiaPaso(4); $('.w17_stc_tabla2').load('../../../../tablas/w17_tblPaso3.html')"-->
 								</div>
 							</div>
@@ -569,10 +579,10 @@
 									<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
 								</div>
 								<div class="botonera">
-									<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(2);">Deseo solicitar otra tarjeta
+									<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(0);">Deseo solicitar otra tarjeta
 									</div>
-									<div class="btnaceptar" onclick="">Imprimir</div>
-									<div class="btnaceptar" onclick="cambiaPaso(0)">Finalizar</div>
+									<div class="btn" onclick="">Imprimir</div>
+									<div class="btnaceptar" onclick="closeAction()">Finalizar</div>
 								</div>
 								
 							</div>
@@ -589,10 +599,10 @@
 											<a href="#" class="beftarscts" id="beftwo" ><img src="widgets/max/w_17/imagenes/before.png" title="Anterior"></a>
 											<div id="concardstarrectwo">
 												<ul>	
-													<li><div class="pr" style="background:silver;"><img src="widgets/max/w_17/imagenes/card2.png" width="169" height="80"></div></li>
-													<li><div class="pr" style="background:gold;"><img src="widgets/max/w_17/imagenes/card3.png" width="169" height="80"></div></li>
-													<li><div class="pr" style="background:white;"><img src="widgets/max/w_17/imagenes/card1.png" width="169" height="80"></div></li>
-													<li><div class="pr" style="background:black;">Falta ingresar tarjeta</div></li>
+													<li><div class="pr" style="background:white;"><img src="widgets/max/w_17/imagenes/tarjeta169_1.png" width="169" height="80"></div></li>
+													<li><div class="pr" style="background:white;"><img src="widgets/max/w_17/imagenes/tarjeta169_2.png" width="169" height="80"></div></li>
+													<li><div class="pr" style="background:white;"><img src="widgets/max/w_17/imagenes/tarjeta169_3.png" width="169" height="80"></div></li>
+													<li><div class="pr" style="background:white;"><img src="widgets/max/w_17/imagenes/tarjeta169_1.png" width="169" height="80"></div></li>
 												</ul>
 											</div>
 											<a href="#" class="nextarscts" id="nexttwo"><img src="widgets/max/w_17/imagenes/next.png" title="Siguiente"></a>
@@ -675,7 +685,7 @@
 									<div class="w17_alc_tabla2"></div>
 								</div>
 								<div class="botonera">
-									<div class="btn" onclick="cambiaPaso(1)">Personalizar tarjeta</div>
+									<div class="btn" onclick="cargaToken('switchModal()','switchModal()',cargaHtml(),'personaliza');">Personalizar tarjeta</div>
 									<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(2);',cargaHtml('.w17_stc_tabla3','../../../../tablas/w17_tblflu3Paso2.html'),'token');">Continuar</div>
 								</div>
 								<!--onclick="cargaToken('switchModal()','switchModal();cambiaPaso(2);',cargaHtml('.w17_stc_tabla3','../../../../tablas/w17_tblflu3Paso2.html'),'token');"-->
@@ -702,10 +712,10 @@
 									<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
 								</div>
 								<div class="botonera">
-									<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(2);">Deseo solicitar otra tarjeta
+									<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Deseo solicitar otra tarjeta
 									</div>
 									<div class="btnaceptar" onclick="">Imprimir</div>
-									<div class="btnaceptar" onclick="cambiaPaso(0)">Finalizar</div>
+									<div class="btnaceptar" onclick="closeAction()">Finalizar</div>
 								</div>
 								
 							</div>
@@ -714,7 +724,7 @@
 
 					</div>
 					<div class="flujo wra_flu4">
-						<div class="step step0" style="display:none;">
+						<div class="step step1" style="display:none;">
 							<div class="content">
 								<table cellspacing="0" cellspadding="5" class="tabstc">
 									<tr class="cabeceratdc">
@@ -776,10 +786,13 @@
 
 
 								</table>
-								<div class="xlsexporttdc">
-									<div class="exxlsicon"></div>
-									<div class="txticon">Exportar .XLS</div>
-								</div>
+								<a href="widgets\max\w_17\docs\descarga.xls" style="float:right; color:#1d1d1d;">
+									<div class="xlsexporttdc">
+										<div class="exxlsicon"></div>
+										<div class="txticon">Exportar .xls</div>
+									</div>
+								</a>
+								
 
 							</div>
 						</div>
