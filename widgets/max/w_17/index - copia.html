@@ -3,8 +3,6 @@
 		<!--<script src="../../../js/componentes.js"></script>-->
 		<!--<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>-->
-		<!--<script src="../../../js/jquery10.2.min.js"></script>-->
-		<script src="../../../js/jquery-ui-1.10.3.custom.min.js"></script>
 		<script src="../../../js/components.js"></script>
 		<script src="../../../js/ddSlick.js"></script>
 		<script src="widgets/max/w_17/js/funciones.js"></script>
@@ -40,7 +38,7 @@
 					<li onclick="cambiaFlujo('.wra_flu3');muestraAsset();">
 						<p>Aumentar linea de crédito</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu4');ocultaAsset();"> 
+					<li onclick="cambiaFlujo('.wra_flu4');cambiaPaso(1);ocultaAsset();"> 
 						<p>Consulta de solicitudes</p>
 					</li>
 				</ul>
@@ -341,9 +339,7 @@
 										<label for="stc">Seleccione la forma de entregar</label>
 										<!--<input type="text" id="stc" name="stc">-->
 										<select id="stc">
-											<option>Entrega a dimicilio</option>
-											<option>Entrega express</option>
-											<option>Entrega a otra ubicación</option>
+											<option>Elija una opción</option>
 										</select>
 
 									</form>
@@ -559,38 +555,13 @@
 								<div class="botonera">
 									<div class="btn" onclick="cargaToken('switchModal()','switchModal()',cargaHtml(),'personaliza');">Personalizar tarjeta</div>
 
-									<div class="btnaceptar" onclick="cambiaPaso(2); $('.w17_stc_tabla2').load('../../../../tablas/w17_tblPaso3.html')">Continuar</div>
+									<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(2);',cargaHtml('.w17_stc_tabla3','../../../../tablas/w17_tblPaso3.html'),'');">Continuar</div>
 									<!--onclick="cambiaPaso(4); $('.w17_stc_tabla2').load('../../../../tablas/w17_tblPaso3.html')"-->
 								</div>
 							</div>
 						</div>
 
-
 						<div class="step step2" style="display:none;">
-									<div class="content">
-										<div class="col colFull">
-											<div class="titFlujo">
-												<div class="iconFlujo">
-													<img src="img/assets/ico_comprobante.png"/>
-												</div>
-												<p class="titulo">Solicitar Tarjeta de crédito</p>
-												<p class="subtitulo">La operación se realizará con la siguiente información</p>
-											</div>
-											<div class="w17_stc_tabla2"></div>
-										</div>
-										<div class="botonera">
-											<div class="btn" onclick="cargaToken('switchModal()','switchModal()',cargaHtml(),'personaliza');">Personalizar tarjeta</div>
-											<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.w17_stc_tabla3','../../../../tablas/w17_tblPaso3.html'),'token');">Continuar</div>
-
-
-											<!--onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.w17_stc_tabla2','../../../../tablas/w17_tblPaso3.html'),'');"-->
-										</div>
-									</div>
-								</div>
-
-
-
-						<div class="step step3" style="display:none;">
 							<div class="content">
 								<div class="col col2 resetMargen"  style="background:#fff;">
 									<div class="titFlujo">
@@ -610,7 +581,7 @@
 									<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
 								</div>
 								<div class="botonera">
-									<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(1);">Deseo solicitar otra tarjeta
+									<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(0);">Deseo solicitar otra tarjeta
 									</div>
 									<div class="btn" onclick="">Imprimir</div>
 									<div class="btnaceptar" onclick="closeAction()">Finalizar</div>
@@ -657,12 +628,12 @@
 												<!--<span style="position:relative;left:55px;">Actual</span><progress value="3534602" max="4603807">33%</progress> <span>Maximo</span>-->
 												<div style="float:left; width: 316px; margin-left: 20px; margin-right:19px;"> 
 													<div style="position:relative; top:40px;">Actual</div>
-													<!--<div class="rangehtm" style="margin-left:80px; margin-top:20px;">
+													<div class="rangehtm" style="margin-left:80px; margin-top:20px;">
 														<input type="range">
-													</div>-->
+													</div>
 													
-													<div id="ransstc" style="width: 220px; background:grey; margin-top: 27px; margin-left: 46px;"></div>
-													<div style="position: relative;float: right;right: 0px; bottom: 14px;">Maximo</div>
+													<!--<div id="ransstc" style="width: 220px; background: red; margin-top: 27px; margin-left: 46px;"></div>-->
+													<div style="position: relative;float: right;right: 20px; bottom: 20px;">Maximo</div>
 												</div>
 											</div>
 											<div class="formalc">
@@ -781,7 +752,7 @@
 										<td>dd/mm/aaaa</td>
 										<td>Tarjeta de crédito</td>
 										<td>Express</td>
-										<td onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);" style="cursor:pointer">Exitosa</td>
+										<td>Exitosa</td>
 									</tr>
 									<tr class="colortab">
 										<td>123456789123</td>
@@ -795,28 +766,28 @@
 										<td>dd/mm/aaaa</td>
 										<td>Tarjeta de crédito</td>
 										<td>Domicilio</td>
-										<td onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);" style="cursor:pointer">Exitosa</td>
+										<td>Exitosa</td>
 									</tr>
 									<tr>
 										<td>123456789123</td>
 										<td>dd/mm/aaaa</td>
 										<td>Tarjeta de crédito</td>
 										<td></td>
-										<td onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);" style="cursor:pointer">Exitosa</td>
+										<td>Exitosa</td>
 									</tr>
 									<tr>
 										<td>123456789123</td>
 										<td>dd/mm/aaaa</td>
 										<td>Tarjeta de crédito</td>
 										<td></td>
-										<td onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);" style="cursor:pointer">Exitosa</td>
+										<td>Exitosa</td>
 									</tr>
 									<tr>
 										<td>123456789123</td>
 										<td>dd/mm/aaaa</td>
 										<td>Tarjeta de crédito</td>
 										<td>Domicilio</td>
-										<td onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);" style="cursor:pointer">Exitosa</td>
+										<td>Exitosa</td>
 									</tr>
 
 
