@@ -31,7 +31,7 @@
 					<li onclick="cambiaFlujo('.wra_flu1'); muestraServicios();" class=" w4_flu1_activo liActive">
 						<p>Pago de servicios</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu2')" class="w4_flu2_activo">
+					<li onclick="cambiaFlujo('.wra_flu2'); visibilidad();" class="w4_flu2_activo">
 						<p>Alta de servicios</p>
 					</li>
 					<li onclick="cambiaFlujo('.wra_flu3'); Gridius($('.tablaDinamica'),data);">
@@ -322,7 +322,7 @@
 									<div class="w4_AS_servContainer">
 										<div class="w4_AS_servSlider">
 											<div class="w4_AS_servicio">
-												<img src="widgets/max/w_4/img/servicios/Servicio_1.png"/>
+												<img class="w4_sele_servicio" src="widgets/max/w_4/img/servicios/Servicio_1.png"/>
 												<p>Axtel</p>
 											</div>
 											<div class="w4_AS_servicio">
@@ -453,7 +453,7 @@
 										<div class="tres 3"></div>
 									</div>
 								<div class="botonera">
-									<div class="btnaceptar">Dar de alta</div>
+									<div class="btnaceptar" onClick="encontrado()">Dar de alta</div>
 								</div>
 							</div>
 							
@@ -547,11 +547,11 @@
 										</ul>
 									</div>
 								<!--</div>-->
-									
+									<div class="botonera">
+										<div class="btnaceptar"  onclick="cambiaFlujo('.wra_flu2');cambiaPaso(2);$('.w4_AS_paso2').load('../../../../tablas/w4/w4_AS_tblPaso2.html')">Dar de alta</div>
+									</div>
 							</div>
-							<div class="botonera">
-								<div class="btnaceptar"  onclick="cambiaFlujo('.wra_flu2');cambiaPaso(2);$('.w4_AS_paso2').load('../../../../tablas/w4_AS_tblPaso2.html')">Dar de alta</div>
-							</div>
+							
 						</div>
 						
 						<div class="step step2">

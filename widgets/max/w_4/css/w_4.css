@@ -552,6 +552,10 @@
 	border: 1px #ff0000 solid;
 }
 
+.w4_AS_seleccionado{
+	border: 1px #ff0000 solid !important;
+}
+
 .w4_AS_servicio p{
 	font-family: 'ArialBlack';
 	font-size: 11px;
@@ -644,7 +648,7 @@
 	margin:5px 0 0 1px;
 	width:713px;
 	position:relative;
-	height: 239px;
+	height: 278px;
 }
 
 .w4_AS_input{

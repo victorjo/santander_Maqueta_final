@@ -16,7 +16,9 @@ var ddData = [{
     value: 4,
     selected: false,
 }];
+
 var identificador = 0;
+var textoServicio = '';
 
 //Carga de datos (Tabla dinamica)
 var data = {
@@ -287,7 +289,35 @@ $(document).ready(function() {
             $('.w4_PS_tabla2').load('../../../../tablas/w4/w4_PS_tblPaso2.html');
         }
     });
+
+    $('.w4_AS_servicio').click(function() {
+
+        $('.w4_AS_servicio').find('img').removeClass('w4_AS_seleccionado');
+        $(this).find('img').addClass('w4_AS_seleccionado');
+        textoServicio = $(this).find('p').text();
+    });
+
+
 });
+
+function visibilidad() {
+    $('.w4_AS_servicio').find('img').removeClass('w4_AS_seleccionado');
+    $('.w4_AS_listado').slideDown();
+    $('.w4_AS_inputsAlta').slideUp();
+    $('.w4_AS_busqueda').slideUp();
+}
+
+function encontrado() {
+    if (textoServicio == 'Axtel') {
+        $('.w4_AS_listado').slideUp();
+        $('.w4_AS_inputsAlta').slideDown();
+        $('.w4_AS_busqueda').slideDown();
+    } else {
+        $('.w4_AS_listado').slideUp();
+        $('.w4_AS_inputsAlta').slideDown();
+        $('.w4_AS_busqueda').slideUp();
+    }
+}
 
 function activacion() {
     $('.w4_flu1_activo').removeClass('liActive');
