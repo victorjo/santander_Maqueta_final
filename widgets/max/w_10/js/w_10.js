@@ -99,15 +99,16 @@ $(function(){
 			$(this).addClass("w10_IT_inscribirTarjetas_seleccionada");
 		});
 		
+		$(".w10_HPG_btnExportar").click(function() {
+        window.open('data:application/vnd.ms-excel,' + encodeURIComponent($('.w10_PS_cardList').html()));
+        
+    	});
+		
 		
 });
 
 function cargaHtml(componente,url){
     $(componente).load(url);
-}
-
-function exportar(){
-    alert("El archivo se ha exportado correctamente.");
 }
 
 function ocultaAsset(){
