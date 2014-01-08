@@ -40,43 +40,39 @@ $(function() {
         }
     });
 
-    $(".btnaction2").click(function(){
+    $(".btnaction2").click(function() {
 
-                if ($(this).hasClass("btnaction2")) {
-                    $(this).removeClass("btnaction2");
-                    $(this).addClass("btnaction");
-                }
-               
-               else{
-                    $(this).removeClass("btnaction");
-                    $(this).addClass("btnaction2");
-                }
-                
-                $(this).parent().next().slideToggle("slow");
-            });
+        if ($(this).hasClass("btnaction2")) {
+            $(this).removeClass("btnaction2");
+            $(this).addClass("btnaction");
+        } else {
+            $(this).removeClass("btnaction");
+            $(this).addClass("btnaction2");
+        }
 
-    $(".btnaction").click(function(){
+        $(this).parent().next().slideToggle("slow");
+    });
 
-                if ($(this).hasClass("btnaction")) {
-                    $(this).removeClass("btnaction");
-                    $(this).addClass("btnaction2");
-                }
+    $(".btnaction").click(function() {
 
-               else{
-                    $(this).removeClass("btnaction2");
-                    $(this).addClass("btnaction");
-                }
-                
-                $(this).parent().next().slideToggle("slow");
-            });
+        if ($(this).hasClass("btnaction")) {
+            $(this).removeClass("btnaction");
+            $(this).addClass("btnaction2");
+        } else {
+            $(this).removeClass("btnaction2");
+            $(this).addClass("btnaction");
+        }
 
-    $(".w8_CRAB_dropHdr1").children(".toggle").click(function(){
-        $(".w8_CRAB_wraFormulario").slideUp("slow");
+        $(this).parent().next().slideToggle("slow");
+    });
+
+    $(".w8_CRAB_dropHdr1").children(".toggle").click(function() {
+        $(".w4_AS_inputsAlta").slideUp("slow");
         $(".w8_CRAB_dropHdr2").children(".btnaction").removeClass("btnaction").addClass("btnaction2");
     });
 
-    $(".w8_CRAB_dropHdr2").children(".toggle").click(function(){
-        $(".tablaDinamica").slideUp("slow");
+    $(".w8_CRAB_dropHdr2").children(".toggle").click(function() {
+        $(".w4_AS_listado").slideUp("slow");
         $(".w8_CRAB_dropHdr1").children(".btnaction").removeClass("btnaction").addClass("btnaction2");
     })
 
