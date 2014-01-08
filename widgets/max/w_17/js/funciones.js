@@ -160,8 +160,16 @@
 					$("#rx2").css("background","#000");
 					$("#rx1").css("background","transparent");
 				});
+
 				$(function() {
-				    $( "#ransstc" ).slider();
+				    $( "#ransstc" ).slider({
+				    	range:"min",
+				    	value:70,
+				    	max:100
+				    	//slide: function(event,ui);
+				    });
+				    //var value = $("#ransstc").slider("value");
+				    //$("#valuestc").html(value);
 				});
 								
 	

@@ -17,7 +17,7 @@ var ddData = [{
 var data = {
     colums: ['Fecha', 'Descripción', 'Referencia', 'Cuenta de cargo', 'Cuenta destino', 'Importe', 'Estatus'],
     rowsValues: ['dd/mm/aaaa', '123456789123', '123456789123', '1234****7890', '1234****7890', '999,999,999.00', 'Exitosa'],
-    numRows: 30
+    numRows: 10
 }
 
 var datados = {
@@ -39,6 +39,47 @@ $(function() {
             console.log(data);
         }
     });
+
+    $(".btnaction2").click(function(){
+
+                if ($(this).hasClass("btnaction2")) {
+                    $(this).removeClass("btnaction2");
+                    $(this).addClass("btnaction");
+                }
+               
+               else{
+                    $(this).removeClass("btnaction");
+                    $(this).addClass("btnaction2");
+                }
+                
+                $(this).parent().next().slideToggle("slow");
+            });
+
+    $(".btnaction").click(function(){
+
+                if ($(this).hasClass("btnaction")) {
+                    $(this).removeClass("btnaction");
+                    $(this).addClass("btnaction2");
+                }
+
+               else{
+                    $(this).removeClass("btnaction2");
+                    $(this).addClass("btnaction");
+                }
+                
+                $(this).parent().next().slideToggle("slow");
+            });
+
+    $(".w8_CRAB_dropHdr1").children(".toggle").click(function(){
+        $(".w8_CRAB_wraFormulario").slideUp("slow");
+        $(".w8_CRAB_dropHdr2").children(".btnaction").removeClass("btnaction").addClass("btnaction2");
+    });
+
+    $(".w8_CRAB_dropHdr2").children(".toggle").click(function(){
+        $(".tablaDinamica").slideUp("slow");
+        $(".w8_CRAB_dropHdr1").children(".btnaction").removeClass("btnaction").addClass("btnaction2");
+    })
+
 
     construyeSwitch("switch_OC");
     var js = [{
