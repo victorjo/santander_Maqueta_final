@@ -67,12 +67,12 @@ $(function() {
     });
 
     $(".w8_CRAB_dropHdr1").children(".toggle").click(function() {
-        $(".w4_AS_inputsAlta").slideUp("slow");
+        $(".w8_CRAB_wraFormulario").slideUp("slow");
         $(".w8_CRAB_dropHdr2").children(".btnaction").removeClass("btnaction").addClass("btnaction2");
     });
 
     $(".w8_CRAB_dropHdr2").children(".toggle").click(function() {
-        $(".w4_AS_listado").slideUp("slow");
+        $(".tablaDinamica").slideUp("slow");
         $(".w8_CRAB_dropHdr1").children(".btnaction").removeClass("btnaction").addClass("btnaction2");
     })
 

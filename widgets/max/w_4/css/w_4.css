@@ -177,7 +177,7 @@
 
 .w4_PS_cuadroTarjeta{
 	width: 726px;
-	height:190px; 
+	height: 319px;
 	overflow:scroll; 
 	overflow-x: hidden;
 	float: left;
@@ -835,7 +835,6 @@
 
 .w4_selects{
 	float: left;
-	margin-left: 10px;
 	margin-top: 10px;
 }
 
@@ -874,7 +873,7 @@
 
 .w4_HPG_personalizarIntervalo{
 	float:left;
-	width:143px;
+	width: 147px;
 	height:21px;
 	background-color:#FBFBFB;
 	border:1px #C2C0C0 solid;
