@@ -103,6 +103,11 @@ $(function(){
         window.open('data:application/vnd.ms-excel,' + encodeURIComponent($('.w10_PS_cardList').html()));
         
     	});
+    	
+    	 $(".w10_HPG_personalizarIntervalo").click(function() {
+        cargaCalendario('switchModal()', 'calendario');
+    	});
+
 		
 		
 });
@@ -159,6 +164,8 @@ function miniBannerChange(index){
 		$(".w10_HPG_miniBanner").css({"background-image":"url('widgets/max/w_10/img/tit_Programa_3.jpg')"});
 		}
 }
+
+
 		
 
 		
