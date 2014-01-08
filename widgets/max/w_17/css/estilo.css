@@ -1,4 +1,4 @@
-@import url("../../../../css/bloqueo.css");
+﻿@import url("../../../../css/bloqueo.css");
 @import url("../../../../css/steps.css");
 @import url("../../../../css/generally.css");
 @import url("../../../../css/componentes.css");
@@ -217,8 +217,102 @@ input[type=button]{
 	width: 100%;
 	height: 50px;
 	/*background:url("	");*/
-	float: right;		
+	float: right;
+	background-color:#ae1111;		
 }
+
+#menuredstc div:hover{
+	border-right:1px white solid;
+	cursor:pointer;
+}
+
+.w17_STC_selectorInteres1{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/restaurantes_b.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #ae1111 solid;
+}
+
+.w17_STC_selectorInteres1select{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/restaurantes_r.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #f4f4f4 solid;
+	background-color:#f4f4f4;
+}
+
+.w17_STC_selectorInteres2{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/servicios_b.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #ae1111 solid;
+}
+
+.w17_STC_selectorInteres2select{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/servicios_r.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #f4f4f4 solid;
+	background-color:#f4f4f4;
+}
+
+
+.w17_STC_selectorInteres3{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/viajes_b.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #ae1111 solid;
+}
+
+.w17_STC_selectorInteres3select{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/viajes_r.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #f4f4f4 solid;
+	background-color:#f4f4f4;
+}
+
+
+.w17_STC_selectorInteres4{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/recompensas_b.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #ae1111 solid;
+}
+
+.w17_STC_selectorInteres4select{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/recompensas_r.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #f4f4f4 solid;
+	background-color:#f4f4f4;
+}
+
+
 #cardsstc{
 	width: 450px;
 	height: 190px;
@@ -418,7 +512,7 @@ input[type=button]{
 #tarrecinfostc select option{
 	color:#333;
 }
-#tarrecinfostc input[type="radio"]{
+#tarrecinfostc input[type=radio]{
 	margin-top: 20px;
 
 }
@@ -831,7 +925,7 @@ margin-top: -30px;
 	height: 50px;
 	width: 115px;
 }
-input[type="file"]{
+input[type=file]{
 	margin-top: 10px;
 }
 .cardper{
