@@ -2,8 +2,12 @@
 @import url("../../../../css/steps.css");
 @import url("../../../../css/generally.css");
 @import url("../../../../css/componentes.css");
-input [type="text"]{
+input{
+		
 	font-style: italic;
+}
+input [type="button"]{
+	font-style: normal;
 }
 .tabstc{
 	margin: 0 auto;

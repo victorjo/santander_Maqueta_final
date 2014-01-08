@@ -31,22 +31,22 @@
 						<p>
 						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu1') " class=" w4_flu1_activo liActive">
+					<li onclick="cambiaFlujo('.wra_flu1'); elf()" class=" w4_flu1_activo liActive">
 						<p>Solicitar tarjeta de credito</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu2');muestraAsset();">
+					<li onclick="cambiaFlujo('.wra_flu2');muestraAsset();elf();">
 						<p>Solicitar tarjeta adicional</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu3');muestraAsset();">
+					<li onclick="cambiaFlujo('.wra_flu3');muestraAsset();elf();">
 						<p>Aumentar linea de crédito</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu4');ocultaAsset();"> 
+					<li onclick="cambiaFlujo('.wra_flu4');ocultaAsset();elf();"> 
 						<p>Consulta de solicitudes</p>
 					</li>
 				</ul>
 			</div>
 			<div id="WA_contenedorFlujos">
-				<div class="titFlujo">
+				<div class="titFlujo fg">
 					<div class="iconFlujo">
 						<img src="../../../img/assets/ico_cuentas_propias.png"/>
 					</div>
@@ -215,7 +215,7 @@
 								</div>
 								<div class="submits substc" id="submits" style="height:33px; margin-top:17px; width:22%;
 									margin-left:570px;">
-										<input type="button" value="Solicitar tarjeta" id="contstc"onclick="cargaToken('switchModal()','switchModal();',cargaHtml(),'flecha');">
+										<input type="button" style="font-style:normal" value="Solicitar tarjeta" id="contstc"onclick="cargaToken('switchModal()','switchModal();',cargaHtml(),'flecha');">
 									</div>
 								
 								<div class="mkstc" style="border:solid 1px silver; margin-top:0px; margin-left:10px;margin:0 auto; width:722px; text-align:left; height:25px; font-size:12px; left:1px;">
@@ -282,7 +282,7 @@
 									</div>
 									<div class="submits substc" style="height:20px; margin-top:280px; width:22%;
 									margin-left:560px; ">
-										<input type="button" value="Solicitar tarjeta" id="contstc" onclick="cargaToken('switchModal()','switchModal();',cargaHtml(),'flecha');">
+										<input type="button" style="font-style:normal" value="Solicitar tarjeta" id="contstc" onclick="cargaToken('switchModal()','switchModal();',cargaHtml(),'flecha');">
 									</div>
 								</div>
 							</div>
@@ -364,7 +364,7 @@
 
 								<div class="botonera">
 									<div class="btn" onclick="cargaToken('switchModal()','switchModal()',cargaHtml(),'personaliza');">Personalizar tarjeta</div>
-									<div class="btnaceptar" onclick="cambiaPaso(2); $('.w17_stc_tabla2').load('../../../../tablas/w17_tblPaso2.html')">Continuar</div>
+									<div class="btnaceptar" onclick="cambiaPaso(2); $('.w17_stc_tabla2').load('../../../../tablas/w17_tblPaso2.html'); el();">Continuar</div>
 								</div>
 								<!--onclick="cambiaPaso(2); $('.w17_stc_tabla2').load('../../../../tablas/w17_tblPaso2.html')"
 								<div class="botonera">
@@ -555,7 +555,7 @@
 								<div class="botonera">
 									<div class="btn" onclick="cargaToken('switchModal()','switchModal()',cargaHtml(),'personaliza');">Personalizar tarjeta</div>
 
-									<div class="btnaceptar" onclick="cambiaPaso(2); $('.w17_stc_tabla2').load('../../../../tablas/w17_tblPaso3.html')">Continuar</div>
+									<div class="btnaceptar" onclick="cambiaPaso(2); el(); $('.w17_stc_tabla2').load('../../../../tablas/w17_tblPaso3.html')">Continuar</div>
 									<!--onclick="cambiaPaso(4); $('.w17_stc_tabla2').load('../../../../tablas/w17_tblPaso3.html')"-->
 								</div>
 							</div>
@@ -701,7 +701,7 @@
 							</div>
 							
 							<div class="botonera">
-								<div class="btnaceptar" onclick="cambiaPaso(1); $('.w17_alc_tabla2').load('../../../../tablas/w17_tblflu3Paso2.html')">Continuar</div>
+								<div class="btnaceptar" onclick="cambiaPaso(1); el(); $('.w17_alc_tabla2').load('../../../../tablas/w17_tblflu3Paso2.html')">Continuar</div>
 							</div>
 						</div>
 

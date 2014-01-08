@@ -663,3 +663,10 @@ function showGridTools(obj) {
 function cargaHtml(componente, url) {
     $(componente).load(url);
 }
+
+function el(){
+   $(".fg").css("display","none"); 
+}
+function elf(){
+   $(".fg").css("display","inline"); 
+}
