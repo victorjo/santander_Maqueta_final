@@ -108,6 +108,18 @@ $(function(){
         cargaCalendario('switchModal()', 'calendario');
     	});
 
+         $(".w10_PS_cardList tr").click(function(){
+            $(".w10_PS_cardList tr").removeClass("w10_PS_cardListSelect");
+             $(this).addClass("w10_PS_cardListSelect");
+            
+         });
+
+         $(".w10_IT_inscribirTarjetas tr").click(function(){
+            $(".w10_IT_inscribirTarjetas tr").removeClass("w10_IT_inscribirTarjetasSelect");
+             $(this).addClass("w10_IT_inscribirTarjetasSelect");
+            
+         });
+
 		
 		
 });
