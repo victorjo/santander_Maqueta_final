@@ -68,16 +68,22 @@ $(document).on("ready",function(){
 
 			}
 
-			slidernext(".nextarscts",".concardstarrec ul li:first, .secondsl ul li:first",".concardstarrec ul:first, .secondsl ul:first");
-			sliderbefore(".beftarscts",".concardstarrec ul li:last, .secondsl ul li:last",".concardstarrec ul:first,.secondsl ul:first");
+			slidernext(".nextarscts",".concardstarrec ul li:first",".concardstarrec ul:first");
+			sliderbefore(".beftarscts",".concardstarrec ul li:last",".concardstarrec ul:first");
 			slidernext("#cardsstc a","#slidestc li:first","#slidestc:first");
 			sliderbefore("#befscts a","#slidestc li:last","#slidestc:first");
+
 			openClose(".btnaction","btnaction2",".selcardstc,#submits",".selcardstc2");
 			openClose2(".btnaction2","btnactionx",".selcardstc2",".selcardstc,#submits");
+
+			slidernext("#next","#concardstarrec ul li:first","#concardstarrec ul:first");
+			sliderbefore("#bef","#concardstarrec ul li:last","#concardstarrec ul:first");
+			slidernext("#nexttwo","#concardstarrectwo ul li:first","#concardstarrec ul:first");
+			sliderbefore("#beftwo","#concardstarrectwo ul li:last","#concardstarrec ul:first");
 			
 		
 			$("#concardstc ul li").click(function(){
-           
+				           
 	          if ($(this).hasClass("ll")) {
 	            $(this).removeClass("ll");
 	          }else{
@@ -89,14 +95,26 @@ $(document).on("ready",function(){
 	          	$("#cpcard").slideDown();
 	            $(this).clone().appendTo("#cpcard ul");
 				$("#cpcard ul li").css("cursor","pointer");
+				//$("#cpcard ul li:first").css("width","130px");
+				$("#cpcard ul li:first").css("margin-bottom","300px;");
+				$("#cpcard ul li:first").removeClass("ll")
+				$("#cpcard ul li:first img").css("width","130px");
+				$("#cpcard ul li:first img").css("height","70px");
+				$("#cpcard ul li:first img").css("margin-left","20px");
+				$("#cpcard ul li:first .sometextcardstc").css("margin-top","11px");
+				$("#cpcard ul li:first .sometextcardstc").css("width","170px");
 				$("#cpcard ul li").click(function(){
-	            	$(this).fadeOut("fast	");
+	            	$(this).remove();
 	            });
 	          
 
 	        }
 
        });
+
+			$("#stcr1").click(function(){
+				$("#stcr2").css("background","red");
+			});
 			
 			
 								

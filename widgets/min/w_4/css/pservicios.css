@@ -42,7 +42,7 @@ width: auto;
 
 }
 
-.dd-select{
+/*.dd-select{
 	height:28px;
 	border-radius:0;
 	border-color:#a6a6a6;
@@ -106,7 +106,7 @@ width: auto;
 .dd-option:hover{
 	border-color:#ff0000;
 	color:#ff0000
-}
+}*/
 
 /*Pago de Servicios*/
 .servgrid{

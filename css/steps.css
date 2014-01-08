@@ -17,6 +17,13 @@
 	margin-left: 181px;
 	margin-top: 15px;
 }
+/*Estilo para paso 2 con una segunda columna a la derecha*/
+.tableStep2colum{
+	font-size: 12px;
+	float: left;
+	margin-left: 20px !important;
+	margin-top: 15px;
+}
 
 .tableStep2_2{
 	font-size: 12px;

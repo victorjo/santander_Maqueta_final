@@ -22,7 +22,8 @@
 	background:inherit;
 }
 .contenidoFlujo {
-border: 1px solid red;
+/*border: 1px solid red;*/
+border: none;
 float: left;
 margin-left: 5px;
 /*height: 425px;*/
@@ -32,16 +33,18 @@ padding: 5px;
 width: 720px;
 margin-left: 0px;
 }
-
-.btnactiont{
-	width: 15px;
-	height: 15px;
-	background: url("../imagenes/agregar.png");
+.contenidoFlujo .colFull{
+	background: #fff;
+}
+/*.btnactiont{
+	width: 21px;
+	height: 21px;
+	background: url("../imagenes/cerrado.png");
 	float: right;
 	margin-right: 10px;
 	margin-top: 5px;
 	cursor: pointer;
-}
+}*/
 *{
 	font-family: Arial;
 	font-size: 13px;
@@ -59,13 +62,24 @@ area{
 	display: inline-block;
 	vertical-align: middle;
 }
+#tarrecstc a,#concardstarrec{
+		
+	display: inline-block;
+	vertical-align: middle;
+}
+#tarrecstc a,#concardstarrectwo{
+		
+	display: inline-block;
+	vertical-align: middle;
+}
 #befstc{
 	margin-left: 12px;
 }
 .content{
 	width: 725px;
 	height: 425px;
-	border:1px solid silver;
+	margin-left: -7px;
+	/*border:1px solid silver;*/
 	background:#e0dede; 
 }
 #selformentrega{
@@ -166,32 +180,32 @@ input[type=button]{
 }
 
 .btnaction{
-	width: 15px;
-	height: 15px;
-	background: url("../imagenes/quitar.png");
+	width: 21px;
+	height: 21px;
+	background: url("../imagenes/abierto.png");
 	float: right;
 	margin-right: 10px;
-	margin-top: -10px;
+	margin-top: -14px;
 	cursor: pointer;
 }
 
 .btnaction2{
-	width: 15px;
-	height: 15px;
-	background: url("../imagenes/agregar.png");
+	width: 21px;
+	height: 21px;
+	background: url("../imagenes/cerrado.png");
 	float: right;
 	margin-right: 10px;
-	margin-top: -10px;
+	margin-top: -14px;
 	cursor: pointer;
 }
 
 .btnactionx{
-	width: 15px;
-	height: 15px;
-	background: url("../imagenes/quitar.png");
+	width: 21px;
+	height: 21px;
+	background: url("../imagenes/abierto.png");
 	float: right;
 	margin-right: 10px;
-	margin-top: -10px;
+	margin-top: -14px;
 	cursor: pointer;
 }
 #menuredstc{
@@ -361,7 +375,7 @@ input[type=button]{
 	font-size: 14px;
 	color: #202020;
 }
-.concardstarrec{
+.concardstarrec, #concardstarrec, #concardstarrectwo{
 	width: 338px;
 	height: 80px;
 	border: solid 1px silver;
@@ -415,18 +429,33 @@ input[type=button]{
 	font-size: 40px;
 	/*border:solid 1px #000;*/
 }
-.concardstarrec ul{
+.concardstarrec ul,#concardstarrectwo ul{
 	margin: 0;
 	padding: 0;
 	/*border:solid;*/
 	width: 1100px;
 }
-.concardstarrec ul li{
+#concardstarrec ul{
+	margin: 0;
+	padding: 0;
+	/*border:solid;*/
+	width: 1100px;
+
+}
+.concardstarrec ul li,#concardstarrectwo ul li{
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	float: left;
 	position: relative;
+}
+#concardstarrec ul li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	position: relative;
+
 }
 .colcardstc img{
 	cursor: pointer;
@@ -459,7 +488,8 @@ input[type=button]{
 	margin-top: -15px;
 }
 #cpcard ul li{
-	margin-top: 30px;
+	/*margin-top: 50px;*/
+	margin-top: 65px;
 }
 .sometextcardstc{
 	float:right;
@@ -628,8 +658,9 @@ margin-top: -30px;
 .mistdcad{
 	
 	height: 50px;
-	width: 470px;
+	width: 473px;
 	float: left;
+
 }
 .mistdcad span{
 	
@@ -638,11 +669,14 @@ margin-top: -30px;
 	font-weight: bold;
 }
 .tdcad{
-	border: solid 1px green;
-	height: 50px;
-	width: 70px;
+	/*border: solid 1px green;*/
+	/*height: 50px;
+	width: 70px;*/
+	height: 38px;
+	width: 72px;
 	float: right;
 	margin-left: 6px;
+	cursor: pointer;
 }
 .tdcadform{
 	background: #f4f4f4;
@@ -687,7 +721,11 @@ margin-top: -30px;
 	background: #f4f4f4;
 	margin-top: -10px;
 }
-.rangealc >div:nth-of-type(1){
+/*.rangealc >div:nth-of-type(1){
+	margin-top: 8px;
+	margin-left: 20px;
+}*/
+.instrucrange{
 	margin-top: 8px;
 	margin-left: 20px;
 }
@@ -712,10 +750,11 @@ margin-top: -30px;
 }
 .text1alc{
 	
-	width: 270px;
+	width: 290px;
 	height: 105px;
-	float: left; 
-	margin-top: -10px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 3px;
 }
 .tips span{
 	font-weight: bold;
@@ -723,23 +762,74 @@ margin-top: -30px;
 }
 .text1alc p{
 	margin-top:10px;
-	line-height: 15px;
+
 
 }
 .xlsexporttdc{
+	background: #fff;
 	height: 45px;
 	width: 95px;
-	background: #fff url(../imagenes/Exportar.png)no-repeat;
-	
 	float: right;
 	margin-top: 150px;
 }
-.xlsexporttdc div{
+.exxlsicon{
+	background: #fff url(../imagenes/Exportar.png)no-repeat;
+	height: 20px;
+	width: 20px;
+	margin: 2px;
+}
+.xlsexporttdc .txticon{
 	float: right;
-	
 	width: 50px;
 	margin: 5px;
 	font-weight: bold;
+	margin-right: 10px;
+	margin-top: -17px;
 }
-
+.csconfirm{
+	
+	height: 270px;
+	width: 370px;
+}
+.percardstc{
+	background: #fff;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	height: 80px;
+	width: 350px;
+	
+}
+.crdpertext{
+	float: left;
+	position: relative;
+	top: -60px;
+	left: 150px;
+	width: 200px;
+}
+.formcheckstc{
+	background: #efefef;
+	float: left;
+	margin-left: 10px;
+	margin-top: 15px;
+	height: 160px;
+	width: 350px;
+}
+.bt{
+	width: 150px;
+	margin-top: 70px;
+	margin-left: 13px;
+}
+.cardper{
+	border:solid 1px silver; 
+	margin: 15px;
+	height: 50px;
+	width: 115px;
+}
+input[type="file"]{
+	margin-top: 10px;
+}
+.cardper{
+	background: url(../imagenes/infocard.png);
+}
 /***********************************************************************/
