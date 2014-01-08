@@ -1,14 +1,10 @@
-
+$(document).on("ready",function(){
 			function ocultaAsset(){
 		    $("#WA_pasos>img").fadeOut(1);
 			}
 
 			function muestraAsset(){
 			    $("#WA_pasos>img").fadeIn(1);
-			}
-			function closeAction(od,id){
-				$("[instanced='true']").data('instanced').routerAction(od,id);
-				globalFlah++;
 			}
 			function openClose(objetoEvento,clasemenos,ocultaobjeto,slideup){
 				$(objetoEvento).click(function(){ 
@@ -17,8 +13,8 @@
 					}else{
 						$(this).addClass(clasemenos);
 					}
-					$(ocultaobjeto).slideToggle("slow");
-					$(slideup).slideUp("slow",function(){
+					$(ocultaobjeto).slideToggle("slow","easeOutBounce");
+					$(slideup).slideUp("slow","easeOutBounce",function(){
 						$(".btnactionx").removeClass("btnactionx");
 						$(".btnactionx").addClass("btnaction2");
 						
@@ -34,8 +30,8 @@
 					}else{
 						$(this).addClass(clasemenos);
 					}
-					$(ocultaobjeto).slideToggle("slow");
-					$(slideup).slideUp("slow",function(){
+					$(ocultaobjeto).slideToggle("slow","easeOutBounce");
+					$(slideup).slideUp("slow","easeOutBounce",function(){
 						$(".btnaction").addClass("btnaction2");
 					});
 				});
@@ -189,4 +185,4 @@
 				    $( "#ransstc" ).slider();
 				  });
 								
-	
+	});
