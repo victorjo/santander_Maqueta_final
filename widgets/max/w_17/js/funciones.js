@@ -116,6 +116,9 @@ $(document).on("ready",function(){
 				$("#stcr2").css("background","red");
 			});
 			
-			
+			$(".infopermod").click(function(){
+				alert("Hola");
+				$(".msgper").css("display","none");
+			});
 								
 	});

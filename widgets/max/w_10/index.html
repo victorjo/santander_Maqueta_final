@@ -17,10 +17,10 @@
 
 			<div id="WA_pasos">
 				<img src="../img/assets/pasos.png"/>
-				<div class="btnHeader info" onclick="closeAction();">
+				<div class="btnHeader info" >
 					<img src="../img/assets/ico_info.png"  />
 				</div>
-				<div class="btnHeader cerrar">
+				<div class="btnHeader cerrar" onclick="closeAction();">
 					<img src="../img/assets/ico_cerrar_widget.png"  />
 				</div>
 			</div>
@@ -31,7 +31,7 @@
 						<p>
 						<img src="../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);ocultaAsset();">
+					<li class="liActive"onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);ocultaAsset();">
 						<p>Historial de puntos<br/>ganados</p>
 					</li>
 					<li onclick="cambiaFlujo('.wra_flu2');cambiaPaso(1);muestraAsset();">
@@ -48,8 +48,14 @@
 								<div class="iconFlujo">
 									<img src="widgets/max/w_10/img/titulo_recompensas.png" />
 								</div>
-								<p class="titulo">Entre cuentas propias Santander</p>
-								<p class="subtitulo">Instroduzca nombre alias o cuentas bla bla bla...</p>
+								<div>
+									<p class="titulo">Seleccione el programa de recompensas:</p>
+								</div>
+								<div class="w10_HPG_miniBanner"></div>
+								<div class="w10_HPG_wra_Select3">
+									<select name="" id="" value="Recompensas Santander" ></select>
+								</div>
+
 							</div>
 							<div class="w10_HPG_seleccionTarjeta">
 								<p>Seleccionar tarjeta:</p>
@@ -76,7 +82,7 @@
 							<div class="w10_HPG_personalizarIntervalo">
 								Intervalo personalizado
 								<div>
-									<img src="../../img/iconos/img_calendario.png"/>
+									<img src="../../img/iconos/calendario.png"/>
 								</div>
 							</div>
 							<div class="w10_HPG_limpiar">
@@ -87,7 +93,7 @@
 								<tr>
 									<td>Fecha de transacción</td>
 									<td>Descripción</td>
-									<td>Cantidad</td>
+									<td>Cantidad MXP</td>
 									<td>Puntos base</td>
 									<td>Puntos promoción</td>
 									<td>Puntos totales</td>
@@ -143,7 +149,8 @@
 							</div>
 						</div>
 						<div class="botonera">
-							<div class="btnaceptar" onclick="closeAction();">Utilice sus puntos</div>
+							<a href="https://comparte.mastercard.com/pe/about" target="_blank">
+				<div class="btnaceptar" >Utilice sus puntos</div></a>
 						</div>						
 					</div><!--Fin Historial de puntos ganados-->
 
