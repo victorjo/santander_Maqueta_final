@@ -28,6 +28,7 @@ background: #efefef;
 float: left;
 width: 540px;
 height: 190px;
+margin-top: 10px;
 }
 .w8_EC_contenidodatos1 p:nth-of-type(1) {
 	float: left;
@@ -37,7 +38,7 @@ height: 190px;
 	font-size:11px;
 	font-weight:bold;
 	margin-bottom: 7px;
-	margin-top: 8px;
+	margin-top: 10px;
 	}
 .w8_EC_contenidodatos1 p:nth-of-type(2) {
 float: left;
@@ -107,15 +108,20 @@ margin-top: 10px;
 	left: 198px;
 	border: 1px solid #989898;
 	border-radius: 4px 4px 4px 4px;
+	font-style:italic;
+	font-size: 11px;
 	}
 .textboxdos2  {
 position: absolute;
 margin-top: -8px;
 height: 25px;
-width: 252px;
-left: 465px;
+width: 241px;
+left: 470px;
 border: 1px solid #989898;
 border-radius: 4px 4px 4px 4px;
+font-style:italic;
+font-size: 11px;
+padding-left: 5px;
 }
 .dd-select {
 position: relative;
@@ -131,8 +137,8 @@ margin-top: 0px;
 
 #concept {
  	float: left;
- 	margin-left: 274px;
- 	margin-top: -35px;
+ 	margin-left: 282px;
+ 	margin-top: -29px;
  }
 
  .w8_EC_contenidodatos2 {
@@ -142,6 +148,7 @@ margin-left: 10px;
 width: 164px;
 height: 190px;
 padding-left: 9px;
+margin-top: 10px;
 }
 .w8_EC_contenidodatos2 p:nth-of-type(1) {
 	float: left;
@@ -151,7 +158,8 @@ padding-left: 9px;
 	font-size:11px;
 	font-weight:bold;
 	margin-bottom: 7px;
-	margin-top: 7px;
+	margin-top: 10px;
+	margin-left: 0px;
 	}
 
 .w8_EC_contenidodatos2 p:nth-of-type(2) {
@@ -162,7 +170,8 @@ color:#000000;
 font-size:11px;
 font-weight:bold;
 margin-bottom: 0px;
-margin-top: 5px;
+margin-top: 13px;
+margin-left: 0px;
 }
 
 	.w8_EC_contenidodatos2 p:nth-of-type(3) {
@@ -173,6 +182,7 @@ margin-top: 5px;
 	font-weight:bold;
 	margin-top: 10px;
 	margin-bottom: 5px;
+	margin-left: 0px;
 	}
 #w8_EC_switchBox{
 	border:1px #a6a6a6 solid;
@@ -221,12 +231,14 @@ border-radius: 0 4px 4px 0;
 	margin-left: 4px;
 	}
 .textboxdecalendar {
-width:132px;
-
+width:127px;
+font-style:italic;
+font-size: 11px;
 border-radius: 4px 0px 0px 4px;
 margin-top:6px;
 height:25px;
 border: 1px solid #989898;
+padding-left: 5px;
 }
 
 /*segunda funcionalidad */
@@ -306,9 +318,12 @@ float: left;
 margin-left: 10px;
 margin-top: 5px;
 height: 25px;
-width: 250px;
+width: 245px;
 border-radius: 4px 4px 4px 4px;
 border: 1px solid #989898;
+font-style: italic;
+font-size: 11px;
+padding-left: 5px;
 }
 .middletd_OC img{
 	float: left;
@@ -317,7 +332,8 @@ border: 1px solid #989898;
 }
 .textboxDias {
 float: left;
-
+font-style: italic;
+font-size: 11px;
 margin-top: 5px;
 height: 29px;
 width:157px;
@@ -325,13 +341,16 @@ border-radius: 4px 4px 4px 4px;
 border: 1px solid #989898;
 }
 .textbox_OCLarge{
-	float: left;
+float: left;
 margin-left: -66px;
 margin-top: 27px;
 height: 25px;
-width: 220px;
+width: 215px;
 border-radius: 4px 4px 4px 4px;
 border: 1px solid #989898;
+font-style: italic;
+font-size: 11px;
+padding-left: 5px;
 }
 
 .btnExportarbtn{
@@ -484,7 +503,9 @@ font-size:11px;
 	margin-left: 10px;
 	top:6px;
 }
-
+#switchBox {
+	margin-top: -2px;
+}
 .contenedorf2 {
 	width: 723px;
 	height: 50px;
