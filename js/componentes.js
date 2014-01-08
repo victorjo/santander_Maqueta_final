@@ -462,12 +462,21 @@ function confirmacionCorreo(cbTokenCanc, cbTokenAcep, modal) {
     });
 }
 
+function cargaCalendario(cbTokenAcep, modal) {
+    var mod = modal || 'token';
+    $("#elementBloqueo").load("../modales/" + mod + ".html", function() {
+        $(this).find("#btnCalendarioAceptar").attr("onclick", cbTokenAcep);
+        switchModal();
+    });
+}
+
 function cargaTokentime(fn, modal) {
     var mod = modal || 'token';
     if (typeof fn != "undefined" || fn != null || fn != undefined) fn();
     $("#elementBloqueo").load("../modales/" + mod + ".html");
     switchModal();
 }
+
 /*--- Fin Token Victor ---*/
 
 function centraModal() {
@@ -582,7 +591,7 @@ function Gridius(object, data) {
                     }
                     element += "<td " + adta + ">" + data.rowsValues[u] + "<input data-edit='false' class='editGrid' type='text'></td>";
                 }
-                element += "<td><div class='addGrid'></div><div class='delGrid'></div></td></tr>";
+                element += (!data.configButton?"":"<td><div class='addGrid'></div><div class='delGrid'></div></td>")+"</tr>";
             }
 
             $(".wrapGrid > table").html("<tr>" + thead + "</tr>");
