@@ -187,10 +187,10 @@
 	height: 165px;
 	float: right;
 	margin-top: 15px;
+	background-size: 100% 100%;
+	background-image: url('../img/assets/calendario.png');
+
 }
-
-
-
 
 .ui-widget {
 	font-family: Arial,sans-serif !important;

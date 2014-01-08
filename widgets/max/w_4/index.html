@@ -71,65 +71,65 @@
 										<tr class="servicioClic" id="Axtel">
 											<td></td>
 											<td><div class="w4_PS_servicioImg w4_PS_servicioImg_1"></div><p class="w4_PS_servicio">Axtel</p></td>
-											<td>Lorem Ipsum</td>
-											<td>12345</td>
-											<td>dd/mm/aaaa</td>
-											<td >9,999,999.99</td>
-											<td >1456789098765</td>
+											<td class="Alias">cel_mama</td>
+											<td class="numero">12345</td>
+											<td class="fecha">01/01/2014</td>
+											<td class="dinero">9,999,999.99</td>
+											<td clas="clave">12345TRMSL34</td>
 										</tr>
 										<tr class="servicioClic" id="Telcel">
 											<td></td>
 											<td><div class="w4_PS_servicioImg w4_PS_servicioImg_2"></div><p class="w4_PS_servicio">Telcel</p></td>
-											<td>Lorem Ipsum</td>
-											<td>12345</td>
-											<td>dd/mm/aaaa</td>
+											<td>cel_abuelita</td>
+											<td>45678</td>
+											<td>04/01/2014</td>
 											<td >9,999,999.99</td>
-											<td >1456789098765</td>
+											<td >45782FLTHMS98</td>
 										</tr>
 										<tr class="servicioClic" id="G.N.P. Seguros">
 											<td></td>
 											<td><div class="w4_PS_servicioImg w4_PS_servicioImg_3"></div><p class="w4_PS_servicio">G.N.P. Seguros</p></td>
-											<td>Lorem Ipsum</td>
-											<td>12345</td>
-											<td>dd/mm/aaaa</td>
+											<td>tel_tia</td>
+											<td>96354</td>
+											<td>06/01/2014</td>
 											<td >9,999,999.99</td>
-											<td >1456789098765</td>
+											<td >214896BCNDLK67</td>
 										</tr>
 										<tr class="w4_PS_deshabilitado servicioClic" id="Telmex">
 											<td></td>
 											<td><div class="w4_PS_servicioImg w4_PS_servicioImg_4"></div><p class="w4_PS_servicio">Telmex</p></td>
-											<td>Lorem Ipsum</td>
-											<td>12345</td>
-											<td>dd/mm/aaaa</td>
+											<td>cel_Pepe</td>
+											<td>78124</td>
+											<td>07/01/2014</td>
 											<td >9,999,999.99</td>
-											<td >1456789098765</td>
+											<td >12478JSNVGR756</td>
 										</tr>
 										<tr class="w4_PS_deshabilitado servicioClic" id="Telmex">
 											<td></td>
 											<td><div class="w4_PS_servicioImg w4_PS_servicioImg_4"></div><p class="w4_PS_servicio">Telmex</p></td>
-											<td>Lorem Ipsum</td>
-											<td>12345</td>
-											<td>dd/mm/aaaa</td>
+											<td>tel_mando</td>
+											<td>24568</td>
+											<td>08/01/2014</td>
 											<td >9,999,999.99</td>
-											<td >1456789098765</td>
+											<td >1234789MJGLRDT</td>
 										</tr>
 										<tr class="w4_PS_deshabilitado servicioClic" id="Telmex">
 											<td></td>
 											<td><div class="w4_PS_servicioImg w4_PS_servicioImg_4"></div><p class="w4_PS_servicio">Telmex</p></td>
-											<td>Lorem Ipsum</td>
-											<td>12345</td>
-											<td>dd/mm/aaaa</td>
+											<td>cel_track</td>
+											<td>45689</td>
+											<td>08/01/2014</td>
 											<td >9,999,999.99</td>
-											<td >1456789098765</td>
+											<td >4587265AHGNLS</td>
 										</tr>
 										<tr class="w4_PS_deshabilitado servicioClic" id="Telmex">
 											<td></td>
 											<td><div class="w4_PS_servicioImg w4_PS_servicioImg_4"></div><p class="w4_PS_servicio">Telmex</p></td>
-											<td>Lorem Ipsum</td>
-											<td>12345</td>
-											<td>dd/mm/aaaa</td>
+											<td>cel_track</td>
+											<td>74589</td>
+											<td>08/01/2014</td>
 											<td >9,999,999.99</td>
-											<td >1456789098765</td>
+											<td >1245787AHYTNL9</td>
 										</tr>
 									</table>
 								</div>
@@ -141,11 +141,11 @@
 										<tr>
 											<td></td>
 											<td><div class="w4_PS_servicioImg w4_PS_Img"></div><p class="w4_PS_servicio w4_PS_seleccionado"></p></td>
-											<td>Lorem Ipsum</td>
-											<td>12345</td>
-											<td>dd/mm/aaaa</td>
-											<td >9,999,999.99</td>
-											<td >1456789098765</td>
+											<td class="Alias2"></td>
+											<td class="numero2"></td>
+											<td class="fecha2"></td>
+											<td class="dinero2"></td>
+											<td class="clave2"></td>
 										</tr>
 									</table>
 								</div>
@@ -467,9 +467,10 @@
 									<span>Para realizar la búsqueda del servicio a dar de alta, ingrese cualquiera de los siguientes dados:</span>
 									<div class="taran">
 										<div>
-											<p>Cuenta de cargo:</p><br />
-											<div class="w4_PS_dd1">
-												<input class="w4_AS_input" type="text"/>
+											<p>Nombre de la empresa, razón social y/o convenio:</p><br />
+											<div class="w4_dropList">
+												<select name="" id="" value="1" > 
+											    </select>
 											</div>
 										</div>
 										
@@ -537,13 +538,12 @@
 										<div class="w4_AS_imagenSer"></div>
 										<div>
 											<p><b>Servicio seleccionado:</b></p>
-											<p><b>Concepto:</b></p><br />
-											<input class="w4_PS_input3" type="text" value="Escribir concepto"/>
+											<input class="w4_PS_input3" type="text" value="Axtel" disabled/>
 										</div>
 										<br />
 										<ul>
-											<li><p><b>Categoria:Lorem ipsum Elit</b></p></li>
-											<li><p><b>Ubicación:Lorem ipsum Elit</b></p></li>
+											<li><p><b>Categoria:&nbsp;&nbsp;Telefonía</b></p></li>
+											<li><p><b>Ubicación:&nbsp;&nbsp;Distrito Federal</b></p></li>
 										</ul>
 									</div>
 								<!--</div>-->
