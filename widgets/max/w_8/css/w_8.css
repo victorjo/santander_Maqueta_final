@@ -625,7 +625,7 @@ margin-left: 680px;
 .w8_CRAB_wraFormulario{
 	width:100%;
 	background-color: #efefef;
-	height:200px;
+	height:160px;
 	float:left;
 	margin:10px 0 0 5px;
 	color:#282828;
@@ -633,7 +633,6 @@ margin-left: 680px;
 	font-size: 11px;
 	float:left;
 	position:relative;
-	display:none;
 }
 
 
@@ -732,6 +731,7 @@ margin-left: 680px;
 	margin-left: 114px;
 }
 
+<<<<<<< HEAD
 
 .w4_HPG_personalizarIntervalo{
 	float:left;

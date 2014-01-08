@@ -13,7 +13,7 @@
 				
 			</div>
 			<div id="WA_pasos">
-				<img src="../../../img/assets/pasos.png"/>
+				<img class="ocultaPaso" src="../../../img/assets/pasos.png"/>
 				<div class="btnHeader info">
 					<img src="../../../img/assets/ico_info.png"  />
 				</div>
@@ -28,16 +28,16 @@
 						<p>
 						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu1'); muestraServicios(); $('#WA_pasos').show();" class=" w4_flu1_activo liActive">
+					<li onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(1); muestraServicios(); $('.ocultaPaso').show();" class=" w4_flu1_activo liActive">
 						<p>Pago de servicios</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu2'); visibilidad(); $('#WA_pasos').show();" class="w4_flu2_activo">
+					<li onclick="cambiaFlujo('.wra_flu2'); cambiaPaso(1); visibilidad(); $('.ocultaPaso').show();" class="w4_flu2_activo">
 						<p>Alta de servicios</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu3'); Gridius($('.tablaDinamica'),data); $('#WA_pasos').hide();">
+					<li onclick="cambiaFlujo('.wra_flu3'); cambiaPaso(1); Gridius($('.tablaDinamica'),data); $('.ocultaPaso').hide();">
 						<p>Consulta / baja de servicios</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu4'); Gridius($('.Tbl2'),dataTbl2); $('#WA_pasos').hide(); ">
+					<li onclick="cambiaFlujo('.wra_flu4'); cambiaPaso(1); Gridius($('.Tbl2'),dataTbl2); $('.ocultaPaso').hide(); ">
 						<p>Consulta de pagos <br/> realizados/programados</p>
 					</li>
 				</ul>
@@ -151,6 +151,7 @@
 								</div>
 								<div class="visor">
 									<div class="w4_PS_verLista" onclick="muestraServicios()"></div>
+									<br>
 									<p>Introduzca el nombre, alias o los cuatro dígitos de la cuenta de destino o seleccionela de la lista:</p>
 									<!--Omnibox -->
 									<div class="w4_dropList">
@@ -169,7 +170,7 @@
 												<div class="w4_PS_inputsDer">
 													<p>Alias de Tarjeta</p>
 													<input class="w4_PS_input" type="text"/>
-													<div class="info"></div>							
+													<div class="w4_info"></div>							
 												</div>
 											</td>
 										</tr>
@@ -178,7 +179,7 @@
 												<div class="w4_PS_inputsIzq">
 													<p>Referencia 1</p>
 													<input class="w4_PS_input" type="text"/>
-													<div id="infobtn" class="info"></div>
+													<div id="infobtn" class="w4_info"></div>
 													<div class="infoChart"><img src="../../../../img/assets/info_img.png"/></div>
 												</div>
 											</td>
@@ -186,7 +187,7 @@
 												<div class="w4_PS_inputsDer">
 													<p>Referencia 2</p>
 													<input class="w4_PS_input" type="text"/>
-													<div class="info"></div>
+													<div class="w4_info"></div>
 																		
 												</div>
 											</td>
@@ -196,7 +197,7 @@
 												<div class="w4_PS_inputsIzq">
 													<p>Importe</p>
 													<input class="w4_PS_input" type="text"/>
-													<div class="info"></div>
+													<div class="w4_info"></div>
 																	
 												</div>
 											</td>
@@ -210,7 +211,7 @@
 														<td style="width: 195px;">
 															<p>Intereses moratorios:</p>
 															<input class="w4_PS_input2" type="text"/>
-															<div class="info"></div>
+															<div class="w4_info"></div>
 														</td>
 													</tr>
 												</table>
@@ -261,9 +262,9 @@
 										</tr>
 														
 									</table>
-								</div>
-								<div class="botonera">
-									<div class="btnaceptar" id="btn_continuar">Continuar
+									<div class="botonera">
+										<div class="btnaceptar" id="btn_continuar">Continuar
+									</div>
 								</div>
 							</div>
 						</div>
@@ -272,7 +273,7 @@
 							<div class="col colFull">
 								<div class="titFlujo">
 									<div class="iconFlujo">
-										<img src="img/assets/ico_cuentas_propias.png"/>
+										<img src="img/assets/ico_comprobante.png"/>
 									</div>
 									<p class="titulo">Datos de pago de servicios</p>
 									<p class="subtitulo">El pago  de servicio seleccionado se efectuará con la siguiente información:</p>
@@ -289,7 +290,7 @@
 							<div class="col col2 resetMargen">
 									<div class="titFlujo">
 										<div class="iconFlujo">
-											<img src="img/assets/ico_cuentas_propias.png"/>
+											<img src="img/assets/ico_comprobante.png"/>
 										</div>
 										<p class="titulo">Comprobante de pago de servicios</p>
 									</div>
@@ -312,8 +313,9 @@
 
 					<div class="flujo wra_flu2">
 						<div class="step step1">
-							<div class="w4_AS_slideHeader">Listado de Servicios
-							<div class="w4_AS_btnaction2"></div>
+							<div class="w4_CRAB_dropHdr1">
+							<p>Listado de Servicios</p>
+							<div class=" btnaction toggle"></div>
 							</div>
 							<div class="w4_AS_listado OFF">
 								<div>
@@ -453,18 +455,19 @@
 										<div class="tres 3"></div>
 									</div>
 								<div class="botonera">
-									<div class="btnaceptar" onClick="encontrado()">Dar de alta</div>
+									<div class="btnaceptar"  onclick="cambiaFlujo('.wra_flu2');cambiaPaso(2);$('.w4_AS_paso2').load('../../../../tablas/w4/w4_AS_tblPaso2.html')">Dar de alta</div>
 								</div>
 							</div>
 							
-							<div class="w4_AS_slideHeader">Búsqueda Avanzada
-								<div class="w4_AS_btnaction2"></div>
+							<div class="w4_CRAB_dropHdr2">
+								<p>Búsqueda Avanzada</p>
+								<div class="btnaction2 toggle"></div>
 							</div>
 							
 							<!--<div class="w4_AS_avanzada">-->
 								
 								<div class="w4_AS_inputsAlta OFF">
-									<span>Para realizar la búsqueda del servicio a dar de alta, ingrese cualquiera de los siguientes dados:</span>
+									<span>Para realizar la búsqueda del servicio a dar de alta, ingrese cualquiera de los siguientes datos:</span>
 									<div class="taran">
 										<div>
 											<p>Nombre de la empresa, razón social y/o convenio:</p><br />
@@ -542,7 +545,7 @@
 										</div>
 										<br />
 										<ul>
-											<li><p><b>Categoria:&nbsp;&nbsp;Telefonía</b></p></li>
+											<li><p><b>Categoría:&nbsp;&nbsp;Telefonía</b></p></li>
 											<li><p><b>Ubicación:&nbsp;&nbsp;Distrito Federal</b></p></li>
 										</ul>
 									</div>
@@ -594,7 +597,7 @@
 									<div class="btnsLateralStep3 ico3Step3">Opci&oacute;n 3</div>
 								</div>
 								<div class="botonera">
-									<div class="btn" onclick="cambiaFlujo('.wra_flu2'); visibilidad();">Deseo dar de alta otro servicio</div>
+									<div class="btn" onclick="cambiaFlujo('.wra_flu2'); cambiaPaso(1); visibilidad();">Deseo dar de alta otro servicio</div>
 									<div class="btnaceptar" onclick="closeAction();">Finalizar</div>
 								</div>
 							</div>
@@ -602,13 +605,13 @@
 
 					<div class="flujo wra_flu3">
 						<div class="step step1">
-							<div class="titFlujo w4_CB_titTam">
+							<div class="titFlujo w4_CB_titTam" style="height: 78px !important;">
 								<div class="iconFlujo">
 									<img src="../../../img/assets/picGraf.png"/>
 								</div>
 								<p class="titulo w4_top">Consulta / baja de servicios</p>
 								<p class="subtitulo w4_espacio w4_top">A continuación usted podrá consultar los servicios que tiene dados de alta.</p>
-								<p class="subtitulo2F4 linkEditar w4_espacio w4_top"> Para obtener más información de la solicitud, haga clic en el estatus.</p>
+								<p class="subtitulo2F4 linkEditar w4_espacio w4_top"><b> Para obtener más información de la solicitud, haga clic en el estatus.</b></p>
 							</div>
 						<div class="w4_CB_buscador">
 							<div class="w4_select_1 w4_selects ">
@@ -617,12 +620,12 @@
 							</div>
 
 							<div class="w4_HPG_personalizarIntervalo" style="margin-top: 10px; margin-left: 10px;">
-								dd/mm/aaaa
+								08/01/2014 - 09/01/2014
 								<div>
-									<img src="../../img/iconos/img_calendario.png"/>
+									<img src="../../img/iconos/calendario.png"/>
 								</div>
 							</div>
-							<div class="w4_select_3 w4_selects">
+							<div class="w4_select_3 w4_selects" style="margin-left: 11px; margin-right: 14px;">
 								<select name="" id="" value="1" > 
 				    			</select>
 							</div>
@@ -694,8 +697,8 @@
 									<img src="../../../img/assets/picGraf.png"/>
 								</div>
 								<p class="titulo w4_top">Consulta de pagos realizados / baja de servicios</p>
-								<p class="subtitulo w4_espacio w4_top">Seleccione el estatus del pago de servicios que desea consultar o modificar, así como el periodo de busqueda y/o rango de importe </p>
-								<p class="subtitulo w4_espacio w4_top">para realizar una busqueda mas especifica.</p>
+								<p class="subtitulo w4_espacio w4_top">Seleccione el estatus del pago de servicios que desea consultar o modificar, así como el periodo de búsqueda y/o rango de importe </p>
+								<p class="subtitulo w4_espacio w4_top">para realizar una búsqueda mas específica.</p>
 								<p class="subtitulo2F4 linkEditar w4_espacio w4_top"><b>Para obtener más información del servicio, haga clic en el estatus.</b></p>
 							</div>
 							<div class="w4_CB_buscador">
@@ -705,12 +708,12 @@
 								</div>
 
 								<div class="w4_HPG_personalizarIntervalo" style="margin-top: 10px; margin-left: 10px;">
-									dd/mm/aaaa
+									08/01/2014 - 09/01/2014
 									<div>
-										<img src="../../img/iconos/img_calendario.png"/>
+										<img src="../../img/iconos/calendario.png"/>
 									</div>
 								</div>
-								<div class="w4_select_3 w4_selects">
+								<div class="w4_select_3 w4_selects" style="margin-left: 11px; margin-right: 14px;">
 									<select name="" id="" value="1" > 
 					    			</select>
 								</div>
@@ -775,9 +778,12 @@
 					</div>	
 
 				</div>
-				<!--<div class="botonera">
-					<div class="btn" >Regresar</div>
-					<div class="btnaceptar" onclick="cambiaPaso(2)">Ver Detalle</div>
-				</div>-->	
+				<div class="w4_PS_ayuda wra_flu1 flujo">
+					<p>El costo mensual del<br/>
+						programa de recompensas<br/>
+						varia de acuerdo al<br/>
+						producto a suscribir</p>
+					<img src="../../../img/mrsmackdown.png"/>
+				</div>
 			</div>
 		</div>

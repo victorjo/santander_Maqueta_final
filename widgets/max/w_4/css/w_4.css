@@ -30,6 +30,7 @@
 	font-family:'Arial';
 	font-size:11px;
 	color:#272727;
+	margin-left: 6px;
 }
 
 .w4_top{
@@ -176,7 +177,7 @@
 
 .w4_PS_cuadroTarjeta{
 	width: 726px;
-	height:190px; 
+	height: 319px;
 	overflow:scroll; 
 	overflow-x: hidden;
 	float: left;
@@ -282,13 +283,13 @@
 	float: left;
 	margin-left: 10px;
 	margin-top: 10px;
-	font-family:'ArialBlack';
+	font-family:'Arial';
 	font-size:11px;
 }
 
 .w4_PS_consultaPS{
 	width:705px;
-	height: auto;
+	height: 52px;
 	float: left;
 	
 }
@@ -824,6 +825,7 @@
 
 .w4_CB_titTam{
 	height: 95px;
+	margin-bottom: 10px;
 }
 .w4_CB_buscador{
 	float: left;
@@ -833,7 +835,6 @@
 
 .w4_selects{
 	float: left;
-	margin-left: 10px;
 	margin-top: 10px;
 }
 
@@ -866,13 +867,13 @@
 
 .w4_dropList{
 	margin-top: 10px;
-	margin-left: 10px;
+	margin-left: 6px;
 }
 
 
 .w4_HPG_personalizarIntervalo{
 	float:left;
-	width:143px;
+	width: 147px;
 	height:21px;
 	background-color:#FBFBFB;
 	border:1px #C2C0C0 solid;
@@ -904,4 +905,100 @@
 .w4_HPG_personalizarIntervalo:hover{
 	border-color:#ff0000;
 	cursor:pointer;
+}
+
+.w4_PS_ayuda{
+	position:absolute;
+	bottom:0;
+	left:8px;
+}
+
+.w4_PS_ayuda p{
+	color: #282828;
+	font-family: 'ArialBlack';
+	font-size: 11px;
+	position: absolute;
+	left: 12px;
+	bottom: 185px;
+}
+
+
+.w4w4_CB_tam_CRAB_dropHdr1{
+	width:100%;
+	background-image: -webkit-linear-gradient(top,#fff,#e0dede);
+	position: relative;
+	height:30px;
+	float:left;
+	margin-top:5px;
+	border:1px silver solid;
+}
+
+.w4_CRAB_dropHdr2{
+	width:100%;
+	background-image: -webkit-linear-gradient(top,#fff,#e0dede);
+	position: relative;
+	height:30px;
+	float:left;
+	margin-top:5px;
+	border:1px silver solid;
+}
+
+.w4_CRAB_dropHdr1 p{
+	font-family: 'Arial';
+	color:#282828;
+	font-weight: bold;
+	font-size: 11px;
+	float:left;
+	margin:7px 0 0 10px;
+}
+
+.w4_CRAB_dropHdr2 p{
+	font-family: 'Arial';
+	color:#282828;
+	font-weight: bold;
+	font-size: 11px;
+	float:left;
+	margin:7px 0 0 10px;
+}
+
+.btnaction2{
+	background-image:url("../../../../img/botones/red_arrow_side.png");
+	width:22px;
+	height:22px;
+	background-repeat: no-repeat;
+	background-position: center;
+	float:right;
+	margin:4px 10px 0 0;
+	cursor:pointer;
+}
+
+.btnaction{
+	background-image:url("../../../../img/botones/red_arrow_down.png");
+	width:22px;
+	height:22px;
+	background-repeat: no-repeat;
+	background-position: center;
+	float:right;
+	margin:4px 10px 0 0;
+	cursor:pointer;
+}
+
+
+
+
+
+.w4_CRAB_dropHdr1{
+	width:100%;
+	background-image: -webkit-linear-gradient(top,#fff,#e0dede);
+	position: relative;
+	height:30px;
+}
+
+
+
+.w4_CRAB_dropHdr2{
+	width:100%;
+	background-image: -webkit-linear-gradient(top,#fff,#e0dede);
+	position: relative;
+	height:30px;
 }

@@ -62,8 +62,8 @@
 
 
 							<div class="content">
-								<div class="mkstc" style="border:solid 1px silver; margin-top:0px; margin-left:0px;margin:0 auto; width:720px; text-align:left; height:25px; font-size:12px;">
-									<span style="position:relative; top:5px;">Seleccionar tarjeta</span>
+								<div class="mkstc" style="border:solid 1px silver; margin-top:0px; margin-left:10px;margin:0 auto; width:722px; text-align:left; height:25px; font-size:12px; left:1px;">
+									<span style="position:relative; top:5px; left:10px;"><b>Seleccionar tarjeta</b></span>
 									<div class="btnaction"></div>
 								</div>
 
@@ -218,13 +218,13 @@
 										<input type="button" value="Solicitar tarjeta" id="contstc"onclick="cargaToken('switchModal()','switchModal();',cargaHtml(),'flecha');">
 									</div>
 								
-								<div class="mkstc" style="border:solid 1px silver; margin-top:0px; margin-left:0px;margin:0 auto; width:720px; text-align:left; height:25px; font-size:12px;">
-									<span style="position:relative; top:5px;">Recomendaciones del simulador</span>
+								<div class="mkstc" style="border:solid 1px silver; margin-top:0px; margin-left:10px;margin:0 auto; width:722px; text-align:left; height:25px; font-size:12px; left:1px;">
+									<span style="position:relative; top:5px; left:10px;"><b>Recomendaciones del simulador</b></span>
 									<div class="btnaction2" id="mm"></div>
 								</div>
 								<div class="selcardstc2">
 									<div class="tarrecstc">
-										<span>Tarjetas Recomendadas</span>
+										<span class="tarReco">Tarjetas Recomendadas</span>
 										
 										<div class="tarrecstccards">
 											<a href="#" class="beftarscts"><img src="widgets/max/w_17/imagenes/before.png" title="Anterior"></a>
@@ -240,7 +240,7 @@
 										</div>
 										<div class="iconostc .othericonstc" id="iconostc"></div>
 										<div id="tarrecstctext">
-											<span>Fiesta rewards</span>
+											<span class="tarReco">Fiesta rewards</span>
 											<p>Con fiesta rewards usted podra tener los mejores servicios en nuestros establecimientos, sin duda una experiencia inolvidable.</p>
 										</div>
 									</div>	
@@ -275,12 +275,8 @@
 												
 
 												<label for="stc" style="float:left">Ingreso mensual:</label>
-												<select>
-													<option>100,000,000 (MXP)</option>
-													<option>200,000,000 (MXP)</option>
-													<option>300,000,000 (MXP)</option>
-													<option>400,000,000 (MXP)</option>
-												</select>
+												<br>
+												<input  class="allinputsStc" type="text" placeholder="999,999,999 (MXP)">
 											</form>
 										</div>
 									</div>
@@ -341,7 +337,7 @@
 										<label for="stc">Seleccione la forma de entregar</label>
 										<!--<input type="text" id="stc" name="stc">-->
 										<select id="stc">
-											<option>Entrega a dimicilio</option>
+											<option>Entrega a domicilio</option>
 											<option>Entrega express</option>
 											<option>Entrega a otra ubicación</option>
 										</select>
@@ -350,15 +346,15 @@
 									<div id="infostc">
 										<span>La entrega de su tarjeta se realizará en el domicilio registrado en SuperNET.</span>
 										<span>
-											<p>Calle 00, colonia Lomas de chapultepec</p>
+											<p>Calle 00, colonia Lomas de Chapultepec</p>
 											<p>C.P.30940</p>
-											<p>Delegacion Miguel Hidalgo</p>
+											<p>Delegación Miguel Hidalgo</p>
 										</span>
 									</div>
 								</div>
 								<div id="terminostc">
 									<span>Por favor revise el clausulado de la solicitud de tarjeta de crédito</span><br>
-									<input type="checkbox" name="revstc" id="revstc"><span>He leido y acepto los terminos y condiciones<p><a href="javascript:void(0);">Leer terminos y condiciones</a></p></span>
+									<input type="checkbox" name="revstc" id="revstc"><span>He leido y acepto los terminos y condiciones<p><a href="https://servicios.santander.com.mx//tarjetas/imagenes/guias/terminos-y-condiciones-unlimited.pdf">Leer terminos y condiciones</a></p></span>
 								</div>
 								
 								<!--<div class="submits">
@@ -474,7 +470,7 @@
 									<div class="tdcadform" style="display:none">
 										<form>
 											<label for="nombre">Nombre completo del beneficiario:</label>
-											<input type="text" name="nombre" placeholder="Isabel Cristina Carrillo" style="width:99%; height:25px;">
+											<input type="text" name="nombre" placeholder="Isabel Cristina Carrillo" style="width:98%; height:25px;">
 											<div style="float:left;">
 												<label for="nombre">RFC:</label>
 												<input type="text" name="nombre" placeholder="ICAI9003091R9" style="height:25px;">
@@ -492,7 +488,7 @@
 									<div class="tdcadform" >
 										<form>
 											<label for="nombre">Nombre completo del beneficiario:</label>
-											<input type="text" name="nombre" placeholder="" id="tdf1" style="width:99%; height:25px;">
+											<input type="text" name="nombre" placeholder="" id="tdf1" style="width:98%; height:25px;">
 											<div style="float:left;">
 												<label for="nombre">RFC:</label>
 												<input type="text" name="nombre" placeholder="" id="tdf2" style="height:25px;">
@@ -517,7 +513,7 @@
 										<div class="lcdstcad">
 											<span>Linea de crédito solicitada para tarjeta adicional</span>
 											<input type="text" placeholder="999,999,999(MXP)" style="float: right; margin-top: 10px;
-											margin-right: 2px; height: 20px;">
+											margin-right: 8px; height: 20px;">
 										</div>
 									</div>
 									
@@ -667,7 +663,9 @@
 											</div>
 											<div class="formalc">
 												<label>Crédito deseado</label>
-												<input type="text" id="valuestc" placeholder="100,000,000 MXP" style="width:204px; height:30px;">
+												<div id="valuestc" style="font-size:17px; padding:3px; border:solid 1px silver; margin-top:6px; border-radius:5px;
+												text-align:center;">%</div>
+												<!--<input type="text" id="valuestc" placeholder="100,000,000 MXP" style="width:204px; height:30px;">-->
 											</div>
 
 										</div>

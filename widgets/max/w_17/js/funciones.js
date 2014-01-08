@@ -164,12 +164,15 @@
 				$(function() {
 				    $( "#ransstc" ).slider({
 				    	range:"min",
-				    	value:70,
-				    	max:100
-				    	//slide: function(event,ui);
+				    	value:65,
+				    	miun:0,	
+				    	max:100,
+				    	slide: function(event,ui){
+				    		 $("#valuestc").html(ui.value);
+				    	}
 				    });
-				    //var value = $("#ransstc").slider("value");
-				    //$("#valuestc").html(value);
+				    var value = $("#ransstc").slider("value");
+				    $("#valuestc").html(value);
 				});
 								
 	

@@ -2,7 +2,9 @@
 @import url("../../../../css/steps.css");
 @import url("../../../../css/generally.css");
 @import url("../../../../css/componentes.css");
-
+input [type="text"]{
+	font-style: italic;
+}
 .tabstc{
 	margin: 0 auto;
 
@@ -112,6 +114,8 @@ area{
 	top: 15px;
 	width: 50%;
 	float: right;
+	margin-right: 15px;
+	height: 100px;
 }
 #infostc span {
 	display:inline-block;
@@ -173,7 +177,7 @@ input[type=button]{
 	width: 710px;
 	/*height: 315px;*/
 	height: 100%;
-	border:solid 1px silver;
+	/*border:solid 1px silver;*/
 	margin: 0 auto;
 	/*margin-top: 10px;*/
 	margin-top: 0px;
@@ -456,6 +460,13 @@ input[type=button]{
 	position: relative;
 	top:15px;
 		
+}
+.tarReco{
+	font-size: 20px;
+	color: #202020;
+	margin-left: 20px;
+	position: relative;
+	top:15px;
 }
 .tarrecstccards{
 	width: 400px;
@@ -799,26 +810,37 @@ margin-top: -30px;
 }
 .tdcadform{
 	background: #f4f4f4;
-	height: 150px;
+	height: 184px;
 	width: 530px;
 	float: left;
+	margin-left: 10px;
+	padding-left: 5px
 
 }
 .tdcadform input{
 	display: block;
-	width: 165%;
+	width: 150%;
+	border: none;
+	margin-top: 10px;
+	box-shadow: 0px 0px 1px #666;
+	border-radius: 3px;
 
 }
 .tdcadform label{
 	margin-top: 2px;
 	display: block;	
+	font-weight: bold;
+	color: #333;
 }
 .ldctdcad{
 	background: #f4f4f4;
 	float: right;
-	height: 150px;
+	height: 184px;
 	width: 22%;
 
+}
+.ldctdcad input{
+	width: 138px;	
 }
 .cardad{
 	background: url(../imagenes/tarjeta73_4.png);
@@ -953,7 +975,10 @@ input[type=file]{
 	margin-top: 10px;
 }
 .cardper{
-	background: url(../imagenes/infocard.png);
+	height: 45px;
+	width: 73px;
+	background: url(../imagenes/tarjeta73_8.png);
+	/*background-size: 130px;*/
 }
 .infopermod{
 	background:url(../imagenes/infoslct.png);
@@ -1002,5 +1027,12 @@ border-radius: 5px;
 }
 .tableStep2{
 	margin-left: 84px;
+	width: 500px;
+}
+.allinputsStc{
+	border: solid 1px silver;
+	margin-top: 10px;
+	padding: 5px;
+	text-align:right;
 }
 /***********************************************************************/
