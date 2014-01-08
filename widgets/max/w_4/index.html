@@ -28,16 +28,16 @@
 						<p>
 						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu1'); muestraServicios();" class=" w4_flu1_activo liActive">
+					<li onclick="cambiaFlujo('.wra_flu1'); muestraServicios(); $('#WA_pasos').show();" class=" w4_flu1_activo liActive">
 						<p>Pago de servicios</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu2'); visibilidad();" class="w4_flu2_activo">
+					<li onclick="cambiaFlujo('.wra_flu2'); visibilidad(); $('#WA_pasos').show();" class="w4_flu2_activo">
 						<p>Alta de servicios</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu3'); Gridius($('.tablaDinamica'),data);">
+					<li onclick="cambiaFlujo('.wra_flu3'); Gridius($('.tablaDinamica'),data); $('#WA_pasos').hide();">
 						<p>Consulta / baja de servicios</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu4'); Gridius($('.Tbl2'),dataTbl2);">
+					<li onclick="cambiaFlujo('.wra_flu4'); Gridius($('.Tbl2'),dataTbl2); $('#WA_pasos').hide(); ">
 						<p>Consulta de pagos <br/> realizados/programados</p>
 					</li>
 				</ul>
