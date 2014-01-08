@@ -338,9 +338,10 @@ input[type=button]{
 }
 
 .tarrecstc{
-	width: 495px;
+	width: 518px;
+	/*width: 495px;*/
 	height: 260px;
-	margin-left:10px;
+	/*margin-left:10px;*/
 	float: left;
 	background:#f4f4f4;
 }	
