@@ -591,7 +591,7 @@ function Gridius(object, data) {
                     }
                     element += "<td " + adta + ">" + data.rowsValues[u] + "<input data-edit='false' class='editGrid' type='text'></td>";
                 }
-                element += (!data.configButton?"":"<td><div class='addGrid'></div><div class='delGrid'></div></td>")+"</tr>";
+                element += (!data.configButton ? "" : "<td><div class='addGrid'></div><div class='delGrid'></div></td>") + "</tr>";
             }
 
             $(".wrapGrid > table").html("<tr>" + thead + "</tr>");
@@ -606,9 +606,9 @@ function Gridius(object, data) {
             listenerGrid($('[data-id="' + ($(".wrapGrid").find("tr").size()) + '"]').find('.editGrid').parent());
         });
 
-        $(".editGrid").parent().on("click", function() {
+        /* $(".editGrid").parent().on("click", function() {
             listenerGrid($(this));
-        });
+        });*/
 
         $(".addGrid").click(function() {
             var self = $(this);
