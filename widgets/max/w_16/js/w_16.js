@@ -50,6 +50,21 @@ function cargaHtml(componente,url){
     $(componente).load(url);
 }
 
+function ocultaAsset(){
+    $("#WA_pasos>img").fadeOut(1);
+}
+
+function muestraAsset(){
+    $("#WA_pasos>img").fadeIn(1);
+}
+
+function bajaTarjeta(){
+	 $(".w_16_PS_baja").click(function(){
+        	$(this).parent().parent().fadeOut("slow");
+       }
+  
+});
+
 
 
 

@@ -5,6 +5,8 @@
 
 .titFlujo{
 	width:725px !important;
+	height:auto !important;
+	overflow:visible !important;
 }
 
 .btnheader>img{
@@ -24,15 +26,38 @@
 	height:475px !important;
 }
 
+.step1 .titFlujo>div:first-of-type{
+	margin-top:5px;
+}
+
+.step1 .titFlujo>div:nth-of-type(2) {
+	width: 245px;
+	float: left;
+	margin-top: 14px;
+	color: red;
+}
+
+.w10_HPG_miniBanner{
+	float:left;
+	width:197px;
+	height:43px;
+	background-image:url('../img/titPrograma_1.png');
+	background-size:100% 100%;
+}
+.w10_HPG_wra_Select3{
+	float:left;
+	margin:7px 0 0 10px;
+}
+
 .w10_HPG_seleccionTarjeta {
-width: 100%;
-height: 80px;
-float: left;
-background-color: #EFEFEF;
-font-family: Arial, Helvetica, sans-serif;
-color: #272727;
-font-size: 11px;
-margin-top: 10px;
+	width: 100%;
+	height: 70px;
+	float: left;
+	background-color: #EFEFEF;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #272727;
+	font-size: 11px;
+	margin-top: 10px;
 }
 
 .w10_HPG_tarjeta {
@@ -257,7 +282,7 @@ margin-top: 10px;
 	width:100%;
 	float:left;
 	text-align:left;
-	margin-top: 10px;
+	margin-top: 5px;
 	height: 30px;
 	color:#282828;
 	font-size:11px;
@@ -360,6 +385,11 @@ margin-top: 10px;
 }
 
 .w10_IT_inscribirTarjetas tr:hover{
+	background-color: #E2DFDF;
+	cursor:pointer;
+}
+
+.w10_IT_inscribirTarjetas_seleccionada{
 	background-color: #E2DFDF;
 	cursor:pointer;
 }
