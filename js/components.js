@@ -2,6 +2,34 @@ $(document).ready(function(){
   dropIsra();
   avatarFade(); 
   border();
+  
+  $(".w17_STC_selectorInteres1").click(function(){
+  	$("#menuredstc").children().removeClass("w17_STC_selectorInteres1select w17_STC_selectorInteres2select w17_STC_selectorInteres3select w17_STC_selectorInteres4select");
+  	$(this).addClass("w17_STC_selectorInteres1select");
+  	});
+  
+   $(".w17_STC_selectorInteres2").click(function(){
+  	 $("#menuredstc").children().removeClass("w17_STC_selectorInteres1select w17_STC_selectorInteres2select w17_STC_selectorInteres3select w17_STC_selectorInteres4select");
+  	$(this).addClass("w17_STC_selectorInteres2select");
+  	});
+  
+  $(".w17_STC_selectorInteres3").click(function(){
+  	 $("#menuredstc").children().removeClass("w17_STC_selectorInteres1select w17_STC_selectorInteres2select w17_STC_selectorInteres3select w17_STC_selectorInteres4select");
+  	$(this).addClass("w17_STC_selectorInteres3select");
+  	});
+
+	$(".w17_STC_selectorInteres4").click(function(){
+  	 $("#menuredstc").children().removeClass("w17_STC_selectorInteres1select w17_STC_selectorInteres2select w17_STC_selectorInteres3select w17_STC_selectorInteres4select");
+  	$(this).addClass("w17_STC_selectorInteres4select");
+  	});
+  	
+  	$("#menuredstc div").click(function(){
+  		$("#cardsstc").fadeOut("fast",function(){
+  			$("#cardsstc").fadeIn("fast");
+  			});
+  		});
+  	
+
 
   $("#WA_nav li").click(function(){
     if($(this).attr("class")=="menu") return false;
