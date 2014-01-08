@@ -28,16 +28,16 @@
 						<p>
 						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu1'); muestraServicios(); $('.ocultaPaso').show();" class=" w4_flu1_activo liActive">
+					<li onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(1); muestraServicios(); $('.ocultaPaso').show();" class=" w4_flu1_activo liActive">
 						<p>Pago de servicios</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu2'); visibilidad(); $('.ocultaPaso').show();" class="w4_flu2_activo">
+					<li onclick="cambiaFlujo('.wra_flu2'); cambiaPaso(1); visibilidad(); $('.ocultaPaso').show();" class="w4_flu2_activo">
 						<p>Alta de servicios</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu3'); Gridius($('.tablaDinamica'),data); $('.ocultaPaso').hide();">
+					<li onclick="cambiaFlujo('.wra_flu3'); cambiaPaso(1); Gridius($('.tablaDinamica'),data); $('.ocultaPaso').hide();">
 						<p>Consulta / baja de servicios</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu4'); Gridius($('.Tbl2'),dataTbl2); $('.ocultaPaso').hide(); ">
+					<li onclick="cambiaFlujo('.wra_flu4'); cambiaPaso(1); Gridius($('.Tbl2'),dataTbl2); $('.ocultaPaso').hide(); ">
 						<p>Consulta de pagos <br/> realizados/programados</p>
 					</li>
 				</ul>
