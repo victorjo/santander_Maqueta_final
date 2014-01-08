@@ -591,7 +591,7 @@ function Gridius(object, data) {
                     }
                     element += "<td " + adta + ">" + data.rowsValues[u] + "<input data-edit='false' class='editGrid' type='text'></td>";
                 }
-                element += "<td><div class='addGrid'></div><div class='delGrid'></div></td></tr>";
+                element += (!data.configButton?"":"<td><div class='addGrid'></div><div class='delGrid'></div></td>")+"</tr>";
             }
 
             $(".wrapGrid > table").html("<tr>" + thead + "</tr>");
