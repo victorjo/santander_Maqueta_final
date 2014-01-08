@@ -626,3 +626,8 @@ margin: 0 !important; }
     margin-left:10px;          
   	display:none;
 }
+
+.toolsGrid img{
+	margin-top: 5px !important;
+	margin-left: 4px !important;
+}

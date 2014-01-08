@@ -591,7 +591,7 @@ function Gridius(object, data) {
                     }
                     element += "<td " + adta + ">" + data.rowsValues[u] + "<input data-edit='false' class='editGrid' type='text'></td>";
                 }
-                element += (!data.configButton ? "" : "<td><div class='addGrid'></div><div class='delGrid'></div></td>") + "</tr>";
+                element += "<td><div class='addGrid'></div><div class='delGrid'></div></td>" + "</tr>";
             }
 
             $(".wrapGrid > table").html("<tr>" + thead + "</tr>");
@@ -652,7 +652,7 @@ function showGridTools(obj) {
         return false;
     }
     parentObj.attr('data-active', true);
-    var tools = $('<div class="toolsGrid"><ul><li>D</li><li>E</li><li>P</li></ul></div>');
+    var tools = $('<div class="toolsGrid"><ul><li><img src="../img/assets/basura.png"/></li> <li><img src="../img/assets/editar.png"/></li><li><img src="../img/assets/imprimir.png"/></li></ul></div>');
     $('body').append(tools);
     tools.css({
         top: obj.offset().top - 56,
