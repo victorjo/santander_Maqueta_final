@@ -30,6 +30,7 @@
 	font-family:'Arial';
 	font-size:11px;
 	color:#272727;
+	margin-left: 6px;
 }
 
 .w4_top{
@@ -282,13 +283,13 @@
 	float: left;
 	margin-left: 10px;
 	margin-top: 10px;
-	font-family:'ArialBlack';
+	font-family:'Arial';
 	font-size:11px;
 }
 
 .w4_PS_consultaPS{
 	width:705px;
-	height: auto;
+	height: 52px;
 	float: left;
 	
 }
@@ -866,7 +867,7 @@
 
 .w4_dropList{
 	margin-top: 10px;
-	margin-left: 10px;
+	margin-left: 6px;
 }
 
 
@@ -904,4 +905,19 @@
 .w4_HPG_personalizarIntervalo:hover{
 	border-color:#ff0000;
 	cursor:pointer;
+}
+
+.w4_PS_ayuda{
+	position:absolute;
+	bottom:0;
+	left:8px;
+}
+
+.w4_PS_ayuda p{
+	color: #282828;
+	font-family: 'ArialBlack';
+	font-size: 11px;
+	position: absolute;
+	left: 12px;
+	bottom: 185px;
 }

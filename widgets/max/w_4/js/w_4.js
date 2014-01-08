@@ -1,18 +1,18 @@
 var ddData = [{
-    text: "1234****5678 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Producto Santander &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Alias &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
+    text: "1254789632145 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ferrarri &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  A_PP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
     value: 1,
     selected: false,
 }, {
-    text: "1234****5678 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Producto Santander &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Alias &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
+    text: "48796512034858 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Porshe &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  C_XX &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
     value: 2,
     selected: false,
 
 }, {
-    text: "1234****5678 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Producto Santander &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Alias &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
+    text: "1201254789632 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ford &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  N_LT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
     value: 3,
     selected: false,
 }, {
-    text: "1234****5678 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Producto Santander &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Alias &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
+    text: "1235469854656 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nissan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  G_T7 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
     value: 4,
     selected: false,
 }];
@@ -73,7 +73,7 @@ var datacat = [{
     selected: false,
 
 }, {
-    text: "colegio",
+    text: "Colegio",
     value: 3,
     selected: false,
 }];
@@ -377,7 +377,13 @@ $(document).ready(function() {
         textoServicio = $(this).find('p').text();
     });
 
+    $('#sube').click(function() {
+        $('.w4_AS_listado').slideUp();
+    });
 
+    $('#baja').click(function() {
+        $('.w4_AS_listado').slideToggle();
+    });
 });
 
 function visibilidad() {
