@@ -25,6 +25,119 @@ var datados = {
     rowsValues: ['Nombre', '1234****5678', 'Alias de cuenta', 'Nombre Banco', 'correo@correo.com'],
     numRows: 2
 }
+// info para los droplis del flujo 4
+var data1 = [{
+    text: "1 mes sin interes",
+    value: 1,
+    selected: false,
+}, {
+    text: "2 meses sin intereses",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "3 meses sin intereses",
+    value: 3,
+    selected: false,
+}];
+
+var data2 = [{
+    text: "3 dias",
+    value: 1,
+    selected: false,
+}, {
+    text: "4 dias",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "1 día",
+    value: 3,
+    selected: false,
+}];
+
+var datacat = [{
+    text: "Telefonía",
+    value: 1,
+    selected: false,
+}, {
+    text: "Transporte",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "colegio",
+    value: 3,
+    selected: false,
+}];
+
+var dataubic = [{
+    text: "Distrito Federal",
+    value: 1,
+    selected: false,
+}, {
+    text: "Guadalajara",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "Michoacán",
+    value: 3,
+    selected: false,
+}];
+
+var databusqueda = [{
+    text: "Últimos 5 pagos",
+    value: 1,
+    selected: false,
+}, {
+    text: "Último mes",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "Últimos 3 meses",
+    value: 3,
+    selected: false,
+}];
+
+var dataEstatus = [{
+    text: "Programados",
+    value: 1,
+    selected: false,
+}, {
+    text: "Exitosos",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "No exitoso",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "Todos",
+    value: 3,
+    selected: false,
+}];
+
+var datoRango = [{
+    text: "999,999,999,00(MXP)",
+    value: 1,
+    selected: false,
+}, {
+    text: "999,999,999,00(MXP)",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "999,999,999,00(MXP)",
+    value: 3,
+    selected: false,
+}];
+
+var identificador = 0;
+//hasta aqui los droplistdel flujo4 
 
 $(function() {
 
@@ -40,42 +153,38 @@ $(function() {
         }
     });
 
-    $(".btnaction2").click(function(){
+    $(".btnaction2").click(function() {
 
-                if ($(this).hasClass("btnaction2")) {
-                    $(this).removeClass("btnaction2");
-                    $(this).addClass("btnaction");
-                }
-               
-               else{
-                    $(this).removeClass("btnaction");
-                    $(this).addClass("btnaction2");
-                }
-                
-                $(this).parent().next().slideToggle("slow");
-            });
+        if ($(this).hasClass("btnaction2")) {
+            $(this).removeClass("btnaction2");
+            $(this).addClass("btnaction");
+        } else {
+            $(this).removeClass("btnaction");
+            $(this).addClass("btnaction2");
+        }
 
-    $(".btnaction").click(function(){
+        $(this).parent().next().slideToggle("slow");
+    });
 
-                if ($(this).hasClass("btnaction")) {
-                    $(this).removeClass("btnaction");
-                    $(this).addClass("btnaction2");
-                }
+    $(".btnaction").click(function() {
 
-               else{
-                    $(this).removeClass("btnaction2");
-                    $(this).addClass("btnaction");
-                }
-                
-                $(this).parent().next().slideToggle("slow");
-            });
+        if ($(this).hasClass("btnaction")) {
+            $(this).removeClass("btnaction");
+            $(this).addClass("btnaction2");
+        } else {
+            $(this).removeClass("btnaction2");
+            $(this).addClass("btnaction");
+        }
 
-    $(".w8_CRAB_dropHdr1").children(".toggle").click(function(){
+        $(this).parent().next().slideToggle("slow");
+    });
+
+    $(".w8_CRAB_dropHdr1").children(".toggle").click(function() {
         $(".w8_CRAB_wraFormulario").slideUp("slow");
         $(".w8_CRAB_dropHdr2").children(".btnaction").removeClass("btnaction").addClass("btnaction2");
     });
 
-    $(".w8_CRAB_dropHdr2").children(".toggle").click(function(){
+    $(".w8_CRAB_dropHdr2").children(".toggle").click(function() {
         $(".tablaDinamica").slideUp("slow");
         $(".w8_CRAB_dropHdr1").children(".btnaction").removeClass("btnaction").addClass("btnaction2");
     })
