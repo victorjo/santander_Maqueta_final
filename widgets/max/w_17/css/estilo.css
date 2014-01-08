@@ -85,7 +85,7 @@ area{
 #selformentrega{
 	width: 718px;
 	height: 125px;
-	background: #fff;
+	background: #efefef;
 	margin: 0 auto;
 }
 #selformentrega #stc{
@@ -93,6 +93,8 @@ area{
 	height: 30px;
 	margin-top: 35px;
 	margin-left:-175px;
+	border-radius: 5px;
+	border: 1px solid silver;
 }
 #selformentrega form{
 	float: left;
@@ -105,7 +107,7 @@ area{
 	left:15px;
 }
 #infostc{
-	
+	background: #fff;
 	position: relative;
 	top: 15px;
 	width: 50%;
@@ -113,7 +115,9 @@ area{
 }
 #infostc span {
 	display:inline-block;
-	color:silver;
+	color: #1d1d1d;
+	margin-top: 5px;
+	margin-left: 7px
 }
 #infostc > span:nth-of-type(2){
 	
@@ -121,7 +125,7 @@ area{
 }
 #infostc > span:nth-of-type(2) p{
 	/*line-height: 0px;*/
-	color: #000;
+	color:silver;
 }
 #terminostc{
 	margin-left: 10px;
@@ -712,6 +716,7 @@ margin-top: -30px;
 	font-weight: bold;
 	margin-left: 10px;
 	margin-top:10px;
+	font-size: 11px;
 }
 .rangealc{
 	
@@ -817,7 +822,7 @@ margin-top: -30px;
 }
 .bt{
 	width: 150px;
-	margin-top: 70px;
+	margin-top: 18px;
 	margin-left: 13px;
 }
 .cardper{
@@ -832,4 +837,39 @@ input[type="file"]{
 .cardper{
 	background: url(../imagenes/infocard.png);
 }
+.infopermod{
+	background:url(../imagenes/infoslct.png);
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	left: 200px;
+	bottom: 81px;
+	cursor:pointer;
+}
+.msgper{
+	height: 62px;
+	width: 150px;
+	position: absolute;
+	top: 112px;
+	left: 67px;
+	background: #fff;
+	box-shadow: 2px 2px 4px #333;
+	display: none;
+}
+.tex{
+	height: 50px;
+	width: 130px;
+	margin-left: 8px;
+	margin-top: 3px;
+	font-size: 12px;
+
+}
+.radsetjr{
+	background: red;
+	width:10px;
+	height:10px; 
+	border:solid 1px; 
+	border-radius:50%;;
+}
+
 /***********************************************************************/
