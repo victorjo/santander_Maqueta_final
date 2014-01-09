@@ -84,3 +84,18 @@
 .wrapGrid>table>tbody>tr:not(:first-child) {
 	height:50px !important;
 }
+
+.w1_PS_ayuda{
+    position:absolute;
+    bottom:0;
+    left:8px;
+}
+
+.w1_PS_ayuda p{
+    color: #282828;
+    font-family: 'ArialBlack';
+    font-size: 11px;
+    position: absolute;
+    left: 12px;
+    bottom: 185px;
+}
