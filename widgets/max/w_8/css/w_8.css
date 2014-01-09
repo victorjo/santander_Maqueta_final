@@ -17,11 +17,18 @@
 .wra_flu2{
 	display:none;
 }
+.wra_flu3{
+	display:none;
+}
+.wra_flu4{
+	display:none;
+}
 
 .linkEditar{
 	color:#ff0000 !important;
 	text-decoration: none;
 }
+
 
 .w8_EC_contenidodatos1 {
 background: #efefef;
@@ -776,6 +783,6 @@ margin-left: 680px;
 	margin-top: 10px;
 }
 
-.w8_btn_exportar{ 	
+.w8_btn_exportar{
 	float: right;
 }

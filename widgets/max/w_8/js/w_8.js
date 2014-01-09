@@ -14,17 +14,6 @@ var ddData = [{
 
 }];
 
-var data = {
-    colums: ['Fecha', 'Descripción', 'Referencia', 'Cuenta de cargo', 'Cuenta destino', 'Importe', 'Estatus'],
-    rowsValues: ['dd/mm/aaaa', '123456789123', '123456789123', '1234****7890', '1234****7890', '999,999,999.00', 'Exitosa'],
-    numRows: 10
-}
-
-var datados = {
-    colums: ['Titular de la cuenta', 'Número de cuenta', 'Alias', 'Banco', 'Correo del titular'],
-    rowsValues: ['Nombre', '1234****5678', 'Alias de cuenta', 'Nombre Banco', 'correo@correo.com'],
-    numRows: 2
-}
 // info para los droplis del flujo 4
 var data1 = [{
     text: "1 mes sin interes",
@@ -282,6 +271,14 @@ $(function() {
 
     });
 
+    Gridius($('.tablaDinamica2'), {
+        hasStatus: true,
+        configButton: true,
+        colums: ['Fecha', 'Descripción', 'Referencia', 'Cuenta de cargo', 'Cuenta destino', 'Importe', 'Estatus'],
+        rowsValues: ['10/01/2014', '123456789123', '123456789123', '12547825ASD1', '12547825ASD1', '999,999,999.00', ''],
+        numRows: 10
+    });
+    //Gridius($('.tablaDinamica'), datados);
 })();
 
 
