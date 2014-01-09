@@ -91,9 +91,9 @@
 				$("#cpcard ul li:first").removeClass("ll")
 				$("#cpcard ul li:first img").css("width","130px");
 				$("#cpcard ul li:first img").css("height","70px");
-				$("#cpcard ul li:first .delete").fadeOut("fast");
-				/*$("#cpcard ul li:first .delete").css("height","15px");
-				$("#cpcard ul li:first .delete").css("height","14px");*/
+				//$("#cpcard ul li:first .delete").fadeOut("fast");
+				$("#cpcard ul li:first .delete").css("height","15px");
+				$("#cpcard ul li:first .delete").css("height","14px");
 				$("#cpcard ul li:first img").css("margin-left","20px");
 				$("#cpcard ul li:first .sometextcardstc").css("margin-top","11px");
 				$("#cpcard ul li:first .sometextcardstc").css("width","170px");
