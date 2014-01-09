@@ -12,7 +12,7 @@ $(document).ready(function() {
 
     }, function() {
         $(this).css({
-            "box-shadow": "none",
+            "box-shadow": "none", 
             "border": "none"
         });
     });
