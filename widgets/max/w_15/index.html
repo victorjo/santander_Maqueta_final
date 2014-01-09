@@ -1,9 +1,13 @@
-﻿		<script src="../../../js/components.js"></script>
-		<script src="../../../js/ddSlick.js"></script>
-		<link rel="stylesheet" href="../../../css/generally.css" />
+﻿		<link rel="stylesheet" href="../../../css/generally.css" />
 		<link rel="stylesheet" href="../../../css/componentes.css" />
-		
+		<script src="../../../js/ddSlick.js"></script>
+		<script src="../../../js/components.js"></script>
+		<script src="widgets/max/w_15/js/w_15.js"></script>
+		<script src="../../../js/ui/jquery-ui-1.10.3.custom.min.js"></script>
+		<link rel="stylesheet" href="widgets/max/w_15/css/w_15.css" />
+
 		<div id="widampliado">
+
 			<div id="bloqueoWidget" class="bloqueoElement"></div>
 			<div id="elementBloqueo" class="bloqueoElement">
 				
@@ -24,16 +28,234 @@
 						<p>
 						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
 					</li>
-					<li>
+					<li class="liActive"onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);ocultaAsset(); "class="liActive">
 						<p>Disposición de Créditos</p>
-					</li>
-					<li>
+					</li>					
+					<li onclick="cambiaFlujo('.wra_flu2')">
 						<p>Consulta de créditos</p>
+					</li>
+					<li onclick="cambiaFlujo('.wra_flu3')">
+						<p>Aplicación de meses de gracia</p>
 					</li>
 				</ul>
 			</div>
 			<div id="WA_contenedorFlujos">
 				<div class="contenidoFlujo">
+					<div class="flujo wra_flu1">
+						<div class="step step1">
+							<div class="titFlujo">
+								<div class="iconFlujo">
+									<img src="../../../img/assets/update.png"/>
+								</div>
+								<p class="titulo">Entre cuentas propias Santander</p>
+								<p class="subtitulo">Introduzca el nombre, alias o los cuatro dígitos de la cuenta destino / cuenta de cargo o seleccionela de la lista</p>
+							</div>
+						</div>
+					</div>
+
+				<div class="flujo wra_flu2">
+					<div class="step step1">
+						<div class="titFlujo">
+								<div class="iconFlujo">
+									<img src="../../../img/assets/update.png"/>
+								</div>
+								<p class="titulo">Seleccione el crédito que quiera consultar.</p>								
+							</div>
+							<div class="contenidoFlujo">
+
+
+					<div class="w20_DC_contenidodatos">
+						<img src="img/iconos/card.png">
+						<div style=" width:10%;float:left;margin-top:0px;margin-left:28px;">
+							<select>
+							<option>1234****5678  </option>
+							<option>1234****7890  </option>
+							<option>3334****5678  </option>
+							<option>1234****6542  </option>
+						
+							</select>
+						</div>
+
+						<p>Producto <br><i>Tarjeta Santander </i></p>
+						<p>Alias <br><i>Papa</i> </p>
+
+					</div>
+
+					<div class="w20_DC_subtitulo2">A continuación podrá ver los pagos realizados a su crédito. </div>
+							<table class="w20_DC_consulta">
+								<tr>
+									<td>N&uacute;mero de pago</td>
+									<td>Fecha y hora de pago</td>
+									<td>Importe (MXP)</td>
+									<td>Saldo (MXP)</td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+
+						<div  class="w20_DC_cuadroTarjeta">
+								<table class="w20_DC_cardList">
+									<tr>
+										<td></td>
+										<td>5 - 48</td>
+										<td >02/01/2014  13:00 </td>
+										<td >10,000.00</td>
+										<td >50,000.00</td>
+										<td ></td>
+										<td ></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>4 - 48</td>
+										<td >05/01/2014  17:00 </td>
+										<td >23,000.00</td>
+										<td >25,000.00</td>
+										<td ></td>
+										<td ></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>3 - 48</td>
+										<td >13/01/2014  18:00 </td>
+										<td >13,000.00</td>
+										<td >44,000.00</td>
+										<td ></td>
+										<td ></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>2 - 48</td>
+										<td >15/01/2014  11:00 </td>
+										<td >8,500.00</td>
+										<td >13,000.00</td>
+										<td ></td>
+										<td ></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>1 - 48</td>
+										<td >21/01/2014   9:00</td>
+										<td >17,400.00</td>
+										<td >22,550.00</td>
+										<td ></td>
+										<td ></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>1 - 48</td>
+										<td >21/01/2014   9:00</td>
+										<td >17,400.00</td>
+										<td >22,550.00</td>
+										<td ></td>
+										<td ></td>
+									</tr>
+
+									<tr class="w20_DC_deshabilitado">
+										<td></td>
+										<td>5 - 48</td>
+										<td >dd/mm/aaaa 12:00 </td>
+										<td >999,999,999.00</td>
+										<td >999,999,999.00</td>
+										<td ></td>
+										<td ></td>
+									</tr>
+
+
+								</table>
+	
+							</div>
+
+					<div class="w20_DC_contenidodatosdo"> 
+									<p>Pagos efectuados <br>Saldo neto pagado (incluye intereses) </p>
+									<p><i>10 - 48  <br>54,325.00 (MXP)</i></p>
+									<p>Saldo pendiente de pago (incluye intereses)</p>
+									<p><i>32,890.00 (MXP)</i></p>
+								</div>
+
+								<div class="w8_CC_exportar"><img src="img/assets/Exportar.png"></div>
+
+								<div class="botonera">
+								<div class="btnaceptar"  onclick="cambiaFlujo('.wra_flu2');cambiaPaso(2);$('.w8_AC_tabla').load('../../../../tablas/w8/w8_tblPaso2_2.html')">Continuar</div>
+							</div>
+
+
+					
+				</div>
+					</div>
+				</div>	
+			<div class="flujo wra_flu3">
+				<div class="step step1">
+					<div class="titFlujo">
+								<div class="iconFlujo">
+									<img src="../../../img/assets/update.png"/>
+								</div>
+								<p class="titulo">Disposición de créditos</p>
+								<p class="subtitulo">De vuelta a la perilla y elija cuánto del crédito desea utilizar y/o el plazo a pagar.</p>			
+							</div>
+					<div class="contenidoFlujo">
+
+
+					<div class="w20_DC_contenidodatos">  
+						<img src="img/iconos/card.png">
+						<div style=" width:10%;float:left;margin-top:0px;margin-left:28px;">
+							<select>
+							<option>1234****5678  </option>
+							<option>1234****5678  </option>
+							<option>1234****5678  </option>
+							<option>1234****5678  </option>
+						
+							</select>
+						</div>
+
+						<p>Producto <br><i>Tarjeta Santander </i></p>
+						<p>Alias <br><i>35.000</i> </p>
+
+					</div>
+
+					<div class="w20_DC_subtitulo2">A continuación se muestran los meses de gracia ocupados y disponibles. </div>
+							<table class="w20_DC_consulta">
+								<tr>
+									<td>Meses de gracia</td>
+									<td></td>
+									<td>Fecha de aplicación</td>
+									<td></td>
+									<td></td>
+									
+								</tr>
+							</table>
+
+						<p class="w8_AMG_textoabajo">Seleccione el mes en que desea que se aplique(n) el (los) mes(es) de gracia disponible(s)</p>
+
+						<div style=" width:100%;float:left;margin-top:-6px;margin-left:9px;position:relative">
+							
+
+						<select class="textbox_CC" name="" id="">
+										<option value="3">Mes</option>
+										<option value="">Mes</option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+									</select>
+						
+
+						<select class="textbox_CC" name="" id="">
+										<option value="3">Año</option>
+										<option value="">Año</option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+									</select>
+
+
+
+					
+
+					
+						</div>
+
+					</div>
+				</div>			
+				</div>
 					
 				</div>
 		    </div>
