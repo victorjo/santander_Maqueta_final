@@ -65,6 +65,7 @@ $(document).ready(function(){
 });
 
 function border(obj){
+  return false;
 	$("#wrappWidgets").hide().show();
 	var ojec = obj || ".widget-min";
 	$(ojec).hover(function(){
