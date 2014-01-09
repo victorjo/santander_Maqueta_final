@@ -31,16 +31,16 @@
 						<p>
 						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu1');elf();" class=" w4_flu1_activo liActive">
+					<li id="m1" onclick="cambiaFlujo('.wra_flu1');elf();" class=" w4_flu1_activo liActive">
 						<p>Solicitar tarjeta de credito</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu2');muestraAsset();elf();">
+					<li id="m2" onclick="cambiaFlujo('.wra_flu2');muestraAsset();elf();">
 						<p>Solicitar tarjeta adicional</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu3');muestraAsset();elf();">
+					<li id="m3" onclick="cambiaFlujo('.wra_flu3');muestraAsset();elf();">
 						<p>Aumentar linea de crédito</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu4');ocultaAsset();elf();"> 
+					<li id="m4" onclick="cambiaFlujo('.wra_flu4');ocultaAsset();elf();"> 
 						<p>Consulta de solicitudes</p>
 					</li>
 				</ul>
@@ -50,8 +50,23 @@
 					<div class="iconFlujo">
 						<img src="../../../img/assets/ico_cuentas_propias.png"/>
 					</div>
-					<p class="titulo">Solicitar tarjeta</p>
-					<p class="subtitulo">Seleccione la tarjeta de su interés, o proporcione los datos para obtener la tarjeta ideal para usted</p>
+					<div id="headerStc"> 
+						<p class="titulo" id="t1">Solicitar tarjeta de credito</p>
+						<p class="subtitulo">Seleccione la tarjeta de su interés, o proporcione los datos para obtener la tarjeta ideal para usted</p>
+					</div>
+					<div id="headerStc2" style="display:none"> 
+						<p class="titulo" id="t1">Solicitar tarjeta adicional</p>
+						<p class="subtitulo">Seleccione la tarjeta de su interés, o proporcione los datos para obtener la tarjeta ideal para usted</p>
+					</div>
+					<div id="headerStc3" style="display:none"> 
+						<p class="titulo" id="t1">Aumentar linea de crédito</p>
+						<p class="subtitulo">Seleccione la tarjeta de su interés, o proporcione los datos para obtener la tarjeta ideal para usted</p>
+					</div>
+					<div id="headerStc4" style="display:none"> 
+						<p class="titulo" id="t1">Consuta de solicitados</p>
+						<p class="subtitulo">Seleccione la tarjeta de su interés, o proporcione los datos para obtener la tarjeta ideal para usted</p>
+					</div>
+					
 
 				</div>
 				<div class="contenidoFlujo">
@@ -91,88 +106,99 @@
 										<div id="concardstc">
 											<ul id="slidestc">
 												<li>
-													<img src="widgets/max/w_17/imagenes/tarjeta73_1.png">
+													<img id="myimgstc" src="widgets/max/w_17/imagenes/tarjeta73_1.png">
 													<div class="sometextcardstc">
 													<p><b>Santander Black</b></p>
-													Promociones exclusivas en viajes, hoteles, restaurantes, tiendas de prestigio, pagos diferidos.	
+													Comisiones: apertura, anualidad, disposición de efectivo.
+													Puntos: 4% en compras.	
 													</div>
 												</li>
-												<li>
+												<li class="xcg">
 													<img src="widgets/max/w_17/imagenes/tarjeta73_2.png">
 													<div class="sometextcardstc">
 													<p><b>Santander Unik</b></p>
-													Puedes realizar disposiciones de efectivo en más de 930 mil Cajeros Automáticos a nivel Internacional.
+													Comisiones: apertura, anualidad, reposición.
+													Puntos: 15% en compras.
 													</div>
 												</li>
-												<li>
+												<li class="xcg">
 													<img src="widgets/max/w_17/imagenes/tarjeta73_3.png">
 													<div class="sometextcardstc">
 													<p><b>Santander Unik</b></p>
-													3 puntos por cada dólar en consumos con la tarjeta en cualquier establecimiento.
-													3 puntos por cada dólar en consumos con la tarjeta en cualquier establecimiento.
+													Comisiones: apertura, disposición de efectivo, reposición.
+													Puntos: 20% en compras.
 													</div>
 												</li>
-												<li>
+												<li class="xcg">
 													<img src="widgets/max/w_17/imagenes/tarjeta73_4.png">
 													<div class="sometextcardstc">
 													<p><b>Santander Ligt</b></p>
-													Ofrece una de las tasas más bajas del mercado: por contrato pagas máximo TIIE + 29 puntos de interés al año.
+													Comisiones: anualidad, disposición de efectivo, reposición.
+													Puntos: 15% en compras.
 													</div>
 												</li>
-												<li>
+												<li class="xcg">
 													<img src="widgets/max/w_17/imagenes/tarjeta73_5.png">
 													<div class="sometextcardstc">
 													<p><b>Santander Rewards Platino</b></p>
-													Canje de puntos, por noches de hotel, boletos de avión, renta de autos, productos para él y ella, regalos y mucho más.
+													Comisiones: apertura, anualidad, disposición de efectivo.
+													Puntos: 25% en compras.
 													</div>
 												</li>
-												<li>
+												<li class="xcg">
 													<img src="widgets/max/w_17/imagenes/tarjeta73_6.png">
 													<div class="sometextcardstc">
 													<p><b>Santander Unik</b></p>
-													Ofrece una de las tasas más bajas del mercado: por contrato pagas máximo TIIE + 29 puntos de interés al año.
+													Comisiones: disposición de efectivo, reposición.
+													Puntos: 30% en compras.
 													</div>
 												</li>
-												<li>
+												<li class="xcg">
 													<img src="widgets/max/w_17/imagenes/tarjeta73_7.png">
 													<div class="sometextcardstc">
 													<p><b>Fiesta rewards</b></p>
-													Bono de 10% adicional en puntos sobre el total facturado en su hospedaje siendo nivel Fiesta Rewards Oro.	
+													Comisiones: apertura, anualidad, dreposición.
+													Puntos: 25% en compras.	
 													</div>
 												</li>
-												<li>
+												<li class="xcg">
 													<img src="widgets/max/w_17/imagenes/tarjeta73_8.png">
 													<div class="sometextcardstc">
 													<p><b>Fiesta Santander</b></p>
-													Bono de 7,500 puntos en la primera compra, si ésta se hace dentro de los 100 primeros días a partir de que la tarjeta fue autorizada.
+													Comisiones: apertura, anualidad, disposición de efectivo, reposición.
+													Puntos: 6% en compras.
 													</div>
 												</li>
-												<li>
+												<li class="xcg">
 													<img src="widgets/max/w_17/imagenes/tarjeta73_1.png">
 													<div class="sometextcardstc">
 													<p><b>Fiesta pagana</b></p>
-													Promociones exclusivas en viajes, hoteles, restaurantes, tiendas de prestigio, pagos diferidos.		
+													Comisiones: apertura, anualidad.
+													Puntos: 9% en compras.	
 													</div>
 												</li>
-												<li>
+												<li class="xcg">
 													<img src="widgets/max/w_17/imagenes/tarjeta73_1.png">
 													<div class="sometextcardstc">
 													<p><b>Fiesta en America</b></p>
-													Promociones exclusivas en viajes, hoteles, restaurantes, tiendas de prestigio, pagos diferidos.	
+													Comisiones:  anualidad, disposición de efectivo, reposición.
+													Puntos: 50% en compras.	
 													</div>
 												</li>
-												<li>
+												<li class="xcg">
 													<img src="widgets/max/w_17/imagenes/tarjeta73_1.png">
 													<div class="sometextcardstc">
 													<p><b>Party Hardcore</b></p>
-													1 certificado electrónico de noche en cortesía por cada $30,000 pesos consumidos con la tarjeta (máximo 2 al año)	
+													Comisiones: apertura, anualidad.
+													Puntos: 40% en compras.	
 													</div>
 												</li>
-												<li>
+												<li class="xcg">
 													<img src="widgets/max/w_17/imagenes/tarjeta73_1.png">
 													<div class="sometextcardstc">
 													<p><b>Santander promo</b></p>
-													Promociones exclusivas en viajes, hoteles, restaurantes, tiendas de prestigio, pagos diferidos.	
+													Comisiones: apertura, anualidad, disposición de efectivo, reposición.
+													Puntos: 2% en compras.
 													</div>
 												</li>
 											</ul>
@@ -182,15 +208,15 @@
 									
 									<div id="infocardstc">
 											<div id="cpcard" style="width:93%; height:220px; margin:0 auto; margin-top:5px; display:none; overflow-y:scroll;">
-												<h3>Comparar Tarjetas</h3>
+												<h3 style="font-size:13px;">Comparar Tarjetas</h3>
 												<ul>
 													<!--<li></li>-->
 												</ul>	
 											</div>
 										<div class="frcts">
-											<div class="iconostc"></div><span>Fiesta Rewards</span>
+											<div class="iconostc"></div><span style="margin-right:96px; font-size:14; font-weight:bold;">Santander Light</span>
 											<div class="cardselectstc"></div>
-											<div class="descriptionstc"><span>Con fiesta rewards usted podra tener los mejores servicios en nuestros establecimientos, sin duda una experiencia inolvidable.</span></div>
+											<div class="descriptionstc"><span>La tarjeta de intereses bajos. Promociones exclusivas en viajes, hoteles, restaurantes, tiendas de prestigio, pagos diferidos.</span></div>
 											<!--<div id="cardselectstc2"></div>-->
 										</div>
 									</div>
@@ -213,18 +239,18 @@
 											<a href="#" class="beftarscts"><img src="widgets/max/w_17/imagenes/before.png" title="Anterior"></a>
 											<div class="concardstarrec">
 												<ul>
+													<li><div class="pr" style="background:;"><img src="widgets/max/w_17/imagenes/grupo2.png" width="235" height="80"></div></li>
 													<li><div class="pr" style="background:;"><img src="widgets/max/w_17/imagenes/grupo1.png" width="235" height="80"></div></li>
 													<li><div class="pr" style="background:;"><img src="widgets/max/w_17/imagenes/grupo3.png" width="235" height="80"></div></li>
-													<li><div class="pr" style="background:;"><img src="widgets/max/w_17/imagenes/grupo2.png" width="235" height="80"></div></li>
 													<!--<li><div class="pr" style="background:white;"><img src="widgets/max/w_17/imagenes/tarjeta169_1.png" width="169" height="80"></div></li>-->
 												</ul>
 											</div>
 											<a href="#" class="nextarscts"><img src="widgets/max/w_17/imagenes/next.png" title="Siguiente"></a>
 										</div>
-										<div class="iconostc .othericonstc" id="iconostc"></div>
+										<!--<div class="iconostc .othericonstc" id="iconostc"></div>-->
 										<div id="tarrecstctext">
-											<span class="tarReco">Fiesta rewards</span>
-											<p>Con fiesta rewards usted podra tener los mejores servicios en nuestros establecimientos, sin duda una experiencia inolvidable.</p>
+											<span class="tarReco">Santander Light</span>
+											<p>La tarjeta de intereses bajos. Promociones exclusivas en viajes, hoteles, restaurantes, tiendas de prestigio, pagos diferidos. Aceptada en más de 14 millones de establecimientos en todo el mundo.</p>
 										</div>
 									</div>	
 									<div id="tarrecinfostc">
@@ -336,8 +362,10 @@
 									</div>
 								</div>
 								<div id="terminostc">
-									<span>Por favor revise el clausulado de la solicitud de tarjeta de crédito</span><br>
-									<input type="checkbox" name="revstc" id="revstc"><span>He leido y acepto los terminos y condiciones<p><a href="https://servicios.santander.com.mx//tarjetas/imagenes/guias/terminos-y-condiciones-unlimited.pdf" target="_blank">Leer terminos y condiciones</a></p></span>
+									<span style="position: relative;
+										top: -15px;">Por favor revise el clausulado de la solicitud de tarjeta de crédito</span><br>
+									<input type="checkbox" name="revstc" id="revstc"><span style="position: relative;
+										top: -9px;">He leído y acepto los términos y condiciones<p><a href="https://servicios.santander.com.mx//tarjetas/imagenes/guias/terminos-y-condiciones-unlimited.pdf" target="_blank">Leer términos y condiciones</a></p></span>
 								</div>
 								
 								<!--<div class="submits">
@@ -420,9 +448,9 @@
 											<a href="#" class="beftarscts" id="bef"><img src="widgets/max/w_17/imagenes/before.png" title="Anterior"></a>
 											<div class="concardstarr" id="concardstarrec">
 												<ul>
+													<li><div class="pr" style="background:;"><img src="widgets/max/w_17/imagenes/grupo2.png" width="235" height="80"></div></li>
 													<li><div class="pr" style="background:;"><img src="widgets/max/w_17/imagenes/grupo1.png" width="235" height="80"></div></li>
 													<li><div class="pr" style="background:;"><img src="widgets/max/w_17/imagenes/grupo3.png" width="235" height="80"></div></li>
-													<li><div class="pr" style="background:;"><img src="widgets/max/w_17/imagenes/grupo2.png" width="235" height="80"></div></li>
 												</ul>
 												<!--<ul id="sliderstc">	
 													<li><div class="pr" style="background:silver;"><img src="widgets/max/w_17/imagenes/tarjeta169_2.png" width="169" height="80"></div></li>
@@ -436,22 +464,23 @@
 										</div>
 										<div class="frewardsstca">
 											<div class="contfre">
-												<div class="friconstc"></div>
-												<span>Fiesta Rewards</span>
+												<!--<div class="friconstc"></div>-->
+												<span>Santander Light</span>
 											</div>
 											
 											<div class="txtad">
-												Número de tarjeat: 1234 56789 4321<br/>
+												Número de tarjeta: 1234 56789 4321<br/>
 												Vigencia: 12/02/2013
 											</div>
 
 										</div>	
 										<div class="mistdcad"> 
 											<span>Mis tarjetas adicionales:</span>
-											<div class="tdcad" id="tdcad1"><img src="widgets/max/w_17/imagenes/tarjeta73_7.png"></div>
-											<div class="tdcad" id="tdcad2"><img src="widgets/max/w_17/imagenes/tarjeta73_6.png"></div>
-											<div class="tdcad" id="tdcad3"><img src="widgets/max/w_17/imagenes/tarjeta73_5.png"></div>
-											<div class="tdcad" id="tdcad4"><img src="widgets/max/w_17/imagenes/tarjeta73_3.png"></div>
+											
+											<div class="tdcad" id="tdcad2"><img width="73" height="46" src="widgets/max/w_17/imagenes/añadir.jpg"></div>
+											<div class="tdcad" id="tdcad3"><img width="73" height="46" src="widgets/max/w_17/imagenes/añadir.jpg"></div>
+											<div class="tdcad" id="tdcad4"><img width="73" height="46" src="widgets/max/w_17/imagenes/añadir.jpg"></div>
+											<div class="tdcad" id="tdcad1"><img src="widgets/max/w_17/imagenes/tarjeta73_4.png"></div>
 										</div>
 																		
 									</div>
@@ -537,8 +566,10 @@
 									</div>
 								</div>
 								<div id="terminostc">
-									<span>Por favor revise el clausulado de la solicitud de tarjeta de crédito</span><br>
-									<input type="checkbox" name="revstc" id="revstc"><span>He leido y acepto los terminos y condiciones<p><a href="https://servicios.santander.com.mx//tarjetas/imagenes/guias/terminos-y-condiciones-unlimited.pdf" target="_blank">Leer terminos y condiciones</a></p></span>
+									<span style="position: relative;
+										top: -15px;">Por favor revise el clausulado de la solicitud de tarjeta de crédito</span><br>
+									<input type="checkbox" name="revstc" id="revstc"><span style="position: relative;
+										top: -9px;">He leído y acepto los términos y condiciones<p><a href="https://servicios.santander.com.mx//tarjetas/imagenes/guias/terminos-y-condiciones-unlimited.pdf" target="_blank">Leer términos y condiciones</a></p></span>
 								</div>
 								<div class="botonera">
 									<div class="btn" onclick="cargaToken('switchModal()','switchModal()',cargaHtml(),'personaliza');">Personalizar tarjeta</div>
@@ -557,7 +588,7 @@
 												<div class="iconFlujo">
 													<img src="img/assets/ico_comprobante.png"/>
 												</div>
-												<p class="titulo">Solicitar Tarjeta de crédito</p>
+												<p class="titulo">Solicitar Tarjeta adicional</p>
 												<p class="subtitulo">La operación se realizará con la siguiente información</p>
 											</div>
 											<div class="w17_stc_tabla2"></div>
@@ -581,7 +612,7 @@
 										<div class="iconFlujo">
 											<img src="img/assets/ico_comprobante.png"/>
 										</div>
-										<p class="titulo">Comprobante de la solicitud de tarjeta aicional</p>
+										<p class="titulo">Comprobante de la solicitud de tarjeta adicional</p>
 										<p class="subtitulo"></p>
 									</div>
 									<div class="w17_stc_tabla3"></div>
@@ -594,7 +625,7 @@
 									<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
 								</div>
 								<div class="botonera">
-									<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(1);">Deseo solicitar otra tarjeta
+									<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(1);">Deseo otra adicional
 									</div>
 									<div class="btn" onclick="">Imprimir</div>
 									<div class="btnaceptar" onclick="closeAction()">Finalizar</div>
@@ -614,9 +645,9 @@
 											<a href="#" class="beftarscts" id="beftwo" ><img src="widgets/max/w_17/imagenes/before.png" title="Anterior"></a>
 											<div id="concardstarrectwo">
 												<ul>
+													<li><div class="pr" style="background:;"><img src="widgets/max/w_17/imagenes/grupo2.png" width="235" height="80"></div></li>
 													<li><div class="pr" style="background:;"><img src="widgets/max/w_17/imagenes/grupo1.png" width="235" height="80"></div></li>
 													<li><div class="pr" style="background:;"><img src="widgets/max/w_17/imagenes/grupo3.png" width="235" height="80"></div></li>
-													<li><div class="pr" style="background:;"><img src="widgets/max/w_17/imagenes/grupo2.png" width="235" height="80"></div></li>
 												</ul>
 												<!--<ul>	
 													<li><div class="pr" style="background:white;"><img src="widgets/max/w_17/imagenes/tarjeta169_1.png" width="169" height="80"></div></li>
@@ -629,8 +660,8 @@
 										</div>
 										<div class="frewardsstca">
 											<div class="contfre">
-												<div class="friconstc"></div>
-												<span>Fiesta Rewards</span>
+												<!--<div class="friconstc"></div>-->
+												<span>Santander Light</span>
 											</div>
 											
 											<div class="txtad">
@@ -664,7 +695,7 @@
 										</div>
 										<div class="rangealc tips" style="margin-top:10px; height:160px;">
 											<br/>
-											<p><b>Tips para disminuir su nivel de riesgo</b></p>
+											<p style="margin-left:17px;"><b>Tips para disminuir su nivel de riesgo</b></p>
 											<div class="text1alc">
 
 													<p>No proporcionar su número de tarjeta de 
@@ -700,7 +731,7 @@
 										<div class="iconFlujo">
 											<img src="img/assets/ico_comprobante.png"/>
 										</div>
-										<p class="titulo">Solicitar tarjeta adicional</p>
+										<p class="titulo">Aumentar linea de crédito</p>
 										<p class="subtitulo">La operación se realizará con la siguiente información</p>
 									</div>
 									<div class="w17_alc_tabla2"></div>

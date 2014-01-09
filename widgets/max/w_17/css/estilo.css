@@ -390,6 +390,7 @@ input[type=button]{
 	left: 5px;
 	
 }
+/*
 #cpcard ul .ll:after{
 	content: "....";
 	background:url("../imagenes/close.png")no-repeat;
@@ -399,6 +400,9 @@ input[type=button]{
 	float: right;
 	left: 5px;
 	cursor: pointer;
+}*/
+#cpcard ul li {
+	position:relative;
 }
 #infocardstc{
 	width: 240px;
@@ -415,11 +419,11 @@ input[type=button]{
 }
 
 .iconostc{
-	width:37px;
+	width:17px;
 	height:57px;
 	margin-left: 15px;
 	margin-top: 15px;
-	background: url("../imagenes/frewards.png");
+	/*background: url("../imagenes/frewards.png");*/
 	/*position: absolute;
 	left: 502px;
 	top: 112px;*/
@@ -484,7 +488,8 @@ input[type=button]{
 	height: 74px;
 	float: right;
 	margin-top: -35px;
-	margin-right: 45px;
+	/*margin-right: 45px;*/
+	margin-right: 89px;
 }
 #tarrecstctext span{
 	margin: 0;
@@ -900,11 +905,11 @@ margin-top: -30px;
 }
 .text1alc{
 	
-	width: 290px;
+	width: 265px;
 	height: 105px;
 	float: left;
 	margin-top: 5px;
-	margin-left: 3px;
+	margin-left: 17px;
 }
 .tips span{
 	font-weight: bold;
@@ -956,7 +961,7 @@ margin-top: -30px;
 	float: left;
 	position: relative;
 	top: -60px;
-	left: 150px;
+	left: 122px;
 	width: 200px;
 }
 .formcheckstc{
@@ -1041,5 +1046,40 @@ border-radius: 5px;
 	margin-top: 10px;
 	padding: 5px;
 	text-align:right;
+}
+.titFlujo{
+	height: 27px;
+}
+#tdcad1:after{
+
+	content: "....";
+	background:url("../imagenes/close.png")no-repeat;
+	position: relative; 
+	top: -62px;
+	left: 62px;
+
+}
+.concardstc{
+background: red;
+list-style: none;
+
+
+
+float: left;
+margin-left: 12px;
+margin-right: 10px;
+margin-top: 8px;
+margin-bottom: 13px;
+cursor: pointer;
+box-shadow: 4px 4px 4px silver;
+}
+
+.delete {
+	position:absolute;
+	bottom: 25px;
+float: right;
+left: 46px;
+cursor: pointer;
+z-index: 4000;
 }
 /***********************************************************************/

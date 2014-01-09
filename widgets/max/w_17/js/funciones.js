@@ -70,6 +70,7 @@
 		
 			$("#concardstc ul li").click(function(){
 				           
+				console.log($("#cpcard ul li ").length);
 	          if ($(this).hasClass("ll")) {
 	            $(this).removeClass("ll");
 	          }else{
@@ -79,7 +80,10 @@
 	          	},10000);
 				$(".frcts").slideUp();
 	          	$("#cpcard").slideDown();
-	            $(this).clone().appendTo("#cpcard ul");
+	          	var objectF = $(this).clone();
+	          	var delButton = "<div class='delete'><img style='width:100% !important;height:100% !important' src='widgets/max/w_17/imagenes/close.png'></div>";
+	          	$(delButton).appendTo(objectF);
+	            objectF.appendTo("#cpcard ul");
 
 				$("#cpcard ul li").css("cursor","pointer");
 				//$("#cpcard ul li:first").css("width","130px");
@@ -87,21 +91,35 @@
 				$("#cpcard ul li:first").removeClass("ll")
 				$("#cpcard ul li:first img").css("width","130px");
 				$("#cpcard ul li:first img").css("height","70px");
+				$("#cpcard ul li:first .delete").css("height","15px");
+				$("#cpcard ul li:first .delete").css("height","14px");
 				$("#cpcard ul li:first img").css("margin-left","20px");
 				$("#cpcard ul li:first .sometextcardstc").css("margin-top","11px");
 				$("#cpcard ul li:first .sometextcardstc").css("width","170px");
+				
 				if ($("#cpcard ul li").length>1) {
-					
-					$("#cpcard ul li:first").fadeOut();
+					$("#cpcard ul li:first img").css("margin-left","2px");
+					$("#cpcard ul li:first .sometextcardstc").css("margin-top","-15px");
+					$("#cpcard ul li:first img").css("width","53px");
+					$("#cpcard ul li:first img").css("height","30px");
+					$("#cpcard ul li:first").addClass("ll")
+					$("#cpcard ul li:first .sometextcardstc").css("margin-top","-34px");
+					$("#cpcard ul li:first .sometextcardstc").css("width","144px");
 				}
-				if ($("#cpcard ul li ").length == 0) {
+				/*if ($("#cpcard ul li ").length == 0) {
 
 					alert("Hola");
 					//$(".frcts").slideUp();
 
-				}
-				$("#cpcard ul li").click(function(){
-	            	$(this).remove();
+				}*/
+				$("#cpcard ul li > .delete").click(function(){
+					$(this).parent().remove();
+	            	if ($("#cpcard ul li").length) {
+	            		
+	            	}else{
+	            		$("#cpcard").slideUp();
+	            		$(".frcts").slideDown();
+	            	}
 	            });
 	          
 
@@ -174,5 +192,27 @@
 				    var value = $("#ransstc").slider("value");
 				    $("#valuestc").html(value);
 				});
+				$("#m1").click(function(){
+					//$("#headerStc").css("display","none");
+					//$("#headerStc2").css("display","none");
+					//$("#headerStc3").css("display","none");
+					$("#headerStc").css("display","inline");
+				})
+				$("#m2").click(function(){
+					$("#headerStc").css("display","none");
+					$("#headerStc2").css("display","inline");
+				})
+				$("#m3").click(function(){
+					//$("#headerStc").css("display","none");
+					$("#headerStc2").css("display","none");
+					$("#headerStc3").css("display","inline");
+				})
+				$("#m4").click(function(){
+					//$("#headerStc").css("display","none");
+					//$("#headerStc2").css("display","none");
+					$("#headerStc3").css("display","none");
+					$("#headerStc4").css("display","inline");
+				})
+					
 								
 	
