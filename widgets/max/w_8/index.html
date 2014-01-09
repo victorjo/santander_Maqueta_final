@@ -36,7 +36,7 @@
 					<li onclick="cambiaFlujo('.wra_flu2')">
 						<p>A otras cuentas</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu3');$('.w8_CRAB_wraFormulario').slideDown();">
+					<li onclick="cambiaFlujo('.wra_flu3'); $('.w16_PS_listadoTarjeta').hide(); $('.w16_PS_headerTabla').hide(); $('.w8_CRAB_wraFormulario').slideDown();">
 						<p>Cuentas registradas Alta / Baja</p>
 					</li>
 					<li onclick="cambiaFlujo('.wra_flu4');">
@@ -308,7 +308,7 @@
 
 			<div class="flujo wra_flu3">
 
-				<div class="step step0">
+				<div class="step step1">
 					<div class="titFlujo CAB">
 						<div class="iconFlujo">
 							<img src="../../../img/assets/User-card.png"/>
@@ -321,6 +321,44 @@
 					<div class="w8_CRAB_dropHdr1">
 						<p>Consulta</p>
 						<div class=" btnaction2 toggle"></div>						
+					</div>
+					<table class="w16_PS_headerTabla ">
+						<tr>
+							<td>Titular de la cuenta</td>
+							<td>Número de cuenta</td>
+							<td>Alias</td>
+							<td>Correo del titular</td>
+							<td></td>
+						</tr>
+					</table>
+					<div  class="w16_PS_listadoTarjeta">
+						<table class="w16_PS_cardList">
+						<!--onclick="cargaToken('switchModal();','switchModal();bajaTarjeta();',undefined,'');"-->
+							<tr>
+								
+								<td>Pablo Martínez</td>
+								<td>1234****5678</td>
+								<td>PM_13213</td>
+								<td>PM@gmail.com</td>
+								<td class="w_16_PS_baja"  onclick="cambiaPaso(2); cargaHtml('.w16_ABTT_tablaPaso2baja','../../../../tablas/w16/w16_ABTT_tblPaso2baja.html');"><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
+							</tr>
+							<tr>
+								
+								<td>Pablo Martínez</td>
+								<td>1234****5678</td>
+								<td>PM_13213</td>
+								<td>PM@gmail.com</td>
+								<td class="w_16_PS_baja" onclick="cambiaPaso(2); cargaHtml('.w16_ABTT_tablaPaso2baja','../../../../tablas/w16/w16_ABTT_tblPaso2baja.html');"><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
+							</tr>
+							<tr>
+								
+								<td>Pablo Martínez</td>
+								<td>1234****5678</td>
+								<td>PM_13213</td>
+								<td>PM@gmail.com</td>
+								<td class="w_16_PS_baja" onclick="cambiaPaso(2); cargaHtml('.w16_ABTT_tablaPaso2baja','../../../../tablas/w16/w16_ABTT_tblPaso2baja.html');"><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
+							</tr>
+						</table>
 					</div>					
 					<!--<div class="tablaDinamica"></div>-->
 
@@ -386,7 +424,7 @@
 						</div> 
 
 						<div class="botonera">
-								<div class="btn" onclick="cambiaFlujo('.wra_flu3');cambiaPaso(0);">Regresar</div>
+								<div class="btn" onclick="cambiaPaso(1);">Regresar</div>
 								<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w8/w8_CAB_tblPaso3.html'),'');">Confirmar</div>
 							</div>  
 					

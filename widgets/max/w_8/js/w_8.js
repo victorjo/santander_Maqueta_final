@@ -217,7 +217,9 @@ $(function() {
             $(this).addClass("btnaction2");
         }
 
-        $(this).parent().next().slideToggle("slow");
+        $(this).parent().next().slideToggle("slow", function() {
+            $('.w16_PS_listadoTarjeta').slideToggle();
+        });
     });
 
     $(".btnaction").click(function() {
@@ -230,7 +232,9 @@ $(function() {
             $(this).addClass("btnaction");
         }
 
-        $(this).parent().next().slideToggle("slow");
+        $(this).parent().next().slideToggle("slow", function() {
+            $('.w16_PS_listadoTarjeta').slideToggle();
+        });
     });
 
     $(".w8_CRAB_dropHdr1").children(".toggle").click(function() {
@@ -277,6 +281,10 @@ $(function() {
         colums: ['Fecha', 'Descripción', 'Referencia', 'Cuenta de cargo', 'Cuenta destino', 'Importe', 'Estatus'],
         rowsValues: ['10/01/2014', '123456789123', '123456789123', '12547825ASD1', '12547825ASD1', '999,999,999.00', ''],
         numRows: 10
+    });
+
+    $(".w_16_PS_baja").click(function() {
+        $(this).parent().fadeOut("slow");
     });
     //Gridius($('.tablaDinamica'), datados);
 })();
