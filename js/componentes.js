@@ -12,7 +12,7 @@ $(document).ready(function() {
 
     }, function() {
         $(this).css({
-            "box-shadow": "none",
+            "box-shadow": "none", 
             "border": "none"
         });
     });
@@ -555,11 +555,12 @@ function construyeSwitch(object) {
 
 */
 function Gridius(object, data) {
+
     $.when($.ajax("componentes/grid.html")).then(function(res) {
 
         object.html(res);
 
-        var element;
+        var element="";
 
         if (typeof data == "undefined") {
 
@@ -580,24 +581,29 @@ function Gridius(object, data) {
             });
 
             var totalElem = data.numRows || 10;
-
+            var keeper = "";
             for (i = 0; i <= totalElem; i++) {
                 element += "<tr data-id='" + i + "'>";
                 for (u = 0; u < data.rowsValues.length; u++) {
-                    var adta;
-                    if (data.rowsValues[u] == 'estatus' && u == 6) {
-                        adta = "class='proved'";
-                        data.rowsValues[u] = "Exitosa";
-                    }
-                    element += "<td " + adta + ">" + data.rowsValues[u] + "<input data-edit='false' class='editGrid' type='text'></td>";
+                
+                    element += "<td>" + data.rowsValues[u] + "<input data-edit='false' class='editGrid' type='text'></td>";
                 }
-                element += "<td><div class='addGrid'></div><div class='delGrid'></div></td>" + "</tr>";
+                element += (data.configButton?"<td><div class='addGrid'></div><div class='delGrid'></div></td>":"") + "</tr>";
+                if(i==0) keeper = element;
             }
+            
+            var aprov =  $(keeper);
+            var program =  aprov.clone();
+            var denied =  aprov.clone();
+            aprov.attr("data-id",'100').find(".editGrid:last").parent().addClass("aprov").text("Exitosa");
+            program.attr("data-id",'101').find(".editGrid:last").parent().addClass("program").text("Programada");
+            denied.attr("data-id",'102').find(".editGrid:last").parent().addClass("denied").text("Cancelada");
 
             $(".wrapGrid > table").html("<tr>" + thead + "</tr>");
+            if(data.hasStatus) $(".wrapGrid > table").append(aprov).append(program).append(denied);
             $(".wrapGrid > table").append(element);
 
-        }
+        }  
 
         $(".gridAdd").click(function() {
             var obj = $('<tr data-id="' + ($(".wrapGrid").find("tr").size()) + '"></tr>');
@@ -606,9 +612,9 @@ function Gridius(object, data) {
             listenerGrid($('[data-id="' + ($(".wrapGrid").find("tr").size()) + '"]').find('.editGrid').parent());
         });
 
-        /* $(".editGrid").parent().on("click", function() {
+        $(".editGrid").parent().on("click", function() {
             listenerGrid($(this));
-        });*/
+        });
 
         $(".addGrid").click(function() {
             var self = $(this);
@@ -630,7 +636,7 @@ function Gridius(object, data) {
 function listenerGrid(obj) {
     $(".editGrid").each(function(i, v) {
         v = $(v);
-        if (v.val() != "") v.parent().html(v.val() + '<input data-edit="false" class="editGrid" type="text">');
+        if ( v.attr("data-edit") == "true" ) v.parent().html(v.val() + '<input data-edit="false" class="editGrid" type="text">');
     });
     var self = obj,
         txt = self.text(),
@@ -652,7 +658,18 @@ function showGridTools(obj) {
         return false;
     }
     parentObj.attr('data-active', true);
-    var tools = $('<div class="toolsGrid"><ul><li><img src="../img/assets/basura.png"/></li> <li><img src="../img/assets/editar.png"/></li><li><img src="../img/assets/imprimir.png"/></li></ul></div>');
+    var options = [$('<li><img src="../img/assets/basura.png"/></li>'),$('<li><img src="../img/assets/editar.png"/></li>'),$('<li><img src="../img/assets/imprimir.png"/></li>')];
+    var toolsList = $("<ul>");
+    if(parentObj.children("td:last").prev().hasClass("aprov")){
+        options[2].attr("onclick",'print(this)');
+    }else if(parentObj.children("td:last").prev().hasClass("program")){
+        options[1].attr("onclick",'edit(this)');
+    }
+    $.each(options,function(i,v){
+        v.appendTo(toolsList);
+    })
+    var tools = $('<div class="toolsGrid"></div>');
+    toolsList.appendTo(tools);
     $('body').append(tools);
     tools.css({
         top: obj.offset().top - 56,
@@ -664,9 +681,29 @@ function cargaHtml(componente, url) {
     $(componente).load(url);
 }
 
+function print(obj) {
+
+    $(".wrapGrid").printThis({
+      debug: false,              
+      importCSS: true,           
+      printContainer: true,       
+//      loadCSS: "path/to/my.css", 
+      pageTitle: "",             
+      removeInline: false        
+  });
+
+}
+
+function edit(obj) {
+    var idrel = $(obj).parent().parent().parent().attr("data-relid");
+    $("[data-id='"+ idrel +"']:nth-child(2)").find(".editGrid").show();
+    
+}
+
 function el(){
    $(".fg").css("display","none"); 
 }
 function elf(){
    $(".fg").css("display","inline"); 
 }
+

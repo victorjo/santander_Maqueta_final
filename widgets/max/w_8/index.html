@@ -39,7 +39,7 @@
 					<li onclick="cambiaFlujo('.wra_flu3'); Gridius($('.tablaDinamica'), data);">
 						<p>Cuentas registradas Alta / Baja</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu4');  Gridius($('.tablaDinamica'), data);">
+					<li onclick="cambiaFlujo('.wra_flu4'); Gridius($('.tablaDinamica2'), data);">
 						<p>Consulta de transferencia</p>
 					</li>
 
@@ -59,15 +59,15 @@
 								<p class="titulo">Entre cuentas propias Santander</p>
 								<p class="subtitulo">Introduzca el nombre, alias o los cuatro dígitos de la cuenta destino / cuenta de cargo o seleccionela de la lista</p>
 							</div>
-								<div class="w8_EC_contenidodatos1">
+							<div class="w8_EC_contenidodatos1">
 							<p class="DC_cuentadest">Cuenta destino:</p>
-								<div class="w4_dropList">
+								<div class="w4_dropList w8_ddSelect w8_ddSelected">
 										<select name="" id="" value="1" > 
 									    </select>
 									</div>
 							<p class="DC_cuentacar">Cuenta de cargo:</p>
 
-									<div class="w4_dropList">
+									<div class="w4_dropList w8_ddSelect w8_ddSelected">
 										<select name="" id="" value="1" > 
 									    </select>
 									</div>
@@ -134,7 +134,7 @@
 								<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
 							</div>
 							<div class="botonera">
-								<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(2);">Deseo hacer otra transferencia</div>
+								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);">Deseo hacer otra transferencia</div>
 								<div class="btn" onclick="">Imprimir</div>
 
 								<div class="btnaceptar" onclick="closeAction()">Finalizar</div>
@@ -159,8 +159,8 @@
 											<p class="p_OC"> Notificar previamente: </p>
 										<select class="textboxDias" name="" id="">
 											<option value="3">3 dias</option>
-											<option value=""></option>
-											<option value=""></option>
+											<option value="">5 días</option>
+											<option value="">1 semana</option>
 											<option value=""></option>
 											<option value=""></option>
 										</select>
@@ -182,13 +182,13 @@
 
 								 <div class="w8_EC_contenidodatos1">
 							<p class="DC_cuentadest">Cuenta destino:</p>
-								<div class="w4_dropList">
+								<div class="w4_dropList w8_ddSelect w8_ddSelected">
 										<select name="" id="" value="1" > 
 									    </select>
 									</div>
 							<p class="DC_cuentacar">Cuenta de cargo:</p>
 
-									<div class="w4_dropList">
+									<div class="w4_dropList w8_ddSelect w8_ddSelected">
 										<select name="" id="" value="1" > 
 									    </select>
 									</div>
@@ -397,7 +397,7 @@
 						</div> 
 
 						<div class="botonera">
-								<div class="btn" onclick="cambiaFlujo('.wra_flu3');cambiaPaso(1);">Regresar</div>
+								<div class="btn" onclick="cambiaFlujo('.wra_flu3');cambiaPaso(0);">Regresar</div>
 								<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w8/w8_CAB_tblPaso3.html'),'');">Confirmar</div>
 							</div>  
 					
@@ -423,7 +423,7 @@
 								<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
 							</div>
 							<div class="botonera">
-								<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(2);">Deseo hacer otra transferencia</div>
+								<div class="btn" onclick="cambiaFlujo('.wra_flu3');cambiaPaso(0);">Deseo hacer otra transferencia</div>
 								<div class="btn" onclick="">Imprimir</div>
 								<div class="btnaceptar" onclick="closeAction()">Finalizar</div>
 							</div>
@@ -435,40 +435,46 @@
 
 				<div class="titFlujo" style="height:90px">
 					<div class="iconFlujo">
-										<img src="img/assets/ico_comprobante.png"/>
-									</div>
-								
-								<p class="titulo">Consulta de transferencia</p>
-								<p class="subtitulo">Seleccione el estatus de las transferencias que desea consultar, así como el 
-									periodo de busqueda y/o el rango de importe para realizar una busqueda mas especifica.</p>
-								<p class="subtitulo2F4"> Para obtener más información de la solicitud, haga clic en el estatus.</p>
+								<img src="img/assets/ico_comprobante.png"/>
 							</div>
-							<div class="w4_CB_buscador">
-							<div class="w4_select_1 w4_selects ">
+						
+						<p class="titulo">Consulta de transferencia</p>
+						<p class="subtitulo">Seleccione el estatus de las transferencias que desea consultar, así como el 
+							periodo de busqueda y/o el rango de importe para realizar una busqueda mas especifica.</p>
+						<p class="subtitulo2F4"> Para obtener más información de la solicitud, haga clic en el estatus.</p>
+					</div>
+					<div class="w8_CB_buscador">
+							<div class="w8_select_1 w8_selects ">
 								<select name="" id="" value="1" > 
 				    			</select>
 							</div>
 
-							<div class="w4_select_2 w4_selects ">
+							<div class="w8_HPG_personalizarIntervalo">
+								08/01/2014 - 09/01/2014
+								<div>
+									<img src="../../img/iconos/calendario.png"/>
+								</div>
+							</div>
+							<div class="w8_select_3 w8_selects" style="margin-right: 14px;">
 								<select name="" id="" value="1" > 
 				    			</select>
 							</div>
-							<div class="w4_select_3 w4_selects">
-								<select name="" id="" value="1" > 
-				    			</select>
-							</div>
-							<div class="w4_select_4 w4_selects">
+							<div class="w8_select_4 w8_selects">
 								<select name="" id="" value="1" > 
 				    			</select>
 							</div>
 							<div class="prueba">
 								<div class="btnaceptar prueba_btn">Limpiar Búsqueda</div>
 							</div>	
-						</div>	
-						<div class="tablaDinamica"></div>
-						<div class="btnExportarbtn"><img src="../../../img/assets/Exportar.png"><img src="../../../img/assets/CalendariOperaciones.png"></div>
 						</div>
-					</div>
+
+
+
+						<div class="tablaDinamica2"></div>
+						<div class="btnExportar w8_btn_exportar" style="float:right;"><img style="cursor:pointer" class="w8_exportar" src="../../../img/assets/Exportar.png"><img   src="../../../img/assets/CalendariOperaciones.png"></div>
+						</div>	
+
+				</div>
 
 			<!-- vaciar los demas flujos -->
 			<!-- REcordar que en cada step debes poner sus botones correspondientes -->	

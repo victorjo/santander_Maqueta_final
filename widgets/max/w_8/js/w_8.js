@@ -25,6 +25,119 @@ var datados = {
     rowsValues: ['Nombre', '1234****5678', 'Alias de cuenta', 'Nombre Banco', 'correo@correo.com'],
     numRows: 2
 }
+// info para los droplis del flujo 4
+var data1 = [{
+    text: "1 mes sin interes",
+    value: 1,
+    selected: false,
+}, {
+    text: "2 meses sin intereses",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "3 meses sin intereses",
+    value: 3,
+    selected: false,
+}];
+
+var data2 = [{
+    text: "3 dias",
+    value: 1,
+    selected: false,
+}, {
+    text: "4 dias",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "1 día",
+    value: 3,
+    selected: false,
+}];
+
+var datacat = [{
+    text: "Telefonía",
+    value: 1,
+    selected: false,
+}, {
+    text: "Transporte",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "colegio",
+    value: 3,
+    selected: false,
+}];
+
+var dataubic = [{
+    text: "Distrito Federal",
+    value: 1,
+    selected: false,
+}, {
+    text: "Guadalajara",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "Michoacán",
+    value: 3,
+    selected: false,
+}];
+
+var databusqueda = [{
+    text: "Últimos 5 pagos",
+    value: 1,
+    selected: false,
+}, {
+    text: "Último mes",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "Últimos 3 meses",
+    value: 3,
+    selected: false,
+}];
+
+var dataEstatus = [{
+    text: "Programados",
+    value: 1,
+    selected: false,
+}, {
+    text: "Exitosos",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "No exitoso",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "Todos",
+    value: 3,
+    selected: false,
+}];
+
+var datoRango = [{
+    text: "999,999,999,00(MXP)",
+    value: 1,
+    selected: false,
+}, {
+    text: "999,999,999,00(MXP)",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "999,999,999,00(MXP)",
+    value: 3,
+    selected: false,
+}];
+
+var identificador = 0;
+//hasta aqui los droplistdel flujo4 
 
 $(function() {
 
@@ -35,6 +148,71 @@ $(function() {
         background: "#f7f7f7",
         imagePosition: "left",
         selectText: "1234****5678 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Producto Santander &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Alias &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
+        onSelected: function(data) {
+            console.log(data);
+        }
+    });
+
+    $(".w8_PS_dd2 select").ddslick({
+        data: data1,
+        width: 318,
+        background: "#f7f7f7",
+        imagePosition: "left",
+        selectText: "3 meses sin intereses",
+        onSelected: function(data) {
+            console.log(data);
+        }
+    });
+
+    $(".w8_PS_dd3 select").ddslick({
+        data: data2,
+        width: 318,
+        background: "#f7f7f7",
+        imagePosition: "left",
+        selectText: "3 dias antes",
+        onSelected: function(data) {
+            console.log(data);
+        }
+    });
+
+    $(".wra_select4 select").ddslick({
+        data: datacat,
+        width: 263,
+        background: "#f7f7f7",
+        imagePosition: "left",
+        selectText: "Estatus",
+        onSelected: function(data) {
+            console.log(data);
+        }
+    });
+
+    $(".w8_select_3 select").ddslick({
+        data: datoRango,
+        width: 140,
+        background: "#f7f7f7",
+        imagePosition: "left",
+        selectText: "Rango de importe",
+        onSelected: function(data) {
+            console.log(data);
+        }
+    });
+    $(".w8_select_4 select").ddslick({
+        data: dataEstatus,
+        width: 80,
+        background: "#f7f7f7",
+        imagePosition: "left",
+        selectText: "Estatus",
+        onSelected: function(data) {
+            console.log(data);
+        }
+    });
+
+    $(".w8_select_1 select").ddslick({
+        data: databusqueda,
+        width: 140,
+        background: "#f7f7f7",
+        imagePosition: "left",
+        selectText: "Búsqueda histórica",
         onSelected: function(data) {
             console.log(data);
         }
@@ -95,7 +273,14 @@ $(function() {
     });
     cambiaFlujo('.wra_flu1');
 
+    $('.w8_HPG_personalizarIntervalo').click(function() {
+        cargaCalendario('switchModal()', 'calendario');
+    });
 
+    $(".w8_exportar").click(function() {
+        window.open('data:application/vnd.ms-excel,' + encodeURIComponent($('.tablaDinamica').html()));
+
+    });
 
 })();
 
