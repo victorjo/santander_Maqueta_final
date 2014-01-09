@@ -153,6 +153,71 @@ $(function() {
         }
     });
 
+    $(".w8_PS_dd2 select").ddslick({
+        data: data1,
+        width: 318,
+        background: "#f7f7f7",
+        imagePosition: "left",
+        selectText: "3 meses sin intereses",
+        onSelected: function(data) {
+            console.log(data);
+        }
+    });
+
+    $(".w8_PS_dd3 select").ddslick({
+        data: data2,
+        width: 318,
+        background: "#f7f7f7",
+        imagePosition: "left",
+        selectText: "3 dias antes",
+        onSelected: function(data) {
+            console.log(data);
+        }
+    });
+
+    $(".wra_select4 select").ddslick({
+        data: datacat,
+        width: 263,
+        background: "#f7f7f7",
+        imagePosition: "left",
+        selectText: "Estatus",
+        onSelected: function(data) {
+            console.log(data);
+        }
+    });
+
+    $(".w8_select_3 select").ddslick({
+        data: datoRango,
+        width: 140,
+        background: "#f7f7f7",
+        imagePosition: "left",
+        selectText: "Rango de importe",
+        onSelected: function(data) {
+            console.log(data);
+        }
+    });
+    $(".w8_select_4 select").ddslick({
+        data: dataEstatus,
+        width: 80,
+        background: "#f7f7f7",
+        imagePosition: "left",
+        selectText: "Estatus",
+        onSelected: function(data) {
+            console.log(data);
+        }
+    });
+
+    $(".w8_select_1 select").ddslick({
+        data: databusqueda,
+        width: 140,
+        background: "#f7f7f7",
+        imagePosition: "left",
+        selectText: "Búsqueda histórica",
+        onSelected: function(data) {
+            console.log(data);
+        }
+    });
+
     $(".btnaction2").click(function() {
 
         if ($(this).hasClass("btnaction2")) {
@@ -208,7 +273,14 @@ $(function() {
     });
     cambiaFlujo('.wra_flu1');
 
+    $('.w8_HPG_personalizarIntervalo').click(function() {
+        cargaCalendario('switchModal()', 'calendario');
+    });
 
+    $(".w8_exportar").click(function() {
+        window.open('data:application/vnd.ms-excel,' + encodeURIComponent($('.tablaDinamica').html()));
+
+    });
 
 })();
 

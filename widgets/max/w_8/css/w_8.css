@@ -123,13 +123,13 @@ font-style:italic;
 font-size: 11px;
 padding-left: 5px;
 }
-.dd-select {
+.w8_ddSelect {
 position: relative;
 top:29px;
 margin-bottom: 36px;
 left: 9px;
 }
-.dd-selected {
+.w8_dSelected {
 position: absolute;
 margin-top: 0px;
 }
@@ -489,18 +489,12 @@ font-size:11px;
 
 .w4_selects{
 	float: left;
-	margin-left: 10px;
-	margin-top: 10px;
 }
 .wra_Select4, .wra_Select3{
 	float:left;
 	margin:5px 0 0 10px;
 }
-.w4_CB_buscador{
-	float: left;
-	width: 100%;
-	height: 60px;
-}
+
 .CAB{
 	height: 65px;
 }
@@ -731,11 +725,9 @@ margin-left: 680px;
 	margin-left: 114px;
 }
 
-<<<<<<< HEAD
-
-.w4_HPG_personalizarIntervalo{
+.w8_HPG_personalizarIntervalo{
 	float:left;
-	width:143px;
+	width: 148px;		
 	height:21px;
 	background-color:#FBFBFB;
 	border:1px #C2C0C0 solid;
@@ -743,12 +735,15 @@ margin-left: 680px;
 	border-radius:5px; 
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:11px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 11px;
 	color:#4d4d4d !important;
 	font-style:italic;
 	padding:7px 0 0 10px;
 	position:relative;
 }
-.w4_HPG_personalizarIntervalo>div{
+.w8_HPG_personalizarIntervalo>div{
 	float:right;
 	border-left:1px #cfcfcf solid;
 	width:24px;
@@ -760,13 +755,27 @@ margin-left: 680px;
 	padding-top:7px;	
 }
 
-.w4_HPG_personalizarIntervalo>div:hover{
+.w8_HPG_personalizarIntervalo>div:hover{
 	border-left:1px #ff0000 solid;	
 }
 
-.w4_HPG_personalizarIntervalo:hover{
+.w8_HPG_personalizarIntervalo:hover{
 	border-color:#ff0000;
 	cursor:pointer;
 }
 
+.w8_CB_buscador{
+	float: left;
+	width: 100%;
+	height: 60px;
+	margin-top: 10px;
+}
 
+.w8_selects{
+	float: left;
+	margin-top: 10px;
+}
+
+.w8_btn_exportar{ 	
+	float: right;
+}
