@@ -3,105 +3,14 @@
 		<!--<script src="../../../js/ddSlick.js"></script>-->
 		<link rel="stylesheet" href="../../../css/generally.css" />
 		<link rel="stylesheet" href="../../../css/componentes.css" />
-		<style>
-		.col1_OC {
-			float: left;
-			height: 336px;
-			margin-right: 10px;
-			width: 532px;
-		}
-		.col2_OC {
-			float: left;
-			width: 180px;
-		}
-		.p_OC {
-			color:#232323;
-			font-weight:bold;
-			font-size:13px;
-		}
-		.textbox_OC {
-			width:100% !important;
-		}
-		.middletd_OC {
-			text-align:center;
-			width:50%;
-		}
-		.table_OC {
-			width:100%;
-		}
-		.span_OC {
-			font-size:11px;
-		}
-		.a_OC {
-			color:#ff0d37;
-			font-weight:bold;
-		}
-		.dd-select {
-			width: 160px !important;
-		}
-		.dd-container {
-			width: 174px !important;
-			margin-right:11px;
-		}
-
-		.tableHG {
-			background:#efefef;
-			width:100%;
-		}
-
-		.tableHG p{
-			color: #272727;
-			font-size:12px;
-			font-weight:bold;
-		}
-		
-		.tableHG span{
-			font-size:11px;
-			font-weight:bold;
-			color:#e0dede;
-
-		}
-
-		.fullCon {
-			height:auto;
-			margin-bottom:20px;
-			width:100%;
-		}
-
-		.tableHG select {
-			width:100%;
-		}
-		
-		.dd-container {
-			float:left;
-		}
-		
-		.dd-select {
-			border-radius: 5px;
-			width:220px !important;
-		}
-		.switchBox{
-			top:0px;
-		}
-		.wrapGrid>table>tbody>tr:not(:first-child) {
-			height:50px !important;
-		}
-		</style>
-		<script>
-			$(document).ready(function(){
-				Gridius($('.containerG'),{
-					hasStatus:true,
-					configButton:true,
-					colums:['Tarjeta de Credito','Saldo disponible (MXP)','Saldo a transferir (MXP)','Pago mensual(MXP)','Tasa*','Estatus'],
-					rowsValues:['<input type="radio"><img src="img/iconos/card.png"> 1234****5678','999,999,999.00','000.0.','1000.00','99.99%',''],
-					numRows:10
-				});
-				construyeSwitch("switchBox");
-				
-			});
-		</script>
+		<script src="widgets/max/w_1/js/w_1.js"></script>
+		<link rel="stylesheet" href="widgets/max/w_1/css/w_1.css" />
 		<!--<input type="button" value="GRID" onclick="Gridius($('.contenidoFlujo'),{colums:[13,23,33,43,53],rowsValues:[1,2,3,4,5],numRows:10});">-->
 		<div id="widampliado">
+			<div id="bloqueoWidget" class="bloqueoElement"></div>
+			<div id="elementBloqueo" class="bloqueoElement">
+				
+			</div>
 			<div id="WA_pasos">
 				<img src="../../../img/assets/pasos.png"/>
 				<div class="btnHeader info">
@@ -178,28 +87,11 @@
 					<div class="containerG"></div>
 				</div>
 				<div class="botonera">
-					<div class="btnaceptar">Continuar</div>
+					<div class="btnaceptar" onclick="cargaToken('switchModal()',
+			'confirmacionCorreo(\'switchModal()\',\'switchModal()\',\'\');', undefined,
+			'terminos');">Continuar</div>
 				</div>
 				
 			</div>
 		</div>
-		<script>
-			(function(){
-				construyeSwitch("switch_OC");
-				var js = [{
-			        text: "Elemento 0",
-			        value: 1,
-			        selected: false			    
-			    }];
-
-				$(".select_OC").ddslick({
-			    data:js,
-			    width:300,
-			    imagePosition:"left",
-			    onSelected: function(selectedData){
-			       
-			    }   
-		    });
-			})();
-		</script>
 		

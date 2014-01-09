@@ -1,33 +1,46 @@
-				<div class="imgEditar"></div>
-				<div class="datosCorreo centradoTxt">
-					<p>Correo registrado para notificaci&oacute;n:<span class="bold">CLET@gmail.com</span></p>
-					<p>Celular registrado para notificaci&oacute;n:<span class="bold">55467822469</span></p>
+				
+				<div class="term_informacion">
+					<p class="bold">Términos y Condiciones</p>
+
+					<div>A los Usuarios les informamos de los 
+					siguientes Términos y Condiciones de
+					Uso y Privacidad, les son aplicables por
+					el simple uso o acceso a cualquiera de las
+					Páginas que integran la SuperNet Santander,
+					por lo que entenderemos que los
+					acepta, y acuerda en obligarse
+					en su cumplimiento.</div>
+
+					<div>En el caso de que no esté de acuerdo con
+					los Términos y Condiciones de Uso y
+					Privacidad deberá abstenerse de acceder
+					o utilizar SuperNet Santander.</div>
+
+					<p class="bold term_aviso">Aviso de privacidad</p>
+
+					<div>El Usuario reconoce que no todos los
+					Servicios y Contenidos están disponibles en
+					todas las áreas geográficas y que algunos
+					Servicios y Contenidos pueden ser utilizados
+					solamente con posterioridad a su contratación,
+					activación o registro previo por el Usuario y/o
+					mediante el pago de una comisión, según se
+					indique en las condiciones de contratación que se
+					establezcan en la documentación respectiva.
+					Santander no garantiza la disponibilidad y
+					continuidad de la operación de las Páginas o
+					el Portal y de los Servicios y Contenidos, ni la
+					utilidad del Portal o los Servicios y Contenidos en
+					relación con cualquier actividad específica,
+					independientemente del medio de acceso
+					que utilice el Usuario incluido la telefonía móvil.</div>
+
 				</div>
-				<br><div class="datosEdicion">
-					<table>
-						<tr>
-							<td><div class="correoRadio"></div></td>
-							<td><p class="bold">Correo que quedará registrado para notificación:</p>
-								<input type="text" value="Ingresar nuevo número de celular">
-							</td>
-						</tr>
-						<tr>
-							<td><div class="correoRadio"></div></td>
-							<td><p class="bold">Celular que quedará registrado para notificación:</p>
-								<input type="text" value="Ingresar nuevo número de celular">
-							</td>
-						</tr>
-					</table>
-				</div><br>
-				<div class="datosCorreo">
-					<p><span class="bold">*Este medio cambiará para todas las operaciones de supernet.</span></p>
-					<p><span class="bold">¿esta seguro que desea realizar la acci&oacute;n?</span></p>
-				</div><br>
-				<div class="btnaceptar centradoBtn" id="btnTokenCancelar">Cancelar</div>
-				<div class="btnaceptar" id="btnTokenAceptar">Continuar</div>
+				
+				<div class="btnaceptar term_btn" id="btnTokenAceptar">Continuar</div>
 				
 				<script>
 					$(document).ready(function(){
-						$('#elementBloqueo').css({ background :'none' });
+						$('#elementBloqueo').addClass('term_body');
 					});
 				</script>
