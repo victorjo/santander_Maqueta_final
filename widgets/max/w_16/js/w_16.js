@@ -39,6 +39,12 @@ $(function() {
             console.log(data);
         }
     });
+
+
+    $(".w_16_PS_baja").click(function() {
+      $(this).parent().fadeOut("slow");
+   });
+
 });
 
 function cargaHtml(componente, url) {
@@ -51,11 +57,4 @@ function ocultaAsset() {
 
 function muestraAsset() {
     $("#WA_pasos>img").fadeIn(1);
-}
-
-function bajaTarjeta() {
-    $(".w_16_PS_baja").click(function() {
-        $(this).parent().parent().fadeOut("slow");
-    });
-
 }

@@ -14,17 +14,6 @@ var ddData = [{
 
 }];
 
-var data = {
-    colums: ['Fecha', 'Descripción', 'Referencia', 'Cuenta de cargo', 'Cuenta destino', 'Importe', 'Estatus'],
-    rowsValues: ['dd/mm/aaaa', '123456789123', '123456789123', '1234****7890', '1234****7890', '999,999,999.00', 'Exitosa'],
-    numRows: 10
-}
-
-var datados = {
-    colums: ['Titular de la cuenta', 'Número de cuenta', 'Alias', 'Banco', 'Correo del titular'],
-    rowsValues: ['Nombre', '1234****5678', 'Alias de cuenta', 'Nombre Banco', 'correo@correo.com'],
-    numRows: 2
-}
 // info para los droplis del flujo 4
 var data1 = [{
     text: "1 mes sin interes",
@@ -228,7 +217,9 @@ $(function() {
             $(this).addClass("btnaction2");
         }
 
-        $(this).parent().next().slideToggle("slow");
+        $(this).parent().next().slideToggle("slow", function() {
+            $('.w16_PS_listadoTarjeta').slideToggle();
+        });
     });
 
     $(".btnaction").click(function() {
@@ -241,7 +232,9 @@ $(function() {
             $(this).addClass("btnaction");
         }
 
-        $(this).parent().next().slideToggle("slow");
+        $(this).parent().next().slideToggle("slow", function() {
+            $('.w16_PS_listadoTarjeta').slideToggle();
+        });
     });
 
     $(".w8_CRAB_dropHdr1").children(".toggle").click(function() {
@@ -282,6 +275,18 @@ $(function() {
 
     });
 
+    Gridius($('.tablaDinamica2'), {
+        hasStatus: true,
+        configButton: true,
+        colums: ['Fecha', 'Descripción', 'Referencia', 'Cuenta de cargo', 'Cuenta destino', 'Importe', 'Estatus'],
+        rowsValues: ['10/01/2014', '123456789123', '123456789123', '12547825ASD1', '12547825ASD1', '999,999,999.00', ''],
+        numRows: 10
+    });
+
+    $(".w_16_PS_baja").click(function() {
+        $(this).parent().fadeOut("slow");
+    });
+    //Gridius($('.tablaDinamica'), datados);
 })();
 
 

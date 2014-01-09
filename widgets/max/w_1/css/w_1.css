@@ -1,0 +1,101 @@
+@import url("../../../../css/bloqueo.css");
+@import url("../../../../css/steps.css");
+
+
+.col1_OC {
+	float: left;
+	height: 336px;
+	margin-right: 10px;
+	width: 532px;
+}
+.col2_OC {
+	float: left;
+	width: 180px;
+}
+.p_OC {
+	color:#232323;
+	font-weight:bold;
+	font-size:13px;
+}
+.textbox_OC {
+	width:100% !important;
+}
+.middletd_OC {
+	text-align:center;
+	width:50%;
+}
+.table_OC {
+	width:100%;
+}
+.span_OC {
+	font-size:11px;
+}
+.a_OC {
+	color:#ff0d37;
+	font-weight:bold;
+}
+.dd-select {
+	width: 160px !important;
+}
+.dd-container {
+	width: 174px !important;
+	margin-right:11px;
+}
+
+.tableHG {
+	background:#efefef;
+	width:100%;
+}
+
+.tableHG p{
+	color: #272727;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.tableHG span{
+	font-size:11px;
+	font-weight:bold;
+	color:#e0dede;
+
+}
+
+.fullCon {
+	height:auto;
+	margin-bottom:20px;
+	width:100%;
+}
+
+.tableHG select {
+	width:100%;
+}
+
+.dd-container {
+	float:left;
+}
+
+.dd-select {
+	border-radius: 5px;
+	width:220px !important;
+}
+.switchBox{
+	top:0px;
+}
+.wrapGrid>table>tbody>tr:not(:first-child) {
+	height:50px !important;
+}
+
+.w1_PS_ayuda{
+    position:absolute;
+    bottom:0;
+    left:8px;
+}
+
+.w1_PS_ayuda p{
+    color: #282828;
+    font-family: 'ArialBlack';
+    font-size: 11px;
+    position: absolute;
+    left: 12px;
+    bottom: 185px;
+}
