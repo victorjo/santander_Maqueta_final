@@ -17,21 +17,22 @@
 
 			<div id="WA_pasos">
 				<img src="../img/assets/pasos.png"/>
-				<div class="btnHeader info" onclick="closeAction();">
+				<div class="btnHeader info" >
 					<img src="../img/assets/ico_info.png"  />
 				</div>
-				<div class="btnHeader cerrar">
+				<div class="btnHeader cerrar" onclick="closeAction();">
 					<img src="../img/assets/ico_cerrar_widget.png"  />
 				</div>
 			</div>
 			
 			<div id="WA_nav">
 				<ul>
+					
 					<li class="menu">
 						<p>
 						<img src="../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);ocultaAsset();">
+					<li class="liActive"onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);ocultaAsset();">
 						<p>Historial de puntos<br/>ganados</p>
 					</li>
 					<li onclick="cambiaFlujo('.wra_flu2');cambiaPaso(1);muestraAsset();">
@@ -48,8 +49,14 @@
 								<div class="iconFlujo">
 									<img src="widgets/max/w_10/img/titulo_recompensas.png" />
 								</div>
-								<p class="titulo">Entre cuentas propias Santander</p>
-								<p class="subtitulo">Instroduzca nombre alias o cuentas bla bla bla...</p>
+								<div>
+									<p class="titulo">Seleccione el programa de recompensas:</p>
+								</div>
+								<div class="w10_HPG_miniBanner"></div>
+								<div class="w10_HPG_wra_Select3">
+									<select name="" id="" value="Recompensas Santander" ></select>
+								</div>
+
 							</div>
 							<div class="w10_HPG_seleccionTarjeta">
 								<p>Seleccionar tarjeta:</p>
@@ -74,9 +81,9 @@
 								</table>
 							</div>
 							<div class="w10_HPG_personalizarIntervalo">
-								Intervalo personalizado
+								08/01/2014 - 09/01/2014
 								<div>
-									<img src="../../img/iconos/img_calendario.png"/>
+									<img src="../../img/iconos/calendario.png"/>
 								</div>
 							</div>
 							<div class="w10_HPG_limpiar">
@@ -87,7 +94,7 @@
 								<tr>
 									<td>Fecha de transacción</td>
 									<td>Descripción</td>
-									<td>Cantidad</td>
+									<td>Cantidad MXP</td>
 									<td>Puntos base</td>
 									<td>Puntos promoción</td>
 									<td>Puntos totales</td>
@@ -96,44 +103,44 @@
 							<div  class="w10_PS_cuadroTarjeta">
 								<table class="w10_PS_cardList">
 									<tr>
-										<td>dd/mm/aaaa</td>
+										<td>07/01/2014</td>
 										<td>Compra</td>
-										<td>123456789123</td>
-										<td>123456789123</td>
-										<td>123456789123</td>
-										<td>123456789123</td>
+										<td>2,318.00</td>
+										<td>2,136</td>
+										<td>1,368</td>
+										<td>3,504</td>
 									</tr>
 									<tr>
-										<td>dd/mm/aaaa</td>
+										<td>06/01/2014</td>
 										<td>Compra</td>
-										<td>123456789123</td>
-										<td>123456789123</td>
-										<td>123456789123</td>
-										<td>123456789123</td>
+										<td>2,318.00</td>
+										<td>2,136</td>
+										<td>1,368</td>
+										<td>3,504</td>
 									</tr>
 									<tr>
-										<td>dd/mm/aaaa</td>
+										<td>03/01/2014</td>
 										<td>Compra</td>
-										<td>123456789123</td>
-										<td>123456789123</td>
-										<td>123456789123</td>
-										<td>123456789123</td>
+										<td>2,318.00</td>
+										<td>2,136</td>
+										<td>1,368</td>
+										<td>3,504</td>
 									</tr>
 									<tr>
-										<td>dd/mm/aaaa</td>
+										<td>02/01/2014</td>
 										<td>Compra</td>
-										<td>123456789123</td>
-										<td>123456789123</td>
-										<td>123456789123</td>
-										<td>123456789123</td>
+										<td>2,318.00</td>
+										<td>2,136</td>
+										<td>1,368</td>
+										<td>3,504</td>
 									</tr>
 									<tr>
-										<td>dd/mm/aaaa</td>
+										<td>01/01/2014</td>
 										<td>Compra</td>
-										<td>123456789123</td>
-										<td>123456789123</td>
-										<td>123456789123</td>
-										<td>123456789123</td>
+										<td>2,318.00</td>
+										<td>2,136</td>
+										<td>1,368</td>
+										<td>3,504</td>
 									</tr>
 								</table>
 							</div>
@@ -143,7 +150,8 @@
 							</div>
 						</div>
 						<div class="botonera">
-							<div class="btnaceptar" onclick="closeAction();">Utilice sus puntos</div>
+							<a href="https://comparte.mastercard.com/pe/about" target="_blank">
+				<div class="btnaceptar" >Utilice sus puntos</div></a>
 						</div>						
 					</div><!--Fin Historial de puntos ganados-->
 
@@ -152,7 +160,7 @@
 							<div class="w10_IT_wraLeft">
 								<div>
 									<img src="widgets/max/w_10/img/titulo_recompensas.png" />
-									<p>Mis tarjetas seleccionadas:</p>
+									<p>Mis tarjetas:</p>
 								</div>
 								<table class="w10_IT_inscribirTarjetas">
 									<tr>
@@ -161,9 +169,9 @@
 											<img src="widgets/max/w_10/img/card_1.png"/>
 										</td>
 										<td>
-											<p><strong>Producto Santander</strong></p>
-											<p>1234****5678</p>
-											<p>Alias</p>
+											<p><strong>Santander Black</strong></p>
+											<p>5524 8812 3432 3454</p>
+											<p>Miguel Aguirre</p>
 										</td>
 										<td>
 											<div class="w10_HPG_wra_Select2">
@@ -178,9 +186,9 @@
 											<img src="widgets/max/w_10/img/card_2.png"/>
 										</td>
 										<td>
-											<p><strong>Producto Santander</strong></p>
-											<p>1234****5678</p>
-											<p>Alias</p>
+											<p><strong>Santander Ferrari</strong></p>
+											<p>9475 7190 4865 1269</p>
+											<p>Mamá</p>
 										</td>
 										<td>
 											<div class="w10_HPG_wra_Select2">
@@ -195,9 +203,9 @@
 											<img src="widgets/max/w_10/img/card_3.png"/>
 										</td>
 										<td>
-											<p><strong>Producto Santander</strong></p>
-											<p>1234****5678</p>
-											<p>Alias</p>
+											<p><strong>Santander Lanpass</strong></p>
+											<p>5587 8496 1269</p>
+											<p>Papá</p>
 										</td>
 										<td>
 											<div class="w10_HPG_wra_Select2">
@@ -220,7 +228,7 @@
 							<div class="col colFull">
 								<div class="titFlujo">
 									<div class="iconFlujo">
-										<img src="widgets/max/w_10/img/titulo_recompensas.png" />
+										<img src="widgets/max/w_10/img/ico_confirmacion.png" />
 									</div>
 									<p class="titulo">Datos de transferencia</p>
 									<p class="subtitulo">Por favor confirme la inscripción de las tarjetas a los programas</p>
@@ -237,7 +245,7 @@
 							<div class="col col2 resetMargen">
 								<div class="titFlujo">
 									<div class="iconFlujo">
-										<img src="widgets/max/w_10/img/titulo_recompensas.png" />
+										<img src="widgets/max/w_10/img/ico_confirmacion.png" />
 									</div>
 									<p class="titulo">Comprobante de inscripción de tarjeta(s) a programa de recompensas</p>
 									<p class="subtitulo"></p>
@@ -264,13 +272,7 @@
 				
 				
 			</div>
-			<div class="w10_HPG_ayuda wra_flu1 flujo">
-				<p>El costo mensual del<br/>
-					programa de recompensas<br/>
-					varia de acuerdo al<br/>
-					producto a suscribir</p>
-				<img src="../img/mrsmackdown.png"/>
-			</div>
+			
 		</div>
 		
 		

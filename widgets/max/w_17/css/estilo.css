@@ -1,8 +1,14 @@
-@import url("../../../../css/bloqueo.css");
+﻿@import url("../../../../css/bloqueo.css");
 @import url("../../../../css/steps.css");
 @import url("../../../../css/generally.css");
 @import url("../../../../css/componentes.css");
-
+input{
+		
+	font-style: italic;
+}
+input [type="button"]{
+	font-style: normal;
+}
 .tabstc{
 	margin: 0 auto;
 
@@ -22,7 +28,8 @@
 	background:inherit;
 }
 .contenidoFlujo {
-border: 1px solid red;
+/*border: 1px solid red;*/
+border: none;
 float: left;
 margin-left: 5px;
 /*height: 425px;*/
@@ -32,16 +39,18 @@ padding: 5px;
 width: 720px;
 margin-left: 0px;
 }
-
-.btnactiont{
-	width: 15px;
-	height: 15px;
-	background: url("../imagenes/agregar.png");
+.contenidoFlujo .colFull{
+	background: #fff;
+}
+/*.btnactiont{
+	width: 21px;
+	height: 21px;
+	background: url("../imagenes/cerrado.png");
 	float: right;
 	margin-right: 10px;
 	margin-top: 5px;
 	cursor: pointer;
-}
+}*/
 *{
 	font-family: Arial;
 	font-size: 13px;
@@ -59,19 +68,30 @@ area{
 	display: inline-block;
 	vertical-align: middle;
 }
+#tarrecstc a,#concardstarrec{
+		
+	display: inline-block;
+	vertical-align: middle;
+}
+#tarrecstc a,#concardstarrectwo{
+		
+	display: inline-block;
+	vertical-align: middle;
+}
 #befstc{
 	margin-left: 12px;
 }
 .content{
 	width: 725px;
 	height: 425px;
-	border:1px solid silver;
+	margin-left: -7px;
+	/*border:1px solid silver;*/
 	background:#e0dede; 
 }
 #selformentrega{
 	width: 718px;
 	height: 125px;
-	background: #fff;
+	background: #efefef;
 	margin: 0 auto;
 }
 #selformentrega #stc{
@@ -79,6 +99,8 @@ area{
 	height: 30px;
 	margin-top: 35px;
 	margin-left:-175px;
+	border-radius: 5px;
+	border: 1px solid silver;
 }
 #selformentrega form{
 	float: left;
@@ -91,15 +113,19 @@ area{
 	left:15px;
 }
 #infostc{
-	
+	background: #fff;
 	position: relative;
 	top: 15px;
 	width: 50%;
 	float: right;
+	margin-right: 15px;
+	height: 100px;
 }
 #infostc span {
 	display:inline-block;
-	color:silver;
+	color: #1d1d1d;
+	margin-top: 5px;
+	margin-left: 7px
 }
 #infostc > span:nth-of-type(2){
 	
@@ -107,7 +133,7 @@ area{
 }
 #infostc > span:nth-of-type(2) p{
 	/*line-height: 0px;*/
-	color: #000;
+	color:silver;
 }
 #terminostc{
 	margin-left: 10px;
@@ -145,7 +171,7 @@ input[type=button]{
 .selcardstc{
 	width: 710px;
 	height: 310px;
-	border:solid 1px silver;
+	border:solid 1px transparent;
 	margin: 0 auto;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -155,52 +181,152 @@ input[type=button]{
 	width: 710px;
 	/*height: 315px;*/
 	height: 100%;
-	border:solid 1px silver;
+	border:solid 1px transparent;
 	margin: 0 auto;
 	/*margin-top: 10px;*/
 	margin-top: 0px;
 	margin-bottom: 10px;
 	display: none;
 	/*background:silver;*/
-	z-index: 10;
 }
 
 .btnaction{
-	width: 15px;
-	height: 15px;
-	background: url("../imagenes/quitar.png");
+	width: 21px;
+	height: 21px;
+	background: url("../imagenes/abierto.png");
 	float: right;
-	margin-right: 10px;
-	margin-top: -10px;
-	cursor: pointer;
+	cursor:pointer;
+	position:absolute;
+	top:3px;
+	right:20px;
 }
 
 .btnaction2{
-	width: 15px;
-	height: 15px;
-	background: url("../imagenes/agregar.png");
+	width: 21px;
+	height: 21px;
+	background: url("../imagenes/cerrado.png");
 	float: right;
 	margin-right: 10px;
-	margin-top: -10px;
+	margin-top: -14px;
 	cursor: pointer;
+	position:absolute;
+	top: 16px;
+	right: 10px
 }
 
 .btnactionx{
-	width: 15px;
-	height: 15px;
-	background: url("../imagenes/quitar.png");
+	width: 21px;
+	height: 21px;
+	background: url("../imagenes/abierto.png");
 	float: right;
 	margin-right: 10px;
-	margin-top: -10px;
+	margin-top: -14px;
 	cursor: pointer;
+	position:absolute;
+	top: 16px;
+	right:10px;
 }
 #menuredstc{
 	/*width: 660px;*/
 	width: 100%;
 	height: 50px;
 	/*background:url("	");*/
-	float: right;		
+	float: right;
+	background-color:#ae1111;		
 }
+
+#menuredstc div:hover{
+	border-right:1px white solid;
+	cursor:pointer;
+}
+
+.w17_STC_selectorInteres1{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/restaurantes_b.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #ae1111 solid;
+}
+
+.w17_STC_selectorInteres1select{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/restaurantes_r.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #f4f4f4 solid;
+	background-color:#f4f4f4;
+}
+
+.w17_STC_selectorInteres2{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/servicios_b.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #ae1111 solid;
+}
+
+.w17_STC_selectorInteres2select{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/servicios_r.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #f4f4f4 solid;
+	background-color:#f4f4f4;
+}
+
+
+.w17_STC_selectorInteres3{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/viajes_b.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #ae1111 solid;
+}
+
+.w17_STC_selectorInteres3select{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/viajes_r.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #f4f4f4 solid;
+	background-color:#f4f4f4;
+}
+
+
+.w17_STC_selectorInteres4{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/recompensas_b.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #ae1111 solid;
+}
+
+.w17_STC_selectorInteres4select{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/recompensas_r.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #f4f4f4 solid;
+	background-color:#f4f4f4;
+}
+
+
 #cardsstc{
 	width: 450px;
 	height: 190px;
@@ -212,9 +338,10 @@ input[type=button]{
 }
 
 .tarrecstc{
-	width: 495px;
+	width: 518px;
+	/*width: 495px;*/
 	height: 260px;
-	margin-left:10px;
+	/*margin-left:10px;*/
 	float: left;
 	background:#f4f4f4;
 }	
@@ -284,7 +411,7 @@ input[type=button]{
 	height: 70px;
 	margin-top: 2px;
 	margin-left: 56px;
-	background: url("../imagenes/infocard.png");
+	background: url("../imagenes/tarjeta130_1.png");
 }
 
 .iconostc{
@@ -338,6 +465,13 @@ input[type=button]{
 	top:15px;
 		
 }
+.tarReco{
+	font-size: 20px;
+	color: #202020;
+	margin-left: 20px;
+	position: relative;
+	top:15px;
+}
 .tarrecstccards{
 	width: 400px;
 	height: 85px;
@@ -361,7 +495,7 @@ input[type=button]{
 	font-size: 14px;
 	color: #202020;
 }
-.concardstarrec{
+.concardstarrec, #concardstarrec, #concardstarrectwo{
 	width: 338px;
 	height: 80px;
 	border: solid 1px silver;
@@ -400,12 +534,13 @@ input[type=button]{
 #tarrecinfostc select option{
 	color:#333;
 }
-#tarrecinfostc input[type="radio"]{
+#tarrecinfostc input[type=radio]{
 	margin-top: 20px;
 
 }
 .mkstc{
 	background-image: -webkit-linear-gradient(top,#fff,#e0dede);
+	position:relative;
 }
 .pr{
 	width: 169px;
@@ -421,7 +556,35 @@ input[type=button]{
 	/*border:solid;*/
 	width: 1100px;
 }
+#concardstarrec ul{
+	margin: 0;
+	padding: 0;
+	/*border:solid;*/
+	width: 1100px;
+
+}
+#concardstarrectwo ul{
+	margin: 0;
+	padding: 0;
+	/*border:solid;*/
+	width: 1100px;
+}
 .concardstarrec ul li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	position: relative;
+}
+#concardstarrec ul li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	position: relative;
+
+}
+#concardstarrectwo ul li{
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -459,7 +622,8 @@ input[type=button]{
 	margin-top: -15px;
 }
 #cpcard ul li{
-	margin-top: 30px;
+	/*margin-top: 50px;*/
+	margin-top: 45px;
 }
 .sometextcardstc{
 	float:right;
@@ -628,8 +792,9 @@ margin-top: -30px;
 .mistdcad{
 	
 	height: 50px;
-	width: 470px;
+	width: 473px;
 	float: left;
+
 }
 .mistdcad span{
 	
@@ -638,37 +803,51 @@ margin-top: -30px;
 	font-weight: bold;
 }
 .tdcad{
-	border: solid 1px green;
-	height: 50px;
-	width: 70px;
+	/*border: solid 1px green;*/
+	/*height: 50px;
+	width: 70px;*/
+	height: 38px;
+	width: 72px;
 	float: right;
 	margin-left: 6px;
+	cursor: pointer;
 }
 .tdcadform{
 	background: #f4f4f4;
-	height: 150px;
+	height: 184px;
 	width: 530px;
 	float: left;
+	margin-left: 10px;
+	padding-left: 5px
 
 }
 .tdcadform input{
 	display: block;
-	width: 165%;
+	width: 150%;
+	border: none;
+	margin-top: 10px;
+	box-shadow: 0px 0px 1px #666;
+	border-radius: 3px;
 
 }
 .tdcadform label{
 	margin-top: 2px;
 	display: block;	
+	font-weight: bold;
+	color: #333;
 }
 .ldctdcad{
 	background: #f4f4f4;
 	float: right;
-	height: 150px;
+	height: 184px;
 	width: 22%;
 
 }
+.ldctdcad input{
+	width: 138px;	
+}
 .cardad{
-	background: url(../imagenes/card1.png);
+	background: url(../imagenes/tarjeta73_4.png);
 	background-size: 60px;
 	width: 60px;
 	height: 35px;
@@ -678,6 +857,7 @@ margin-top: -30px;
 	font-weight: bold;
 	margin-left: 10px;
 	margin-top:10px;
+	font-size: 11px;
 }
 .rangealc{
 	
@@ -687,7 +867,11 @@ margin-top: -30px;
 	background: #f4f4f4;
 	margin-top: -10px;
 }
-.rangealc >div:nth-of-type(1){
+/*.rangealc >div:nth-of-type(1){
+	margin-top: 8px;
+	margin-left: 20px;
+}*/
+.instrucrange{
 	margin-top: 8px;
 	margin-left: 20px;
 }
@@ -695,11 +879,12 @@ margin-top: -30px;
 	float: left;
 }
 .range, progress{
-	/* -webkit-appearance: none !important;*/
+	/*-webkit-appearance: none !important;
 	width: 200px;
 	margin-left: 60px;
 	margin-top: 25px;
-	height: 20px;
+	height: 20px;*/
+
 }
 .formalc{
 	float: left;
@@ -712,10 +897,11 @@ margin-top: -30px;
 }
 .text1alc{
 	
-	width: 270px;
+	width: 290px;
 	height: 105px;
-	float: left; 
-	margin-top: -10px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 3px;
 }
 .tips span{
 	font-weight: bold;
@@ -723,23 +909,134 @@ margin-top: -30px;
 }
 .text1alc p{
 	margin-top:10px;
-	line-height: 15px;
+
 
 }
 .xlsexporttdc{
+	background: #fff;
 	height: 45px;
 	width: 95px;
-	background: #fff url(../imagenes/Exportar.png)no-repeat;
-	
 	float: right;
 	margin-top: 150px;
+	cursor: pointer;
+	border-radius: 5px;
 }
-.xlsexporttdc div{
+.exxlsicon{
+	background: #fff url(../imagenes/Exportar.png)no-repeat;
+	height: 20px;
+	width: 20px;
+	margin: 2px;
+}
+.xlsexporttdc .txticon{
 	float: right;
-	
 	width: 50px;
 	margin: 5px;
 	font-weight: bold;
+	margin-right: 10px;
+	margin-top: -17px;
 }
+.csconfirm{
+	
+	height: 270px;
+	width: 370px;
+}
+.percardstc{
+	background: #fff;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	height: 80px;
+	width: 350px;
+	
+}
+.crdpertext{
+	float: left;
+	position: relative;
+	top: -60px;
+	left: 150px;
+	width: 200px;
+}
+.formcheckstc{
+	background: #efefef;
+	float: left;
+	margin-left: 10px;
+	margin-top: 15px;
+	height: 160px;
+	width: 350px;
+}
+.bt{
+	width: 150px;
+	margin-top: 18px;
+	margin-left: 13px;
+}
+.cardper{
+	border:solid 1px silver; 
+	margin: 15px;
+	height: 50px;
+	width: 115px;
+}
+input[type=file]{
+	margin-top: 10px;
+}
+.cardper{
+	height: 45px;
+	width: 73px;
+	background: url(../imagenes/tarjeta73_8.png);
+	/*background-size: 130px;*/
+}
+.infopermod{
+	background:url(../imagenes/infoslct.png);
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	left: 200px;
+	bottom: 81px;
+	cursor:pointer;
+}
+.msgper{
+	height: 62px;
+	width: 150px;
+	position: absolute;
+	top: 112px;
+	left: 67px;
+	background: #fff;
+	box-shadow: 2px 2px 4px #333;
+	display: none;
+}
+.tex{
+	height: 50px;
+	width: 130px;
+	margin-left: 8px;
+	margin-top: 3px;
+	font-size: 12px;
 
+}
+.radsetjr{
+	background: red;
+	width:10px;
+	height:10px; 
+	border:solid 1px; 
+	border-radius:50%;;
+}
+.rangehtml{
+border: solid;
+width: 128px;
+margin-top: 16px;
+margin-left: 80px;
+height: 20px;
+background: firebrick;
+border: none;
+border-radius: 5px;
+
+}
+.tableStep2{
+	margin-left: 84px;
+	width: 500px;
+}
+.allinputsStc{
+	border: solid 1px silver;
+	margin-top: 10px;
+	padding: 5px;
+	text-align:right;
+}
 /***********************************************************************/

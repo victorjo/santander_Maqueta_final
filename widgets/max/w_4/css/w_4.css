@@ -30,7 +30,6 @@
 	font-family:'Arial';
 	font-size:11px;
 	color:#272727;
-	margin-top: 5px;
 }
 
 .w4_top{
@@ -118,7 +117,7 @@
 	font-weight: bold;
 	height: 27px;
 	margin-top: 8px;
-	text-align: center;
+	text-align: left;
 	width: 318px;
 	margin: 5px 0 0 3px;
 	float:left;
@@ -134,7 +133,7 @@
 	font-weight: bold;
 	height: 27px;
 	margin-top: 8px;
-	text-align: center;
+	text-align: left;
 	width: 153px;
 	margin: 5px 3px 0 0px;
 	float:left;
@@ -150,7 +149,7 @@
 	font-family: Arial,Helvetica,sans-serif;
 	font-size: 11px;
 	font-weight: bold;
-	text-align: center;
+	text-align: left;
 	float: left;
 }
 
@@ -283,7 +282,7 @@
 	float: left;
 	margin-left: 10px;
 	margin-top: 10px;
-	font-family:'ArialBlack';
+	font-family:'Arial';
 	font-size:11px;
 }
 
@@ -492,7 +491,6 @@
 	position:relative;
 	float:left;	
 	height: 228px;
-	display:none;
 }
 
 .w4_AS_listado > div:first-of-type{
@@ -552,6 +550,10 @@
 
 .w4_AS_servicio > img:hover{
 	border: 1px #ff0000 solid;
+}
+
+.w4_AS_seleccionado{
+	border: 1px #ff0000 solid !important;
 }
 
 .w4_AS_servicio p{
@@ -646,7 +648,7 @@
 	margin:5px 0 0 1px;
 	width:713px;
 	position:relative;
-	height: 239px;
+	height: 278px;
 }
 
 .w4_AS_input{
@@ -752,9 +754,10 @@
 	font-size: 11px;
 	font-weight: bold;
 	height: 27px;
-	margin-top: 8px;
+	margin-left: 9px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	width: 235px;
-	margin: -14px 0 0 10px;
 	float:left;
 }
 
@@ -826,11 +829,11 @@
 	float: left;
 	width: 100%;
 	height: 60px;
+	margin-top: 5px;
 }
 
 .w4_selects{
 	float: left;
-	margin-left: 10px;
 	margin-top: 10px;
 }
 
@@ -852,10 +855,6 @@
 	float: right;
 }
 
-.w4_btn_exportar img:hover{
-	cursor: pointer;
-}
-
 /*--- Fin Estilos flujo 3 ---*/
 
 
@@ -867,4 +866,140 @@
 
 .w4_dropList{
 	margin-top: 10px;
+	margin-left: 10px;
+}
+
+
+.w4_HPG_personalizarIntervalo{
+	float:left;
+	width: 148px;
+	height:21px;
+	background-color:#FBFBFB;
+	border:1px #C2C0C0 solid;
+	box-shadow: 1px 1px 2px #E1E1E1;
+	border-radius:5px; 
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#4d4d4d !important;
+	font-style:italic;
+	padding:7px 0 0 10px;
+	position:relative;
+}
+
+.w4_HPG_personalizarIntervalo>div{
+	float:right;
+	border-left:1px #cfcfcf solid;
+	width:24px;
+	text-align:center;
+	height:21px;
+	position:absolute;
+	top:0;
+	right:0;
+	padding-top:7px;	
+}
+
+.w4_HPG_personalizarIntervalo>div:hover{
+	border-left:1px #ff0000 solid;	
+}
+
+.w4_HPG_personalizarIntervalo:hover{
+	border-color:#ff0000;
+	cursor:pointer;
+}
+
+
+.w4_PS_ayuda{
+    position:absolute;
+    bottom:0;
+    left:8px;
+}
+
+.w4_PS_ayuda p{
+    color: #282828;
+    font-family: 'ArialBlack';
+    font-size: 11px;
+    position: absolute;
+    left: 12px;
+    bottom: 185px;
+}
+
+
+.w4_CB_tam_CRAB_dropHdr1{
+    width:100%;
+    background-image: -webkit-linear-gradient(top,#fff,#e0dede);
+    position: relative;
+    height:30px;
+    float:left;
+    margin-top:5px;
+    border:1px silver solid;
+}
+
+.w4_CRAB_dropHdr2{
+    width:100%;
+    background-image: -webkit-linear-gradient(top,#fff,#e0dede);
+    position: relative;
+    height:30px;
+    float:left;
+    margin-top:5px;
+    border:1px silver solid;
+}
+
+.w4_CRAB_dropHdr1 p{
+    font-family: 'Arial';
+    color:#282828;
+    font-weight: bold;
+    font-size: 11px;
+    float:left;
+    margin:7px 0 0 10px;
+}
+
+.w4_CRAB_dropHdr2 p{
+    font-family: 'Arial';
+    color:#282828;
+    font-weight: bold;
+    font-size: 11px;
+    float:left;
+    margin:7px 0 0 10px;
+}
+
+.btnaction2{
+    background-image:url("../../../../img/botones/red_arrow_side.png");
+    width:22px;
+    height:22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    float:right;
+    margin:4px 10px 0 0;
+    cursor:pointer;
+}
+
+.btnaction{
+    background-image:url("../../../../img/botones/red_arrow_down.png");
+    width:22px;
+    height:22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    float:right;
+    margin:4px 10px 0 0;
+    cursor:pointer;
+}
+
+
+
+
+
+.w4_CRAB_dropHdr1{
+    width:100%;
+    background-image: -webkit-linear-gradient(top,#fff,#e0dede);
+    position: relative;
+    height:30px;
+}
+
+
+
+.w4_CRAB_dropHdr2{
+    width:100%;
+    background-image: -webkit-linear-gradient(top,#fff,#e0dede);
+    position: relative;
+    height:30px;
 }

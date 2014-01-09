@@ -1,0 +1,205 @@
+	<!--	<script src="../../../js/jquery10.2.min.js"></script>		-->
+		<script src="../../../js/components.js"></script>
+		<!--<script src="../../../js/ddSlick.js"></script>-->
+		<link rel="stylesheet" href="../../../css/generally.css" />
+		<link rel="stylesheet" href="../../../css/componentes.css" />
+		<style>
+		.col1_OC {
+			float: left;
+			height: 336px;
+			margin-right: 10px;
+			width: 532px;
+		}
+		.col2_OC {
+			float: left;
+			width: 180px;
+		}
+		.p_OC {
+			color:#232323;
+			font-weight:bold;
+			font-size:13px;
+		}
+		.textbox_OC {
+			width:100% !important;
+		}
+		.middletd_OC {
+			text-align:center;
+			width:50%;
+		}
+		.table_OC {
+			width:100%;
+		}
+		.span_OC {
+			font-size:11px;
+		}
+		.a_OC {
+			color:#ff0d37;
+			font-weight:bold;
+		}
+		.dd-select {
+			width: 160px !important;
+		}
+		.dd-container {
+			width: 174px !important;
+			margin-right:11px;
+		}
+
+		.tableHG {
+			background:#efefef;
+			width:100%;
+		}
+
+		.tableHG p{
+			color: #272727;
+			font-size:12px;
+			font-weight:bold;
+		}
+		
+		.tableHG span{
+			font-size:11px;
+			font-weight:bold;
+			color:#e0dede;
+
+		}
+
+		.fullCon {
+			height:auto;
+			margin-bottom:20px;
+			width:100%;
+		}
+
+		.tableHG select {
+			width:100%;
+		}
+		
+		.dd-container {
+			float:left;
+		}
+		
+		.dd-select {
+			border-radius: 5px;
+			width:220px !important;
+		}
+		.switchBox{
+			top:0px;
+		}
+		.wrapGrid>table>tbody>tr:not(:first-child) {
+			height:50px !important;
+		}
+		</style>
+		<script>
+			$(document).ready(function(){
+				Gridius($('.containerG'),{
+					hasStatus:true,
+					configButton:true,
+					colums:['Tarjeta de Credito','Saldo disponible (MXP)','Saldo a transferir (MXP)','Pago mensual(MXP)','Tasa*','Estatus'],
+					rowsValues:['<input type="radio"><img src="img/iconos/card.png"> 1234****5678','999,999,999.00','000.0.','1000.00','99.99%',''],
+					numRows:10
+				});
+				construyeSwitch("switchBox");
+				
+			});
+		</script>
+		<!--<input type="button" value="GRID" onclick="Gridius($('.contenidoFlujo'),{colums:[13,23,33,43,53],rowsValues:[1,2,3,4,5],numRows:10});">-->
+		<div id="widampliado">
+			<div id="WA_pasos">
+				<img src="../../../img/assets/pasos.png"/>
+				<div class="btnHeader info">
+					<img src="../../../img/assets/ico_info.png"  />
+				</div>
+				<div class="btnHeader cerrar">
+					<img src="../../../img/assets/ico_cerrar_widget.png"  />
+				</div>
+			</div>
+			
+			<div id="WA_nav">
+				<ul>
+					<li class="menu">
+						<p>
+						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
+					</li>
+					<li>
+						<p>Solicitar transferencia de saldos</p>
+					</li>
+					<li>
+						<p>Consultar estado de transferencia de saldo</p>
+					</li>
+				</ul>
+			</div>
+			<div id="WA_contenedorFlujos">
+				<div class="titFlujo" style="height:70px;">
+					<div class="iconFlujo">
+						<img src="../../../img/assets/ico_cuentas_propias.png"/>
+					</div>
+
+					<p class="titulo">Solicitar transferencia de datos</p>
+					<p class="subtitulo">Seleccione la operacion que desea realizar</p>
+					<table style="margin-top:3px">
+						<tr>
+							<td style="padding-left:100px;font-size:12px;font-weight:bold;width:159px">Transferencia de saldos de otras tarjetas de credito</td>
+							<td><div class="switchBox"></div></td>
+							<td style="font-size:12px;font-weight:bold;vertical-align: top;padding-top: 14px;">Disposicion de tarjeta a cuenta de cheques</td>
+						</tr>
+					</table>
+				</div>
+				<div class="contenidoFlujo" style="border:0px solid black;">
+				<br>
+					<p style="font-size:12px;font-weight:bold;">Introduzca los datos de la tarjeta de crédito o comercial de la que desea transferir su saldo:</p>
+					<br>
+					<div class="tableHG fullCon">
+						<table style="width:100%;height:75px">
+							<tr>
+								<td>
+									<p>Numero de tarjeta</p>
+									<input class="dd-select" type="text">
+								</td>
+								<td>
+									<p>Institucion bancaria o comercial</p>
+									<input class="dd-select" type="text">
+								</td>
+								<td>
+									<p>Ingrese el monto que desea transferir</p>
+									<input class="dd-select" type="text">
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="fullCon" style="display:none">
+						<div class="select_OC"></div>
+						<div class="select_OC"></div>
+						<div class="select_OC"></div>
+						<a href="#" style="float:right;float: right;font-size: 12px;color: #db1539;">Nueva busqueda</a>
+					</div>
+					
+					<div class="fullCon" style="display:none">
+						<p style="display:none;width: 260px;float: left;margin-bottom: 3px;margin-top:5px;font-size: 12px;font-weight: bold;">Mis movimientos de la tarjeta</p> <div style="float:right;displau:none"><img src="0" alt=""><img src="1" alt=""><img src="2" alt=""></div>
+					</div>
+					<div class="containerG"></div>
+				</div>
+				<div class="botonera">
+					<div class="btnaceptar">Continuar</div>
+				</div>
+				
+			</div>
+		</div>
+		<script>
+			(function(){
+				construyeSwitch("switch_OC");
+				var js = [{
+			        text: "Elemento 0",
+			        value: 1,
+			        selected: false			    
+			    }];
+
+				$(".select_OC").ddslick({
+			    data:js,
+			    width:300,
+			    imagePosition:"left",
+			    onSelected: function(selectedData){
+			       
+			    }   
+		    });
+			})();
+		</script>
+		

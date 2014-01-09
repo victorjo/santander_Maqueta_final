@@ -5,6 +5,8 @@
 
 .titFlujo{
 	width:725px !important;
+	height:auto !important;
+	overflow:visible !important;
 }
 
 .btnheader>img{
@@ -24,15 +26,38 @@
 	height:475px !important;
 }
 
+.step1 .titFlujo>div:first-of-type{
+	margin-top:5px;
+}
+
+.step1 .titFlujo>div:nth-of-type(2) {
+	width: 245px;
+	float: left;
+	margin-top: 14px;
+	color: red;
+}
+
+.w10_HPG_miniBanner{
+	float:left;
+	width:197px;
+	height:43px;
+	background-image:url('../img/titPrograma_1.png');
+	background-size:100% 100%;
+}
+.w10_HPG_wra_Select3{
+	float:left;
+	margin:7px 0 0 10px;
+}
+
 .w10_HPG_seleccionTarjeta {
-width: 100%;
-height: 80px;
-float: left;
-background-color: #EFEFEF;
-font-family: Arial, Helvetica, sans-serif;
-color: #272727;
-font-size: 11px;
-margin-top: 10px;
+	width: 100%;
+	height: 70px;
+	float: left;
+	background-color: #EFEFEF;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #272727;
+	font-size: 11px;
+	margin-top: 10px;
 }
 
 .w10_HPG_tarjeta {
@@ -152,7 +177,7 @@ margin-top: 10px;
 
 .w10_HPG_personalizarIntervalo{
 	float:left;
-	width:143px;
+	width:153px;
 	height:21px;
 	background-color:#FBFBFB;
 	border:1px #C2C0C0 solid;
@@ -192,7 +217,9 @@ margin-top: 10px;
 	width:160px;
 }
 
-
+.w10_PS_cardListSelect{
+	background-color: #cccccc !important;
+}
 .w10_PS_cardList{
 	color: #626262;
 	font-family: Arial, Helvetica, sans-serif;
@@ -205,6 +232,8 @@ margin-top: 10px;
 	border-collapse: separate;
 	border-spacing: 0px 10px;
 }
+
+
 
 .w10_PS_cardList td{
 	height:30px;
@@ -257,7 +286,7 @@ margin-top: 10px;
 	width:100%;
 	float:left;
 	text-align:left;
-	margin-top: 10px;
+	margin-top: 5px;
 	height: 30px;
 	color:#282828;
 	font-size:11px;
@@ -364,6 +393,15 @@ margin-top: 10px;
 	cursor:pointer;
 }
 
+.w10_IT_inscribirTarjetasSelect{
+	background-color: #E2DFDF !important;
+}
+
+.w10_IT_inscribirTarjetas_seleccionada{
+	background-color: #E2DFDF;
+	cursor:pointer;
+}
+
 .w10_IT_inscribirTarjetas td:first-of-type{
 	width:30px;
 	border-top:none;
@@ -420,4 +458,22 @@ margin-top: 10px;
 .wra_flu2>.btnaceptar {
 float: right;
 width: 160px;
+}
+
+.linkEditar{
+	color:#ff0000;
+	text-decoration: none;
+}
+
+.tableStep3{
+	height:auto;
+}
+
+.tableStep2 {
+	font-size: 12px;
+	float: left;
+	margin-left: 181px;
+	margin-top: 15px;
+	height: 140px;
+	width: 350px;
 }

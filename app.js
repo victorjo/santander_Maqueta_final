@@ -24,10 +24,6 @@
 					genFooterHeight();
 					ajustaBannerHeight();
 
-
-					setInterval(function(){ /*motorSuperbanner()*/ },15000);
-
-
 					//
 						//valToForm();
 						//outaLogin();

@@ -1,40 +1,159 @@
 var ddData = [{
-    text: "1234****5678 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Producto Santander &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Alias &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
+    text: "1254789632145 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ferrarri &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  A_PP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
     value: 1,
     selected: false,
 }, {
-    text: "1234****5678 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Producto Santander &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Alias &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
+    text: "48796512034858 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Porshe &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  C_XX &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
     value: 2,
     selected: false,
 
 }, {
-    text: "1234****5678 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Producto Santander &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Alias &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
+    text: "1201254789632 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ford &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  N_LT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
     value: 3,
     selected: false,
 }, {
-    text: "1234****5678 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Producto Santander &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Alias &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
+    text: "1235469854656 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nissan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  G_T7 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
     value: 4,
     selected: false,
 }];
+
 var identificador = 0;
+var textoServicio = '';
 
 //Carga de datos (Tabla dinamica)
 var data = {
     colums: ['Fecha', 'Descripción', 'Referencia', 'Cuenta de cargo', 'Cuenta destino', 'Importe', 'Estatus'],
-    rowsValues: ['dd/mm/aaaa', '123456789123', '123456789123', '1234****7890', '1234****7890', '999,999,999.00', 'Exitosa'],
+    rowsValues: ['08/01/2014', '123456789123', '123456789123', '1234****7890', '1234****7890', '999,999,999.00', 'Exitosa'],
     numRows: 30
 }
 
 var dataTbl2 = {
     colums: ['Nombre de servicio', 'Categoría', 'Alias', 'Convenio', 'Referencia', 'Fecha de pago', 'Importe', 'Estatus'],
-    rowsValues: ['Lorem Ipsum', 'Lorem Ipsum', 'Lorem', '1234', '1234567890', 'dd/mm/aaaa', '999,999,999.00', 'Exitosa'],
+    rowsValues: ['Axtel', 'Telefonía', 'Ax_02', '1234', '1234567890', 'dd/mm/aaaa', '999,999,999.00', 'Exitosa'],
+    numRows: 30
+}
+
+var data1 = [{
+    text: "1 mes sin interes",
+    value: 1,
+    selected: false,
+}, {
+    text: "2 meses sin intereses",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "3 meses sin intereses",
+    value: 3,
+    selected: false,
+}];
+
+var data2 = [{
+    text: "3 dias",
+    value: 1,
+    selected: false,
+}, {
+    text: "4 dias",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "1 día",
+    value: 3,
+    selected: false,
+}];
+
+var datacat = [{
+    text: "Telefonía",
+    value: 1,
+    selected: false,
+}, {
+    text: "Transporte",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "Colegio",
+    value: 3,
+    selected: false,
+}];
+
+var dataubic = [{
+    text: "Distrito Federal",
+    value: 1,
+    selected: false,
+}, {
+    text: "Guadalajara",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "Michoacán",
+    value: 3,
+    selected: false,
+}];
+
+var databusqueda = [{
+    text: "Últimos 5 pagos",
+    value: 1,
+    selected: false,
+}, {
+    text: "Último mes",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "Últimos 3 meses",
+    value: 3,
+    selected: false,
+}];
+
+var dataEstatus = [{
+    text: "Programados",
+    value: 1,
+    selected: false,
+}, {
+    text: "Exitosos",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "No exitoso",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "Todos",
+    value: 3,
+    selected: false,
+}];
+
+var datoRango = [{
+    text: "999,999,999,00(MXP)",
+    value: 1,
+    selected: false,
+}, {
+    text: "999,999,999,00(MXP)",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "999,999,999,00(MXP)",
+    value: 3,
+    selected: false,
+}];
+
+var identificador = 0;
+
+//Carga de datos (Tabla dinamica)
+var data = {
+    colums: ['Fecha', 'Descripción', 'Referencia', 'Cuenta de cargo', 'Cuenta destino', 'Importe', 'Estatus'],
+    rowsValues: ['08/01/2014', '123456789123', '123456789123', '1234****7890', '1234****7890', '999,999,999.00', 'Exitosa'],
     numRows: 30
 }
 
 
 $(function() {
-    //Datepicker
-    //$('#date').datepicker(); 
 
     $(".w4_PS_dd1 select").ddslick({
         data: ddData,
@@ -48,29 +167,29 @@ $(function() {
     });
 
     $(".w4_PS_dd2 select").ddslick({
-        data: ddData,
+        data: data1,
         width: 318,
         background: "#f7f7f7",
         imagePosition: "left",
-        selectText: "Seleccionar",
+        selectText: "3 meses sin intereses",
         onSelected: function(data) {
             console.log(data);
         }
     });
 
     $(".w4_PS_dd3 select").ddslick({
-        data: ddData,
+        data: data2,
         width: 318,
         background: "#f7f7f7",
         imagePosition: "left",
-        selectText: "Seleccionar",
+        selectText: "3 dias antes",
         onSelected: function(data) {
             console.log(data);
         }
     });
 
     $(".wra_Select4 select").ddslick({
-        data: ddData,
+        data: datacat,
         width: 263,
         background: "#f7f7f7",
         imagePosition: "left",
@@ -81,7 +200,7 @@ $(function() {
     });
 
     $(".wra_Select3 select").ddslick({
-        data: ddData,
+        data: dataubic,
         width: 263,
         background: "#f7f7f7",
         imagePosition: "left",
@@ -92,7 +211,7 @@ $(function() {
     });
 
     $(".w4_select_1 select").ddslick({
-        data: ddData,
+        data: databusqueda,
         width: 140,
         background: "#f7f7f7",
         imagePosition: "left",
@@ -114,7 +233,7 @@ $(function() {
     });
 
     $(".w4_select_3 select").ddslick({
-        data: ddData,
+        data: datoRango,
         width: 140,
         background: "#f7f7f7",
         imagePosition: "left",
@@ -125,7 +244,7 @@ $(function() {
     });
 
     $(".w4_select_4 select").ddslick({
-        data: ddData,
+        data: dataEstatus,
         width: 80,
         background: "#f7f7f7",
         imagePosition: "left",
@@ -155,8 +274,16 @@ $(function() {
     });
 
 
-});
+    $('.w4_HPG_personalizarIntervalo').click(function() {
+        cargaCalendario('switchModal()', 'calendario');
+    });
 
+    $(".w4_exportar").click(function() {
+        window.open('data:application/vnd.ms-excel,' + encodeURIComponent($('.tablaDinamica').html()));
+
+    });
+
+});
 
 $(document).ready(function() {
     $('.w4_AS_busqueda').hide();
@@ -225,6 +352,13 @@ $(document).ready(function() {
         var logo = $(this).attr('id');
         $('.w4_PS_Img').addClass(selecServicio(logo));
         $('.w4_PS_seleccionado').text(logo);
+        //textos
+        $('.Alias2').text($(this).children('td:nth-of-type(3)').text());
+        $('.numero2').text($(this).children('td:nth-of-type(4)').text());
+        $('.fecha2').text($(this).children('td:nth-of-type(5)').text());
+        $('.dinero2').text($(this).children('td:nth-of-type(6)').text());
+        $('.clave2').text($(this).children('td:nth-of-type(7)').text());
+
         $('.visor').fadeIn('slow');
     });
 
@@ -235,7 +369,71 @@ $(document).ready(function() {
             $('.w4_PS_tabla2').load('../../../../tablas/w4/w4_PS_tblPaso2.html');
         }
     });
+
+    $('.w4_AS_servicio').click(function() {
+
+        $('.w4_AS_servicio').find('img').removeClass('w4_AS_seleccionado');
+        $(this).find('img').addClass('w4_AS_seleccionado');
+        textoServicio = $(this).find('p').text();
+    });
+
+    $(".btnaction2").click(function() {
+
+        if ($(this).hasClass("btnaction2")) {
+            $(this).removeClass("btnaction2");
+            $(this).addClass("btnaction");
+        } else {
+            $(this).removeClass("btnaction");
+            $(this).addClass("btnaction2");
+        }
+
+        $(this).parent().next().slideToggle("slow");
+    });
+
+    $(".btnaction").click(function() {
+
+        if ($(this).hasClass("btnaction")) {
+            $(this).removeClass("btnaction");
+            $(this).addClass("btnaction2");
+        } else {
+            $(this).removeClass("btnaction2");
+            $(this).addClass("btnaction");
+        }
+
+        $(this).parent().next().slideToggle("slow");
+    });
+
+    $(".w4_CRAB_dropHdr1").children(".toggle").click(function() {
+        $(".w4_AS_inputsAlta").slideUp("slow");
+        $('.w4_AS_busqueda').slideUp("slow");
+        $(".w4_CRAB_dropHdr2").children(".btnaction").removeClass("btnaction").addClass("btnaction2");
+    });
+
+    $(".w4_CRAB_dropHdr2").children(".toggle").click(function() {
+        $(".w4_AS_listado").slideUp("slow");
+        $('.w4_AS_busqueda').slideUp("slow");
+        $(".w4_CRAB_dropHdr1").children(".btnaction").removeClass("btnaction").addClass("btnaction2");
+    })
 });
+
+function visibilidad() {
+    $('.w4_AS_servicio').find('img').removeClass('w4_AS_seleccionado');
+    $('.w4_AS_listado').slideDown();
+    $('.w4_AS_inputsAlta').slideUp();
+    $('.w4_AS_busqueda').slideUp();
+}
+
+function encontrado() {
+    if (textoServicio == 'Axtel') {
+        $('.w4_AS_listado').slideUp();
+        $('.w4_AS_inputsAlta').slideDown();
+        $('.w4_AS_busqueda').slideDown();
+    } else {
+        $('.w4_AS_listado').slideUp();
+        $('.w4_AS_inputsAlta').slideDown();
+        $('.w4_AS_busqueda').slideUp();
+    }
+}
 
 function activacion() {
     $('.w4_flu1_activo').removeClass('liActive');

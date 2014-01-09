@@ -1,15 +1,13 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-	  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-	  <title>Administración Tarjeta de Crédito</title>
-	  <script src="../js/jquery10.2.min.js"></script>
+
 	  <script src="widgets/max/w_16/js/w_16.js"></script>
 	  <script src="../js/components.js"></script>
 	  <script src="../js/ddSlick.js"></script>
 	  <link rel="stylesheet" href="widgets/max/w_16/css/w_16.css" />
-	</head>
-	<body>
+		<script>
+			ocultaAsset();
+		</script>
+
+
 		<div id="widampliado">
 			<!-- Bloqueo -->
 			<div id="bloqueoWidget" class="bloqueoElement"></div>
@@ -23,7 +21,7 @@
 					<img src="../img/assets/ico_info.png"  />
 				</div>
 				<div class="btnHeader cerrar">
-					<img src="../img/assets/ico_cerrar_widget.png"  />
+					<img src="../img/assets/ico_cerrar_widget.png" onclick="closeAction();" />
 				</div>
 			</div>
 			
@@ -33,20 +31,20 @@
 						<p>
 						<img src="../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu1')">
+					<li onclick="cambiaFlujo('.wra_flu1'); ocultaAsset();">
 						<p>Alta/baja de<br/>Tarjetas de Terceros</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu2')">
-						<p>Inscribir tarjetas</p>
+					<li onclick="cambiaFlujo('.wra_flu2');muestraAsset();">
+						<p>Reporte por<br/>Robo o Extravío</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu3')">
-						<p>Inscribir tarjetas</p>
+					<li onclick="cambiaFlujo('.wra_flu3');muestraAsset();">
+						<p>Registro / Cambio de<br/>NIP de Tarjeta</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu4')">
-						<p>Inscribir tarjetas</p>
+					<li onclick="cambiaFlujo('.wra_flu4');muestraAsset();">
+						<p>Administración de<br/>uso de Tarjetas</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu5')">
-						<p>Inscribir tarjetas</p>
+					<li onclick="cambiaFlujo('.wra_flu5');muestraAsset();">
+						<p>Desbloqueo/Reposición<br/>de tarjeta(s)</p>
 					</li>
 				</ul>
 			</div>
@@ -73,13 +71,14 @@
 							</table>
 							<div  class="w16_PS_listadoTarjeta">
 								<table class="w16_PS_cardList">
+								<!--onclick="cargaToken('switchModal();','switchModal();bajaTarjeta();',undefined,'');"-->
 									<tr>
 										<td>1234****5678</td>
 										<td>Nombre Banco</td>
 										<td>Nombre titular</td>
 										<td>Alias de cuenta</td>
 										<td>Correo@correo.com</td>
-										<td><div style="width:10px;height:10px;background-color:red;border-radius:5px;margin-left:5px;color:white;font-weight:bold;text-align:center">x</div></td>
+										<td class="w_16_PS_baja" ><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
 									</tr>
 									<tr>
 										<td>1234****5678</td>
@@ -87,7 +86,7 @@
 										<td>Nombre titular</td>
 										<td>Alias de cuenta</td>
 										<td>Correo@correo.com</td>
-										<td><div style="width:10px;height:10px;background-color:red;border-radius:5px;margin-left:5px;color:white;font-weight:bold;text-align:center">x</div></td>
+										<td><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
 									</tr>
 									<tr>
 										<td>1234****5678</td>
@@ -95,7 +94,7 @@
 										<td>Nombre titular</td>
 										<td>Alias de cuenta</td>
 										<td>Correo@correo.com</td>
-										<td><div style="width:10px;height:10px;background-color:red;border-radius:5px;margin-left:5px;color:white;font-weight:bold;text-align:center">x</div></td>
+										<td><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
 									</tr>
 									<tr>
 										<td>1234****5678</td>
@@ -103,7 +102,7 @@
 										<td>Nombre titular</td>
 										<td>Alias de cuenta</td>
 										<td>Correo@correo.com</td>
-										<td><div style="width:10px;height:10px;background-color:red;border-radius:5px;margin-left:5px;color:white;font-weight:bold;text-align:center">x</div></td>
+										<td><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
 									</tr>
 									<tr>
 										<td>1234****5678</td>
@@ -111,7 +110,7 @@
 										<td>Nombre titular</td>
 										<td>Alias de cuenta</td>
 										<td>Correo@correo.com</td>
-										<td><div style="width:10px;height:10px;background-color:red;border-radius:5px;margin-left:5px;color:white;font-weight:bold;text-align:center">x</div></td>
+										<td><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
 									</tr>
 									<tr>
 										<td>1234****5678</td>
@@ -119,12 +118,12 @@
 										<td>Nombre titular</td>
 										<td>Alias de cuenta</td>
 										<td>Correo@correo.com</td>
-										<td><div style="width:10px;height:10px;background-color:red;border-radius:5px;margin-left:5px;color:white;font-weight:bold;text-align:center">x</div></td>
+										<td><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
 									</tr>
 								</table>
 							</div>
 							<div class="botonera">
-								<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(1);">Agregar Tarjeta</div>
+								<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(1); muestraAsset();">Agregar Tarjeta</div>
 							</div>
 						</div>
 
@@ -298,7 +297,3 @@
 				<img src="../img/mrsmackdown.png"/>
 			</div>
 		</div>
-		
-		
-	</body>
-</html>

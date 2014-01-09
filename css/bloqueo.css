@@ -17,6 +17,9 @@
 #elementBloqueo .btnaceptar { width: 155px; }
 #elementBloqueo .btnaceptar:last-child { margin-left: 15px; }
 
+/* boton de calendario */
+#calendario .btnaceptar{ width: 158px; margin-left: 9px !important; }
+
 
 
 /*BLOQUEO DE TOKEN*/
@@ -123,3 +126,90 @@
 /**************Flecha verde by jramon*********************/
 
 /*FIN BLOQUEO DE CORREO Y TELEFONO*/
+
+
+/*---- Estilo de  calendario ----*/
+
+#calendario{
+	width: 410px;
+	height: 225px;
+	background-color: #e0dede;
+}
+
+
+.cal_ico_cerrar{
+	width: 25px;
+	height: 25px;
+	float: right;
+	margin-right: 10px;
+	background-size: 100% 100%;
+	background-image: url('../img/assets/ico_cerrar_calendario.png');
+}
+
+.cal_contenedor{
+	width: 192px;
+	height: 145px;
+	float: left;
+	margin-top: 32px;	
+}
+
+.cal_contenedor p{
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	float: left;
+	margin-left:10px;
+	margin-bottom: 10px; 
+}
+
+.cal_contenedor p:first-of-type{
+	margin-left:0px;
+}
+
+
+.cal_input{
+	background-color: #E8E8E8;
+	border: 1px solid #A4A4A4;
+	border-radius: 5px;
+	color: #A4A4A4;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	height: 28px;
+	margin-left: 9px;
+	text-align: center;
+	width: 160px;
+	float: left;
+}
+
+.cal_calendario{
+	width: 165px;
+	height: 165px;
+	float: right;
+	margin-top: 15px;
+	background-size: 100% 100%;
+	background-image: url('../img/assets/calendario.png');
+
+}
+
+.ui-widget {
+	font-family: Arial,sans-serif !important;
+	font-size: 11px !important;
+}
+
+.ui-datepicker {
+	width: 165px !important;
+	height: 165px !important;
+}
+
+#ui-datepicker-div{
+	position:fixed;
+	top: 250.234375px !important;
+	left: 966.5px !important;
+	z-index: 1001 !important;
+}
+
+.cal_ico_cerrar{
+	cursor: pointer;
+}
+/*---- Fin de Estilo de  calendario ----*/

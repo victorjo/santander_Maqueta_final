@@ -178,12 +178,12 @@ h2{
 }
 
 .titFlujo .subtitulo{
-	font-size: 10px;
+	font-size: 11px;
 }
 
 
 .contenidoFlujo{
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	float: left;
 	margin-left: 5px;
     height: 425px;
@@ -625,4 +625,9 @@ margin: 0 !important; }
     margin-top:10px;
     margin-left:10px;          
   	display:none;
+}
+
+.toolsGrid img{
+	margin-top: 5px !important;
+	margin-left: 4px !important;
 }
