@@ -213,3 +213,38 @@
 	cursor: pointer;
 }
 /*---- Fin de Estilo de  calendario ----*/
+
+
+
+/*---- EStilo para Terminos y condiciones ----*/
+.term_body{
+	background :none !important;
+}
+
+.term_informacion{
+	width: 293px;
+	height: 258px;
+	margin-top: 10px;
+	overflow:scroll; 
+	overflow-x: hidden;
+}
+
+.term_informacion p{
+	color: #ffffff;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+}
+
+.term_informacion div{
+	color: #ffffff;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	margin-top: 10px;
+}
+
+.term_aviso{
+	margin-top: 15px;
+}
+
+.term_btn{ margin-left: 65px !important; }
+/*---- EStilo para Terminos y condiciones ----*/
