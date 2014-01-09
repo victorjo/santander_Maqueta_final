@@ -84,6 +84,7 @@
 	          	var delButton = "<div class='delete'><img style='width:100% !important;height:100% !important' src='widgets/max/w_17/imagenes/close.png'></div>";
 	          	$(delButton).appendTo(objectF);
 	            objectF.appendTo("#cpcard ul");
+	           // $("#cpcard ul li").addClass("opacity");
 
 				$("#cpcard ul li").css("cursor","pointer");
 				//$("#cpcard ul li:first").css("width","130px");
@@ -91,7 +92,8 @@
 				$("#cpcard ul li:first").removeClass("ll")
 				$("#cpcard ul li:first img").css("width","130px");
 				$("#cpcard ul li:first img").css("height","70px");
-				//$("#cpcard ul li:first .delete").fadeOut("fast");
+				if($("#cpcard ul li ").length == 1) $("#cpcard ul li:first .delete").fadeOut("fast");
+				else if($("#cpcard ul li ").length > 1) $("#cpcard ul li:first .delete").fadeIn("fast");
 				$("#cpcard ul li:first .delete").css("height","15px");
 				$("#cpcard ul li:first .delete").css("height","14px");
 				$("#cpcard ul li:first img").css("margin-left","20px");
@@ -113,6 +115,19 @@
 					//$(".frcts").slideUp();
 
 				}*/
+				
+
+
+				$("#cpcard ul li").click(function(){
+					/*if ($(this).hasClass("opacity")) {
+		            $(this).removeClass("opacity");
+		          	}else{*/
+		          	//$(this).addClass("opacity");
+		          	$(this).css("opacity","0.6");
+		          //}
+					
+				});
+
 				$("#cpcard ul li > .delete").click(function(){
 					$(this).parent().remove();
 	            	if ($("#cpcard ul li").length) {
@@ -138,13 +153,13 @@
 			});
 
 			$("#tdcad1").click(function(){
-				$("#tdf1").attr("placeholder","Juan Perez Jolote");
+				$("#tdf1").attr("placeholder","Antonio Cruz Martinez");
 				$("#tdf2").attr("placeholder","RORR890319HSCKB");
 				$("#tdf3").attr("placeholder","juanp@webmail.com");
 				$("#tdf4").attr("placeholder","Hermano");
 				$("#tdf5").attr("placeholder","55-30764419");
 			});
-			$("#tdcad2").click(function(){
+			/*$("#tdcad2").click(function(){
 				$("#tdf1").attr("placeholder","Ana Cruz Peña");
 				$("#tdf2").attr("placeholder","AOCR890319HSCKB");
 				$("#tdf3").attr("placeholder","Anap@webmail.com");
@@ -164,7 +179,7 @@
 				$("#tdf3").attr("placeholder","paguilar@webmail.com");
 				$("#tdf4").attr("placeholder","Esposa");
 				$("#tdf5").attr("placeholder","55-13363719");
-			});
+			});*/
 			//$("button").click(function(){
 
 

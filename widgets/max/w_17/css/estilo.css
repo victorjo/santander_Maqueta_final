@@ -482,6 +482,7 @@ input[type=button]{
 	/*border:solid;*/
 	margin: 46px auto;
 	position: relative;
+	left: 57px;
 } 
 #tarrecstctext{
 	width: 345px;
@@ -1081,5 +1082,9 @@ float: right;
 left: 46px;
 cursor: pointer;
 z-index: 4000;
+}
+.opacity{
+	opacity: 0.6;
+
 }
 /***********************************************************************/
