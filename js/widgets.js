@@ -97,7 +97,7 @@ var widgets = [
 				{
 					id:1,
 					type:2,
-					order:5,
+					order:9,
 					group:1,
 					contentMin:'',
 					contentMax:''
@@ -105,12 +105,28 @@ var widgets = [
 				{
 					id:5,
 					type:2,
-					order:9,
+					order:5,
 					group:1,
 					contentMin:'',
 					contentMax:''
 				},{
 					id:8,
+					type:2,
+					order:7,
+					group:1,
+					contentMin:'',
+					contentMax:''
+				},
+				{
+					id:6,
+					type:2,
+					order:10,
+					group:2,
+					contentMin:'',
+					contentMax:''
+				},
+				{
+					id:2,
 					type:2,
 					order:0,
 					group:1,
@@ -118,32 +134,16 @@ var widgets = [
 					contentMax:''
 				},
 				{
-					id:6,
-					type:3,
-					order:10,
-					group:3,
-					contentMin:'',
-					contentMax:''
-				},
-				{
-					id:2,
-					type:1,
-					order:7,
-					group:1,
-					contentMin:'',
-					contentMax:''
-				},
-				{
 					id:7,
 					type:2,
-					order:4,
+					order:11,
 					group:3,
 					contentMin:'',
 					contentMax:''
 				},
 				{
 					id:4,
-					type:1,
+					type:2,
 					order:3,
 					group:4,
 					contentMin:'',
@@ -160,7 +160,7 @@ var widgets = [
 
 				{
 					id:10,
-					type:1,
+					type:2,
 					order:8,
 					group:1,
 					contentMin:'',
@@ -177,23 +177,16 @@ var widgets = [
 				{
 					id:13,
 					type:2,
-					order:11,
+					order:4,
 					group:2,
 					contentMin:'',
 					contentMax:''
 				},{
 					id:14,
-					type:2,
+					type:3,
 					order:12,
 					group:2,
-					contentMin:'<h1 class="btnaceptar_wr">Saldos y Movimientos</h1>',
-					contentMax:''
-				},{
-					id:15,
-					type:2,
-					order:13,
-					group:2,
-					contentMin:'<h1 class="btnaceptar_wr">MACHOTE</h1>',
+					contentMin:'',
 					contentMax:''
 				},{
 					id:16,
@@ -201,13 +194,6 @@ var widgets = [
 					order:14,
 					group:2,
 					contentMin:'<h1 class="btnaceptar_wr">TRANSFERENCIAS_I</h1>',
-					contentMax:''
-				},{
-					id:17,
-					type:2,
-					order:15,
-					group:2,
-					contentMin:'<h1 class="btnaceptar_wr">TARJETA DE CREDITO</h1>',
 					contentMax:''
 				}
 			];

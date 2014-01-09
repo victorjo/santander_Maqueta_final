@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#detalle {
+	position: absolute;
+	top: 255px;
+	background-color: #eeeeee;
+	width: 450px;
+	height: 40px;
+}
+
+#detalle_2 {
+	background-image:url(../assets/pic_saldos_2.png);
+	position: absolute;
+	top: 255px;
+	left:458px;
+	width: 40px;
+	height: 40px;
+}
+
+#tituloicon {
+	background-image:url(../assets/pic_saldos.png);
+	background-repeat:no-repeat;
+	width:35px;
+	height:30px;
+}
+
+#titulo {
+	color: #ff0d37;
+	font-family: Arial;
+	font-size: 16px;
+	padding-left:10px;
+	padding-top:5px;
+	}
+	
+#subtitulo {
+	color: #ff0d37;
+	font-family: Arial;
+	font-size: 11px;
+	padding-left:20px;
+	padding-top:10px;
+	}	
+	
+#tarjeta {
+	width:95px;
+	padding-left:30px;
+	padding-right:10px;
+	padding-top:10px;
+	}		
+
+#total {
+	background-color: rgba(255,255,255,0.60);
+	position: absolute;
+	top: 215px;
+	left:195px;
+	border: solid 1px;
+	border-color: #dadada;
+	height: 30px;
+	width: 135px;
+}
+
+#carrusel {
+	height:10px;
+	width:380px;
+	text-align:center;
+	}
+	
+#inactivo {
+	background-color: rgba(255,255,255,0.60);
+	border: solid 1px;
+	border-color: #dadada;
+	height: 50px;
+	width: 115px;
+	padding-left: 10px;
+
+}
+
+#activo {
+	border: solid 1px;
+	border-color: #ff0d37;
+	height: 50px;
+	width: 135px;
+	padding-left: 10px;
+}
+
+#activotxt {
+	color: #ff0d37;
+	font-family: Arial;
+	font-size: 11px;
+	font-weight: bold;
+	width: 120px;
+	padding-top: 5px;
+}
+
+#inactivotxt {
+	color: #adadad;
+	font-family: Arial;
+	font-size: 11px;
+	width:120px;
+	margin:10px;
+	padding-top: 5px;
+}
+
+p {
+	font-family:Arial;
+	line-height:5px;
+	}
+	
+.blanco {
+	background-color: #FFFFFF;
+	opacity: .60;
+}
