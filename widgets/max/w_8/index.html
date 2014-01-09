@@ -36,20 +36,20 @@
 					<li onclick="cambiaFlujo('.wra_flu2')">
 						<p>A otras cuentas</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu3'); Gridius($('.tablaDinamica'), data);">
+					<li onclick="cambiaFlujo('.wra_flu3');$('.w8_CRAB_wraFormulario').slideDown();">
 						<p>Cuentas registradas Alta / Baja</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu4'); Gridius($('.tablaDinamica2'), data);">
+					<li onclick="cambiaFlujo('.wra_flu4');">
 						<p>Consulta de transferencia</p>
 					</li>
 
 
 				</ul>
 			</div>
-			<div id="WA_contenedorFlujos">
+			<div id="WA_contenedorFlujos" style="height: 528px;">
 				
-				<div class="contenidoFlujo">
-				<div class="flujo wra_flu1">
+				<div class="contenidoFlujo" style="height: 519px;">
+				<div class="flujo wra_flu1" >
 
 						<div class="step step1">
 							<div class="titFlujo">
@@ -98,16 +98,7 @@
 									<div class="w8_EC_tabla2"></div>
 							</div>
 							
-								 <div class="col colFull">
-								<div class="titFlujo">
-									<div class="iconFlujo">
-										<img src="img/assets/ico_comprobante.png"/>
-									</div>
-									<p class="titulo">Datos de pago de servicios</p>
-									<p class="subtitulo">La operación se realizará con la siguiente información:</p>
-								</div>
-									<div class="w8_EC_tabla2"></div>
-							</div>  
+								  
 							<div class="botonera">
 								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);">Regresar</div>
 								<div class="btnaceptar"  onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w8/w8_EC_tblPaso3.html'),'');">Confirmar</div>
@@ -333,7 +324,7 @@
 						<p>Consulta</p>
 						<div class=" btnaction2 toggle"></div>						
 					</div>					
-					<div class="tablaDinamica"></div>
+					<!--<div class="tablaDinamica"></div>-->
 
 					<div class="w8_CRAB_dropHdr2">
 						<p>Dar de alta</p>
@@ -467,11 +458,8 @@
 								<div class="btnaceptar prueba_btn">Limpiar Búsqueda</div>
 							</div>	
 						</div>
-
-
-
 						<div class="tablaDinamica2"></div>
-						<div class="btnExportar w8_btn_exportar" style="float:right;"><img style="cursor:pointer" class="w8_exportar" src="../../../img/assets/Exportar.png"><img   src="../../../img/assets/CalendariOperaciones.png"></div>
+						<div class="btnExportar w8_btn_exportar"><img style="cursor:pointer" class="w8_exportar" src="../../../img/assets/Exportar.png"><img   src="../../../img/assets/CalendariOperaciones.png"></div>
 						</div>	
 
 				</div>
