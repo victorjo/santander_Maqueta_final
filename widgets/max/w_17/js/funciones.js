@@ -94,7 +94,7 @@
 					
 					$("#cpcard ul li:first").fadeOut();
 				}
-				if ($("#cpcard ul li").length == null) {
+				if ($("#cpcard ul li ").length == 0) {
 
 					alert("Hola");
 					//$(".frcts").slideUp();
