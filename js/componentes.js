@@ -595,9 +595,9 @@ function Gridius(object, data) {
             var aprov =  $(keeper);
             var program =  aprov.clone();
             var denied =  aprov.clone();
-            aprov.find(".editGrid:last").parent().addClass("aprov").text("Exitosa");
-            program.find(".editGrid:last").parent().addClass("program").text("Programada");
-            denied.find(".editGrid:last").parent().addClass("denied").text("Cancelada");
+            aprov.attr("data-id",'100').find(".editGrid:last").parent().addClass("aprov").text("Exitosa");
+            program.attr("data-id",'101').find(".editGrid:last").parent().addClass("program").text("Programada");
+            denied.attr("data-id",'102').find(".editGrid:last").parent().addClass("denied").text("Cancelada");
 
             $(".wrapGrid > table").html("<tr>" + thead + "</tr>");
             if(data.hasStatus) $(".wrapGrid > table").append(aprov).append(program).append(denied);
@@ -662,6 +662,8 @@ function showGridTools(obj) {
     var toolsList = $("<ul>");
     if(parentObj.children("td:last").prev().hasClass("aprov")){
         options[2].attr("onclick",'print(this)');
+    }else if(parentObj.children("td:last").prev().hasClass("program")){
+        options[1].attr("onclick",'edit(this)');
     }
     $.each(options,function(i,v){
         v.appendTo(toolsList);
@@ -690,6 +692,12 @@ function print(obj) {
       removeInline: false        
   });
 
+}
+
+function edit(obj) {
+    var idrel = $(obj).parent().parent().parent().attr("data-relid");
+    $("[data-id='"+ idrel +"']:nth-child(2)").find(".editGrid").show();
+    
 }
 
 function el(){
