@@ -450,5 +450,16 @@ h6{
 			margin:0 auto;
 			width:20px;
 		}
-
+		.aprov {
+			font-weight:bold;
+			color:black;
+		}
+		.program {
+			font-weight:bold;
+			color:green;
+		}
+		.denied {
+			font-weight:bold;
+			color:red;
+		}
 /* FIN ESTILOS GRID */
