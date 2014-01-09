@@ -684,10 +684,18 @@ function print(obj) {
     $(".wrapGrid").printThis({
       debug: false,              
       importCSS: true,           
-      printContainer: true,      
+      printContainer: true,       
 //      loadCSS: "path/to/my.css", 
       pageTitle: "",             
       removeInline: false        
   });
 
 }
+
+function el(){
+   $(".fg").css("display","none"); 
+}
+function elf(){
+   $(".fg").css("display","inline"); 
+}
+
