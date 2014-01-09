@@ -184,7 +184,7 @@ input[type=button]{
 	border:solid 1px transparent;
 	margin: 0 auto;
 	/*margin-top: 10px;*/
-	margin-top: 0px;
+	margin-top: 10px;
 	margin-bottom: 10px;
 	display: none;
 	/*background:silver;*/
@@ -408,7 +408,7 @@ input[type=button]{
 }
 .cardselectstc{
 	width: 130px;
-	height: 70px;
+	height: 82px;
 	margin-top: 2px;
 	margin-left: 56px;
 	background: url("../imagenes/tarjeta130_1.png");
@@ -496,15 +496,15 @@ input[type=button]{
 	color: #202020;
 }
 .concardstarrec, #concardstarrec, #concardstarrectwo{
-	width: 338px;
-	height: 80px;
-	border: solid 1px silver;
+	width: 235px; /***************************Nuevo estilo agregado para carrusel******************************/
+	height: 80px; /***************************Nuevo estilo agregado para carrusel******************************/
+	/*border: solid 1px silver;*/
 	margin: 0 auto;
 	/*background: url("../imagenes/cards.png");*/
-	overflow:hidden;
+	overflow: hidden;
 	position: relative;
 	border-radius: 2px;
-	box-shadow: 0px 5px 8px 0px #333;
+	/*box-shadow: 0px 5px 8px 0px #333;*/
 }
 .tarrecstccards .beftarscts{
 	margin-left:9px;
@@ -575,6 +575,7 @@ input[type=button]{
 	list-style: none;
 	float: left;
 	position: relative;
+	width: 243px;  /***************************Nuevo estilo agregado para carrusel******************************/
 }
 #concardstarrec ul li{
 	margin: 0;
@@ -582,6 +583,7 @@ input[type=button]{
 	list-style: none;
 	float: left;
 	position: relative;
+	width: 243px;  /***************************Nuevo estilo agregado para carrusel******************************/
 
 }
 #concardstarrectwo ul li{
@@ -590,6 +592,7 @@ input[type=button]{
 	list-style: none;
 	float: left;
 	position: relative;
+	width: 243px;  /***************************Nuevo estilo agregado para carrusel******************************/
 }
 .colcardstc img{
 	cursor: pointer;

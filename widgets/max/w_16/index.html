@@ -1,6 +1,7 @@
 
 	  <script src="widgets/max/w_16/js/w_16.js"></script>
 	  <script src="../js/components.js"></script>
+	  <script src="../js/componentes.js"></script>
 	  <script src="../js/ddSlick.js"></script>
 	  <link rel="stylesheet" href="widgets/max/w_16/css/w_16.css" />
 		<script>
@@ -78,7 +79,7 @@
 										<td>Nombre titular</td>
 										<td>Alias de cuenta</td>
 										<td>Correo@correo.com</td>
-										<td class="w_16_PS_baja" ><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
+										<td class="w_16_PS_baja"  onclick="cambiaPaso(2); cargaHtml('.w16_ABTT_tablaPaso2baja','../../../../tablas/w16/w16_ABTT_tblPaso2baja.html');"><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
 									</tr>
 									<tr>
 										<td>1234****5678</td>
@@ -86,7 +87,7 @@
 										<td>Nombre titular</td>
 										<td>Alias de cuenta</td>
 										<td>Correo@correo.com</td>
-										<td><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
+										<td class="w_16_PS_baja" onclick="cambiaPaso(2); cargaHtml('.w16_ABTT_tablaPaso2baja','../../../../tablas/w16/w16_ABTT_tblPaso2baja.html');"><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
 									</tr>
 									<tr>
 										<td>1234****5678</td>
@@ -94,7 +95,7 @@
 										<td>Nombre titular</td>
 										<td>Alias de cuenta</td>
 										<td>Correo@correo.com</td>
-										<td><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
+										<td class="w_16_PS_baja" onclick="cambiaPaso(2); cargaHtml('.w16_ABTT_tablaPaso2baja','../../../../tablas/w16/w16_ABTT_tblPaso2baja.html');"><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
 									</tr>
 									<tr>
 										<td>1234****5678</td>
@@ -102,7 +103,7 @@
 										<td>Nombre titular</td>
 										<td>Alias de cuenta</td>
 										<td>Correo@correo.com</td>
-										<td><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
+										<td class="w_16_PS_baja" onclick="cambiaPaso(2); cargaHtml('.w16_ABTT_tablaPaso2baja','../../../../tablas/w16/w16_ABTT_tblPaso2baja.html');"><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
 									</tr>
 									<tr>
 										<td>1234****5678</td>
@@ -110,7 +111,7 @@
 										<td>Nombre titular</td>
 										<td>Alias de cuenta</td>
 										<td>Correo@correo.com</td>
-										<td><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
+										<td class="w_16_PS_baja" onclick="cambiaPaso(2); cargaHtml('.w16_ABTT_tablaPaso2baja','../../../../tablas/w16/w16_ABTT_tblPaso2baja.html');"><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
 									</tr>
 									<tr>
 										<td>1234****5678</td>
@@ -118,7 +119,7 @@
 										<td>Nombre titular</td>
 										<td>Alias de cuenta</td>
 										<td>Correo@correo.com</td>
-										<td><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
+										<td class="w_16_PS_baja" onclick="cambiaPaso(2); cargaHtml('.w16_ABTT_tablaPaso2baja','../../../../tablas/w16/w16_ABTT_tblPaso2baja.html');"><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
 									</tr>
 								</table>
 							</div>
@@ -180,10 +181,11 @@
 									<div class="iconFlujo">
 										<img src="img/assets/ico_cuentas_propias.png"/>
 									</div>
-									<p class="titulo">Datos de pago de servicios</p>
-									<p class="subtitulo">11</p>
+									<p class="titulo">Datos de Alta/Baja</p>
+									<p class="subtitulo">La operación se realizará con la siguiente información</p>
 								</div>
 								<div class="w16_ABTT_tablaPaso2"></div>
+								<div class="w16_ABTT_tablaPaso2baja"></div>
 							</div>
 							<div class="botonera">
 								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Regresar</div>
@@ -197,8 +199,7 @@
 									<div class="iconFlujo">
 										<img src="img/assets/ico_cuentas_propias.png"/>
 									</div>
-									<p class="titulo">Datos de pago de servicios</p>
-									<p class="subtitulo">11</p>
+									<p class="titulo">Comprobante de Alta/Baja</p>
 								</div>
 								<div class="w16_ABTT_tablaPaso3">
 									
@@ -289,11 +290,5 @@
 					</div>
 				</div>		
 			</div>
-			<div class="w16_ABTT_ayuda wra_flu1 flujo">
-				<p>El costo mensual del<br/>
-					programa de recompensas<br/>
-					varia de acuerdo al<br/>
-					producto a suscribir</p>
-				<img src="../img/mrsmackdown.png"/>
-			</div>
+			
 		</div>
