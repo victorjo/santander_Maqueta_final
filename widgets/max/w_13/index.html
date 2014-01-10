@@ -30,13 +30,13 @@
 						<p>
 						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu1');">
+					<li id="tit1" onclick="cambiaFlujo('.wra_flu1'); elf(); contFlujo1();">
 						<p>Mis TDC Santander</p>
 					</li >
-					<li onclick="cambiaFlujo('.wra_flu2');">
+					<li id="tit2" onclick="cambiaFlujo('.wra_flu2'); elf(); contFlujo2();">
 						<p>A otras tarjetas</p>
 					</li>
-					<li>
+					<li id="tit3" onclick="cambiaFlujo('.wra_flu3'); elf();">
 						<p>Consultas de tarjeta /Alta/Baja</p>
 					</li>
 				</ul>
@@ -46,8 +46,19 @@
 					<div class="iconFlujo">
 						<img src="../../../img/assets/pago_tdc.png"/>
 					</div>
-					<p class="titulo">Pago de tarjeta de crédito Santander</p>
-					<p class="subtitulo">Seleccione la tarjeta de crédito que desee pagar.</p>
+					<div id="txt1">
+						<p class="titulo">Pago de tarjeta de crédito Santander</p>
+						<p class="subtitulo">Seleccione la tarjeta de crédito que desee pagar.</p>
+					</div>
+					<div id="txt2">
+						<p class="titulo">A otras tarjetas</p>
+						<p class="subtitulo">Seleccione la tarjeta de crédito que desee pagar.</p>
+					</div>
+					<div id="txt3">
+						<p class="titulo">Consulta de tarjeta Alta/Baja</p>
+						<p class="subtitulo">Seleccione la tarjeta de crédito que desee pagar.</p>
+					</div>
+					
 				</div>
 				<div class="contenidoFlujo">
 
@@ -100,7 +111,7 @@
 											</div>
 										</div>
 												<p class="p_OC">Fecha:</p>
-												<input class="textboxdecalendar" type="text" placeholder="dd/mm/aaaa" />
+												<input class="textboxdecalendar" type="text" placeholder="12/01/2014" />
 													
 												<div class="w8_EC_marcocalendar w13_PT_contenidodatos2" >
 												<img src="../../../img/assets/Calendarmin.png"  />
@@ -109,10 +120,10 @@
 													<p class="p_OC"> Notificar previamente: </p>
 												<select class="textboxDias" name="" id="">
 													<option value="3">3 dias</option>
-													<option value=""></option>
-													<option value=""></option>
-													<option value=""></option>
-													<option value=""></option>
+													<option value="">4 dias</option>
+													<option value="">5 dias</option>
+													<option value="">6 dias</option>
+													<option value="">7 dias</option>
 												</select>
 									</div>
 								</div>
@@ -178,7 +189,7 @@
 				<div class="flujo wra_flu2" >
 					<div class="step step0" style="display:none;">
 						<div class="content">
-							<div id="aotrasTarjetas"></div>
+							<div class="aotrasTarjetas"></div>
 						</div>
 						<div class="botonera">
 							<div class="btn" onclick="cambiaPaso(2)">Calendario de operaciones</div>
@@ -224,7 +235,7 @@
 											</div>
 										</div>
 												<p class="p_OC">Fecha:</p>
-												<input class="textboxdecalendar" type="text" placeholder="dd/mm/aaaa" />
+												<input class="textboxdecalendar" type="text" placeholder="13/01/2014" />
 													
 												<div class="w8_EC_marcocalendar w13_PT_contenidodatos2" >
 												<img src="../../../img/assets/Calendarmin.png"  />
@@ -233,17 +244,18 @@
 													<p class="p_OC"> Notificar previamente: </p>
 												<select class="textboxDias" name="" id="">
 													<option value="3">3 dias</option>
-													<option value=""></option>
-													<option value=""></option>
-													<option value=""></option>
-													<option value=""></option>
+													<option value="">4 dias</option>
+													<option value="">5 dias</option>
+													<option value="">6 dias</option>
+													<option value="">7 dias</option>
 												</select>
 									</div>
 								</div>
 						</div>
 						<div class="botonera">
 							<div class="btn"  onclick="cambiaFlujo('.wra_flu3');cambiaPaso(0)">Regrasar</div>
-							<div class="btnaceptar" id="btnaceptar" onclick="cambiaPaso(2); el(); cargaHtml('.w13_tabla4','../../../../tablas/w13_tblpPaso4.html');">Continuar</div>
+							<div class="btnaceptar b3" id="btnaceptar" onclick="cambiaPaso(2); el(); cargaHtml('.w13_tabla4','../../../../tablas/w13_tblpPaso4.html');">Continuar</div>
+							<div class="btnaceptar b4" style="display:none;" onclick="cambiaPaso(2); el(); $('.w13_tabla4_1').load('../../../../tablas/w13_tblpPaso4_1.html')">Continuar</div>
 						</div>
 					</div>
 					<div class="step step2">
@@ -256,11 +268,11 @@
 										<p class="titulo">Confirmación de su pago a otras tarjetas</p>
 										<p class="subtitulo">La operación se realizará con la siguiente información</p>
 									</div>
-									<div class="w13_tabla4" id="w13_tabla2"></div>
+									<div class="w13_tabla4" id="w13_tabla4"></div>
 								</div>
 								<div class="botonera">
 									<div class="btn"  onclick="cambiaFlujo('.wra_flu3');cambiaPaso(0)">Regrasar</div>
-									<div class="btnaceptar" id="btnaceptar" onclick="cambiaPaso(3); el(); cargaHtml('.w13_tabla5','../../../../tablas/w13_tblpPaso5.html');">Continuar</div>
+									<div class="btnaceptar" id="btnaceptar2" onclick="cambiaPaso(3); el(); cargaHtml('.w13_tabla5','../../../../tablas/w13_tblpPaso5.html');">Continuar</div>
 								</div>
 							</div>
 					</div>
@@ -290,6 +302,14 @@
 										<div class="btnaceptar" onclick="closeAction();">Finalizar</div>
 									</div>
 							</div>
+					</div>
+
+				</div>
+				<div class="flujo wra_flu3">
+					<div class="step step0" style="display:none;">
+						<div class="content">
+							<h1>Hola</h1>
+						</div>
 					</div>
 
 				</div>
