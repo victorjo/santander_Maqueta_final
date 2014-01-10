@@ -33,16 +33,30 @@
 				/*var tabla2
 				var tabla3*/
 			 	$(".switchLabelR").click(function(){
+			 		//alert("Hola");
 			 		$(".b1").css("display","none");
+			 		$(".b2").css("display","inline");
+			 		if ($("#w13_tabla2").hasClass("w13_tabla2_1")) {
+			 			$("#w13_tabla2").removeClass("w13_tabla2_1");
+
+			 		}else{
+			 			$("#w13_tabla2").addClass("w13_tabla2_1");
+			 			//$("#w13_tabla2").attr("class","w13_tabla2_1");
+			 			$("#btnaceptar").attr("onclick",tabla1);
+			 			$(".switchLabel").attr("onclick","verificaOpcion();");
+			 		}
+
+			 		/*$(".b1").css("display","none");
 			 		$(".b2").css("display","inline");
 			 		
 
 			 			$("#w13_tabla2").attr("class","w13_tabla2_1");
-			 			$("#btnaceptar").attr("onclick",tabla1);
+			 			$("#btnaceptar").attr("onclick",tabla1);*/
 
 
 			 		
 			 	});
+			 	
 
 			 	
 			 }

@@ -5,6 +5,9 @@
 @import url("../../../../css/generally.css");
 @import url("../../../../css/componentes.css");
 
+select{
+	color: silver;
+}
 .switchSlide{
 	left:-78px;
 }
@@ -95,12 +98,11 @@ input, select{
 	border: solid;
 }
 .cboxptc{
-	border: solid;
-	background: red;
+	
 	float: left;
 }
 .inpptc{
-	border: solid;
 	background: blue;
-	float:right;
+	margin-left: 272px;
+
 }
