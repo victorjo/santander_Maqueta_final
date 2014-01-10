@@ -1,11 +1,11 @@
 ﻿		<link rel="stylesheet" href="../../../css/generally.css" />
 		<link rel="stylesheet" href="../../../css/componentes.css" />
 		<script src="../../../js/ddSlick.js"></script>
+		<script type="text/javascript" src="../../../js/jquery.tinycircleslider.min.js"></script>
 		<script src="../../../js/components.js"></script>
-		<script src="widgets/max/w_15/js/w_15.js"></script>
 		<script src="../../../js/ui/jquery-ui-1.10.3.custom.min.js"></script>
 		<link rel="stylesheet" href="widgets/max/w_15/css/w_15.css" />
-
+		<!--<input type="button" value="GRID" onclick="Gridius($('.contenidoFlujo'));">-->
 		<div id="widampliado">
 
 			<div id="bloqueoWidget" class="bloqueoElement"></div>
@@ -50,6 +50,170 @@
 								<p class="titulo">Entre cuentas propias Santander</p>
 								<p class="subtitulo">Introduzca el nombre, alias o los cuatro dígitos de la cuenta destino / cuenta de cargo o seleccionela de la lista</p>
 							</div>
+
+								<div id="wrapcp">
+					<div class="blockcp">
+						<p>Gire la perilla y elija el cr&eacute;dito que desea usar.</p>
+						<div class="bockcpcontent">
+							<p>Monto m&aacute;ximo autorizado:</p>
+							<p>$ 2,949,345.10 MXN</p>
+							<div style="margin:auto;width:190px;height:190px; position:relative">
+								
+								<canvas id="myCanvas" style="position:absolute;top:0;left:0;z-index: 1000;height:190px; width:190px;"></canvas>
+								<div id="rotatescroll">
+									<div class="viewport">
+										<ul class="overview">
+											
+										</ul>
+									</div>
+									
+									<div id="staticDot" style="position:absolute;top:0;left:85px;">
+										<img src="images/sliderCircOne.png"  />
+									</div>
+									<div class="dot"></div>
+									<div class="overlay"></div>
+									<div class="thumb"></div>
+								</div>
+								<div id="background">
+									<div id="txtBack" style="margin: 55px 50px; text-align:center;">
+										<h4>Monto simulado:</h4>
+										<p style="color:#4f8aea;font-weight: bolder;">$<span id="cantidadPoner">0</span>.00 MXN</p>
+										<h2 style="color: #999; margin-top: 5;"> <span id="porcentaje">0</span>%</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="blockcp">
+						<p>Elija el plazo de pago o escriba los meses que requiera para pagar.</p>
+						<div class="bockcpcontent">
+							<p>Plazo m&aacute;ximo autorizado:</p>
+							<p>36 meses</p>
+							<div style="" id="plazoAuto">
+								<div id="plazoTxt"><span id="numPlazo">9</span> meses</div>
+
+								<div id="btn_plazoSim1" class="btnPlazoAuto" style="top:78px;left:157px">
+									<span>18</span>
+								</div>
+								<div id="btn_plazoSim2" class="btnPlazoAuto" style="display:block;left:82px;">
+									<span>9</span>
+								</div>
+								<div id="btn_plazoSim3" class="btnPlazoAuto" style="left:2px;top:77px;">
+									<span>48</span>
+								</div>
+								<div id="btn_plazoSim4" class="btnPlazoAuto" style="top:156px;left:82px">
+									<span>32</span>
+								</div>
+								<img src="images/PlazoSimulado.png" alt="">
+								
+							</div>
+						</div>
+					</div>
+					<div class="blockcp">
+						<p>Simulacion con base en el monto del prestamo deseado:</p>
+						<div class="bockcpcontent">
+							<table id="tablaDatos">
+								<tr>
+									<td colspan="2"><b>Cuenta de Dep&oacute;sito:</b></td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<img src="images/card.png" alt="" style="float:left;margin-top:5px">
+										<p style="font-weight:bold;float:left;margin-left:10px">Elite Rewards Platino<br/>1234****5678</p>
+									</td>
+								</tr>
+								<tr>
+									<td  colspan="2">
+										<b>Datos del cr&eacute;dito:</b>
+									</td>
+								</tr>
+								<tr style="padding-right: -top:5px">
+									<td>Monto de cr&eacute;dito:</td>
+									<td><b>147,144,852.00</b></td>
+								</tr>
+								<tr>
+									<td>Monto a disponer:</td>
+									<td><b>365,699.99</b></td>
+								</tr>
+								<tr>
+									<td>Pago mesual:</td>
+									<td><b>789,365,963.00</b></td>
+								</tr>
+								<tr>
+									<td>Plazo:</td>
+									<td><b>18</b></td>
+								</tr>
+								<tr>
+									<td>Meses de gracia:</td>
+									<td><b>Ninguno</b></td>
+								</tr>
+								<tr>
+									<td>Tasa de inter&eacute;s anual:</td>
+									<td><b>00.00%</b></td>
+								</tr>
+								<tr>
+									<td>Comisi&oacute;n por disposici&oacute;n:</td>
+									<td><b>123,451.145</b></td>
+								</tr>
+								<tr>
+									<td>Esquema de aseguramiento:</td>
+									<td>Lorem</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+
+								<div class="botonera">
+									<div class="btnaceptar"  onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(2);cargaHtml('.w15_DdC_tabla2','../../../../tablas/w15/w15_DdC_Paso2.html')">Continuar</div>
+								</div> 
+						</div>
+						<div class="step step2">
+
+								<div class="col colFull">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+									</div>
+									<p class="titulo">Datos de Transferencia entre cuentas propias</p>
+									<p class="subtitulo">La operación se realizará con la siguiente información:</p>
+								</div>
+									<div class="w15_DdC_tabla2"></div>
+							</div>
+							
+								  
+							<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);">Regresar</div>
+								<div class="btnaceptar"  onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w15/w15_DdC_Paso3.html'),'');">Confirmar</div>
+							</div>
+
+						</div>
+						<div class="step step3">
+								<div class="col col2 resetMargen">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+									</div>
+									<p class="titulo">Comprobante de transferencia entre mis cuentas Santander</p>
+								</div>
+								
+								<div class="tabla3"></div>
+								
+							</div>
+							<div class="col col1 ">
+								<img src="img/assets/step3/anuncio.png" width="233" />
+								<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+								<div class="btnsLateralStep3  ico1Step3" >Pago de servicios</div>
+								<div class="btnsLateralStep3 ico2Step3" >Opci&oacute;n 2</div>
+								<div class="btnsLateralStep3 ico3Step3" >Opci&oacute;n 3</div>
+							</div>
+							<div class="botonera">
+								<div class="btn" onclick="">Exportar documentación</div>
+								<div class="btn" onclick="">Imprimir</div>
+
+								<div class="btnaceptar" onclick="closeAction()">Finalizar</div>
+							</div>
 						</div>
 					</div>
 
@@ -76,7 +240,7 @@
 							</select>
 						</div>
 
-						<p>Producto <br><i>Tarjeta Santander </i></p>
+						<p>Producto <br><i>Elite Rewards Platino </i></p>
 						<p>Alias <br><i>Papa</i> </p>
 
 					</div>
@@ -98,7 +262,7 @@
 									<tr>
 										<td></td>
 										<td>5 - 48</td>
-										<td >02/01/2014  13:00 </td>
+										<td >02/01/2014  13:00 hrs</td>
 										<td >10,000.00</td>
 										<td >50,000.00</td>
 										<td ></td>
@@ -107,7 +271,7 @@
 									<tr>
 										<td></td>
 										<td>4 - 48</td>
-										<td >05/01/2014  17:00 </td>
+										<td >05/01/2014  17:00 hrs</td>
 										<td >23,000.00</td>
 										<td >25,000.00</td>
 										<td ></td>
@@ -116,7 +280,7 @@
 									<tr>
 										<td></td>
 										<td>3 - 48</td>
-										<td >13/01/2014  18:00 </td>
+										<td >13/01/2014  18:00 hrs</td>
 										<td >13,000.00</td>
 										<td >44,000.00</td>
 										<td ></td>
@@ -125,7 +289,7 @@
 									<tr>
 										<td></td>
 										<td>2 - 48</td>
-										<td >15/01/2014  11:00 </td>
+										<td >15/01/2014  11:00 hrs</td>
 										<td >8,500.00</td>
 										<td >13,000.00</td>
 										<td ></td>
@@ -134,7 +298,7 @@
 									<tr>
 										<td></td>
 										<td>1 - 48</td>
-										<td >21/01/2014   9:00</td>
+										<td >21/01/2014   9:00 hrs</td>
 										<td >17,400.00</td>
 										<td >22,550.00</td>
 										<td ></td>
@@ -143,7 +307,7 @@
 									<tr>
 										<td></td>
 										<td>1 - 48</td>
-										<td >21/01/2014   9:00</td>
+										<td >21/01/2014   9:00 hrs</td>
 										<td >17,400.00</td>
 										<td >22,550.00</td>
 										<td ></td>
@@ -153,7 +317,7 @@
 									<tr class="w20_DC_deshabilitado">
 										<td></td>
 										<td>5 - 48</td>
-										<td >dd/mm/aaaa 12:00 </td>
+										<td >dd/mm/aaaa 12:00 hrs</td>
 										<td >999,999,999.00</td>
 										<td >999,999,999.00</td>
 										<td ></td>
@@ -223,6 +387,7 @@
 									
 								</tr>
 							</table>
+							<div class="tablaDinamica2"></div>
 
 						<p class="w8_AMG_textoabajo">Seleccione el mes en que desea que se aplique(n) el (los) mes(es) de gracia disponible(s)</p>
 
@@ -260,4 +425,4 @@
 				</div>
 		    </div>
 		</div>    
-		
+		<script src="widgets/max/w_15/js/w_15.js"></script>

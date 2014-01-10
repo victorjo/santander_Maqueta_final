@@ -60,8 +60,10 @@ $(function() {
         $(".w16_RRE_robo").fadeOut("slow",function(){
             $(".w16_RRE_extravio").fadeIn("slow");
         });
-        
     });
+
+
+       
 
     $(".switchLabel").click(function(){
         $(".w16_radiobtn").children("img").fadeOut("fast");
