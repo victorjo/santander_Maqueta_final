@@ -392,7 +392,7 @@ height: 50px;
 }
 
 .w8_AMG_textoabajo {
-	margin-top: 50px;
+	margin-top: -5px;
 	float: left;
 	color:#211915;
 	font-family:Arial, Helvetica, sans-serif;
@@ -410,6 +410,9 @@ float: left;
 margin-right: 10px;
 }
 .w15_DdC_tabla2 table{
+	width: 416px;
+}
+.w15_AMdG_tabla2 table{
 	width: 416px;
 }
 .linkEditar{
@@ -701,3 +704,8 @@ top: 66px;
 font-size: 11px;
 			
 		} 
+
+.w15_btn_simulado{
+	float: right !important;
+	margin-right: -5px !important;
+}
