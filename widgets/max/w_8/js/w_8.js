@@ -136,7 +136,7 @@ $(function() {
         width: 520,
         background: "#f7f7f7",
         imagePosition: "left",
-        selectText: "1234****5678 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Producto Santander &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Alias &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
+        selectText: "1234****1698 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fiesta Rewards Oro &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Mamá &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $19,929,999.00",
         onSelected: function(data) {
             console.log(data);
         }
@@ -255,6 +255,14 @@ $(function() {
         selected: false
     }];
 
+    // componente info //
+    $("#infobtn").click(function() {
+        $(".infoChart").fadeToggle("slow");
+    });
+    //componete info //
+    $('.w4_HPG_personalizarIntervalo').click(function() {
+        cargaCalendario('switchModal()', 'calendario');
+    });
 
     $(".select_OC").ddslick({
         data: js,

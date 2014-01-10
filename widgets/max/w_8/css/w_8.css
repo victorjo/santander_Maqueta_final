@@ -1,9 +1,12 @@
 @import url("../../../../css/bloqueo.css");
 @import url("../../../../css/steps.css");
 
-
+.contenidoFlujo .col {
+	height: 426px;
+}
 .contenidoFlujo {
 	border:none;
+	
 }
 
 .wra_flu1 > .step2{
@@ -29,7 +32,9 @@
 	text-decoration: none;
 }
 
-
+.tableStep3 {
+	height: 270px;
+}
 .w8_EC_contenidodatos1 {
 background: #efefef;
 float: left;
@@ -334,8 +339,10 @@ padding-left: 5px;
 }
 .middletd_OC img{
 	float: left;
-	margin-left: 236px;
-	margin-top: -25px;
+	margin-left: -98px;
+	margin-top: 21px;
+	position:absolute;
+	z-index: 10;
 }
 .textboxDias {
 float: left;
@@ -443,7 +450,7 @@ font-size:11px;
 		width: 477px;
 		height: 30px;
 		background-color: #ffffff;
-		margin-top: 55px;
+		margin-top: 110px;
 	}
 	.correocontacto p:nth-of-type(1){
 	float: left;
@@ -871,4 +878,57 @@ margin-left: 680px;
 .w16_PS_cardList td:nth-of-type(5),.w16_PS_cardList td:nth-of-type(6),.w10_PS_cardList td:nth-of-type(7){
 	padding-left:10px;
 	width:103px;
+}
+
+.w4_info{
+	background-image: url("../../../../img/assets/ico_info.png");	
+    background-size: 100% 100%;
+    float: left;
+    height: 20px !important;
+    width: 20px !important;
+    margin:30px 0 0 10px;
+    cursor:pointer;
+}
+
+.infoChart{
+	position: absolute;
+	margin-top: -180px;
+	margin-left: 354px;
+	display:none;
+}
+.w4_HPG_personalizarIntervalo{
+	float:left;
+	width: 148px;
+	height:21px;
+	background-color:#FBFBFB;
+	border:1px #C2C0C0 solid;
+	box-shadow: 1px 1px 2px #E1E1E1;
+	border-radius:5px; 
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#4d4d4d !important;
+	font-style:italic;
+	padding:7px 0 0 10px;
+	position:relative;
+}
+
+.w4_HPG_personalizarIntervalo>div{
+	float:right;
+	border-left:1px #cfcfcf solid;
+	width:24px;
+	text-align:center;
+	height:21px;
+	position:absolute;
+	top:0;
+	right:0;
+	padding-top:7px;	
+}
+
+.w4_HPG_personalizarIntervalo>div:hover{
+	border-left:1px #ff0000 solid;	
+}
+
+.w4_HPG_personalizarIntervalo:hover{
+	border-color:#ff0000;
+	cursor:pointer;
 }

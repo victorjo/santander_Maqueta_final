@@ -90,11 +90,14 @@
 									</div>
 								</div>
 										<p class="p_OC">Fecha:</p>
-										<input class="textboxdecalendar" type="text" placeholder="dd/mm/aaaa" />
-											
-										<div class="w8_EC_marcocalendar" >
-										<img src="../../../img/assets/Calendarmin.png"  />
-										 </div>
+										<div class="dateInput">
+																<div class="w4_HPG_personalizarIntervalo">
+																	dd/mm/aaaa
+																	<div>
+																		<img src="../../img/iconos/img_calendario.png"/>
+																	</div>
+																</div>
+															</div>
 						
 											<p class="p_OC"> Notificar previamente: </p>
 										<select class="textboxDias" name="" id="">
@@ -203,29 +206,34 @@
 									</div>
 								</div>
 										<p class="p_OC">Fecha:</p>
-										<input class="textboxdecalendar" type="text" placeholder="dd/mm/aaaa" />
-											
-										<div class="w8_EC_marcocalendar" >
-										<img src="../../../img/assets/Calendarmin.png"  />
-										 </div>
+										<div class="dateInput">
+																<div class="w4_HPG_personalizarIntervalo">
+																	dd/mm/aaaa
+																	<div>
+																		<img src="../../img/iconos/img_calendario.png"/>
+																	</div>
+																</div>
+															</div>
 						
 											<p class="p_OC"> Notificar previamente: </p>
 										<select class="textboxDias" name="" id="">
 											<option value="3">3 dias</option>
-											<option value=""></option>
-											<option value=""></option>
+											<option value="">5 días </option>
+											<option value="">1 semana</option>
 											<option value=""></option>
 											<option value=""></option>
 										</select>
 							</div> 
 
 
-						 <table class="table_OC">
+						 <table class="table_OC">  
 							
 							<tr>
 								<td class="middletd_OC">
 									<p class="p_OC">Referencia:</p>
-									<input class="textbox_OCLarge" placeholder="Escribir el numero de referencia" type="text" /><img src="../../../img/assets/ico_info.png">
+									<input class="textbox_OCLarge" placeholder="Escribir el numero de referencia" type="text" />  
+									<div id="infobtn" class="w4_info"></div>
+													<div class="infoChart"><img src="../../../../img/assets/info_img.png"/></div>
 								</td>
 								<td class="middletd_OC">
 									<p class="p_OC">Requiere de comprobante fiscal?</p>
@@ -245,7 +253,7 @@
 						</table>    
 
 								<div class="botonera">
-								<div class="btnaceptar"  onclick="cambiaFlujo('.wra_flu2');cambiaPaso(2);$('.w8_AC_tabla').load('../../../../tablas/w8/w8_tblPaso2_2.html')">Continuar</div>
+								<div class="btnaceptar"  onclick="cambiaFlujo('.wra_flu2');cambiaPaso(2);$('.w8_AC_tabla').load('../../../../tablas/w8/w8_AC_tblPaso2.html')">Continuar</div>
 							</div>
 
 			</div>  
@@ -273,7 +281,7 @@
 
 						<div class="botonera">
 								<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(1);">Regresar</div>
-								<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w8/w8_AC_tblPaso3_2.html'),'');">Confirmar</div>
+								<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w8/w8_AC_tblPaso3.html'),'');">Confirmar</div>
 							</div>  
 					
 				</div>
@@ -401,7 +409,7 @@
 							</div>
 					
 					<div class="botonera">
-						<div class="btnaceptar"  onclick="cambiaFlujo('.wra_flu3');cambiaPaso(2);cargaHtml('.w8_CAB_tabla','../../../../tablas/w8/w8_CAB_tblPaso2.html');">Continuar</div>
+						<div class="btnaceptar"  onclick="cambiaFlujo('.wra_flu3');cambiaPaso(2);cargaHtml('.w8_CAB_tabla','../../../../tablas/w8/w8_CAB_tblPaso2.html');">Dar de alta</div>
 					</div>
 				</div>
 
@@ -432,7 +440,7 @@
 									<div class="iconFlujo">
 										<img src="img/assets/ico_comprobante.png"/>
 									</div>
-									<p class="titulo">Comprobante de transferencia a otras cuentas</p>
+									<p class="titulo">Comprobante de alta de cuenta registrada</p>
 								</div>
 								
 								<div class="tabla3"></div>
@@ -447,7 +455,7 @@
 								<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
 							</div>
 							<div class="botonera">
-								<div class="btn" onclick="cambiaFlujo('.wra_flu3');cambiaPaso(0);">Deseo hacer otra transferencia</div>
+								<div class="btn" onclick="cambiaFlujo('.wra_flu3');cambiaPaso(1);">Deseo dar de alta otra cuenta</div>
 								<div class="btn" onclick="">Imprimir</div>
 								<div class="btnaceptar" onclick="closeAction()">Finalizar</div>
 							</div>
