@@ -449,6 +449,18 @@ function cargaToken(cbTokenCanc, cbTokenAcep, fn, modal) {
     });
 }
 
+function cargaPDF(cbBtnImp, cbBtnDes, cbBtnCer, cbBtnCon, fn, modal) {
+    var mod = modal;
+    if (typeof fn != "undefined" || fn != null || fn != undefined) fn();
+    $("#elementBloqueo").load("../modales/" + mod + ".html", function() {
+        $(this).find("#btnPdfImprimir").attr("onclick", cbBtnImp);
+        $(this).find("#btnPdfDescargar").attr("onclick", cbBtnDes);
+        $(this).find("#btnPdfCerrar").attr("onclick", cbBtnCer);
+        $(this).find("#btnPdfContinuar").attr("onclick", cbBtnCon);
+        switchModal();
+    });
+}
+
 function confirmacionCorreo(cbTokenCanc, cbTokenAcep, modal) {
     var mod = modal || 'token';
     $(".bloqueoElement").fadeOut("slow", function() {
@@ -460,6 +472,19 @@ function confirmacionCorreo(cbTokenCanc, cbTokenAcep, modal) {
         });
     });
 }
+
+function confirmacionCorreo(cbTokenCanc, cbTokenAcep, modal) {
+    var mod = modal || 'token';
+    $(".bloqueoElement").fadeOut("slow", function() {
+        $("#elementBloqueo").load("../modales/" + mod + ".html", function() {
+            $(this).find("#btnTokenCancelar").attr("onclick", cbTokenCanc);
+            $(this).find("#btnTokenAceptar").attr("onclick", cbTokenAcep);
+            centraModal();
+            $(".bloqueoElement").fadeIn("slow");
+        });
+    });
+}
+
 
 function cargaCalendario(cbTokenAcep, modal) {
     var mod = modal || 'token';
@@ -635,7 +660,7 @@ function Gridius(object, data) {
 }
 
 function listenerGrid(obj) {
-    if(obj.children(".aprovedG").length <= 0) return false;
+    if (obj.children(".aprovedG").length <= 0) return false;
     $(".editGrid").each(function(i, v) {
         v = $(v);
         if (v.attr("data-edit") == "true") v.parent().html(v.val() + '<input data-edit="false" class="editGrid" type="text">');
@@ -685,9 +710,9 @@ function cargaHtml(componente, url) {
 
 function print(obj) {
     var q = "";
-    if(obj=="step3"){
+    if (obj == "step3") {
         q = ".resetMargen:first"
-    }else q = ".wrapGrid";
+    } else q = ".wrapGrid";
     $(q).printThis({
         debug: false,
         importCSS: true,

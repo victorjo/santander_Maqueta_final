@@ -13,9 +13,36 @@ var ddDataNIP = [{
     selected: false,
 }];
 
-$(function() {
 
-    
+
+var ddDataATC = [{
+    text: "&nbsp;&nbsp;&nbsp;4857 9865 1268 4589&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Producto Santander&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Papá",
+    value: 1,
+    selected: true,
+}, {
+    text: "&nbsp;&nbsp;&nbsp;9865 4857 4589 1268&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Producto Santander&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mamá",
+    value: 2,
+    selected: false,
+
+},  {
+    text: "&nbsp;&nbsp;&nbsp;4589 4857  1268 9865&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Producto Santander&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sobrino",
+    value: 3,
+    selected: false,
+},
+{
+    text: "&nbsp;&nbsp;&nbsp;9865 4857 4589 1268&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Producto Santander&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mamá",
+    value: 4,
+    selected: false,
+
+}, 
+{
+    text: "&nbsp;&nbsp;&nbsp;9865 4857 4589 1268&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Producto Santander&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mamá",
+    value: 5,
+    selected: false,
+
+}];
+
+$(function() {
 
     $(".w16_NIP_wra_Select select").ddslick({
         data: ddDataNIP,
@@ -27,6 +54,18 @@ $(function() {
             console.log(data);
         }
     });
+
+     $(".w16_ATC_wra_Select select").ddslick({
+        data: ddDataATC,
+        width: 298,
+        background: "#f7f7f7",
+        imagePosition: "left",
+        selectText: "Seleccionar",
+        onSelected: function(data) {
+            console.log(data);
+        }
+    });
+
 
      $(".w_16_PS_baja").click(function() {
       $(this).parent().fadeOut("slow");
@@ -45,10 +84,7 @@ $(function() {
         $(".w16_RRE_robo").fadeOut("slow",function(){
             $(".w16_RRE_extravio").fadeIn("slow");
         });
-    });
-
-
-       
+    });    
 
     $(".switchLabel").click(function(){
         $(".w16_radiobtn").children("img").fadeOut("fast");
@@ -62,10 +98,7 @@ $(function() {
             $(".w16_NIP_registro").fadeOut("slow",function(){
             $(".w16_NIP_cambio").fadeIn("slow");
         });
-    });
-
-
-       
+    });     
 
     $(".registro .switchLabel").click(function(){
         $(".w16_NIP_cambio").fadeOut("slow",function(){
@@ -73,9 +106,6 @@ $(function() {
         });
         
     });
-
-   
-
 
 });
 
@@ -130,8 +160,6 @@ function step3registro() {
     $(".cambio3").fadeOut(1);
     $(".registro3").fadeIn('slow');
 }
-
-
 
 function step2alta() {
     $(".baja2").fadeOut(1);
