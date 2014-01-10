@@ -278,7 +278,7 @@
 									</table>
 								</div>
 								<div class="botonera">
-									<div class="btnaceptar" onclick="cambiaPaso(2);$('.w16_ABTT_tablaPaso2robo').load('../../../../tablas/w16/w16_RRE_tblPaso2robo.html')">Continuar</div>
+									<div class="btnaceptar" onclick="step2robo();cambiaPaso(2);$('.w16_ABTT_tablaPaso2robo').load('../../../../tablas/w16/w16_RRE_tblPaso2robo.html')">Continuar</div>
 								</div>
 							</div>
 
@@ -334,58 +334,99 @@
 									</table>
 								</div>
 								<div class="botonera">
-									<div class="btnaceptar" onclick="cambiaPaso(2);$('.w16_ABTT_tablaPaso2extravio').load('../../../../tablas/w16/w16_RRE_tblPaso2extravio.html')">Continuar</div>
+									<div class="btnaceptar" onclick="step2extravio();cambiaPaso(2);$('.w16_RRE_tablaPaso2extravio').load('../../../../tablas/w16/w16_RRE_tblPaso2extravio.html')">Continuar</div>
 								</div>
 							</div>
-
-															
-							
 						</div><!--Fin paso 1-->
 
 						<div class="step step2">
-							<div class="col colFull">
-								<div class="titFlujo">
-									<div class="iconFlujo">
-										<img src="img/assets/ico_cuentas_propias.png"/>
+							<div class="robo">
+								<div class="col colFull">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="img/assets/ico_cuentas_propias.png"/>
+										</div>
+										<p class="titulo">Datos de Reporte</p>
+										<p class="subtitulo">Su reporte de robo se enviará con los siguientes datos, verificar que sean correctos.</p>
 									</div>
-									<p class="titulo">Datos de Reporte</p>
-									<p class="subtitulo">Su reporte se enviará con los siguientes datos, verificar que sean correctos.</p>
+									<div class="w16_ABTT_tablaPaso2robo"></div>
+									
 								</div>
-								<div class="w16_ABTT_tablaPaso2robo"></div>
-								<div class="w16_ABTT_tablaPaso2extravio"></div>
+								<div class="botonera">
+									<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(1);">Regresar</div>
+									<div class="btnaceptar" onclick="step3robo();cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.w16_RRE_tablaPaso3robo','../../../../tablas/w16/w16_RRE_tblPaso3robo.html'),'');">Confirmar</div>
+								</div>
 							</div>
-							<div class="botonera">
-								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Regresar</div>
-								<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.w16_ABTT_tablaPaso3','../../../../tablas/w16/w16_ABTT_tblPaso3.html'),'');">Confirmar</div>
+
+							<div class="extravio">
+								<div class="col colFull">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="img/assets/ico_cuentas_propias.png"/>
+										</div>
+										<p class="titulo">Datos de Reporte</p>
+										<p class="subtitulo">Su reporte de extravío se enviará con los siguientes datos, verificar que sean correctos.</p>
+									</div>
+									
+									<div class="w16_RRE_tablaPaso2extravio"></div>
+								</div>
+								<div class="botonera">
+									<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(1);">Regresar</div>
+									<div class="btnaceptar" onclick="step3extravio();cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.w16_RRE_tablaPaso3extravio','../../../../tablas/w16/w16_RRE_tblPaso3extravio.html'),'');">Confirmar</div>
+								</div>
 							</div>
 						</div>
 
 						<div class="step step3">
-							<div class="col col2 resetMargen">
-								<div class="titFlujo">
-									<div class="iconFlujo">
-										<img src="img/assets/ico_cuentas_propias.png"/>
+							<div class="robo3">
+								<div class="col col2 resetMargen">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="img/assets/ico_cuentas_propias.png"/>
+										</div>
+										<p class="titulo">Comprobante por reporte de robo</p>
 									</div>
-									<p class="titulo">Comprobante por reporte de robo/extravío</p>
+									<div class="w16_RRE_tablaPaso3robo">
+										
+									</div>
 								</div>
-								<div class="w16_ABTT_tablaPaso3robo">
-									
-								</div>
-								<div class="w16_ABTT_tablaPaso3extravio">
-									
+								<div class="col col1 ">
+										<img src="img/assets/step3/anuncio.png" width="233" />
+										<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+										<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+										<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+										<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+									</div>
+								<div class="botonera">
+									<div class="btnaceptar" onclick="cambiaPaso(1);">Finalizar</div>
 								</div>
 							</div>
-							<div class="col col1 ">
-									<img src="img/assets/step3/anuncio.png" width="233" />
-									<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
-									<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
-									<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
-									<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+
+							<div class="extravio3">
+								<div class="col col2 resetMargen">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="img/assets/ico_cuentas_propias.png"/>
+										</div>
+										<p class="titulo">Comprobante por reporte de extravío</p>
+									</div>
+									<div class="w16_RRE_tablaPaso3extravio">
+										
+									</div>
 								</div>
-							<div class="botonera">
-								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Regresar</div>
-								<div class="btnaceptar" onclick="cambiaPaso(0);$('.tabla3').load('../../../../tablas/w16_tblPaso3.html')">Finalizar</div>
+								<div class="col col1 ">
+										<img src="img/assets/step3/anuncio.png" width="233" />
+										<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+										<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+										<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+										<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+									</div>
+								<div class="botonera">
+									<div class="btnaceptar" onclick="cambiaPaso(1);">Finalizar</div>
+								</div>
 							</div>
+						</div>
+							
 						</div>							
 					</div>
 					</div>
