@@ -1,19 +1,15 @@
-var ddData = [{
-    text: "Seleccionar",
+var ddDataNIP = [{
+    text: "&nbsp;&nbsp;&nbsp;4857 9865 1268 4589&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Producto Santander&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Papá",
     value: 1,
-    selected: false,
+    selected: true,
 }, {
-    text: "Seleccionar",
+    text: "&nbsp;&nbsp;&nbsp;9865 4857 4589 1268&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Producto Santander&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mamá",
     value: 2,
     selected: false,
 
-}, {
-    text: "Seleccionar",
+},  {
+    text: "&nbsp;&nbsp;&nbsp;4589 4857  1268 9865&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Producto Santander&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sobrino",
     value: 3,
-    selected: false,
-}, {
-    text: "Seleccionar",
-    value: 4,
     selected: false,
 }];
 
@@ -21,9 +17,9 @@ $(function() {
 
     
 
-    $(".w10_HPG_wra_Select select").ddslick({
-        data: ddData,
-        width: 140,
+    $(".w16_NIP_wra_Select select").ddslick({
+        data: ddDataNIP,
+        width: 333,
         background: "#f7f7f7",
         imagePosition: "left",
         selectText: "Seleccionar",
@@ -32,23 +28,12 @@ $(function() {
         }
     });
 
-    $(".w10_HPG_wra_Select2 select").ddslick({
-        data: ddData,
-        width: 160,
-        background: "#f7f7f7",
-        imagePosition: "left",
-        selectText: "Seleccionar",
-        onSelected: function(data) {
-            console.log(data);
-        }
-    });
-
-
-    $(".w_16_PS_baja").click(function() {
+     $(".w_16_PS_baja").click(function() {
       $(this).parent().fadeOut("slow");
    });
 
     construyeSwitch("switchBox");
+    construyeSwitch("registro");
 
 
     $(".w16_radiobtn").click(function(){
@@ -69,6 +54,22 @@ $(function() {
         $(".w16_radiobtn").children("img").fadeOut("fast");
         $(".w16_RRE_extravio").fadeOut("slow",function(){
             $(".w16_RRE_robo").fadeIn("slow");
+        });
+        
+    });
+
+     $(".registro .switchLabelR").click(function(){
+            $(".w16_NIP_registro").fadeOut("slow",function(){
+            $(".w16_NIP_cambio").fadeIn("slow");
+        });
+    });
+
+
+       
+
+    $(".registro .switchLabel").click(function(){
+        $(".w16_NIP_cambio").fadeOut("slow",function(){
+            $(".w16_NIP_registro").fadeIn("slow");
         });
         
     });
@@ -110,6 +111,46 @@ function step3extravio() {
     $(".extravio3").fadeIn('slow');
 }
 
+function step2cambio() {
+    $(".registro2").fadeOut(1);
+    $(".cambio2").fadeIn('slow');
+}
 
+function step2registro() {
+    $(".cambio2").fadeOut(1);
+    $(".registro2").fadeIn('slow');
+}
+
+function step3cambio() {
+    $(".registro3").fadeOut(1);
+    $(".cambio3").fadeIn('slow');
+}
+
+function step3registro() {
+    $(".cambio3").fadeOut(1);
+    $(".registro3").fadeIn('slow');
+}
+
+
+
+function step2alta() {
+    $(".baja2").fadeOut(1);
+    $(".alta2").fadeIn('slow');
+}
+
+function step2baja() {
+    $(".alta2").fadeOut(1);
+    $(".baja2").fadeIn('slow');
+}
+
+function step3alta() {
+    $(".baja3").fadeOut(1);
+    $(".alta3").fadeIn('slow');
+}
+
+function step3baja() {
+    $(".alta3").fadeOut(1);
+    $(".baja3").fadeIn('slow');
+}
 
 
