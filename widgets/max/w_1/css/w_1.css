@@ -150,3 +150,36 @@ font-size: 11px;
 .w1_terminos{
 	background: #E2DFDF;
 }
+
+.w1_informacion{
+	color: #282828;
+    font-family: 'Arial';
+    font-size: 10px;   
+	width: 354px;
+	margin-top: 24px;
+	margin-left: 46px;
+}
+
+.tabla3 table{
+	height: 223px;
+}
+
+.w1_PS_ayuda{
+    position:absolute;
+    bottom:0;
+    left:8px;
+}
+
+.w1_PS_ayuda p{
+    color: #282828;
+    font-family: 'ArialBlack';
+    font-size: 11px;
+    position: absolute;
+    left: 12px;
+    bottom: 185px;
+}
+
+.w1_CE_tabla2 table{
+	height: 231px;
+	width: 495px;
+}

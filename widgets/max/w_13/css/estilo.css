@@ -1,5 +1,14 @@
 @import url("widgets/max/w_13/css/w_8.css");
 @import url("../css/w_8.css");
+@import url("../../../../css/bloqueo.css");
+@import url("../../../../css/steps.css");
+@import url("../../../../css/generally.css");
+@import url("../../../../css/componentes.css");
+.contenidoFlujo {
+	margin-top: 10px;
+	margin-left: -5px;
+	}
+
 .infptc{
 	
 	height: 195px;
@@ -13,6 +22,11 @@
 	width: 535px;
 	background: #f4f4f4;
 	float: left;
+	padding-top: 4px;
+	padding-left: 4px;
+}
+.w8_EC_contenidodatos2{
+	height: 201px;
 }
 .comboptc{
 	height: 31px;
@@ -59,7 +73,7 @@ input, select{
 	border: solid 2px silver;
 }
 .switchandcalptc{
-	border: solid;
+	/*border: solid;*/
 	height: 195px;
 	width: 160px;
 	float: left;

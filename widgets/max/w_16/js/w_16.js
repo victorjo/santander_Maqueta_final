@@ -87,3 +87,27 @@ function ocultaAsset() {
 function muestraAsset() {
     $("#WA_pasos>img").fadeIn(1);
 }
+
+function step2robo() {
+    $(".extravio").fadeOut(1);
+    $(".robo").fadeIn('slow');
+}
+
+function step2extravio() {
+    $(".robo").fadeOut(1);
+    $(".extravio").fadeIn('slow');
+}
+
+function step3robo() {
+    $(".extravio3").fadeOut(1);
+    $(".robo3").fadeIn('slow');
+}
+
+function step3extravio() {
+    $(".robo3").fadeOut(1);
+    $(".extravio3").fadeIn('slow');
+}
+
+
+
+
