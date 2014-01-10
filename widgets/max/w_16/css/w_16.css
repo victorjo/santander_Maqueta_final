@@ -1,4 +1,4 @@
-﻿@import url("../../../../css/bloqueo.css");
+@import url("../../../../css/bloqueo.css");
 @import url("../../../../css/steps.css");
 @import url("../../../../css/generally.css");
 @import url("../../../../css/componentes.css");
@@ -461,3 +461,125 @@ width:295px;
 .tableStep3{
 	height:auto;
 }
+
+
+
+
+
+/*registro-cambio de NIP*/
+
+.w16_NIP_case{
+	float:left;
+	margin:10px 0 0 45px;
+}
+
+.w16_NIP_case p{
+	width:250px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#282828;
+	font-weight:bold;
+	margin:7px 10px 010px;
+}
+
+.w16_NIP_case p:first-of-type{
+	text-align: right;
+	width:210px;
+}
+
+
+.w16_NIP_input{
+	background-color: #FCFCFC;
+	border: 1px solid #C8C8C8;
+	box-shadow: 1px 1px 5px #C6C6C6 inset;
+	color: #C8C8C8;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	font-style: italic;
+	height: 28px;
+	margin: 8px 0 10px 5px;
+	width: 318px;
+	float:left;
+	padding:0 0 0 10px;
+	border-radius: 5px;
+}
+
+.w16_NIP_inputBloqueado{
+	background-color: #D6D2D2;
+	border: 1px solid #D6D2D2;
+	color: #989898;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	font-style: italic;
+	height: 28px;
+	margin: 8px 0 10px 5px;
+	width: 318px;
+	float:left;
+	padding:0 0 0 10px;
+	border-radius: 5px;
+}
+
+.w16_NIP_cambio{
+	display:none;
+}
+
+.w16_NIP_inputRegistro p{	
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color:#282828;
+	margin-left:5px;
+	width:100%;
+	float:left;
+}
+
+.w16_NIP_inputRegistro>div{	
+	float:left;
+	width:360px;
+}
+
+.w16_NIP_wra_Select{
+	float:left;
+	margin:5px 0 10px 0;
+	width:500px;
+}
+
+.cambio2{
+	display:none;
+}
+
+.registro2{
+	display:none;
+}
+
+.cambio3{
+	display:none;
+}
+
+.registro3{
+	display:none;
+}
+
+.alta2{
+	display:none;
+}
+
+.baja2{
+	display:none;
+}
+
+.alta3{
+	display:none;
+}
+
+.baja3{
+	display:none;
+}
+
+
+
+
+

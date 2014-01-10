@@ -550,20 +550,22 @@ function construyeSwitch(object) {
     container.html(switchO);
 
     container.children("div:first").find(".switchLabel").click(function() {
-        $(".switchSlide").animate({
+console.log(this);
+        $(this).parent(".switchSlide").animate({
             "left": "-=78px"
         }, "fast");
-        $(".dateInput").addClass("dateInputInactive");
-        $(".notificacion").hide();
+        //$(".dateInput").addClass("dateInputInactive");
+        //$(".notificacion").hide();
 
     });
 
     container.children("div:first").find(".switchLabelR").click(function() {
-        $(".switchSlide").animate({
+        console.log(this);
+       $(this).parent(".switchSlide").animate({
             "left": "+=78px"
         }, "fast");
-        $(".dateInput").removeClass("dateInputInactive");
-        $(".notificacion").show();
+        //$(".dateInput").removeClass("dateInputInactive");
+        //$(".notificacion").show();
     });
 }
 
