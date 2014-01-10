@@ -3,6 +3,15 @@
 @import url("../../../../css/generally.css");
 @import url("../../../../css/componentes.css");
 
+
+.switchLabel, .switchLabelR{
+	color:#e0dede !important;
+}
+
+.switchBox{
+	margin:0;
+	float:left;
+}
 .contenidoFlujo{
 	border:none !important;
 	width:735px !important;
@@ -214,4 +223,221 @@ width: 160px;
 .linkEditar{
 	color:#ff0000 !important;
 	text-decoration: none;
+}
+
+.w16_RRE_case{
+	float:left;
+	margin:10px 0 0 45px;
+}
+
+.w16_RRE_case p{
+	width:250px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#282828;
+	font-weight:bold;
+	margin:7px 10px 010px;
+}
+
+.w16_RRE_case p:first-of-type{
+	text-align: right;
+	width:200px;
+}
+
+
+
+
+.w16_RRE_cardListSelect{
+	background-color: #cccccc !important;
+}
+.w16_RRE_cardList{
+	color: #626262;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	width: 100%;
+	height: auto;
+	border-top: none;
+	float:left;
+	border-collapse: separate;
+	border-spacing: 0px 10px;
+}
+
+
+
+.w16_RRE_cardList td{
+	height:30px;
+}
+
+.w16_RRE_cardList tr{
+	background-color:#ffffff;
+}
+
+.w16_RRE_cardList tr:hover{
+	background-color:#cccccc;
+	cursor: pointer;	
+}	
+
+.w16_RRE_cardList td:first-of-type{
+	width:50px;
+	padding-left:15px;
+}
+.w16_RRE_cardList td:nth-of-type(2){
+	width:130px;
+	padding-left:15px;
+}
+
+.w16_RRE_cardList td:nth-of-type(3),.w16_RRE_cardList td:nth-of-type(4) {
+	padding-left:10px;
+	width:105px;
+}
+
+.w16_RRE_cuadroTarjeta{
+	width: 100%;
+	height:220px; 
+	overflow:scroll; 
+	overflow-x: hidden;
+	float: left;	
+}
+
+.w16_RRE_consulta{
+	width:100%;
+	float:left;
+	text-align:left;
+	margin-top: 5px;
+	height: 30px;
+	color:#282828;
+	font-size:11px;
+	font-weight:bold;
+}
+
+.w16_radiobtn {
+width: 18px;
+height: 18px;
+border: 1px #ff0000 solid;
+float: left;
+border-radius: 10px;
+cursor: pointer;
+margin-left: 8px;
+}
+
+.w16_radiobtn_select {
+background-image: url(../img/Indicador.png);
+background-repeat: no-repeat;
+background-position: center center;
+width: 18px;
+height: 18px;
+border: 1px #ff0000 solid;
+float: left;
+border-radius: 10px;
+}
+
+.w16_RRE_consulta td:first-of-type{
+width:113px;
+}
+
+.w16_RRE_consulta td:nth-of-type(2){
+width:224px;
+}
+
+.w16_RRE_consulta td:nth-of-type(3){
+width:179px;
+}
+
+.w16_radiobtn img{
+	display:none;
+	margin:7px 0 0 7px;
+}
+
+.switchSlide{
+	left:-78px;
+}
+
+.w16_RRE_extravio{
+display:none;
+}
+
+
+.w16_RRE_consultaExtravio td:first-of-type{
+width:74px;	
+}
+
+.w16_RRE_consultaExtravio td:nth-of-type(2){
+width:137px;
+}
+
+.w16_RRE_consultaExtravio td:nth-of-type(3){
+width:102px;
+}
+
+.w16_RRE_consultaExtravio td:nth-of-type(4){
+width:295px;
+}
+
+
+
+
+.w16_RRE_cardListExtravioSelect{
+	background-color: #cccccc !important;
+}
+.w16_RRE_cardListExtravio{
+	color: #626262;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	width: 100%;
+	height: auto;
+	border-top: none;
+	float:left;
+	border-collapse: separate;
+	border-spacing: 0px 10px;
+}
+
+
+
+.w16_RRE_cardListExtravio td{
+	height:30px;
+}
+
+.w16_RRE_cardListExtravio tr{
+	background-color:#ffffff;
+}
+
+.w16_RRE_cardListExtravio tr:hover{
+	background-color:#cccccc;
+	cursor: pointer;	
+}	
+
+.w16_RRE_cardListExtravio td:first-of-type{
+	width:50px;
+	padding-left:15px;
+}
+.w16_RRE_cardListExtravio td:nth-of-type(2){
+	width:130px;
+	padding-left:15px;
+}
+
+.w16_RRE_cardListExtravio td:nth-of-type(3),.w16_RRE_cardList td:nth-of-type(4) {
+	padding-left:10px;
+	width:105px;
+}
+
+.w16_RRE_cuadroTarjetaExtravio{
+	width: 100%;
+	height:220px; 
+	overflow:scroll; 
+	overflow-x: hidden;
+	float: left;	
+}
+
+.w16_RRE_consultaExtravio{
+	width:100%;
+	float:left;
+	text-align:left;
+	margin-top: 5px;
+	height: 30px;
+	color:#282828;
+	font-size:11px;
+	font-weight:bold;
 }
