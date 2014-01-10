@@ -18,6 +18,9 @@ var ddData = [{
 }];
 
 $(function() {
+
+    
+
     $(".w10_HPG_wra_Select select").ddslick({
         data: ddData,
         width: 140,
@@ -44,6 +47,32 @@ $(function() {
     $(".w_16_PS_baja").click(function() {
       $(this).parent().fadeOut("slow");
    });
+
+    construyeSwitch("switchBox");
+
+
+    $(".w16_radiobtn").click(function(){
+        $(this).children("img").fadeToggle("fast");
+    });
+
+    $(".switchLabelR").click(function(){
+        $(".w16_radiobtn").children("img").fadeOut("fast");
+        $(".w16_RRE_robo").fadeOut("slow",function(){
+            $(".w16_RRE_extravio").fadeIn("slow");
+        });
+        
+    });
+
+    $(".switchLabel").click(function(){
+        $(".w16_radiobtn").children("img").fadeOut("fast");
+        $(".w16_RRE_extravio").fadeOut("slow",function(){
+            $(".w16_RRE_robo").fadeIn("slow");
+        });
+        
+    });
+
+   
+
 
 });
 

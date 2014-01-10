@@ -308,6 +308,14 @@ var flujoActivo="";
 
         $("#WA_pasos img").css("margin-top",pasoPos);
 
+        if(paso==3)
+        {
+          $(".btn").click(function(){
+            if($(this).text()=="Imprimir"){
+                print("step3");
+            }
+          });
+        }
 
       }
 
