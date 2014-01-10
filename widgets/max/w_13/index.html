@@ -120,7 +120,7 @@
 							<div class="botonera">
 									<div class="btn"  onclick="cambiaFlujo('.wra_flu3');cambiaPaso(0)">Regrasar</div>
 									<div class="btnaceptar b1" onclick="cambiaPaso(2); el(); $('.w13_tabla2').load('../../../../tablas/w13_tblpPaso2.html')">Continuar</div>
-									<div class="btnaceptar b2" style="display:none;" onclick="cambiaPaso(2); el(); $('.w13_tabla2_1').load('../../../../tablas/w13_tblpPaso2-1.html')">Continuar xxxxx</div>
+									<div class="btnaceptar b2" style="display:none;" onclick="cambiaPaso(2); el(); $('.w13_tabla2_1').load('../../../../tablas/w13_tblpPaso2-1.html')">Continuar</div>
 							</div>
 						</div>
 
@@ -132,7 +132,7 @@
 										<div class="iconFlujo">
 											<img src="img/assets/ico_comprobante.png"/>
 										</div>
-										<p class="titulo">Aumentar linea de crédito ramon</p>
+										<p class="titulo">Confirmacion de pago a su tarjeta de crédito Santander</p>
 										<p class="subtitulo">La operación se realizará con la siguiente información</p>
 									</div>
 									<div class="w13_tabla2" id="w13_tabla2"></div>
@@ -193,21 +193,16 @@
 										<form>
 											<label>Seleccione la cuenta de cargo</label>
 											<select class="comboptc" placeholder="ouho">
-												<option>1234****5670 Producto Santander Alias 999,999,999,00</option>
+												<option>9811****     Santander Zero      Vero      34,981.00</option>
 											</select>
 											<div class="contendcomboptc">
 												<div class="cboxptc">
 													<label>Importe a pagar:</label>
-													<select class="comboptc2">
-														<option>Seleccione una opción</option>
-														<option>Minimo a pagar</option>
-														<option>Pago para no generar intereses</option>
-														<option>Otra cantidad</option>
-													</select>
+													<input type="text" name="concepto" class="concepto" placeholder="8,765.00">
 												</div>
 												<div class="inpptc">
 													<label class="conestiloptc">Concepto:</label>
-													<input type="text" name="concepto" class="concepto" placeholder="12345678901234567890123456789">
+													<input type="text" name="concepto" class="concepto" placeholder="Pago de tarjet">
 												</div>
 												
 											</div>
@@ -246,7 +241,57 @@
 									</div>
 								</div>
 						</div>
+						<div class="botonera">
+							<div class="btn"  onclick="cambiaFlujo('.wra_flu3');cambiaPaso(0)">Regrasar</div>
+							<div class="btnaceptar" id="btnaceptar" onclick="cambiaPaso(2); el(); cargaHtml('.w13_tabla4','../../../../tablas/w13_tblpPaso4.html');">Continuar</div>
+						</div>
 					</div>
+					<div class="step step2">
+						<div class="content">
+								<div class="col colFull">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Confirmación de su pago a otras tarjetas</p>
+										<p class="subtitulo">La operación se realizará con la siguiente información</p>
+									</div>
+									<div class="w13_tabla4" id="w13_tabla2"></div>
+								</div>
+								<div class="botonera">
+									<div class="btn"  onclick="cambiaFlujo('.wra_flu3');cambiaPaso(0)">Regrasar</div>
+									<div class="btnaceptar" id="btnaceptar" onclick="cambiaPaso(3); el(); cargaHtml('.w13_tabla5','../../../../tablas/w13_tblpPaso5.html');">Continuar</div>
+								</div>
+							</div>
+					</div>
+
+					<div class="step step3">
+						<div class="content">
+								<div class="col col2 resetMargen"  style="background:#fff;">
+										<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Comprobante de pago a su tarjeta de crédito Santander</p>
+										<p class="subtitulo"></p>
+									</div>
+										<div class="w13_tabla5" id="w13_tabla3"></div>
+									</div>
+									<div class="col col1">
+										<img src="img/assets/step3/anuncio.png" width="233" />
+										<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+										<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+										<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+										<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+									</div>
+									<div class="botonera">
+										<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Deseo solicitar otra tarjeta</div>
+										<div class="btn" onclick="">Imprimir</div>
+										<div class="btnaceptar" onclick="closeAction();">Finalizar</div>
+									</div>
+							</div>
+					</div>
+
 				</div>
 				
 				
