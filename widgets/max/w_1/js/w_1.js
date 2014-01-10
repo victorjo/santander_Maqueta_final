@@ -44,7 +44,11 @@
          hasStatus: false,
          configButton: false,
          colums: ['Tarjeta de Credito', 'Saldo disponible (MXP)', 'Saldo a transferir (MXP)', 'Pago mensual(MXP)', 'Tasa*'],
+<<<<<<< HEAD
          rowsValues: ['<input type="radio"><img src="img/iconos/card.png"> 1234****5678', '999,999,999.00', '000.00<span class="aprovedG"></span>', '1000.00', '99.99%'],
+=======
+         rowsValues: ['<input type="radio"><img src="img/iconos/card.png"> 123456789876543', '999,999,999.00', '999,999,999.00', '1,000.00', '99.99%'],
+>>>>>>> f00767a7c2d27db020b55fff643f4f700e3f1715
          numRows: 10
      });
 
@@ -70,13 +74,17 @@
          hasStatus: true,
          configButton: true,
          colums: ['Fecha', 'Tarjeta Destino', 'Banco', 'Tarjeta origen', 'Saldo Transferido', 'Comision', 'Tasa*', 'Estatus'],
+<<<<<<< HEAD
          rowsValues: ['dd/mm/aaaa', '123456789876543', 'Sandanter', '123456789876543', '999,999,999.00<span class="aprovedG"></span>', '9.99%', '0.00%',''],
+=======
+         rowsValues: ['08/01/2014', '123456789876543', 'Sandanter', '123456789876543', '999,999,999.00', '9.99%', ''],
+>>>>>>> f00767a7c2d27db020b55fff643f4f700e3f1715
          numRows: 10
      });
  }
 
  function cargaTermino() {
-     cargaTerm(" switchModal(); cambiaPaso(3); cargaHtml('.tabla3','../../../../tablas/w1/w1_ST_tblPaso3.html');", 'terminos');
+     cargaTerm(" switchModal(); cambiaPaso(3); cambiaText(); cargaHtml('.tabla3','../../../../tablas/w1/w1_ST_tblPaso3.html');", 'terminos');
  }
 
 
@@ -89,4 +97,15 @@
              $(".bloqueoElement").fadeIn("slow");
          });
      });
+ }
+
+ function cambiaText() {
+     $('.w1_txt').html("<span class = 'bold'> Operacion Exitosa </span> <br><br> Se ha realizado <br> con éxito su operación");
+     $('.w1_txt').addClass('w1_texto_acomodo');
+ }
+
+ function regresaTexto() {
+     $('.w1_txt').html('');
+     $('.w1_txt').html("*Calculado al 08 de Noviembre <br>del 2013. Considera <br>una linea de crédito de $123,000.00 a un  <br> plazo de 3 años de <br> amortización del crédito y <br> cubriendo el porcentaje del pago mínimo.</p >");
+     $('.w1_txt').removeClass('w1_texto_acomodo');
  }

@@ -92,8 +92,8 @@
 								<div class="w1_ST_tabla2"></div>
 							</div>
 							<div class="botonera">
-								<div class="btn" onclick=" $('.titFlujoP1').fadeIn(); cambiaFlujo('.wra_flu1'); cambiaPaso(1); ">Regresar</div>
-								<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w1/w1_ST_tblPaso3.html'),'');">Confirmar</div>
+								<div class="btn" onclick=" regresaTexto(); $('#elementBloqueo').removeClass('term_body'); $('.titFlujoP1').fadeIn(); cambiaFlujo('.wra_flu1'); cambiaPaso(1); ">Regresar</div>
+								<div class="btnaceptar" onclick=" $('#elementBloqueo').removeClass('term_body');  cargaToken('switchModal()','switchModal();cambiaPaso(3);cambiaText()',cargaHtml('.tabla3','../../../../tablas/w1/w1_ST_tblPaso3.html'),'');">Confirmar</div>
 							</div>
 						</div>
 						<div class="step step3">
@@ -102,7 +102,7 @@
 										<div class="iconFlujo">
 											<img src="img/assets/ico_comprobante.png"/>
 										</div>
-										<p class="titulo">Comprobante de pago de servicios</p>
+										<p class="titulo">Comprobante de la solicitud de transferencia de saldos</p>
 									</div>
 									
 									<div class="tabla3"></div>
@@ -116,8 +116,8 @@
 								<div class="btnsLateralStep3 ico3Step3" >Opci&oacute;n 3</div>
 							</div>
 							<div class="botonera">
-								<div class="btn" onclick="$('.titFlujoP1').fadeIn(); cambiaFlujo('.wra_flu1'); cambiaPaso(1);">Deseo realizar otra disposición</div>
-								<div class="btnaceptar" style="margin-right: 9px;" onclick="$('.titFlujoP1').show(); closeAction();">Finalizar</div>
+								<div class="btn" onclick="regresaTexto(); $('.titFlujoP1').fadeIn(); cambiaFlujo('.wra_flu1'); cambiaPaso(1);">Deseo realizar otra transferencia</div>
+								<div class="btnaceptar" style="margin-right: 9px;" onclick=" regresaTexto(); $('.titFlujoP1').show(); closeAction();">Finalizar</div>
 								<div class="btnaceptar" onclick="">Imprimir</div>
 							</div>
 						</div>
@@ -126,12 +126,12 @@
 					<div class="flujo wra_flu2">
 						<div class="step step1">
 							<div class="containerH"></div>
-							<div class="botonera">
+							<!--<div class="botonera">
 								<div class="btnaceptar" onClick=" cambiaFlujo('.wra_flu2'); cambiaPaso(2); $('.w1_CE_tabla2').load('../../../../tablas/w1/w1_CE_tblPaso2.html'); $('.titFlujoP1').hide(); " >Continuar</div>
-							</div>
+							</div>-->
 						</div>
 
-						<div class="step step2">
+						<!--<div class="step step2">
 							<div class="col colFull">
 								<div class="titFlujo">
 									<div class="iconFlujo">
@@ -172,15 +172,17 @@
 								<div class="btnaceptar"  onclick="$('.titFlujoP1').show(); closeAction();">Finalizar</div>
 								
 							</div>
-						</div>
+						</div>-->
 
 					</div>		
 				</div>
 				<div class="w1_PS_ayuda wra_flu1 flujo">
-					<p>El costo mensual del<br/>
-						programa de recompensas<br/>
-						varia de acuerdo al<br/>
-						producto a suscribir</p>
+					<p class="w1_txt">*Calculado al 08 de Noviembre <br>
+					 del 2013. Considera <br> 
+					 una linea de crédito de $123,000.00 a un  <br> 
+					 plazo de 3 años de <br> 
+					 amortización del crédito y <br>
+					 cubriendo el porcentaje del pago mínimo.</p>
 					<img src="../../../img/mrsmackdown.png"/>
 				</div>
 			</div>
