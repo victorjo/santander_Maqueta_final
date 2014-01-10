@@ -1,0 +1,88 @@
+	<!--	<script src="../../../js/jquery10.2.min.js"></script>		-->
+		<script src="../../../js/components.js"></script>
+		<!--<script src="../../../js/ddSlick.js"></script>-->
+		<link rel="stylesheet" href="../../../css/generally.css" />
+		<link rel="stylesheet" href="../../../css/componentes.css" />
+		<script src="widgets/max/w_1/js/w_1.js"></script>
+		<link rel="stylesheet" href="widgets/max/w_1/css/w_1.css" />
+
+		<!--<input type="button" value="GRID" onclick="Gridius($('.contenidoFlujo'),{colums:[13,23,33,43,53],rowsValues:[1,2,3,4,5],numRows:10});">-->
+		<div id="widampliado">
+			<div id="bloqueoWidget" class="bloqueoElement"></div>
+			<div id="elementBloqueo" class="bloqueoElement">
+				
+			</div>
+			<div id="WA_pasos">
+				<img src="../../../img/assets/pasos.png"/>
+				<div class="btnHeader info">
+					<img src="../../../img/assets/ico_info.png"  />
+				</div>
+				<div class="btnHeader cerrar">
+					<img src="../../../img/assets/ico_cerrar_widget.png"  />
+				</div> 
+			</div>
+			
+			<div id="WA_nav">
+				<ul> 
+					<li class="menu">
+						<p>
+						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
+					</li>
+					<li onclick="firstS()">
+						<p>Solicitar transferencia de saldos</p>
+					</li>
+					<li onclick="secondS()">
+						<p>Consultar estado de transferencia de saldo</p>
+					</li>
+				</ul>
+			</div>
+			<div id="WA_contenedorFlujos">
+				<div class="titFlujo" style="height:70px;">
+				</div>
+				<div class="contenidoFlujo" style="border:0px solid black;">
+					<div id="firstS">
+						<br>
+					<p style="font-size:12px;font-weight:bold;">Introduzca los datos de la tarjeta de crédito o comercial de la que desea transferir su saldo:</p>
+					<br>
+					<div class="tableHG fullCon">
+						<table style="width:100%;height:75px">
+							<tr>
+								<td>
+									<p>Numero de tarjeta</p>
+									<input class="dd-select" type="text">
+								</td>
+								<td>
+									<p>Institucion bancaria o comercial</p>
+									<input class="dd-select" type="text">
+								</td>
+								<td>
+									<p>Ingrese el monto que desea transferir</p>
+									<input class="dd-select" type="text">
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="fullCon" style="display:none">
+						<div class="select_OC"></div>
+						<div class="select_OC"></div>
+						<div class="select_OC"></div>
+						<a href="#" style="float:right;float: right;font-size: 12px;color: #db1539;">Nueva busqueda</a>
+					</div>
+					
+					<div class="fullCon" style="display:none">
+						<p style="display:none;width: 260px;float: left;margin-bottom: 3px;margin-top:5px;font-size: 12px;font-weight: bold;">Mis movimientos de la tarjeta</p> <div style="float:right;displau:none"><img src="0" alt=""><img src="1" alt=""><img src="2" alt=""></div>
+					</div>
+					<div class="containerG"></div>
+					</div>
+					<div id="secondS">
+						<div class="containerH"></div>
+					</div>
+				</div>
+				<div class="botonera">
+					<div class="btnaceptar" >Continuar</div>
+				</div>
+				
+			</div>
+		</div>
+		
