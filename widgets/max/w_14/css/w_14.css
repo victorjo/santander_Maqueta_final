@@ -1,3 +1,6 @@
+@import url("../../../../css/bloqueo.css");
+@import url("../../../../css/steps.css");
+
 .col1_OC {
 	float: left;
 	height: 336px;
@@ -101,7 +104,6 @@
 	margin-right:10px;
 }
 
-.ico_w14{
-	float: right;
-	margin-top: 9px;
+.fullCon:hover{
+	cursor:pointer;
 }

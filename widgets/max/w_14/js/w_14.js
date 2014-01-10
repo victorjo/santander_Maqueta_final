@@ -1,3 +1,20 @@
+var dataPeriodo = [{
+    text: "Actual",
+    value: 1,
+    selected: false,
+}, {
+    text: "Anterior",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "2 anteriores",
+    value: 3,
+    selected: false,
+}];
+
+
+
 var databusqueda = [{
     text: "Últimos 5 pagos",
     value: 1,
@@ -55,7 +72,7 @@ $(document).ready(function() {
     });
 
     $(".w14_select_1 select").ddslick({
-        data: databusqueda,
+        data: dataPeriodo,
         width: 160,
         background: "#f7f7f7",
         imagePosition: "left",
@@ -70,12 +87,14 @@ $(document).ready(function() {
         width: 160,
         background: "#f7f7f7",
         imagePosition: "left",
-        selectText: "Periodo de Factura",
+        selectText: "Últimos movimientos",
         onSelected: function(data) {
             console.log(data);
         }
     });
 
-
+    $('.w14_HPG_personalizarIntervalo').click(function() {
+        cargaCalendario('switchModal()', 'calendario');
+    });
 
 })();

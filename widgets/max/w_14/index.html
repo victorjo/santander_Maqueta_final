@@ -7,6 +7,10 @@
 		<link rel="stylesheet" href="widgets/max/w_14/css/w_14.css" />
 		<!--<input type="button" value="GRID" onclick="Gridius($('.contenidoFlujo'),{colums:[13,23,33,43,53],rowsValues:[1,2,3,4,5],numRows:10});">-->
 		<div id="widampliado">
+			<div id="bloqueoWidget" class="bloqueoElement"></div>
+			<div id="elementBloqueo" class="bloqueoElement">
+				
+			</div>
 			<div id="WA_pasos">
 				<img src="../../../img/assets/pasos.png"/>
 				<div class="btnHeader info">
@@ -23,7 +27,7 @@
 						<p>
 						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
 					</li>
-					<li>
+					<li onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(1);" class="liActive">
 						<p>Consulta de saldos y movimientos</p>
 					</li>
 					<li>
@@ -40,70 +44,70 @@
 					<div class="iconFlujo">
 						<img src="../../../img/assets/ico_saldos.png"/>
 					</div>
-					<p class="titulo">Consultas de saldos y moviminentos</p>
+					<p class="titulo">Consultas de saldos y movimientos</p>
 					<p class="subtitulo">Seleccione el periodo de busqueda que desea consultar, asi como el tipo de movimiento y/o rango de importe para una busqueda mas especifica</p>
 				</div>
 				<div class="contenidoFlujo" style="border:0px solid black;">
-					
-					<div class="firstS">
-						<div class="tableHG fullCon">
-							<table style="height: 100px;">
-								<tr>
-									<td rowspan="2"></td>
-									<td rowspan="2">
-										<img src="img/iconos/card.png" alt="">
-										<span>Santander<br>	
-											Black</span>
-									</td>
-									<td rowspan="2">
-										<p>Seleccione tarjeta:</p>
-										<div class="inter"></div>
-									</td>
-									<td>
-										<p>Alias</p>
-										<span>Mi alias</span>
-									</td>
-									<td>
-										<p>Limite de credito</p>
-										<span>999,999,999.00</span>
-									</td>
-									<td>
-										<p>Saldo actual</p>
-										<span>999,999,999.00</span>
-									</td>
-									<td>
-										<p>Tasa de interes</p>
-										<span>0.00 %</span>
-									</td>
-									<td>
-										<p>Fecha de corte</p>
-										<span>dd/mm/aaaa</span>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<p>Fecha limite de pago</p>
-										<span>dd/mm/aaaa</span>
-									</td>
-									<td>
-										<p>Pago para no generar intereses</p>
-										<span>999,999,999.00</span>
-									</td>
-									<td>
-										<p>Limite de credito linea express</p>
-										<span>0.00%</span>
-									</td>
-									<td>
-										<p>Saldo global en linea express</p>
-										<span>dd/mm/aaaa</span>
-									</td>
-									<td>
-										<p>Pago minimo</p>
-										<span>999,999,999.00</span>
-									</td>
-								</tr>
-							</table>
-						</div>
+					<div class="flujo wra_flu1">
+						<div class="step step1">
+							<div class="tableHG fullCon">
+								<table style="height: 100px;">
+									<tr>
+										<td rowspan="2"></td>
+										<td rowspan="2">
+											<img src="img/iconos/card.png" alt="">
+											<span>Santander<br>	
+												Black</span>
+										</td>
+										<td rowspan="2">
+											<p>Seleccione tarjeta:</p>
+											<div class="inter"></div>
+										</td>
+										<td>
+											<p>Alias</p>
+											<span>Mi alias</span>
+										</td>
+										<td>
+											<p>Limite de credito</p>
+											<span>999,999,999.00</span>
+										</td>
+										<td>
+											<p>Saldo actual</p>
+											<span>999,999,999.00</span>
+										</td>
+										<td>
+											<p>Tasa de interes</p>
+											<span>0.00 %</span>
+										</td>
+										<td>
+											<p>Fecha de corte</p>
+											<span>dd/mm/aaaa</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>Fecha limite de pago</p>
+											<span>dd/mm/aaaa</span>
+										</td>
+										<td>
+											<p>Pago para no generar intereses</p>
+											<span>999,999,999.00</span>
+										</td>
+										<td>
+											<p>Limite de credito linea express</p>
+											<span>0.00%</span>
+										</td>
+										<td>
+											<p>Saldo global en linea express</p>
+											<span>dd/mm/aaaa</span>
+										</td>
+										<td>
+											<p>Pago minimo</p>
+											<span>999,999,999.00</span>
+										</td>
+									</tr>
+								</table>
+							</div>
 
 						<div class="fullCon">
 							<div class="w14_select_1">
@@ -124,13 +128,15 @@
 						</div>
 						
 						<div class="fullCon">
-							<p style="width: 260px;float: left;margin-bottom: 3px;margin-top:5px;font-size: 12px;font-weight: bold;">Mis movimientos de la tarjeta</p> <div style="float:right"><img style=" margin-right:5px; margin-top: 4px;" src="img/assets/ico_exp.png" alt=""><img class="ico_w14" style="margin-right:5px" src="img/assets/ico_grafics.png" alt=""><img style="margin-right:5px" src="img/assets/ico_list.png" alt=""></div>
+							<p style="width: 260px;float: left;margin-bottom: 3px;margin-top:5px;font-size: 12px;font-weight: bold;">Mis movimientos de la tarjeta</p> <div style="float:right"><img style=" margin-right:5px; margin-top: 4px;" src="img/assets/ico_exp.png" alt=""><img style="margin-right:5px" src="img/assets/ico_grafics.png" alt=""><img style="margin-right:5px" src="img/assets/ico_lista.png" alt=""></div>
 						</div>
 						<div class="containerG"></div>
+						</div>
+					</div>	
+					<div class="flujo wra_flu2">
+							
 					</div>
-					<div class="secondS">
-						
-					</div>
+					
 				</div>
 				<div class="botonera">
 					<div class="btn" onclick="cambiaPaso(2)">Consultar estado de cuenta</div>
