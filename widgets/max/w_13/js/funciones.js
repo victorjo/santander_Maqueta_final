@@ -1,4 +1,4 @@
-$(document).on("ready",function(){
+
 
 			/*var data = {
 				colums:['Fecha','Descripción','Referencia','Cuenta de cargo','Cuenta destino','Importe','Estatus'],
@@ -17,4 +17,3 @@ $(document).on("ready",function(){
 				numRows:30
 			}
 			Gridius($('.tablaDinamica'),data);
-});
