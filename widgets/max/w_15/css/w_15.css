@@ -145,7 +145,7 @@ float: left;
 
 .w20_DC_consulta td:nth-of-type(2){
 	float: left;
-	margin-left: 63px;
+	margin-left: 103px;
 	color:#282828;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:11px;
@@ -156,7 +156,7 @@ float: left;
 
 .w20_DC_consulta td:nth-of-type(3){
 	float: left;
-	margin-left: 76px;
+	margin-left: 103px;
 	color:#282828;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:11px;
@@ -167,7 +167,7 @@ float: left;
 
 .w20_DC_consulta td:nth-of-type(4){
 	float: left;
-	margin-left: 48px;
+	margin-left: 72px;
 	color:#282828;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:11px;
@@ -245,15 +245,21 @@ float: left;
 	float:left;
 }
 
-.w20_DC_cardList td:nth-of-type(3),.w4_PS_cardList td:nth-of-type(4) {
-	padding-left:10px;
-	width:185px;
+.w20_DC_cardList td:nth-of-type(3) {
+	padding-left:104px;
+	width:482px;
 }
-
-
-.w20_DC_cardList td:nth-of-type(5),..w20_DC_cardList td:nth-of-type(6),.w20_DC_cardList td:nth-of-type(7){
-	padding-left:10px;
-	width:103px;
+.w20_DC_cardList td:nth-of-type(4){
+	padding-left:33px;
+	width:232px;
+}
+.w20_DC_cardList td:nth-of-type(5) {
+	padding-left:33px;
+	width:74px;
+	}
+.w4_PS_cardList td:nth-of-type(4) {
+	margin-left: 10px;
+	width:185px;
 }
 
 .w20_DC_cardList td:nth-of-type(6) p{
@@ -419,6 +425,10 @@ margin-right: 10px;
 	
 	
 	}*/
+	.btn .2lin{
+		line-height: 12px;
+		
+	}
 .btnHeaderTable{
 	height: 24px;
 margin: -10px;
@@ -491,7 +501,7 @@ body{
 .blockcp{
 	border-right:1px dotted gray;
 	float:left;
-	height:100%;
+	height:80%;
 	width:235px;
 }
 .blockcp > p {
@@ -547,10 +557,12 @@ div > .blockcp:nth-child(3){
 	width:242px;
 }
 #wrapcp{
-	border:1px solid gray;
-	color:#535353;
-	height:300px;
-	width:715px;
+border: 1px solid gray;
+color: #535353;
+height: 400px;
+width: 100%;
+position: relative;
+top: 66px;
 }
 #myCanvas{
 		-webkit-transform: rotate(-90deg);
@@ -560,7 +572,7 @@ div > .blockcp:nth-child(3){
 		transform: rotate(-90deg);
 	}
 	#background{
-		top: 0; left: 0; z-index: 900; height: 190px; width: 190px; background:url(images/backCircle.png) center; position: absolute;
+		top: 0; left: 0; z-index: 900; height: 190px; width: 190px; background:url(../../../../images/backCircle.png) center; position: absolute;
 	}
 	#txtBack h4{
 		margin:0;
@@ -659,11 +671,8 @@ div > .blockcp:nth-child(3){
 			color:#999999
 		}
 		.dd-options{
-
 		max-width: 215px;
-		margin-left:0px;
-		
-
+		margin-left:0px;		
 		}
 
 		#plazoAuto{margin:auto;width:190px;height:190px;position:relative;}
@@ -675,8 +684,6 @@ div > .blockcp:nth-child(3){
 			height: 13px;
 			color: #6487ed;
 		}
-
-
 		.btnPlazoAuto span{
 			display: none;
 		}
@@ -685,4 +692,12 @@ div > .blockcp:nth-child(3){
 			  width:100px;height:20px;top: 93px;left: 44px;
               color: #6487ed;position: absolute;
 		}
-
+.wrapGrid {
+	height: 160px !important;
+}
+/* estilos de tabla de flujo amg */ 
+.wrapGrid>table>tbody>tr td {
+	font-weight: bold;
+font-size: 11px;
+			
+		} 
