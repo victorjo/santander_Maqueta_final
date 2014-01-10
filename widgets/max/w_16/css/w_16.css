@@ -123,7 +123,7 @@
 	bottom: 185px;
 }
 
-.flujo{
+.step1, .step2, .step3{
 	display:none;
 }
 .wra_flu2>.btnaceptar {
