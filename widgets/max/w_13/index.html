@@ -1,7 +1,7 @@
 
 		<!--<script src="../../../js/jquery10.2.min.js"></script>-->
 		<script src="../../../js/components.js"></script>
-		<script src="../../../js/componentes.js"></script>
+		<!--<script src="../../../js/componentes.js"></script>-->
 		<script src="../../../js/ddSlick.js"></script>
 		<script type="text/javascript" src="widgets/max/w_13/js/funciones.js"></script>
 		<!--<link rel="stylesheet" href="../../../css/componentes.css" />
@@ -12,6 +12,8 @@
 		<!--<link rel="stylesheet" type="text/css" href="css/estilo.css">-->	
 
 		<div id="widampliado">
+			<div id="bloqueoWidget" class="bloqueoElement"></div>
+			<div id="elementBloqueo" class="bloqueoElement"></div>
 			<div id="WA_pasos">
 				<img src="../../../img/assets/pasos.png"/>
 				<div class="btnHeader info">
@@ -86,7 +88,7 @@
 									</div>
 								</div>
 								<div class="switchandcalptc">
-									<div class="w8_EC_contenidodatos2" style="height:201px;">
+									<div class="w8_EC_contenidodatos2 " style="height:201px;">
 										<p class="p_OC">Programar transferencia:</p>
 												 
 										<div id="switchBox">
@@ -97,7 +99,7 @@
 												<p class="p_OC">Fecha:</p>
 												<input class="textboxdecalendar" type="text" placeholder="dd/mm/aaaa" />
 													
-												<div class="w8_EC_marcocalendar" >
+												<div class="w8_EC_marcocalendar w13_PT_contenidodatos2" >
 												<img src="../../../img/assets/Calendarmin.png"  />
 												 </div>
 								
@@ -114,11 +116,14 @@
 							</div>
 							<div class="botonera">
 									<div class="btn"  onclick="cambiaFlujo('.wra_flu3');cambiaPaso(0)">Regrasar</div>
-									<div class="btnaceptar" onclick="cambiaPaso(2); el(); $('.w13_tabla2').load('../../../../tablas/w13_tblpPaso2.html')">Continuar</div>
+									<div class="btnaceptar b1" onclick="cambiaPaso(2); el(); $('.w13_tabla2').load('../../../../tablas/w13_tblpPaso2.html')">Continuar</div>
+									<div class="btnaceptar b2" style="display:none;" onclick="cambiaPaso(2); el(); $('.w13_tabla2-1').load('../../../../tablas/w13_tblpPaso2-1.html')">Continuar xxxxx</div>
 							</div>
 						</div>
 
-						<div class="step step2" style="display:none;">
+
+
+						<div class="step step2" id="rtable2" style="display:none;">
 							<div class="content">
 								<div class="col colFull">
 									<div class="titFlujo">
@@ -134,9 +139,59 @@
 									<div class="btn"  onclick="cambiaFlujo('.wra_flu3');cambiaPaso(0)">Regrasar</div>
 									<div class="btnaceptar" onclick="cambiaPaso(3); el(); cargaHtml('.w13_tabla3','../../../../tablas/w13_tblpPaso3.html');">Continuar</div>
 								</div>
+								
+							</div>
+						</div>
+
+
+
+						<div class="step step2" style="display:none;">
+							<div class="content">
+								<div class="col colFull">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Aumentar linea de crédito ramon</p>
+										<p class="subtitulo">La operación se realizará con la siguiente información</p>
+									</div>
+									<div class="w13_tabla2-1"></div>
+								</div>
+								<div class="botonera">
+									<div class="btn"  onclick="cambiaFlujo('.wra_flu3');cambiaPaso(0)">Regrasar</div>
+									<div class="btnaceptar" onclick="cambiaPaso(3); el(); cargaHtml('.w13_tabla3','../../../../tablas/w13_tblpPaso3.html');">Continuar</div>
+								</div>
 								<!--onclick="cargaToken('switchModal()','switchModal();cambiaPaso(2);',cargaHtml('.w17_stc_tabla3','../../../../tablas/w17_tblflu3Paso2.html'),'token');"-->
 							</div>
 						</div>
+
+						<div class="step step3" id="rtable3">
+							<div class="content">
+								<div class="col col2 resetMargen"  style="background:#fff;">
+										<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Comprobante de pago a su tarjeta de crédito Santander</p>
+										<p class="subtitulo"></p>
+									</div>
+										<div class="w13_tabla3"></div>
+									</div>
+									<div class="col col1">
+										<img src="img/assets/step3/anuncio.png" width="233" />
+										<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+										<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+										<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+										<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+									</div>
+									<div class="botonera">
+										<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Deseo solicitar otra tarjeta</div>
+										<div class="btn" onclick="">Imprimir</div>
+										<div class="btnaceptar" onclick="closeAction();">Finalizar</div>
+									</div>
+							</div>
+						</div>
+
 						<div class="step step3">
 							<div class="content">
 								<div class="col col2 resetMargen"  style="background:#fff;">
@@ -163,6 +218,11 @@
 									</div>
 							</div>
 						</div>
+
+
+
+
+
 					</div>
 
 				</div>

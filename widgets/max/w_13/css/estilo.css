@@ -4,6 +4,14 @@
 @import url("../../../../css/steps.css");
 @import url("../../../../css/generally.css");
 @import url("../../../../css/componentes.css");
+
+.switchSlide{
+	left:-78px;
+}
+
+.switchLabel, .switchLabelR{
+	color:#626262;
+}
 .contenidoFlujo {
 	margin-top: 10px;
 	margin-left: -5px;
