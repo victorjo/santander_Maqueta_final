@@ -248,3 +248,41 @@
 
 .term_btn{ margin-left: 65px !important; }
 /*---- EStilo para Terminos y condiciones ----*/
+
+/*--- Estilo de pdf---*/
+.pdf_informacion{
+	width: 378px;
+	height: 412px;
+	margin-top: 10px;
+	margin-left: 82px;
+	margin-bottom: 36px;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+
+.pdf2_informacion{
+	width: 378px;
+	height: 412px;
+	margin-top: 10px;
+	margin-left: 171px;
+	margin-bottom: 36px;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+
+.pdf2_posicion{
+	top: 4.285714px !important;
+	left: 190.5px  !important;
+	display: block !important;
+}
+
+
+
+.pdf_posicion{
+	top: 4.285714px !important;
+	left: 282.5px  !important;
+	display: block !important;
+}
+/*--- Fin Estilo de pdf  $('#elementBloqueo').addClass('pdf_posicion');---*/
