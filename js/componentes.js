@@ -350,8 +350,7 @@ function cambiaFlujo(step) {
         } else {
             $(this).fadeOut("slow");
         }
-    })
-
+    });
 }
 
 function getMask(str, event) {
@@ -386,6 +385,8 @@ function cambiaPaso(paso) {
     flujoActivo = $(flujoActivo);
     escondeElemento("s");
     flujoActivo.find(".step" + paso).fadeIn("slow");
+
+
 }
 
 /****** FIN DE MOTOR PARA CAMBIAR DE PASOS Y FLUJOS **/ ///
@@ -423,8 +424,6 @@ function cambiaPaso(paso) {
     }
 
     $("#WA_pasos > img").css("margin-top", pasoPos);
-
-
 }
 /*Fin de Funcion realizada por victor: Cambio de pasos*/
 
@@ -555,7 +554,7 @@ function construyeSwitch(object) {
 
 */
 function Gridius(object, data) {
-
+    $(".toolsGrid").remove();
     $.when($.ajax("componentes/grid.html")).then(function(res) {
 
         object.html(res);
@@ -682,8 +681,11 @@ function cargaHtml(componente, url) {
 }
 
 function print(obj) {
-
-    $(".wrapGrid").printThis({
+    var q = "";
+    if(obj=="step3"){
+        q = ".resetMargen:first"
+    }else q = ".wrapGrid";
+    $(q).printThis({
         debug: false,
         importCSS: true,
         printContainer: true,
