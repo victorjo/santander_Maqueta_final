@@ -1,28 +1,23 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-		<title>Solicitud de tarjeta de crédito</title>
-		<script src="../../../js/jquery10.2.min.js"></script>
+
+		<!--<script src="../../../js/jquery10.2.min.js"></script>-->
 		<script src="../../../js/components.js"></script>
 		<script src="../../../js/componentes.js"></script>
 		<script src="../../../js/ddSlick.js"></script>
 		<script type="text/javascript" src="widgets/max/w_13/js/funciones.js"></script>
-		<link rel="stylesheet" href="../../../css/componentes.css" />
-		<link rel="stylesheet" href="../../../css/generally.css" />
+		<!--<link rel="stylesheet" href="../../../css/componentes.css" />
+		<link rel="stylesheet" href="../../../css/generally.css" />-->
 		<link rel="stylesheet" type="text/css" href="widgets/max/w_13/css/estilo.css">
 		<link rel="stylesheet" type="text/css" href="widgets/max/w_13/css/w_8.css">
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
 		<!--<link rel="stylesheet" type="text/css" href="css/estilo.css">-->	
-	</head>
-	<body>
+
 		<div id="widampliado">
 			<div id="WA_pasos">
 				<img src="../../../img/assets/pasos.png"/>
 				<div class="btnHeader info">
 					<img src="../../../img/assets/ico_info.png"  />
 				</div>
-				<div class="btnHeader cerrar">
+				<div class="btnHeader cerrar" onclick="closeAction()">
 					<img src="../../../img/assets/ico_cerrar_widget.png"  />
 				</div>
 			</div>
@@ -33,19 +28,19 @@
 						<p>
 						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu1')">
+					<li onclick="cambiaFlujo('.wra_flu1');elf();">
 						<p>Mis TDC Santander</p>
 					</li>
-					<li>
+					<li onclick="elf();">
 						<p>A otras tarjetas</p>
 					</li>
-					<li>
+					<li onclick="elf();">
 						<p>Consultas de tarjeta /Alta/Baja</p>
 					</li>
 				</ul>
 			</div>
 			<div id="WA_contenedorFlujos">
-				<div class="titFlujo">
+				<div class="titFlujo fg">
 					<div class="iconFlujo">
 						<img src="../../../img/assets/pago_tdc.png"/>
 					</div>
@@ -91,31 +86,81 @@
 									</div>
 								</div>
 								<div class="switchandcalptc">
-									<div class="w8_EC_contenidodatos2">
-								<p class="p_OC">Programar transferencia:</p>
-										 
-								<div id="switchBox">
-									<div class="switchSlide"><div class="switchLabel">si</div>
-									<div class="switchIndicador"><div class="franjaSwitch"></div></div><div class="switchLabelR">no</div>
+									<div class="w8_EC_contenidodatos2" style="height:201px;">
+										<p class="p_OC">Programar transferencia:</p>
+												 
+										<div id="switchBox">
+											<div class="switchSlide"><div class="switchLabel">si</div>
+											<div class="switchIndicador"><div class="franjaSwitch"></div></div><div class="switchLabelR">no</div>
+											</div>
+										</div>
+												<p class="p_OC">Fecha:</p>
+												<input class="textboxdecalendar" type="text" placeholder="dd/mm/aaaa" />
+													
+												<div class="w8_EC_marcocalendar" >
+												<img src="../../../img/assets/Calendarmin.png"  />
+												 </div>
+								
+													<p class="p_OC"> Notificar previamente: </p>
+												<select class="textboxDias" name="" id="">
+													<option value="3">3 dias</option>
+													<option value=""></option>
+													<option value=""></option>
+													<option value=""></option>
+													<option value=""></option>
+												</select>
 									</div>
 								</div>
-										<p class="p_OC">Fecha:</p>
-										<input class="textboxdecalendar" type="text" placeholder="dd/mm/aaaa" />
-											
-										<div class="w8_EC_marcocalendar" >
-										<img src="../../../img/assets/Calendarmin.png"  />
-										 </div>
-						
-											<p class="p_OC"> Notificar previamente: </p>
-										<select class="textboxDias" name="" id="">
-											<option value="3">3 dias</option>
-											<option value=""></option>
-											<option value=""></option>
-											<option value=""></option>
-											<option value=""></option>
-										</select>
 							</div>
+							<div class="botonera">
+									<div class="btn"  onclick="cambiaFlujo('.wra_flu3');cambiaPaso(0)">Regrasar</div>
+									<div class="btnaceptar" onclick="cambiaPaso(2); el(); $('.w13_tabla2').load('../../../../tablas/w13_tblpPaso2.html')">Continuar</div>
+							</div>
+						</div>
+
+						<div class="step step2" style="display:none;">
+							<div class="content">
+								<div class="col colFull">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Aumentar linea de crédito</p>
+										<p class="subtitulo">La operación se realizará con la siguiente información</p>
+									</div>
+									<div class="w13_tabla2"></div>
 								</div>
+								<div class="botonera">
+									<div class="btn"  onclick="cambiaFlujo('.wra_flu3');cambiaPaso(0)">Regrasar</div>
+									<div class="btnaceptar" onclick="cambiaPaso(3); el(); cargaHtml('.w13_tabla3','../../../../tablas/w13_tblpPaso3.html');">Continuar</div>
+								</div>
+								<!--onclick="cargaToken('switchModal()','switchModal();cambiaPaso(2);',cargaHtml('.w17_stc_tabla3','../../../../tablas/w17_tblflu3Paso2.html'),'token');"-->
+							</div>
+						</div>
+						<div class="step step3">
+							<div class="content">
+								<div class="col col2 resetMargen"  style="background:#fff;">
+										<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Comprobante de pago a su tarjeta de crédito Santander</p>
+										<p class="subtitulo"></p>
+									</div>
+										<div class="w13_tabla3"></div>
+									</div>
+									<div class="col col1">
+										<img src="img/assets/step3/anuncio.png" width="233" />
+										<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+										<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+										<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+										<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+									</div>
+									<div class="botonera">
+										<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Deseo solicitar otra tarjeta</div>
+										<div class="btn" onclick="">Imprimir</div>
+										<div class="btnaceptar" onclick="closeAction();">Finalizar</div>
+									</div>
 							</div>
 						</div>
 					</div>
@@ -127,5 +172,3 @@
 		</div>
 		
 		
-	</body>
-</html>

@@ -1,6 +1,21 @@
 @import url("../../../../css/bloqueo.css");
 @import url("../../../../css/steps.css");
 
+.wra_flu1 > .step3{
+	display:none;
+}
+
+.wra_flu1 > .step2{
+	display:none;
+}
+.wra_flu2{
+	display:none;
+}
+
+.linkEditar{
+	color:#ff0000 !important;
+	text-decoration: none;
+}
 
  .col1_OC {
         float: left;
@@ -103,4 +118,48 @@
     position: absolute;
     left: 12px;
     bottom: 185px;
+}
+
+.titFlujoP1 {
+	background: #FFFFFF;
+	float: left;
+	height: 30px;
+	overflow: hidden;
+	padding: 5px;
+	width: 713px;
+}
+
+.titFlujoP1 p {
+	margin: 0;
+}
+
+.titFlujoP1 .titulo {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.titFlujoP1 .subtitulo {
+font-size: 11px;
+}
+
+.w1_ST_tabla2 table{
+	height: 248px;
+	width: 420px;
+}
+
+.w1_terminos{
+	background: #E2DFDF;
+}
+
+.w1_informacion{
+	color: #282828;
+    font-family: 'Arial';
+    font-size: 10px;   
+	width: 354px;
+	margin-top: 24px;
+	margin-left: 46px;
+}
+
+.tabla3 table{
+	height: 223px;
 }
