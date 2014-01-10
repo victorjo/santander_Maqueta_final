@@ -92,7 +92,7 @@
 								<div class="w1_ST_tabla2"></div>
 							</div>
 							<div class="botonera">
-								<div class="btn" onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(1); ">Regresar</div>
+								<div class="btn" onclick=" $('.titFlujoP1').fadeIn(); cambiaFlujo('.wra_flu1'); cambiaPaso(1); ">Regresar</div>
 								<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w1/w1_ST_tblPaso3.html'),'');">Confirmar</div>
 							</div>
 						</div>
@@ -116,7 +116,9 @@
 								<div class="btnsLateralStep3 ico3Step3" >Opci&oacute;n 3</div>
 							</div>
 							<div class="botonera">
-								<div class="btnaceptar" onclick="closeAction();">Finalizar</div>
+								<div class="btn" onclick="$('.titFlujoP1').fadeIn(); cambiaFlujo('.wra_flu1'); cambiaPaso(1);">Deseo realizar otra disposición</div>
+								<div class="btnaceptar" style="margin-right: 9px;" onclick="$('.titFlujoP1').show(); closeAction();">Finalizar</div>
+								<div class="btnaceptar" onclick="">Imprimir</div>
 							</div>
 						</div>
 
