@@ -6,16 +6,17 @@
 
 
  $(document).ready(function() {
-     $(".select_OC").ddslick({
+     /*$(".select_OC").ddslick({
          data: js,
          width: 300,
          imagePosition: "left",
          onSelected: function(selectedData) {
 
          }
-     });
+     });*/
 
      firstS();
+
  });
 
  function firstS() {
@@ -34,10 +35,10 @@
      title += '</tr>';
      title += '</table>';
      title += '</div>';
-     $(".titFlujo").html(title);
+     $(".titFlujoP1").html(title);
 
-     $('#firstS').fadeIn();
-     $('#secondS').hide();
+     //$('#firstS').fadeIn();
+     //$('#secondS').hide();
 
      Gridius($('.containerG'), {
          hasStatus: false,
@@ -55,15 +56,15 @@
 
      var title = '<div id="SecondT">';
      title += '<div class="iconFlujo">';
-     title += '<img src="../../../img/assets/ico_cuentas_propias.png"/>';
+     title += '<img src="../../../img/assets/ico_balance.png"/>';
      title += '</div>';
      title += '<p class="titulo">Consultar estado de transferencias de saldo</p>';
      title += '<p class="subtitulo">A continuacion puede consultar las solicitudes de transferencias que ha realizado a sus tarjetas Santander</p></div>';
 
 
-     $(".titFlujo").html(title);
-     $('#firstS').hide();
-     $('#secondS').fadeIn();
+     $(".titFlujoP1").html(title);
+     //$('#firstS').hide();
+     //$('#secondS').fadeIn();
 
      Gridius($('.containerH'), {
          hasStatus: true,
@@ -71,5 +72,21 @@
          colums: ['Fecha', 'Tarjeta Destino', 'Banco', 'Tarjeta origen', 'Saldo Transferido', 'Comision', 'Tasa*', 'Estatus'],
          rowsValues: ['dd/mm/aaaa', '123456789876543', 'Sandanter', '123456789876543', '999,999,999.00', '9.99%', ''],
          numRows: 10
+     });
+ }
+
+ function cargaTermino() {
+     cargaTerm(" switchModal(); cambiaPaso(3); cargaHtml('.tabla3','../../../../tablas/w1/w1_ST_tblPaso3.html');", 'terminos');
+ }
+
+
+ function cargaTerm(cbTokenAcep, modal) {
+     var mod = modal || 'token';
+     $(".bloqueoElement").fadeOut("slow", function() {
+         $("#elementBloqueo").load("../modales/" + mod + ".html", function() {
+             $(this).find("#btnCalendarioAceptar").attr("onclick", cbTokenAcep);
+             centraModal();
+             $(".bloqueoElement").fadeIn("slow");
+         });
      });
  }
