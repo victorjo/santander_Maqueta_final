@@ -258,6 +258,7 @@
 	margin-bottom: 36px;
 	overflow: scroll;
 	overflow-x: hidden;
+	z-index:300;
 }
 
 
@@ -269,20 +270,22 @@
 	margin-bottom: 36px;
 	overflow: scroll;
 	overflow-x: hidden;
+	z-index:300;
 }
 
 
-.pdf2_posicion{
+/*.pdf2_posicion{
 	top: 4.285714px !important;
 	left: 190.5px  !important;
 	display: block !important;
-}
+}*/
 
 
 
-.pdf_posicion{
+/*.pdf_posicion{
 	top: 4.285714px !important;
 	left: 282.5px  !important;
 	display: block !important;
-}
+}*/
+
 /*--- Fin Estilo de pdf  $('#elementBloqueo').addClass('pdf_posicion');---*/
