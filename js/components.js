@@ -244,13 +244,26 @@ function ocultaSteps(num_Step){
 
 
 
+  /*
   function avatarFade(){
     $("#avatarNavPrin").hover(function(){
         $("#fadeAvatar").fadeToggle("slow");
 
 
     });
-  }
+  }*/
+
+  function avatarFade() {
+    $("#avatarNavPrin").hover(function() {
+        if ($("#fadeAvatar").is(":animated")) {
+            return false
+        } else {
+            $("#fadeAvatar").fadeToggle("slow");
+        }
+
+
+    });
+}
 
 
   /*********  FIN Transiciones de flujo(1): Domiciliación de servicios **********/
@@ -310,7 +323,7 @@ var flujoActivo="";
 
         if(paso==3)
         {
-          $(".btn").click(function(){
+          $(".btn,.btnaceptar").click(function(){
             if($(this).text()=="Imprimir"){
                 print("step3");
             }

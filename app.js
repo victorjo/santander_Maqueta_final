@@ -41,3 +41,8 @@
 	});
 
 })(document, window || this, require);
+
+
+function test (a) {
+	return a;
+}

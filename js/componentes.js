@@ -633,6 +633,7 @@ function Gridius(object, data) {
 }
 
 function listenerGrid(obj) {
+    if(obj.children(".aprovedG").length <= 0) return false;
     $(".editGrid").each(function(i, v) {
         v = $(v);
         if (v.attr("data-edit") == "true") v.parent().html(v.val() + '<input data-edit="false" class="editGrid" type="text">');
