@@ -4,6 +4,17 @@
 @import url("../../../../css/steps.css");
 @import url("../../../../css/generally.css");
 @import url("../../../../css/componentes.css");
+
+select{
+	color: silver;
+}
+.switchSlide{
+	left:-78px;
+}
+
+.switchLabel, .switchLabelR{
+	color:#626262;
+}
 .contenidoFlujo {
 	margin-top: 10px;
 	margin-left: -5px;
@@ -85,4 +96,13 @@ input, select{
 }
 #valuestc{
 	border: solid;
+}
+.cboxptc{
+	
+	float: left;
+}
+.inpptc{
+	background: blue;
+	margin-left: 272px;
+
 }

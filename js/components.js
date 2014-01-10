@@ -289,6 +289,10 @@ var flujoActivo="";
         flujoActivo.find(".step"+paso).fadeIn("slow");
         pasoPos = "-2px";
         switch(paso) {
+            case 0:
+              pasoPos = "-2px"
+            break;
+
           case 1:
               pasoPos = "-2px"
             break;
