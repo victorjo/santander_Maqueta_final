@@ -4,7 +4,7 @@ $(function() {
         hasStatus: false,
         configButton: true,
         colums: ['Meses de gracia', 'Fecha de aplicación'],
-        rowsValues: null,
+        rowsValues: ['1', '15/01/2014'],
         parseRows: [
             ['1', '15/01/2014'],
             ['2', '15/01/2014'],
@@ -32,7 +32,7 @@ function aumentaTotal(numero) {
     console.log("numero" + numero + "::::" + numero * Math.PI);
     ctx.beginPath();
     ctx.lineWidth = 8;
-    ctx.strokeStyle = "#4f8aea";
+    ctx.strokeStyle = "#db1539";
     //ctx.arc(160,160,150,((90*Math.PI)/-180), numero*Math.PI));
     ctx.arc(95, 95, 88, 0, numero * Math.PI);
     ctx.stroke();
@@ -58,3 +58,26 @@ $(document).ready(function() {
     });
 
 });
+
+$(function() {
+
+    $(".btnPlazoAuto").click(function() {
+        $(".btnPlazoAuto").each(function() {
+            $(this).css({
+                "background": ""
+            });
+            $(".btnPlazoAuto span").hide("fast");
+
+        });
+        $(this).css({
+            "background": "url(../../../../images/btn_plazoSim.png)"
+        });
+        $(this).find("span").show("fast");
+        numeroPlazo = $(this).find("span").text();
+        $("#numPlazo").text(numeroPlazo);
+
+    })
+
+    $("#btn_plazoSim2").css("background", "url(../../../../images/btn_plazoSim.png)");
+    $("#btn_plazoSim2 span").css("display", "block");
+})

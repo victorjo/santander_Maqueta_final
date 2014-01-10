@@ -6,6 +6,13 @@
 		<script src="../../../js/ui/jquery-ui-1.10.3.custom.min.js"></script>
 		<link rel="stylesheet" href="widgets/max/w_15/css/w_15.css" />
 		<!--<input type="button" value="GRID" onclick="Gridius($('.contenidoFlujo'));">-->
+		<div style="display:none;visibility:hidden;height:0;overflow:hidden;">
+			<input type="text" id="textito"  />
+			<input type="text" id="textito2" />
+			<input type="text" id="textito3" />
+			<input type="text" id="textito4" />
+			<input type="text" id="textito5" value="9000000" />
+		</div>
 		<div id="widampliado">
 
 			<div id="bloqueoWidget" class="bloqueoElement"></div>
@@ -77,7 +84,7 @@
 								<div id="background">
 									<div id="txtBack" style="margin: 55px 50px; text-align:center;">
 										<h4>Monto simulado:</h4>
-										<p style="color:#4f8aea;font-weight: bolder;">$<span id="cantidadPoner">0</span>.00 MXN</p>
+										<p style="color:#db1539;font-weight: bolder;">$<span id="cantidadPoner">0</span>.00 MXN</p>
 										<h2 style="color: #999; margin-top: 5;"> <span id="porcentaje">0</span>%</h2>
 									</div>
 								</div>
@@ -338,8 +345,11 @@
 
 								<div class="w8_CC_exportar"><img src="img/assets/Exportar.png"></div>
 
-								<div class="botonera">
-								<div class="btnaceptar"  onclick="cambiaFlujo('.wra_flu2');cambiaPaso(2);$('.w8_AC_tabla').load('../../../../tablas/w8/w8_tblPaso2_2.html')">Continuar</div>
+							<div class="botonera">
+								<div class="btn 2lin" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(2);$('.w8_AC_tabla').load('../../../../tablas/w8/w8_tblPaso2_2.html')"> Consultar tabla <br> de amortización</div>   
+								<div class="btn" onclick="">Imprimir</div>
+
+								<div class="btnaceptar" onclick="closeAction()">Cerrar</div>
 							</div>
 
 
@@ -377,17 +387,8 @@
 					</div>
 
 					<div class="w20_DC_subtitulo2">A continuación se muestran los meses de gracia ocupados y disponibles. </div>
-							<table class="w20_DC_consulta">
-								<tr>
-									<td>Meses de gracia</td>
-									<td></td>
-									<td>Fecha de aplicación</td>
-									<td></td>
-									<td></td>
-									
-								</tr>
-							</table>
-							<div class="tablaDinamica2"></div>
+						
+							<div class="tablaDinamica2" style="width:360px"></div>
 
 						<p class="w8_AMG_textoabajo">Seleccione el mes en que desea que se aplique(n) el (los) mes(es) de gracia disponible(s)</p>
 
@@ -419,7 +420,25 @@
 						</div>
 
 					</div>
-				</div>			
+				</div>	
+				<div class="step step2">
+					<div class="col colFull">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+									</div>
+									<p class="titulo">Datos de aplicación de meses de gracia</p>
+									<p class="subtitulo">La operación se realizará con la siguiente información:</p>
+								</div>
+									<div class="w15_DdC_tabla2"></div>
+							</div>
+							
+								  
+							<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);">Regresar</div>
+								<div class="btnaceptar"  onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w15/w15_DdC_Paso3.html'),'');">Confirmar</div>
+							</div>
+				</div>		
 				</div>
 					
 				</div>
