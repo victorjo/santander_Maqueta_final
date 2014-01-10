@@ -190,3 +190,7 @@ font-size: 11px;
      bottom: 195px !important;
      font-size: 12px !important;
 }
+
+.switchLabel, .switchLabelR{
+    color:#e0dede !important;
+}

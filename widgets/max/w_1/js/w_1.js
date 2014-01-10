@@ -44,7 +44,11 @@
          hasStatus: false,
          configButton: false,
          colums: ['Tarjeta de Credito', 'Saldo disponible (MXP)', 'Saldo a transferir (MXP)', 'Pago mensual(MXP)', 'Tasa*'],
-         rowsValues: ['<input type="radio"><img src="img/iconos/card.png"> 1234****5678', '999,999,999.00', '000.0.', '1000.00', '99.99%'],
+<<<<<<< HEAD
+         rowsValues: ['<input type="radio"><img src="img/iconos/card.png"> 1234****5678', '999,999,999.00', '000.00<span class="aprovedG"></span>', '1000.00', '99.99%'],
+=======
+         rowsValues: ['<input type="radio"><img src="img/iconos/card.png"> 123456789876543', '999,999,999.00', '999,999,999.00', '1,000.00', '99.99%'],
+>>>>>>> f00767a7c2d27db020b55fff643f4f700e3f1715
          numRows: 10
      });
 
@@ -70,7 +74,11 @@
          hasStatus: true,
          configButton: true,
          colums: ['Fecha', 'Tarjeta Destino', 'Banco', 'Tarjeta origen', 'Saldo Transferido', 'Comision', 'Tasa*', 'Estatus'],
-         rowsValues: ['dd/mm/aaaa', '123456789876543', 'Sandanter', '123456789876543', '999,999,999.00', '9.99%', ''],
+<<<<<<< HEAD
+         rowsValues: ['dd/mm/aaaa', '123456789876543', 'Sandanter', '123456789876543', '999,999,999.00<span class="aprovedG"></span>', '9.99%', '0.00%',''],
+=======
+         rowsValues: ['08/01/2014', '123456789876543', 'Sandanter', '123456789876543', '999,999,999.00', '9.99%', ''],
+>>>>>>> f00767a7c2d27db020b55fff643f4f700e3f1715
          numRows: 10
      });
  }
