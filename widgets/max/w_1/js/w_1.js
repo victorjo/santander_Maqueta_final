@@ -76,7 +76,7 @@
  }
 
  function cargaTermino() {
-     cargaTerm(" switchModal(); cambiaPaso(3); cargaHtml('.tabla3','../../../../tablas/w1/w1_ST_tblPaso3.html');", 'terminos');
+     cargaTerm(" switchModal(); cambiaPaso(3); cambiaText(); cargaHtml('.tabla3','../../../../tablas/w1/w1_ST_tblPaso3.html');", 'terminos');
  }
 
 
