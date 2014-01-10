@@ -90,3 +90,14 @@
          });
      });
  }
+
+ function cambiaText() {
+     $('.w1_txt').html("<span class = 'bold'> Operacion Exitosa </span> <br><br> Se ha realizado <br> con éxito su operación");
+     $('.w1_txt').addClass('w1_texto_acomodo');
+ }
+
+ function regresaTexto() {
+     $('.w1_txt').html('');
+     $('.w1_txt').html("*Calculado al 08 de Noviembre <br>del 2013. Considera <br>una linea de crédito de $123,000.00 a un  <br> plazo de 3 años de <br> amortización del crédito y <br> cubriendo el porcentaje del pago mínimo.</p >");
+     $('.w1_txt').removeClass('w1_texto_acomodo');
+ }
