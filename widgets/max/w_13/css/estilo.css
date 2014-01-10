@@ -94,3 +94,13 @@ input, select{
 #valuestc{
 	border: solid;
 }
+.cboxptc{
+	border: solid;
+	background: red;
+	float: left;
+}
+.inpptc{
+	border: solid;
+	background: blue;
+	float:right;
+}
