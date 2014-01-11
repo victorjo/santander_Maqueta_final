@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Santander</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/blitzer/jquery-ui-1.10.3.custom.min.css">
+    <script src="js/require.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <section id="loginWrapper">
+        <div id="titleLogin"><img style='position:relative;left:154px' src="img/interfaz/logoSantander.png" alt="logotipo banco Santander"></div>
+            <div style="width:400px;height:500px;position:relative;left:200px;top:100px">
+                <h4>Ingreso a</h4>
+                <h1><span style="font-weight:normal">SUPER</span><span style="color:red;font-family:ArialBlack;">NET</span></h1>
+                <div style="display:inline-table;margin-bottom:15px">
+                    <img style="float:left" src="img/menuLateral/avatar.png" alt="avatar supernet">
+                    <div style="width:219px;height: 158px;float:right;margin-top: 10px;margin-left:10px">
+                        <p style="font-size:24px;text-align:left;color:gray">"La vida es como la rueda de la fortuna..."</p>
+                        <div style="position:relative;bottom: -23px;">
+                            <p>NIP de acceso:</p>
+                            <input style="width: 204px;height: 28px;border: 2px solid gray;" type="password">
+                        </div>
+                    </div>
+                </div>
+                <div class="btnaceptar" style="width:180px; color:#000 !important; font-weight:bold;margin-right:15px;">Cancelar</div>
+                <div class="btnaceptar" onclick="valToForm();" style="margin-left:0px;width:180px;font-family:ArialBlack;">Aceptar</div>
+
+                <p style="float:left;margin-top:20px;font-size:11px;line-height: 20px;">Recuerde: En Santander  nunca solicitamos a nuestros clientes informacion confidencial tales como usuarios, contraseñas o token.</p>
+            </div> 
+        <!--<div id="bottomLogin"></div>-->
+    </section>
+    <section id="absoluteWrapper">
+        <div id="wr_PrinHeader" >
+            <div style="max-width: 1511px;width:100%;margin:0 auto">
+            <div id="logo" class="Fleft">
+                <img src="img/interfaz/logoSantander.png" alt="logotipo banco Santander">
+            </div>
+            <div class="butter" onclick="moveResObs()">
+                 <img src="img/iconos/port.png" alt="">
+            </div>
+            <div id="tipoServ" class="Fleft">
+                <p style="color: rgb(255, 255, 255); text-align: center; font-size: 11px; letter-spacing: 12px; margin-top: 19px;">SELECT</p>
+            </div>
+            <div id="dataClient" class="Fleft">
+                <p id="nombre"><b>Ver&oacute;nica Alfonso Pimentel</b></p>
+                <p id="fecha">&Uacute;ltimo acceso: 23 de Julio del 2013</p>
+                
+            </div>
+            <div id="wr_btnNavHeader" class="" >
+                <img src="img/interfaz/icono_logout.png" alt="">
+                <img src="img/interfaz/icono_tool.png" alt="">
+                <img src="img/interfaz/icono_ayuda.png" alt="">
+                <img src="img/interfaz/icono_acces.png" alt="">
+                <img src="img/interfaz/icono_buscar.png" alt="">
+            </div>
+           </div> 
+        </div>
+        <div id="wr_PrinNivel1">
+
+
+            <div id="wrappSB" style="overflow:visible;width:265px">
+               <div id="wr_SuperBanner" style="" class="columnSB Fleft">
+                     <!--<div id="cierraSB">
+                        
+                    </div>-->
+                    <div id="superbanner" >
+    
+                        <div id="cierraSB">
+                        </div>
+                        
+                        <p>AUTOCOMPARA SANTANDER</p>
+                        <p>Verónica Pimentel<br/>
+                            tenemos para ti<br/>
+                            el seguro de auto<br/>
+                            más completo<br/>
+                            60% de descuento.</p>
+                        <p>Cotiza gratis y ahorra en tu seguro<br/>
+                           de auto con las mejores aseguradoras.</p>
+                        
+                        <div>
+                            <div class="btnaceptar_sb">
+                                Contratar   
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+
+            </div>
+            
+            <!--<div id="wr_SuperBanner2" style="background-color: white; position: absolute; right: 17px; bottom: 17px;" class="columnSB Fleft">-->
+
+            <div class="wr_NavPrin Fleft">
+                <div id="avatarNavPrin" style="position: relative">
+                    <div id="fadeAvatar"></div>
+                    <img src="img/menuLateral/avatar.png" alt="avatar supernet">
+                </div>
+                <div id="wr_btnNav" >
+                    <ul>
+                        <li class="btnNav activate" >MI SUPERHOME</li>
+                        <li class="btnNav">Cuentas y chequeras</li>
+                        <li class="btnNav">Tarjetas de Cr&eacute;dito</li>
+                        <li class="btnNav">Cr&eacute;ditos</li>
+                        <li class="btnNav">Inversiones</li>
+                        <li class="btnNav">Pagos y compras</li>
+                        <li class="btnNav">Transferencias</li>
+                        <li class="btnNav">Administraci&oacute;n</li>
+                      </ul>
+                </div>
+                <div id="footer" style="position:relative">
+                    <div style="position:absolute;bottom:20px;left:10px">
+                        <p>Derechos Reservador 2011</p>
+                        <p><b><a href="#">Banco Santander (México) S.A.</a></b></p>
+                        <p>Institución de Banca Múltiple</p>
+                        <p>Grupo Financiero</p>
+                        <p>Santander México</p>
+                        <br>
+                        <p><b><a href="#">AVISO LEGAL</a></b></p>
+                    </div>
+                </div>
+            </div>
+            <div>
+            <div id="wrappWidgets" >
+                    <div class="widget-min col1 altoTotal widget" style="top:10px;left:0px;">
+                        <div class="on">
+                            <div class="cabecera" style="height: 10px; background: none repeat scroll 0% 0% black; color: white; font-size: 12px; padding: 9px;">
+                                <div><p>Administraci&oacute;n de tarjeta</p></div>
+                                <div class="btnCabecera"></div>
+                                <div class="btnCabecera"></div>
+                            </div>
+                            <div style="padding:10px;">
+                                <h6>Seleccione su tarjeta</h6>
+                                <select name="" id="">
+                                    
+                                    <option value="">Opcion1</option>
+                                    <option value="">Opcion1</option>
+                                    <option value="">Opcion1</option>
+                                    <option value="">Opcion1</option>
+                                    <option value="">Opcion1</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <div class="off" style="display:none">
+                        </div>
+                    </div>
+                    <div class="Fright"  id="navContent">
+                        <!-- <div class="Fright ActiveNav btnNavWidget"></div>
+                        <div class="Fright noActiveNav btnNavWidget" ></div>
+                        <div class="Fright noActiveNav btnNavWidget" ></div>
+                        <div class="Fright noActiveNav btnNavWidget" ></div>-->
+                    </div>
+                    </div>
+            </div>
+            <!-- <div class="widget-min col1 altoTotal" style="top:0px;left:0px;"></div>
+            <div class="widget-min col1 alto2" style="left: 258px;top: 0px;"></div>
+            <div class="widget-min col1 alto2" style="left: 515px;top: 0px;"></div>
+            <div class="widget-min col2 alto2" style="top:298px;left:258px"></div>-->
+        </div>
+        </section>
+        <!--<div class='loader' style='z-index:9999;position: absolute;top: 30%;left: 50%;display:block'><span style='position:relative;top:-50%;left:-50%'><img src='img/loader.gif' ></span></div>-->
+        </body>
+    </html>

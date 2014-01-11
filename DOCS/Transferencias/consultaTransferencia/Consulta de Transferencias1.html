@@ -1,0 +1,292 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Consulta de Transferencias 1</title>
+<link rel="stylesheet" href="../../css/widgets.css" />
+
+<script src="../../js/jquery10.2.min.js"></script>
+<script src="../../js/ddSlick.js"></script>
+<script src="../../js/balanceTransfer.js"></script>
+	 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="../../js/ui/jquery-ui-1.10.3.custom.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$( "#nav" ).menu({position: {at: "left bottom"}});
+		$('#circulo').mouseover(function(){
+			 $('.imagen').attr('src','../../img/interfaz/paginador_encendido.png');
+		});
+
+		$('.activo').click(function(){
+			 $(this).attr('src','../../img/iconos/favorito_on.png');
+		});
+
+		//programada
+		$('#prog').click(function(){
+			$('#ok2').hide();	
+			$('#ok1').show();
+			$('.cambio').text('Programada');
+		});
+
+		//Realizada
+		$('#rel').click(function(){
+			$('#ok1').hide();	
+			$('#ok2').show();
+			 $('.cambio').text('Realizada');
+		});
+
+		//funcionalidad de dias
+		$('#3d,#7d,#1m,#3m').click(function(){
+			 
+			 $('.dias').html("&nbsp;en&nbsp;"+$(this).text());
+		});
+
+	});
+
+
+</script>
+<style>
+.btnHeaderTable{
+	height: 24px;
+    margin: -10px;
+    padding-top: 10px;
+    width: 110px;
+}
+
+.titTabla{
+	margin-bottom:0px;
+	padding:10px 10px 5px 30px;
+	border:1px solid black;
+	border-bottom:0;
+	float:left;
+	width:678px;
+	background:#F4F4F4;
+	margin-top:20px;
+	height:20px;
+	font-weight:bold
+}
+
+.titTabla p{
+	float:left;
+}
+
+.titTabla img{
+	float:right;
+	margin-top:-7px;
+	cursor: pointer;
+}
+
+.tabla{
+	float:left;
+	margin-top: 0px;
+} 
+
+.texto1{
+	float: left;
+	margin-top: 52px;
+}
+
+.texto2{
+	float: right;
+	margin-top: 52px;
+	text-decoration: underline;
+}
+a {
+	text-decoration: none;
+	color: #838383;
+}
+
+a:hover {
+	color: black;
+	background-color: #E3E3E3;
+	font-weight: bold;
+}
+
+#menu {
+	float:left;
+	position: absolute;
+	margin-left: -42px;
+}
+
+#menu a {
+	display: block;
+	width: 140px;
+	height: 12px;
+	text-align: justify;
+	padding: 6px;
+}
+
+#menu ul {
+	list-style-type: none;
+	padding-top: 5px;
+}
+
+#menu li {
+	float: left;
+	position: relative;
+	padding: 3px 0;
+	text-align: center;
+	background-color:#F0F0F0;
+	background-image: url('../../lineagrafica/widamphdr.png');
+	border: 1px #a7a7a7;
+}
+
+#menu ul.sub-menu {
+	display: none;
+	position: absolute;
+	padding: 0px;
+	z-index: 90;
+}
+
+#menu ul.sub-menu li {
+	text-align: left;
+}
+
+#menu li:hover ul.sub-menu {
+	display: block;
+	border: 1px solid #ececec;
+}
+.borrar{
+	display: none;
+}
+
+</style>
+</head>
+
+<body>
+	
+	<div id="widget">
+		<div id="header">
+			<p class="f_titleWid">TRANSFERENCIAS 
+				(Envío de Dinero)</p>
+			<div class="btnHeader">
+				<img src="../../img/botones/btn_cerrar.png"/>
+			</div>
+			<div class="btnHeader">
+				<img src="../../img/botones/info_.png"/>
+			</div>
+		</div>
+		<div id="stepbar">
+		</div>
+		<div id="contenido">
+			<h4 style="color:red">Seleccione el estatus de las transferencias que desea 
+								consultar, así como el periodo de búsqueda y/o rango de 
+								importe para realizar una búsqueda más específica</h4>
+
+			<div id="menu">
+				<ul>
+					<li><a href="#"><div id="circulo"><img  class="imagen" src="../../img/interfaz/paginador_apagado.png" style="width:12px; height: 12px; margin-left: 10px;"/><span style="margin-left: 10px;">Estatus</span></div></a>
+
+					<ul class="sub-menu">
+						<li><a href="#" class="seleccionado" id="prog"><img  id="ok1" src='../../img/iconos/ok.png' style='width:12px; height: 12px; margin-left: 10px; display:none;'/>Programadas</a></li>
+		                <li><a href="#" id="rel"><img  id="ok2" src='../../img/iconos/ok.png' style='width:12px; height: 12px; margin-left: 10px; display:none;'/>Realizadas</a></li>
+					</ul>
+
+					</li>
+
+					<li><a href="#">Periodo de búsqueda</a>
+
+					<ul class="sub-menu">
+						<li><a href="#" id="3d">3 días</a></li>
+		                <li><a href="#" id="7d">7 días</a></li>
+		                <li><a href="#" id="1m">1 mes</a></li>
+		                <li><a href="#" id="3m">3 meses</a></li>
+					</ul>
+
+					</li>
+
+					<li><a href="#">Rango de importe</a></li>
+					</li>
+				</ul>
+			</div>	
+			
+			<div>
+				<span class="texto1"><h4>Mis últimas 5 transferencias realizadas<span class="dias"></span></h4></span>
+				<span class="texto2"><h4>Calendario de transferencias</h4></span>
+			</div>
+
+			
+			<div class="tabla">
+				<div class="tabletitle"><p style="float:left">Mis transferencias</p>
+									<img src="../../img/botones/exportar.png" style="float:right;margin-right:10px"/>
+									<p style="float:right;margin-right:10px">Exportar</p>
+									</div>
+			<table class="tbl_consulta" style="width:100%;float:left;">
+
+				<tr>
+					<td>Fecha</td>
+					<td>Descripción de la operación</td>
+					<td>Cuenta destino<br/>(Destinatario)</td>
+					<td>Cuenta de cargo</td>
+					<td>Importe (MXP)</td>
+					<td>Estatus</td>
+					<td>Favorita</td>
+				</tr>
+				<tr>
+					<td>dd/mm/aaaa</td>
+					<td>123456789123456789123456789<br />123456789123456789123456789</td>
+					<td>1234****5678<br /> (Lorem Ipsum)</td>
+					<td>1234****5678</td>
+					<td>999,999,999.00</td>
+					<td><span class="cambio">Realizada</span></td>
+					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+				<tr>
+					<td>dd/mm/aaaa</td>
+					<td>123456789123456789123456789<br />123456789123456789123456789</td>
+					<td>1234****5678<br /> (Lorem Ipsum)</td>
+					<td>1234****5678</td>
+					<td>999,999,999.00</td>
+					<td><span class="cambio">Realizada</span></td>
+					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+				<tr>
+					<td>dd/mm/aaaa</td>
+					<td>123456789123456789123456789<br />123456789123456789123456789</td>
+					<td>1234****5678<br /> (Lorem Ipsum)</td>
+					<td>1234****5678</td>
+					<td>999,999,999.00</td>
+					<td><span class="cambio">Realizada</span></td>
+					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+				<tr>
+					<td>dd/mm/aaaa</td>
+					<td>123456789123456789123456789<br />123456789123456789123456789</td>
+					<td>1234****5678<br /> (Lorem Ipsum)</td>
+					<td>1234****5678</td>
+					<td>999,999,999.00</td>
+					<td><span class="cambio">Realizada</span></td>
+					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+				<tr>
+					<td>dd/mm/aaaa</td>
+					<td>123456789123456789123456789<br />123456789123456789123456789</td>
+					<td>1234****5678<br /> (Lorem Ipsum)</td>
+					<td>1234****5678</td>
+					<td>999,999,999.00</td>
+					<td><span class="cambio">Realizada</span></td>
+					<td><img class="activo" style="display:block; cursor:pointer;margin-left:16px;" src="../../img/iconos/favorito_of.png"/></td>
+				</tr>
+			</table>
+			</div>
+			
+
+		</div>
+		
+		<div id="navegador">
+			<ul>
+				<li>Entre Cuentas<br />Santander</li>
+				<li>A Otras Cuentas</li>
+				<li>Cuentas Registradas/<br />Alta/Baja</li>
+				<li class="active">Consulta <br />de Transferencias</li>
+			</ul>
+		</div>
+		
+		
+		
+	</div>
+
+</body>
+
+</html>

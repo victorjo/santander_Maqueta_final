@@ -1,0 +1,65 @@
+
+@import url('../../css/widgets.css');
+@import url('../../css/componentes.css')
+
+#contenido{
+	background-color:white;
+}
+
+.transf{
+	
+	width:708px;
+	height:100px;
+	border-collapse:collapse;
+
+}
+
+.transf tr:nth-child(even) {
+	background-color:#f4f4f4;
+	}
+
+.transf td{
+	padding-left:10px;
+	padding-top:3px;
+	height:22px;
+}
+
+.lista:hover{
+	cursor:pointer;
+	background:none;
+	background-image:url('../../lineagrafica/drop.png');
+	
+}
+
+.listaslct{
+	border:1px red solid;
+	background-image:url('../../lineagrafica/vtabtn.png');
+	
+}
+
+.botonera {
+    margin: 24px -10px 0 0;
+    width: auto;
+}
+
+.botonera1 {
+    float: right;
+    margin: 60px -10px 0 0;
+    width: 494px;
+}
+
+.botonera2 {
+    float: right;
+    margin: 165px -10px 0 0;
+    width: 494px;
+}
+
+.btnHeader1 {
+	float: right;
+	width: 28px;
+	margin-top: 5px;
+	height: 312px;
+	cursor: pointer;
+	
+	
+	}

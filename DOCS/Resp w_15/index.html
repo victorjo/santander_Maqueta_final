@@ -1,0 +1,169 @@
+﻿		<script src="../../../js/jquery10.2.min.js"></script>		
+		<script src="../../../js/components.js"></script>
+		<script src="../../../js/ddSlick.js"></script>
+		<link rel="stylesheet" href="../../../css/generally.css" />
+		<link rel="stylesheet" href="../../../css/componentes.css" />
+		<style>
+		.col1_OC {
+			float: left;
+			height: 336px;
+			margin-right: 10px;
+			width: 532px;
+		}
+		.col2_OC {
+			float: left;
+			width: 180px;
+		}
+		.p_OC {
+			color:#232323;
+			font-weight:bold;
+			font-size:13px;
+		}
+		.textbox_OC {
+			width:100% !important;
+		}
+		.middletd_OC {
+			text-align:center;
+			width:50%;
+		}
+		.table_OC {
+			width:100%;
+		}
+		.span_OC {
+			font-size:11px;
+		}
+		.a_OC {
+			color:#ff0d37;
+			font-weight:bold;
+		}
+		.dd-select {
+			width: 174px !important;
+		}
+		.dd-container {
+			width: 174px !important;
+		}
+		</style>
+		<input type="button" value="GRID" onclick="Gridius($('.contenidoFlujo'),{colums:[13,23,33,43,53],rowsValues:[1,2,3,4,5],numRows:10});">
+		<div id="widampliado">
+			<div id="WA_pasos">
+				<img src="../../../img/assets/pasos.png"/>
+				<div class="btnHeader info">
+					<img src="../../../img/assets/ico_info.png"  />
+				</div>
+				<div class="btnHeader cerrar">
+					<img src="../../../img/assets/ico_cerrar_widget.png"  />
+				</div>
+			</div>
+			
+			<div id="WA_nav">
+				<ul>
+					<li class="menu">
+						<p>
+						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
+					</li>
+					<li>
+						<p>Disposición de Créditos</p>
+					</li>
+					<li>
+						<p>Consulta de créditos</p>
+					</li>
+				</ul>
+			</div>
+			<div id="WA_contenedorFlujos">
+				<div class="titFlujo">
+					<div class="iconFlujo">
+						<img src="../../../img/assets/ico_cuentas_propias.png"/>
+					</div>
+					<p class="titulo">A otras cuentas</p>
+					<p class="subtitulo">Instroduzca nombre alias</p>
+				</div>
+				<div class="contenidoFlujo">
+					<div class="col1_OC">
+						<p class="p_OC">Cuenta destino:</p>
+						<input class="textbox_OC" type="text" />
+						<span class="span_OC">Si la cuenta a la que desea realizar la transferencia no se encuentra en la lista puede registrarla <a class="a_OC" href="#">Aqui</a></span>
+						<p class="p_OC">Cuenta de cargo:</p>
+						<input class="textbox_OC" type="text" />
+						<table class="table_OC">
+							<tr>
+								<td class="middletd_OC">
+									<p class="p_OC">Importe:</p>
+									<input class="textbox_OC" placeholder="Escribir importe (MXP)" type="text" />
+								</td>
+								<td class="middletd_OC">
+									<p class="p_OC">Concepto:</p>
+									<input class="textbox_OC" placeholder="Escribir concepto" type="text" />
+								</td>
+							</tr>
+							<tr>
+dd								<td class="middletd_OC">
+									<p class="p_OC">Referencia:</p>
+									<input class="textbox_OC" placeholder="Escribir el numero de referencia" type="text" /><img src="">
+								</td>
+								<td class="middletd_OC">
+									<p class="p_OC">Requiere de comprobante fiscal?</p>
+									<div class="switch_OC switchBox"></div>
+								</td>
+							</tr>
+							<tr>
+								<td class="middletd_OC">
+									<p class="p_OC">*Dato de R.F.C</p>
+									<input class="textbox_OC" placeholder="Escribir R.F.C" type="text" />
+								</td>
+								<td class="middletd_OC">
+									<p class="p_OC">*I.V.A (16%)</p>
+									<input class="textbox_OC" placeholder="$ 999,999,999.00 (MXP)" disabled type="text" />
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="col2_OC">
+						<table class="table_OC">
+							<tr>
+								<td>
+									<p class="p_OC">Programar transferencia:</p>
+									<div class="switch_OC switchBox"></div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="p_OC">Fecha:</p>
+									<input class="textbox_OC" type="text" placeholder="dd/mm/aaaa" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="p_OC">Notificar previamente:</p>
+									<div class="textbox_OC select_OC"></div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="botonera">
+					<div class="btn" onclick="cambiaPaso(2)">Regresar</div>
+					<div class="btnaceptar">Ver Detalle</div>
+				</div>
+				
+			</div>
+		</div>
+		<script>
+			(function(){
+				construyeSwitch("switch_OC");
+				var js = [{
+			        text: "Elemento 0",
+			        value: 1,
+			        selected: false			    
+			    }];
+
+				$(".select_OC").ddslick({
+			    data:js,
+			    width:300,
+			    imagePosition:"left",
+			    onSelected: function(selectedData){
+			       
+			    }   
+		    });
+			})();
+		</script>
+		
