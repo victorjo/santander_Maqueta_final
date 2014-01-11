@@ -1,0 +1,520 @@
+		<link rel="stylesheet" href="../../../css/generally.css" />
+		<link rel="stylesheet" href="../../../css/componentes.css" />
+		<script src="../../../js/ddSlick.js"></script>
+		<script src="../../../js/components.js"></script>
+		<script src="widgets/max/w_9/js/w_8.js"></script>
+		<script src="../../../js/ui/jquery-ui-1.10.3.custom.min.js"></script>
+		<link rel="stylesheet" href="widgets/max/w_9/css/w_8.css" />
+		
+		<!--<input type="button" value="GRID" onclick="Gridius($('.contenidoFlujo'));">-->
+		<div id="widampliado">
+			<!-- Bloqueo -->
+			<div id="bloqueoWidget" class="bloqueoElement"></div>
+			<div id="elementBloqueo" class="bloqueoElement">
+				
+			</div>
+			<div id="WA_pasos">
+				<img src="../../../img/assets/pasos.png"/>
+				<div class="btnHeader info">
+					<img src="../../../img/assets/ico_info.png"  />
+				</div>
+				<div class="btnHeader cerrar"> 
+					<img src="../../../img/assets/ico_cerrar_widget.png"  />
+				</div>
+			</div>
+			
+			<div id="WA_nav">
+				<ul>
+					<li class="menu">
+						<p>
+						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
+					</li>
+					<li class="liActive"onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);ocultaAsset(); "class="liActive">
+						<p>Entre cuentas 
+						propias Santander</p>
+					</li>
+					<li onclick="cambiaFlujo('.wra_flu2')">
+						<p>A otras cuentas</p>
+					</li>
+					<li onclick="cambiaFlujo('.wra_flu3'); $('.w16_PS_listadoTarjeta').hide(); $('.w16_PS_headerTabla').hide(); $('.w8_CRAB_wraFormulario').slideDown();">
+						<p>Cuentas registradas Alta / Baja</p>
+					</li>
+					<li onclick="cambiaFlujo('.wra_flu4');">
+						<p>Consulta de transferencia</p>
+					</li>
+
+
+				</ul>
+			</div>
+			<div id="WA_contenedorFlujos" style="height: 528px;">
+				
+				<div class="contenidoFlujo" style="height: 519px;">
+				<div class="flujo wra_flu1" >
+
+						<div class="step step1">
+							<div class="titFlujo">
+								<div class="iconFlujo">
+									<img src="../../../img/assets/ico_cuentas_propias.png"/>
+								</div>
+								<p class="titulo">Entre cuentas propias Santander</p>
+								<p class="subtitulo">Introduzca el nombre, alias o los cuatro dígitos de la cuenta destino / cuenta de cargo o seleccionela de la lista</p>
+							</div>
+							<div class="w8_EC_contenidodatos1">
+							<p class="DC_cuentadest">Cuenta destino:</p>
+								<div class="w4_dropList w8_ddSelect w8_ddSelected">
+										<select name="" id="" value="1" > 
+									    </select>
+									</div>
+							<p class="DC_cuentacar">Cuenta de cargo:</p>
+
+									<div class="w4_dropList w8_ddSelect w8_ddSelected">
+										<select name="" id="" value="1" > 
+									    </select>
+									</div>
+
+								<div class="tabletext">
+										<p >Importe:</p>
+										<input class="textboxdos" placeholder="Escribir importe (MXP)" type="text"/>
+								</div>
+								<div class="tabletext">
+								<p id="concept">Concepto:</p>
+										<input class="textboxdos2" placeholder="Escribir concepto" type="text"/>
+								</div>
+							</div>
+							<div class="w8_EC_contenidodatos2">
+								<p class="p_OC">Programar transferencia:</p>
+										
+								<div id="switchBox">
+									<div class="switchSlide"><div class="switchLabel">si</div>
+									<div class="switchIndicador"><div class="franjaSwitch"></div></div><div class="switchLabelR">no</div>
+									</div>
+								</div>
+										<p class="p_OC">Fecha:</p>
+										<div class="dateInput">
+																<div class="w4_HPG_personalizarIntervalo">
+																	dd/mm/aaaa
+																	<div>
+																		<img src="../../img/iconos/img_calendario.png"/>
+																	</div>
+																</div>
+															</div>
+						
+											<p class="p_OC"> Notificar previamente: </p>
+										<select class="textboxDias" name="" id="">
+											<option value="3">3 dias</option>
+											<option value="">5 días</option>
+											<option value="">1 semana</option>
+											<option value=""></option>
+											<option value=""></option>
+										</select>
+							</div>
+							<div class="botonera">
+								<div class="btnaceptar"  onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(2);cargaHtml('.w8_EC_tabla2','../../../../tablas/w8/w8_EC_tblPaso2.html')">Continuar</div>
+							</div>
+						</div>
+						<div class="step step2">
+
+								<div class="col colFull">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+									</div>
+									<p class="titulo">Datos de Transferencia entre cuentas propias</p>
+									<p class="subtitulo">La operación se realizará con la siguiente información:</p>
+								</div>
+									<div class="w8_EC_tabla2"></div>
+							</div>
+							
+								  
+							<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);">Regresar</div>
+								<div class="btnaceptar"  onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w8/w8_EC_tblPaso3.html'),'');">Confirmar</div>
+							</div>
+
+						</div>
+							<div class="step step3">
+								<div class="col col2 resetMargen">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+									</div>
+									<p class="titulo">Comprobante de transferencia entre mis cuentas Santander</p>
+								</div>
+								
+								<div class="tabla3"></div>
+								
+							</div>
+							<div class="col col1 ">
+								<img src="img/assets/step3/anuncio.png" width="233" />
+								<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+								<div class="btnsLateralStep3  ico1Step3" >Pago de servicios</div>
+								<div class="btnsLateralStep3 ico2Step3" >Opci&oacute;n 2</div>
+								<div class="btnsLateralStep3 ico3Step3" >Opci&oacute;n 3</div>
+							</div>
+							<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);">Deseo hacer otra transferencia</div>
+								<div class="btn" onclick="">Imprimir</div>
+
+								<div class="btnaceptar" onclick="closeAction()">Finalizar</div>
+							</div>
+						</div>		
+						</div>
+						
+						<div class="flujo wra_flu2">
+
+							<div class="step step1">
+							<div class="titFlujo">
+								<div class="iconFlujo">
+									<img src="../../../img/assets/ico_otras_cuentas.png"/>
+								</div>
+								<p class="titulo">A otras cuentas</p>
+								<p class="subtitulo">Introduzca el nombre, alias o los cuatro dígitos de la cuenta destino / cuenta de cargo o seleccionela de la lista</p>
+							</div>
+
+
+								 <div class="w8_EC_contenidodatos1">
+							<p class="DC_cuentadest">Cuenta destino:</p>
+								<div class="w4_dropList w8_ddSelect w8_ddSelected">
+										<select name="" id="" value="1" > 
+									    </select>
+									</div>
+							<p class="DC_cuentacar">Cuenta de cargo:</p>
+
+									<div class="w4_dropList w8_ddSelect w8_ddSelected">
+										<select name="" id="" value="1" > 
+									    </select>
+									</div>
+
+								<div class="tabletext">
+										<p >Importe:</p>
+										<input class="textboxdos" placeholder="Escribir importe (MXP)" type="text"/>
+								</div>
+								<div class="tabletext">
+								<p id="concept">Concepto:</p>
+										<input class="textboxdos2" placeholder="Escribir concepto" type="text"/>
+								</div>
+							</div>   
+							
+
+				
+							<div class="w8_EC_contenidodatos2">
+								<p class="p_OC">Programar transferencia:</p>
+										 
+								<div id="switchBox">
+									<div class="switchSlide2"><div class="switchLabel">si</div>
+									<div class="switchIndicador"><div class="franjaSwitch"></div></div><div class="switchLabelR">no</div>
+									</div>
+								</div>
+										<p class="p_OC">Fecha:</p>
+										<div class="dateInput">
+																<div class="w4_HPG_personalizarIntervalo">
+																	dd/mm/aaaa
+																	<div>
+																		<img src="../../img/iconos/img_calendario.png"/>
+																	</div>
+																</div>
+															</div>
+						
+											<p class="p_OC"> Notificar previamente: </p>
+										<select class="textboxDias" name="" id="">
+											<option value="3">3 dias</option>
+											<option value="">5 días </option>
+											<option value="">1 semana</option>
+											<option value=""></option>
+											<option value=""></option>
+										</select>
+							</div> 
+
+
+						 <table class="table_OC">  
+							
+							<tr>
+								<td class="middletd_OC">
+									<p class="p_OC">Referencia:</p>
+									<input class="textbox_OCLarge" placeholder="Escribir el numero de referencia" type="text" />  
+									<div id="infobtn" class="w4_info"></div>
+													<div class="infoChart"><img src="../../../../img/assets/info_img.png"/></div>
+								</td>
+								<td class="middletd_OC">
+									<p class="p_OC">Requiere de comprobante fiscal?</p>
+									<div class="switch_OC switchBox"></div>
+								</td>
+							</tr>
+							<tr>
+								<td class="middletd_OC">
+									<p class="p_OC">*Dato de R.F.C</p>
+									<input class="textbox_OC" placeholder="Escribir R.F.C" type="text" />
+								</td>
+								<td class="middletd_OC">
+									<p class="p_OC">*I.V.A (16%)</p>
+									<input class="textbox_OC" placeholder="$ 999,999,999.00 (MXP)" disabled type="text" />
+								</td>
+							</tr>
+						</table>    
+
+								<div class="botonera">
+								<div class="btnaceptar"  onclick="cambiaFlujo('.wra_flu2');cambiaPaso(2);$('.w8_AC_tabla').load('../../../../tablas/w8/w8_AC_tblPaso2.html')">Continuar</div>
+							</div>
+
+			</div>  
+
+			<!--  <div class="botonera">
+								<div class="btnaceptar"  onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(2);cargaHtml('.w8_EC_tabla2','../../../../tablas/w8/w8_tblPaso2.html')">Continuar</div>
+							</div>
+						</div> -->
+
+				<div class="step step2">
+					<div class="col colFull">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+									</div>
+									<p class="titulo">Datos de transferencia</p>
+									<p class="subtitulo">La operación se realizará con la siguiente información:</p>
+								</div>
+									
+							<div class="w8_AC_tabla"></div>		<div class="contDerecho"><p>Notificar al beneficiario</p> <p>Correo:</p> 
+				<input  placeholder="Escribir dirección de e-mail" type="text">
+				<p>Ver aviso de privacidad</p>
+						</div>
+					</div> 
+
+						<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(1);">Regresar</div>
+								<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w8/w8_AC_tblPaso3.html'),'');">Confirmar</div>
+							</div>  
+					
+				</div>
+					<div class="step step3">
+								<div class="col col2 resetMargen">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+									</div>
+									<p class="titulo">Comprobante de transferencia a otras cuentas</p>
+								</div>
+								
+								<div class="tabla3"></div>
+								<div class="correocontacto"><p>Correo para notificación (beneficiario):</p><p>  cuentadecorreoelectronico@gmail.com.mx</p> </div>
+								
+							</div>
+							<div class="col col1 ">
+								<img src="img/assets/step3/anuncio.png" width="233" />
+								<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+								<div class="btnsLateralStep3  ico1Step3" >Pago de servicios</div>
+								<div class="btnsLateralStep3 ico2Step3" >Opci&oacute;n 2</div>
+								<div class="btnsLateralStep3 ico3Step3" >Opci&oacute;n 3</div>
+							</div>
+							<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(1);">Deseo hacer otra transferencia</div>
+								<div class="btn" onclick="">Imprimir</div>
+
+								<div class="btnaceptar" onclick="closeAction()">Finalizar</div>
+							</div>
+						</div>
+			</div>	
+
+			<div class="flujo wra_flu3">
+
+				<div class="step step1">
+					<div class="titFlujo CAB">
+						<div class="iconFlujo">
+							<img src="../../../img/assets/User-card.png"/>
+						</div>
+						<p class="titulo">Cuentas registradas Alta / Baja</p>
+						<p class="subtitulo">A continuación usted podrá consultar las cuentas que tiene registradas, si lo desea podrá modificarlas o darlas de baja. 
+						Si la cuenta a la que desea transferir no se encuentra en la lista, usted podrá darla de alta.</p>
+					</div>
+
+					<div class="w8_CRAB_dropHdr1">
+						<p>Consulta</p>
+						<div class=" btnaction2 toggle"></div>						
+					</div>
+					<table class="w16_PS_headerTabla ">
+						<tr>
+							<td>Titular de la cuenta</td>
+							<td>Número de cuenta</td>
+							<td>Alias</td>
+							<td>Correo del titular</td>
+							<td></td>
+						</tr>
+					</table>
+					<div  class="w16_PS_listadoTarjeta">
+						<table class="w16_PS_cardList">
+						<!--onclick="cargaToken('switchModal();','switchModal();bajaTarjeta();',undefined,'');"-->
+							<tr>
+								
+								<td>Pablo Martínez</td>
+								<td>1234****5678</td>
+								<td>PM_13213</td>
+								<td>PM@gmail.com</td>
+								<td class="w_16_PS_baja"  onclick="$(this). parent().remove();"><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
+							</tr>
+							<tr>
+								
+								<td>Pablo Martínez</td>
+								<td>1234****5678</td>
+								<td>PM_13213</td>
+								<td>PM@gmail.com</td>
+								<td class="w_16_PS_baja" onclick="$(this).parent().remove();"><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
+							</tr>
+							<tr>
+								
+								<td>Pablo Martínez</td>
+								<td>1234****5678</td>
+								<td>PM_13213</td>
+								<td>PM@gmail.com</td>
+								<td class="w_16_PS_baja" onclick="$(this).parent().remove();"><img src="widgets/max/w_16/img/ico_cerrar_fila.png"/></td>
+							</tr>
+						</table>
+					</div>					
+					<!--<div class="tablaDinamica"></div>-->
+
+					<div class="w8_CRAB_dropHdr2">
+						<p>Dar de alta</p>
+						<div class="btnaction toggle"></div>						
+					</div>	
+
+					<div class="w8_CRAB_wraFormulario">
+								<p>Favor de ingresar la siguiente información para dar de alta una nueva cuenta o tarjeta de débito</p>
+								<div>
+									<p>Número de buenta o tarjeta</p>
+									<input class="w8_CRAB_input" type="text" value="1234****5678"/>
+								</div>
+								<div>
+									<p>Banco</p>
+									<input class="w8_CRAB_inputBloqueado" type="text" value="Nombre del banco" disabled/>
+									<div class="info"></div>					
+								</div>
+								<div>
+									<p>Alias</p>
+									<input class="w8_CRAB_input" type="text" value="Nombre alias"/>
+									<div class="info"></div>					
+								</div>
+								<div>
+									<p>Nombre del titular</p>
+									<input class="w8_CRAB_input" type="text" value="Nombre"/>
+									<div class="info"></div>					
+								</div>
+								<div>
+									<p>Correo electrónico del titular:</p>
+									<input class="w8_CRAB_input" type="text" value="correo@correo.com" />
+									<div class="info"></div>					
+								</div>
+								<div>
+									<p>RFC del titular de la tarjeta:</p>
+									<input class="w8_CRAB_input" type="text" value="ROMA000000ME0"/>
+									<div class="info"></div>					
+								</div>	
+							</div>
+					
+					<div class="botonera">
+						<div class="btnaceptar"  onclick="cambiaFlujo('.wra_flu3');cambiaPaso(2);cargaHtml('.w8_CAB_tabla','../../../../tablas/w8/w8_CAB_tblPaso2.html');">Dar de alta</div>
+					</div>
+				</div>
+
+				
+			<div class="step step2">
+				<div class="col colFull">
+					<div class="titFlujo">
+						<div class="iconFlujo">
+							<img src="img/assets/ico_comprobante.png"/>
+						</div>
+						<p class="titulo">Datos de cuenta registrada</p>
+						<p class="subtitulo">La cuenta se dará de alta con la siguiente información:</p>
+					</div>
+					<div class="w8_CAB_tabla"></div>	
+
+					
+						</div> 
+
+						<div class="botonera">
+								<div class="btn" onclick="cambiaPaso(1);">Regresar</div>
+								<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w8/w8_CAB_tblPaso3.html'),'');">Confirmar</div>
+							</div>  
+					
+				</div>	
+		<div class="step step3">
+					<div class="col col2 resetMargen">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+									</div>
+									<p class="titulo">Comprobante de alta de cuenta registrada</p>
+								</div>
+								
+								<div class="tabla3"></div>
+								<div class="correocontacto"><p>Correo para notificación (beneficiario):</p><p>  alberto-alarcon@gmail.com.mx</p> </div>
+								
+							</div>
+							<div class="col col1 ">
+								<img src="img/assets/step3/anuncio.png" width="233" />
+								<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+								<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+								<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+								<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+							</div>
+							<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu3');cambiaPaso(1);">Deseo dar de alta otra cuenta</div>
+								<div class="btn" onclick="">Imprimir</div>
+								<div class="btnaceptar" onclick="closeAction()">Finalizar</div>
+							</div>
+		</div>				
+			</div>
+
+			<div class="flujo wra_flu4">
+				<div class="step step1">
+
+				<div class="titFlujo" style="height:90px">
+					<div class="iconFlujo">
+								<img src="img/assets/ico_comprobante.png"/>
+							</div>
+						
+						<p class="titulo">Consulta de transferencia</p>
+						<p class="subtitulo">Seleccione el estatus de las transferencias que desea consultar, así como el 
+							periodo de busqueda y/o el rango de importe para realizar una busqueda mas especifica.</p>
+						<p class="subtitulo2F4"> Para obtener más información de la solicitud, haga clic en el estatus.</p>
+					</div>
+					<div class="w8_CB_buscador">
+							<div class="w8_select_1 w8_selects ">
+								<select name="" id="" value="1" > 
+				    			</select>
+							</div>
+
+							<div class="w8_HPG_personalizarIntervalo">
+								08/01/2014 - 09/01/2014
+								<div>
+									<img src="../../img/iconos/calendario.png"/>
+								</div>
+							</div>
+							<div class="w8_select_3 w8_selects" style="margin-right: 14px;">
+								<select name="" id="" value="1" > 
+				    			</select>
+							</div>
+							<div class="w8_select_4 w8_selects">
+								<select name="" id="" value="1" > 
+				    			</select>
+							</div>
+							<div class="prueba">
+								<div class="btnaceptar prueba_btn">Limpiar Búsqueda</div>
+							</div>	
+						</div>
+						<div class="tablaDinamica2"></div>
+						<div class="btnExportar w8_btn_exportar"><img style="cursor:pointer" class="w8_exportar" src="../../../img/assets/Exportar.png"><img   src="../../../img/assets/CalendariOperaciones.png"></div>
+						</div>	
+
+				</div>
+
+			<!-- vaciar los demas flujos -->
+			<!-- REcordar que en cada step debes poner sus botones correspondientes -->	
+
+
+					</div>
+
+
+				
+				
+			</div>
+		</div>
+		
+		
