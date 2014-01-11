@@ -1,0 +1,280 @@
+.cont_wr_7, .cont_wr_8, .cont_wr_4, .cont_wr_1, .cont_wr_2, .cont_wr_3, .cont_wr_6, .cont_wr_11, .cont_wr_10{
+	width: 100%;
+	height: auto;
+	font-family: Arial;
+	font-size: 11px;
+}
+
+.cont_wr_7{
+	border-top: solid 5px #ffc700;
+}
+
+.cont_wr_8{
+	border-top: solid 5px #d14ee1;
+}
+
+.cont_wr_4, .cont_wr_1{
+	border-top: solid 5px #5edf44;
+}
+
+.cont_wr_2{
+	border-top: solid 5px #23d3b8;
+}
+
+.cont_wr_3, .cont_wr_11{
+	border-top: solid 5px #ff4e33;
+}
+
+.cont_wr_6{
+	border-top: solid 5px #dc503d;
+}
+
+.cont_wr_10{
+	border-top: solid 5px #5692b1;
+}
+
+
+.accion_widget, span.fecha_widget, span.txt_rojo, span.txt_bold, span.txt_boldBlack {
+	font-weight: bold;
+}
+
+.info_widget{
+	position: relative;
+	width: 115px;
+	margin: 0px 0px 35px 20px;
+}
+
+.accion_widget{
+	width: 190px;
+	height: 25px;
+	float: left;
+	padding: 15px 10px 0px 0px;
+	text-align: right;
+	background-color: #eeeeee;
+}
+
+.ico_principal, .ico_fecha, .ico_inv_list{
+	float: left;
+}
+
+.ico_fecha{
+	margin-top: 20px;
+}
+
+.ico_inv_list{
+	margin-top: 15px;
+}
+
+#btn_ico_info, #btn_ico_abrir{
+	position: absolute;
+	margin-left: 170px;
+	margin-top: -30px;
+	width: 20px;
+	height: 20px;
+}
+
+#btn_ico_abrir{
+	margin-left: 195px;
+	background-image:url('/img/iconos/ampliar.png');
+}
+
+#btn_ico_abrir:hover{
+	background-image:url('/img/iconos/ampliarslct.png');
+	cursor: pointer;
+}
+
+#btn_ico_info{
+	background-image:url('/img/iconos/info.png');
+}
+
+#btn_ico_info:hover{
+	background-image:url('/img/iconos/infoslct.png');
+	cursor: pointer;
+}
+
+.titulo_widget{
+	height: 40px;
+	width: 110px;
+	color: #ff0d37; 
+	font-size: 16px;
+	margin-left: 45px;
+	margin-top: 42px;
+}
+
+.fecha{
+	margin-top: 20px;
+	width: 130px;
+	margin-left: 45px;
+	margin: 20px 0px 11px 45px;
+}
+
+span.fecha_widget, span.txt_boldBlack {
+	font-size: 18px;
+}
+
+span.txt_rojo{ 
+	font-size: 12px;
+	color: #ff0d37;
+}
+
+.ico_accion_w_7, .ico_accion_w_8, .ico_accion_w_4, .ico_accion_w_1, .ico_accion_w_2, .ico_accion_w_3, .ico_accion_w_6, .ico_accion_w_11, .ico_accion_w_10{
+	width: 20px;
+	height: 20px;
+	float: right;
+	padding: 10px;
+}
+
+.ico_accion_w_7{
+	background-color: #ffc700;
+}
+
+.ico_accion_w_8{
+	background-color: #d14ee1;
+}
+
+.ico_accion_w_4, .ico_accion_w_1{
+	background-color: #5edf44;
+}
+
+.ico_accion_w_2{
+	background-color: #23d3b8;
+}
+
+.ico_accion_w_3, .ico_accion_w_11 {
+	background-color: #ff4e33;
+}
+
+.ico_accion_w_6{
+	background-color: #dc503d;
+}
+
+.ico_accion_w_6{
+	background-color: #dc503d;
+}
+
+.ico_accion_w_10{
+	background-color: #5692b1;
+}
+
+
+/*--- w_11 : Saldos consolidados ----*/
+.tituloSaldos{
+	width: 192px;
+	color: #ff0d37;
+	font-size: 16px;
+}
+
+.tituloSaldos span{
+	float: left;
+	margin-top: 16px;
+	margin-left: 10px;
+}
+
+.imagenSaldos{
+	width: 262px;
+	height: 241px;
+	margin-left: 240px;
+	margin-top: 70px;
+	background-image: url('../w_1/img/back.png');
+	background-size: 100% 100%;
+}
+
+.detalle_info{
+	margin-top: -20px;
+	width: 450px;
+	height: 25px;
+	padding: 14px 10px 0px 0px;
+	text-align: right;
+	background-color: #eeeeee;
+}
+
+.ico_accion_w_11{
+	width: 30px;
+	height: 40px;
+}
+
+.informacionSaldos{
+	margin-left: -23px;
+}
+
+
+.informacionSaldos div{
+	width: 150px;
+	height: 50px;
+	border: 1px solid gray;
+	margin-top: 6px;
+	margin-left: 10px;
+	background-color: white;
+}
+
+.imgSaldo{
+	width: 20px !important;
+	height: 16px !important;
+	margin-top: 5px!important;
+	margin-left: 5px!important;
+	border: none !important;
+}
+
+/*--- Imagenes ---*/
+.cuentasCheques{
+	background-image: url('/widgets/min/w_11/img/01_icon.png');
+	background-size: 100% 100%;
+}
+
+.tarjetasCredito{
+	background-image: url('/widgets/min/w_11/img/02_icon.png');
+	background-size: 100% 100%;
+}
+.misCreditos{
+	background-image: url('/widgets/min/w_11/img/03_icon.png');
+	background-size: 100% 100%;
+}
+.fondosInversion{
+	background-image: url('/widgets/min/w_11/img/04_icon.png');
+	background-size: 100% 100%;
+}
+.inversionVista{
+	background-image: url('/widgets/min/w_11/img/05_icon.png');
+	background-size: 100% 100%;
+}
+.inversionPlazo{
+	background-image: url('/widgets/min/w_11/img/06_icon.png');
+	background-size: 100% 100%;
+}
+/*--- Fin Imagenes---*/
+
+.monedaSaldo{
+	float: right !important;
+	margin-top: -5px !important;
+}
+
+.espacioSaldo{
+	margin-left: 37px;
+}
+
+.ico{
+	width: 43px;
+	height: 35px;
+	background-color: red;
+	margin-top: -40px;
+	margin-left: 459px;
+	padding-top: 5px; 
+}
+
+.icoImg{
+	width: 25px;
+	height: 23px;
+	margin-left: 9px;
+	background-image: url('/widgets/min/w_11/img/pic_saldos_2.png');
+	background-size: 100% 100%;
+}
+
+.cont_wr_11{
+	background-image: url('/widgets/min/w_11/img/back.png');
+	background-repeat: no-repeat;
+	background-position-x: 242px;
+	background-position-y: 41px;
+
+}
+
+

@@ -1,19 +1,15 @@
 var ddData = [{
-    text: "1254789632145 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ferrarri &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  A_PP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
+    text: "5408****9933 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fiesta Rewards Oro &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Tienda &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $33,115.00",
     value: 1,
     selected: false,
 }, {
-    text: "48796512034858 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Porshe &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  C_XX &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
+    text: "4879****0348 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Super Cuenta con chequera &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Cheques &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $67,410.00",
     value: 2,
     selected: false,
 
 }, {
-    text: "1201254789632 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ford &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  N_LT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
-    value: 3,
-    selected: false,
-}, {
-    text: "1235469854656 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nissan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  G_T7 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
-    value: 4,
+    text: "5470****2431 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Santander Light &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  mi tarjeta &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $13,514.00",
+    value: 2,
     selected: false,
 }];
 
@@ -259,7 +255,7 @@ $(function() {
         width: 450,
         background: "#f7f7f7",
         imagePosition: "left",
-        selectText: "1234****5678 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Producto Santander &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Alias &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
+        selectText: "5470****2431 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Santander Light &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  mi tarjeta &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $13,514.00",
         onSelected: function(data) {
             console.log(data);
         }

@@ -180,7 +180,7 @@ section{
 			}
 
 			#footer{	
-				width:170px;height:125px;margin:auto;font-size:10px;text-align: center;padding-top:40px;border-top:0;background:#212121;
+				width:170px;height:105px;margin:auto;font-size:10px;text-align: center;padding-top:40px;border-top:0;background:#212121;
 			}
 			
 			#footer div{
@@ -193,11 +193,11 @@ section{
 			}
 
 			.col1{
-				overflow:hidden;width: 245px;height: 578px;
+				overflow:hidden;width: 240px;
 			}
 
 			.col2{
-				overflow:hidden;width:502px;height: 578px;
+				overflow:hidden;width: 490px;
 			}
 
 
@@ -217,11 +217,11 @@ section{
 
 
 			.altoTotal{
-				height:580px;
+				height:570px;
 			}
 
 			.alto2{
-				height:285px;
+				height:280px;
 			}
 
 			.medianilIzq{

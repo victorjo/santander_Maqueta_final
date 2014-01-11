@@ -462,4 +462,9 @@ h6{
 			font-weight:bold;
 			color:red;
 		}
+		.no-a:after{border:none;}
+		.no-b:before{border:none;}
+
+
+
 /* FIN ESTILOS GRID */
