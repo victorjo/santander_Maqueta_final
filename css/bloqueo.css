@@ -213,3 +213,79 @@
 	cursor: pointer;
 }
 /*---- Fin de Estilo de  calendario ----*/
+
+
+
+/*---- EStilo para Terminos y condiciones ----*/
+.term_body{
+	background :none !important;
+}
+
+.term_informacion{
+	width: 293px;
+	height: 258px;
+	margin-top: 10px;
+	overflow:scroll; 
+	overflow-x: hidden;
+}
+
+.term_informacion p{
+	color: #ffffff;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+}
+
+.term_informacion div{
+	color: #ffffff;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	margin-top: 10px;
+}
+
+.term_aviso{
+	margin-top: 15px;
+}
+
+.term_btn{ margin-left: 65px !important; }
+/*---- EStilo para Terminos y condiciones ----*/
+
+/*--- Estilo de pdf---*/
+.pdf_informacion{
+	width: 378px;
+	height: 412px;
+	margin-top: 10px;
+	margin-left: 82px;
+	margin-bottom: 36px;
+	overflow: scroll;
+	overflow-x: hidden;
+	z-index:300;
+}
+
+
+.pdf2_informacion{
+	width: 378px;
+	height: 412px;
+	margin-top: 10px;
+	margin-left: 171px;
+	margin-bottom: 36px;
+	overflow: scroll;
+	overflow-x: hidden;
+	z-index:300;
+}
+
+
+/*.pdf2_posicion{
+	top: 4.285714px !important;
+	left: 190.5px  !important;
+	display: block !important;
+}*/
+
+
+
+/*.pdf_posicion{
+	top: 4.285714px !important;
+	left: 282.5px  !important;
+	display: block !important;
+}*/
+
+/*--- Fin Estilo de pdf  $('#elementBloqueo').addClass('pdf_posicion');---*/

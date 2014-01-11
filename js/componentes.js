@@ -12,7 +12,7 @@ $(document).ready(function() {
 
     }, function() {
         $(this).css({
-            "box-shadow": "none", 
+            "box-shadow": "none",
             "border": "none"
         });
     });
@@ -350,8 +350,7 @@ function cambiaFlujo(step) {
         } else {
             $(this).fadeOut("slow");
         }
-    })
-
+    });
 }
 
 function getMask(str, event) {
@@ -386,6 +385,8 @@ function cambiaPaso(paso) {
     flujoActivo = $(flujoActivo);
     escondeElemento("s");
     flujoActivo.find(".step" + paso).fadeIn("slow");
+
+
 }
 
 /****** FIN DE MOTOR PARA CAMBIAR DE PASOS Y FLUJOS **/ ///
@@ -423,8 +424,6 @@ function cambiaPaso(paso) {
     }
 
     $("#WA_pasos > img").css("margin-top", pasoPos);
-
-
 }
 /*Fin de Funcion realizada por victor: Cambio de pasos*/
 
@@ -459,6 +458,18 @@ function confirmacionCorreo(cbTokenCanc, cbTokenAcep, modal) {
             centraModal();
             $(".bloqueoElement").fadeIn("slow");
         });
+    });
+}
+
+function cargaPDF(cbBtnImp, cbBtnDes, cbBtnCer, cbBtnCon, fn, modal) {
+    var mod = modal;
+    if (typeof fn != "undefined" || fn != null || fn != undefined) fn();
+    $("#elementBloqueo").load("../modales/" + mod + ".html", function() {
+        $(this).find("#btnPdfImprimir").attr("onclick", cbBtnImp);
+        $(this).find("#btnPdfDescargar").attr("onclick", cbBtnDes);
+        $(this).find("#btnPdfCerrar").attr("onclick", cbBtnCer);
+        $(this).find("#btnPdfContinuar").attr("onclick", cbBtnCon);
+        switchModal();
     });
 }
 
@@ -553,14 +564,36 @@ function construyeSwitch(object) {
   BODY OF JSON DATA
   {colums:[1,2,3,4,5],rowsValues:[1,2,3,4,5],numRows:30}
 
+
+new----
+
+Gridius($('.tablaDinamica2'), {
+        hasStatus: false,
+        configButton: true,
+        colums: ['Meses de gracia', 'Fecha de aplicación'],
+        rowsValues: ['1', '15/01/2014'],
+        parseRows: [
+            ['1', '15/01/2014'],
+            ['2', '15/01/2014'],
+            ['3', '15/01/2014']
+        ],
+        numRows: 2,
+        icons: {
+            print: false
+        },
+        onIcons: function() {
+            $(".toolsGrid").css("left", "796px;");
+        }
+    });
 */
 function Gridius(object, data) {
-
+    console.log(data);
+    $(".toolsGrid").remove();
     $.when($.ajax("componentes/grid.html")).then(function(res) {
 
         object.html(res);
 
-        var element="";
+        var element = "";
 
         if (typeof data == "undefined") {
 
@@ -585,25 +618,25 @@ function Gridius(object, data) {
             for (i = 0; i <= totalElem; i++) {
                 element += "<tr data-id='" + i + "'>";
                 for (u = 0; u < data.rowsValues.length; u++) {
-                
+
                     element += "<td>" + data.rowsValues[u] + "<input data-edit='false' class='editGrid' type='text'></td>";
                 }
-                element += (data.configButton?"<td><div class='addGrid'></div><div class='delGrid'></div></td>":"") + "</tr>";
-                if(i==0) keeper = element;
+                element += (data.configButton ? "<td><div class='addGrid'></div><div class='delGrid'></div></td>" : "") + "</tr>";
+                if (i == 0) keeper = element;
             }
-            
-            var aprov =  $(keeper);
-            var program =  aprov.clone();
-            var denied =  aprov.clone();
-            aprov.attr("data-id",'100').find(".editGrid:last").parent().addClass("aprov").text("Exitosa");
-            program.attr("data-id",'101').find(".editGrid:last").parent().addClass("program").text("Programada");
-            denied.attr("data-id",'102').find(".editGrid:last").parent().addClass("denied").text("Cancelada");
+
+            var aprov = $(keeper);
+            var program = aprov.clone();
+            var denied = aprov.clone();
+            aprov.attr("data-id", '100').find(".editGrid:last").parent().addClass("aprov").text("Exitosa");
+            program.attr("data-id", '101').find(".editGrid:last").parent().addClass("program").text("Programada");
+            denied.attr("data-id", '102').find(".editGrid:last").parent().addClass("denied").text("Cancelada");
 
             $(".wrapGrid > table").html("<tr>" + thead + "</tr>");
-            if(data.hasStatus) $(".wrapGrid > table").append(aprov).append(program).append(denied);
+            if (data.hasStatus) $(".wrapGrid > table").append(aprov).append(program).append(denied);
             $(".wrapGrid > table").append(element);
 
-        }  
+        }
 
         $(".gridAdd").click(function() {
             var obj = $('<tr data-id="' + ($(".wrapGrid").find("tr").size()) + '"></tr>');
@@ -619,7 +652,7 @@ function Gridius(object, data) {
         $(".addGrid").click(function() {
             var self = $(this);
             self.next(".delGrid").toggle();
-            showGridTools(self);
+            showGridTools(self,data.onIcons,data.icons,data.galIcons);
             self.toggle();
         });
 
@@ -634,9 +667,10 @@ function Gridius(object, data) {
 }
 
 function listenerGrid(obj) {
+    if(obj.children(".aprovedG").length <= 0) return false;
     $(".editGrid").each(function(i, v) {
         v = $(v);
-        if ( v.attr("data-edit") == "true" ) v.parent().html(v.val() + '<input data-edit="false" class="editGrid" type="text">');
+        if (v.attr("data-edit") == "true") v.parent().html(v.val() + '<input data-edit="false" class="editGrid" type="text">');
     });
     var self = obj,
         txt = self.text(),
@@ -647,10 +681,10 @@ function listenerGrid(obj) {
     else adq.attr("data-edit", "true");
     self.html(adq);
     adq.val(txt).show();
-
 }
 
-function showGridTools(obj) {
+function showGridTools(obj,callB,icons,galIcons) {
+    console.log(callB);
     var parentObj = obj.parent().parent();
     $(".toolsGrid").fadeOut("slow").remove();
     if (parentObj.attr('data-active') == 'true') {
@@ -658,23 +692,33 @@ function showGridTools(obj) {
         return false;
     }
     parentObj.attr('data-active', true);
-    var options = [$('<li><img src="../img/assets/basura.png"/></li>'),$('<li><img src="../img/assets/editar.png"/></li>'),$('<li><img src="../img/assets/imprimir.png"/></li>')];
+    var options;
     var toolsList = $("<ul>");
-    if(parentObj.children("td:last").prev().hasClass("aprov")){
-        options[2].attr("onclick",'print(this)');
-    }else if(parentObj.children("td:last").prev().hasClass("program")){
-        options[1].attr("onclick",'edit(this)');
-    }
-    $.each(options,function(i,v){
-        v.appendTo(toolsList);
-    })
     var tools = $('<div class="toolsGrid"></div>');
+    if(typeof galIcons != "undefined" && galIcons == 2){ options = [$('<li style="width: 82px;font-size: 11px;font-weight: bold;text-align:center">Folio Supernet:<br>123456789</li>'), $('<li style="width: 82px;font-size: 11px;font-weight: bold;text-align:center">F. respuesta:<br>10/01/2014</li>')];
+        tools.addClass("no-a");
+        tools.before("no-b");
+    }
+    else{
+        options = [$('<li><img src="../img/assets/basura.png"/></li>'), $('<li><img src="../img/assets/editar.png"/></li>'), $('<li><img src="../img/assets/imprimir.png"/></li>')];
+        if(typeof icons != "undefined" && !icons.print) options[2].html("");
+        if (parentObj.children("td:last").prev().hasClass("aprov")) {
+            options[2].attr("onclick", 'print(this)');
+        } else if (parentObj.children("td:last").prev().hasClass("program")) {
+            options[1].attr("onclick", 'edit(this)');
+        }
+    }
+    $.each(options, function(i, v) {
+        v.appendTo(toolsList);
+    });
     toolsList.appendTo(tools);
     $('body').append(tools);
     tools.css({
         top: obj.offset().top - 56,
         left: ($('[instanced="true"]').offset().left + $('[instanced="true"]').width() + 20)
     }).attr('data-relid', parentObj.attr('data-id'));
+
+    if(typeof callB != "undefined") callB();
 }
 
 function cargaHtml(componente, url) {
@@ -682,28 +726,30 @@ function cargaHtml(componente, url) {
 }
 
 function print(obj) {
-
-    $(".wrapGrid").printThis({
-      debug: false,              
-      importCSS: true,           
-      printContainer: true,       
-//      loadCSS: "path/to/my.css", 
-      pageTitle: "",             
-      removeInline: false        
-  });
+    var q = "";
+    if(obj=="step3"){
+        q = ".resetMargen:first"
+    }else q = ".wrapGrid";
+    $(q).printThis({
+        debug: false,
+        importCSS: true,
+        printContainer: true,
+        //      loadCSS: "path/to/my.css", 
+        pageTitle: "",
+        removeInline: false
+    });
 
 }
 
 function edit(obj) {
     var idrel = $(obj).parent().parent().parent().attr("data-relid");
-    $("[data-id='"+ idrel +"']:nth-child(2)").find(".editGrid").show();
-    
+    $("[data-id='" + idrel + "']:nth-child(2)").find(".editGrid").show();
 }
 
-function el(){
-   $(".fg").css("display","none"); 
-}
-function elf(){
-   $(".fg").css("display","inline"); 
+function el() {
+    $(".fg").css("display", "none");
 }
 
+function elf() {
+    $(".fg").css("display", "inline");
+}

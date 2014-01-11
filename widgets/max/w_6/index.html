@@ -1,1083 +1,193 @@
-<link rel="stylesheet" href="../../../css/widgets.css" />
-<link rel="stylesheet" href="../../../css/master.css" />
-<link rel="stylesheet" href="../../../css/token.css" />
-<link rel="stylesheet" href="widgets/max/w_6/css/creditos.css"/>
-<script type="text/javascript" src="../../../js/jquery.tinycircleslider.min.js"></script>
-<script src="widgets/max/w_6/js/creditos.js"></script>
-<script type="text/javascript" src="../../../js/componentes.js"></script>
-<script type="text/javascript" src="../../../js/ddSlick.js"></script>
+	<!--	<script src="../../../js/jquery10.2.min.js"></script>		-->
+		<script src="../../../js/components.js"></script>
+		<!--<script src="../../../js/ddSlick.js"></script>-->
+		<link rel="stylesheet" href="../../../css/generally.css" />
+		<link rel="stylesheet" href="../../../css/componentes.css" />
+		<script src="widgets/max/w_6/js/w_1.js"></script>
+		<link rel="stylesheet" href="widgets/max/w_6/css/w_1.css" />
 
-
-<!--<script src="../../../js/utiles.js"></script>  -->
-<script src="js/ui/jquery-ui-1.10.3.custom.min.js"></script>
-<script type="text/javascript">
-/*
-	$(document).on("ready", function(){
-		$(".dd-selected-image").css("background","red");
-	});
-
-*/
-
-
-	$(function(){
-
-		$(".btnPlazoAuto").click(function(){
-			$(".btnPlazoAuto").each(function(){
-				$(this).css({"background":""});
-				$(".btnPlazoAuto span").hide("fast");
-
-			});
-			$(this).css({"background":"url(images/btn_plazoSim.png)"});
-			$(this).find("span").show("fast");
-			numeroPlazo = $(this).find("span").text();
-			$("#numPlazo").text(numeroPlazo);
-
-		})
-
-		$("#btn_plazoSim2").css("background","url(images/btn_plazoSim.png)");
-		$("#btn_plazoSim2 span").css("display","block");
-	})
-
-</script>
-<style>
-/*.btnHeader{
-	float: right;
-	width: 32px;
-	height: 32px;
-	cursor: pointer;
-	
-	
-	}*/
-.btnHeaderTable{
-	height: 24px;
-margin: -10px;
-padding-top: 10px;
-width: 110px;
-}
-.titTabla{
-	margin-bottom:0px;
-	padding:10px 10px 5px 30px;
-	border:1px solid black;
-	border-bottom:0;
-	float:left;
-	width:678px;
-	background:#F4F4F4;
-	margin-top:20px;
-	height:20px;
-	font-weight:bold
-}
-.titTabla p{
-	float:left;
-}
-.titTabla img{
-	float:right;
-	margin-top:0px;
-	margin-right: 15px;
-	cursor: pointer;
-}
-.wra_Select2{
-	width: 230px;
-}
-.wra_Select{
-	width: 232px;
-}
-.wra_Select input[type=text]{
-	background: none repeat scroll 0 0 #EFEFEF;
-border: 1px solid #000000;
-height: 25px;
-text-align: center;
-width: 200px;
-}
-.smallTxt{
-	font-size: 10px;
-	line-height: 13px;
-}
-input[type=radio]{
-	vertical-align: top;
-	margin: 5px
-}
-.tablaConsulta tr td{
-	height: 20px;
-}
-.dd-select{
-	margin-left: 15px;
-}
-.exitosa{
-	color:green;
-	text-decoration: underline;
-}
-.programada{
-	color:brown;
-	text-decoration: underline;
-}
-.noexitosa{
-	color:red;
-	text-decoration: underline;
-}
-body{
-	font-family:arial;
-}
-.blockcp{
-	border-right:1px dotted gray;
-	float:left;
-	height:100%;
-	width:235px;
-}
-.blockcp > p {
-	font-weight:bold;
-	font-size:11px;
-	margin-bottom:8px;
-	margin-left:11px;
-	margin-top:6px;
-	width:200px;
-}
-.bockcpcontent {
-	height: 250px;
-	margin-left: 9px;
-	text-align: center;
-	width: 225px;
-}
-.bockcpcontent > p {
-	color:#000;
-	font-weight:bold;
-	font-size:12px;
-	margin:6px;
-}
-.bockcpcontent > table {
-	font-size:12px;
-}
-.bockcpcontent > table tr {
-	height:20px;
-}
-.bockcpcontent > table tr td:nth-child(2){
-	font-weight:bold;
-}
-.titlecp{
-	color:#ff0d37;
-	font-weight:bold;
-	margin-bottom:5px;
-}
-.boxselectcp {
-	border: 1px solid gray;
-	color: #535353;
-	height: 67px;
-	width: 715px;
-	overflow: visible;
-}
-.boxselectcp > p {
-	font-weight:bold;
-	font-size:11px;
-	margin-bottom:8px;
-	margin-left:11px;
-	margin-top:6px;
-}
-div > .blockcp:nth-child(3){
-	border:0px;
-	width:242px;
-}
-#wrapcp{
-	border:1px solid gray;
-	color:#535353;
-	height:300px;
-	width:715px;
-}
-#myCanvas{
-		-webkit-transform: rotate(-90deg);
-		-moz-transform: rotate(-90deg);
-		-ms-transform: rotate(-90deg);
-		-o-transform: rotate(-90deg);
-		transform: rotate(-90deg);
-	}
-	#background{
-		top: 0; left: 0; z-index: 900; height: 190px; width: 190px; background:url(images/backCircle.png) center; position: absolute;
-	}
-	#txtBack h4{
-		margin:0;
-	}
-	.esconde{
-		visibility: none;
-	}
-	#tablaDatos{
-		text-align:left; height: 80px;margin: 9px 6px;
-	}
-	#tablaDatos tr{
-		height: 14px;
-	}
-	#tablaDatos tr td{
-		font-size:11px;
-	}
-	.tbl_info td{
-		font-size: 10px;
-		border-collapse: collapse;
-		padding: 0 5px;
-	}
-	.tbl_info tr{
-		height:11px !important;
-		font-size: 10px;
-		border-collapse: collapse;
-	}
-	#contenido2{
-			display: none;
-		}
-	#img{
-			width: 180px;
-			height: 243px;
-			background:url("../../../../img/iconos/nip.png");
-			margin: 0 auto;
-			margin-left: 35%;
-		}
-		/*#text{
-			width: 30%;
-			margin: 0 auto;
-			text-align: center;
-			padding-bottom: 20px;
-			margin-top: 20px;
-			color: #fff;
-			font-weight: bold;
-		}*/
-		#text{
-			width: 30%;
-			margin-left: 28%;
-			/*margin: 0 auto;*/
-			text-align: center;
-			padding-bottom: 20px;
-			margin-top: 70px;
-			color: #fff;
-			font-weight: bold;
-		}
-		#form{
-			width: 50%;
-			margin: 0 auto;
-			padding-top: 15px;
-		}
-		/*#form input{
-			margin: 0 auto;
-		}*/
-		#form input{
-			margin: 0 auto;
-			margin-left: 95px;
-		}
-		#form #token{
-			display:block;
-			width: 210px;
-			height: 25px;
-		}
-		/*#form #buttons{
-			padding-top: 10px;
-			width: 250px;
-			margin: 0 auto;
-			margin-left: 170px;
-			
-		}*/
-		#form #buttons{
-			padding-top: 10px;
-			width: 320px;
-			margin: 0 auto;
-			margin-left: 40px;
-			display:inline-block;
-			
-		}
-		#form #can, #con{
-			margin: 0 auto;
-			width: 110px;
-			height: 30px;
-			border-radius: 8px;
-		}
-
-		.gris{
-			color:#999999
-		}
-		.dd-options{
-
-		max-width: 215px;
-		margin-left:0px;
-		
-
-		}
-
-		#plazoAuto{margin:auto;width:190px;height:190px;position:relative;}
-		.btnPlazoAuto{
-			position: absolute;
-			cursor: pointer;
-			width: 13px;
-			padding: 8px;
-			height: 13px;
-			color: #6487ed;
-		}
-
-
-		.btnPlazoAuto span{
-			display: none;
-		}
-
-		#plazoTxt{
-			  width:100px;height:20px;top: 93px;left: 44px;
-              color: #6487ed;position: absolute;
-		}
-
-
-</style>
-<script>
-$(document).ready(function(){
-	ocultaSteps(10);
-	var ddData = [
-    {
-        text: "Elite Rewards Platino",
-        value: 1,
-        selected: false,
-        description: "1234****5678",
-        imageSrc: "images/card.png"
-    },
-    {
-        text: "Elite Rewards Platino",
-        value: 2,
-        selected: false,
-        description: "1234****5678",
-        imageSrc: "images/card.png"
-    },
-    {
-        text: "Elite Rewards Platino",
-        value: 3,
-        selected: true,
-        description: "1234****5678",
-        imageSrc: "images/card.png"
-    },
-    {
-        text: "Elite Rewards Platino",
-        value: 4,
-        selected: false,
-        description: "1234****5678",
-        imageSrc: "images/card.png"
-    }
-];
-
-	 $('#myDropdown').ddslick({
-	    data:ddData,
-	    width:300,
-	    imagePosition:"left",
-	    onSelected: function(selectedData){
-	        //callback function: do something with selectedData;
-	    }   
-    });	
-
-});
-function cambiaPasoImg(){
-	$("#stepbar img").attr("src","../img/fake/pasos/paso2.png");
-}
-function backPasoImg(){
-	$("#stepbar img").attr("src","../img/fake/pasos/paso1.png");
-}
-function cambiaPaso3(){
-	$("#stepbar img").attr("src","../img/fake/pasos/paso3.png");
-}
-function insertHTML(html,contenedor){
-	$("#"+contenedor).append(html);
-}
-function cambiaFlujo(step){
-	
-	var npasos = $(".pasos").size();
-		$(".pasos").each(function(index){
-			if((++index) == npasos){
-				$(this).fadeOut("slow",function(){
-					$(step).delay(1000).fadeIn();
-				});
-	
-			}else{
-				$(this).fadeOut("slow");
-			}
-		})
-}
-function follow(){
-	/*if ($("#token").val()==0){
-		alert("Debe ingresar su numero de TOKEN");
-		
-	}*/
-	
-	//destruyeOverlay();
-	destruyeOver();
-	cambiaFlujo("#step3");
-	
-}
-
-
-</script>
-
-<div style="display:none;visibility:hidden;height:0;overflow:hidden;">
-	<input type="text" id="textito"  />
-	<input type="text" id="textito2" />
-	<input type="text" id="textito3" />
-	<input type="text" id="textito4" />
-	<input type="text" id="textito5" value="9000000" />
-</div>
-<!-- APARTIR DE AQUI -->
-<div>
-	<div id="widget" class="widget">
-		<!--<div id="titulo">
-						<p class="f_titleWid">
-							PAGO <br/>
-							DE SERVICIOS</p>
-		</div>-->
-		<div id="header">
-			
-			<p class="f_titleWid">
-			CR&Eacute;DITOS PERSONALES
-			</p>
-			<div class="btnHeader">
-				<img src="../img/botones/btn_cerrar.png"/>
+		<!--<input type="button" value="GRID" onclick="Gridius($('.contenidoFlujo'),{colums:[13,23,33,43,53],rowsValues:[1,2,3,4,5],numRows:10});">-->
+		<div id="widampliado">
+			<div id="bloqueoWidget" class="bloqueoElement"></div>
+			<div id="elementBloqueo" class="bloqueoElement">
+				
 			</div>
-			<div class="btnHeader">
-				<img src="../img/botones/info_.png"/>
+			<div id="WA_pasos">
+				<img src="../../../img/assets/pasos.png"/>
+				<div class="btnHeader info">
+					<img src="../../../img/assets/ico_info.png"  />
+				</div>
+				<div class="btnHeader cerrar">
+					<img src="../../../img/assets/ico_cerrar_widget.png"  />
+				</div> 
 			</div>
-		</div>
-		<!-- aqui va para commmit -->
-		<div id="stepbar">
-			<img src="../img/fake/pasos/paso1.png"/>
-		</div>
-		<div id="contenido">
 			
-			<div id="step1" class="pasos" >
-				<p class="titlecp" style="color:red">1. Elija el monto que desea disponer y simule</p>
-				<div id="wrapcp">
-					<div class="blockcp">
-						<p>Gire la perilla y elija el cr&eacute;dito que desea usar.</p>
-						<div class="bockcpcontent">
-							<p>Monto m&aacute;ximo autorizado:</p>
-							<p>$ 2,949,345.10 MXN</p>
-							<div style="margin:auto;width:190px;height:190px; position:relative">
-								
-								<canvas id="myCanvas" style="position:absolute;top:0;left:0;z-index: 1000;height:190px; width:190px;"></canvas>
-								<div id="rotatescroll">
-									<div class="viewport">
-										<ul class="overview">
-											
-										</ul>
-									</div>
-									
-									<div id="staticDot" style="position:absolute;top:0;left:85px;">
-										<img src="images/sliderCircOne.png"  />
-									</div>
-									<div class="dot"></div>
-									<div class="overlay"></div>
-									<div class="thumb"></div>
-								</div>
-								<div id="background">
-									<div id="txtBack" style="margin: 55px 50px; text-align:center;">
-										<h4>Monto simulado:</h4>
-										<p style="color:#4f8aea;font-weight: bolder;">$<span id="cantidadPoner">0</span>.00 MXN</p>
-										<h2 style="color: #999; margin-top: 5;"> <span id="porcentaje">0</span>%</h2>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="blockcp">
-						<p>Elija el plazo de pago o escriba los meses que requiera para pagar.</p>
-						<div class="bockcpcontent">
-							<p>Plazo m&aacute;ximo autorizado:</p>
-							<p>36 meses</p>
-							<div style="" id="plazoAuto">
-								<div id="plazoTxt"><span id="numPlazo">9</span> meses</div>
-
-								<div id="btn_plazoSim1" class="btnPlazoAuto" style="top:78px;left:157px">
-									<span>18</span>
-								</div>
-								<div id="btn_plazoSim2" class="btnPlazoAuto" style="display:block;left:82px;">
-									<span>9</span>
-								</div>
-								<div id="btn_plazoSim3" class="btnPlazoAuto" style="left:2px;top:77px;">
-									<span>48</span>
-								</div>
-								<div id="btn_plazoSim4" class="btnPlazoAuto" style="top:156px;left:82px">
-									<span>32</span>
-								</div>
-								<img src="images/PlazoSimulado.png" alt="">
-								
-							</div>
-						</div>
-					</div>
-					<div class="blockcp">
-						<p>Simulacion con base en el monto del prestamo deseado:</p>
-						<div class="bockcpcontent">
-							<table id="tablaDatos">
-								<tr>
-									<td colspan="2"><b>Cuenta de Dep&oacute;sito:</b></td>
-								</tr>
-								<tr>
-									<td colspan="2">
-										<img src="images/card.png" alt="" style="float:left;margin-top:5px">
-										<p style="font-weight:bold;float:left;margin-left:10px">Elite Rewards Platino<br/>1234****5678</p>
-									</td>
-								</tr>
-								<tr>
-									<td  colspan="2">
-										<b>Datos del cr&eacute;dito:</b>
-									</td>
-								</tr>
-								<tr style="padding-right: -top:5px">
-									<td>Monto de cr&eacute;dito:</td>
-									<td><b>147,144,852.00</b></td>
-								</tr>
-								<tr>
-									<td>Monto a disponer:</td>
-									<td><b>365,699.99</b></td>
-								</tr>
-								<tr>
-									<td>Pago mesual:</td>
-									<td><b>789,365,963.00</b></td>
-								</tr>
-								<tr>
-									<td>Plazo:</td>
-									<td><b>18</b></td>
-								</tr>
-								<tr>
-									<td>Meses de gracia:</td>
-									<td><b>Ninguno</b></td>
-								</tr>
-								<tr>
-									<td>Tasa de inter&eacute;s anual:</td>
-									<td><b>00.00%</b></td>
-								</tr>
-								<tr>
-									<td>Comisi&oacute;n por disposici&oacute;n:</td>
-									<td><b>123,451.145</b></td>
-								</tr>
-								<tr>
-									<td>Esquema de aseguramiento:</td>
-									<td>Lorem</td>
-								</tr>
-							</table>
-						</div>
-					</div>
+			<div id="WA_nav">
+				<ul> 
+					<li class="menu">
+						<p>
+						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
+					</li>
+					<li onclick="$('.titFlujoP1').fadeIn(); cambiaFlujo('.wra_flu1'); cambiaPaso(1); firstS();" class="liActive">
+						<p>Solicitar transferencia de saldos</p>
+					</li>
+					<li onclick="$('.titFlujoP1').fadeIn(); cambiaFlujo('.wra_flu2'); cambiaPaso(1); secondS();">
+						<p>Consultar estado de transferencia de saldo</p>
+					</li>
+				</ul>
+			</div>
+			<div id="WA_contenedorFlujos">
+				<div class="titFlujoP1" style="height:81px;">
 				</div>
-				<p class="titlecp" style="margin-top:5px">2. Elija los meses de gracia</p>
-				<div class="boxselectcp">
-					<p sytle="margin-top:5px;margin-bottom:0px">Maximo 3 meses desde el desembolso del prestamo y la fecha de pago de la primera amortizacion.</p>
-					<div class="wra_Select3" style="margin-top:-5px">
-						<select>
-							<option value="">Ninguno</option>
-							<option value="">1</option>
-							
-						</select>
-
-					</div>
-					<div class="wra_Select3" style="margin-top: -30px; margin-left: 235px;">
-						<select>
-							<option value="">Ninguno</option>
-							<option value="">1</option>
-							
-						</select>
-						
-					</div>
-					<div class="wra_Select3" style="margin-top: -30px; margin-left: 465px;">
-						<select>
-							<option value="">Ninguno</option>
-							<option value="">1</option>
-							
-						</select>
-						
-					</div>
-				</div>
-				<div id="botonera" style="float:right; margin-right:-10px; margin-top:15px;width:500px;">
-					<div class="btn" style="margin-top:0px;">Tabla de Amortización</div>
-					<div id="siguiente">
-						<div class="btnaceptar" id="continuar1" onclick="cambiaPasoImg();changeComment(2);cambiaFlujo('#step2')">Aceptar</div></div>
-					</div>
-					
-					
-
-
-					</div><!--Fin step 1-->
-					
-					<div id="step2" class="pasos">
-						<div id="contenido2" >
-								
-						</div>
-						<h4 style="color:red;">Por favor confirme que la información desplegada a continuación es correcta:</h4>
-						<table class="tbl_info" style="width:100%;float:left;">
-							<tr>
-								<td style="width:200px;"><b>Datos del Cliente</b></td>
-								<td ></td>
-							</tr>
-							<tr>
-								<td class="gris">Titular</td>
-								<td ><b>María Peralta Ramírez</b></td>
-							</tr>
-							<tr>
-								<td class="gris">Cuenta de depósito</td>
-								<td ><b>1234****5678</b></td>
-							</tr>
-							<tr>
-								<td><b>Datos del Crédito:</b></td>
-								<td ></td>
-							</tr>
-							<tr>
-								<td class="gris">Monto de crédito:</td>
-								<td ><b>1,451,124.415 (MXP)</b></td>
-							</tr>
-							<tr>
-								<td class="gris">Capacidad de pago:</td>
-								<td ><strong>1,145,451.14 (MXP)</strong></td>
-							</tr>
-							<tr>
-								<td class="gris">Monto a disponer:</td>
-								<td ><b>2,212,457.99 (MXP)</b></td>
-							</tr>
-							<tr>
-								<td class="gris">Pago mensual:</td>
-								<td ><b>3,145,147.99 (MXP)</b></td>
-							</tr>
-							<tr>
-								<td class="gris">Plazo:</td>
-								<td ><b>18</b></td>
-							</tr>
-							<tr>
-								<td class="gris">Meses de gracia:</td>
-								<td ><b>Ninguno</b></td>
-							</tr>
-							<tr>
-								<td class="gris">Tasa de interés anual:</td>
-								<td ><b>00.00%</b></td>
-							</tr>
-							<tr>
-								<td class="gris">Comisión por disposición:</td>
-								<td ><b>2,145,147.124</b></td>
-							</tr>
-							<tr>
-								<td class="gris">Esquema aseguramiento:</td>
-								<td ><b>Lorem</b></td>
-							</tr>
-							<tr>
-								<td class="gris">Fecha de pago:</td>
-								<td ><b>dd/mm/aa</b></td>
-							</tr>
-							<tr>
-								<td class="gris">Fecha de solicitud:</td>
-								<td ><b>dd/mm/aa</b></td>
-							</tr>
-							<tr>
-								<td class="gris">Correo para notificación</td>
-								<td ><b>correo@correo.com</b></td>
-								<td> <a style="color:#1974F0;margin-right:180px">(Editar)</a></td>
-							</tr>
-							<tr>
-								<td class="gris">Celular para notificación</td>
-								<td><b>55 55 55 55 55 </b></td>
-								<td> <a style="color:#1974F0;margin-right:180px">(Editar)</a></td>
-							</tr>
-							<tr>
-								<td class="gris">Tabla de amortización:</td>
-								<td><a style="color:#1974F0">*Descargar</a></td>
-							</tr>
-						</table>
-						<div class="botonera" style="float:right; margin-right:-236px; margin-top:143px;">
-							<div class="btn" id="regresar" onclick="backPasoImg();">Regresar</div>
-							
-							<div id="btn1" class="btnaceptar" onclick="cambiaPasoImg();creaOverlay('#FFF','#widget',1);insertHTML($('#contenido2').html(),'modalOver');">Aceptar</div>
-						</div>
-						</div><!--Fin step 2-->
-						
-						<div id="step3">
-							<div id="vtacruzada">
-								
-								<div class="vtaimg">
-								</div>
-								
-								<p style="margin:10px 0 0 0;float:left;font-weight:bold;">Quizá le interese:</p><br><br>
-								
-								<!--<div class="vtapanel">
-										<div class="vtabtn"><img src="../../img/iconos/tarjeta_.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-										<div class="vtabtn"><img src="../../img/iconos/img_enviar.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-										<div class="vtabtn"><img src="../../img/iconos/img_icono.png" class="vtaico" /><p>Lorem Ipsum</p></div>
-								</div>-->
-								<div id="btn_paso3">
-									<ul>
-										<li class="btnNav"><!--<img src="../../img/iconos/tarjeta_.png" class="vtaico" />--><span class="txtbtn_3">Realizar un Balance Transfer</span></li>
-										<li class="btnNav"><!--<img src="../../img/iconos/img_enviar.png" class="vtaico" />--><span class="txtbtn_3">Pagar Servicios</span></li>
-										<li class="btnNav"><!--<img src="../../img/iconos/img_icono.png" class="vtaico" />--><span class="txtbtn_3">Realizar una Domiciliación</span></li>
-									</ul>
-								</div>
-								
-							</div>
-							
-							<h4 style="width:35%">Comprobante de pago de servicio.</h4>
-							
-							
-							
-							<table class="tbl_info" style="width:62%;float:left;">
-								
-								<tr>
-									<td style="width:200px;"><b>Datos del Cliente</b></td>
-									<td ></td>
-								</tr>
-								<tr>
-									<td class="gris">Titular</td>
-									<td ><b>María Peralta Ramírez</b></td>
-								</tr>
-								<tr>
-									<td class="gris">Cuenta de depósito</td>
-									<td ><b>1234****5678</b></td>
-								</tr>
-								<tr>
-									<td><b>Datos del Crédito:</b></td>
-									<td ></td>
-								</tr>
-								<tr>
-									<td class="gris">Monto de crédito:</td>
-									<td ><b>2,457,147.19 (MXP)</b></td>
-								</tr>
-								<tr>
-									<td class="gris">Capacidad de pago:</td>
-									<td ><strong>1,149,147.10 (MXP)</strong></td>
-								</tr>
-								<tr>
-									<td class="gris">Monto a disponer:</td>
-									<td ><b>5,744,147.19 (MXP)</b></td>
-								</tr>
-								<tr>
-									<td class="gris">Pago mensual:</td>
-									<td ><b>2,254,124.21 (MXP)</b></td>
-								</tr>
-								<tr>
-									<td class="gris">Plazo:</td>
-									<td ><b>18</b></td>
-								</tr>
-								<tr>
-									<td class="gris">Meses de gracia:</td>
-									<td ><b>Ninguno</b></td>
-								</tr>
-								<tr>
-									<td class="gris">Tasa de interés anual:</td>
-									<td ><b>00.00%</b></td>
-								</tr>
-								<tr>
-									<td class="gris">Comisión por disposición:</td>
-									<td ><b>2,245,147.14</b></td>
-								</tr>
-								<tr>
-									<td class="gris">Esquema aseguramiento:</td>
-									<td ><b>Lorem</b></td>
-								</tr>
-								<tr>
-									<td class="gris">Fecha de pago:</td>
-									<td ><b>dd/mm/aa</b></td>
-								</tr>
-								<tr>
-									<td class="gris">Fecha de solicitud:</td>
-									<td ><b>dd/mm/aa</b></td>
-								</tr>
-								<tr>
-									<td class="gris">Correo para notificación</td>
-									<td ><b>correo@correo.com</b></td>
-									<td> <a style="color:#1974F0;margin-right:180px">(Editar)</a></td>
-								</tr>
-								<tr>
-									<td class="gris">Celular para notificación</td>
-									<td><b>55 55 55 55 55 </b></td>
-									<td> <a style="color:#1974F0;margin-right:180px">(Editar)</a></td>
-								</tr>
-								<tr>
-									<td class="gris">Tabla de amortización:</td>
-									<td><a style="color:#1974F0">*Descargar</a></td>
-								</tr>
-								
-								
-								
-							</table>
-							
-									<!--<div class="botonera2" style="margin-right:-11px;width:96%" >
-										<div class="btnaceptar" style="float:right;margin-top:12px;" onclick="backPasoImg(); cierraWidget()">12e</div>
-										<div class="btn" style="float:right;margin-top:12px">
-											<img src="../img/iconos/img_impresora.png" class="btnico"/>
-											<p class="btntxt" style="margin-top:0px">Imprimir</p>
-										</div>
-									</div>-->
-							
-									<table style="	float: right; margin-left: -22px; margin-top:35px;">
-			<tr>
-				<td><div class="btn" ><img src="../../../img/iconos/img_impresora.png" class="btnico"/><p class="btntxt" >Imprimir</p></div></td>
-				<td><div class="btn btnaceptar" onclick="cierraWidget();">Finalizar</div></td>
-			</tr>
-		</table>
-
-							</div><!--Fin step 3-->
-							
-							<div id="step4" class="pasos">
-								<p class="titlecp" style="color:red">1. Seleccione la cuenta depósito</p>
-								<table id="tablaDatos">
+				<div class="contenidoFlujo" style="border:0px solid black;">
+					<div class="flujo wra_flu1">
+						<div class="step step1">
+							<br>
+							<p style="font-size:12px;font-weight:bold;">Introduzca los datos de la tarjeta de crédito o comercial de la que desea transferir su saldo:</p>
+							<br>
+							<div class="tableHG fullCon">
+								<table style="width:100%;height:75px">
 									<tr>
-										<td class="gris">Fecha de pago:</td>
-										<td ><b>dd/mm/aa</b></td>
+										<td>
+											<p>Numero de tarjeta</p>
+											<input class="dd-select" type="text">
+										</td>
+										<td>
+											<p>Institucion bancaria o comercial</p>
+											<input class="dd-select" type="text">
+										</td>
+										<td>
+											<p>Ingrese el monto que desea transferir</p>
+											<input class="dd-select" type="text">
+										</td>
 									</tr>
-									<tr>
-										<td class="gris">Fecha de solicitud:</td>
-										<td ><b>dd/mm/aa</b></td>
-									</tr>
-									<tr>
-										<td class="gris">Correo para notificación</td>
-										<td ><b>correo@correo.com</b></td>
-										<td> <a style="color:#1974F0;margin-right:180px">(Editar)</a></td>
-									</tr>
-									<tr>
-										<td class="gris">Celular para notificación</td>
-										<td><b>55 55 55 55 55 </b></td>
-										<td> <a style="color:#1974F0;margin-right:180px">(Editar)</a></td>
-									</tr>
-									<tr>
-										<td class="gris" style="">Tabla de amortización:</td>
-										<td><a style="color:#1974F0">*Descargar</a></td>
-									</tr>
-									<table>  
-										
-									
-										<tr>
-											<td>
-												
-											    <div id="myDropdown">
-													<!--<div class="wra_Select3" style="margin-top:-5px">
-														<select id="demo-htmlselect">
-													        <option value="0" data-imagesrc="images/card.png"
-													            data-description="1234****5678">Elite Rewards Platino</option>
-													        <option value="1" data-imagesrc="images/card.png"
-													            data-description="1234****5678">Elite Rewards Platino</option>
-													        <option value="2" selected="selected" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/linkedin-icon-32.png"
-													            data-description="1234****5678">Elite Rewards Platino</option>
-													        <option value="3" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/foursquare-icon-32.png"
-													            data-description="1234****5678">Elite Rewards Platino</option>
-													    </select>-->
-													</div>
-												
-											</td>
-										</tr>
-									</table>
 								</table>
-								
-								<div class="botonera2" style="margin-right:-11px;width:96%" >
-									<div class="btnaceptar" style="float:right;margin-top:12px;" onclick="backPasoImg(); cierraWidget()">Continuar</div>
-									<div class="btn" style="float:right;margin-top:12px">
-										<img src="../img/iconos/img_impresora.png" class="btnico"/>
-										<p class="btntxt" style="margin-top:0px">Imprimir</p>
-									</div>
-								</div>
-								
-								</div><!--Fin step 3-->
-								
-								<div id="step4" class="pasos" style="display:none">
-									<p class="titlecp" style="color:red">1. Seleccione la cuenta depósito</p>
-									<table id="tablaDatos">
-										<tr>
-											<td colspan="2"><b>Cuenta de Dep&oacute;sito:</b></td>
-										</tr>
-										<tr>
-											<td colspan="2">
-												<img src="images/card.png" alt="" style="float:left;margin-top:5px">
-												<p style="font-weight:bold;float:left;margin-left:10px">Elite Rewards Platino<br/>1234****5678</p>
-											</td>
-										</tr>
-										
-									</table>
-									<table style="margin-top:-19px">
-										<tr>
-											<td>
-												<div class="input" style="margin-left:10px">
-													
-													<p style="width: 220px;color:red">2. Seleccione el número de contrato</p>
-													<div class="wra_Select2" style="margin-top:5px">
-														<select style="color:#1974F0">
-															<option value="">1234****5678</option>
-															<option value="">1234****5678</option>
-															<option value="">1234****5678</option>
-															<option value="">1234****5678</option>
-															<option value="">1234****5678</option>
-														</select>
-													</div>
-												</div>
-											</td>
-											
-										</tr>
-									</table>
-									<p>En la siguiente lista podrá ver los cargos a su cuenta por su disposición de crédito: </p>
-									
-									
-									<table class="tbl_info" style="width:100%;float:left;height:215px">
-										<tr>
-											<td><b>No. de pago</b></td>
-											<td><b>Pago Fijo</b></td>
-											<td><b>Amortización</b></td>
-											<td><b>Interés sin IVA</b></td>
-											<td><b>IVA de los intereses</b></td>
-											<td><b>Pago Total</b></td>
-											<td><b>Saldo de Capital</b></td>
-										</tr>
-										<tr>
-											<td>1 - 48</td>
-											<td>2,215,254.90</td>
-											<td>9,264,124.69</td>
-											<td>2,145,236.12</td>
-											<td>2,268,478.36</td>
-											<td>3,364,365.15</td>
-											<td>4,457,126.23</td>
-										</tr>
-										<tr>
-											<td>1 - 48</td>
-											<td>2,215,254.90</td>
-											<td>9,264,124.69</td>
-											<td>2,145,236.12</td>
-											<td>2,268,478.36</td>
-											<td>3,364,365.15</td>
-											<td>4,457,126.23</td>
-										</tr>
-										<tr>
-											<td>1 - 48</td>
-											<td>2,215,254.90</td>
-											<td>9,264,124.69</td>
-											<td>2,145,236.12</td>
-											<td>2,268,478.36</td>
-											<td>3,364,365.15</td>
-											<td>4,457,126.23</td>
-										</tr>
-									<tr>
-											<td>1 - 48</td>
-											<td>2,215,254.90</td>
-											<td>9,264,124.69</td>
-											<td>2,145,236.12</td>
-											<td>2,268,478.36</td>
-											<td>3,364,365.15</td>
-											<td>4,457,126.23</td>
-										</tr>
-										<tr>
-											<td>1 - 48</td>
-											<td>2,215,254.90</td>
-											<td>9,264,124.69</td>
-											<td>2,145,236.12</td>
-											<td>2,268,478.36</td>
-											<td>3,364,365.15</td>
-											<td>4,457,126.23</td>
-										</tr>
-										<tr>
-											<td>1 - 48</td>
-											<td>2,215,254.90</td>
-											<td>9,264,124.69</td>
-											<td>2,145,236.12</td>
-											<td>2,268,478.36</td>
-											<td>3,364,365.15</td>
-											<td>4,457,126.23</td>
-										</tr>
-										<tr>
-											<td>7 - 48</td>
-											<td>7,465,255.14</td>
-											<td>3,312,554.15</td>
-											<td>8,321,226.14</td>
-											<td>4,878,545.89</td>
-											<td>5,646,124.36</td>
-											<td>2,414,123.23</td>
-										</tr>
-									<tr>
-											<td>1 - 48</td>
-											<td>2,215,254.90</td>
-											<td>9,264,124.69</td>
-											<td>2,145,236.12</td>
-											<td>2,268,478.36</td>
-											<td>3,364,365.15</td>
-											<td>4,457,126.23</td>
-										</tr>
-										<tr>
-											<td>1 - 48</td>
-											<td>2,215,254.90</td>
-											<td>9,264,124.69</td>
-											<td>2,145,236.12</td>
-											<td>2,268,478.36</td>
-											<td>3,364,365.15</td>
-											<td>4,457,126.23</td>
-										</tr>
-										<tr>
-											<td>1 - 48</td>
-											<td>2,215,254.90</td>
-											<td>9,264,124.69</td>
-											<td>2,145,236.12</td>
-											<td>2,268,478.36</td>
-											<td>3,364,365.15</td>
-											<td>4,457,126.23</td>
-										</tr>
-										</table>
-										<table class="tbl_consulta" style="width:100%; float:left;" cellspacing="0">
-											<tr>
-												<td style="border:none"><div id="c2" style="background:#000"></div></td>
-												<td style="border:none"></td>
-												<td style="border:none">1 - 48</td>
-												<td style="border:none">Total (MXP)pagos efectuados(incluye intereses):</td>
-												<td style="border:none">3,234,254.14</td>
-												
-											</tr>
-											
-											<tr>
-												<td style="border:none"><div id="c2" style="background:#000"></div></td>
-												<td style="border:none"></td>
-												<td style="border:none"></td>
-												<td style="border:none">Saldo pendiente de pago(incluye intereses):</td>
-												<td style="border:none">2,654,321.14</td>
-												
-											</tr>
-											
-										</table>
-										
-										
-										</div><!--Fin step 4-->
-									</div>
-									
-									<div id="navegador">
-										<ul>
-											<li class="active" onclick="changeComment(1)">DISPOSICI&Oacute;N DE CR&Eacute;DITOS</li>
-											<!--<li  onclick="cambiaEstado('4');changeComment(1)">CONSULTAR CR&Eacute;DITOS</li>-->
-										</ul>
-										<div class="aviso">
-											<div id="msg-alert" style="width: 133px;height: 52px;background:#fff;position: absolute;top: 2px;left: 10px;font-weight: bold;font-size: 10px;text-align: left;padding-top: 15px;">Usted puede elegir la cantidad que habra de usar, de forma rapida.</div>
-											<img src="../../img/iconos/img_msj.png"/>
-										</div>
-									</div>
-								</div>
 							</div>
-							<script>
-									var total = .1;
-									var c=document.getElementById("myCanvas");
-									c.width=190;
-									c.height=190;
-									var ctx=c.getContext("2d");
-									function aumentaTotal(numero){
-										ctx.clearRect(0, 0, c.width, c.height);
-										ctx.restore();
-										//total += .1;
-											
-											console.log("numero"+numero+"::::"+numero*Math.PI);
-											ctx.beginPath();
-											ctx.lineWidth = 8;
-											ctx.strokeStyle = "#4f8aea";
-											//ctx.arc(160,160,150,((90*Math.PI)/-180), numero*Math.PI));
-											ctx.arc(95,95,88,0,numero*Math.PI);
-											ctx.stroke();
-											ctx.restore();
-											
-									}
-							</script>
-							<script type="text/javascript">
 
-								$(document).ready(function(){
-															
+							<div class="fullCon" style="display:none">
+								<div class="select_OC"></div>
+								<div class="select_OC"></div>
+								<div class="select_OC"></div>
+								<a href="#" style="float:right;float: right;font-size: 12px;color: #db1539;">Nueva busqueda</a>
+							</div>
+							
+							<div class="fullCon" style="display:none">
+								<p style="display:none;width: 260px;float: left;margin-bottom: 3px;margin-top:5px;font-size: 12px;font-weight: bold;">Mis movimientos de la tarjeta</p> <div style="float:right;displau:none"><img src="0" alt=""><img src="1" alt=""><img src="2" alt=""></div>
+							</div>
+							<div class="containerG"></div>
+							<div class="botonera">
+								<div class="btnaceptar" onClick=" cambiaFlujo('.wra_flu1'); cambiaPaso(2); $('.w1_ST_tabla2').load('../../../../tablas/w1/w1_ST_tblPaso2.html'); $('.titFlujoP1').hide(); " >Continuar</div>
+							</div>
+						</div>
 
-								$(".wra_Select3 select").ddslick({
-									width: 630,
-									direccionSlide:"up"
-								});
+						<div class="step step2">
+							<div class="col colFull">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+									</div>
+									<p class="titulo">Solicitud de transferencia de saldos</p>
+									<p class="subtitulo">La operación se realizará con la siguiente información:</p>
+								</div>
+								<div class="w1_ST_tabla2"></div>
+							</div>
+							<div class="botonera">
+								<div class="btn" onclick=" regresaTexto(); $('#elementBloqueo').removeClass('term_body'); $('.titFlujoP1').fadeIn(); cambiaFlujo('.wra_flu1'); cambiaPaso(1); ">Regresar</div>
+								<div class="btnaceptar" onclick=" $('#elementBloqueo').removeClass('term_body');  cargaToken('switchModal()','switchModal();cambiaPaso(3);cambiaText()',cargaHtml('.tabla3','../../../../tablas/w1/w1_ST_tblPaso3.html'),'');">Confirmar</div>
+							</div>
+						</div>
+						<div class="step step3">
+							<div class="col col2 resetMargen">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Comprobante de la solicitud de transferencia de saldos</p>
+									</div>
+									
+									<div class="tabla3"></div>
+									
+								</div>
+							<div class="col col1 ">
+								<img src="img/assets/step3/anuncio.png" width="233" />
+								<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+								<div class="btnsLateralStep3  ico1Step3">Solicitud de tarjeta</div>
+								<div class="btnsLateralStep3 ico2Step3" >Opci&oacute;n 2</div>
+								<div class="btnsLateralStep3 ico3Step3" >Opci&oacute;n 3</div>
+							</div>
+							<div class="botonera">
+								<div class="btn" onclick="regresaTexto(); $('.titFlujoP1').fadeIn(); cambiaFlujo('.wra_flu1'); cambiaPaso(1);">Deseo realizar otra transferencia</div>
+								<div class="btnaceptar" style="margin-right: 9px;" onclick=" regresaTexto(); $('.titFlujoP1').show(); closeAction();">Finalizar</div>
+								<div class="btnaceptar" onclick="">Imprimir</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="flujo wra_flu2">
+						<div class="step step1">
+							<div class="containerH"></div>
+							<!--<div class="botonera">
+								<div class="btnaceptar" onClick=" cambiaFlujo('.wra_flu2'); cambiaPaso(2); $('.w1_CE_tabla2').load('../../../../tablas/w1/w1_CE_tblPaso2.html'); $('.titFlujoP1').hide(); " >Continuar</div>
+							</div>-->
+						</div>
+
+						<!--<div class="step step2">
+							<div class="col colFull">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+									</div>
+									<p class="titulo">Datos de transferencia</p>
+									<p class="subtitulo">La operación se realizará con la siguiente información:</p>
+								</div>
+								<div class="w1_CE_tabla2"></div>
+							</div>
+							<div class="botonera">
+								<div class="btn" onclick=" $('.titFlujoP1').fadeIn(); cambiaFlujo('.wra_flu1'); cambiaPaso(1); ">Regresar</div>
+								<div class="btnaceptar" onclick="cargaToken('switchModal()','switchModal(); cambiaFlujo(\'.wra_flu2 \'); cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w1/w1_CE_tblPaso3.html'),'');">Confirmar</div>
+							</div>
+						</div>
+
+						<div class="step step3">
+							<div class="col col2 resetMargen">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Comprobante de pago de servicios</p>
+									</div>
+									
+									<div class="tabla3"></div>
+									
+								</div>
+							<div class="col col1 ">
+								<img src="img/assets/step3/anuncio.png" width="233" />
+								<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+								<div class="btnsLateralStep3  ico1Step3">Solicitud de tarjeta</div>
+								<div class="btnsLateralStep3 ico2Step3" >Opci&oacute;n 2</div>
+								<div class="btnsLateralStep3 ico3Step3" >Opci&oacute;n 3</div>
+							</div>
+							<div class="botonera">
+								<div class="btnaceptar" style="margin-right: 9px;" onclick="">Imprimir</div>
+								<div class="btnaceptar"  onclick="$('.titFlujoP1').show(); closeAction();">Finalizar</div>
 								
-								$('#rotatescroll').tinycircleslider({
-									radius: 95,
-									callback: function(element, index){
-									console.log(element, index);
-									}
-								});
-								
-								});
-							</script>
+							</div>
+						</div>-->
+
+					</div>		
+				</div>
+				<div class="w1_PS_ayuda wra_flu1 flujo">
+					<p style="bottom: 182px;" class="w1_txt">*Calculado al 08 de Noviembre <br>
+					 del 2013. Considera <br> 
+					 una linea de crédito de $123,000.00 a un  <br> 
+					 plazo de 3 años de <br> 
+					 amortización del crédito y <br>
+					 cubriendo el porcentaje del pago mínimo.</p>
+					<img src="../../../img/mrsmackdown.png"/>
+				</div>
+			</div>
+		</div>
 
 
 
+		

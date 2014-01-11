@@ -186,8 +186,8 @@ h6{
 	margin:3px 0px 0px 10px;
 	float:left;
 	font-family:Arial, Helvetica, sans-serif;
-	font-weight:normal;
-	font-size:12px;
+	font-weight:bold;
+	font-size:13px;
 	
 }
 
@@ -361,7 +361,7 @@ h6{
 			background:#e0dede;
 			height:295px;
 			width:100%;
-			overflow-y: scroll;
+			overflow-y: auto;
 			overflow-x: hidden;
 		}
 		.wrapGrid>table {
@@ -462,4 +462,9 @@ h6{
 			font-weight:bold;
 			color:red;
 		}
+		.no-a:after{border:none;}
+		.no-b:before{border:none;}
+
+
+
 /* FIN ESTILOS GRID */
