@@ -461,6 +461,18 @@ function confirmacionCorreo(cbTokenCanc, cbTokenAcep, modal) {
     });
 }
 
+function cargaPDF(cbBtnImp, cbBtnDes, cbBtnCer, cbBtnCon, fn, modal) {
+    var mod = modal;
+    if (typeof fn != "undefined" || fn != null || fn != undefined) fn();
+    $("#elementBloqueo").load("../modales/" + mod + ".html", function() {
+        $(this).find("#btnPdfImprimir").attr("onclick", cbBtnImp);
+        $(this).find("#btnPdfDescargar").attr("onclick", cbBtnDes);
+        $(this).find("#btnPdfCerrar").attr("onclick", cbBtnCer);
+        $(this).find("#btnPdfContinuar").attr("onclick", cbBtnCon);
+        switchModal();
+    });
+}
+
 function cargaCalendario(cbTokenAcep, modal) {
     var mod = modal || 'token';
     $("#elementBloqueo").load("../modales/" + mod + ".html", function() {
@@ -686,6 +698,7 @@ function showGridTools(obj,callB,icons,galIcons) {
     if(typeof galIcons != "undefined" && galIcons == 2){ options = [$('<li style="width: 82px;font-size: 11px;font-weight: bold;text-align:center">Folio Supernet:<br>123456789</li>'), $('<li style="width: 82px;font-size: 11px;font-weight: bold;text-align:center">F. respuesta:<br>10/01/2014</li>')];
         tools.addClass("no-a");
         tools.before("no-b");
+<<<<<<< HEAD
     }
     else{
         options = [$('<li><img src="../img/assets/basura.png"/></li>'), $('<li><img src="../img/assets/editar.png"/></li>'), $('<li><img src="../img/assets/imprimir.png"/></li>')];
@@ -696,6 +709,18 @@ function showGridTools(obj,callB,icons,galIcons) {
             options[1].attr("onclick", 'edit(this)');
         }
     }
+=======
+    }
+    else{
+        options = [$('<li><img src="../img/assets/basura.png"/></li>'), $('<li><img src="../img/assets/editar.png"/></li>'), $('<li><img src="../img/assets/imprimir.png"/></li>')];
+        if(typeof icons != "undefined" && !icons.print) options[2].html("");
+        if (parentObj.children("td:last").prev().hasClass("aprov")) {
+            options[2].attr("onclick", 'print(this)');
+        } else if (parentObj.children("td:last").prev().hasClass("program")) {
+            options[1].attr("onclick", 'edit(this)');
+        }
+    }
+>>>>>>> d624d489b671a03db69de22e6a19ce12490b3824
     $.each(options, function(i, v) {
         v.appendTo(toolsList);
     });
