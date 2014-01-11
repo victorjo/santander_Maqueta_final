@@ -1,0 +1,1042 @@
+﻿@import url("../../../../css/bloqueo.css");
+@import url("../../../../css/steps.css");
+@import url("../../../../css/generally.css");
+@import url("../../../../css/componentes.css");
+input{
+		
+	font-style: italic;
+}
+input [type="button"]{
+	font-style: normal;
+}
+.tabstc{
+	margin: 0 auto;
+
+}
+.tabstc td{
+	width: 150px;
+	text-align: center;
+	height: 25px;
+	background: #fff;
+
+}
+
+.colortab td{
+	background: silver;
+}
+.cabeceratdc td{
+	background:inherit;
+}
+.contenidoFlujo {
+/*border: 1px solid red;*/
+border: none;
+float: left;
+margin-left: 5px;
+/*height: 425px;*/
+height: 433px;
+overflow: hidden;
+padding: 5px;
+width: 720px;
+margin-left: 0px;
+}
+.contenidoFlujo .colFull{
+	background: #fff;
+}
+/*.btnactiont{
+	width: 21px;
+	height: 21px;
+	background: url("../imagenes/cerrado.png");
+	float: right;
+	margin-right: 10px;
+	margin-top: 5px;
+	cursor: pointer;
+}*/
+*{
+	font-family: Arial;
+	font-size: 13px;
+}
+a,#concardstc{
+	display: inline-block;
+	vertical-align: middle;
+}
+area{
+	cursor: pointer;
+}
+
+#tarrecstc a,.concardstarrec{
+		
+	display: inline-block;
+	vertical-align: middle;
+}
+#tarrecstc a,#concardstarrec{
+		
+	display: inline-block;
+	vertical-align: middle;
+}
+#tarrecstc a,#concardstarrectwo{
+		
+	display: inline-block;
+	vertical-align: middle;
+}
+#befstc{
+	margin-left: 12px;
+}
+.content{
+	width: 725px;
+	height: 425px;
+	margin-left: -7px;
+	/*border:1px solid silver;*/
+	background:#e0dede; 
+}
+#selformentrega{
+	width: 718px;
+	height: 125px;
+	background: #efefef;
+	margin: 0 auto;
+}
+#selformentrega #stc{
+	width: 269px;
+	height: 30px;
+	margin-top: 35px;
+	margin-left:-175px;
+	border-radius: 5px;
+	border: 1px solid silver;
+}
+#selformentrega form{
+	float: left;
+	display: block;
+	
+}
+#selformentrega form label{
+	position: relative;
+	top:-30px;
+	left:15px;
+}
+#infostc{
+	background: #fff;
+	position: relative;
+	top: 15px;
+	width: 50%;
+	float: right;
+	margin-right: 15px;
+	height: 100px;
+}
+#infostc span {
+	display:inline-block;
+	color: #1d1d1d;
+	margin-top: 5px;
+	margin-left: 7px
+}
+#infostc > span:nth-of-type(2){
+	
+	margin-left: 21px;
+}
+#infostc > span:nth-of-type(2) p{
+	/*line-height: 0px;*/
+	color:silver;
+}
+#terminostc{
+	margin-left: 10px;
+	margin-top: 20px;
+}
+#terminostc input{
+	margin-right: 20px;
+}
+#terminostc p{
+	line-height: 10px;
+	margin-left: 40px;
+}
+.submits{
+
+	margin-top: 180px;
+	width:45%;
+	margin-left:55%;
+}
+input[type=button]{
+	width: 150px;
+	height: 32px;
+	background: #f5f5f5;
+	border: solid 1px silver;
+	margin-top: -21px;
+
+}
+.submits>input:nth-of-type(1){
+	font-weight: bold;
+	margin-right: 10px;
+}
+.submits>input:nth-of-type(2),.substc>input:nth-of-type(1){
+	color:#ff0000;
+	font-weight: bold;
+}
+.selcardstc{
+	width: 710px;
+	height: 310px;
+	border:solid 1px transparent;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background:#f4f4f4;
+}
+.selcardstc2{
+	width: 710px;
+	/*height: 315px;*/
+	height: 100%;
+	border:solid 1px transparent;
+	margin: 0 auto;
+	/*margin-top: 10px;*/
+	margin-top: 0px;
+	margin-bottom: 10px;
+	display: none;
+	/*background:silver;*/
+}
+
+.btnaction{
+	width: 21px;
+	height: 21px;
+	background: url("../imagenes/abierto.png");
+	float: right;
+	cursor:pointer;
+	position:absolute;
+	top:3px;
+	right:20px;
+}
+
+.btnaction2{
+	width: 21px;
+	height: 21px;
+	background: url("../imagenes/cerrado.png");
+	float: right;
+	margin-right: 10px;
+	margin-top: -14px;
+	cursor: pointer;
+	position:absolute;
+	top: 16px;
+	right: 10px
+}
+
+.btnactionx{
+	width: 21px;
+	height: 21px;
+	background: url("../imagenes/abierto.png");
+	float: right;
+	margin-right: 10px;
+	margin-top: -14px;
+	cursor: pointer;
+	position:absolute;
+	top: 16px;
+	right:10px;
+}
+#menuredstc{
+	/*width: 660px;*/
+	width: 100%;
+	height: 50px;
+	/*background:url("	");*/
+	float: right;
+	background-color:#ae1111;		
+}
+
+#menuredstc div:hover{
+	border-right:1px white solid;
+	cursor:pointer;
+}
+
+.w17_STC_selectorInteres1{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/restaurantes_b.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #ae1111 solid;
+}
+
+.w17_STC_selectorInteres1select{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/restaurantes_r.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #f4f4f4 solid;
+	background-color:#f4f4f4;
+}
+
+.w17_STC_selectorInteres2{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/servicios_b.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #ae1111 solid;
+}
+
+.w17_STC_selectorInteres2select{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/servicios_r.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #f4f4f4 solid;
+	background-color:#f4f4f4;
+}
+
+
+.w17_STC_selectorInteres3{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/viajes_b.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #ae1111 solid;
+}
+
+.w17_STC_selectorInteres3select{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/viajes_r.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #f4f4f4 solid;
+	background-color:#f4f4f4;
+}
+
+
+.w17_STC_selectorInteres4{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/recompensas_b.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #ae1111 solid;
+}
+
+.w17_STC_selectorInteres4select{
+	width:49px;
+	height:50px;
+	background-image:url('../imagenes/recompensas_r.png');
+	float:left;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px #f4f4f4 solid;
+	background-color:#f4f4f4;
+}
+
+
+#cardsstc{
+	width: 450px;
+	height: 190px;
+	/*background: green;*/
+	margin-top: 30px;
+	margin-left: 10px;
+	float: left;
+
+}
+
+.tarrecstc{
+	width: 518px;
+	/*width: 495px;*/
+	height: 260px;
+	/*margin-left:10px;*/
+	float: left;
+	background:#f4f4f4;
+}	
+.cardstc{
+	width: 70px;
+	height: 40px;
+	margin-bottom:32px;
+	/*margin-right: 26px;*/
+	/*float: left;*/
+}
+#concardstc{
+	width: 390px;
+	height: 190px;
+	/*background:pink;*/
+	margin: 0 auto;
+	overflow:hidden;
+}
+#concardstc ul{
+	margin: 0;
+	padding: 0;
+
+}
+#concardstc ul li{
+	/*background: red;*/
+	list-style: none;
+	width: 73px;
+    height: 40px;
+    float: left;
+    margin-left: 12px;
+    margin-right: 10px;
+    margin-top: 8px;
+    margin-bottom: 13px;
+    cursor: pointer;
+    box-shadow:  4px 4px 4px silver;
+}
+#concardstc ul li:hover{
+	opacity: 0.7;
+}
+#concardstc ul .ll:after{
+	content: "....";
+	background:url("../imagenes/check.png")no-repeat;
+	color: transparent;
+	position: relative;
+	bottom: 48px;
+	float: right;
+	left: 5px;
+	
+}
+#cpcard ul .ll:after{
+	content: "....";
+	background:url("../imagenes/close.png")no-repeat;
+	color: transparent;
+	position: relative;
+	bottom: 40px;
+	float: right;
+	left: 5px;
+	cursor: pointer;
+}
+#infocardstc{
+	width: 240px;
+	height: 260px;
+	float: right;
+	background: #fff;
+}
+.cardselectstc{
+	width: 130px;
+	height: 70px;
+	margin-top: 2px;
+	margin-left: 56px;
+	background: url("../imagenes/tarjeta130_1.png");
+}
+
+.iconostc{
+	width:37px;
+	height:57px;
+	margin-left: 15px;
+	margin-top: 15px;
+	background: url("../imagenes/frewards.png");
+	/*position: absolute;
+	left: 502px;
+	top: 112px;*/
+}
+.iconostc.othericonstc{
+	/*border:solid;*/
+	display: none;
+}
+#iconostc{
+	
+	margin-left: 35px;
+	margin-top: -20px;
+	float: left;
+}
+.frcts span{
+	float: right;
+	margin-right: 30px;
+	margin-top: -40px;
+	font-size: 18px;
+}
+
+.descriptionstc span{
+	font-size: 14px;
+	margin-right: 10px;
+	margin-top: 15px;
+	width: 90%;
+	color:#202020;
+}
+.colcardstc{
+	width:19%; 
+	float:left;
+	margin-left:31px;
+}
+.colcardstc.colstc{
+	margin-left: 0px;
+	
+}
+#tarrecstc span{
+	font-size: 20px;
+	color: #202020;
+	margin-left: 20px;
+	position: relative;
+	top:15px;
+		
+}
+.tarReco{
+	font-size: 20px;
+	color: #202020;
+	margin-left: 20px;
+	position: relative;
+	top:15px;
+}
+.tarrecstccards{
+	width: 400px;
+	height: 85px;
+	/*border:solid;*/
+	margin: 46px auto;
+	position: relative;
+} 
+#tarrecstctext{
+	width: 345px;
+	height: 74px;
+	float: right;
+	margin-top: -35px;
+	margin-right: 45px;
+}
+#tarrecstctext span{
+	margin: 0;
+	position: inherit;
+}
+#tarrecstctext p{
+	margin: 0;
+	font-size: 14px;
+	color: #202020;
+}
+.concardstarrec, #concardstarrec, #concardstarrectwo{
+	width: 338px;
+	height: 80px;
+	border: solid 1px silver;
+	margin: 0 auto;
+	/*background: url("../imagenes/cards.png");*/
+	overflow:hidden;
+	position: relative;
+	border-radius: 2px;
+	box-shadow: 0px 5px 8px 0px #333;
+}
+.tarrecstccards .beftarscts{
+	margin-left:9px;
+
+}
+#tarrecinfostc{
+	width: 180px;
+	height: 260px;
+	/*border: solid;*/
+	float: left;
+	margin-left: 10px;
+	background:#f4f4f4;
+}
+#tarrecinfostc div{
+	width: 160px;
+	/*border: solid;*/
+	margin: 10px auto;
+}
+#tarrecinfostc select{
+	width: 100%;
+	margin: 0;
+	margin-top: 10px;
+	padding: 5px;
+	border-radius: 2px;
+	border: solid 1px silver;
+}
+#tarrecinfostc select option{
+	color:#333;
+}
+#tarrecinfostc input[type=radio]{
+	margin-top: 20px;
+
+}
+.mkstc{
+	background-image: -webkit-linear-gradient(top,#fff,#e0dede);
+	position:relative;
+}
+.pr{
+	width: 169px;
+	height: 80px;
+	color:#fff;
+	font-weight: bold;
+	font-size: 40px;
+	/*border:solid 1px #000;*/
+}
+.concardstarrec ul{
+	margin: 0;
+	padding: 0;
+	/*border:solid;*/
+	width: 1100px;
+}
+#concardstarrec ul{
+	margin: 0;
+	padding: 0;
+	/*border:solid;*/
+	width: 1100px;
+
+}
+#concardstarrectwo ul{
+	margin: 0;
+	padding: 0;
+	/*border:solid;*/
+	width: 1100px;
+}
+.concardstarrec ul li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	position: relative;
+}
+#concardstarrec ul li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	position: relative;
+
+}
+#concardstarrectwo ul li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	position: relative;
+}
+.colcardstc img{
+	cursor: pointer;
+
+}
+.cardstc:before{
+	/*border-top: 10px solid red;
+	border-left: 10px solid blue;
+	border-right: 10px solid green;
+	border-bottom: 10px solid black;*/
+	content: "xx.";
+	position: relative;
+	top: 7px;
+	left: 10px;
+	color: transparent;
+	float: right;
+	background:url("../imagenes/check.png")no-repeat;
+	
+}
+#infocardstc ul{
+	margin: 0;
+	padding: 0;
+}
+#infocardstc  ul li{
+	list-style: none;
+	
+}
+#cpcard ul{
+	
+	margin-top: -15px;
+}
+#cpcard ul li{
+	/*margin-top: 50px;*/
+	margin-top: 45px;
+}
+.sometextcardstc{
+	float:right;
+	width:70%;
+	line-height: 11px;
+	display: none;
+	font-size: 11px;
+
+}
+.sometextcardstc p{
+	margin-top: 0px;
+	margin-bottom:5px;
+}
+#cpcard ul li .sometextcardstc{
+display: inline-block;
+margin-left: 5px;
+margin-top: -30px;
+}
+#cpcard ul li img{
+	width: 53px;/*45*/
+	height: 30px;/*25*/	
+}
+/********************************************************************************/
+.allcolsstc{
+	
+	float: ;
+	width:auto;
+	margin: 0 auto;
+	margin-top: 30px;
+	float: left;
+	margin-left: 60px;
+}
+.columnasstc{
+	float: left;
+	width: 185px;
+	height: 270px;
+	background: #fff;
+	box-shadow: 2px 2px 7px #666;
+	border-radius: 5px;
+}
+.dif{
+	margin-left: 17px;
+	margin-right: 17px;	
+}
+
+.tstc{
+	font-size: 20px;
+}
+.titstc{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.prea{
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 110px;
+	height: 60px;
+	background: url("../imagenes/preautcard.png");
+
+}
+.rew{
+	margin-left: 10px;
+}
+.partyrew span{
+	margin-right: 10px;
+}
+
+.textpreaut span{
+	font-size: 11px;
+}
+.partyrew input{
+	margin-top: 15px;
+	margin-left: 12px;
+	width: 160px;
+	height: 30px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px silver;
+	font-weight: bold;
+	font-size: 12px;
+	text-align:center;
+}
+.modalstc{
+	/*#e0dede;*/
+	width: 360px;
+	height: 170px;
+	background:#fff;
+
+}
+.barrastc{
+	
+	background:#49a225;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 200px;
+	height: 15px;
+
+}
+.flecha{
+	background: url("../imagenes/Flecha.png") no-repeat;
+	margin: 0 auto;
+	margin-top: 0px;
+	width: 69px;
+	height: 65px;
+}
+.textostc{
+	color: #333;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+	text-align: center;
+	height: 40px;
+	width: auto;
+}
+
+.frewardsstca{
+	background: #fff;
+	width: 235px;
+	height: 115px;
+	float: right;
+	margin-top: 25px;
+}
+.cardsadi{
+	border:none;
+	float: left;
+	margin-left: 20px;
+
+}
+.adi{
+	background:inherit;
+	/*border: solid blue 1px;*/
+	width: auto;
+	margin: 0 auto;
+	margin-top: -20px;
+
+}
+.friconstc{
+	background: url("../imagenes/frewards.png");
+	background-size: 25px;
+	height: 35px;
+	width: 22px;
+	float: left;
+	margin-left: 25px;
+	margin-top: 20px;
+}
+.contfre{
+	
+	float: left;
+}
+.frewardsstca span{
+	float: left;
+	font-size: 15px;
+	font-weight: bold;
+	color: #202020;
+	margin-top: 20px;
+	margin-left: 30px;
+
+}
+ .txtad{
+	font-size: 11px;
+	margin-left: 25px;
+	margin-top: 70px;
+	text-align: left;
+	
+}
+.mistdcad{
+	
+	height: 50px;
+	width: 473px;
+	float: left;
+
+}
+.mistdcad span{
+	
+	float: left;
+	margin-top: 10px;
+	font-weight: bold;
+}
+.tdcad{
+	/*border: solid 1px green;*/
+	/*height: 50px;
+	width: 70px;*/
+	height: 38px;
+	width: 72px;
+	float: right;
+	margin-left: 6px;
+	cursor: pointer;
+}
+.tdcadform{
+	background: #f4f4f4;
+	height: 184px;
+	width: 530px;
+	float: left;
+	margin-left: 10px;
+	padding-left: 5px
+
+}
+.tdcadform input{
+	display: block;
+	width: 150%;
+	border: none;
+	margin-top: 10px;
+	box-shadow: 0px 0px 1px #666;
+	border-radius: 3px;
+
+}
+.tdcadform label{
+	margin-top: 2px;
+	display: block;	
+	font-weight: bold;
+	color: #333;
+}
+.ldctdcad{
+	background: #f4f4f4;
+	float: right;
+	height: 184px;
+	width: 22%;
+
+}
+.ldctdcad input{
+	width: 138px;	
+}
+.cardad{
+	background: url(../imagenes/tarjeta73_4.png);
+	background-size: 60px;
+	width: 60px;
+	height: 35px;
+	margin: 10px 0px 0px 10px;
+}
+.lcdstcad {
+	font-weight: bold;
+	margin-left: 10px;
+	margin-top:10px;
+	font-size: 11px;
+}
+.rangealc{
+	
+	height: 105px;
+	width: 605px;
+	float: left;
+	background: #f4f4f4;
+	margin-top: -10px;
+}
+/*.rangealc >div:nth-of-type(1){
+	margin-top: 8px;
+	margin-left: 20px;
+}*/
+.instrucrange{
+	margin-top: 8px;
+	margin-left: 20px;
+}
+.progress{
+	float: left;
+}
+.range, progress{
+	/*-webkit-appearance: none !important;
+	width: 200px;
+	margin-left: 60px;
+	margin-top: 25px;
+	height: 20px;*/
+
+}
+.formalc{
+	float: left;
+	
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.formalc input{
+	display: block;
+}
+.text1alc{
+	
+	width: 290px;
+	height: 105px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 3px;
+}
+.tips span{
+	font-weight: bold;
+
+}
+.text1alc p{
+	margin-top:10px;
+
+
+}
+.xlsexporttdc{
+	background: #fff;
+	height: 45px;
+	width: 95px;
+	float: right;
+	margin-top: 150px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.exxlsicon{
+	background: #fff url(../imagenes/Exportar.png)no-repeat;
+	height: 20px;
+	width: 20px;
+	margin: 2px;
+}
+.xlsexporttdc .txticon{
+	float: right;
+	width: 50px;
+	margin: 5px;
+	font-weight: bold;
+	margin-right: 10px;
+	margin-top: -17px;
+}
+.csconfirm{
+	
+	height: 270px;
+	width: 370px;
+}
+.percardstc{
+	background: #fff;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	height: 80px;
+	width: 350px;
+	
+}
+.crdpertext{
+	float: left;
+	position: relative;
+	top: -60px;
+	left: 150px;
+	width: 200px;
+}
+.formcheckstc{
+	background: #efefef;
+	float: left;
+	margin-left: 10px;
+	margin-top: 15px;
+	height: 160px;
+	width: 350px;
+}
+.bt{
+	width: 150px;
+	margin-top: 18px;
+	margin-left: 13px;
+}
+.cardper{
+	border:solid 1px silver; 
+	margin: 15px;
+	height: 50px;
+	width: 115px;
+}
+input[type=file]{
+	margin-top: 10px;
+}
+.cardper{
+	height: 45px;
+	width: 73px;
+	background: url(../imagenes/tarjeta73_8.png);
+	/*background-size: 130px;*/
+}
+.infopermod{
+	background:url(../imagenes/infoslct.png);
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	left: 200px;
+	bottom: 81px;
+	cursor:pointer;
+}
+.msgper{
+	height: 62px;
+	width: 150px;
+	position: absolute;
+	top: 112px;
+	left: 67px;
+	background: #fff;
+	box-shadow: 2px 2px 4px #333;
+	display: none;
+}
+.tex{
+	height: 50px;
+	width: 130px;
+	margin-left: 8px;
+	margin-top: 3px;
+	font-size: 12px;
+
+}
+.radsetjr{
+	background: red;
+	width:10px;
+	height:10px; 
+	border:solid 1px; 
+	border-radius:50%;;
+}
+.rangehtml{
+border: solid;
+width: 128px;
+margin-top: 16px;
+margin-left: 80px;
+height: 20px;
+background: firebrick;
+border: none;
+border-radius: 5px;
+
+}
+.tableStep2{
+	margin-left: 84px;
+	width: 500px;
+}
+.allinputsStc{
+	border: solid 1px silver;
+	margin-top: 10px;
+	padding: 5px;
+	text-align:right;
+}
+/***********************************************************************/
