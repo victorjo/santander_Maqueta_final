@@ -1,0 +1,880 @@
+@import url("../../../../css/bloqueo.css");
+@import url("../../../../css/steps.css");
+@import url("../../../../css/generally.css");
+@import url("../../../../css/componentes.css");
+
+
+.switchLabel, .switchLabelR{
+	color:#e0dede !important;
+}
+
+.switchBox{
+	margin:0;
+	float:left;
+}
+.contenidoFlujo{
+	border:none !important;
+	width:735px !important;
+	height:480px !important;
+}
+
+.wra_flu1>.btnaceptar{
+	float:right;
+	width:160px;
+}
+
+
+.w12_PS_cardList{
+	color: #626262;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	width: 100%;
+	height: auto;
+	border-top: none;
+	float:left;
+	border-collapse: separate;
+	border-spacing: 0px 10px;
+}
+
+
+.w12_PS_cardList img{
+	margin-left:25px;
+}
+
+
+.w12_PS_cardList td{
+	height:30px;
+}
+
+.w12_PS_cardList tr{
+	background-color:#ffffff;
+}
+
+.w12_PS_cardList tr:hover{
+	background-color:#cccccc;
+	cursor: pointer;	
+}	
+
+.w12_PS_cardList td:first-of-type{
+	width:125px;
+	padding-left:15px;
+}
+.w12_PS_cardList td:nth-of-type(2){
+	width:130px;
+	padding-left:15px;
+}
+
+.w12_PS_cardList td:nth-of-type(3),.w12_PS_cardList td:nth-of-type(4) {
+	padding-left:10px;
+	width:105px;
+}
+
+
+.w12_PS_cardList td:nth-of-type(5),.w12_PS_cardList td:nth-of-type(6),.w10_PS_cardList td:nth-of-type(7){
+	padding-left:10px;
+	width:103px;
+}
+
+.w12_PS_headerTabla{
+	width:100%;
+	float:left;
+	text-align:left;
+	margin-top: 10px;
+	height: 30px;
+	color:#282828;
+	font-size:11px;
+	font-weight:bold;
+}
+
+.w12_PS_headerTabla td:first-of-type{
+	width:132px;
+	padding-left:13px;
+}
+
+.w12_PS_headerTabla td:nth-of-type(2){
+	width: 132px;
+}
+
+.w12_PS_headerTabla td:nth-of-type(3){
+	width:108px;
+}
+
+.w12_PS_headerTabla td:nth-of-type(4){
+	width:104px;
+}
+
+.w12_PS_headerTabla td:nth-of-type(5){
+	width:124px;
+	padding-left:5px;
+}
+
+.w12_ABTT_ayuda{
+	position:absolute;
+	bottom:0;
+	left:8px;
+}
+
+.w12_ABTT_ayuda p{
+	color: #282828;
+	font-family: 'ArialBlack';
+	font-size: 11px;
+	position: absolute;
+	left: 12px;
+	bottom: 185px;
+}
+
+.step1, .step2, .step3{
+	display:none;
+}
+.wra_flu2>.btnaceptar {
+float: right;
+width: 160px;
+}
+
+.w12_ABTT_wraFormulario{
+	width:100%;
+	background-color: #efefef;
+	height:190px;
+	float:left;
+	margin:10px 0 0 5px;
+	color:#282828;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.w12_ABTT_wraFormulario{
+	margin-left:5px;
+	float:left;
+}
+
+
+.w12_ABTT_wraFormulario p{
+	color:#282828;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	float:left;
+	font-weight:bold;
+	margin-top:5px;
+}
+
+.w12_ABTT_wraFormulario div{
+	float:left;
+	width: 370px;
+}
+
+.w12_ABTT_input{
+	background-color: #FCFCFC;
+	border: 1px solid #C8C8C8;
+	box-shadow: 1px 1px 5px #C6C6C6 inset;
+	color: #C8C8C8;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	font-style: italic;
+	height: 28px;
+	margin: 8px 0 0 5px;
+	width: 218px;
+	float:left;
+	padding:0 0 0 10px;
+	border-radius: 5px;
+}
+
+.w12_ABTT_inputBloqueado{
+	background-color: #D6D2D2;
+	border: 1px solid #D6D2D2;
+	color: #989898;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	font-style: italic;
+	height: 28px;
+	margin: 8px 0 0 5px;
+	width: 218px;
+	float:left;
+	padding:0 0 0 10px;
+	border-radius: 5px;
+}
+
+.w12_ABTT_wraFormulario>p {
+	width: 100%;
+	margin:5px 0 10px 10px;
+	font-weight: normal !important;
+}
+
+.w12_ABTT_wraFormulario div{
+	width:240px;
+	height:auto;
+	float:left;
+	margin-left: 5px;
+}
+
+.w12_ABTT_wraFormulario div>p{
+	width:100%;
+	font-weight: bold;
+	margin-left:5px;
+}
+
+/*--- Estilo para algun espacio necesario---*/
+.w12_ABTT_tablaPaso2 table{
+	height: 268px;
+	width: 376px;
+}
+
+.linkEditar{
+	color:#ff0000 !important;
+	text-decoration: none;
+}
+
+.w12_RRE_case{
+	float:left;
+	margin:10px 0 0 45px;
+}
+
+.w12_RRE_case p{
+	width:250px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#282828;
+	font-weight:bold;
+	margin:7px 10px 010px;
+}
+
+.w12_RRE_case p:first-of-type{
+	text-align: right;
+	width:200px;
+}
+
+
+
+
+.w12_RRE_cardListSelect{
+	background-color: #cccccc !important;
+}
+
+.w12_RRE_cardList{
+	color: #626262;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	width: 100%;
+	height: auto;
+	border-top: none;
+	float:left;
+	border-collapse: separate;
+	border-spacing: 0px 10px;
+}
+
+
+
+.w12_RRE_cardList td{
+	height:30px;
+}
+
+.w12_RRE_cardList tr{
+	background-color:#ffffff;
+}
+
+.w12_RRE_cardList tr:hover{
+	background-color:#cccccc;
+	cursor: pointer;	
+}	
+
+.w12_RRE_cardList td:first-of-type{
+	width:50px;
+	padding-left:15px;
+}
+.w12_RRE_cardList td:nth-of-type(2){
+	width:130px;
+	padding-left:15px;
+}
+
+.w12_RRE_cardList td:nth-of-type(3),.w12_RRE_cardList td:nth-of-type(4) {
+	padding-left:10px;
+	width:105px;
+}
+
+.w12_RRE_cuadroTarjeta{
+	width: 100%;
+	height:220px; 
+	overflow:scroll; 
+	overflow-x: hidden;
+	float: left;	
+}
+
+.w12_RRE_consulta{
+	width:100%;
+	float:left;
+	text-align:left;
+	margin-top: 5px;
+	height: 30px;
+	color:#282828;
+	font-size:11px;
+	font-weight:bold;
+}
+
+.w12_radiobtn {
+width: 18px;
+height: 18px;
+border: 1px #ff0000 solid;
+float: left;
+border-radius: 10px;
+cursor: pointer;
+margin-left: 8px;
+}
+
+.w12_radiobtn_select {
+background-image: url(../img/Indicador.png);
+background-repeat: no-repeat;
+background-position: center center;
+width: 18px;
+height: 18px;
+border: 1px #ff0000 solid;
+float: left;
+border-radius: 10px;
+}
+
+.w12_RRE_consulta td:first-of-type{
+width:113px;
+}
+
+.w12_RRE_consulta td:nth-of-type(2){
+width:224px;
+}
+
+.w12_RRE_consulta td:nth-of-type(3){
+width:179px;
+}
+
+.w12_radiobtn img{
+	display:none;
+	margin:7px 0 0 7px;
+}
+
+.switchSlide{
+	left:-78px;
+}
+
+.w12_RRE_extravio{
+display:none;
+}
+
+
+.w12_RRE_consultaExtravio td:first-of-type{
+width:74px;	
+}
+
+.w12_RRE_consultaExtravio td:nth-of-type(2){
+width:137px;
+}
+
+.w12_RRE_consultaExtravio td:nth-of-type(3){
+width:102px;
+}
+
+.w12_RRE_consultaExtravio td:nth-of-type(4){
+width:295px;
+}
+
+
+
+
+.w12_RRE_cardListExtravioSelect{
+	background-color: #cccccc !important;
+}
+.w12_RRE_cardListExtravio{
+	color: #626262;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	width: 100%;
+	height: auto;
+	border-top: none;
+	float:left;
+	border-collapse: separate;
+	border-spacing: 0px 10px;
+}
+
+
+
+.w12_RRE_cardListExtravio td{
+	height:30px;
+}
+
+.w12_RRE_cardListExtravio tr{
+	background-color:#ffffff;
+}
+
+.w12_RRE_cardListExtravio tr:hover{
+	background-color:#cccccc;
+	cursor: pointer;	
+}	
+
+.w12_RRE_cardListExtravio td:first-of-type{
+	width:50px;
+	padding-left:15px;
+}
+.w12_RRE_cardListExtravio td:nth-of-type(2){
+	width:130px;
+	padding-left:15px;
+}
+
+.w12_RRE_cardListExtravio td:nth-of-type(3),.w12_RRE_cardList td:nth-of-type(4) {
+	padding-left:10px;
+	width:105px;
+}
+
+.w12_RRE_cuadroTarjetaExtravio{
+	width: 100%;
+	height:220px; 
+	overflow:scroll; 
+	overflow-x: hidden;
+	float: left;	
+}
+
+.w12_RRE_consultaExtravio{
+	width:100%;
+	float:left;
+	text-align:left;
+	margin-top: 5px;
+	height: 30px;
+	color:#282828;
+	font-size:11px;
+	font-weight:bold;
+}
+
+.robo{
+	display:none;
+}
+
+.extravio{
+	display:none;
+}
+
+.robo3{
+	display:none;
+}
+
+.extravio3{
+	display:none;
+}
+
+.tableStep3{
+	height:auto;
+}
+
+
+
+
+
+/*registro-cambio de NIP*/
+
+.w12_NIP_case{
+	float:left;
+	margin:10px 0 0 45px;
+}
+
+.w12_NIP_case p{
+	width:250px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#282828;
+	font-weight:bold;
+	margin:7px 10px 010px;
+}
+
+.w12_NIP_case p:first-of-type{
+	text-align: right;
+	width:210px;
+}
+
+
+.w12_NIP_input{
+	background-color: #FCFCFC;
+	border: 1px solid #C8C8C8;
+	box-shadow: 1px 1px 5px #C6C6C6 inset;
+	color: #C8C8C8;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	font-style: italic;
+	height: 28px;
+	margin: 8px 0 10px 5px;
+	width: 318px;
+	float:left;
+	padding:0 0 0 10px;
+	border-radius: 5px;
+}
+
+.w12_NIP_inputBloqueado{
+	background-color: #D6D2D2;
+	border: 1px solid #D6D2D2;
+	color: #989898;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	font-style: italic;
+	height: 28px;
+	margin: 8px 0 10px 5px;
+	width: 318px;
+	float:left;
+	padding:0 0 0 10px;
+	border-radius: 5px;
+}
+
+.w12_NIP_cambio{
+	display:none;
+}
+
+.w12_NIP_inputRegistro p{	
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color:#282828;
+	margin-left:5px;
+	width:100%;
+	float:left;
+}
+
+.w12_NIP_inputRegistro>div{	
+	float:left;
+	width:360px;
+}
+
+.w12_NIP_wra_Select{
+	float:left;
+	margin:5px 0 10px 0;
+	width:500px;
+}
+
+.cambio2{
+	display:none;
+}
+
+.registro2{
+	display:none;
+}
+
+.cambio3{
+	display:none;
+}
+
+.registro3{
+	display:none;
+}
+
+.alta2{
+	display:none;
+}
+
+.baja2{
+	display:none;
+}
+
+.alta3{
+	display:none;
+}
+
+.baja3{
+	display:none;
+}
+
+.w12_ATC_wra_Select{
+	margin:10px 0 0 10px;
+	float:left;
+}
+
+.w12_ATC_input{
+	background-color: #FCFCFC;
+	border: 1px solid #C8C8C8;
+	box-shadow: 1px 1px 5px #C6C6C6 inset;
+	color: #C8C8C8;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	font-style: italic;
+	height: 25px;
+	margin: 0 0 0 5px;
+	float:left;
+	padding:0 10px 0 0;
+	border-radius: 5px;
+	width:128px;
+	text-align:right;
+}
+
+
+
+.w12_ATC_cardList{
+	color: #626262;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	width: 100%;
+	height: auto;
+	border-top: none;
+	float:left;
+	border-collapse: separate;
+	border-spacing: 0px 10px;
+}
+
+
+
+.w12_ATC_cardList td{
+	height:30px;
+	padding-left: 10px;
+}
+
+.w12_ATC_cardList tr{
+	background-color:#ffffff;
+}
+
+.w12_ATC_cardList tr:hover{
+	background-color:#cccccc;
+	cursor: pointer;	
+}	
+
+.w12_ATC_cardList td:first-of-type{
+	width:150px;
+}
+
+.w12_ATC_cardList td:nth-of-type(2){
+	width:100px;
+}
+
+.w12_ATC_cardList td:nth-of-type(3){
+	width:150px;
+}
+
+.w12_ATC_cardList td:nth-of-type(4){
+	width:250px;
+	text-align: center;
+}
+
+.w12_ATC_cardList td:nth-of-type(5){
+	width:50px;
+}
+
+.w12_ATC_cuadroTarjeta{
+	width: 100%;
+	height:310px; 
+	overflow:scroll; 
+	overflow-x: hidden;
+	float: left;	
+}
+
+.w12_ATC_consulta{
+	width:100%;
+	float:left;
+	text-align:left;
+	margin-top: 5px;
+	height: 30px;
+	color:#282828;
+	font-size:11px;
+	font-weight:bold;
+}
+
+.w12_ATC_consulta td{
+	padding-left: 7px;
+}
+.w12_ATC_consulta td:nth-of-type(1){
+	width:135px;
+}
+.w12_ATC_consulta td:nth-of-type(2){
+	width:108px;
+}
+.w12_ATC_consulta td:nth-of-type(3){
+	width:203px;
+}
+.wra_flu4>.tableStep2 {
+font-size: 12px;
+float: left;
+margin-left: 80px;
+margin-top: 15px;
+height: 280px;
+}
+
+.wra_flu4>.tableStep2 td:nth-of-type(3){ 
+	text-align: right;
+}
+
+.wra_flu4>.tableStep2 td:nth-of-type(4){
+	text-align: center;
+	width:200px;
+}
+
+.wra_flu4>.tableStep3 {
+font-size: 12px;
+height: 340px;
+margin-left: 21px;
+margin-top: 55px;
+width: 441px;
+}
+
+
+/*Reposicion, desbloqueo tarjeta de credito*/
+
+
+.w12_DRT_consultaRobo{
+	width:100%;
+	float:left;
+	text-align:left;
+	margin-top: 5px;
+	height: 30px;
+	color:#282828;
+	font-size:11px;
+	font-weight:bold;
+}
+
+.w12_DRT_consultaRobo td:first-of-type{
+width:74px;	
+}
+
+.w12_DRT_consultaRobo td:nth-of-type(2){
+width:129px;
+}
+
+.w12_DRT_consultaRobo td:nth-of-type(3){
+width:126px;
+}
+
+.w12_DRT_consultaRobo td:nth-of-type(4){
+width:285px;
+}
+
+.w12_DRT_cuadroTarjetaRobo{
+	width: 100%;
+	height:220px; 
+	overflow:scroll; 
+	overflow-x: hidden;
+	float: left;	
+}
+
+
+.w12_DRT_cardListRoboSelect{
+	background-color: #cccccc !important;
+}
+.w12_DRT_cardListRobo{
+	color: #626262;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	width: 100%;
+	height: auto;
+	border-top: none;
+	float:left;
+	border-collapse: separate;
+	border-spacing: 0px 10px;
+}
+
+
+
+.w12_DRT_cardListRobo td{
+	height:30px;
+}
+
+.w12_DRT_cardListRobo tr{
+	background-color:#ffffff;
+}
+
+.w12_DRT_cardListRobo tr:hover{
+	background-color:#cccccc;
+	cursor: pointer;	
+}	
+
+.w12_DRT_cardListRobo td:first-of-type{
+	width:50px;
+	padding-left:15px;
+}
+.w12_DRT_cardListRobo td:nth-of-type(2){
+	width:120px;
+	padding-left:15px;
+}
+
+.w12_DRT_cardListRobo td:nth-of-type(3){
+	padding-left:10px;
+	width:130px;
+}
+.w12_DRT_cardListRobo td:nth-of-type(4){
+	width:250px;
+}
+
+.w12_DRT_wra_Select{
+	float:left;
+	margin:10px 0 0 0 ;
+}
+
+.w12_DRT_wra_Select2{
+	float:left;
+	margin:10px 0 0 0 ;
+}
+
+.reposicionRobo>div:nth-of-type(2){
+	width:400px;
+	float:left;
+	color:#282828;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+
+}
+
+.express{
+	width:300px;
+	float:left;
+	margin:25px 0 0 10px;
+	color:#282828;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.reposicionExtravio{
+	display:none;
+}
+
+.domicilio{
+	width:300px;
+	float:left;
+	margin:25px 0 0 10px;
+	color:#282828;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	display:none;
+}
+
+.domicilio p:nth-of-type(2){
+	color:#ff0000;
+}
+
+.ubicacion{
+	width:300px;
+	float:left;
+	margin:25px 0 0 10px;
+	color:#282828;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	display:none;
+}
+
+.reposicionExtravio{
+	display:none;
+}
+
+.reposicionExtravio>div:nth-of-type(2){
+	width:400px;
+	float:left;
+	color:#282828;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+
+}
+
+.desbloqueo{
+	display:none;
+}
+

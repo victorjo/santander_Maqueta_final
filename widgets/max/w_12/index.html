@@ -1,0 +1,1157 @@
+
+	  <script src="../js/components.js"></script>
+	  <script src="../js/ddSlick.js"></script>
+	  <script src="widgets/max/w_12/js/w_12.js"></script>
+	  <link rel="stylesheet" href="widgets/max/w_12/css/w_12.css" />
+		<script>
+			ocultaAsset();
+		</script>
+
+
+		<div id="widampliado">
+			<!-- Bloqueo -->
+			<div id="bloqueoWidget" class="bloqueoElement"></div>
+			<div id="elementBloqueo" class="bloqueoElement">
+				
+			</div>
+			
+			<div id="WA_pasos">
+				<img src="../img/assets/pasos.png"/>
+				<div class="btnHeader info">
+					<img src="../img/assets/ico_info.png"  />
+				</div>
+				<div class="btnHeader cerrar">
+					<img src="../img/assets/ico_cerrar_widget.png" onclick="closeAction();" />
+				</div>
+			</div>
+			
+			<div id="WA_nav">
+				<ul>
+					<li class="menu">
+						<p>
+						<img src="../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
+					</li>
+					<li class="liActive" onclick="cambiaFlujo('.wra_flu1'); ocultaAsset(); ">
+						<p>Alta/baja de<br/>Tarjetas de Terceros</p>
+					</li>
+					<li onclick="cambiaFlujo('.wra_flu2');muestraAsset();cambiaPaso(1);">
+						<p>Reporte por<br/>Robo o Extravío</p>
+					</li>
+					<li onclick="cambiaFlujo('.wra_flu3');muestraAsset();cambiaPaso(1);">
+						<p>Registro / Cambio de<br/>NIP de Tarjeta</p>
+					</li>
+					<li onclick="cambiaFlujo('.wra_flu4');muestraAsset();cambiaPaso(1);">
+						<p>Administración de<br/>uso de Tarjetas</p>
+					</li>
+					<li onclick="cambiaFlujo('.wra_flu5');muestraAsset();cambiaPaso(1);">
+						<p>Desbloqueo/Reposición<br/>de tarjeta(s)</p>
+					</li>
+				</ul>
+			</div>
+			<div id="WA_contenedorFlujos">
+				<div class="contenidoFlujo">
+					<div class="wra_flu1 flujo"> <!--Alta y baja de Tarjetas de Terceros-->
+						<div class="step step0">
+							<div class="titFlujo">
+								<div class="iconFlujo">
+									<img src="widgets/max/w_12/img/tarjeta.png" />
+								</div>
+								<p class="titulo">Alta/Baja de tarjetas de terceros</p>
+								<p class="subtitulo">En esta sección usted podrá registrar las tarjetas de terceros (Santander u otros bancos).</p>
+							</div>
+							<table class="w12_PS_headerTabla">
+								<tr>
+									<td>Número de tarjeta</td>
+									<td>Banco</td>
+									<td>Titular de la tarjeta</td>
+									<td>Alias</td>
+									<td>Correo del titular</td>
+									<td>Dar de baja</td>
+								</tr>
+							</table>
+							<div  class="w12_PS_listadoTarjeta">
+								<table class="w12_PS_cardList">
+								<!--onclick="cargaToken('switchModal();','switchModal();bajaTarjeta();',undefined,'');"-->
+									<tr>
+										<td>1234****5678</td>
+										<td>Nombre Banco</td>
+										<td>Nombre titular</td>
+										<td>Alias de cuenta</td>
+										<td>Correo@correo.com</td>
+										<td class="w_12_PS_baja"  onclick="step2baja(); cambiaPaso(2); cargaHtml('.w12_ABTT_tablaPaso2baja','../../../../tablas/w12/w12_ABTT_tblPaso2baja.html');"><img src="widgets/max/w_12/img/ico_cerrar_fila.png"/></td>
+									</tr>
+									<tr>
+										<td>1234****5678</td>
+										<td>Nombre Banco</td>
+										<td>Nombre titular</td>
+										<td>Alias de cuenta</td>
+										<td>Correo@correo.com</td>
+										<td class="w_12_PS_baja" onclick="step2baja(); cambiaPaso(2); cargaHtml('.w12_ABTT_tablaPaso2baja','../../../../tablas/w12/w12_ABTT_tblPaso2baja.html');"><img src="widgets/max/w_12/img/ico_cerrar_fila.png"/></td>
+									</tr>
+									<tr>
+										<td>1234****5678</td>
+										<td>Nombre Banco</td>
+										<td>Nombre titular</td>
+										<td>Alias de cuenta</td>
+										<td>Correo@correo.com</td>
+										<td class="w_12_PS_baja" onclick="step2baja(); cambiaPaso(2); cargaHtml('.w12_ABTT_tablaPaso2baja','../../../../tablas/w12/w12_ABTT_tblPaso2baja.html');"><img src="widgets/max/w_12/img/ico_cerrar_fila.png"/></td>
+									</tr>
+									<tr>
+										<td>1234****5678</td>
+										<td>Nombre Banco</td>
+										<td>Nombre titular</td>
+										<td>Alias de cuenta</td>
+										<td>Correo@correo.com</td>
+										<td class="w_12_PS_baja" onclick="step2baja(); cambiaPaso(2); cargaHtml('.w12_ABTT_tablaPaso2baja','../../../../tablas/w12/w12_ABTT_tblPaso2baja.html');"><img src="widgets/max/w_12/img/ico_cerrar_fila.png"/></td>
+									</tr>
+									<tr>
+										<td>1234****5678</td>
+										<td>Nombre Banco</td>
+										<td>Nombre titular</td>
+										<td>Alias de cuenta</td>
+										<td>Correo@correo.com</td>
+										<td class="w_12_PS_baja" onclick="step2baja(); cambiaPaso(2); cargaHtml('.w12_ABTT_tablaPaso2baja','../../../../tablas/w12/w12_ABTT_tblPaso2baja.html');"><img src="widgets/max/w_12/img/ico_cerrar_fila.png"/></td>
+									</tr>
+									<tr>
+										<td>1234****5678</td>
+										<td>Nombre Banco</td>
+										<td>Nombre titular</td>
+										<td>Alias de cuenta</td>
+										<td>Correo@correo.com</td>
+										<td class="w_12_PS_baja" onclick="step2baja(); cambiaPaso(2); cargaHtml('.w12_ABTT_tablaPaso2baja','../../../../tablas/w12/w12_ABTT_tblPaso2baja.html');"><img src="widgets/max/w_12/img/ico_cerrar_fila.png"/></td>
+									</tr>
+								</table>
+							</div>
+							<div class="botonera">
+								<div class="btnaceptar" onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(1); muestraAsset();">Agregar Tarjeta</div>
+							</div>
+						</div>
+
+						<div class="step step1">
+							<div class="titFlujo">
+								<div class="iconFlujo">
+									<img src="widgets/max/w_12/img/tarjeta.png" />
+								</div>
+								<p class="titulo">Alta de tarjetas de terceros</p>
+								<p class="subtitulo">En esta sección usted podrá dar de alta una tarjeta adicional</p>
+							</div>
+
+							<div class="w12_ABTT_wraFormulario">
+								<p>Ingrese los datos para dar de alta la(s) tarjetas:</p>
+								<div>
+									<p>Número de tarjeta</p>
+									<input class="w12_ABTT_input" type="text" value="1234****5678"/>
+								</div>
+								<div>
+									<p>Banco</p>
+									<input class="w12_ABTT_inputBloqueado" type="text" value="Nombre del banco" disabled/>
+									<div class="info"></div>					
+								</div>
+								<div>
+									<p>Alias</p>
+									<input class="w12_ABTT_input" type="text" value="Nombre alias"/>
+									<div class="info"></div>					
+								</div>
+								<div>
+									<p>Nombre del titular</p>
+									<input class="w12_ABTT_input" type="text" value="Nombre"/>
+									<div class="info"></div>					
+								</div>
+								<div>
+									<p>Correo electrónico del titular:</p>
+									<input class="w12_ABTT_input" type="text" value="correo@correo.com" />
+									<div class="info"></div>					
+								</div>
+								<div>
+									<p>RFC del titular de la tarjeta:</p>
+									<input class="w12_ABTT_input" type="text" value="ROMA000000ME0"/>
+									<div class="info"></div>					
+								</div>	
+							</div>
+
+							<div class="botonera">
+								<div class="btnaceptar" onclick="step2alta(); cambiaPaso(2); cargaHtml('.w12_ABTT_tablaPaso2','../../../../tablas/w12/w12_ABTT_tblPaso2alta.html');">Continuar</div>
+							</div>
+						</div>
+
+						<div class="step step2">
+
+							<div class="alta2">
+								<div class="col colFull">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="../../../../img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Datos de alta de tarjeta de crédito</p>
+										<p class="subtitulo">La operación se realizará con la siguiente información</p>
+									</div>
+									<div class="w12_ABTT_tablaPaso2"></div>
+								</div>
+								<div class="botonera">
+									<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Regresar</div>
+									<div class="btnaceptar" onclick="step3alta();cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.w12_ABTT_tablaPaso3','../../../../tablas/w12/w12_ABTT_tblPaso3.html'),'');">Confirmar</div>
+								</div>
+							</div>
+
+							<div class="baja2">
+								<div class="col colFull">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="../../../../img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Datos de baja de tarjeta de crédito</p>
+										<p class="subtitulo">La operación se realizará con la siguiente información</p>
+									</div>
+									<div class="w12_ABTT_tablaPaso2baja"></div>
+								</div>
+								<div class="botonera">
+									<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Regresar</div>
+									<div class="btnaceptar" onclick="step3baja();cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.w12_ABTT_tablaPaso3','../../../../tablas/w12/w12_ABTT_tblPaso3.html'),'');">Confirmar</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="step step3">
+							<div class="alta3">
+								<div class="col col2 resetMargen">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="../../../../img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Comprobante de Alta de tarjeta de crédito</p>
+									</div>
+									<div class="w12_ABTT_tablaPaso3">
+										
+									</div>
+								</div>
+								<div class="col col1 ">
+										<img src="img/assets/step3/anuncio.png" width="233" />
+										<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+										<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+										<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+										<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+									</div>
+								<div class="botonera">
+									<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Regresar</div>
+									<div class="btnaceptar" onclick="ocultaAsset();cambiaPaso(0);">Finalizar</div>
+								</div>
+							</div>
+							<div class="baja3">
+								<div class="col col2 resetMargen">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="../../../../img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Comprobante de baja de tarjeta de crédito</p>
+									</div>
+									<div class="w12_ABTT_tablaPaso3">
+										
+									</div>
+								</div>
+								<div class="col col1 ">
+										<img src="img/assets/step3/anuncio.png" width="233" />
+										<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+										<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+										<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+										<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+									</div>
+								<div class="botonera">
+									<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(0);">Regresar</div>
+									<div class="btnaceptar" onclick="ocultaAsset();cambiaPaso(0);">Finalizar</div>
+								</div>
+							</div>	
+						</div>							
+					</div><!--Fin Alta y baja de Tarjetas de Terceros-->
+
+					<div class="flujo wra_flu2">
+						<div class="step step1"><!--paso 1-->
+							<div class="titFlujo">
+								<div class="iconFlujo">
+									<img src="widgets/max/w_12/img/tarjeta.png" />
+								</div>
+								<p class="titulo">Reporte por robo o extravío</p>
+								<p class="subtitulo">Seleccione las tarjetas que desea reportar</p>
+							</div>
+							<div class="w12_RRE_case">
+								<p>Reporte por robo de tarjeta</p>
+								<div class="switchBox"></div>
+								<p>Reporte por extravío de tarjeta de tarjeta</p>
+							</div>
+
+							<div class="w12_RRE_robo">
+								<table class="w12_RRE_consulta">
+									<tr>
+										<td>&nbsp;</td>
+										<td>Número de cuenta</td>
+										<td>Alias de la cuenta</td>
+										<td>Correo del titular</td>													
+									</tr>
+								</table>
+								<div  class="w12_RRE_cuadroTarjeta">
+									<table class="w12_RRE_cardList">
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>5876 8987 3546 2145</td>
+											<td>Mamá</td>
+											<td>correo@correo.com</td>
+										</tr>
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>5876 8987 3546 2145</td>
+											<td>Mamá</td>
+											<td>correo@correo.com</td>
+										</tr>
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>5876 8987 3546 2145</td>
+											<td>Mamá</td>
+											<td>correo@correo.com</td>
+										</tr>
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>5876 8987 3546 2145</td>
+											<td>Mamá</td>
+											<td>correo@correo.com</td>
+										</tr>
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>5876 8987 3546 2145</td>
+											<td>Mamá</td>
+											<td>correo@correo.com</td>
+										</tr>
+									</table>
+								</div>
+								<div class="botonera">
+									<div class="btnaceptar" onclick="step2robo();cambiaPaso(2);$('.w12_ABTT_tablaPaso2robo').load('../../../../tablas/w12/w12_RRE_tblPaso2robo.html')">Continuar</div>
+								</div>
+							</div>
+
+							<div class="w12_RRE_extravio">
+								<table class="w12_RRE_consultaExtravio">
+									<tr>
+										<td>&nbsp;</td>
+										<td >Número de cuenta</td>
+										<td>Alias de la cuenta</td>
+										<td>Correo del titular</td>
+										<td>Estatus</td>													
+									</tr>
+								</table>
+								<div  class="w12_RRE_cuadroTarjetaExtravio">
+									<table class="w12_RRE_cardListExtravio">
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>1468 8764 2836 4648</td>
+											<td>Sobrino</td>
+											<td>correo@correo.com</td>
+											<td>Activa</td>
+										</tr>
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>1457 8942 6589 4589</td>
+											<td>Tía</td>
+											<td>correo@correo.com</td>
+											<td>Activa</td>
+										</tr>
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>5488 4456 8768 4983</td>
+											<td>Tío</td>
+											<td>correo@correo.com</td>
+											<td>Activa</td>
+										</tr>
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>5876 8987 3546 2145</td>
+											<td>Mamá</td>
+											<td>correo@correo.com</td>
+											<td>Activa</td>
+										</tr>
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>4563 8547 6589 1257</td>
+											<td>Papá</td>
+											<td>correo@correo.com</td>
+											<td>Activa</td>
+										</tr>
+									</table>
+								</div>
+								<div class="botonera">
+									<div class="btnaceptar" onclick="step2extravio();cambiaPaso(2);$('.w12_RRE_tablaPaso2extravio').load('../../../../tablas/w12/w12_RRE_tblPaso2extravio.html')">Continuar</div>
+								</div>
+							</div>
+						</div><!--Fin paso 1-->
+
+						<div class="step step2">
+							<div class="robo">
+								<div class="col colFull">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="../../../../img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Datos de reporte por robo</p>
+										<p class="subtitulo">Su reporte por robo se enviará con los siguientes datos, verificar que sean correctos.</p>
+									</div>
+									<div class="w12_ABTT_tablaPaso2robo"></div>
+									
+								</div>
+								<div class="botonera">
+									<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(1);">Regresar</div>
+									<div class="btnaceptar" onclick="step3robo();cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.w12_RRE_tablaPaso3robo','../../../../tablas/w12/w12_RRE_tblPaso3robo.html'),'');">Confirmar</div>
+								</div>
+							</div>
+
+							<div class="extravio">
+								<div class="col colFull">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="../../../../img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Datos de reporte por extravío</p>
+										<p class="subtitulo">Su reporte por extravío se enviará con los siguientes datos, verificar que sean correctos.</p>
+									</div>
+									
+									<div class="w12_RRE_tablaPaso2extravio"></div>
+								</div>
+								<div class="botonera">
+									<div class="btn" onclick="cambiaFlujo('.wra_flu2');cambiaPaso(1);">Regresar</div>
+									<div class="btnaceptar" onclick="step3extravio();cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.w12_RRE_tablaPaso3extravio','../../../../tablas/w12/w12_RRE_tblPaso3extravio.html'),'');">Confirmar</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="step step3">
+							<div class="robo3">
+								<div class="col col2 resetMargen">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="../../../../img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Comprobante de reporte por robo</p>
+									</div>
+									<div class="w12_RRE_tablaPaso3robo">
+										
+									</div>
+								</div>
+								<div class="col col1 ">
+										<img src="img/assets/step3/anuncio.png" width="233" />
+										<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+										<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+										<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+										<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+									</div>
+								<div class="botonera">
+									<div class="btnaceptar" onclick="cambiaPaso(1);">Finalizar</div>
+								</div>
+							</div>
+
+							<div class="extravio3">
+								<div class="col col2 resetMargen">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="../../../../img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Comprobante de reporte por extravío</p>
+									</div>
+									<div class="w12_RRE_tablaPaso3extravio">
+										
+									</div>
+								</div>
+								<div class="col col1 ">
+										<img src="img/assets/step3/anuncio.png" width="233" />
+										<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+										<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+										<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+										<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+									</div>
+								<div class="botonera">
+									<div class="btnaceptar" onclick="cambiaPaso(1);ocultaAsset();">Finalizar</div>
+								</div>
+							</div>
+						</div>						
+					</div>
+
+					<div class="flujo wra_flu3">
+						<div class="step step1"><!--paso 1-->
+							<div class="titFlujo">
+								<div class="iconFlujo">
+									<img src="widgets/max/w_12/img/tarjeta.png" />
+								</div>
+								<p class="titulo">Registro / cambio de NIP de tarjeta</p>
+								<p class="subtitulo">Para registrar o cambiar el NIP de cajero, seleccione la tarjeta que desea e ingrese la información solictada:</p>
+							</div>
+							<div class="w12_NIP_case">
+								<p>Registro de NIP de cajero de su tarjeta</p>
+								<div class="switchBox registro"></div>
+								<p>Cambio de NIP de cajero de su tarjeta</p>
+							</div>
+
+							<div class="w12_NIP_registro">
+
+								<div class="w12_NIP_wra_Select">
+									<select name="" id="" value="Recompensas Santander" ></select>
+								</div>
+
+								<div class="w12_NIP_inputRegistro">
+									<div>
+										<div>
+											<p>Ingrese su NIP de cajero</p>
+											<input class="w12_NIP_inputBloqueado" type="text" value="Nombre" disabled/>
+											<div class="info"></div>					
+										</div>
+										<div>
+											<p>Ingrese nuevo NIP de cajero</p>
+											<input class="w12_NIP_input" type="text" value="correo@correo.com" />
+											<div class="info"></div>					
+										</div>
+									</div>
+									<div>
+										<div>
+											<p>Ingrese su CVC2:</p>
+											<input class="w12_NIP_input" type="text" value="Nombre"/>
+											<div class="info"></div>					
+										</div>
+										<div>
+											<p>Confirme nuevo NIP de cajero:</p>
+											<input class="w12_NIP_input" type="text" value="correo@correo.com" />
+											<div class="info"></div>					
+										</div>
+									</div>
+								</div>
+
+								<div class="botonera">
+									<div class="btnaceptar" onclick="step2registro();cambiaPaso(2);$('.w12_NIP_tablaPaso2registro').load('../../../../tablas/w12/w12_NIP_tblPaso2registro.html')">Continuar</div>
+								</div>
+							</div>
+
+							<div class="w12_NIP_cambio">
+								<div class="w12_NIP_wra_Select">
+									<select name="" id="" value="Recompensas Santander" ></select>
+								</div>
+
+								<div class="w12_NIP_inputRegistro">
+									<div>
+										<div>
+											<p>Ingrese su NIP de cajero</p>
+											<input class="w12_NIP_input" type="text" value="Nombre"/>
+											<div class="info"></div>					
+										</div>
+										<div>
+											<p>Ingrese nuevo NIP de cajero</p>
+											<input class="w12_NIP_input" type="text" value="correo@correo.com" />
+											<div class="info"></div>					
+										</div>
+									</div>
+									<div>
+										<div>
+											<p>Ingrese su CVC2:</p>
+											<input class="w12_NIP_input" type="text" value="Nombre"/>
+											<div class="info"></div>					
+										</div>
+										<div>
+											<p>Confirme nuevo NIP de cajero:</p>
+											<input class="w12_NIP_input" type="text" value="correo@correo.com" />
+											<div class="info"></div>					
+										</div>
+									</div>
+								</div>
+
+								<div class="botonera">
+									<div class="btnaceptar" onclick="step2cambio();cambiaPaso(2);$('.w12_NIP_tablaPaso2cambio').load('../../../../tablas/w12/w12_NIP_tblPaso2cambio.html')">Continuar</div>
+								</div>
+							</div>
+
+						</div><!--Fin paso 1-->
+
+						<div class="step step2">
+							<div class="cambio2">
+								<div class="col colFull">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="../../../../img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Datos de cambio de NIP</p>
+										<p class="subtitulo">Su cambio de NIP se realizará con los siguientes daots:</p>
+									</div>
+									<div class="w12_NIP_tablaPaso2cambio"></div>
+									
+								</div>
+								<div class="botonera">
+									<div class="btn" onclick="cambiaFlujo('.wra_flu3');cambiaPaso(1);">Regresar</div>
+									<div class="btnaceptar" onclick="step3cambio();cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.w12_NIP_tablaPaso3cambio','../../../../tablas/w12/w12_NIP_tblPaso3cambio.html'),'');">Confirmar</div>
+								</div>
+							</div>
+
+							<div class="registro2">
+								<div class="col colFull">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="../../../../img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Datos de registro de NIP</p>
+										<p class="subtitulo">El registro de su NIP se realizará con los siguientes datos:</p>
+									</div>
+									
+									<div class="w12_NIP_tablaPaso2registro"></div>
+								</div>
+								<div class="botonera">
+									<div class="btn" onclick="cambiaFlujo('.wra_flu3');cambiaPaso(1);">Regresar</div>
+									<div class="btnaceptar" onclick="step3registro();cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.w12_NIP_tablaPaso3registro','../../../../tablas/w12/w12_NIP_tblPaso3registro.html'),'');">Confirmar</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="step step3">
+							<div class="cambio3">
+								<div class="col col2 resetMargen">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="../../../../img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Comprobante de cambio de NIP</p>
+									</div>
+									<div class="w12_NIP_tablaPaso3cambio">
+										
+									</div>
+								</div>
+								<div class="col col1 ">
+										<img src="img/assets/step3/anuncio.png" width="233" />
+										<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+										<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+										<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+										<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+									</div>
+								<div class="botonera">
+									<div class="btn" onclick="cambiaFlujo('.wra_flu3');cambiaPaso(1);">Deseo cambiar otro NIP</div>
+									<div class="btnaceptar" onclick="cambiaPaso(1);">Finalizar</div>
+								</div>
+							</div>
+
+							<div class="registro3">
+								<div class="col col2 resetMargen">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="../../../../img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Comprobante de registro de NIP</p>
+									</div>
+									<div class="w12_NIP_tablaPaso3registro">
+										
+									</div>
+								</div>
+								<div class="col col1 ">
+										<img src="img/assets/step3/anuncio.png" width="233" />
+										<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+										<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+										<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+										<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+									</div>
+								<div class="botonera">
+									<div class="btn" onclick="cambiaFlujo('.wra_flu3');cambiaPaso(1);">Deseo registrar otro NIP</div>
+									<div class="btnaceptar" onclick="cambiaPaso(1);ocultaAsset();">Finalizar</div>
+								</div>
+							</div>
+						</div>							
+					</div>
+						
+					<div class="flujo wra_flu4">
+						<div class="step step1"><!--paso 1-->
+							<div class="titFlujo">
+								<div class="iconFlujo">
+									<img src="widgets/max/w_12/img/tarjeta.png" />
+								</div>
+								<p class="titulo">Administración de tarjeta de crédito</p>
+								<p class="subtitulo">Seleccione una tarjeta e indique las operaciones que desea permitir o restringir</p>
+							</div>
+
+							<div class="w12_ATC_wra_Select">
+								<select name="" id="" value="Recompensas Santander" ></select>
+							</div>
+							
+							<table class="w12_ATC_consulta">
+								<tr>
+									<td>Concepto</td>
+									<td>Restringir</td>
+									<td>Monto máximo (MXN)</td>
+									<td>Periodo</td>
+									<td>&nbsp;</td>													
+								</tr>
+							</table>
+							<div  class="w12_ATC_cuadroTarjeta">
+								<table class="w12_ATC_cardList">
+									<tr>
+										<td>Uso en extranjero</td>
+										<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+										<td><input class="w12_ATC_input" type="text" value="1,000.00" /></td>
+										<td>01/01/2014 - 08/01/2014</td>
+										<td class="w12_calendario"><img src="../../../../img/iconos/calendario.png"/></td>
+									</tr>
+									<tr>
+										<td>Retiro en cajero</td>
+										<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+										<td><input class="w12_ATC_input" type="text" value="1,000.00" /></td>
+										<td>01/01/2014 - 08/01/2014</td>
+										<td class="w12_calendario"><img src="../../../../img/iconos/calendario.png"/></td>
+									</tr>
+									<tr>
+										<td>Compras por internet</td>
+										<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+										<td><input class="w12_ATC_input" type="text" value="1,000.00" /></td>
+										<td>01/01/2014 - 08/01/2014</td>
+										<td class="w12_calendario"><img src="../../../../img/iconos/calendario.png"/></td>
+									</tr>
+									<tr>
+										<td>Supermercado</td>
+										<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+										<td><input class="w12_ATC_input" type="text" value="1,000.00" /></td>
+										<td>01/01/2014 - 08/01/2014</td>
+										<td class="w12_calendario"><img src="../../../../img/iconos/calendario.png"/></td>
+									</tr>
+									<tr>
+										<td>Restaurantes</td>
+										<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+										<td><input class="w12_ATC_input" type="text" value="1,000.00" /></td>
+										<td>01/01/2014 - 08/01/2014</td>
+										<td class="w12_calendario"><img src="../../../../img/iconos/calendario.png"/></td>
+									</tr>
+									<tr>
+										<td>Bares</td>
+										<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+										<td><input class="w12_ATC_input" type="text" value="1,000.00" /></td>
+										<td>01/01/2014 - 08/01/2014</td>
+										<td class="w12_calendario"><img src="../../../../img/iconos/calendario.png"/></td>
+									</tr>
+									<tr>
+										<td>Entretenimiento</td>
+										<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+										<td><input class="w12_ATC_input" type="text" value="1,000.00" /></td>
+										<td>01/01/2014 - 08/01/2014</td>
+										<td class="w12_calendario"><img src="../../../../img/iconos/calendario.png"/></td>
+									</tr>
+								</table>
+							</div>
+							<div class="botonera">
+								<div class="btnaceptar" onclick="step2robo();cambiaPaso(2);$('.w12_ATC_tablaPaso2').load('../../../../tablas/w12/w12_ATC_tblPaso2.html')">Continuar</div>
+							</div>
+						</div><!--Fin paso 1-->	
+
+						<div class="step step2">
+							<div class="col colFull">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="../../../../img/assets/ico_comprobante.png"/>
+									</div>
+									<p class="titulo">Datos de administración de tarjeta</p>
+									<p class="subtitulo">La administración de tarjeta se realizará con la siguiente información. Por favor verifique que sea correcta</p>
+								</div>
+								
+								<div class="w12_ATC_tablaPaso2"></div>
+							</div>
+							<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu3');cambiaPaso(1);">Regresar</div>
+								<div class="btnaceptar" onclick="step3registro();cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.w12_ATC_tablaPaso3','../../../../tablas/w12/w12_ATC_tblPaso3.html'),'');">Confirmar</div>
+							</div>
+						</div><!--fin paso 2-->	
+
+						<div class="step step3">		
+							<div class="col col2 resetMargen">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="../../../../img/assets/ico_comprobante.png"/>
+									</div>
+									<p class="titulo">Comprobante de administarción de tarjeta de crédito</p>
+								</div>
+								<div class="w12_ATC_tablaPaso3">
+									
+								</div>
+							</div>
+							<div class="col col1 ">
+									<img src="img/assets/step3/anuncio.png" width="233" />
+									<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+									<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+									<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+									<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+								</div>
+							<div class="botonera">
+								<div class="btnaceptar" onclick="cambiaPaso(1);">Finalizar</div>
+							</div>
+						</div>	<!--fin paso 3-->		
+					</div>
+
+					<div class="flujo wra_flu5">
+						<div class="step step1"><!--paso 1-->
+
+							<div class="reposicionRobo">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="widgets/max/w_12/img/tarjeta.png" />
+									</div>
+									<p class="titulo">Administración de tarjeta de crédito</p>
+									<p class="subtitulo">Seleccione la tarjeta que desea reponer por robo</p>
+								</div>
+							</div>
+
+							<div class="reposicionExtravio">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="widgets/max/w_12/img/tarjeta.png" />
+									</div>
+									<p class="titulo">Administración de tarjeta de crédito</p>
+									<p class="subtitulo">Seleccione la tarjeta que desea reponer por extravío</p>
+								</div>
+							</div>
+
+							<div class="desbloqueo">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="widgets/max/w_12/img/tarjeta.png" />
+									</div>
+									<p class="titulo">Administración de tarjeta de crédito</p>
+									<p class="subtitulo">Seleccione la tarjeta que desea desbloquear</p>
+								</div>
+							</div>
+
+							<div class="w12_DRT_wra_Select">
+								<select name="" id="" value="Recompensas Santander" ></select>
+							</div>
+
+							<div class="reposicionRobo">
+								<table class="w12_DRT_consultaRobo">
+									<tr>
+										<td>&nbsp;</td>
+										<td >Número de cuenta</td>
+										<td>Alias de la cuenta</td>
+										<td>Correo del titular</td>
+										<td>Estatus</td>													
+									</tr>
+								</table>
+								<div  class="w12_DRT_cuadroTarjetaRobo">
+									<table class="w12_DRT_cardListRobo">
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>1468 8764 2836 4648</td>
+											<td>Sobrino</td>
+											<td>correo@correo.com</td>
+											<td>Cancelada por robo</td>
+										</tr>
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>1457 8942 6589 4589</td>
+											<td>Tía</td>
+											<td>correo@correo.com</td>
+											<td>Cancelada por robo</td>
+										</tr>
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>5488 4456 8768 4983</td>
+											<td>Tío</td>
+											<td>correo@correo.com</td>
+											<td>Cancelada por robo</td>
+										</tr>
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>5876 8987 3546 2145</td>
+											<td>Mamá</td>
+											<td>correo@correo.com</td>
+											<td>Cancelada por robo</td>
+										</tr>
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>4563 8547 6589 1257</td>
+											<td>Papá</td>
+											<td>correo@correo.com</td>
+											<td>Cancelada por robo</td>
+										</tr>
+									</table>
+								</div>								
+								<div>
+									<p>Seleccione el tipo de entrega:</p>
+									<div class="w12_DRT_wra_Select2">
+										<select name="" id="" value="Recompensas Santander" ></select>
+									</div>
+								</div>
+								<div class="express">
+									<p>Usted podrá pasar a cualquiera de las más de 1,000 sucursales Santander a recoger su tarjeta</p>
+								</div>
+								<div class="domicilio">
+									<p>La entrega de su tarjeta será en el domicilio que tenemos registrado en SuperNET</p>
+									<p>Eje 2 Pte. Monterrey, Col. Roma Norte, Del. Cuauhtémoc, C.P. 06700, Del. Cuauhtémoc</p>
+								</div>
+								<div class="ubicacion">
+									<p>Para el envío de su nueva tarjeta, favor de comunicarse a SuperLínea en México al 55 55 55 55 o desde el interior de la república al 01 800 55 55555 opción "internet", donde uno de nuestros ejecutivos con gusto le atenderá.</p>
+								</div>
+
+								<div class="botonera">
+									<div class="btnaceptar" onclick="step2roboDRT();cambiaPaso(2);$('.w12_DRT_tablaPaso2robo').load('../../../../tablas/w12/w12_DRT_tblPaso2robo.html')">Continuar</div>
+								</div>
+							</div>
+
+							<div class="reposicionExtravio">
+								<table class="w12_DRT_consultaRobo">
+									<tr>
+										<td>&nbsp;</td>
+										<td >Número de cuenta</td>
+										<td>Alias de la cuenta</td>
+										<td>Correo del titular</td>
+										<td>Estatus</td>													
+									</tr>
+								</table>
+								<div  class="w12_DRT_cuadroTarjetaRobo">
+									<table class="w12_DRT_cardListRobo">
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>1468 8764 2836 4648</td>
+											<td>Sobrino</td>
+											<td>correo@correo.com</td>
+											<td>Cancelada</td>
+										</tr>
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>1457 8942 6589 4589</td>
+											<td>Tía</td>
+											<td>correo@correo.com</td>
+											<td>Cancelada</td>
+										</tr>
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>5488 4456 8768 4983</td>
+											<td>Tío</td>
+											<td>correo@correo.com</td>
+											<td>Bloqueo temporal</td>
+										</tr>
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>5876 8987 3546 2145</td>
+											<td>Mamá</td>
+											<td>correo@correo.com</td>
+											<td>Cancelada</td>
+										</tr>
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>4563 8547 6589 1257</td>
+											<td>Papá</td>
+											<td>correo@correo.com</td>
+											<td>Bloqueo temporal</td>
+										</tr>
+									</table>
+								</div>								
+								<div>
+									<p>Seleccione el tipo de entrega:</p>
+									<div class="w12_DRT_wra_Select2">
+										<select name="" id="" value="Recompensas Santander" ></select>
+									</div>
+								</div>
+								<div class="express">
+									<p>Usted podrá pasar a cualquiera de las más de 1,000 sucursales Santander a recoger su tarjeta</p>
+								</div>
+								<div class="domicilio">
+									<p>La entrega de su tarjeta será en el domicilio que tenemos registrado en SuperNET</p>
+									<p>Eje 2 Pte. Monterrey, Col. Roma Norte, Del. Cuauhtémoc, C.P. 06700, Del. Cuauhtémoc</p>
+								</div>
+								<div class="ubicacion">
+									<p>Para el envío de su nueva tarjeta, favor de comunicarse a SuperLínea en México al 55 55 55 55 o desde el interior de la república al 01 800 55 55555 opción "internet", donde uno de nuestros ejecutivos con gusto le atenderá.</p>
+								</div>
+
+								<div class="botonera">
+									<div class="btnaceptar" onclick="step2extravioDRT();cambiaPaso(2);$('.w12_DRT_tablaPaso2extravio').load('../../../../tablas/w12/w12_DRT_tblPaso2extravio.html')">Continuar</div>
+								</div>
+								
+							</div>
+
+							<div class="desbloqueo">
+								<table class="w12_DRT_consultaRobo">
+									<tr>
+										<td>&nbsp;</td>
+										<td >Número de cuenta</td>
+										<td>Alias de la cuenta</td>
+										<td>Correo del titular</td>
+										<td>Estatus</td>													
+									</tr>
+								</table>
+								<div  class="w12_DRT_cuadroTarjetaRobo">
+									<table class="w12_DRT_cardListRobo">
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>1468 8764 2836 4648</td>
+											<td>Sobrino</td>
+											<td>correo@correo.com</td>
+											<td>Bloqueo temporal</td>
+										</tr>
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>1457 8942 6589 4589</td>
+											<td>Tía</td>
+											<td>correo@correo.com</td>
+											<td>Bloqueo temporal</td>
+										</tr>
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>5488 4456 8768 4983</td>
+											<td>Tío</td>
+											<td>correo@correo.com</td>
+											<td>Bloqueo temporal</td>
+										</tr>
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>5876 8987 3546 2145</td>
+											<td>Mamá</td>
+											<td>correo@correo.com</td>
+											<td>Bloqueo temporal</td>
+										</tr>
+										<tr>
+											<td><div class="w12_radiobtn"><img src="widgets/max/w_12/img/Indicador.png"/></div></td>
+											<td>4563 8547 6589 1257</td>
+											<td>Papá</td>
+											<td>correo@correo.com</td>
+											<td>Bloqueo temporal</td>
+										</tr>
+									</table>
+								</div>
+								<div class="botonera">
+									<div class="btnaceptar" onclick="step2desbloqueoDRT();cambiaPaso(2);$('.w12_DRT_tablaPaso2desbloqueo').load('../../../../tablas/w12/w12_DRT_tblPaso2desbloqueo.html')">Continuar</div>
+								</div>
+
+								
+							</div>
+								
+						</div><!--Fin paso 1-->	
+
+						<div class="step step2">
+							<div class="DRTrobo2">
+								<div class="col colFull">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="../../../../img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Datos de reposición de tarjeta por robo</p>
+										<p class="subtitulo">La reposición de tarjeta se realizará con la siguiente información. Por favor verifique que sea correcta</p>
+									</div>
+									
+									<div class="w12_DRT_tablaPaso2robo"></div>
+								</div>
+								<div class="botonera">
+									<div class="btn" onclick="cambiaFlujo('.wra_flu5');cambiaPaso(1);">Regresar</div>
+									<div class="btnaceptar" onclick="step3roboDRT();cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.w12_DRT_tablaPaso3robo','../../../../tablas/w12/w12_DRT_tblPaso3robo.html'),'');">Confirmar</div>
+								</div>
+							</div>
+
+							<div class="DRTextravio2">
+								<div class="col colFull">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="../../../../img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Datos de reposición de tarjeta por extravio</p>
+										<p class="subtitulo">La reposición de tarjeta se realizará con la siguiente información. Por favor verifique que sea correcta</p>
+									</div>
+									
+									<div class="w12_DRT_tablaPaso2extravio"></div>
+								</div>
+								<div class="botonera">
+									<div class="btn" onclick="cambiaFlujo('.wra_flu5');cambiaPaso(1);">Regresar</div>
+									<div class="btnaceptar" onclick="step3extravioDRT();cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.w12_DRT_tablaPaso3extravio','../../../../tablas/w12/w12_DRT_tblPaso3extravio.html'),'');">Confirmar</div>
+								</div>
+							</div>
+
+							<div class="DRTdesbloqueo2">
+								<div class="col colFull">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="../../../../img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Datos de desbloqueo de tarjeta</p>
+										<p class="subtitulo">El desbloqueo de tarjeta se realizará con la siguiente información. Por favor verifique que sea correcta</p>
+									</div>
+									
+									<div class="w12_DRT_tablaPaso2desbloqueo"></div>
+								</div>
+								<div class="botonera">
+									<div class="btn" onclick="cambiaFlujo('.wra_flu5');cambiaPaso(1);">Regresar</div>
+									<div class="btnaceptar" onclick="step3desbloqueoDRT();cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.w12_DRT_tablaPaso3desbloqueo','../../../../tablas/w12/w12_DRT_tblPaso3desbloqueo.html'),'');">Confirmar</div>
+								</div>
+							</div>
+						</div><!--fin paso 2-->	
+
+						<div class="step step3">
+							<div class="DRTrobo3">		
+								<div class="col col2 resetMargen">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="../../../../img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Comprobante de reposición por robo</p>
+									</div>
+									<div class="w12_DRT_tablaPaso3robo">
+										
+									</div>
+								</div>
+								<div class="col col1 ">
+										<img src="img/assets/step3/anuncio.png" width="233" />
+										<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+										<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+										<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+										<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+									</div>
+								<div class="botonera">
+									<div class="btnaceptar" onclick="cambiaPaso(1);">Finalizar</div>
+								</div>
+							</div>
+							<div class="DRTextravio3">		
+								<div class="col col2 resetMargen">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="../../../../img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Comprobante de reposición por extravío</p>
+									</div>
+									<div class="w12_DRT_tablaPaso3extravio">
+										
+									</div>
+								</div>
+								<div class="col col1 ">
+										<img src="img/assets/step3/anuncio.png" width="233" />
+										<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+										<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+										<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+										<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+									</div>
+								<div class="botonera">
+									<div class="btnaceptar" onclick="cambiaPaso(1);">Finalizar</div>
+								</div>
+							</div>
+							<div class="DRTdesbloqueo3">		
+								<div class="col col2 resetMargen">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="../../../../img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Comprobante de desbloqueo de tarjeta</p>
+									</div>
+									<div class="w12_DRT_tablaPaso3desbloqueo">
+										
+									</div>
+								</div>
+								<div class="col col1 ">
+										<img src="img/assets/step3/anuncio.png" width="233" />
+										<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+										<div class="btnsLateralStep3  ico1Step3" onclick="cambiaPaso(2)">Pago de servicios</div>
+										<div class="btnsLateralStep3 ico2Step3" onclick="cambiaPaso(2)">Opci&oacute;n 2</div>
+										<div class="btnsLateralStep3 ico3Step3" onclick="cambiaPaso(2)">Opci&oacute;n 3</div>
+									</div>
+								<div class="botonera">
+									<div class="btnaceptar" onclick="cambiaPaso(1);">Finalizar</div>
+								</div>
+							</div>
+						</div>	<!--fin paso 3-->		
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+		</div>
+			
+	</div>
