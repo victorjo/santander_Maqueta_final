@@ -1,0 +1,362 @@
+﻿	<!--	<script src="../../../js/jquery10.2.min.js"></script>		-->
+		<script src="../../../js/components.js"></script>
+		<script src="../../../js/ddSlick.js"></script>
+		<link rel="stylesheet" href="../../../css/generally.css" />
+		<link rel="stylesheet" href="../../../css/componentes.css" />
+		<script src="widgets/max/w_7/js/w_7.js"></script>
+		<link rel="stylesheet" href="widgets/max/w_7/css/w_7.css" />
+		<!--<input type="button" value="GRID" onclick="Gridius($('.contenidoFlujo'),{colums:[13,23,33,43,53],rowsValues:[1,2,3,4,5],numRows:10});">-->
+		<div id="widampliado">
+			<div id="bloqueoWidget" class="bloqueoElement"></div>
+			<div id="elementBloqueo" class="bloqueoElement">
+				
+			</div>
+			<div id="WA_pasos">
+				<img class="pasos" src="../../../img/assets/pasos.png"/>
+				<div class="btnHeader info">
+					<img src="../../../img/assets/ico_info.png"  />
+				</div>
+				<div class="btnHeader cerrar">
+					<img src="../../../img/assets/ico_cerrar_widget.png"  />
+				</div>
+			</div>
+			
+			<div id="WA_nav">
+				<ul>
+					<li class="menu">
+						<p>
+						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
+					</li>
+					<li onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(1);" class="liActive">
+						<p>Consulta de saldos y movimientos</p>
+					</li>
+					<li onclick="cambiaFlujo('.wra_flu2'); cambiaPaso(1);" >
+						<p>Traspaso a meses con interes</p>
+					</li>
+
+					<li onclick="cambiaFlujo('.wra_flu3'); cambiaPaso(1);">
+						<p>Disposición de tarjeta de crédito a cheques</p>
+					</li>
+				</ul>
+			</div>
+			<div id="WA_contenedorFlujos" >
+				<div class="titFlujoP1" style="height:81px;">
+				<div class="contenidoFlujo" style="border:0px solid black;">
+					<div class="flujo wra_flu1">
+						<div class="step step1">
+							
+							<div class="tableHG fullCon">
+								<table style="height: 100px;">
+									<tr>
+										<td rowspan="2"></td>
+										<td rowspan="2">
+											<img src="img/iconos/card.png" alt="">
+											<span>Santander<br>	
+												Black</span>
+										</td>
+										<td rowspan="2">
+											<p>Seleccione tarjeta:</p>
+											<div class="inter"></div>
+										</td>
+										<td>
+											<p>Alias</p>
+											<span>Mi alias</span>
+										</td>
+										<td>
+											<p>Limite de credito</p>
+											<span>999,999,999.00</span>
+										</td>
+										<td>
+											<p>Saldo actual</p>
+											<span>999,999,999.00</span>
+										</td>
+										<td>
+											<p>Tasa de interes</p>
+											<span>0.00 %</span>
+										</td>
+										<td>
+											<p>Fecha de corte</p>
+											<span>dd/mm/aaaa</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>Fecha limite de pago</p>
+											<span>dd/mm/aaaa</span>
+										</td>
+										<td>
+											<p>Pago para no generar intereses</p>
+											<span>999,999,999.00</span>
+										</td>
+										<td>
+											<p>Limite de credito linea express</p>
+											<span>0.00%</span>
+										</td>
+										<td>
+											<p>Saldo global en linea express</p>
+											<span>dd/mm/aaaa</span>
+										</td>
+										<td>
+											<p>Pago minimo</p>
+											<span>999,999,999.00</span>
+										</td>
+									</tr>
+								</table>
+							</div>
+
+						<div class="fullCon">
+							<div class="w14_select_1">
+								<select name="" id="" value="1" > 
+							    </select>
+							</div>
+							<div class="w14_HPG_personalizarIntervalo">
+								dd/mm/aaaa
+								<div>
+									<img src="../../img/iconos/img_calendario.png"/>
+								</div>
+							</div>
+							<div class="w14_select_2">
+								<select name="" id="" value="1" > 
+							    </select>
+							</div>
+							<a href="#" class="w1_busquedaL" style="float:right;float: right;font-size: 12px;color: #db1539;">Nueva busqueda</a>
+						</div>
+						
+						<div class="fullCon">
+							<p class="w1_texto"style="width: 260px;float: left;margin-bottom: 3px;margin-top:5px;font-size: 12px;font-weight: bold;"></p><div  class="w1_contenedor" style="float:right"><img class="exportar" style=" margin-right:5px; margin-top: 4px;" src="img/assets/ico_exp.png" alt=""><img class="lista" style="margin-right:5px" src="img/assets/ico_lista.png" alt=""><img class="grafic" style="margin-right:5px" src="img/assets/ico_grafics.png" alt=""></div>
+						</div>
+						<div class="containerG"></div>
+						<div class="botonera">
+							<div class="btn" onclick="cargaPDF('descargaDocs(\'../../../../modales/descarga/estado_cuenta.pdf \')' ,'','switchModal()','', undefined,'estado')">Consultar estado de cuenta</div>
+							<div class="btn" onclick="cambiaPaso(2)">Calendario de operaciones</div>
+							<div class="btnaceptar w1_CB_txt">Diferir cargos</div>
+						</div>
+						</div>
+					</div>	
+
+					<div class="flujo wra_flu2">
+						<div class="step step1">
+							<div class="w20_DC_contenidodatos">
+								<img src="img/iconos/card.png">
+								<p>Seleccione la tarjeta: </p>
+								<div style=" width:10%;float:left;margin-top:10px;margin-left:-110px;">
+									<div class="w14_select_1_2">
+										<select name="" id="" value="1" > 
+						    			</select>
+									</div>
+
+								</div>
+								
+								<p>Alias <br><i>TC Casa</i> </p>
+
+							</div>
+							<div class="w20_DC_subtitulo2">Cargos del periodo actual de la tarjeta</div>
+							<table class="w20_DC_consulta">
+								<tr>
+									<td>Fecha</td>
+									<td>Descripción</td>
+									<td>RFC</td>
+									<td>Moneda extranjera</td>
+									<td>Tipo de cambio (MXP)</td>
+									<td>Cantidad (MXP)</td>
+								</tr>
+							</table>
+							<div  class="w20_DC_cuadroTarjeta">
+								<table class="w20_DC_cardList">
+									<tr>
+										<td>19/12/2013</td>
+										<td>Pag. cuenta de terceros/0068475666</td>
+										<td >TZA970320IY2 </td>
+										<td >50.32</td>
+										<td >13.10</td>
+										<td >659.19</td>
+										<td ><input type="checkbox"></td>
+									</tr>
+									<tr>
+										<td>27/12/2013</td>
+										<td >Cuenta: 14230033144 BNET </td>
+										<td >TYU9304131F1</td>
+										<td >923.00</td>
+										<td >13.10</td>
+										<td >12,091.30</td>
+										<td><input type="checkbox"></td>
+									</tr>
+									<tr>
+										<td>31/12/2013</td>
+										<td>Pago de nómina/IN 42004565777</td>
+										<td >TVO011122N78</td>
+										<td >17.83</td>
+										<td >13.10</td>
+										<td >233.57</td>
+										<td ><input type="checkbox"></td>
+									</tr>
+									<tr>
+										<td>01/01/2014</td>
+										<td>Cheque pagado No./CH 000081765</td>
+										<td >TMA920225TJ2</td>
+										<td >614.21</td>
+										<td >13.10</td>
+										<td >8,046.15</td>
+										<td ><input type="checkbox"></td>
+									</tr>
+									<tr>
+										<td>02/01/2014</td>
+										<td>Seg. Monterrey NE/GUIA:1604463</td>
+										<td >TLI950207L25 </td>
+										<td >812.32</td>
+										<td >13.10</td>
+										<td >10,641.39</td>
+										<td ><input type="checkbox"></td>
+									</tr>
+									<tr>
+										<td>07/01/2014</td>										
+										<td >000081491Anticipo </td>
+										<td >LAG870313TX7</td>
+										<td >115.90</td>
+										<td >13.10</td>
+										<td >1,518.29</td>
+										<td ><input type="checkbox"></td>
+									</tr>
+
+									<tr class="w20_DC_deshabilitado">
+										<td>07/01/2014</td>										
+										<td >000081491Anticipo </td>
+										<td >LAG870313TX7</td>
+										<td >115.90</td>
+										<td >13.10</td>
+										<td >1,518.29</td>
+										<td ><input type="checkbox"></td>
+									</tr>
+								</table>
+							</div>
+							<div class="w20_DC_contenidodatosdo"> 
+									<p>Seleccione el Pago:</p>
+									<div style=" width:10%;float:left;margin-top:22px;margin-left:-110px;">
+										<div class="w14_select_2_2">
+											<select name="" id="" value="1" > 
+							    			</select>
+										</div>
+									</div>
+									<input type="checkbox">
+									<p>Acepto terminos y condiciones</p>
+									<p>Mensualidad: 12,500.00 (MXP)</p>							
+							</div>
+							<div class="botonera">					
+								<div class="btnaceptar" onClick="cargaTermino()">Diferir Cargos</div>
+							</div>
+						</div>
+
+						<div class="step step2">
+							<div class="col colFull">
+								<div class="titFlujo">
+									<div class="iconFlujo">
+										<img src="img/assets/ico_comprobante.png"/>
+									</div>
+									<p class="titulo">Disposición de tarjeta de crédito a cheques</p>
+									<p class="subtitulo">La operación se realizará con la siguiente información:</p>
+								</div>
+								<div class="w14_TM_tabla2"></div>
+							</div>
+							<div class="botonera">
+								<div class="btn" onclick="$('#elementBloqueo').removeClass('term_body'); cambiaFlujo('.wra_flu2'); cambiaPaso(1)">Regresar</div>
+								<div class="btnaceptar" onclick=" $('#elementBloqueo').removeClass('term_body'); cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.w14_tabla3','../../../../tablas/w7/w7_TM_Paso3.html'),'');">Confirmar</div>
+							</div>							
+						</div>
+
+						<div class="step step3">	
+							<div class="col col2 resetMargen">
+									<div class="titFlujo">
+										<div class="iconFlujo">
+											<img src="img/assets/ico_comprobante.png"/>
+										</div>
+										<p class="titulo">Comprobante de disposición de tarjeta de crédito a cuenta de cheques</p>
+									</div>
+									
+									<div class="w14_tabla3"></div>
+									
+								</div>
+							<div class="col col1 ">
+								<img src="img/assets/step3/anuncio.png" width="233" />
+								<h6 style="margin-bottom:0">Quiz&aacute; le interese:</h6>
+								<div class="btnsLateralStep3  ico1Step3">Solicitud de tarjeta</div>
+								<div class="btnsLateralStep3 ico2Step3" >Opci&oacute;n 2</div>
+								<div class="btnsLateralStep3 ico3Step3" >Opci&oacute;n 3</div>
+							</div>
+							<div class="botonera">
+								<div class="btn" onclick="cambiaFlujo('.wra_flu2'); cambiaPaso(1);">Deseo realizar otra disposición</div>
+								<div class="btnaceptar" onclick="closeAction();" style="margin-right: 10px;">Finalizar</div>
+								<div class="btnaceptar" >Imprimir</div>
+							</div>
+						</div>	
+					</div>
+
+					<div class="flujo wra_flu3">
+						<div class="step step1">
+							<div class="titFlujo">
+								<div class="iconFlujo">
+									<img src="../../../img/assets/ico_cuentas_propias.png"/>
+								</div>
+								<p class="titulo">Entre cuentas propias Santander</p>
+								<p class="subtitulo">Introduzca el nombre, alias o los cuatro dígitos de la cuenta destino / cuenta de cargo o seleccionela de la lista</p>
+							</div>
+							<div class="w9_EC_contenidodatos1">
+							<p class="DC_cuentadest">Cuenta destino:</p>
+								<div class="w9_dropList w9_ddSelect w9_ddSelected">
+										<select name="" id="" value="1" > 
+									    </select>
+									</div>
+							<p class="DC_cuentacar">Cuenta de cargo:</p>
+
+									<div class="w9_dropList w9_ddSelect w9_ddSelected">
+										<select name="" id="" value="1" > 
+									    </select>
+									</div>
+
+								<div class="tabletext">
+										<p >Importe:</p>
+										<input class="textboxdos" placeholder="Escribir importe (MXP)" type="text"/>
+								</div>
+								<div class="tabletext">
+								<p id="concept">Concepto:</p>
+										<input class="textboxdos2" placeholder="Escribir concepto" type="text"/>
+								</div>
+							</div>
+							<div class="w9_EC_contenidodatos2">
+								<p class="p_OC">Programar transferencia:</p>
+										
+								<div id="switchBox">
+									<div class="switchSlide"><div class="switchLabel">si</div>
+									<div class="switchIndicador"><div class="franjaSwitch"></div></div><div class="switchLabelR">no</div>
+									</div>
+								</div>
+										<p class="p_OC">Fecha:</p>
+										<div class="dateInput">
+											<div class="w9_HPG_personalizarIntervalo">
+												dd/mm/aaaa
+												<div>
+													<img src="../../img/iconos/img_calendario.png"/>
+												</div>
+											</div>
+										</div>
+	
+											<p class="p_OC"> Notificar previamente: </p>
+										<select class="textboxDias" name="" id="">
+											<option value="3">3 dias</option>
+											<option value="">5 días</option>
+											<option value="">1 semana</option>
+											<option value=""></option>
+											<option value=""></option>
+										</select>
+							</div>
+							<div class="botonera">
+								<div class="btnaceptar"  onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(2);cargaHtml('.w9_EC_tabla2','../../../../tablas/w9/w9_EC_tblPaso2.html')">Continuar</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				
+			</div>
+		</div>
+		
