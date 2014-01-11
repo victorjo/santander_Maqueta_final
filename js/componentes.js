@@ -120,7 +120,7 @@ function dropIsra(selector) {
 /*
   <div class="sexycombo">
         <input type="text" id="autocompleteQ" placeholder="00" style="width:517px; height:25px; border:1px solid #989898; border-right: 0px; outline:0px;margin-top:0px; margin-left:0px;margin-bottom:15px;"> 
-        <span style="font-weight:bold;margin-left:0px;position: relative;top: 3px;left: -27px;"><img class="activo" src="img/iconos/favorito_of.png"><img class="inactivo" src="img/iconos/favorito_on.png"></span>
+        <span style="font-weight:bold;margin-left:0px;>position: relative;top: 3px;left: -27px;"><img class="activo" src="img/iconos/favorito_of.png"><img class="inactivo" src="img/iconos/favorito_on.png"></span>
         <div class="marcotriangulo" style="margin-top: -44px; margin-left: 518px;"><div class="triangulo_inf"></div></div>
       </div>
   */
@@ -473,21 +473,7 @@ function confirmacionCorreo(cbTokenCanc, cbTokenAcep, modal) {
     });
 }
 
-<<<<<<< HEAD
-function confirmacionCorreo(cbTokenCanc, cbTokenAcep, modal) {
-    var mod = modal || 'token';
-    $(".bloqueoElement").fadeOut("slow", function() {
-        $("#elementBloqueo").load("../modales/" + mod + ".html", function() {
-            $(this).find("#btnTokenCancelar").attr("onclick", cbTokenCanc);
-            $(this).find("#btnTokenAceptar").attr("onclick", cbTokenAcep);
-            centraModal();
-            $(".bloqueoElement").fadeIn("slow");
-        });
-    });
-}
 
-
-=======
 function cargaPDF(cbBtnImp, cbBtnDes, cbBtnCer, cbBtnCon, fn, modal) {
     var mod = modal;
     if (typeof fn != "undefined" || fn != null || fn != undefined) fn();
@@ -500,7 +486,7 @@ function cargaPDF(cbBtnImp, cbBtnDes, cbBtnCer, cbBtnCon, fn, modal) {
     });
 }
 
->>>>>>> fc91271d332a4b2eed927e96779e120c5c6cc219
+
 function cargaCalendario(cbTokenAcep, modal) {
     var mod = modal || 'token';
     $("#elementBloqueo").load("../modales/" + mod + ".html", function() {
@@ -565,7 +551,7 @@ function construyeSwitch(object) {
     container.html(switchO);
 
     container.children("div:first").find(".switchLabel").click(function() {
-console.log(this);
+        console.log(this);
         $(this).parent(".switchSlide").animate({
             "left": "-=78px"
         }, "fast");
@@ -576,7 +562,7 @@ console.log(this);
 
     container.children("div:first").find(".switchLabelR").click(function() {
         console.log(this);
-       $(this).parent(".switchSlide").animate({
+        $(this).parent(".switchSlide").animate({
             "left": "+=78px"
         }, "fast");
         //$(".dateInput").removeClass("dateInputInactive");
@@ -682,7 +668,7 @@ function Gridius(object, data) {
         $(".addGrid").click(function() {
             var self = $(this);
             self.next(".delGrid").toggle();
-            showGridTools(self,data.onIcons,data.icons,data.galIcons);
+            showGridTools(self, data.onIcons, data.icons, data.galIcons);
             self.toggle();
         });
 
@@ -713,7 +699,7 @@ function listenerGrid(obj) {
     adq.val(txt).show();
 }
 
-function showGridTools(obj,callB,icons,galIcons) {
+function showGridTools(obj, callB, icons, galIcons) {
     console.log(callB);
     var parentObj = obj.parent().parent();
     $(".toolsGrid").fadeOut("slow").remove();
@@ -725,13 +711,14 @@ function showGridTools(obj,callB,icons,galIcons) {
     var options;
     var toolsList = $("<ul>");
     var tools = $('<div class="toolsGrid"></div>');
-    if(typeof galIcons != "undefined" && galIcons == 2){ options = [$('<li style="width: 82px;font-size: 11px;font-weight: bold;text-align:center">Folio Supernet:<br>123456789</li>'), $('<li style="width: 82px;font-size: 11px;font-weight: bold;text-align:center">F. respuesta:<br>10/01/2014</li>')];
+    if (typeof galIcons != "undefined" && galIcons == 2) {
+        options = [$('<li style="width: 82px;font-size: 11px;font-weight: bold;text-align:center">Folio Supernet:<br>123456789</li>'), $('<li style="width: 82px;font-size: 11px;font-weight: bold;text-align:center">F. respuesta:<br>10/01/2014</li>')];
         tools.addClass("no-a");
         tools.before("no-b");
 
-    }else{
+    } else {
         options = [$('<li><img src="../img/assets/basura.png"/></li>'), $('<li><img src="../img/assets/editar.png"/></li>'), $('<li><img src="../img/assets/imprimir.png"/></li>')];
-        if(typeof icons != "undefined" && !icons.print) options[2].html("");
+        if (typeof icons != "undefined" && !icons.print) options[2].html("");
         if (parentObj.children("td:last").prev().hasClass("aprov")) {
             options[2].attr("onclick", 'print(this)');
         } else if (parentObj.children("td:last").prev().hasClass("program")) {
@@ -749,7 +736,7 @@ function showGridTools(obj,callB,icons,galIcons) {
         left: ($('[instanced="true"]').offset().left + $('[instanced="true"]').width() + 20)
     }).attr('data-relid', parentObj.attr('data-id'));
 
-    if(typeof callB != "undefined") callB();
+    if (typeof callB != "undefined") callB();
 }
 
 function cargaHtml(componente, url) {
