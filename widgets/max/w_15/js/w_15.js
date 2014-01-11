@@ -13,6 +13,9 @@ $(function() {
         numRows: 2,
         icons: {
             print: false
+        },
+        onIcons:function(){
+            $(".toolsGrid").css("left", "796px;");
         }
     });
 });

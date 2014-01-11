@@ -552,8 +552,30 @@ function construyeSwitch(object) {
   BODY OF JSON DATA
   {colums:[1,2,3,4,5],rowsValues:[1,2,3,4,5],numRows:30}
 
+
+new----
+
+Gridius($('.tablaDinamica2'), {
+        hasStatus: false,
+        configButton: true,
+        colums: ['Meses de gracia', 'Fecha de aplicación'],
+        rowsValues: ['1', '15/01/2014'],
+        parseRows: [
+            ['1', '15/01/2014'],
+            ['2', '15/01/2014'],
+            ['3', '15/01/2014']
+        ],
+        numRows: 2,
+        icons: {
+            print: false
+        },
+        onIcons: function() {
+            $(".toolsGrid").css("left", "796px;");
+        }
+    });
 */
 function Gridius(object, data) {
+    console.log(data);
     $(".toolsGrid").remove();
     $.when($.ajax("componentes/grid.html")).then(function(res) {
 
@@ -618,7 +640,7 @@ function Gridius(object, data) {
         $(".addGrid").click(function() {
             var self = $(this);
             self.next(".delGrid").toggle();
-            showGridTools(self);
+            showGridTools(self,data.onIcons,data.icons,data.galIcons);
             self.toggle();
         });
 
@@ -647,10 +669,10 @@ function listenerGrid(obj) {
     else adq.attr("data-edit", "true");
     self.html(adq);
     adq.val(txt).show();
-
 }
 
-function showGridTools(obj) {
+function showGridTools(obj,callB,icons,galIcons) {
+    console.log(callB);
     var parentObj = obj.parent().parent();
     $(".toolsGrid").fadeOut("slow").remove();
     if (parentObj.attr('data-active') == 'true') {
@@ -658,23 +680,33 @@ function showGridTools(obj) {
         return false;
     }
     parentObj.attr('data-active', true);
-    var options = [$('<li><img src="../img/assets/basura.png"/></li>'), $('<li><img src="../img/assets/editar.png"/></li>'), $('<li><img src="../img/assets/imprimir.png"/></li>')];
+    var options;
     var toolsList = $("<ul>");
-    if (parentObj.children("td:last").prev().hasClass("aprov")) {
-        options[2].attr("onclick", 'print(this)');
-    } else if (parentObj.children("td:last").prev().hasClass("program")) {
-        options[1].attr("onclick", 'edit(this)');
+    var tools = $('<div class="toolsGrid"></div>');
+    if(typeof galIcons != "undefined" && galIcons == 2){ options = [$('<li style="width: 82px;font-size: 11px;font-weight: bold;text-align:center">Folio Supernet:<br>123456789</li>'), $('<li style="width: 82px;font-size: 11px;font-weight: bold;text-align:center">F. respuesta:<br>10/01/2014</li>')];
+        tools.addClass("no-a");
+        tools.before("no-b");
+    }
+    else{
+        options = [$('<li><img src="../img/assets/basura.png"/></li>'), $('<li><img src="../img/assets/editar.png"/></li>'), $('<li><img src="../img/assets/imprimir.png"/></li>')];
+        if(typeof icons != "undefined" && !icons.print) options[2].html("");
+        if (parentObj.children("td:last").prev().hasClass("aprov")) {
+            options[2].attr("onclick", 'print(this)');
+        } else if (parentObj.children("td:last").prev().hasClass("program")) {
+            options[1].attr("onclick", 'edit(this)');
+        }
     }
     $.each(options, function(i, v) {
         v.appendTo(toolsList);
-    })
-    var tools = $('<div class="toolsGrid"></div>');
+    });
     toolsList.appendTo(tools);
     $('body').append(tools);
     tools.css({
         top: obj.offset().top - 56,
         left: ($('[instanced="true"]').offset().left + $('[instanced="true"]').width() + 20)
     }).attr('data-relid', parentObj.attr('data-id'));
+
+    if(typeof callB != "undefined") callB();
 }
 
 function cargaHtml(componente, url) {
