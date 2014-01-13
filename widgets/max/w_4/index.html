@@ -1,3 +1,4 @@
+
 		<link rel="stylesheet" href="../../../css/generally.css" />
 		<link rel="stylesheet" href="../../../css/componentes.css" />
 		<script src="../../../js/components.js"></script>
@@ -24,8 +25,9 @@
 			<div id="WA_nav">
 				<ul>
 					<li class="menu">
-						<p>
-						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
+						<p style="font-size: 13px;">
+						  <img src="../../../img/assets/icon_menu_wampliado.png" />Pago de Servicios
+						</p>
 					</li>
 					<li onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(1); muestraServicios(); $('.ocultaPaso').show();" class=" w4_flu1_activo liActive">
 						<p>Pago de servicios</p>
@@ -73,7 +75,7 @@
 											<td class="Alias">cel_mama</td>
 											<td class="numero">12345</td>
 											<td class="fecha">01/01/2014</td>
-											<td class="dinero">9,999,999.99</td>
+											<td class="dinero">350.00</td>
 											<td clas="clave">12345TRMSL34</td>
 										</tr>
 										<tr class="servicioClic" id="Telcel">
@@ -82,7 +84,7 @@
 											<td>cel_abuelita</td>
 											<td>45678</td>
 											<td>04/01/2014</td>
-											<td >9,999,999.99</td>
+											<td >585.00</td>
 											<td >45782FLTHMS98</td>
 										</tr>
 										<tr class="servicioClic" id="G.N.P. Seguros">
@@ -91,7 +93,7 @@
 											<td>tel_tia</td>
 											<td>96354</td>
 											<td>06/01/2014</td>
-											<td >9,999,999.99</td>
+											<td >3,560.00</td>
 											<td >214896BCNDLK67</td>
 										</tr>
 										<tr class="w4_PS_deshabilitado servicioClic" id="Telmex">
@@ -100,35 +102,8 @@
 											<td>cel_Pepe</td>
 											<td>78124</td>
 											<td>07/01/2014</td>
-											<td >9,999,999.99</td>
+											<td >875.15</td>
 											<td >12478JSNVGR756</td>
-										</tr>
-										<tr class="w4_PS_deshabilitado servicioClic" id="Telmex">
-											<td></td>
-											<td><div class="w4_PS_servicioImg w4_PS_servicioImg_4"></div><p class="w4_PS_servicio">Telmex</p></td>
-											<td>tel_mando</td>
-											<td>24568</td>
-											<td>08/01/2014</td>
-											<td >9,999,999.99</td>
-											<td >1234789MJGLRDT</td>
-										</tr>
-										<tr class="w4_PS_deshabilitado servicioClic" id="Telmex">
-											<td></td>
-											<td><div class="w4_PS_servicioImg w4_PS_servicioImg_4"></div><p class="w4_PS_servicio">Telmex</p></td>
-											<td>cel_track</td>
-											<td>45689</td>
-											<td>08/01/2014</td>
-											<td >9,999,999.99</td>
-											<td >4587265AHGNLS</td>
-										</tr>
-										<tr class="w4_PS_deshabilitado servicioClic" id="Telmex">
-											<td></td>
-											<td><div class="w4_PS_servicioImg w4_PS_servicioImg_4"></div><p class="w4_PS_servicio">Telmex</p></td>
-											<td>cel_track</td>
-											<td>74589</td>
-											<td>08/01/2014</td>
-											<td >9,999,999.99</td>
-											<td >1245787AHYTNL9</td>
 										</tr>
 									</table>
 								</div>
@@ -161,13 +136,13 @@
 										<tr>
 											<td>
 												<div class="w4_PS_inputsIzq">
-													<p>Concepto</p>
+													<p>Concepto:</p>
 													<input class="w4_PS_input" type="text"/>
 												</div>
 											</td>
 											<td>
 												<div class="w4_PS_inputsDer">
-													<p>Alias de Tarjeta</p>
+													<p>Alias:</p>
 													<input class="w4_PS_input" type="text"/>
 													<div class="w4_info"></div>							
 												</div>
@@ -176,7 +151,7 @@
 										<tr>
 											<td>
 												<div class="w4_PS_inputsIzq">
-													<p>Referencia 1</p>
+													<p>Referencia 1:</p>
 													<input class="w4_PS_input" type="text"/>
 													<div id="infobtn" class="w4_info"></div>
 													<div class="infoChart"><img src="../../../../img/assets/info_img.png"/></div>
@@ -184,7 +159,7 @@
 											</td>
 											<td>
 												<div class="w4_PS_inputsDer">
-													<p>Referencia 2</p>
+													<p>Referencia 2:</p>
 													<input class="w4_PS_input" type="text"/>
 													<div class="w4_info"></div>
 																		
@@ -194,7 +169,7 @@
 										<tr>
 											<td>
 												<div class="w4_PS_inputsIzq">
-													<p>Importe</p>
+													<p>Importe:</p>
 													<input class="w4_PS_input" type="text"/>
 													<div class="w4_info"></div>
 																	
@@ -319,7 +294,7 @@
 							<div class="w4_AS_listado OFF">
 								<div>
 									<h2>Seleccione la empresa que desea dar de alta:</h2><br />
-									<p>Nombre del Servicio</p>
+									
 									<div class="w4_AS_servContainer">
 										<div class="w4_AS_servSlider">
 											<div class="w4_AS_servicio">
@@ -610,38 +585,13 @@
 								</div>
 								<p class="titulo w4_top">Consulta / baja de servicios</p>
 								<p class="subtitulo w4_espacio w4_top">A continuación usted podrá consultar los servicios que tiene dados de alta.</p>
-								<p class="subtitulo2F4 linkEditar w4_espacio w4_top"><b> Para obtener más información de la solicitud, haga clic en el estatus.</b></p>
+								
 							</div>
-						<div class="w4_CB_buscador">
-							<div class="w4_select_1 w4_selects ">
-								<select name="" id="" value="1" > 
-				    			</select>
-							</div>
-
-							<div class="w4_HPG_personalizarIntervalo" style="margin-top: 10px; margin-left: 10px;">
-								08/01/2014 - 09/01/2014
-								<div>
-									<img src="../../img/iconos/calendario.png"/>
-								</div>
-							</div>
-							<div class="w4_select_3 w4_selects" style="margin-left: 11px; margin-right: 14px;">
-								<select name="" id="" value="1" > 
-				    			</select>
-							</div>
-							<div class="w4_select_4 w4_selects">
-								<select name="" id="" value="1" > 
-				    			</select>
-							</div>
-							<div class="prueba">
-								<div class="btnaceptar prueba_btn">Limpiar Búsqueda</div>
-							</div>	
-						</div>	
-
+						
 
 
 						<div class="tablaDinamica"></div>
-						<div class="btnExportar w4_btn_exportar"><img  class="w4_exportar" src="../../../img/assets/Exportar.png"><img src="../../../img/assets/CalendariOperaciones.png"></div>
-						</div>
+						
 
 						<div class="step step2">
 							<div class="col colFull">
@@ -695,7 +645,7 @@
 								<div class="iconFlujo">
 									<img src="../../../img/assets/picGraf.png"/>
 								</div>
-								<p class="titulo w4_top">Consulta de pagos realizados / baja de servicios</p>
+								<p class="titulo w4_top">Consulta de pagos realizados / programados</p>
 								<p class="subtitulo w4_espacio w4_top">Seleccione el estatus del pago de servicios que desea consultar o modificar, así como el periodo de búsqueda y/o rango de importe </p>
 								<p class="subtitulo w4_espacio w4_top">para realizar una búsqueda mas específica.</p>
 								<p class="subtitulo2F4 linkEditar w4_espacio w4_top"><b>Para obtener más información del servicio, haga clic en el estatus.</b></p>
@@ -725,7 +675,7 @@
 								</div>	
 							</div>
 							<div class="Tbl2"></div>
-							<div class="btnExportar w4_btn_exportar"><img class="w4_exportar" src="../../../img/assets/Exportar.png"><img src="../../../img/assets/CalendariOperaciones.png"></div>
+							<div class="btnExportar w4_btn_exportar"><img src="../../../img/assets/CalendariOperaciones.png"></div>
 						</div>
 
 						<div class="step step2">
@@ -778,12 +728,11 @@
 
 				</div>
 				<div class="w4_PS_ayuda wra_flu1 flujo">
-					<p>El costo mensual del<br/>
-						programa de recompensas<br/>
-						varia de acuerdo al<br/>
-						producto a suscribir</p>
+					<p>El servicio seleccionado<br/>
+						quedará activo el<br/>
+						14/01/2014<br/>
+						a las 18:00 hrs.</p>
 					<img src="../../../img/mrsmackdown.png"/>
 				</div>
 			</div>
-
 		</div>

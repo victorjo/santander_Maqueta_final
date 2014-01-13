@@ -25,9 +25,11 @@
 			
 			<div id="WA_nav">
 				<ul>
-					<li class="menu">
-						<p>
-						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
+					<li class="menu" style="padding: 20px 5px;">
+						<p style="font-size: 13px; ">
+						  <img src="../../../img/assets/icon_menu_wampliado.png" />Transferencias
+						</br>&nbsp;&nbsp;&nbsp;&nbsp;(Envío de dinero)
+						</p>
 					</li>
 					<li class="liActive"onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);ocultaAsset(); "class="liActive">
 						<p>Entre cuentas 
@@ -37,7 +39,7 @@
 						<p>A otras cuentas</p>
 					</li>
 					<li onclick="cambiaFlujo('.wra_flu3'); $('.w9_PS_listadoTarjeta').hide(); $('.w9_PS_headerTabla').hide(); $('.w9_CRAB_wraFormulario').slideDown();">
-						<p>Cuentas registradas Alta / Baja</p>
+						<p>Cuentas registradas alta / baja</p>
 					</li>
 					<li onclick="cambiaFlujo('.wra_flu4');">
 						<p>Consulta de transferencia</p>
@@ -67,7 +69,7 @@
 									</div>
 							<p class="DC_cuentacar">Cuenta de cargo:</p>
 
-									<div class="w9_dropList w9_ddSelect w9_ddSelected">
+									<div class="w9_dropList2 w9_ddSelect w9_ddSelected">
 										<select name="" id="" value="1" > 
 									    </select>
 									</div>
@@ -92,7 +94,7 @@
 										<p class="p_OC">Fecha:</p>
 										<div class="dateInput">
 																<div class="w9_HPG_personalizarIntervalo">
-																	dd/mm/aaaa
+																	14/01/2014
 																	<div>
 																		<img src="../../img/iconos/img_calendario.png"/>
 																	</div>
@@ -128,7 +130,7 @@
 								  
 							<div class="botonera">
 								<div class="btn" onclick="cambiaFlujo('.wra_flu1');cambiaPaso(1);">Regresar</div>
-								<div class="btnaceptar"  onclick="cargaToken('switchModal()','switchModal();cambiaPaso(3);',cargaHtml('.tabla3','../../../../tablas/w9/w9_EC_tblPaso3.html'),'');">Confirmar</div>
+								<div class="btnaceptar"  onclick="cambiaPaso(3);cargaHtml('.tabla3','../../../../tablas/w9/w9_EC_tblPaso3.html');">Confirmar</div>
 							</div>
 
 						</div>
@@ -174,13 +176,13 @@
 
 								 <div class="w9_EC_contenidodatos1">
 							<p class="DC_cuentadest">Cuenta destino:</p>
-								<div class="w9_dropList w9_ddSelect w9_ddSelected">
+								<div class="w9_dropList3 w9_ddSelect w9_ddSelected">
 										<select name="" id="" value="1" > 
 									    </select>
 									</div>
 							<p class="DC_cuentacar">Cuenta de cargo:</p>
 
-									<div class="w9_dropList w9_ddSelect w9_ddSelected">
+									<div class="w9_dropList2 w9_ddSelect w9_ddSelected">
 										<select name="" id="" value="1" > 
 									    </select>
 									</div>
@@ -208,7 +210,7 @@
 										<p class="p_OC">Fecha:</p>
 										<div class="dateInput">
 																<div class="w9_HPG_personalizarIntervalo">
-																	dd/mm/aaaa
+																	14/01/2014
 																	<div>
 																		<img src="../../img/iconos/img_calendario.png"/>
 																	</div>
@@ -233,21 +235,21 @@
 									<p class="p_OC">Referencia:</p>
 									<input class="textbox_OCLarge" placeholder="Escribir el numero de referencia" type="text" />  
 									<div id="infobtn" class="w9_info"></div>
-													<div class="infoChart"><img src="../../../../img/assets/info_img.png"/></div>
+													
 								</td>
 								<td class="middletd_OC">
-									<p class="p_OC">Requiere de comprobante fiscal?</p>
+									<p class="p_OC">¿Requiere de comprobante fiscal?</p>
 									<div class="switch_OC switchBox"></div>
 								</td>
 							</tr>
 							<tr>
 								<td class="middletd_OC">
-									<p class="p_OC">*Dato de R.F.C</p>
+									<p class="p_OC">Ingrese R.F.C</p>
 									<input class="textbox_OC" placeholder="Escribir R.F.C" type="text" />
 								</td>
 								<td class="middletd_OC">
 									<p class="p_OC">*I.V.A (16%)</p>
-									<input class="textbox_OC" placeholder="$ 999,999,999.00 (MXP)" disabled type="text" />
+									<input class="textbox_OC" placeholder="" disabled type="text" />
 								</td>
 							</tr>
 						</table>    
@@ -295,7 +297,7 @@
 								</div>
 								
 								<div class="tabla3"></div>
-								<div class="correocontacto"><p>Correo para notificación (beneficiario):</p><p>  cuentadecorreoelectronico@gmail.com.mx</p> </div>
+								<div class="correocontacto"><p>Correo para notificación (beneficiario):</p><p>  juan.arevalo@gmail.com.mx</p> </div>
 								
 							</div>
 							<div class="col col1 ">
@@ -321,7 +323,7 @@
 						<div class="iconFlujo">
 							<img src="../../../img/assets/User-card.png"/>
 						</div>
-						<p class="titulo">Cuentas registradas Alta / Baja</p>
+						<p class="titulo">Cuentas registradas alta / baja</p>
 						<p class="subtitulo">A continuación usted podrá consultar las cuentas que tiene registradas, si lo desea podrá modificarlas o darlas de baja. 
 						Si la cuenta a la que desea transferir no se encuentra en la lista, usted podrá darla de alta.</p>
 					</div>
@@ -378,7 +380,7 @@
 					<div class="w9_CRAB_wraFormulario">
 								<p>Favor de ingresar la siguiente información para dar de alta una nueva cuenta o tarjeta de débito</p>
 								<div>
-									<p>Número de buenta o tarjeta</p>
+									<p>Número de cuenta o tarjeta</p>
 									<input class="w9_CRAB_input" type="text" value="1234****5678"/>
 								</div>
 								<div>
@@ -387,22 +389,22 @@
 									<div class="info"></div>					
 								</div>
 								<div>
-									<p>Alias</p>
+									<p>Nombre del títular de la cuenta</p>
+									<input class="w9_CRAB_input" type="text" value="Nombre del titular"/>
+									<div class="info"></div>					
+								</div>
+								<div>
+									<p>Alias de la cuenta</p>
 									<input class="w9_CRAB_input" type="text" value="Nombre alias"/>
 									<div class="info"></div>					
 								</div>
 								<div>
-									<p>Nombre del titular</p>
-									<input class="w9_CRAB_input" type="text" value="Nombre"/>
-									<div class="info"></div>					
-								</div>
-								<div>
-									<p>Correo electrónico del titular:</p>
+									<p>Correo electrónico del títular:</p>
 									<input class="w9_CRAB_input" type="text" value="correo@correo.com" />
 									<div class="info"></div>					
 								</div>
 								<div>
-									<p>RFC del titular de la tarjeta:</p>
+									<p>RFC del títular</p>
 									<input class="w9_CRAB_input" type="text" value="ROMA000000ME0"/>
 									<div class="info"></div>					
 								</div>	
@@ -444,7 +446,7 @@
 								</div>
 								
 								<div class="tabla3"></div>
-								<div class="correocontacto"><p>Correo para notificación (beneficiario):</p><p>  alberto-alarcon@gmail.com.mx</p> </div>
+								
 								
 							</div>
 							<div class="col col1 ">
@@ -500,7 +502,7 @@
 							</div>	
 						</div>
 						<div class="tablaDinamica2"></div>
-						<div class="btnExportar w9_btn_exportar"><img style="cursor:pointer" class="w9_exportar" src="../../../img/assets/Exportar.png"><img   src="../../../img/assets/CalendariOperaciones.png"></div>
+						<div class="btnExportar w9_btn_exportar"><img   src="../../../img/assets/CalendariOperaciones.png"></div>
 						</div>	
 
 				</div>

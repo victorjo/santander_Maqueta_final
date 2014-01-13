@@ -1,18 +1,54 @@
 var ddData = [{
-    text: "1234****5678 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Producto Santander &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Papa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
+    text: "5470****2331 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Súper nómina &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Papá &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
     value: 1,
     selected: false,
 }, {
-    text: "1234****5678 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Producto Santander &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Hermano &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
+    text: "5470****5487 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cuenta Free &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Hermano &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ",
     value: 2,
     selected: false,
 
 }, {
-    text: "1234****5678 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Producto Santander &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Sobrino &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $999,999,999.00",
+    text: "5470****4532 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cuenta Básica &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Sobrino &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
     value: 3,
     selected: false,
 
 }];
+
+var ddData2 = [{
+    text: "5470****2332 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bancomer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Juan Arevalo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+    value: 1,
+    selected: false,
+}, {
+    text: "5470****5487 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Banamex &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Raúl López &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "5470****4532 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Scotia Bank &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fernando Ruiz &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+    value: 3,
+    selected: false,
+
+}];
+
+var ddDataOrigen = [{
+    text: "5470****2331 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Súper cuenta total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Gastos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $15,500.00",
+    value: 1,
+    selected: false,
+}, {
+    text: "5470****5487 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cuenta Free &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ahorro &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $3,400.00 ",
+    value: 2,
+    selected: false,
+
+}, {
+    text: "5470****4532 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Súper cuenta chequera &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cheques &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $18,343.00",
+    value: 3,
+    selected: false,
+
+}];
+
+
+
+
 
 // info para los droplis del flujo 4
 var data1 = [{
@@ -136,12 +172,33 @@ $(function() {
         width: 520,
         background: "#f7f7f7",
         imagePosition: "left",
-        selectText: "1234****1698 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fiesta Rewards Oro &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Mamá &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $19,929,999.00",
+        selectText: "5470****2331 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Súper nómina &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Papá &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
         onSelected: function(data) {
             console.log(data);
         }
     });
 
+$(".w9_dropList2 select").ddslick({
+        data: ddDataOrigen,
+        width: 520,
+        background: "#f7f7f7",
+        imagePosition: "left",
+        selectText: "5470****2332 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Súper cuenta total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Gastos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $15,500.00",
+        onSelected: function(data) {
+            console.log(data);
+        }
+    });
+
+$(".w9_dropList3 select").ddslick({
+        data: ddData2,
+        width: 520,
+        background: "#f7f7f7",
+        imagePosition: "left",
+        selectText: "3245****5435 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bancomer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Juan Arevalo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        onSelected: function(data) {
+            console.log(data);
+        }
+    });
     $(".w9_PS_dd2 select").ddslick({
         data: data1,
         width: 318,
