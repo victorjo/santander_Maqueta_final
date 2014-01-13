@@ -56,7 +56,7 @@
 
      var title = '<div id="SecondT">';
      title += '<div class="iconFlujo">';
-     title += '<img src="../../../img/assets/ico_balance.png"/>';
+     title += '<img src="../../../img/assets/ico_saldos.png"/>';
      title += '</div>';
      title += '<p class="titulo">Consultar estado de transferencias de saldo</p>';
      title += '<p class="subtitulo">A continuacion puede consultar las solicitudes de transferencias que ha realizado a sus tarjetas Santander</p></div>';

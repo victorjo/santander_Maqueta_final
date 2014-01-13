@@ -27,20 +27,20 @@
 						<p>
 						<img src="../../../img/assets/icon_menu_wampliado.png" />MEN&Uacute;</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(1);" class="liActive">
+					<li onclick="cambiaFlujo('.wra_flu1'); cambiaPaso(1); tit_Consulta();" class="liActive">
 						<p>Consulta de saldos y movimientos</p>
 					</li>
-					<li onclick="cambiaFlujo('.wra_flu2'); cambiaPaso(1);" >
+					<li onclick="cambiaFlujo('.wra_flu2'); cambiaPaso(1); tit_Transpaso();" >
 						<p>Traspaso a meses con interes</p>
 					</li>
 
-					<li onclick="cambiaFlujo('.wra_flu3'); cambiaPaso(1);">
+					<li onclick="cambiaFlujo('.wra_flu3'); cambiaPaso(1); tit_DispoTarjeta();">
 						<p>Disposición de tarjeta de crédito a cheques</p>
 					</li>
 				</ul>
 			</div>
 			<div id="WA_contenedorFlujos" >
-				<div class="titFlujoP1" style="height:81px;">
+				<div class="titFlujo"></div>
 				<div class="contenidoFlujo" style="border:0px solid black;">
 					<div class="flujo wra_flu1">
 						<div class="step step1">
@@ -292,13 +292,6 @@
 
 					<div class="flujo wra_flu3">
 						<div class="step step1">
-							<div class="titFlujo">
-								<div class="iconFlujo">
-									<img src="../../../img/assets/ico_cuentas_propias.png"/>
-								</div>
-								<p class="titulo">Entre cuentas propias Santander</p>
-								<p class="subtitulo">Introduzca el nombre, alias o los cuatro dígitos de la cuenta destino / cuenta de cargo o seleccionela de la lista</p>
-							</div>
 							<div class="w9_EC_contenidodatos1">
 							<p class="DC_cuentadest">Cuenta destino:</p>
 								<div class="w9_dropList w9_ddSelect w9_ddSelected">

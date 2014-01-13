@@ -580,4 +580,38 @@ padding-left: 5px;
 	border-radius: 4px 4px 4px 4px;
 	font-style:italic;
 	font-size: 11px;
-	}
+}
+
+.iconFlujo{
+	float: left !important;
+	margin-right: 10px !important;
+}	
+
+.titFlujo {
+	background: #FFFFFF;
+	float: left;
+	height: 55px;
+	overflow: hidden;
+	padding: 5px;
+	width: 715px;
+	margin-left: 10px;
+}
+
+.titFlujo p {
+	margin: 0;
+}
+
+.titFlujo .titulo {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.titFlujo .subtitulo {
+	margin-left: 44px;
+	margin-top: 10px;
+	font-size: 11px;
+	width: 482px;
+}
+
+
+
