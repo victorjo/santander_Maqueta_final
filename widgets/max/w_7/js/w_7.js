@@ -57,7 +57,7 @@ var dataPlazo = [{
 }];
 
 $(document).ready(function() {
-
+    tit_Consulta();
     $('.pasos').hide();
     $('.w1_texto').text('Mis movimientos de la tarjeta');
     $('.lista').addClass('w_1_deshabilitado');
@@ -201,16 +201,16 @@ function descargaDocs(doc) {
     document.location.href = doc;
 }
 
-function titulo() {
+function titulo(icono, titulo, subtitulo) {
     var title = '<div id="SecondT">';
     title += '<div class="iconFlujo">';
-    title += '<img src="../../../img/assets/ico_balance.png"/>';
+    title += '<img src="../../../img/assets/' + icono + '.png"/>';
     title += '</div>';
-    title += '<p class="titulo">Consultar estado de transferencias de saldo</p>';
-    title += '<p class="subtitulo">A continuacion puede consultar las solicitudes de transferencias que ha realizado a sus tarjetas Santander</p></div>';
+    title += '<p class="titulo">' + titulo + '</p>';
+    title += '<p class="subtitulo">' + subtitulo + '</p></div>';
 
 
-    $(".titFlujoP1").html(title);
+    $(".titFlujo").html(title);
 }
 
 function cargaTermino() {
@@ -231,4 +231,17 @@ function cargaTerm(cbTokenAcep, modal) {
 
 function cargaHtml(componente, url) {
     $(componente).load(url);
+}
+
+function tit_Consulta() {
+    titulo('ico_saldos', 'Consulta de Saldos y Movimientos', 'Seleccione el periodo de búsqueda que desea consultar, así como el tipo de movimiento y/o rango de importe para  una búsqueda  más especifica');
+}
+
+
+function tit_Transpaso() {
+    titulo('ico_saldos', 'Transpasos a Meses con intereses', 'Seleccione los cargos que desea diferir a meses con intereses y  el plazo para pagarlos');
+}
+
+function tit_DispoTarjeta() {
+    titulo('ico_saldos', 'Disposición de tarjetas de credito a cheques', 'Introduzca el nombre, alias o los cuatro dígitos de  la cuenta destino / cuenta de cargo o seleccionela de la lista');
 }
