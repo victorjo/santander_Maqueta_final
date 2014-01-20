@@ -1,5 +1,5 @@
 (function(document, window, require) {    
-
+  
 	requirejs.config({
 		paths:{
 			jquery:'js/jquery10.2.min',
