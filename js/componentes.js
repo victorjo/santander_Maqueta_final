@@ -8,7 +8,7 @@ $(document).ready(function() {
     $(".widget-min").hover(function() {
         $(this).css({
             "box-shadow": "0 0 3px #757575"
-        });
+        });     
 
     }, function() {
         $(this).css({
