@@ -4,7 +4,7 @@
 		paths:{
 			jquery:'js/jquery10.2.min',
 			jqueryui:'js/ui/jquery-ui-1.10.3.custom.min',
-			ddslick:'js/ddSlick',
+			ddslick:'js/ddSlick', 
 			widgets:'js/widgets',
 			utiles:'js/utiles',
 			components:'js/componentes',
