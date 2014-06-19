@@ -20,6 +20,7 @@
 				validaBrowser()
 				//if(typeof window.chrome =="undefined" || typeof window.safari == "undefined") reject();
 				validaBrowser();
+				
 				posWidgets(0);
 					genFooterHeight();
 					ajustaBannerHeight();
